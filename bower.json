@@ -1,0 +1,16 @@
+{
+  "name": "ibi",
+  "version": "0.0.1",
+  "authors": [
+    "Officine06"
+  ],
+  "description": "Ibi New Site",
+  "license": "Commercial",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

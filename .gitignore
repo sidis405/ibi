@@ -1,0 +1,7 @@
+/vendor
+/node_modules
+Homestead.yaml
+Homestead.json
+.env
+/falcon
+/resources/bower_components
