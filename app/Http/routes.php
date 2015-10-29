@@ -14,3 +14,12 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+
+Route::get('{view}', function ($view) {
+    try {
+      return view($view);
+    } catch (\Exception $e) {
+      abort(404);
+    }
+  })->where('view', '.*');

@@ -1,0 +1,217 @@
+extend layouts/template
+
+// Page title
+block title
+	| La Girouette
+
+// Page meta-description
+block append metatags 
+	meta(name='description', content='La Girouette')
+
+block content	
+	// Including header
+	include blocks/header
+	// Page content
+	.wrap
+		ul#scene
+			li.layer(data-depth="0.30")
+				div.cloud
+			li.layer(data-depth="0.20")
+				div.cloud-1
+			li.layer(data-depth="0.20")
+				div.cloud-2
+			li.layer(data-depth="0.10")
+				div.cloud-3		
+		.welcome-container
+			h1.logo
+				| La Girouette
+			h2.slogan
+				| Rendi unica ogni occasione <br>
+				| Idee e soluzioni per rendere perfetto il tuo evento.
+			a(href="#about")
+				.arrow				
+					img(src="img/arrow.png")
+	section.main
+		.container-fluid
+			.row.about#about
+				.col-md-8.no-pad
+					.opening-carousel
+						div.slide.slide1
+						div.slide.slide2
+						div.slide.slide3
+						div.slide.slide4
+				.col-md-4.no-pad
+					.about-us
+						h3
+							| About us
+						p
+							| Nella realizzazione dei nostri eventi non lasciamo mai nulla al caso, dalla scelta della location all’ideazione degli allestimenti, tutto è finalizzato a valorizzarne il protagonista. 
+							|	<br><br>
+							|	Ecco perchè gli eventi de La Girouette sono perfetti in ogni dettaglio! 
+							|	<br><br>
+							|	Il nostro obiettivo è dare un’anima all'evento, renderlo unico e indimenticabile per chiunque l’abbia vissuto.
+		section.who
+			.container
+				.row
+					.col-sm-6.no-pad
+						.who-box
+							img(src="http://placehold.it/260x260")
+							h4 Martina Miozzi
+							p "Lorem Ipsum dolor sit amet"
+							.icons
+								.facebook
+								.instagram
+								.mail
+					.col-sm-6.no-pad
+						.who-box
+							img(src="http://placehold.it/260x260")
+							h4 Martina Miozzi
+							p "Lorem Ipsum dolor sit amet"
+							.icons
+								.facebook
+								.instagram
+								.mail
+		section.events#servizi
+			.container-fluid
+				.row
+					.col-md-4.no-pad
+						.eventi
+							h3.beige Eventi
+							.row
+								.col-sm-6
+									ul
+										li Feste a tema
+										li Baby shower
+										li Compleanni
+										li 10 Compleanno
+										li Battesimi
+										li Comunioni
+										li Cresime
+								.col-sm-6
+									ul
+										li Addii al celibato
+										li Addii al nubilato
+										li Matrimoni
+										li Picnic party
+										li Spa party
+										li Eventi a tema
+										li Eventi privati
+										li Eventi aziendali
+					.col-md-8.no-pad
+						.servizi
+							h3 Servizi										
+							.col-lg-2.col-md-3.col-sm-6.no-pad
+								.service-box
+									.icon
+										img(src="img/icons/allestimenti.png")
+									p Allestimenti e materiali d'allestimento
+							.col-lg-2.col-md-3.col-sm-6.no-pad
+								.service-box
+									.icon
+										img(src="img/icons/catering.png")
+									p Catering &amp; Banqueting
+							.col-lg-2.col-md-3.col-sm-6.no-pad
+								.service-box
+									.icon
+										img(src="img/icons/baloon.png")
+									p Balloon art
+							.col-lg-2.col-md-3.col-sm-6.no-pad
+								.service-box
+									.icon
+										img(src="img/icons/sweet.png")
+									p Sweet table
+							.col-lg-2.col-md-3.col-sm-6.no-pad
+								.service-box
+									.icon
+										img(src="img/icons/cake.png")
+									p Cake design
+							.col-lg-2.col-md-3.col-sm-6.no-pad
+								.service-box
+									.icon
+										img(src="img/icons/gadget.png")
+									p Bomboniere &amp; Gadget
+							.col-lg-2.col-md-3.col-sm-6.no-pad
+								.service-box
+									.icon
+										img(src="img/icons/flower.png")
+									p Flower design
+							.col-lg-2.col-md-3.col-sm-6.no-pad
+								.service-box
+									.icon
+										img(src="img/icons/performance.png")
+									p Performance art
+							.col-lg-2.col-md-3.col-sm-6.no-pad
+								.service-box
+									.icon
+										img(src="img/icons/photo.png")
+									p Photo shooting &amp; Photo boot
+							.col-lg-2.col-md-3.col-sm-6.no-pad
+								.service-box
+									.icon
+										img(src="img/icons/animazione.png")
+									p Animazione
+							.col-lg-2.col-md-3.col-sm-6.no-pad
+								.service-box
+									.icon
+										img(src="img/icons/location.png")
+									p Location
+							.col-lg-2.col-md-3.col-sm-6.no-pad
+								.service-box
+									.icon
+										img(src="img/icons/djset.png")
+									p DjSet &amp; Live music
+		section.gallery#gallery
+			.container-fluid
+				.row
+					.col-xs-12
+						h3.beige
+							| Gallery
+				.row
+					.col-md-4.col-sm-6.no-pad
+						.project
+							img.project-img(src="img/projects/biancaneve-sample.jpg")							
+							.project-desc
+								p Project Title
+					.col-md-4.col-sm-6.no-pad
+						.project
+							img.project-img(src="img/projects/biancaneve-sample.jpg")							
+							.project-desc
+								p Project Title
+					.col-md-4.col-sm-6.no-pad
+						.project
+							img.project-img(src="img/projects/biancaneve-sample.jpg")							
+							.project-desc
+								p Project Title
+					.col-md-4.col-sm-6.no-pad
+						.project
+							img.project-img(src="img/projects/biancaneve-sample.jpg")							
+							.project-desc
+								p Project Title
+					.col-md-4.col-sm-6.no-pad
+						.project
+							img.project-img(src="img/projects/biancaneve-sample.jpg")							
+							.project-desc
+								p Project Title
+					.col-md-4.col-sm-6.no-pad
+						.project
+							img.project-img(src="img/projects/biancaneve-sample.jpg")							
+							.project-desc
+								p Project Title
+					.col-md-4.col-sm-6.no-pad
+						.project
+							img.project-img(src="img/projects/biancaneve-sample.jpg")							
+							.project-desc
+								p Project Title
+					.col-md-4.col-sm-6.no-pad
+						.project
+							img.project-img(src="img/projects/biancaneve-sample.jpg")							
+							.project-desc
+								p Project Title
+					.col-md-4.col-sm-6.no-pad
+						.project
+							img.project-img(src="img/projects/biancaneve-sample.jpg")							
+							.project-desc
+								p Project Title			
+	// Including footer
+	include blocks/footer
+	
