@@ -3,3 +3,32 @@
 Footer styles
 -------------------------
 */
+footer {
+	background: $barely-blank;	
+	.footer-box {
+		border-left: 1px solid $title-color;
+		padding: 50px 20px 20px 20px;
+		min-height: 323px;
+		margin: 0 0 40px 0;
+		h4 {
+			@extend .titles;
+			margin: 0 0 20px 0;
+			color: $title-color;
+		}
+		p {
+			font-size: 12px;
+		}
+		ul {
+			padding: 0;
+			list-style: none;
+			li {
+				margin: 15px 0;
+				a {color: $text-color;}
+			}
+		}
+	}
+	.copyright {
+		background: $green;
+		padding: 20px 0;
+	}
+}

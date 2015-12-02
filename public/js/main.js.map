@@ -1,1 +1,1 @@
-{"version":3,"sources":["main.js"],"names":[],"mappings":"AAAA","file":"main.js","sourcesContent":[""],"sourceRoot":"/source/"}
+{"version":3,"sources":["main.js"],"names":[],"mappings":"AAAA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA","file":"main.js","sourcesContent":["/*\n-------------------------\nCarousel homepage\n-------------------------\n*/\n$(document).ready(function() {\n\t\n\t$('.main-carousel').slick({\n\t  infinite: true,\n\t  slidesToShow: 1,\n\t  autoplay: true,\n\t  arrows: false\t  \n\t});\n\t\n});"],"sourceRoot":"/source/"}

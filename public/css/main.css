@@ -3,19 +3,218 @@
 Essentials styles
 -------------------------
 */
+body {
+  font-family: 'Lato';
+  color: #666; }
+
+/*
+-------------------------
+Main essentials
+-------------------------
+*/
+section.content {
+  margin: 40px auto; }
+  section.content h2 {
+    color: #00509a;
+    font-size: 32px;
+    font-weight: 700;
+    margin: 20px 0 5px 0; }
+  section.content h3 {
+    text-transform: uppercase;
+    margin: 5px 0 30px 0;
+    font-size: 16px; }
+  section.content p {
+    text-align: justify;
+    font-size: 16px;
+    margin: 30px auto; }
+  section.content .btn {
+    padding: 10px 25px;
+    background: #1fa9ad;
+    text-transform: uppercase;
+    border-radius: 0;
+    border: 0;
+    font-size: 12px; }
+
+.titles, .sidebar .news h3, footer .footer-box h4 {
+  text-transform: uppercase;
+  font-weight: 700; }
+
+/*
+-------------------------
+Sidebar styles
+-------------------------
+*/
+.sidebar {
+  background: #d9e5fa;
+  padding: 10px; }
+  .sidebar .sidebar-actions img {
+    margin-bottom: 10px;
+    display: block;
+    width: 100%; }
+  .sidebar .news h3 {
+    color: #1fa9ad; }
+  .sidebar .news .single-news {
+    margin: 15px 0;
+    background: #f2f2f2; }
+    .sidebar .news .single-news:last-of-type {
+      margin-bottom: 0; }
+    .sidebar .news .single-news h4 {
+      color: #00509a;
+      font-size: 16px;
+      font-weight: 700;
+      margin: 10px 0 0 0; }
+    .sidebar .news .single-news span.date {
+      font-size: 12px;
+      color: #000;
+      font-weight: 700; }
+    .sidebar .news .single-news p {
+      font-size: 10px;
+      text-align: justify;
+      padding-right: 5px;
+      margin: 0 0 5px 0; }
+    .sidebar .news .single-news .read-more-news {
+      text-transform: uppercase;
+      float: right;
+      font-size: 10px;
+      font-weight: 700;
+      color: #00509a;
+      padding-right: 5px; }
+
 /*
 -------------------------
 Header styles
 -------------------------
 */
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10; }
+
+.top-bar {
+  padding: 5px 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff; }
+  .top-bar p {
+    margin: 0; }
+
+nav.navbar {
+  padding: 20px 0;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 0;
+  border: 0; }
+  nav.navbar span.caret {
+    display: block;
+    margin: 5px auto;
+    border-top: 8px dashed;
+    border-top: 8px solid\9;
+    border-right: 8px solid transparent;
+    border-left: 8px solid transparent; }
+  nav.navbar h1.logo {
+    text-indent: -9999px;
+    margin: 0;
+    background: url(../img/ibi-lorenzini-logo.png) no-repeat center center;
+    width: 155px;
+    height: 91px; }
+  nav.navbar .navbar-right {
+    margin-top: 25px; }
+    nav.navbar .navbar-right li {
+      height: 40px;
+      border-left: 1px solid #00509a; }
+      nav.navbar .navbar-right li a {
+        padding: 0 30px 0 10px;
+        color: #00509a;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 18px; }
+    nav.navbar .navbar-right .dropdown-menu li {
+      border: 0; }
+
+/*
+-------------------------
+Bootstrap fixes
+-------------------------
+*/
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:focus, .navbar-default .navbar-nav > .open > a:hover {
+  background: transparent; }
+
 /*
 -------------------------
 Footer styles
 -------------------------
 */
+footer {
+  background: #f2f2f2; }
+  footer .footer-box {
+    border-left: 1px solid #00509a;
+    padding: 50px 20px 20px 20px;
+    min-height: 323px;
+    margin: 0 0 40px 0; }
+    footer .footer-box h4 {
+      margin: 0 0 20px 0;
+      color: #00509a; }
+    footer .footer-box p {
+      font-size: 12px; }
+    footer .footer-box ul {
+      padding: 0;
+      list-style: none; }
+      footer .footer-box ul li {
+        margin: 15px 0; }
+        footer .footer-box ul li a {
+          color: #666; }
+  footer .copyright {
+    background: #1fa9ad;
+    padding: 20px 0; }
+
 /*
 -------------------------
-Main styles
+Home carousel
+-------------------------
+*/
+.main-carousel {
+  margin: 0; }
+  .main-carousel .slide {
+    background: url(../img/header-home.jpg) no-repeat center center;
+    width: 100%;
+    height: 500px;
+    background-size: cover; }
+
+/*
+-------------------------
+Hero
+-------------------------
+*/
+.hero {
+  background: url(../img/hero-background.jpg) no-repeat center center;
+  width: 100%;
+  padding: 70px 0; }
+  .hero .hero-box {
+    width: 100%;
+    background: #fff;
+    padding: 0 25px; }
+    .hero .hero-box img {
+      margin: auto;
+      display: block;
+      padding: 25px 0; }
+    .hero .hero-box p {
+      font-size: 14px;
+      padding: 25px 0 0 0;
+      text-align: justify;
+      border-top: 1px solid #666; }
+    .hero .hero-box .btn {
+      width: 100%;
+      border-radius: 0;
+      border: 0;
+      margin: 20px 0;
+      padding: 10px 0;
+      font-size: 12px;
+      text-transform: uppercase;
+      background: #1fa9ad; }
+
+/*
+-------------------------
+Content
 -------------------------
 */
 /*

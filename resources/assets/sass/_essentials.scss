@@ -3,3 +3,52 @@
 Essentials styles
 -------------------------
 */
+
+// Colors
+$text-color: #666;
+$green: #1fa9ad;
+$blue-gray: #d9e5fa;
+$title-color: #00509a;
+$barely-blank: #f2f2f2;
+
+body {
+	font-family: 'Lato';
+	color: $text-color;
+}
+/*
+-------------------------
+Main essentials
+-------------------------
+*/
+section.content {
+	margin: 40px auto;
+	h2 {
+		color: $title-color;
+		font-size: 32px;		
+		font-weight: 700;
+		margin: 20px 0 5px 0;
+	}
+	h3 {
+		text-transform: uppercase;
+		margin: 5px 0 30px 0;
+		font-size: 16px;
+	}
+	p {
+		text-align: justify;
+		font-size: 16px;
+		margin: 30px auto;
+	}
+	.btn {
+		padding: 10px 25px;
+		background: $green;		
+		text-transform: uppercase;
+		border-radius: 0;
+		border: 0;
+		font-size: 12px;
+	}
+}
+
+.titles {
+	text-transform: uppercase;
+	font-weight: 700;	
+}

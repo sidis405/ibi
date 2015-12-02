@@ -1,0 +1,57 @@
+header
+	.top-bar
+		.container
+			.row
+				.col-sm-6
+					p test test test
+				.col-sm-6
+					p.pull-right test test test
+	nav.navbar.navbar-default
+		.container
+			// Brand and toggle get grouped for better mobile display
+			.navbar-header
+				button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#bs-example-navbar-collapse-1', aria-expanded='false')
+					span.sr-only Toggle navigation
+					span.icon-bar
+					span.icon-bar
+					span.icon-bar
+				a(href='#')
+					h1.logo
+						| Ibi Lorenzini
+			// Collect the nav links, forms, and other content for toggling
+			#bs-example-navbar-collapse-1.collapse.navbar-collapse			
+				ul.nav.navbar-nav.navbar-right
+					li
+						a(href='#') Chi siamo
+					li.dropdown
+						a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false')
+							| Prodotti 
+							span.caret
+						ul.dropdown-menu
+							li
+								a(href='#') Action
+							li
+								a(href='#') Another action
+							li
+								a(href='#') Something else here							
+							li
+								a(href='#') Separated link
+					li
+						a(href='#') Toll development<br> manufacturer
+					li
+						a(href='#') Ricerca e<br> innovazione
+					li.dropdown
+						a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false')
+							| Contatti 
+							span.caret
+						ul.dropdown-menu
+							li
+								a(href='#') Action
+							li
+								a(href='#') Another action
+							li
+								a(href='#') Something else here							
+							li
+								a(href='#') Separated link
+			// /.navbar-collapse
+		// /.container-fluid
