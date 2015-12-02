@@ -19,7 +19,7 @@ elixir.extend('prioritiseJquery', function(message) {
 
 
 elixir(function(mix) {
-    mix.less('style.less').scripts('main.js');
+    mix.sass('style.scss').scripts('main.js');
 
     mix.jade({
     	src: '/assets/jade/',
@@ -37,5 +37,7 @@ elixir(function(mix) {
 
     mix.scripts('./resources/assets/vendor/**/*.js', 'public/js/vendor.js');
     mix.styles('./resources/assets/vendor/**/*.css', 'public/css/vendor.css');
+
+    mix.browserSync({proxy: 'ibi.dev:80'});
 });
 

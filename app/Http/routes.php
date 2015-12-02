@@ -18,7 +18,7 @@ Route::get('/', function () {
 
 Route::get('{view}', function ($view) {
     try {
-      return view($view);
+      return view('static.'.$view);
     } catch (\Exception $e) {
       abort(404);
     }
