@@ -19,7 +19,7 @@ elixir.extend('prioritiseJquery', function(message) {
 
 
 elixir(function(mix) {
-    mix.sass('style.scss').scripts('main.js');
+    mix.sass('main.scss').scripts('main.js');
 
     mix.jade({
     	src: '/assets/jade/',
