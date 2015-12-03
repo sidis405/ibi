@@ -17,6 +17,7 @@
     "bootstrap": "~3.3.5",
     "font-awesome": "~4.4.0",
     "magnific-popup": "~1.0.0",
+    "mixitup": "mixitup2#~2.1.11",
     "modernizr": "~3.2.0",
     "slick-carousel": "~1.5.8"
   }

@@ -1,0 +1,44 @@
+extend blocks/template
+
+// Page title
+block title
+	| Ibi Lorenzini | Prodotti
+
+// Page meta-description
+block append metatags 
+	meta(name='description', content='Prodotti')
+
+block content	
+	// Including header
+	include blocks/header
+	// Page content 
+	.main-header.prodotti
+		.container
+			.main-caption
+				h1
+					|Prodotti
+	section.content.products-content
+		.container
+			.row
+				include blocks/products-filter			
+				.col-sm-9
+					button.filter(data-filter='.category-1') Category 1
+					button.filter(data-filter='.category-2') Category 2
+					button.filter(data-filter='.category-3') Category 3
+					.row
+						.col-md-6 
+							.product
+								h2.product-title Acido zoledronico ibigen liofilizzato
+								ul
+									li
+										h5 Principio attivo
+										span Acido Zoledronico - Anidro
+									li
+									li
+									li
+									li				
+						.col-md-6
+							.product
+								h2.product-title Acido zoledronico ibigen liofilizzato	
+	// Including footer
+	include blocks/footer

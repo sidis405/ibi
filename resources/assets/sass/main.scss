@@ -113,6 +113,10 @@ Page Headers
 		background: url(../img/main-chi-siamo.jpg) no-repeat center center;		
 		background-size: cover;		
 	}
+	&.prodotti {
+		background: url(../img/main-chi-siamo.jpg) no-repeat center center;		
+		background-size: cover;		
+	}
 }
 /*
 -------------------------
@@ -159,10 +163,7 @@ section.content {
 			padding-bottom: 15px;
 			border-bottom: 1px dotted $text-color;
 			&.contatti-ibisqus-logo {margin-top: 50px;}
-		}
-		.borded {			
-			border-bottom: 1px dotted $text-color;
-		}
+		}		
 		#accordion {
 			.panel {
 				border: 0;
@@ -171,9 +172,60 @@ section.content {
 			}
 		}
 	}
+	&.lavora-con-noi-content {
+		.lavori-box {
+			background: $title-color;
+			padding: 25px;			
+			ul {
+				list-style: none;
+				padding: 0;
+				margin: 0;				
+				li {
+					color: #fff;
+					font-size: 18px;
+				}
+			}			
+		}
+		p.borded, img.borded {padding-bottom: 25px;}
+		h4 {
+			font-weight: 300;
+			text-transform: none;
+			font-size: 26px;
+		}
+	}
 }
 
-
+/*
+-------------------------
+Products
+-------------------------
+*/
+section.products-content {
+	.product {
+		h2 {
+			padding: 15px;
+			font-size: 16px;
+			background: $light-blue;
+			text-transform: uppercase;
+			color: #fff;
+			margin-bottom: 0;
+		}
+		h5 {
+			margin: 0;
+			font-weight: 700;
+		}
+		ul {
+			padding: 0;
+			list-style: none;
+			li {
+				padding: 15px;
+				&:first-of-type {
+					background: $lighter-blue;
+				}
+			}
+		}
+	}
+}
 
 
 

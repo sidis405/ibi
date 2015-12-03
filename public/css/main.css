@@ -45,12 +45,20 @@ section.content {
     border: 0;
     font-size: 12px; }
 
-.titles, .sidebar h3, footer .footer-box h4 {
+/*
+-------------------------
+Helpers
+-------------------------
+*/
+.titles, .sidebar h3, .sidebar.lavora-con-noi-sidebar .position h5, footer .footer-box h4 {
   text-transform: uppercase;
   font-weight: 700; }
 
 .btn.btn-products {
   margin: 20px 0 -10px 0; }
+
+.borded {
+  border-bottom: 1px dotted #666; }
 
 /*
 -------------------------
@@ -68,6 +76,12 @@ Sidebar styles
     margin-bottom: 10px;
     display: block;
     width: 100%; }
+  .sidebar .read-more {
+    text-transform: uppercase;
+    font-size: 10px;
+    font-weight: 700;
+    color: #00509a;
+    padding-right: 5px; }
   .sidebar .news .single-news {
     margin: 15px 0;
     background: #f2f2f2; }
@@ -87,13 +101,6 @@ Sidebar styles
       text-align: justify;
       padding-right: 5px;
       margin: 0 0 5px 0 !important; }
-    .sidebar .news .single-news .read-more-news {
-      text-transform: uppercase;
-      float: right;
-      font-size: 10px;
-      font-weight: 700;
-      color: #00509a;
-      padding-right: 5px; }
   .sidebar.farmacovigilanza-sidebar {
     background: transparent; }
     .sidebar.farmacovigilanza-sidebar h3 {
@@ -132,6 +139,62 @@ Sidebar styles
     border-bottom: 1px dotted #666;
     padding-bottom: 10px;
     margin: 10px 0; }
+  .sidebar.lavora-con-noi-sidebar .position {
+    background: #f2f2f2;
+    padding: 5px;
+    margin-bottom: 10px; }
+    .sidebar.lavora-con-noi-sidebar .position:last-of-type {
+      margin-bottom: 0; }
+    .sidebar.lavora-con-noi-sidebar .position h5 {
+      color: #00509a;
+      font-size: 14px;
+      margin: 5px 0 0 0; }
+    .sidebar.lavora-con-noi-sidebar .position span {
+      display: block;
+      margin: 0 0 5px 0; }
+    .sidebar.lavora-con-noi-sidebar .position p {
+      font-size: 12px;
+      text-align: justify;
+      margin: 0 0 5px 0 !important; }
+  .sidebar.products-sidebar {
+    background: transparent; }
+    .sidebar.products-sidebar .btn {
+      width: 100%;
+      margin-bottom: 40px; }
+    .sidebar.products-sidebar h3 {
+      margin: 0;
+      background: #1fa9ad;
+      color: #fff;
+      padding: 5px 10px; }
+    .sidebar.products-sidebar .filter-content {
+      background: #ededed;
+      padding-bottom: 5px; }
+      .sidebar.products-sidebar .filter-content .filter-block {
+        padding: 10px; }
+        .sidebar.products-sidebar .filter-content .filter-block span {
+          text-transform: uppercase;
+          font-size: 16px;
+          display: block; }
+        .sidebar.products-sidebar .filter-content .filter-block select {
+          width: 100%;
+          position: relative;
+          padding: 5px 8px;
+          border: none;
+          box-shadow: none;
+          border-radius: 0;
+          margin-top: 10px;
+          background-color: #fff;
+          background-image: none;
+          -webkit-appearance: none;
+          -moz-appearance: none;
+          appearance: none; }
+          .sidebar.products-sidebar .filter-content .filter-block select:focus {
+            outline: none; }
+      .sidebar.products-sidebar .filter-content .btn {
+        margin: 10px;
+        width: auto;
+        display: block;
+        color: #fff; }
 
 /*
 -------------------------
@@ -151,6 +214,9 @@ header {
   color: #fff; }
   .top-bar p {
     margin: 0; }
+  .top-bar i {
+    font-size: 16px;
+    margin-right: 15px; }
 
 nav.navbar {
   padding: 20px 0;
@@ -311,6 +377,9 @@ Page Headers
   .main-header.lavora-con-noi {
     background: url(../img/main-chi-siamo.jpg) no-repeat center center;
     background-size: cover; }
+  .main-header.prodotti {
+    background: url(../img/main-chi-siamo.jpg) no-repeat center center;
+    background-size: cover; }
 
 /*
 -------------------------
@@ -351,14 +420,55 @@ section.content.contatti-content .loghi {
   section.content.contatti-content .loghi.contatti-ibisqus-logo {
     margin-top: 50px; }
 
-section.content.contatti-content .borded {
-  border-bottom: 1px dotted #666; }
-
 section.content.contatti-content #accordion .panel {
   border: 0;
   border-radius: 0; }
   section.content.contatti-content #accordion .panel .panel-title {
     margin: 5px 0; }
+
+section.content.lavora-con-noi-content .lavori-box {
+  background: #00509a;
+  padding: 25px; }
+  section.content.lavora-con-noi-content .lavori-box ul {
+    list-style: none;
+    padding: 0;
+    margin: 0; }
+    section.content.lavora-con-noi-content .lavori-box ul li {
+      color: #fff;
+      font-size: 18px; }
+
+section.content.lavora-con-noi-content p.borded, section.content.lavora-con-noi-content img.borded {
+  padding-bottom: 25px; }
+
+section.content.lavora-con-noi-content h4 {
+  font-weight: 300;
+  text-transform: none;
+  font-size: 26px; }
+
+/*
+-------------------------
+Products
+-------------------------
+*/
+section.products-content .product h2 {
+  padding: 15px;
+  font-size: 16px;
+  background: #80a8cd;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 0; }
+
+section.products-content .product h5 {
+  margin: 0;
+  font-weight: 700; }
+
+section.products-content .product ul {
+  padding: 0;
+  list-style: none; }
+  section.products-content .product ul li {
+    padding: 15px; }
+    section.products-content .product ul li:first-of-type {
+      background: #f2f6fa; }
 
 /*
 -------------------------

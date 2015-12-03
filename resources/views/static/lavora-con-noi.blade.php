@@ -19,9 +19,7 @@
       <div class="top-bar">
         <div class="container">
           <div class="row">
-            <div class="col-sm-6">
-              <p>test test test</p>
-            </div>
+            <div class="col-sm-6"><i class="fa fa-facebook-square"></i><i class="fa fa-google-plus-square"></i><i class="fa fa-twitter-square"></i><i class="fa fa-envelope"></i></div>
             <div class="col-sm-6">
               <p class="pull-right">test test test</p>
             </div>
@@ -41,10 +39,9 @@
               <li><a href="chi-siamo">Chi siamo</a></li>
               <li class="dropdown"><a href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle">Prodotti <span class="caret"></span></a>
                 <ul class="dropdown-menu">
-                  <li><a href="#">Action</a></li>
-                  <li><a href="#">Another action</a></li>
-                  <li><a href="#">Something else here							</a></li>
-                  <li><a href="#">Separated link</a></li>
+                  <li><a href="prodotti">Prodotti</a></li>
+                  <li><a href="prodotti">Prodotti</a></li>
+                  <li><a href="prodotti">Prodotti					</a></li>
                 </ul>
               </li>
               <li><a href="ibi-toll-manufacturer">Toll development<br> manufacturer</a></li>
@@ -70,25 +67,71 @@
         </div>
       </div>
     </div>
-    <section class="content">
+    <section class="content lavora-con-noi-content">
       <div class="container">
         <div class="row">
           <div class="col-sm-8">
             <h2>Lavora con noi</h2>
-            <h3>Una grande opportunità per il tuo futuro							</h3>
+            <h3>Una grande opportunità per il tuo futuro</h3>
+            <div class="lavori-box">
+              <div class="row">
+                <div class="col-sm-5">
+                  <ul>
+                    <li>281 Dipendenti</li>
+                    <li>281 Dipendenti</li>
+                    <li>281 Dipendenti</li>
+                    <li>281 Dipendenti</li>
+                  </ul>
+                </div>
+                <div class="col-sm-7">
+                  <ul>
+                    <li>281 Dipendenti</li>
+                    <li>281 Dipendenti</li>
+                    <li>281 Dipendenti</li>
+                    <li>281 Dipendenti</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <p class="borded">
+              Lavorare in IBI significa inserirsi in una realtà imprenditoriale solida e dinamica che associa ad una lunga tradizione storica un forte orientamento al futuro.
+              <br><br>
+              Per vincere le molteplici sfide prefissate, IBI valorizza le risorse umane, investe nella loro formazione ed offre un ambiente di lavoro stimolante e con buone prospettive di crescita. Particolare attenzione è rivolta ai giovani,  studenti, neolaureati, disoccupati/inoccupati,  che hanno l’opportunità di sviluppare il proprio potenziale attraverso l’inserimento in stage.
+            </p>
+            <h4>Possibilità per la tua laurea:</h4><img src="/img/lavora-con-noi.jpg" alt="" class="img-responsive borded">
+            <p>
+              I profili prevalentemente ricercati appartengono alle seguenti aree: tecnico-produttiva (produzione, manutenzione, laboratori controllo qualità), medico scientifica, ricerca e sviluppo, marketing e vendite, amministrazione, finanza e controllo, risorse umane, logistica, acquisti, information technology.
+              Entusiasmo, creatività, motivazione, spirito di iniziativa e capacità di lavorare in team sono le caratteristiche fondamentali che il candidato ideale deve possedere.
+              I canali di reclutamento preferenziali sono le candidature spontanee, i contatti con le Università ed alcune società di selezione specializzate. 
+              <br><br>
+              La Direzione Risorse Umane, in collaborazione con i Responsabili di funzione, cura lo screening dei curricula pervenuti ed effettua diversi colloqui individuali al fine di selezionare la candidatura più idonea alle esigenze aziendali.
+              La condivisione dei valori aziendali - attenzione alle persone, trasparenza, integrità e correttezza nei rapporti, apertura al cambiamento nel rispetto del passato - è requisito indispensabile per entrare a far parte della squadra IBI ed è ciò che la rende riconoscibile all’esterno come azienda affidabile ed eticamente responsabile. 
+            </p>
           </div>
           <div class="col-md-4">
             <div class="sidebar lavora-con-noi-sidebar">
-              <div class="row sidebar-actions">
+              <div class="row positions">
                 <div class="col-xs-12">
                   <h3>Posizioni aperte</h3>
                 </div>
-              </div>
-              <div class="row news">
                 <div class="col-xs-12">
-                  <h3> Ultime News</h3>
+                  <div class="position">
+                    <h5>Human resources specialist	(rif. HRS)</h5><span>Sede: Heppenheim (LT) - GERMANY</span>
+                    <p>Piccola descrizione riguardo la figura ricercata per questa posizione, con i principali requisiti richiesti ed eventualmente alcune delle mansioni di cui si dovrà occupare.</p><a class="read-more">Invia candidatura</a>
+                  </div>
+                  <div class="position">
+                    <h5>Human resources specialist	(rif. HRS)</h5><span>Sede: Heppenheim (LT) - GERMANY</span>
+                    <p>Piccola descrizione riguardo la figura ricercata per questa posizione, con i principali requisiti richiesti ed eventualmente alcune delle mansioni di cui si dovrà occupare.</p><a class="read-more">Invia candidatura</a>
+                  </div>
+                  <div class="position">
+                    <h5>Human resources specialist	(rif. HRS)</h5><span>Sede: Heppenheim (LT) - GERMANY</span>
+                    <p>Piccola descrizione riguardo la figura ricercata per questa posizione, con i principali requisiti richiesti ed eventualmente alcune delle mansioni di cui si dovrà occupare.</p><a class="read-more">Invia candidatura</a>
+                  </div>
+                  <div class="position">
+                    <h5>Human resources specialist	(rif. HRS)</h5><span>Sede: Heppenheim (LT) - GERMANY</span>
+                    <p>Piccola descrizione riguardo la figura ricercata per questa posizione, con i principali requisiti richiesti ed eventualmente alcune delle mansioni di cui si dovrà occupare.</p><a class="read-more">Invia candidatura</a>
+                  </div>
                 </div>
-                <div class="col-xs-12">				</div>
               </div>
             </div>
           </div>

@@ -11,6 +11,9 @@ $blue-gray: #d9e5fa;
 $title-color: #00509a;
 $barely-blank: #f2f2f2;
 $barely-green: #e6f8f8;
+$light-gray: #ededed;
+$light-blue: #80a8cd;
+$lighter-blue: #f2f6fa;
 
 body {
 	font-family: 'Lato';
@@ -60,6 +63,12 @@ section.content {
 	}
 }
 
+/*
+-------------------------
+Helpers
+-------------------------
+*/
+
 .titles {
 	text-transform: uppercase;
 	font-weight: 700;	
@@ -67,4 +76,8 @@ section.content {
 
 .btn.btn-products {
 	margin: 20px 0 -10px 0;
+}
+
+.borded {			
+	border-bottom: 1px dotted $text-color;
 }

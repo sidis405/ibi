@@ -19,9 +19,7 @@
       <div class="top-bar">
         <div class="container">
           <div class="row">
-            <div class="col-sm-6">
-              <p>test test test</p>
-            </div>
+            <div class="col-sm-6"><i class="fa fa-facebook-square"></i><i class="fa fa-google-plus-square"></i><i class="fa fa-twitter-square"></i><i class="fa fa-envelope"></i></div>
             <div class="col-sm-6">
               <p class="pull-right">test test test</p>
             </div>
@@ -41,10 +39,9 @@
               <li><a href="chi-siamo">Chi siamo</a></li>
               <li class="dropdown"><a href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle">Prodotti <span class="caret"></span></a>
                 <ul class="dropdown-menu">
-                  <li><a href="#">Action</a></li>
-                  <li><a href="#">Another action</a></li>
-                  <li><a href="#">Something else here							</a></li>
-                  <li><a href="#">Separated link</a></li>
+                  <li><a href="prodotti">Prodotti</a></li>
+                  <li><a href="prodotti">Prodotti</a></li>
+                  <li><a href="prodotti">Prodotti					</a></li>
                 </ul>
               </li>
               <li><a href="ibi-toll-manufacturer">Toll development<br> manufacturer</a></li>
