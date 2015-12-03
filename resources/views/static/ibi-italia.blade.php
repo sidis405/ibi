@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Ibi Lorenzini</title>
+    <title>Ibi Lorenzini | Ibi Italia</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Ibi Lorenzini">
+    <meta name="description" content="L’Istituto Biochimico Italiano, Ibi, fondato dal Prof. Giovanni Lorenzini, è un’azienda farmaceutica di grande tradizione scientifica presente sul mercato italiano da 90 anni.">
     <!-- Google Fonts    --><link href='https://fonts.googleapis.com/css?family=Lato:400,700,700italic,300,300italic,400italic' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="/css/vendor.css">
     <link rel="stylesheet" href="/css/main.css">
@@ -63,55 +63,27 @@
       </nav>
     </header>
     <!-- Page content -->
-    <div class="main-carousel">
-      <div class="slide"></div>
-      <div class="slide"></div>
-      <div class="slide"></div>
-    </div>
-    <div class="hero">
+    <div class="main-header ibi-italia">
       <div class="container">
-        <div class="row">
-          <div class="col-sm-3">
-            <div class="hero-box"><img src="/img/ibi-export-logo.jpg" alt="" class="img-responsive">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem soluta tempora, placeat obcaecati porro eligendi officiis, accusantium dolor. Sunt fuga ut quidem recusandae, molestias debitis dignissimos rem. Quaerat, porro accusamus.</p><a href="ibi-export">
-                <div class="btn btn-primary">Leggi tutto</div></a>
-            </div>
-          </div>
-          <div class="col-sm-3">
-            <div class="hero-box"><img src="/img/ibisqus-ospedale-logo.jpg" alt="" class="img-responsive">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque minima quia sunt ad alias consequatur enim, cumque, tenetur blanditiis perspiciatis ut eligendi molestias! Asperiores, aliquam, nobis. Corrupti temporibus tempore recusandae.</p><a href="ibisqus-ospedale">
-                <div class="btn btn-primary">Leggi tutto</div></a>
-            </div>
-          </div>
-          <div class="col-sm-3">
-            <div class="hero-box"><img src="/img/ibi-italia-logo.jpg" alt="" class="img-responsive">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae incidunt assumenda sint rerum optio architecto perspiciatis quaerat, dignissimos esse aperiam eius eligendi dolorum, id minus earum quisquam asperiores. Iste, facilis!</p><a href="ibi-italia">
-                <div class="btn btn-primary">Leggi tutto</div></a>
-            </div>
-          </div>
-          <div class="col-sm-3">
-            <div class="hero-box"><img src="/img/ibi-toll-manufacturer-logo.jpg" alt="" class="img-responsive">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor eveniet exercitationem possimus illo provident commodi corporis cumque odit ducimus veniam at quaerat, consectetur voluptate, sequi illum blanditiis ipsum, hic atque!</p><a href="ibi-toll-manufacturer">
-                <div class="btn btn-primary">Leggi tutto</div></a>
-            </div>
-          </div>
+        <div class="main-caption">
+          <h1><span>ibi </span>Italia</h1>
         </div>
       </div>
     </div>
     <section class="content">
       <div class="container">
         <div class="row">
-          <div class="col-md-8">
-            <h2>IBI: 90 anni di esperienza</h2>
-            <h3>La nostra storia, i nostri valori</h3><img src="/img/home-content-img.jpg" class="img-responsive">
+          <div class="col-sm-8"><img src="/img/ibi-italia-logo.jpg"><a href="#" class="pull-right">
+              <div class="btn btn-primary btn-products">Elenco prodotti ibi export</div></a>
             <p>
-              L’Istituto Biochimico italiano, Ibi, fondato nel 1918 dal Prof. Giovanni Lorenzini, vanta una lunga tradizione scientifica che, unita alle nuove tecnologie applicate e ad un’attenta cura nella produzione, fanno della Ibi sinonimo di affidabilità e garanzia di alta qualità. Con i suoi 18.000 mq di impianti ed un nuovo edificio completamente dedicato alla produzione di ß-lattamici,  Ibi offre servizi e tecnologia all’avanguardia che la posizionano tra le prime 10 aziende italiane nella produzione conto terzi. 
+              L’Istituto Biochimico Italiano, Ibi, fondato dal Prof. Giovanni Lorenzini, è un’azienda farmaceutica di grande tradizione scientifica presente sul mercato italiano da 90 anni.
               <br><br>
-              Ibi è oggi presente in più di 30 paesi con un’esportazione di tutta la gamma dei suoi prodotti pari ai 2/3 della produzione ed è una delle poche aziende, fuori dal territorio americano, ad aver ottenuto l’approvazione dell’ FDA per produrre penicilline sterili per il mercato statunitense.
+              Ibi dedica la propria attività allo sviluppo di nuove applicazioni terapeutiche per offrire soluzioni alternative alla classe medica ed è oggi una realtà consolidata sia in Italia che all’estero. Sul mercato italiano è presente con una ampia varietà di prodotti che spaziano dalle penicilline sterili agli integratori alimentari ed ha una presenza consolidata nell’antibioticoterapia ed è attiva in varie aree terapeutiche, quali la gastroenterologia, l’anestesiologia e l’area infiammazione e dolore.
               <br><br>
-              Ibi ha sviluppato una nuova strategia di distribuzione negli ospedali affidando la commercializzazione dei prodotti ad una nuova struttura dedicata, Ibisqus, nata da una joint venture oggi presente in UK, Germania ed Italia. Sul mercato italiano...
+              Ibi raggiunge direttamente 4.000 farmacie e 3.000 specialisti, grazie ad una rete di informatori scientifici altamente qualificati, e indirettamente oltre 6.000 medici di base con attività di direct mailing, detailing e newsletter.
+              <br><br>
+              La sede Ibi si trova ad Aprilia dove, oltre allo stabilimento di produzione, sono collocate tutte le funzioni aziendali.			
             </p>
-            <div class="btn btn-primary">Leggi tutto</div>
           </div>
           <div class="col-md-4">
             <div class="sidebar">

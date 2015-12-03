@@ -1,0 +1,106 @@
+extend blocks/template
+
+// Page title
+block title
+	| Ibi Lorenzini | Contatti
+
+// Page meta-description
+block append metatags 
+	meta(name='description', content='Ibi Lorenzini')
+
+block content	
+	// Including header
+	include blocks/header
+	// Page content 
+	.main-header.contatti
+		.container
+			.main-caption
+				h1 Contatti
+	section.content.contatti-content
+		.container
+			.row
+				.col-md-12
+					.row
+						.col-md-8
+							.row
+								.col-sm-6
+									.loghi
+										img(src="/img/contatti-italia-export.jpg")
+									p
+										|Indirizzo e Sede legale:<br>
+										|Istituto Biochimico Italiano <br>
+										|Giovanni Lorenzini S.p.A. <br>
+										|Via Fossignano, 2 <br>
+										|04011 Aprilia (LT) Italy
+										<br><br>
+										|Centralino +39 06 92150 1<br>
+										|Fax +39 06 92150 500<br>
+										|info@ibi-lorenzini.com<br>
+										|P.IVA 02578030153
+								.col-sm-6
+									.loghi
+										img(src="/img/contatti-export.jpg")
+									p
+										|Export Department<br>
+										|Fax +39 06 92150.598<br>
+										|export@ibi-lorenzini.com
+										<br><br>
+										|Contract Manufacturing Services<br>
+										|cms@ibi-lorenzini.com
+										<br><br>
+										|Pharmaceutical Development Services<br>
+										|pds@ibi-lorenzini.com
+								.col-xs-12
+									.borded
+								.col-xs-12
+									.row
+										.col-sm-6
+											p
+												|Contract Manufacturing Services<br>
+												|cms@ibi-lorenzini.com
+												<br><br>
+												|Pharmaceutical Development Services<br>
+												|pds@ibi-lorenzini.com
+										.col-sm-6
+											p
+												|Dipartimento di Farmacovigilanza IBIGEN e IBI<br>
+												|Tel. +39 06 92150 395<br>
+												|Fax +39 06 92150 573<br>
+												|pharmacovigilance@ibi-lorenzini.com<br>
+												|pharmacovigilance@ibigen.it
+						.col-md-4
+							img.img-responsive(src="/img/mappa1.jpg", style="margin-top: 85px;")
+				.col-md-12
+					.row
+						.col-md-8
+							.loghi.contatti-ibisqus-logo
+								img(src="/img/ibisqus-ospedale-logo.jpg", alt="")
+							#accordion.panel-group(role='tablist', aria-multiselectable='true')
+								.panel.panel-default
+									#headingOne.panel-heading(role='tab')
+										h4.panel-title
+											a(role='button', data-toggle='collapse', data-parent='#accordion', href='#collapseOne', aria-expanded='true', aria-controls='collapseOne')
+												| Sede in Italia
+									#collapseOne.panel-collapse.collapse.in(role='tabpanel', aria-labelledby='headingOne')
+										.panel-body
+											| Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+								.panel.panel-default
+									#headingTwo.panel-heading(role='tab')
+										h4.panel-title
+											a.collapsed(role='button', data-toggle='collapse', data-parent='#accordion', href='#collapseTwo', aria-expanded='false', aria-controls='collapseTwo')
+												| Sede in Germania
+									#collapseTwo.panel-collapse.collapse(role='tabpanel', aria-labelledby='headingTwo')
+										.panel-body
+											| Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+								.panel.panel-default
+									#headingThree.panel-heading(role='tab')
+										h4.panel-title
+											a.collapsed(role='button', data-toggle='collapse', data-parent='#accordion', href='#collapseThree', aria-expanded='false', aria-controls='collapseThree')
+												| Sede in Inghiterra
+									#collapseThree.panel-collapse.collapse(role='tabpanel', aria-labelledby='headingThree')
+										.panel-body
+											| Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+						.col-md-4
+							img.img-responsive(src="/img/mappa1.jpg", style="margin-top: 85px;")
+	// Including footer
+	include blocks/footer

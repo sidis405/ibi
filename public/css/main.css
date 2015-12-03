@@ -5,7 +5,9 @@ Essentials styles
 */
 body {
   font-family: 'Lato';
-  color: #666; }
+  color: #666;
+  font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased; }
 
 /*
 -------------------------
@@ -23,21 +25,32 @@ section.content {
     text-transform: uppercase;
     margin: 5px 0 30px 0;
     font-size: 16px; }
+  section.content h4 {
+    text-transform: uppercase;
+    margin: 5px 0 30px 0;
+    font-size: 16px;
+    font-weight: 700;
+    color: #00509a; }
   section.content p {
     text-align: justify;
     font-size: 16px;
     margin: 30px auto; }
   section.content .btn {
     padding: 10px 25px;
+    display: inline-block;
     background: #1fa9ad;
+    font-weight: 700;
     text-transform: uppercase;
     border-radius: 0;
     border: 0;
     font-size: 12px; }
 
-.titles, .sidebar .news h3, footer .footer-box h4 {
+.titles, .sidebar h3, footer .footer-box h4 {
   text-transform: uppercase;
   font-weight: 700; }
+
+.btn.btn-products {
+  margin: 20px 0 -10px 0; }
 
 /*
 -------------------------
@@ -47,12 +60,14 @@ Sidebar styles
 .sidebar {
   background: #d9e5fa;
   padding: 10px; }
+  .sidebar h3 {
+    color: #1fa9ad;
+    font-size: 26px !important;
+    margin: 40px 0 10px 0; }
   .sidebar .sidebar-actions img {
     margin-bottom: 10px;
     display: block;
     width: 100%; }
-  .sidebar .news h3 {
-    color: #1fa9ad; }
   .sidebar .news .single-news {
     margin: 15px 0;
     background: #f2f2f2; }
@@ -71,7 +86,7 @@ Sidebar styles
       font-size: 10px;
       text-align: justify;
       padding-right: 5px;
-      margin: 0 0 5px 0; }
+      margin: 0 0 5px 0 !important; }
     .sidebar .news .single-news .read-more-news {
       text-transform: uppercase;
       float: right;
@@ -79,6 +94,44 @@ Sidebar styles
       font-weight: 700;
       color: #00509a;
       padding-right: 5px; }
+  .sidebar.farmacovigilanza-sidebar {
+    background: transparent; }
+    .sidebar.farmacovigilanza-sidebar h3 {
+      border-bottom: 1px dotted #666;
+      padding-bottom: 10px;
+      margin: 10px 0; }
+    .sidebar.farmacovigilanza-sidebar .row.comunicati {
+      background: #d9e5fa; }
+      .sidebar.farmacovigilanza-sidebar .row.comunicati .comunicato {
+        margin: 15px 0;
+        padding: 10px;
+        background: #f2f2f2; }
+        .sidebar.farmacovigilanza-sidebar .row.comunicati .comunicato p {
+          font-size: 12px;
+          text-align: justify;
+          padding-right: 5px;
+          color: #00509a;
+          font-weight: 700;
+          margin: 0 0 5px 0 !important; }
+        .sidebar.farmacovigilanza-sidebar .row.comunicati .comunicato a.read-more {
+          color: #1fa9ad;
+          text-transform: uppercase;
+          font-weight: 700;
+          font-size: 12px; }
+    .sidebar.farmacovigilanza-sidebar .row.schede-segnalazione {
+      background: #e6f8f8;
+      margin-top: 15px; }
+      .sidebar.farmacovigilanza-sidebar .row.schede-segnalazione .schede ul {
+        padding: 0;
+        list-style: none; }
+        .sidebar.farmacovigilanza-sidebar .row.schede-segnalazione .schede ul li {
+          margin: 10px 0; }
+          .sidebar.farmacovigilanza-sidebar .row.schede-segnalazione .schede ul li:first-of-type {
+            font-weight: 700; }
+  .sidebar.lavora-con-noi-sidebar h3 {
+    border-bottom: 1px dotted #666;
+    padding-bottom: 10px;
+    margin: 10px 0; }
 
 /*
 -------------------------
@@ -169,7 +222,7 @@ footer {
 
 /*
 -------------------------
-Home carousel
+Home page
 -------------------------
 */
 .main-carousel {
@@ -180,19 +233,16 @@ Home carousel
     height: 500px;
     background-size: cover; }
 
-/*
--------------------------
-Hero
--------------------------
-*/
+/* Hero */
 .hero {
   background: url(../img/hero-background.jpg) no-repeat center center;
   width: 100%;
-  padding: 70px 0; }
+  padding: 60px 0; }
   .hero .hero-box {
     width: 100%;
     background: #fff;
-    padding: 0 25px; }
+    padding: 0 25px;
+    min-height: 381px; }
     .hero .hero-box img {
       margin: auto;
       display: block;
@@ -206,6 +256,7 @@ Hero
       width: 100%;
       border-radius: 0;
       border: 0;
+      font-weight: 700;
       margin: 20px 0;
       padding: 10px 0;
       font-size: 12px;
@@ -214,9 +265,101 @@ Hero
 
 /*
 -------------------------
+Page Headers
+-------------------------
+*/
+.main-header {
+  width: 100%;
+  height: 270px;
+  position: relative; }
+  .main-header .main-caption {
+    position: absolute;
+    bottom: -8px; }
+    .main-header .main-caption span {
+      font-style: italic;
+      text-transform: none; }
+    .main-header .main-caption h1 {
+      color: #fff;
+      font-weight: 300;
+      font-size: 60px;
+      text-transform: uppercase;
+      margin: 0; }
+  .main-header.chi-siamo {
+    background: url(../img/main-chi-siamo.jpg) no-repeat center center;
+    background-size: cover; }
+  .main-header.ibi-export {
+    background: url(../img/main-chi-siamo.jpg) no-repeat center center;
+    background-size: cover; }
+  .main-header.ibi-italia {
+    background: url(../img/main-chi-siamo.jpg) no-repeat center center;
+    background-size: cover; }
+  .main-header.ibi-manufacturer {
+    background: url(../img/main-chi-siamo.jpg) no-repeat center center;
+    background-size: cover; }
+  .main-header.ibisqus-ospedale {
+    background: url(../img/main-chi-siamo.jpg) no-repeat center center;
+    background-size: cover; }
+  .main-header.ricerca-innovazione {
+    background: url(../img/main-chi-siamo.jpg) no-repeat center center;
+    background-size: cover; }
+  .main-header.farmacovigilanza {
+    background: url(../img/main-chi-siamo.jpg) no-repeat center center;
+    background-size: cover; }
+  .main-header.contatti {
+    background: url(../img/main-chi-siamo.jpg) no-repeat center center;
+    background-size: cover; }
+  .main-header.lavora-con-noi {
+    background: url(../img/main-chi-siamo.jpg) no-repeat center center;
+    background-size: cover; }
+
+/*
+-------------------------
+Tabs
+-------------------------
+*/
+.tabs .tab-content {
+  margin-top: 50px; }
+
+.tabs.manufactoring-tabs {
+  margin-top: 50px; }
+
+.tabs.ricerca-tabs h3 {
+  color: #00509a;
+  font-weight: 700;
+  margin: 40px 0 20px 0; }
+
+.tabs.ricerca-tabs .tab-content ul {
+  padding: 0 0 30px 40px;
+  border-bottom: 1px dotted #666; }
+
+/*
+-------------------------
 Content
 -------------------------
 */
+section.content.farmacovigilanza-content h4 {
+  margin-bottom: 10px; }
+
+section.content.farmacovigilanza-content p {
+  margin-top: 0; }
+  section.content.farmacovigilanza-content p:first-of-type {
+    margin-top: 30px; }
+
+section.content.contatti-content .loghi {
+  padding-bottom: 15px;
+  border-bottom: 1px dotted #666; }
+  section.content.contatti-content .loghi.contatti-ibisqus-logo {
+    margin-top: 50px; }
+
+section.content.contatti-content .borded {
+  border-bottom: 1px dotted #666; }
+
+section.content.contatti-content #accordion .panel {
+  border: 0;
+  border-radius: 0; }
+  section.content.contatti-content #accordion .panel .panel-title {
+    margin: 5px 0; }
+
 /*
 -------------------------
 Responsive styles

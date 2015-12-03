@@ -1,0 +1,39 @@
+extend blocks/template
+
+// Page title
+block title
+	| Ibi Lorenzini | Ibi Italia
+
+// Page meta-description
+block append metatags 
+	meta(name='description', content='L’Istituto Biochimico Italiano, Ibi, fondato dal Prof. Giovanni Lorenzini, è un’azienda farmaceutica di grande tradizione scientifica presente sul mercato italiano da 90 anni.')
+
+block content	
+	// Including header
+	include blocks/header
+	// Page content 
+	.main-header.ibi-italia
+		.container
+			.main-caption
+				h1
+					span ibi 
+					|Italia
+	section.content
+		.container
+			.row
+				.col-sm-8
+					img(src="/img/ibi-italia-logo.jpg")
+					a.pull-right(href="#")
+						.btn.btn-primary.btn-products
+							| Elenco prodotti ibi export
+					p
+						|L’Istituto Biochimico Italiano, Ibi, fondato dal Prof. Giovanni Lorenzini, è un’azienda farmaceutica di grande tradizione scientifica presente sul mercato italiano da 90 anni.
+						<br><br>
+						|Ibi dedica la propria attività allo sviluppo di nuove applicazioni terapeutiche per offrire soluzioni alternative alla classe medica ed è oggi una realtà consolidata sia in Italia che all’estero. Sul mercato italiano è presente con una ampia varietà di prodotti che spaziano dalle penicilline sterili agli integratori alimentari ed ha una presenza consolidata nell’antibioticoterapia ed è attiva in varie aree terapeutiche, quali la gastroenterologia, l’anestesiologia e l’area infiammazione e dolore.
+						<br><br>
+						|Ibi raggiunge direttamente 4.000 farmacie e 3.000 specialisti, grazie ad una rete di informatori scientifici altamente qualificati, e indirettamente oltre 6.000 medici di base con attività di direct mailing, detailing e newsletter.
+						<br><br>
+						|La sede Ibi si trova ad Aprilia dove, oltre allo stabilimento di produzione, sono collocate tutte le funzioni aziendali.			
+				include blocks/sidebar
+	// Including footer
+	include blocks/footer

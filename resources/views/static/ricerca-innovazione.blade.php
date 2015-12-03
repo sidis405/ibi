@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Ibi Lorenzini</title>
+    <title>Ibi Lorenzini | Ricerca e Innovazione</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -63,55 +63,68 @@
       </nav>
     </header>
     <!-- Page content -->
-    <div class="main-carousel">
-      <div class="slide"></div>
-      <div class="slide"></div>
-      <div class="slide"></div>
-    </div>
-    <div class="hero">
+    <div class="main-header ricerca-innovazione">
       <div class="container">
-        <div class="row">
-          <div class="col-sm-3">
-            <div class="hero-box"><img src="/img/ibi-export-logo.jpg" alt="" class="img-responsive">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem soluta tempora, placeat obcaecati porro eligendi officiis, accusantium dolor. Sunt fuga ut quidem recusandae, molestias debitis dignissimos rem. Quaerat, porro accusamus.</p><a href="ibi-export">
-                <div class="btn btn-primary">Leggi tutto</div></a>
-            </div>
-          </div>
-          <div class="col-sm-3">
-            <div class="hero-box"><img src="/img/ibisqus-ospedale-logo.jpg" alt="" class="img-responsive">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque minima quia sunt ad alias consequatur enim, cumque, tenetur blanditiis perspiciatis ut eligendi molestias! Asperiores, aliquam, nobis. Corrupti temporibus tempore recusandae.</p><a href="ibisqus-ospedale">
-                <div class="btn btn-primary">Leggi tutto</div></a>
-            </div>
-          </div>
-          <div class="col-sm-3">
-            <div class="hero-box"><img src="/img/ibi-italia-logo.jpg" alt="" class="img-responsive">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae incidunt assumenda sint rerum optio architecto perspiciatis quaerat, dignissimos esse aperiam eius eligendi dolorum, id minus earum quisquam asperiores. Iste, facilis!</p><a href="ibi-italia">
-                <div class="btn btn-primary">Leggi tutto</div></a>
-            </div>
-          </div>
-          <div class="col-sm-3">
-            <div class="hero-box"><img src="/img/ibi-toll-manufacturer-logo.jpg" alt="" class="img-responsive">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor eveniet exercitationem possimus illo provident commodi corporis cumque odit ducimus veniam at quaerat, consectetur voluptate, sequi illum blanditiis ipsum, hic atque!</p><a href="ibi-toll-manufacturer">
-                <div class="btn btn-primary">Leggi tutto</div></a>
-            </div>
-          </div>
+        <div class="main-caption">
+          <h1>Ricerca e innovazione</h1>
         </div>
       </div>
     </div>
     <section class="content">
       <div class="container">
         <div class="row">
-          <div class="col-md-8">
-            <h2>IBI: 90 anni di esperienza</h2>
-            <h3>La nostra storia, i nostri valori</h3><img src="/img/home-content-img.jpg" class="img-responsive">
-            <p>
-              L’Istituto Biochimico italiano, Ibi, fondato nel 1918 dal Prof. Giovanni Lorenzini, vanta una lunga tradizione scientifica che, unita alle nuove tecnologie applicate e ad un’attenta cura nella produzione, fanno della Ibi sinonimo di affidabilità e garanzia di alta qualità. Con i suoi 18.000 mq di impianti ed un nuovo edificio completamente dedicato alla produzione di ß-lattamici,  Ibi offre servizi e tecnologia all’avanguardia che la posizionano tra le prime 10 aziende italiane nella produzione conto terzi. 
-              <br><br>
-              Ibi è oggi presente in più di 30 paesi con un’esportazione di tutta la gamma dei suoi prodotti pari ai 2/3 della produzione ed è una delle poche aziende, fuori dal territorio americano, ad aver ottenuto l’approvazione dell’ FDA per produrre penicilline sterili per il mercato statunitense.
-              <br><br>
-              Ibi ha sviluppato una nuova strategia di distribuzione negli ospedali affidando la commercializzazione dei prodotti ad una nuova struttura dedicata, Ibisqus, nata da una joint venture oggi presente in UK, Germania ed Italia. Sul mercato italiano...
-            </p>
-            <div class="btn btn-primary">Leggi tutto</div>
+          <div class="col-sm-8">					
+            <div class="tabs ricerca-tabs">
+              <!-- Nav tabs-->
+              <ul role="tablist" class="nav nav-tabs">
+                <li role="presentation"><a href="#innovativi" aria-controls="innovativi" role="tab" data-toggle="tab">Delivery innovativi</a></li>
+                <li role="presentation"><a href="#biotecnologie" aria-controls="biotecnologie" role="tab" data-toggle="tab">Biotecnologie	</a></li>
+                <li role="presentation" class="active"><a href="#pubblicazioni" aria-controls="pubblicazioni" role="tab" data-toggle="tab">Pubblicazioni	</a></li>
+                <li role="presentation"><a href="#progetti" aria-controls="progetti" role="tab" data-toggle="tab">Progetti			</a></li>
+              </ul>
+              <!-- Tab panes-->
+              <div class="tab-content">
+                <div id="innovativi" role="tabpanel" class="tab-pane">
+                  <p>
+                    Ne sitatius excea que vende as explignis exerem renditia estius que aria quae iunt, nat esed quatus invendae nia dis ex expersped ma net, eost que venem que pel ea sam et acerem conet esti volorum quia sime elecus.
+                    Ihilit esto dipsam fuga. Itas eum volorae ipsunt eum et dolor audandunt ius enit, il ipsunt lab ium acearci desseque et facea prat.
+                    Se voles eos is sitat dunt lab iunt, idunt hicitatis ma nus nullabo rersperio consedi gendell aborum rerferumet ulpa si doluptat.									
+                  </p>
+                </div>
+                <div id="biotecnologie" role="tabpanel" class="tab-pane">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem placeat nulla, inventore hic voluptatem distinctio asperiores. Numquam maxime id, voluptate rem quisquam voluptates. Consequuntur quo voluptatem asperiores qui. Aperiam, ducimus.		</p>
+                </div>
+                <div id="pubblicazioni" role="tabpanel" class="tab-pane active">
+                  <h3>Pubblicazioni</h3>
+                  <ul>
+                    <li>Pubblicazioni</li>
+                    <li>Pubblicazioni</li>
+                    <li>Pubblicazioni</li>
+                    <li>Pubblicazioni</li>
+                    <li>Pubblicazioni</li>
+                  </ul>
+                  <h3>Poster</h3>
+                  <ul>
+                    <li>Poster</li>
+                    <li>Poster</li>
+                    <li>Poster</li>
+                    <li>Poster</li>
+                    <li>Poster</li>
+                  </ul>
+                  <h3>Domande di brevetti</h3>
+                  <ul>
+                    <li>Domande di brevetti</li>
+                    <li>Domande di brevetti</li>
+                    <li>Domande di brevetti</li>
+                    <li>Domande di brevetti</li>
+                    <li>Domande di brevetti</li>
+                  </ul>
+                </div>
+                <div id="progetti" role="tabpanel" class="tab-pane">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem placeat nulla, inventore hic voluptatem distinctio asperiores. Numquam maxime id, voluptate rem quisquam voluptates. Consequuntur quo voluptatem asperiores qui. Aperiam, ducimus.</p>
+                </div>
+              </div>
+            </div>
           </div>
           <div class="col-md-4">
             <div class="sidebar">

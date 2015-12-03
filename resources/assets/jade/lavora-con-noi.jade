@@ -1,0 +1,29 @@
+extend blocks/template
+
+// Page title
+block title
+	| Ibi Lorenzini | Lavora con noi
+
+// Page meta-description
+block append metatags 
+	meta(name='description', content='Ibi Lorenzini')
+
+block content	
+	// Including header
+	include blocks/header
+	// Page content 
+	.main-header.lavora-con-noi
+		.container
+			.main-caption
+				h1 Lavora con noi
+	section.content
+		.container
+			.row
+				.col-sm-8
+					h2
+						| Lavora con noi
+					h3
+						| Una grande opportunità per il tuo futuro							
+				include blocks/sidebar-lavora-con-noi
+	// Including footer
+	include blocks/footer

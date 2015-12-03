@@ -1,0 +1,55 @@
+extend blocks/template
+
+// Page title
+block title
+	| Ibi Lorenzini | Ibi Export
+
+// Page meta-description
+block append metatags 
+	meta(name='description', content='Ibi è oggi presente in più di 30 Paesi con un’esportazione di tutta la gamma dei suoi prodotti pari ai 2/3 della produzione. Il mercato estero riveste un ruolo molto importante: le esportazioni infatti sono intorno all’80% del fatturato.')
+
+block content	
+	// Including header
+	include blocks/header
+	// Page content 
+	.main-header.ibi-export
+		.container
+			.main-caption
+				h1
+					span ibi 
+					| Export
+	section.content
+		.container
+			.row
+				.col-sm-8
+					.tabs.ibi-export-tabs
+						// Nav tabs
+						ul.nav.nav-tabs(role='tablist')
+							li.active(role='presentation')
+								a(href='#ibi-export', aria-controls='ibi-export', role='tab', data-toggle='tab') Ibi export
+							li(role='presentation')
+								a(href='#licensing-out', aria-controls='licensing-out', role='tab', data-toggle='tab') Licensing out						
+						// Tab panes
+						.tab-content
+							#ibi-export.tab-pane.active(role='tabpanel')
+								a(href="#")
+									.btn.btn-primary.btn-products
+										| Elenco prodotti ibi export
+								p
+									|Ibi è oggi presente in più di 30 Paesi con un’esportazione di tutta la gamma dei suoi prodotti pari ai 2/3 della produzione.
+									|Il mercato estero riveste un ruolo molto importante: le esportazioni infatti sono intorno all’80% del fatturato.<br>
+									b IBI è presente in EUROPA, NORD AMERICA, AMERICA CENTRALE, ASIA e OCEANIA.
+
+								img.img-responsive(src="http://placehold.it/750x350")									
+								
+								p
+									|Grazie ai continui investimenti per il rinnovo dei reparti produttivi e l’uso di metodiche originali di sintesi brevettate, Ibi mantiene la sua competitività nel panorama internazionale garantendo alti standard qualitativi dei suoi prodotti.<br><br>
+									|Ibi produce tutta la gamma delle penicilline sterili con Certificati di Conformità in osservanza alle direttive della Farmacopea Europea. Le produzioni dedicate alle penicilline sterili lavorano in condizioni di current Good Manufacturing Procedures (cGMP) e sono approvate dalle Autorità Sanitarie più esigenti.<br><br>
+									|La produzione Ibi è certificata da US FDA (Food and Drug Administration), Australian TGA (Therapeutic Goods Administration), UK MHRA (Medicines and Healthcare products regulatory agency), AIFA (Agenzia Italiana del Farmaco).									
+									
+							#licensing-out.tab-pane(role='tabpanel')
+								h2
+									| Licensing out							
+				include blocks/sidebar
+	// Including footer
+	include blocks/footer

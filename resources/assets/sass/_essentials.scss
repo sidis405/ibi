@@ -10,10 +10,13 @@ $green: #1fa9ad;
 $blue-gray: #d9e5fa;
 $title-color: #00509a;
 $barely-blank: #f2f2f2;
+$barely-green: #e6f8f8;
 
 body {
 	font-family: 'Lato';
 	color: $text-color;
+	font-smoothing:antialiased;
+	-webkit-font-smoothing:antialiased;
 }
 /*
 -------------------------
@@ -33,6 +36,13 @@ section.content {
 		margin: 5px 0 30px 0;
 		font-size: 16px;
 	}
+	h4 {
+		text-transform: uppercase;
+		margin: 5px 0 30px 0;
+		font-size: 16px;
+		font-weight: 700;
+		color: $title-color;
+	}
 	p {
 		text-align: justify;
 		font-size: 16px;
@@ -40,7 +50,9 @@ section.content {
 	}
 	.btn {
 		padding: 10px 25px;
-		background: $green;		
+		display: inline-block;
+		background: $green;
+		font-weight: 700;
 		text-transform: uppercase;
 		border-radius: 0;
 		border: 0;
@@ -51,4 +63,8 @@ section.content {
 .titles {
 	text-transform: uppercase;
 	font-weight: 700;	
+}
+
+.btn.btn-products {
+	margin: 20px 0 -10px 0;
 }

@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Ibi Lorenzini</title>
+    <title>Ibi Lorenzini | Ibi Export</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Ibi Lorenzini">
+    <meta name="description" content="Ibi è oggi presente in più di 30 Paesi con un’esportazione di tutta la gamma dei suoi prodotti pari ai 2/3 della produzione. Il mercato estero riveste un ruolo molto importante: le esportazioni infatti sono intorno all’80% del fatturato.">
     <!-- Google Fonts    --><link href='https://fonts.googleapis.com/css?family=Lato:400,700,700italic,300,300italic,400italic' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="/css/vendor.css">
     <link rel="stylesheet" href="/css/main.css">
@@ -63,55 +63,42 @@
       </nav>
     </header>
     <!-- Page content -->
-    <div class="main-carousel">
-      <div class="slide"></div>
-      <div class="slide"></div>
-      <div class="slide"></div>
-    </div>
-    <div class="hero">
+    <div class="main-header ibi-export">
       <div class="container">
-        <div class="row">
-          <div class="col-sm-3">
-            <div class="hero-box"><img src="/img/ibi-export-logo.jpg" alt="" class="img-responsive">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem soluta tempora, placeat obcaecati porro eligendi officiis, accusantium dolor. Sunt fuga ut quidem recusandae, molestias debitis dignissimos rem. Quaerat, porro accusamus.</p><a href="ibi-export">
-                <div class="btn btn-primary">Leggi tutto</div></a>
-            </div>
-          </div>
-          <div class="col-sm-3">
-            <div class="hero-box"><img src="/img/ibisqus-ospedale-logo.jpg" alt="" class="img-responsive">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque minima quia sunt ad alias consequatur enim, cumque, tenetur blanditiis perspiciatis ut eligendi molestias! Asperiores, aliquam, nobis. Corrupti temporibus tempore recusandae.</p><a href="ibisqus-ospedale">
-                <div class="btn btn-primary">Leggi tutto</div></a>
-            </div>
-          </div>
-          <div class="col-sm-3">
-            <div class="hero-box"><img src="/img/ibi-italia-logo.jpg" alt="" class="img-responsive">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae incidunt assumenda sint rerum optio architecto perspiciatis quaerat, dignissimos esse aperiam eius eligendi dolorum, id minus earum quisquam asperiores. Iste, facilis!</p><a href="ibi-italia">
-                <div class="btn btn-primary">Leggi tutto</div></a>
-            </div>
-          </div>
-          <div class="col-sm-3">
-            <div class="hero-box"><img src="/img/ibi-toll-manufacturer-logo.jpg" alt="" class="img-responsive">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor eveniet exercitationem possimus illo provident commodi corporis cumque odit ducimus veniam at quaerat, consectetur voluptate, sequi illum blanditiis ipsum, hic atque!</p><a href="ibi-toll-manufacturer">
-                <div class="btn btn-primary">Leggi tutto</div></a>
-            </div>
-          </div>
+        <div class="main-caption">
+          <h1><span>ibi </span>Export</h1>
         </div>
       </div>
     </div>
     <section class="content">
       <div class="container">
         <div class="row">
-          <div class="col-md-8">
-            <h2>IBI: 90 anni di esperienza</h2>
-            <h3>La nostra storia, i nostri valori</h3><img src="/img/home-content-img.jpg" class="img-responsive">
-            <p>
-              L’Istituto Biochimico italiano, Ibi, fondato nel 1918 dal Prof. Giovanni Lorenzini, vanta una lunga tradizione scientifica che, unita alle nuove tecnologie applicate e ad un’attenta cura nella produzione, fanno della Ibi sinonimo di affidabilità e garanzia di alta qualità. Con i suoi 18.000 mq di impianti ed un nuovo edificio completamente dedicato alla produzione di ß-lattamici,  Ibi offre servizi e tecnologia all’avanguardia che la posizionano tra le prime 10 aziende italiane nella produzione conto terzi. 
-              <br><br>
-              Ibi è oggi presente in più di 30 paesi con un’esportazione di tutta la gamma dei suoi prodotti pari ai 2/3 della produzione ed è una delle poche aziende, fuori dal territorio americano, ad aver ottenuto l’approvazione dell’ FDA per produrre penicilline sterili per il mercato statunitense.
-              <br><br>
-              Ibi ha sviluppato una nuova strategia di distribuzione negli ospedali affidando la commercializzazione dei prodotti ad una nuova struttura dedicata, Ibisqus, nata da una joint venture oggi presente in UK, Germania ed Italia. Sul mercato italiano...
-            </p>
-            <div class="btn btn-primary">Leggi tutto</div>
+          <div class="col-sm-8">
+            <div class="tabs ibi-export-tabs">
+              <!-- Nav tabs-->
+              <ul role="tablist" class="nav nav-tabs">
+                <li role="presentation" class="active"><a href="#ibi-export" aria-controls="ibi-export" role="tab" data-toggle="tab">Ibi export</a></li>
+                <li role="presentation"><a href="#licensing-out" aria-controls="licensing-out" role="tab" data-toggle="tab">Licensing out						</a></li>
+              </ul>
+              <!-- Tab panes-->
+              <div class="tab-content">
+                <div id="ibi-export" role="tabpanel" class="tab-pane active"><a href="#">
+                    <div class="btn btn-primary btn-products">Elenco prodotti ibi export</div></a>
+                  <p>
+                    Ibi è oggi presente in più di 30 Paesi con un’esportazione di tutta la gamma dei suoi prodotti pari ai 2/3 della produzione.
+                    Il mercato estero riveste un ruolo molto importante: le esportazioni infatti sono intorno all’80% del fatturato.<br><b>IBI è presente in EUROPA, NORD AMERICA, AMERICA CENTRALE, ASIA e OCEANIA.</b>
+                  </p><img src="http://placehold.it/750x350" class="img-responsive">
+                  <p>
+                    Grazie ai continui investimenti per il rinnovo dei reparti produttivi e l’uso di metodiche originali di sintesi brevettate, Ibi mantiene la sua competitività nel panorama internazionale garantendo alti standard qualitativi dei suoi prodotti.<br><br>
+                    Ibi produce tutta la gamma delle penicilline sterili con Certificati di Conformità in osservanza alle direttive della Farmacopea Europea. Le produzioni dedicate alle penicilline sterili lavorano in condizioni di current Good Manufacturing Procedures (cGMP) e sono approvate dalle Autorità Sanitarie più esigenti.<br><br>
+                    La produzione Ibi è certificata da US FDA (Food and Drug Administration), Australian TGA (Therapeutic Goods Administration), UK MHRA (Medicines and Healthcare products regulatory agency), AIFA (Agenzia Italiana del Farmaco).									
+                  </p>
+                </div>
+                <div id="licensing-out" role="tabpanel" class="tab-pane">
+                  <h2>Licensing out							</h2>
+                </div>
+              </div>
+            </div>
           </div>
           <div class="col-md-4">
             <div class="sidebar">

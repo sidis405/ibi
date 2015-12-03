@@ -1,0 +1,34 @@
+extend blocks/template
+
+// Page title
+block title
+	| Ibi Lorenzini | Ibicqus Ospedale
+
+// Page meta-description
+block append metatags 
+	meta(name='description', content='A quasi 90 anni dalla data della sua fondazione l’Istituto Biochimico IItaliano si sta dirigendo verso una strategia di crescita e rinnovamento, con l’obiettivo di competere a livello internazionale.')
+
+block content	
+	// Including header
+	include blocks/header
+	// Page content 
+	.main-header.ibisqus-ospedale
+		.container
+			.main-caption
+				h1 Ibisqus ospedale
+	section.content
+		.container
+			.row
+				.col-sm-8
+					img(src="/img/ibisqus-ospedale-logo.jpg", alt="")
+					a.pull-right(href="#")
+						.btn.btn-primary.btn-products
+							| Elenco prodotti ibi export
+					p
+						|A quasi 90 anni dalla data della sua fondazione l’Istituto Biochimico IItaliano si sta dirigendo verso una strategia di crescita e rinnovamento, con l’obiettivo di competere a livello internazionale.
+						<br><br>
+						|La prima azienda del gruppo Ibi, IBIGEN, grazie alla joint venture con un gruppo internazionale, ha dato vita ad una nuova realtà, chiamata IBISQUS, interamente dedicata al canale Ospedale.
+						|Ibi ha sviluppato una nuova strategia per la distribuzione di farmaci sterili iniettabili verso gli Ospedali, veicolando la vendita dei propri prodotti attrverso IBISQUS, presente oggi in UK, Germania e Italia.										
+				include blocks/sidebar
+	// Including footer
+	include blocks/footer

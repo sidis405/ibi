@@ -5,7 +5,7 @@
 
 /*
 -------------------------
-Home carousel
+Home page
 -------------------------
 */
 .main-carousel {
@@ -18,20 +18,16 @@ Home carousel
 	}
 }
 
-/*
--------------------------
-Hero
--------------------------
-*/
-
+/* Hero */
 .hero {
 	background: url(../img/hero-background.jpg) no-repeat center center;
 	width: 100%;
-	padding: 70px 0;
+	padding: 60px 0;
 	.hero-box {
 		width: 100%;
 		background: #fff;
 		padding: 0 25px;
+		min-height: 381px;
 		img {
 			margin: auto;
 			display: block;
@@ -47,6 +43,7 @@ Hero
 			width: 100%;
 			border-radius: 0;
 			border: 0;
+			font-weight: 700;
 			margin: 20px 0;
 			padding: 10px 0;	
 			font-size: 12px;
@@ -58,13 +55,123 @@ Hero
 
 /*
 -------------------------
+Page Headers
+-------------------------
+*/
+.main-header {	
+	width: 100%;
+	height: 270px;
+	position: relative;
+	.main-caption {
+		position: absolute;
+		bottom: -8px;
+		span {
+			font-style: italic;
+			text-transform: none;
+		}
+		h1 {
+			color: #fff;
+			font-weight: 300;
+			font-size: 60px;
+			text-transform: uppercase;
+			margin: 0;
+		}
+	}
+	&.chi-siamo {
+		background: url(../img/main-chi-siamo.jpg) no-repeat center center;		
+		background-size: cover;		
+	}
+	&.ibi-export {
+		background: url(../img/main-chi-siamo.jpg) no-repeat center center;		
+		background-size: cover;		
+	}
+	&.ibi-italia {
+		background: url(../img/main-chi-siamo.jpg) no-repeat center center;		
+		background-size: cover;		
+	}
+	&.ibi-manufacturer {
+		background: url(../img/main-chi-siamo.jpg) no-repeat center center;		
+		background-size: cover;		
+	}
+	&.ibisqus-ospedale {
+		background: url(../img/main-chi-siamo.jpg) no-repeat center center;		
+		background-size: cover;		
+	}
+	&.ricerca-innovazione {
+		background: url(../img/main-chi-siamo.jpg) no-repeat center center;		
+		background-size: cover;		
+	}
+	&.farmacovigilanza {
+		background: url(../img/main-chi-siamo.jpg) no-repeat center center;		
+		background-size: cover;		
+	}
+	&.contatti {
+		background: url(../img/main-chi-siamo.jpg) no-repeat center center;		
+		background-size: cover;		
+	}
+	&.lavora-con-noi {
+		background: url(../img/main-chi-siamo.jpg) no-repeat center center;		
+		background-size: cover;		
+	}
+}
+/*
+-------------------------
+Tabs
+-------------------------
+*/
+.tabs {
+	.tab-content {margin-top: 50px;}
+	// manufactioring tabs
+	&.manufactoring-tabs {
+		margin-top: 50px;
+	}
+	// Ricerca tabs
+	&.ricerca-tabs {
+		h3 {
+			color: $title-color;
+			font-weight: 700;
+			margin: 40px 0 20px 0;
+		}
+		.tab-content {
+			ul {
+				padding: 0 0 30px 40px;
+				border-bottom: 1px dotted $text-color;
+			}
+		}		
+	}	
+}
+
+/*
+-------------------------
 Content
 -------------------------
 */
-
-
-
-
+section.content {
+	&.farmacovigilanza-content {
+		h4 {margin-bottom: 10px;}
+		p {
+			margin-top: 0;
+			&:first-of-type {margin-top: 30px;}
+		}
+	}
+	&.contatti-content {
+		.loghi {
+			padding-bottom: 15px;
+			border-bottom: 1px dotted $text-color;
+			&.contatti-ibisqus-logo {margin-top: 50px;}
+		}
+		.borded {			
+			border-bottom: 1px dotted $text-color;
+		}
+		#accordion {
+			.panel {
+				border: 0;
+				border-radius: 0;
+				.panel-title {margin: 5px 0;}
+			}
+		}
+	}
+}
 
 
 
