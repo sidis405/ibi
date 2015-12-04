@@ -146,9 +146,17 @@
           </div>
           <div class="col-md-4">
             <div class="sidebar">
-              <div class="row sidebar-actions">
-                <div class="col-xs-12"><img src="http://placehold.it/300x120" class="img-responsive"></div>
-                <div class="col-xs-12"><img src="http://placehold.it/300x120" class="img-responsive"></div>
+              <div class="row sidebar-hero">
+                <div class="col-xs-12">
+                  <div class="biotecnologia-sidebar">
+                    <h3>Biotecnologie</h3>
+                  </div>
+                </div>
+                <div class="col-xs-12">
+                  <div class="farmacovigilanza-sidebar">
+                    <h3>Farmacovigilanza</h3>
+                  </div>
+                </div>
               </div>
               <div class="row news">
                 <div class="col-xs-12">

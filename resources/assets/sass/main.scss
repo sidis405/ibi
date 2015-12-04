@@ -201,7 +201,15 @@ Products
 -------------------------
 */
 section.products-content {
-	.filter {display: inline-block; padding: 20px 40px;}
+	.filter {
+		display: inline-block;		
+		margin: auto;
+		width: 100%;
+		cursor: pointer;
+		img {
+			margin: auto;
+		}
+	}
 	.product {
 		width: 100%;
 		h2 {
@@ -240,20 +248,5 @@ section.products-content {
 		}
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 @import 'responsive';

@@ -120,108 +120,20 @@
             </div>
           </div>
           <div class="col-sm-9">
-            <div data-filter=".category-1" class="filter"><img src="/img/ibi-export-logo.jpg" alt=""></div>
-            <div data-filter=".category-2" class="filter"><img src="/img/ibisqus-ospedale-logo.jpg" alt=""></div>
-            <div data-filter=".category-3" class="filter"><img src="/img/ibi-italia-logo.jpg" alt=""></div>
+            <div class="row">
+              <div class="col-sm-4">
+                <div data-filter=".category-1" class="filter"><img src="/img/ibi-export-logo.jpg" alt="" class="img-responsive"></div>
+              </div>
+              <div class="col-sm-4">
+                <div data-filter=".category-2" class="filter"><img src="/img/ibisqus-ospedale-logo.jpg" alt="" class="img-responsive"></div>
+              </div>
+              <div class="col-sm-4">
+                <div data-filter=".category-3" class="filter"><img src="/img/ibi-italia-logo.jpg" alt="" class="img-responsive"></div>
+              </div>
+            </div>
             <div id="Container" class="row">
-              <div class="col-md-6"> 
-                <div class="product mix category-1">
-                  <h2 class="product-title">Acido zoledronico ibigen liofilizzato</h2>
-                  <ul>
-                    <li>
-                      <h5>Principio attivo</h5><span>Acido Zoledronico - Anidro</span>
-                    </li>
-                    <li>
-                      <h5>Formulazione</h5><span>750 mg IM/EV 1 flac. da 20 ml + solv. 1,6 ml</span>
-                    </li>
-                    <li class="more">
-                      <h5>Foglietto illustrativo										</h5>
-                    </li>
-                    <li class="more">
-                      <h5>Scheda tecnica</h5>
-                    </li>
-                    <li class="more">
-                      <h5>Aic</h5>
-                    </li>
-                    <li class="more">
-                      <h5>Atc</h5>
-                    </li>
-                    <li class="more">
-                      <h5>Fascia</h5>
-                    </li>
-                    <li class="more">
-                      <h5>Validità mesi</h5>
-                    </li>
-                    <li>
-                      <h5>Italia</h5><a href="#" class="read-more">Vedi tutto</a>
-                    </li>
-                  </ul>
-                </div>
-                <div class="product mix category-1">
-                  <h2 class="product-title">Acido zoledronico ibigen liofilizzato</h2>
-                  <ul>
-                    <li>
-                      <h5>Principio attivo</h5><span>Acido Zoledronico - Anidro</span>
-                    </li>
-                    <li>
-                      <h5>Formulazione</h5><span>750 mg IM/EV 1 flac. da 20 ml + solv. 1,6 ml</span>
-                    </li>
-                    <li class="more">
-                      <h5>Foglietto illustrativo										</h5>
-                    </li>
-                    <li class="more">
-                      <h5>Scheda tecnica</h5>
-                    </li>
-                    <li class="more">
-                      <h5>Aic</h5>
-                    </li>
-                    <li class="more">
-                      <h5>Atc</h5>
-                    </li>
-                    <li class="more">
-                      <h5>Fascia</h5>
-                    </li>
-                    <li class="more">
-                      <h5>Validità mesi</h5>
-                    </li>
-                    <li>
-                      <h5>Italia</h5><a href="#" class="read-more">Vedi tutto</a>
-                    </li>
-                  </ul>
-                </div>
-                <div class="product mix category-1">
-                  <h2 class="product-title">Acido zoledronico ibigen liofilizzato</h2>
-                  <ul>
-                    <li>
-                      <h5>Principio attivo</h5><span>Acido Zoledronico - Anidro</span>
-                    </li>
-                    <li>
-                      <h5>Formulazione</h5><span>750 mg IM/EV 1 flac. da 20 ml + solv. 1,6 ml</span>
-                    </li>
-                    <li class="more">
-                      <h5>Foglietto illustrativo										</h5>
-                    </li>
-                    <li class="more">
-                      <h5>Scheda tecnica</h5>
-                    </li>
-                    <li class="more">
-                      <h5>Aic</h5>
-                    </li>
-                    <li class="more">
-                      <h5>Atc</h5>
-                    </li>
-                    <li class="more">
-                      <h5>Fascia</h5>
-                    </li>
-                    <li class="more">
-                      <h5>Validità mesi</h5>
-                    </li>
-                    <li>
-                      <h5>Italia</h5><a href="#" class="read-more">Vedi tutto</a>
-                    </li>
-                  </ul>
-                </div>
-                <div class="product mix category-1">
+              <div class="col-md-6 mix category-1">
+                <div class="product">
                   <h2 class="product-title">Acido zoledronico ibigen liofilizzato</h2>
                   <ul>
                     <li>
@@ -254,8 +166,8 @@
                   </ul>
                 </div>
               </div>
-              <div class="col-md-6">
-                <div class="product mix category-1">
+              <div class="col-md-6 mix category-2">
+                <div class="product">
                   <h2 class="product-title">Acido zoledronico ibigen liofilizzato</h2>
                   <ul>
                     <li>
@@ -287,7 +199,9 @@
                     </li>
                   </ul>
                 </div>
-                <div class="product mix category-1">
+              </div>
+              <div class="col-md-6 mix category-3">
+                <div class="product">
                   <h2 class="product-title">Acido zoledronico ibigen liofilizzato</h2>
                   <ul>
                     <li>
@@ -319,7 +233,9 @@
                     </li>
                   </ul>
                 </div>
-                <div class="product mix category-1">
+              </div>
+              <div class="col-md-6 mix category-1">
+                <div class="product">
                   <h2 class="product-title">Acido zoledronico ibigen liofilizzato</h2>
                   <ul>
                     <li>
@@ -351,7 +267,111 @@
                     </li>
                   </ul>
                 </div>
-                <div class="product mix category-1">
+              </div>
+              <div class="col-md-6 mix category-2">
+                <div class="product">
+                  <h2 class="product-title">Acido zoledronico ibigen liofilizzato</h2>
+                  <ul>
+                    <li>
+                      <h5>Principio attivo</h5><span>Acido Zoledronico - Anidro</span>
+                    </li>
+                    <li>
+                      <h5>Formulazione</h5><span>750 mg IM/EV 1 flac. da 20 ml + solv. 1,6 ml</span>
+                    </li>
+                    <li class="more">
+                      <h5>Foglietto illustrativo										</h5>
+                    </li>
+                    <li class="more">
+                      <h5>Scheda tecnica</h5>
+                    </li>
+                    <li class="more">
+                      <h5>Aic</h5>
+                    </li>
+                    <li class="more">
+                      <h5>Atc</h5>
+                    </li>
+                    <li class="more">
+                      <h5>Fascia</h5>
+                    </li>
+                    <li class="more">
+                      <h5>Validità mesi</h5>
+                    </li>
+                    <li>
+                      <h5>Italia</h5><a href="#" class="read-more">Vedi tutto</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md-6 mix category-3">
+                <div class="product">
+                  <h2 class="product-title">Acido zoledronico ibigen liofilizzato</h2>
+                  <ul>
+                    <li>
+                      <h5>Principio attivo</h5><span>Acido Zoledronico - Anidro</span>
+                    </li>
+                    <li>
+                      <h5>Formulazione</h5><span>750 mg IM/EV 1 flac. da 20 ml + solv. 1,6 ml</span>
+                    </li>
+                    <li class="more">
+                      <h5>Foglietto illustrativo										</h5>
+                    </li>
+                    <li class="more">
+                      <h5>Scheda tecnica</h5>
+                    </li>
+                    <li class="more">
+                      <h5>Aic</h5>
+                    </li>
+                    <li class="more">
+                      <h5>Atc</h5>
+                    </li>
+                    <li class="more">
+                      <h5>Fascia</h5>
+                    </li>
+                    <li class="more">
+                      <h5>Validità mesi</h5>
+                    </li>
+                    <li>
+                      <h5>Italia</h5><a href="#" class="read-more">Vedi tutto</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md-6 mix category-1">
+                <div class="product">
+                  <h2 class="product-title">Acido zoledronico ibigen liofilizzato</h2>
+                  <ul>
+                    <li>
+                      <h5>Principio attivo</h5><span>Acido Zoledronico - Anidro</span>
+                    </li>
+                    <li>
+                      <h5>Formulazione</h5><span>750 mg IM/EV 1 flac. da 20 ml + solv. 1,6 ml</span>
+                    </li>
+                    <li class="more">
+                      <h5>Foglietto illustrativo										</h5>
+                    </li>
+                    <li class="more">
+                      <h5>Scheda tecnica</h5>
+                    </li>
+                    <li class="more">
+                      <h5>Aic</h5>
+                    </li>
+                    <li class="more">
+                      <h5>Atc</h5>
+                    </li>
+                    <li class="more">
+                      <h5>Fascia</h5>
+                    </li>
+                    <li class="more">
+                      <h5>Validità mesi</h5>
+                    </li>
+                    <li>
+                      <h5>Italia</h5><a href="#" class="read-more">Vedi tutto</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md-6 mix category-2">
+                <div class="product">
                   <h2 class="product-title">Acido zoledronico ibigen liofilizzato</h2>
                   <ul>
                     <li>

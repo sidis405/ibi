@@ -11,6 +11,14 @@ body {
 
 /*
 -------------------------
+MIXITUP
+-------------------------
+*/
+#Container .mix {
+  display: none; }
+
+/*
+-------------------------
 Main essentials
 -------------------------
 */
@@ -50,7 +58,7 @@ section.content {
 Helpers
 -------------------------
 */
-.titles, .sidebar h3, .sidebar.lavora-con-noi-sidebar .position h5, footer .footer-box h4 {
+.titles, .sidebar .news h3, .sidebar.lavora-con-noi-sidebar .position h5, footer .footer-box h4 {
   text-transform: uppercase;
   font-weight: 700; }
 
@@ -68,20 +76,36 @@ Sidebar styles
 .sidebar {
   background: #d9e5fa;
   padding: 10px; }
-  .sidebar h3 {
-    color: #1fa9ad;
-    font-size: 26px !important;
-    margin: 40px 0 10px 0; }
-  .sidebar .sidebar-actions img {
-    margin-bottom: 10px;
-    display: block;
-    width: 100%; }
+  .sidebar .sidebar-hero {
+    position: relative; }
+    .sidebar .sidebar-hero .biotecnologia-sidebar {
+      background: url(../img/biotecnologia-sidebar.jpg) no-repeat center center;
+      width: 100%;
+      height: 130px;
+      margin-bottom: 10px; }
+    .sidebar .sidebar-hero .farmacovigilanza-sidebar {
+      background: url(../img/farmacovigilanza-sidebar.jpg) no-repeat center center;
+      width: 100%;
+      height: 130px; }
+    .sidebar .sidebar-hero h3 {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      color: #fff;
+      font-size: 26px;
+      margin: 0; }
   .sidebar .read-more {
     text-transform: uppercase;
     font-size: 10px;
     font-weight: 700;
     color: #00509a;
     padding-right: 5px; }
+  .sidebar .news h3 {
+    color: #1fa9ad;
+    font-size: 26px !important;
+    margin: 40px 0 10px 0; }
   .sidebar .news .single-news {
     margin: 15px 0;
     background: #f2f2f2; }
@@ -452,7 +476,11 @@ Products
 */
 section.products-content .filter {
   display: inline-block;
-  padding: 20px 40px; }
+  margin: auto;
+  width: 100%;
+  cursor: pointer; }
+  section.products-content .filter img {
+    margin: auto; }
 
 section.products-content .product {
   width: 100%; }
