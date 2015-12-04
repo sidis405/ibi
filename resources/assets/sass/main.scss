@@ -201,7 +201,9 @@ Products
 -------------------------
 */
 section.products-content {
+	.filter {display: inline-block; padding: 20px 40px;}
 	.product {
+		width: 100%;
 		h2 {
 			padding: 15px;
 			font-size: 16px;
@@ -217,11 +219,23 @@ section.products-content {
 		ul {
 			padding: 0;
 			list-style: none;
+			li:nth-child(5), li:nth-child(6) {
+				text-transform: uppercase;
+			}
 			li {
 				padding: 15px;
+				border-bottom: 1px solid $light-gray; 
+				&:last-of-type {
+					h5 {text-transform: uppercase; display: inline-block;}
+					a.read-more {text-transform: uppercase; float: right;}
+				}
 				&:first-of-type {
 					background: $lighter-blue;
 				}
+				&.more {
+					display: none;
+					h5 {display: inline-block;}					
+				}				
 			}
 		}
 	}

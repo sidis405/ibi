@@ -450,25 +450,42 @@ section.content.lavora-con-noi-content h4 {
 Products
 -------------------------
 */
-section.products-content .product h2 {
-  padding: 15px;
-  font-size: 16px;
-  background: #80a8cd;
-  text-transform: uppercase;
-  color: #fff;
-  margin-bottom: 0; }
+section.products-content .filter {
+  display: inline-block;
+  padding: 20px 40px; }
 
-section.products-content .product h5 {
-  margin: 0;
-  font-weight: 700; }
-
-section.products-content .product ul {
-  padding: 0;
-  list-style: none; }
-  section.products-content .product ul li {
-    padding: 15px; }
-    section.products-content .product ul li:first-of-type {
-      background: #f2f6fa; }
+section.products-content .product {
+  width: 100%; }
+  section.products-content .product h2 {
+    padding: 15px;
+    font-size: 16px;
+    background: #80a8cd;
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 0; }
+  section.products-content .product h5 {
+    margin: 0;
+    font-weight: 700; }
+  section.products-content .product ul {
+    padding: 0;
+    list-style: none; }
+    section.products-content .product ul li:nth-child(5), section.products-content .product ul li:nth-child(6) {
+      text-transform: uppercase; }
+    section.products-content .product ul li {
+      padding: 15px;
+      border-bottom: 1px solid #ededed; }
+      section.products-content .product ul li:last-of-type h5 {
+        text-transform: uppercase;
+        display: inline-block; }
+      section.products-content .product ul li:last-of-type a.read-more {
+        text-transform: uppercase;
+        float: right; }
+      section.products-content .product ul li:first-of-type {
+        background: #f2f6fa; }
+      section.products-content .product ul li.more {
+        display: none; }
+        section.products-content .product ul li.more h5 {
+          display: inline-block; }
 
 /*
 -------------------------

@@ -1,6 +1,6 @@
 /*
 -------------------------
-Carousel homepage
+CAROUSEL
 -------------------------
 */
 $(document).ready(function() {
@@ -13,6 +13,27 @@ $(document).ready(function() {
     });
     
 });
+
+/*
+-------------------------
+MIXITUP
+-------------------------
+*/
+
+$(function(){
+
+  // Instantiate MixItUp:
+
+  $('#Container').mixItUp();
+
+});
+
+
+/*
+-------------------------
+SIDEBAR
+-------------------------
+*/
 
 animateSidebar();
 
@@ -42,4 +63,19 @@ function animateSidebar(){
         });
     });
 }
+
+/*
+-------------------------
+PRODUCT READ MORE
+-------------------------
+*/
+
+$(document).ready(function() {
+  $('.product .read-more').on('click',  function(event) {    
+    event.preventDefault()
+    var text = $(this).text()
+    $(this).text(text == "Chiudi" ? "Vedi tutto" : "Chiudi");
+    $(this).closest('.product').find('li.more').slideToggle();
+  });
+});
 //# sourceMappingURL=main.js.map
