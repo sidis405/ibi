@@ -8,7 +8,12 @@ header
 					i.fa.fa-twitter-square
 					i.fa.fa-envelope
 				.col-sm-6
-					p.pull-right test test test
+					div.pull-right
+						a(href="#").area-riservata
+							| Area riservata
+						p.lang
+							a(href="#") Ita |
+							a(href="#")  Eng
 	nav.navbar.navbar-default
 		.container
 			// Brand and toggle get grouped for better mobile display
@@ -32,11 +37,19 @@ header
 							span.caret
 						ul.dropdown-menu
 							li
-								a(href='prodotti') Prodotti
+								a(href='prodotti-export')
+									span Ibi 
+									|Export
 							li
-								a(href='prodotti') Prodotti
+								a(href='prodotti-ibisqus')
+									span Ibis
+										i q
+										|us 
+									|Ospedale
 							li
-								a(href='prodotti') Prodotti					
+								a(href='prodotti-italia')
+									span Ibi 
+									|Italia
 					li
 						a(href='ibi-toll-manufacturer') Toll development<br> manufacturer
 					li

@@ -35,11 +35,17 @@ SIDEBAR
 -------------------------
 */
 
-animateSidebar();
+if ($(window).width() > 767) {
+  $(window).load(function() {
+    animateSidebar();
+  });
 
-$('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
-  animateSidebar();
-})
+  $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+    animateSidebar();
+  })
+
+};
+
 
 
 function animateSidebar(){

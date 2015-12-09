@@ -1,0 +1,32 @@
+extend blocks/template
+
+// Page title
+block title
+	| Ibi Lorenzini | Invia candidatura
+
+// Page meta-description
+block append metatags 
+	meta(name='description', content='Ibi Lorenzini')
+
+block content	
+	// Including header
+	include blocks/header
+	// Page content 
+	.main-header.lavora-con-noi
+		.container
+			.main-caption
+				h1 Lavora con noi
+	section.content.lavora-con-noi-content
+		.container
+			.row
+				.col-sm-8
+					h2
+						| Invia la tua candidatura
+					p
+						| Compila in tutte le sue parti il curriculum vitae.<br>
+						|	Attenzione, i campi contrassegnati con * sono obbligatori per processare la tua candidatura.
+					p(style="color: red;")
+						| Qui ci sarà un modulo con campi da compilare per l'utente che desidera inviare la candidatura
+				include blocks/sidebar-lavora-con-noi
+	// Including footer
+	include blocks/footer

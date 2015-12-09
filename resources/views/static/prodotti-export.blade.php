@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Ibi Lorenzini | Prodotti</title>
+    <title>Ibi Lorenzini | Prodotti Ibi Export</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -21,7 +21,9 @@
           <div class="row">
             <div class="col-sm-6"><i class="fa fa-facebook-square"></i><i class="fa fa-google-plus-square"></i><i class="fa fa-twitter-square"></i><i class="fa fa-envelope"></i></div>
             <div class="col-sm-6">
-              <p class="pull-right">test test test</p>
+              <div class="pull-right"><a href="#" class="area-riservata">Area riservata</a>
+                <p class="lang"><a href="#">Ita |</a><a href="#"> Eng</a></p>
+              </div>
             </div>
           </div>
         </div>
@@ -39,9 +41,9 @@
               <li><a href="chi-siamo">Chi siamo</a></li>
               <li class="dropdown"><a href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle">Prodotti <span class="caret"></span></a>
                 <ul class="dropdown-menu">
-                  <li><a href="prodotti">Prodotti</a></li>
-                  <li><a href="prodotti">Prodotti</a></li>
-                  <li><a href="prodotti">Prodotti					</a></li>
+                  <li><a href="prodotti-export"><span>Ibi </span>Export</a></li>
+                  <li><a href="prodotti-ibisqus"><span>Ibis<i>q</i>us </span>Ospedale</a></li>
+                  <li><a href="prodotti-italia"><span>Ibi </span>Italia</a></li>
                 </ul>
               </li>
               <li><a href="ibi-toll-manufacturer">Toll development<br> manufacturer</a></li>
@@ -119,20 +121,20 @@
               </div>
             </div>
           </div>
-          <div class="col-sm-9">
-            <div class="row">
-              <div class="col-sm-4">
-                <div data-filter=".category-1" class="filter"><img src="/img/ibi-export-logo.jpg" alt="" class="img-responsive"></div>
+          <div class="col-md-9">
+            <div class="row filtri">
+              <div class="col-sm-4 no-pad">
+                <div class="filtri-img active"><a href="prodotti-export">							<img src="/img/ibi-export-logo.jpg" alt="" class="img-responsive"></a></div>
               </div>
-              <div class="col-sm-4">
-                <div data-filter=".category-2" class="filter"><img src="/img/ibisqus-ospedale-logo.jpg" alt="" class="img-responsive"></div>
+              <div class="col-sm-4 no-pad">
+                <div class="filtri-img">						<a href="prodotti-ibisqus">								<img src="/img/ibisqus-ospedale-logo.jpg" alt="" class="img-responsive"></a></div>
               </div>
-              <div class="col-sm-4">
-                <div data-filter=".category-3" class="filter"><img src="/img/ibi-italia-logo.jpg" alt="" class="img-responsive"></div>
+              <div class="col-sm-4 no-pad">
+                <div class="filtri-img">						<a href="prodotti-italia">									<img src="/img/ibi-italia-logo.jpg" alt="" class="img-responsive"></a></div>
               </div>
             </div>
             <div id="Container" class="row">
-              <div class="col-md-6 mix category-1">
+              <div class="col-lg-6 col-md-12">
                 <div class="product">
                   <h2 class="product-title">Acido zoledronico ibigen liofilizzato</h2>
                   <ul>
@@ -166,7 +168,7 @@
                   </ul>
                 </div>
               </div>
-              <div class="col-md-6 mix category-2">
+              <div class="col-lg-6 col-md-12">
                 <div class="product">
                   <h2 class="product-title">Acido zoledronico ibigen liofilizzato</h2>
                   <ul>
@@ -200,7 +202,7 @@
                   </ul>
                 </div>
               </div>
-              <div class="col-md-6 mix category-3">
+              <div class="col-lg-6 col-md-12">
                 <div class="product">
                   <h2 class="product-title">Acido zoledronico ibigen liofilizzato</h2>
                   <ul>
@@ -234,7 +236,7 @@
                   </ul>
                 </div>
               </div>
-              <div class="col-md-6 mix category-1">
+              <div class="col-lg-6 col-md-12">
                 <div class="product">
                   <h2 class="product-title">Acido zoledronico ibigen liofilizzato</h2>
                   <ul>
@@ -268,7 +270,7 @@
                   </ul>
                 </div>
               </div>
-              <div class="col-md-6 mix category-2">
+              <div class="col-lg-6 col-md-12">
                 <div class="product">
                   <h2 class="product-title">Acido zoledronico ibigen liofilizzato</h2>
                   <ul>
@@ -302,7 +304,7 @@
                   </ul>
                 </div>
               </div>
-              <div class="col-md-6 mix category-3">
+              <div class="col-lg-6 col-md-12">
                 <div class="product">
                   <h2 class="product-title">Acido zoledronico ibigen liofilizzato</h2>
                   <ul>
@@ -336,7 +338,7 @@
                   </ul>
                 </div>
               </div>
-              <div class="col-md-6 mix category-1">
+              <div class="col-lg-6 col-md-12">
                 <div class="product">
                   <h2 class="product-title">Acido zoledronico ibigen liofilizzato</h2>
                   <ul>
@@ -370,7 +372,7 @@
                   </ul>
                 </div>
               </div>
-              <div class="col-md-6 mix category-2">
+              <div class="col-lg-6 col-md-12">
                 <div class="product">
                   <h2 class="product-title">Acido zoledronico ibigen liofilizzato</h2>
                   <ul>
@@ -473,9 +475,9 @@
             <div class="footer-box">
               <h4>Info</h4>
               <ul>
-                <li> <a href="#">Farmacovigilanza</a></li>
+                <li> <a href="farmaco-vigilanza">Farmacovigilanza</a></li>
                 <li><a href="#">Privacy Policy</a></li>
-                <li><a href="#">Contatti</a></li>
+                <li><a href="contatti">Contatti</a></li>
                 <li><a href="#">Area Riservata</a></li>
               </ul>
             </div>

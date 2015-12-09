@@ -21,19 +21,22 @@ block content
 		.container
 			.row
 				include blocks/products-filter			
-				.col-sm-9
-					.row
-						.col-sm-4
-							.filter(data-filter='.category-1')
-								img.img-responsive(src="/img/ibi-export-logo.jpg", alt="")
-						.col-sm-4
-							.filter(data-filter='.category-2')
-								img.img-responsive(src="/img/ibisqus-ospedale-logo.jpg", alt="")
-						.col-sm-4
-							.filter(data-filter='.category-3')
-								img.img-responsive(src="/img/ibi-italia-logo.jpg", alt="")					
+				.col-md-9
+					.row.filtri
+						.col-sm-4.no-pad
+							.filtri-img
+								a(href="prodotti-export")							
+									img.img-responsive(src="/img/ibi-export-logo.jpg", alt="")
+						.col-sm-4.no-pad
+							.filtri-img						
+								a(href="prodotti-ibisqus")								
+									img.img-responsive(src="/img/ibisqus-ospedale-logo.jpg", alt="")
+						.col-sm-4.no-pad
+							.filtri-img.active				
+								a(href="prodotti-italia")									
+									img.img-responsive(src="/img/ibi-italia-logo.jpg", alt="")								
 					#Container.row
-						.col-md-6.mix.category-1
+						.col-lg-6.col-md-12.mix.ibi-export
 							.product
 								h2.product-title Acido zoledronico ibigen liofilizzato
 								ul
@@ -58,7 +61,7 @@ block content
 									li
 										h5 Italia
 										a.read-more(href="#") Vedi tutto
-						.col-md-6.mix.category-2
+						.col-lg-6.col-md-12.mix.ibisqus-ospedale
 							.product
 								h2.product-title Acido zoledronico ibigen liofilizzato
 								ul
@@ -83,7 +86,7 @@ block content
 									li
 										h5 Italia
 										a.read-more(href="#") Vedi tutto
-						.col-md-6.mix.category-3
+						.col-lg-6.col-md-12.mix.ibi-italia
 							.product
 								h2.product-title Acido zoledronico ibigen liofilizzato
 								ul
@@ -108,7 +111,7 @@ block content
 									li
 										h5 Italia
 										a.read-more(href="#") Vedi tutto
-						.col-md-6.mix.category-1
+						.col-lg-6.col-md-12.mix.ibi-export
 							.product
 								h2.product-title Acido zoledronico ibigen liofilizzato
 								ul
@@ -133,7 +136,7 @@ block content
 									li
 										h5 Italia
 										a.read-more(href="#") Vedi tutto
-						.col-md-6.mix.category-2
+						.col-lg-6.col-md-12.mix.ibisqus-ospedale
 							.product
 								h2.product-title Acido zoledronico ibigen liofilizzato
 								ul
@@ -158,7 +161,7 @@ block content
 									li
 										h5 Italia
 										a.read-more(href="#") Vedi tutto
-						.col-md-6.mix.category-3
+						.col-lg-6.col-md-12.mix.ibi-italia
 							.product
 								h2.product-title Acido zoledronico ibigen liofilizzato
 								ul
@@ -183,7 +186,7 @@ block content
 									li
 										h5 Italia
 										a.read-more(href="#") Vedi tutto
-						.col-md-6.mix.category-1
+						.col-lg-6.col-md-12.mix.ibi-export
 							.product
 								h2.product-title Acido zoledronico ibigen liofilizzato
 								ul
@@ -208,7 +211,7 @@ block content
 									li
 										h5 Italia
 										a.read-more(href="#") Vedi tutto
-						.col-md-6.mix.category-2
+						.col-lg-6.col-md-12.mix.ibisqus-ospedale
 							.product
 								h2.product-title Acido zoledronico ibigen liofilizzato
 								ul

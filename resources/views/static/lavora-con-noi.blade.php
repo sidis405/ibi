@@ -21,7 +21,9 @@
           <div class="row">
             <div class="col-sm-6"><i class="fa fa-facebook-square"></i><i class="fa fa-google-plus-square"></i><i class="fa fa-twitter-square"></i><i class="fa fa-envelope"></i></div>
             <div class="col-sm-6">
-              <p class="pull-right">test test test</p>
+              <div class="pull-right"><a href="#" class="area-riservata">Area riservata</a>
+                <p class="lang"><a href="#">Ita |</a><a href="#"> Eng</a></p>
+              </div>
             </div>
           </div>
         </div>
@@ -39,9 +41,9 @@
               <li><a href="chi-siamo">Chi siamo</a></li>
               <li class="dropdown"><a href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle">Prodotti <span class="caret"></span></a>
                 <ul class="dropdown-menu">
-                  <li><a href="prodotti">Prodotti</a></li>
-                  <li><a href="prodotti">Prodotti</a></li>
-                  <li><a href="prodotti">Prodotti					</a></li>
+                  <li><a href="prodotti-export"><span>Ibi </span>Export</a></li>
+                  <li><a href="prodotti-ibisqus"><span>Ibis<i>q</i>us </span>Ospedale</a></li>
+                  <li><a href="prodotti-italia"><span>Ibi </span>Italia</a></li>
                 </ul>
               </li>
               <li><a href="ibi-toll-manufacturer">Toll development<br> manufacturer</a></li>
@@ -105,8 +107,9 @@
               I canali di reclutamento preferenziali sono le candidature spontanee, i contatti con le Università ed alcune società di selezione specializzate. 
               <br><br>
               La Direzione Risorse Umane, in collaborazione con i Responsabili di funzione, cura lo screening dei curricula pervenuti ed effettua diversi colloqui individuali al fine di selezionare la candidatura più idonea alle esigenze aziendali.
-              La condivisione dei valori aziendali - attenzione alle persone, trasparenza, integrità e correttezza nei rapporti, apertura al cambiamento nel rispetto del passato - è requisito indispensabile per entrare a far parte della squadra IBI ed è ciò che la rende riconoscibile all’esterno come azienda affidabile ed eticamente responsabile. 
-            </p>
+              La condivisione dei valori aziendali - attenzione alle persone, trasparenza, integrità e correttezza nei rapporti, apertura al cambiamento nel rispetto del passato - è requisito indispensabile per entrare a far parte della squadra IBI ed è ciò che la rende riconoscibile all’esterno come azienda affidabile ed eticamente responsabile.
+            </p><a href="invia-candidatura">
+              <div class="btn btn-primary">Invia la tua candidatura</div></a>
           </div>
           <div class="col-md-4">
             <div class="sidebar lavora-con-noi-sidebar">
@@ -202,9 +205,9 @@
             <div class="footer-box">
               <h4>Info</h4>
               <ul>
-                <li> <a href="#">Farmacovigilanza</a></li>
+                <li> <a href="farmaco-vigilanza">Farmacovigilanza</a></li>
                 <li><a href="#">Privacy Policy</a></li>
-                <li><a href="#">Contatti</a></li>
+                <li><a href="contatti">Contatti</a></li>
                 <li><a href="#">Area Riservata</a></li>
               </ul>
             </div>

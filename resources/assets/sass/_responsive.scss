@@ -3,3 +3,87 @@
 Responsive styles
 -------------------------
 */
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+	
+	nav.navbar .navbar-right li a {font-size: 16px;}
+
+	.hero {
+		.hero-box {
+			min-height: auto;
+			margin-bottom: 25px;
+			height: 310px;
+		}
+	}
+	.tabs {
+		&.ricerca-tabs {
+			.nav-tabs {
+				li {
+					a {height: 68px;}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+	// bs navbar toggle trigger at 1199px or less
+	.navbar-header {
+        float: none;
+    }
+    .navbar-left,.navbar-right {
+        float: none !important;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-fixed-top {
+		top: 0;
+		border-width: 0 0 1px;
+	}
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+		margin-top: 7.5px;
+	}
+	.navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .collapse.in{
+  		display:block !important;
+	}
+
+	.hero {
+		.hero-box {
+			min-height: auto;
+			margin-bottom: 25px;
+			height: 350px;			
+		}
+	}
+	
+	.sidebar {
+		margin-top: 50px;
+		background: transparent;
+	}
+
+	footer {
+		.footer-box {
+			padding: 30px 10px 10px 10px;
+		}
+	}
+
+}
+
+@media screen and (max-width: 767px) {
+
+}
