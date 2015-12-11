@@ -74,27 +74,7 @@
         <div class="row">
           <div class="col-sm-8">
             <h2>Lavora con noi</h2>
-            <h3>Una grande opportunità per il tuo futuro</h3>
-            <div class="lavori-box">
-              <div class="row">
-                <div class="col-sm-5">
-                  <ul>
-                    <li>281 Dipendenti</li>
-                    <li>281 Dipendenti</li>
-                    <li>281 Dipendenti</li>
-                    <li>281 Dipendenti</li>
-                  </ul>
-                </div>
-                <div class="col-sm-7">
-                  <ul>
-                    <li>281 Dipendenti</li>
-                    <li>281 Dipendenti</li>
-                    <li>281 Dipendenti</li>
-                    <li>281 Dipendenti</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
+            <h3>Una grande opportunità per il tuo futuro					</h3>
             <p class="borded">
               Lavorare in IBI significa inserirsi in una realtà imprenditoriale solida e dinamica che associa ad una lunga tradizione storica un forte orientamento al futuro.
               <br><br>

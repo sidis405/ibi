@@ -450,6 +450,9 @@ Page Headers
   .main-header.prodotti {
     background: url(../img/prodotti-header.jpg) no-repeat center center;
     background-size: cover; }
+  .main-header.privacy-policy {
+    background: url(../img/chi-siamo-header.jpg) no-repeat center center;
+    background-size: cover; }
 
 /*
 -------------------------
@@ -458,6 +461,8 @@ Tabs
 */
 .tabs .tab-content {
   margin-top: 50px; }
+  .tabs .tab-content b {
+    display: block; }
 
 .tabs .nav-tabs {
   border: 0;
@@ -501,6 +506,16 @@ Tabs
         border-bottom: 0;
         border-right-color: #666; }
 
+.tabs.chi-siamo-tabs .site-box {
+  padding: 20px;
+  background: #e6f8f8; }
+  .tabs.chi-siamo-tabs .site-box h4 {
+    text-transform: none;
+    font-size: 30px;
+    margin: 0px auto 10px auto; }
+  .tabs.chi-siamo-tabs .site-box p {
+    margin: 0; }
+
 .tabs.manufactoring-tabs {
   margin-top: 50px; }
   .tabs.manufactoring-tabs ul li {
@@ -538,11 +553,23 @@ section.content.contatti-content .loghi {
   section.content.contatti-content .loghi.contatti-ibisqus-logo {
     margin-top: 50px; }
 
+section.content.contatti-content #accordion .panel-group .panel + .panel {
+  margin-top: 0 !important; }
+
 section.content.contatti-content #accordion .panel {
   border: 0;
-  border-radius: 0; }
+  border-radius: 0;
+  border-bottom: 1px dotted #000; }
   section.content.contatti-content #accordion .panel .panel-title {
     margin: 5px 0; }
+  section.content.contatti-content #accordion .panel .panel-heading {
+    background: transparent; }
+    section.content.contatti-content #accordion .panel .panel-heading h4 {
+      text-transform: none;
+      color: #666;
+      font-weight: 700; }
+  section.content.contatti-content #accordion .panel .panel-body {
+    border: 0; }
 
 section.content.lavora-con-noi-content .lavori-box {
   background: #00509a;

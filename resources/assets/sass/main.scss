@@ -119,6 +119,10 @@ Page Headers
 		background: url(../img/prodotti-header.jpg) no-repeat center center;		
 		background-size: cover;		
 	}
+	&.privacy-policy {
+		background: url(../img/chi-siamo-header.jpg) no-repeat center center;		
+		background-size: cover;		
+	}
 }
 /*
 -------------------------
@@ -126,7 +130,7 @@ Tabs
 -------------------------
 */
 .tabs {
-	.tab-content {margin-top: 50px;}
+	.tab-content {margin-top: 50px; b {display: block;}}
 	.nav-tabs {
 		border: 0;
 		border-bottom: 2px solid $title-color;
@@ -165,6 +169,18 @@ Tabs
 					&:focus {border-top: 0; border-bottom: 0; border-right-color: $text-color; }
 				}
 			}
+		}
+	}
+	&.chi-siamo-tabs {
+		.site-box {
+			padding: 20px;
+			background: $barely-green;
+			h4 {
+				text-transform: none;
+				font-size: 30px;
+				margin: 0px auto 10px auto;
+			}
+			p {margin: 0;}
 		}
 	}
 	// manufactioring tabs
@@ -216,10 +232,21 @@ section.content {
 			&.contatti-ibisqus-logo {margin-top: 50px;}
 		}		
 		#accordion {
+			.panel-group .panel+.panel {margin-top: 0 !important;}
 			.panel {
 				border: 0;
 				border-radius: 0;
+				border-bottom: 1px dotted #000;				
 				.panel-title {margin: 5px 0;}
+				.panel-heading {
+					background: transparent;
+					h4 {
+						text-transform: none;
+						color: $text-color;
+						font-weight: 700;
+					}
+				}
+				.panel-body {border: 0;}
 			}
 		}
 	}

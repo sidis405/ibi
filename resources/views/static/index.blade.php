@@ -103,13 +103,9 @@
           <div class="col-md-8">
             <h2>IBI: 90 anni di esperienza</h2>
             <h3>La nostra storia, i nostri valori</h3><img src="/img/home-content-img.jpg" class="img-responsive">
-            <p>
-              L’Istituto Biochimico italiano, Ibi, fondato nel 1918 dal Prof. Giovanni Lorenzini, vanta una lunga tradizione scientifica che, unita alle nuove tecnologie applicate e ad un’attenta cura nella produzione, fanno della Ibi sinonimo di affidabilità e garanzia di alta qualità. Con i suoi 18.000 mq di impianti ed un nuovo edificio completamente dedicato alla produzione di ß-lattamici,  Ibi offre servizi e tecnologia all’avanguardia che la posizionano tra le prime 10 aziende italiane nella produzione conto terzi. 
-              <br><br>
-              Ibi è oggi presente in più di 30 paesi con un’esportazione di tutta la gamma dei suoi prodotti pari ai 2/3 della produzione ed è una delle poche aziende, fuori dal territorio americano, ad aver ottenuto l’approvazione dell’ FDA per produrre penicilline sterili per il mercato statunitense.
-              <br><br>
-              Ibi ha sviluppato una nuova strategia di distribuzione negli ospedali affidando la commercializzazione dei prodotti ad una nuova struttura dedicata, Ibisqus, nata da una joint venture oggi presente in UK, Germania ed Italia. Sul mercato italiano...
-            </p><a href="chi-siamo">
+            <p>L’Istituto Biochimico Italiano, Ibi, fondato dal Prof. Giovanni Lorenzini, è un’azienda farmaceutica di grande tradizione scientifica presente sul mercato italiano da più di 90 anni, con obiettivi di ricerca, innovazione e produzione. Oltre la tradizione storica aziendale, le nuove tecnologie applicate e un’attenta cura nella produzione, fanno della Ibi sinonimo di affidabilità e garanzia di alta qualità nei paesi in cui l’Azienda è presente.</p>
+            <p>Ibi dedica la propria attività allo sviluppo di nuove applicazioni terapeutiche per offrire soluzioni alternative a medici e pazienti ed è oggi una realtà consolidata in Italia, Europa, Asia, Australia e US.</p>
+            <p>La sede si trova ad Aprilia dove, oltre allo stabilimento di produzione, sono collocate tutte le funzioni aziendali. La produzione e il controllo qualità sono il core business dell’Azienda, a cui si affiancano Ricerca e Sviluppo, Farmacovigilanza...</p><a href="chi-siamo">
               <div class="btn btn-primary">Leggi tutto</div></a>
           </div>
           <div class="col-md-4">
