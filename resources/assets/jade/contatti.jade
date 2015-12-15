@@ -77,10 +77,11 @@ block content
 								img(src="/img/ibisqus-ospedale-logo.jpg", alt="")
 							#accordion.panel-group(role='tablist', aria-multiselectable='true')
 								.panel.panel-default
-									#headingOne.panel-heading(role='tab')
-										h4.panel-title
-											a(role='button', data-toggle='collapse', data-parent='#accordion', href='#collapseOne', aria-expanded='true', aria-controls='collapseOne')
-												| Sede in Italia
+									a(role='button', data-toggle='collapse', data-parent='#accordion', href='#collapseOne', aria-expanded='true', aria-controls='collapseOne')
+										#headingOne.panel-heading(role='tab')
+											h4.panel-title											
+													| Sede in Italia
+											span.caret.caret-rotate
 									#collapseOne.panel-collapse.collapse.in(role='tabpanel', aria-labelledby='headingOne')
 										.panel-body
 											.row
@@ -114,10 +115,11 @@ block content
 														|pharmacovigilance@ibi-lorenzini.com<br>
 														|pharmacovigilance@ibigen.it
 								.panel.panel-default
-									#headingTwo.panel-heading(role='tab')
-										h4.panel-title
-											a.collapsed(role='button', data-toggle='collapse', data-parent='#accordion', href='#collapseTwo', aria-expanded='false', aria-controls='collapseTwo')
-												| Sede in Germania
+									a.collapsed(role='button', data-toggle='collapse', data-parent='#accordion', href='#collapseTwo', aria-expanded='false', aria-controls='collapseTwo')
+										#headingTwo.panel-heading(role='tab')
+											h4.panel-title											
+													| Sede in Germania
+											span.caret
 									#collapseTwo.panel-collapse.collapse(role='tabpanel', aria-labelledby='headingTwo')
 										.panel-body
 											.row
@@ -140,10 +142,11 @@ block content
 														|Customer Service <br>
 														|E-mail: y.schmitt@msk-pharmalogistic.de
 								.panel.panel-default
-									#headingThree.panel-heading(role='tab')
-										h4.panel-title
-											a.collapsed(role='button', data-toggle='collapse', data-parent='#accordion', href='#collapseThree', aria-expanded='false', aria-controls='collapseThree')
-												| Sede in Inghiterra
+									a.collapsed(role='button', data-toggle='collapse', data-parent='#accordion', href='#collapseThree', aria-expanded='false', aria-controls='collapseThree')
+										#headingThree.panel-heading(role='tab')
+											h4.panel-title											
+													| Sede in Inghiterra
+											span.caret
 									#collapseThree.panel-collapse.collapse(role='tabpanel', aria-labelledby='headingThree')
 										.panel-body
 											p

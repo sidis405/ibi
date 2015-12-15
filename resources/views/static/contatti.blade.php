@@ -140,10 +140,13 @@
               <div class="col-md-8">
                 <div class="loghi contatti-ibisqus-logo"><img src="/img/ibisqus-ospedale-logo.jpg" alt=""></div>
                 <div id="accordion" role="tablist" aria-multiselectable="true" class="panel-group">
-                  <div class="panel panel-default">
-                    <div id="headingOne" role="tab" class="panel-heading">
-                      <h4 class="panel-title"><a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Sede in Italia</a></h4>
-                    </div>
+                  <div class="panel panel-default"><a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      <div id="headingOne" role="tab" class="panel-heading">
+                        <h4 class="panel-title">
+                          											
+                          Sede in Italia
+                        </h4><span class="caret caret-rotate"></span>
+                      </div></a>
                     <div id="collapseOne" role="tabpanel" aria-labelledby="headingOne" class="panel-collapse collapse in">
                       <div class="panel-body">
                         <div class="row">
@@ -183,10 +186,13 @@
                       </div>
                     </div>
                   </div>
-                  <div class="panel panel-default">
-                    <div id="headingTwo" role="tab" class="panel-heading">
-                      <h4 class="panel-title"><a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" class="collapsed">Sede in Germania</a></h4>
-                    </div>
+                  <div class="panel panel-default"><a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" class="collapsed">
+                      <div id="headingTwo" role="tab" class="panel-heading">
+                        <h4 class="panel-title">
+                          											
+                          Sede in Germania
+                        </h4><span class="caret"></span>
+                      </div></a>
                     <div id="collapseTwo" role="tabpanel" aria-labelledby="headingTwo" class="panel-collapse collapse">
                       <div class="panel-body">
                         <div class="row">
@@ -216,10 +222,13 @@
                       </div>
                     </div>
                   </div>
-                  <div class="panel panel-default">
-                    <div id="headingThree" role="tab" class="panel-heading">
-                      <h4 class="panel-title"><a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree" class="collapsed">Sede in Inghiterra</a></h4>
-                    </div>
+                  <div class="panel panel-default"><a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree" class="collapsed">
+                      <div id="headingThree" role="tab" class="panel-heading">
+                        <h4 class="panel-title">
+                          											
+                          Sede in Inghiterra
+                        </h4><span class="caret"></span>
+                      </div></a>
                     <div id="collapseThree" role="tabpanel" aria-labelledby="headingThree" class="panel-collapse collapse">
                       <div class="panel-body">
                         <p>

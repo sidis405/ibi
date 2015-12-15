@@ -69,7 +69,7 @@
         </div>
       </div>
     </div>
-    <section class="content">
+    <section class="content benessere-content">
       <div class="container">
         <div class="row">
           <div class="col-sm-8">
@@ -85,10 +85,14 @@
               <div class="tab-content">
                 <div id="fegato-grasso" role="tabpanel" class="tab-pane active">
                   <div id="accordion" role="tablist" aria-multiselectable="true" class="panel-group">
-                    <div class="panel panel-default">
-                      <div id="headingOne" role="tab" class="panel-heading">
-                        <h4 class="panel-title"><a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Steatosi, steatoepatite alcolica e non alcolica</a></h4>
-                      </div>
+                    <div class="panel panel-default"><a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        <div id="headingOne" role="tab" class="panel-heading">
+                          <h4 class="panel-title">
+                            												
+                            Steatosi, steatoepatite alcolica e non alcolica
+                          </h4>
+                          <div class="plus-minus minus">							</div>
+                        </div></a>
                       <div id="collapseOne" role="tabpanel" aria-labelledby="headingOne" class="panel-collapse collapse in">
                         <div class="panel-body">																			
                           <p>
@@ -98,10 +102,14 @@
                         </div>
                       </div>
                     </div>
-                    <div class="panel panel-default">
-                      <div id="headingTwo" role="tab" class="panel-heading">
-                        <h4 class="panel-title"><a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" class="collapsed">Epidemiologia, cause e storia naturale</a></h4>
-                      </div>
+                    <div class="panel panel-default"><a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" class="collapsed">
+                        <div id="headingTwo" role="tab" class="panel-heading">
+                          <h4 class="panel-title">
+                            												
+                            Epidemiologia, cause e storia naturale
+                          </h4>
+                          <div class="plus-minus"></div>
+                        </div></a>
                       <div id="collapseTwo" role="tabpanel" aria-labelledby="headingTwo" class="panel-collapse collapse">
                         <div class="panel-body">
                           <p>
@@ -116,10 +124,14 @@
                         </div>
                       </div>
                     </div>
-                    <div class="panel panel-default">
-                      <div id="headingThree" role="tab" class="panel-heading">
-                        <h4 class="panel-title"><a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree" class="collapsed">Sintomatologia e segni clinici</a></h4>
-                      </div>
+                    <div class="panel panel-default"><a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree" class="collapsed">
+                        <div id="headingThree" role="tab" class="panel-heading">											
+                          <h4 class="panel-title">
+                            												
+                            	Sintomatologia e segni clinici
+                          </h4>
+                          <div class="plus-minus">								</div>
+                        </div></a>
                       <div id="collapseThree" role="tabpanel" aria-labelledby="headingThree" class="panel-collapse collapse">
                         <div class="panel-body">
                           <p>
@@ -129,10 +141,14 @@
                         </div>
                       </div>
                     </div>
-                    <div class="panel panel-default">
-                      <div id="headingFour" role="tab" class="panel-heading">
-                        <h4 class="panel-title"><a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour" class="collapsed">Esami clinici e strumentali</a></h4>
-                      </div>
+                    <div class="panel panel-default"><a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour" class="collapsed">
+                        <div id="headingFour" role="tab" class="panel-heading">
+                          <h4 class="panel-title">
+                            					
+                            	Esami clinici e strumentali
+                          </h4>
+                          <div class="plus-minus">												</div>
+                        </div></a>
                       <div id="collapseFour" role="tabpanel" aria-labelledby="headingFour" class="panel-collapse collapse">
                         <div class="panel-body">
                           <p>
@@ -147,10 +163,11 @@
                         </div>
                       </div>
                     </div>
-                    <div class="panel panel-default">
-                      <div id="headingFive" role="tab" class="panel-heading">
-                        <h4 class="panel-title"><a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive" class="collapsed">Esami clinici e strumentali</a></h4>
-                      </div>
+                    <div class="panel panel-default"><a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive" class="collapsed">
+                        <div id="headingFive" role="tab" class="panel-heading">
+                          <h4 class="panel-title">	Esami clinici e strumentali</h4>
+                          <div class="plus-minus"></div>
+                        </div></a>
                       <div id="collapseFive" role="tabpanel" aria-labelledby="headingFive" class="panel-collapse collapse">
                         <div class="panel-body">
                           <p>
@@ -170,10 +187,11 @@
                         </div>
                       </div>
                     </div>
-                    <div class="panel panel-default">
-                      <div id="headingSix" role="tab" class="panel-heading">
-                        <h4 class="panel-title"><a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix" class="collapsed">Farmaci e terapie</a></h4>
-                      </div>
+                    <div class="panel panel-default"><a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix" class="collapsed">
+                        <div id="headingSix" role="tab" class="panel-heading">
+                          <h4 class="panel-title">	Farmaci e terapie</h4>
+                          <div class="plus-minus">													</div>
+                        </div></a>
                       <div id="collapseSix" role="tabpanel" aria-labelledby="headingSix" class="panel-collapse collapse">
                         <div class="panel-body">
                           <p>

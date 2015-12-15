@@ -73,7 +73,7 @@
       <div class="slide slide2">
         <div class="container caption-container">
           <div class="caption">
-            <h3>Ibi: 90 anni di esperienza</h3><span>Affidabilità di garanzia e alta qualità</span>
+            <h3>Ricerca e innovazione</h3><span>All'avanguardia nella nanomedicina</span>
           </div>
         </div>
       </div>

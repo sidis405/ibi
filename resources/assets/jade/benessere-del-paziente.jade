@@ -16,7 +16,7 @@ block content
 		.container
 			.main-caption
 				h1 Per il benessere del paziente
-	section.content
+	section.content.benessere-content
 		.container
 			.row
 				.col-sm-8
@@ -36,20 +36,22 @@ block content
 							#fegato-grasso.tab-pane.active(role='tabpanel')
 								#accordion.panel-group(role='tablist', aria-multiselectable='true')
 									.panel.panel-default
-										#headingOne.panel-heading(role='tab')
-											h4.panel-title
-												a(role='button', data-toggle='collapse', data-parent='#accordion', href='#collapseOne', aria-expanded='true', aria-controls='collapseOne')
+										a(role='button', data-toggle='collapse', data-parent='#accordion', href='#collapseOne', aria-expanded='true', aria-controls='collapseOne')
+											#headingOne.panel-heading(role='tab')
+												h4.panel-title												
 													| Steatosi, steatoepatite alcolica e non alcolica
+												.plus-minus.minus							
 										#collapseOne.panel-collapse.collapse.in(role='tabpanel', aria-labelledby='headingOne')
 											.panel-body																			
 												p
 													|La steatosi epatica non alcolica o NAFLD (Non Alcoholic Fatty Liver Disease) è la più comune causa di malattia cronica del fegato nei paesi occidentali. La malattia è caratterizzata dall’accumulo di grasso nel fegato (NAFL), in particolare di trigliceridi all’interno delle cellule (epatociti), e può evolvere in steatoepatite o NASH (Non Alcoholic Steato-Hepatitis) e si caratterizza per la presenza, oltre ai depositi di grasso, per una reazione necro-infiammatoria.
 													|Quando invece la steatoepatite è correlata principalmente ad una assunzione elevata di alcol viene definita ASH (Alcoholic Steato-Hepatitis).											
 									.panel.panel-default
-										#headingTwo.panel-heading(role='tab')
-											h4.panel-title
-												a.collapsed(role='button', data-toggle='collapse', data-parent='#accordion', href='#collapseTwo', aria-expanded='false', aria-controls='collapseTwo')
+										a.collapsed(role='button', data-toggle='collapse', data-parent='#accordion', href='#collapseTwo', aria-expanded='false', aria-controls='collapseTwo')
+											#headingTwo.panel-heading(role='tab')
+												h4.panel-title												
 													| Epidemiologia, cause e storia naturale
+												.plus-minus
 										#collapseTwo.panel-collapse.collapse(role='tabpanel', aria-labelledby='headingTwo')
 											.panel-body
 												p
@@ -61,10 +63,11 @@ block content
 													|La steatoepatite progredisce più o meno lentamente verso la fibrosi e la cirrosi. Inoltre, è spesso associata a un aumentato rischio di malattia cardiovascolare e diabete mellito di tipo 2. 
 													|Negli ultimi anni si sta valutando attentamente quanti pazienti affetti dall’epatopatia cronica possano andare incontro all' epatocarcinoma, senza necessariamente avere una cirrosi, legata ai virus dell’epatite virale C.												
 									.panel.panel-default
-										#headingThree.panel-heading(role='tab')
-											h4.panel-title
-												a.collapsed(role='button', data-toggle='collapse', data-parent='#accordion', href='#collapseThree', aria-expanded='false', aria-controls='collapseThree')
-													| Sintomatologia e segni clinici
+										a.collapsed(role='button', data-toggle='collapse', data-parent='#accordion', href='#collapseThree', aria-expanded='false', aria-controls='collapseThree')
+											#headingThree.panel-heading(role='tab')											
+												h4.panel-title												
+													|	Sintomatologia e segni clinici
+												.plus-minus								
 										#collapseThree.panel-collapse.collapse(role='tabpanel', aria-labelledby='headingThree')
 											.panel-body
 												p
@@ -72,10 +75,11 @@ block content
 													|Spesso la diagnosi è occasionale dopo un controllo generale (esami del sangue, ecografia). Alcuni pazienti riferiscono un senso di malessere, stanchezza o una vaga sensazione di dolenzia a livello del quadrante addominale destro (vedi la sede del dolore nell’immagine), difficoltà digestiva. Si può riscontrare epatomegalia e sovrappeso.
 												img.img-responsive(src="http://placehold.it/750x350", alt="")
 									.panel.panel-default
-										#headingFour.panel-heading(role='tab')
-											h4.panel-title
-												a.collapsed(role='button', data-toggle='collapse', data-parent='#accordion', href='#collapseFour', aria-expanded='false', aria-controls='collapseFour')
-													| Esami clinici e strumentali
+										a.collapsed(role='button', data-toggle='collapse', data-parent='#accordion', href='#collapseFour', aria-expanded='false', aria-controls='collapseFour')
+											#headingFour.panel-heading(role='tab')
+												h4.panel-title					
+													|	Esami clinici e strumentali
+												.plus-minus												
 										#collapseFour.panel-collapse.collapse(role='tabpanel', aria-labelledby='headingFour')
 											.panel-body
 												p
@@ -87,10 +91,11 @@ block content
 													|L’ecografia rappresenta nella pratica clinica quotidiana un esame di primo livello per lo studio delle malattie del fegato e dell’apparato biliare; essa è di facile esecuzione, basso costo, non invasiva, ripetibile, e in mani affidabili, costituisce un indispensabile strumento di diagnosi.
 													|Nella diagnostica della steatosi essa rappresenta la pietra miliare; il reperto caratteristico è quello del cosiddetto fegato brillante.
 									.panel.panel-default
-										#headingFive.panel-heading(role='tab')
-											h4.panel-title
-												a.collapsed(role='button', data-toggle='collapse', data-parent='#accordion', href='#collapseFive', aria-expanded='false', aria-controls='collapseFive')
-													| Esami clinici e strumentali
+										a.collapsed(role='button', data-toggle='collapse', data-parent='#accordion', href='#collapseFive', aria-expanded='false', aria-controls='collapseFive')
+											#headingFive.panel-heading(role='tab')
+												h4.panel-title
+													|	Esami clinici e strumentali
+												.plus-minus
 										#collapseFive.panel-collapse.collapse(role='tabpanel', aria-labelledby='headingFive')
 											.panel-body
 												p
@@ -108,10 +113,11 @@ block content
 													|L’esame si esegue mediante una sonda che, appoggiata tra gli spazi intercostali al di sopra del fegato, invia un piccolo impulso ad onda meccanica alla cute e ne registra il tempo di “ritorno”: con tale metodica lo strumento riesce a registrare la velocità di propagazione delle onde e stabilire quindi la rigidità del fegato.
 												img.img-responsive(src="http://placehold.it/750x350", alt="")
 									.panel.panel-default
-										#headingSix.panel-heading(role='tab')
-											h4.panel-title
-												a.collapsed(role='button', data-toggle='collapse', data-parent='#accordion', href='#collapseSix', aria-expanded='false', aria-controls='collapseSix')
-													| Farmaci e terapie
+										a.collapsed(role='button', data-toggle='collapse', data-parent='#accordion', href='#collapseSix', aria-expanded='false', aria-controls='collapseSix')
+											#headingSix.panel-heading(role='tab')
+												h4.panel-title
+													|	Farmaci e terapie
+												.plus-minus													
 										#collapseSix.panel-collapse.collapse(role='tabpanel', aria-labelledby='headingSix')
 											.panel-body
 												p

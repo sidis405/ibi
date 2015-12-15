@@ -72,6 +72,38 @@ section.content {
 	}
 }
 
+.plus-minus {
+	background: #b3cbe1;
+	float: right;
+	width: 34px;
+	height: 34px;
+	border-radius: 50%;
+	position: relative;
+	margin-top: -4px;
+	transition: 0.35s;
+	&:before, &:after {
+	  position: absolute;
+	  left: 15px;
+	  top: 6px;
+	  content: ' ';
+	  height: 22px;
+	  width: 4px;
+	  background: #fff;
+	  border-radius: 3px;
+	  transition: 0.35s;
+	}
+	&:before {
+  transform: rotate(90deg);
+	}
+	&:after {
+	  transform: rotate(0deg);
+	}
+	&.minus {
+		&:before {opacity: 0;}
+		&:after {transform: rotate(90deg);}
+	}	
+}
+
 /*
 -------------------------
 Helpers

@@ -53,6 +53,37 @@ section.content {
     border: 0;
     font-size: 12px; }
 
+.plus-minus {
+  background: #b3cbe1;
+  float: right;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  position: relative;
+  margin-top: -4px;
+  transition: 0.35s; }
+  .plus-minus:before, .plus-minus:after {
+    position: absolute;
+    left: 15px;
+    top: 6px;
+    content: ' ';
+    height: 22px;
+    width: 4px;
+    background: #fff;
+    border-radius: 3px;
+    transition: 0.35s; }
+  .plus-minus:before {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg); }
+  .plus-minus:after {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  .plus-minus.minus:before {
+    opacity: 0; }
+  .plus-minus.minus:after {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg); }
+
 /*
 -------------------------
 Helpers
@@ -384,18 +415,23 @@ Home page
     .main-carousel .slide.slide2 {
       background: url(../img/slide02.jpg) no-repeat center center;
       background-size: cover; }
-    .main-carousel .slide .caption-container .caption {
-      display: inline-block;
-      padding: 20px;
-      background: #1fa9ad; }
-      .main-carousel .slide .caption-container .caption h3 {
-        color: #fff;
-        font-size: 30px;
-        font-weight: 700;
-        margin-top: 0; }
-      .main-carousel .slide .caption-container .caption span {
-        color: #fff;
-        font-size: 20px; }
+    .main-carousel .slide .caption-container {
+      height: 100%;
+      position: relative; }
+      .main-carousel .slide .caption-container .caption {
+        display: inline-block;
+        padding: 20px;
+        background: #1fa9ad;
+        position: absolute;
+        bottom: 30px; }
+        .main-carousel .slide .caption-container .caption h3 {
+          color: #fff;
+          font-size: 30px;
+          font-weight: 700;
+          margin-top: 0; }
+        .main-carousel .slide .caption-container .caption span {
+          color: #fff;
+          font-size: 20px; }
 
 /* Hero */
 .hero {
@@ -611,22 +647,57 @@ section.content.contatti-content .loghi {
   section.content.contatti-content .loghi.contatti-ibisqus-logo {
     margin-top: 50px; }
 
-section.content.contatti-content #accordion .panel-group .panel + .panel {
-  margin-top: 0 !important; }
+section.content.contatti-content #accordion a:hover, section.content.contatti-content #accordion a:focus {
+  text-decoration: none; }
 
 section.content.contatti-content #accordion .panel {
   border: 0;
   border-radius: 0;
-  border-bottom: 1px dotted #000; }
+  border-bottom: 1px dotted #000;
+  margin-top: 0; }
+  section.content.contatti-content #accordion .panel .caret {
+    float: right;
+    margin-top: 10px;
+    border-top: 10px dashed #666;
+    border-top: 10px solid\9;
+    border-right: 10px solid transparent;
+    border-left: 10px solid transparent;
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg); }
+    section.content.contatti-content #accordion .panel .caret.caret-rotate {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg); }
   section.content.contatti-content #accordion .panel .panel-title {
     margin: 5px 0; }
   section.content.contatti-content #accordion .panel .panel-heading {
     background: transparent; }
     section.content.contatti-content #accordion .panel .panel-heading h4 {
-      text-transform: none;
-      color: #666;
-      font-weight: 700; }
+      color: #00509a;
+      font-weight: 700;
+      display: inline-block; }
   section.content.contatti-content #accordion .panel .panel-body {
+    border: 0; }
+
+section.content.benessere-content #accordion a:hover, section.content.benessere-content #accordion a:focus {
+  text-decoration: none; }
+
+section.content.benessere-content #accordion .panel-group .panel + .panel {
+  margin-top: 0 !important; }
+
+section.content.benessere-content #accordion .panel {
+  border: 0;
+  border-radius: 0;
+  border: 1px dotted #000; }
+  section.content.benessere-content #accordion .panel .panel-title {
+    margin: 5px 0; }
+  section.content.benessere-content #accordion .panel .panel-heading {
+    background: transparent;
+    padding: 15px; }
+    section.content.benessere-content #accordion .panel .panel-heading h4 {
+      color: #666;
+      font-weight: 300;
+      display: inline-block; }
+  section.content.benessere-content #accordion .panel .panel-body {
     border: 0; }
 
 section.content.lavora-con-noi-content .lavori-box {

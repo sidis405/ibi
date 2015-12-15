@@ -246,14 +246,16 @@
                     La IBI agisce affinché l’operatività delle diverse realtà aziendali si svolgano salvaguardando la salute delle persone, la sicurezza delle operazioni e l’ambiente.<br>
                     La Politica Salute, Sicurezza e Ambiente esprime l’impegno della IBI su questi temi.
                   </p>
-                  <ul>
-                    <li><a>Politica (rev. 06)</a></li>
-                    <li><a>Certificato 18001</a></li>
-                    <li><a>Politica (rev. 06)</a></li>
-                    <li><a>Politica (rev. 06)</a></li>
-                    <li><a>Politica (rev. 06)</a></li>
-                    <li><a>Politica (rev. 06)</a></li>
-                  </ul>
+                  <div class="evidence-box">
+                    <ul>
+                      <li><a>Politica (rev. 06)</a></li>
+                      <li><a>Certificato 18001</a></li>
+                      <li><a>Politica (rev. 06)</a></li>
+                      <li><a>Politica (rev. 06)</a></li>
+                      <li><a>Politica (rev. 06)</a></li>
+                      <li><a>Politica (rev. 06)</a></li>
+                    </ul>
+                  </div>
                 </div>
               </div>
             </div>

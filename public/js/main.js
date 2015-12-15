@@ -7,10 +7,28 @@ $(document).ready(function() {
     
     $('.main-carousel').slick({
       infinite: true,
-      slidesToShow: 1,      
+      slidesToShow: 1,
+      autoplay: true,    
       arrows: false   
     });
     
+});
+
+/*
+-------------------------------------
+ACCORDION ANIMATION
+-------------------------------------
+*/
+
+$(document).ready(function() {
+  $('.panel').on('show.bs.collapse', function () {
+    $(this).find('.plus-minus').addClass('minus');
+    $(this).find('.caret').addClass('caret-rotate');
+  })
+  $('.panel').on('hide.bs.collapse', function () {
+    $(this).find('.plus-minus').removeClass('minus');
+    $(this).find('.caret').removeClass('caret-rotate');
+  })
 });
 
 /*
