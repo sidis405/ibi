@@ -72,7 +72,7 @@
     <section class="content">
       <div class="container">
         <div class="row">
-          <div class="col-sm-8"><img src="/img/ibi-italia-logo.jpg"><a href="#" class="pull-right">
+          <div class="col-sm-8"><img src="/img/ibi-italia-logo.jpg"><a href="prodotti-italia" class="pull-right">
               <div class="btn btn-primary btn-products">Elenco prodotti ibi italia</div></a>
             <p>	L’Istituto Biochimico Italiano, Ibi, fondato dal Prof. Giovanni Lorenzini, è un’azienda farmaceutica di grande tradizione scientifica presente sul mercato italiano da più di 90 anni, con obiettivi di ricerca, innovazione e produzione. Oltre la tradizione storica aziendale, le nuove tecnologie applicate e un’attenta cura nella produzione, fanno della Ibi sinonimo di affidabilità e garanzia di alta qualità nei paesi in cui l’Azienda è presente.</p>
             <p>Ibi dedica la propria attività allo sviluppo di nuove applicazioni terapeutiche per offrire soluzioni alternative a medici e pazienti ed è oggi una realtà consolidata in Italia, Europa, Asia, Australia e US. </p>
