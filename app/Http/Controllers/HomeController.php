@@ -11,6 +11,8 @@ class HomeController extends Controller
 {
     
 
+
+
     public function pull()
     {
         $out = '';
