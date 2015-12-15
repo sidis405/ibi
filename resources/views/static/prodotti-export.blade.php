@@ -133,8 +133,8 @@
                 <div class="filtri-img">						<a href="prodotti-italia">									<img src="/img/ibi-italia-logo.jpg" alt="" class="img-responsive"></a></div>
               </div>
             </div>
-            <div id="Container" class="row">
-              <div class="col-lg-6 col-md-12">
+            <div id="prodotti-container" class="row prodotti-export">
+              <div class="col-lg-6 col-md-12 mix">
                 <div class="product">
                   <h2 class="product-title">Acido zoledronico ibigen liofilizzato</h2>
                   <ul>
@@ -163,12 +163,12 @@
                       <h5>Validità mesi</h5>
                     </li>
                     <li>
-                      <h5>Italia</h5><a href="#" class="read-more">Vedi tutto</a>
+                      <h5>Unità</h5><a href="#" class="read-more">Vedi tutto</a>
                     </li>
                   </ul>
                 </div>
               </div>
-              <div class="col-lg-6 col-md-12">
+              <div class="col-lg-6 col-md-12 mix">
                 <div class="product">
                   <h2 class="product-title">Acido zoledronico ibigen liofilizzato</h2>
                   <ul>
@@ -197,12 +197,12 @@
                       <h5>Validità mesi</h5>
                     </li>
                     <li>
-                      <h5>Italia</h5><a href="#" class="read-more">Vedi tutto</a>
+                      <h5>Unità</h5><a href="#" class="read-more">Vedi tutto</a>
                     </li>
                   </ul>
                 </div>
               </div>
-              <div class="col-lg-6 col-md-12">
+              <div class="col-lg-6 col-md-12 mix">
                 <div class="product">
                   <h2 class="product-title">Acido zoledronico ibigen liofilizzato</h2>
                   <ul>
@@ -231,12 +231,12 @@
                       <h5>Validità mesi</h5>
                     </li>
                     <li>
-                      <h5>Italia</h5><a href="#" class="read-more">Vedi tutto</a>
+                      <h5>Unità</h5><a href="#" class="read-more">Vedi tutto</a>
                     </li>
                   </ul>
                 </div>
               </div>
-              <div class="col-lg-6 col-md-12">
+              <div class="col-lg-6 col-md-12 mix">
                 <div class="product">
                   <h2 class="product-title">Acido zoledronico ibigen liofilizzato</h2>
                   <ul>
@@ -265,12 +265,12 @@
                       <h5>Validità mesi</h5>
                     </li>
                     <li>
-                      <h5>Italia</h5><a href="#" class="read-more">Vedi tutto</a>
+                      <h5>Unità</h5><a href="#" class="read-more">Vedi tutto</a>
                     </li>
                   </ul>
                 </div>
               </div>
-              <div class="col-lg-6 col-md-12">
+              <div class="col-lg-6 col-md-12 mix">
                 <div class="product">
                   <h2 class="product-title">Acido zoledronico ibigen liofilizzato</h2>
                   <ul>
@@ -299,12 +299,12 @@
                       <h5>Validità mesi</h5>
                     </li>
                     <li>
-                      <h5>Italia</h5><a href="#" class="read-more">Vedi tutto</a>
+                      <h5>Unità</h5><a href="#" class="read-more">Vedi tutto</a>
                     </li>
                   </ul>
                 </div>
               </div>
-              <div class="col-lg-6 col-md-12">
+              <div class="col-lg-6 col-md-12 mix">
                 <div class="product">
                   <h2 class="product-title">Acido zoledronico ibigen liofilizzato</h2>
                   <ul>
@@ -333,12 +333,12 @@
                       <h5>Validità mesi</h5>
                     </li>
                     <li>
-                      <h5>Italia</h5><a href="#" class="read-more">Vedi tutto</a>
+                      <h5>Unità</h5><a href="#" class="read-more">Vedi tutto</a>
                     </li>
                   </ul>
                 </div>
               </div>
-              <div class="col-lg-6 col-md-12">
+              <div class="col-lg-6 col-md-12 mix">
                 <div class="product">
                   <h2 class="product-title">Acido zoledronico ibigen liofilizzato</h2>
                   <ul>
@@ -367,12 +367,12 @@
                       <h5>Validità mesi</h5>
                     </li>
                     <li>
-                      <h5>Italia</h5><a href="#" class="read-more">Vedi tutto</a>
+                      <h5>Unità</h5><a href="#" class="read-more">Vedi tutto</a>
                     </li>
                   </ul>
                 </div>
               </div>
-              <div class="col-lg-6 col-md-12">
+              <div class="col-lg-6 col-md-12 mix">
                 <div class="product">
                   <h2 class="product-title">Acido zoledronico ibigen liofilizzato</h2>
                   <ul>
@@ -401,7 +401,7 @@
                       <h5>Validità mesi</h5>
                     </li>
                     <li>
-                      <h5>Italia</h5><a href="#" class="read-more">Vedi tutto	</a>
+                      <h5>Unità</h5><a href="#" class="read-more">Vedi tutto	</a>
                     </li>
                   </ul>
                 </div>
@@ -476,7 +476,7 @@
               <h4>Info</h4>
               <ul>
                 <li> <a href="farmaco-vigilanza">Farmacovigilanza</a></li>
-                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="privacy-policy">Privacy Policy</a></li>
                 <li><a href="contatti">Contatti</a></li>
                 <li><a href="#">Area Riservata</a></li>
               </ul>

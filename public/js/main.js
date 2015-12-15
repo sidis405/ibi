@@ -7,12 +7,27 @@ $(document).ready(function() {
     
     $('.main-carousel').slick({
       infinite: true,
-      slidesToShow: 1,
-      autoplay: true,
+      slidesToShow: 1,      
       arrows: false   
     });
     
 });
+
+/*
+-------------------------------------
+JAVASCRIPT TO ENABLE LINK TO A TAB
+-------------------------------------
+*/
+var url = document.location.toString();
+if (url.match('#')) {
+    $('.nav-tabs a[href=#'+url.split('#')[1]+']').tab('show') ;    
+} 
+
+// Change hash for page-reload
+$('.nav-tabs a').on('shown.bs.tab', function (e) {
+    window.location.hash = e.target.hash;
+    window.scrollTo(0, 0);
+})
 
 /*
 -------------------------
@@ -24,7 +39,7 @@ $(function(){
 
   // Instantiate MixItUp:
 
-  $('#Container').mixItUp();
+  $('#prodotti-container').mixItUp();
 
 });
 

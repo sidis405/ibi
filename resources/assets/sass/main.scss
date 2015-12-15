@@ -10,11 +10,34 @@ Home page
 */
 .main-carousel {
 	margin: 0;
-	.slide {
-		background: url(../img/header-home.jpg) no-repeat center center;
+	.slide {		
 		width: 100%;
 		height: 500px;
-		background-size:cover;
+		&.slide1 {
+			background: url(../img/header-home.jpg) no-repeat center center;
+			background-size: cover;
+		}
+		&.slide2 {
+			background: url(../img/slide02.jpg) no-repeat center center;
+			background-size: cover;
+		}
+		.caption-container {
+			.caption {
+				display: inline-block;
+				padding: 20px;
+				background: $green;
+				h3 {
+					color: #fff;
+					font-size: 30px;
+					font-weight: 700;
+					margin-top: 0;
+				}
+				span {
+					color: #fff;
+					font-size: 20px;
+				}
+			}
+		}
 	}
 }
 
@@ -29,6 +52,7 @@ Home page
 		background: #fff;
 		padding: 0 25px;
 		min-height: 381px;
+		position: relative;
 		img {
 			margin: auto;
 			display: block;
@@ -41,11 +65,14 @@ Home page
 			border-top: 1px solid $text-color;
 		}
 		.btn {
-			width: 100%;
+			position: absolute;
+			bottom: 0px;
+			width: 85%;
+			left: 0;
 			border-radius: 0;
 			border: 0;
 			font-weight: 700;
-			margin: 20px 0;
+			margin: 20px;
 			padding: 10px 0;	
 			font-size: 12px;
 			text-transform: uppercase;
@@ -123,6 +150,10 @@ Page Headers
 		background: url(../img/chi-siamo-header.jpg) no-repeat center center;		
 		background-size: cover;		
 	}
+	&.benessere-paziente {
+		background: url(../img/chi-siamo-header.jpg) no-repeat center center;		
+		background-size: cover;		
+	}
 }
 /*
 -------------------------
@@ -172,8 +203,17 @@ Tabs
 		}
 	}
 	&.chi-siamo-tabs {
-		.site-box {
+		h4 {
+			font-size: 22px;			
+		}
+		h5 {
+			font-size: 20px;
+			font-weight: 700;
+			font-style: italic;
+		}
+		.evidence-box {
 			padding: 20px;
+			margin-bottom: 40px;
 			background: $barely-green;
 			h4 {
 				text-transform: none;
@@ -181,6 +221,17 @@ Tabs
 				margin: 0px auto 10px auto;
 			}
 			p {margin: 0;}
+		}
+	}
+	// export tabs
+	&.ibi-export-tabs {
+		margin-top: 50px;
+		ul {
+			li {
+				width: 50%;
+				text-align: center;
+				height: 85px;
+			}
 		}
 	}
 	// manufactioring tabs
@@ -209,6 +260,16 @@ Tabs
 				border-bottom: 1px dotted $text-color;
 			}
 		}		
+	}
+	// Benessere tabs
+	&.benessere-paziente-tabs {		
+		margin-top: 50px;
+		ul {
+			li {
+				width: 50%;
+				text-align: center;
+			}
+		}
 	}	
 }
 
@@ -312,43 +373,66 @@ section.products-content {
 			margin: auto;
 		}		
 	}
-	.product {
-		width: 100%;
-		h2 {
-			padding: 15px;
-			font-size: 16px;
-			background: $light-blue;
-			text-transform: uppercase;
-			color: #fff;
-			margin-bottom: 0;
-		}
-		h5 {
-			margin: 0;
-			font-weight: 700;
-		}
-		ul {
-			padding: 0;
-			list-style: none;
-			li:nth-child(5), li:nth-child(6) {
-				text-transform: uppercase;
-			}
-			li {
+
+	#prodotti-container {		
+		.product {
+			width: 100%;
+			h2 {
 				padding: 15px;
-				border-bottom: 1px solid $light-gray; 
-				&:last-of-type {
-					h5 {text-transform: uppercase; display: inline-block;}
-					a.read-more {text-transform: uppercase; float: right;}
+				font-size: 16px;
+				background: $light-blue;
+				text-transform: uppercase;
+				color: #fff;
+				margin-bottom: 0;
+			}
+			h5 {
+				margin: 0;
+				font-weight: 700;
+			}
+			ul {
+				padding: 0;
+				list-style: none;
+				li:nth-child(5), li:nth-child(6) {
+					text-transform: uppercase;
 				}
-				&:first-of-type {
-					background: $lighter-blue;
+				li {
+					padding: 15px;
+					border-bottom: 1px solid $light-gray; 
+					&:last-of-type {
+						h5 {text-transform: uppercase; display: inline-block;}
+						a.read-more {text-transform: uppercase; float: right;}
+					}
+					&:first-of-type {
+						background: $lighter-blue;
+					}
+					&.more {
+						display: none;
+						h5 {display: inline-block;}					
+					}				
 				}
-				&.more {
-					display: none;
-					h5 {display: inline-block;}					
-				}				
 			}
 		}
-	}
+		&.prodotti-italia {
+			.product {
+				ul {
+					li:nth-child(6) {text-transform: none;}
+				}
+			}
+		}
+		&.prodotti-export {
+			.product {
+				ul {
+					li {
+						&:last-of-type {
+							h5 {
+								text-transform: none;
+							}
+						}
+					}
+				}
+			}
+		}
+	}	
 }
 
 @import 'responsive';

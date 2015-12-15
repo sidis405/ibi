@@ -129,9 +129,9 @@
                       di sospetta reazione avversa:
                     </li>
                     <li>Modulo segnalazione operatore sanitario e paziente  (ITALIANO)</li>
-                    <li>Modulo segnalazione operatore sanitario e paziente  (ITALIANO)</li>
-                    <li>Modulo segnalazione operatore sanitario e paziente  (ITALIANO)</li>
-                    <li>Modulo segnalazione operatore sanitario e paziente  (ITALIANO)							</li>
+                    <li>Modulo segnalazione operatore sanitario e paziente  (TEDESCO)</li>
+                    <li>Modulo segnalazione operatore sanitario e paziente  (CECO)</li>
+                    <li>Modulo segnalazione operatore sanitario e paziente  (AUSTRIA)							</li>
                   </ul>
                 </div>
               </div>
@@ -205,7 +205,7 @@
               <h4>Info</h4>
               <ul>
                 <li> <a href="farmaco-vigilanza">Farmacovigilanza</a></li>
-                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="privacy-policy">Privacy Policy</a></li>
                 <li><a href="contatti">Contatti</a></li>
                 <li><a href="#">Area Riservata</a></li>
               </ul>

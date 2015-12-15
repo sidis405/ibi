@@ -63,28 +63,39 @@
     </header>
     <!-- Page content -->
     <div class="main-carousel">
-      <div class="slide"></div>
-      <div class="slide"></div>
-      <div class="slide"></div>
+      <div class="slide slide1">
+        <div class="container caption-container">
+          <div class="caption">
+            <h3>Ibi: 90 anni di esperienza</h3><span>Affidabilità di garanzia e alta qualità</span>
+          </div>
+        </div>
+      </div>
+      <div class="slide slide2">
+        <div class="container caption-container">
+          <div class="caption">
+            <h3>Ibi: 90 anni di esperienza</h3><span>Affidabilità di garanzia e alta qualità</span>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="hero">
       <div class="container">
         <div class="row">
           <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
             <div class="hero-box"><img src="/img/ibi-export-logo.jpg" alt="" class="img-responsive">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem soluta tempora, placeat obcaecati porro eligendi officiis, accusantium dolor. Sunt fuga ut quidem recusandae, molestias debitis dignissimos rem. Quaerat, porro accusamus.</p><a href="ibi-export">
+              <p>Ibi è oggi presente in più di 30 Paesi con un’esportazione di tutta la gamma dei suoi prodotti pari ai 2/3 della produzione. Il mercato estero riveste un ruolo molto importante: le esportazioni infatti sono intorno all’80% del fatturato.</p><a href="ibi-export">
                 <div class="btn btn-primary">Leggi tutto</div></a>
             </div>
           </div>
           <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
             <div class="hero-box"><img src="/img/ibisqus-ospedale-logo.jpg" alt="" class="img-responsive">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque minima quia sunt ad alias consequatur enim, cumque, tenetur blanditiis perspiciatis ut eligendi molestias! Asperiores, aliquam, nobis. Corrupti temporibus tempore recusandae.</p><a href="ibisqus-ospedale">
+              <p>A quasi 100 anni dalla data della sua fondazione l’Istituto Biochimico Italiano ha intrapreso una strategia di crescita e di rinnovamento con l’obiettivo di competere a livello internazionale.</p><a href="ibisqus-ospedale">
                 <div class="btn btn-primary">Leggi tutto</div></a>
             </div>
           </div>
           <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
             <div class="hero-box"><img src="/img/ibi-italia-logo.jpg" alt="" class="img-responsive">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae incidunt assumenda sint rerum optio architecto perspiciatis quaerat, dignissimos esse aperiam eius eligendi dolorum, id minus earum quisquam asperiores. Iste, facilis!</p><a href="ibi-italia">
+              <p>L’Istituto Biochimico Italiano, Ibi, fondato dal Prof. Giovanni Lorenzini, è un’azienda farmaceutica di grande tradizione scientifica presente sul mercato italiano da più di 90 anni, con obiettivi di ricerca, innovazione e produzione.</p><a href="ibi-italia">
                 <div class="btn btn-primary">Leggi tutto</div></a>
             </div>
           </div>
@@ -224,7 +235,7 @@
               <h4>Info</h4>
               <ul>
                 <li> <a href="farmaco-vigilanza">Farmacovigilanza</a></li>
-                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="privacy-policy">Privacy Policy</a></li>
                 <li><a href="contatti">Contatti</a></li>
                 <li><a href="#">Area Riservata</a></li>
               </ul>

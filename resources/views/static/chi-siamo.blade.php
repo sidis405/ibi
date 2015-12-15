@@ -95,7 +95,7 @@
                   <p>Ibi ha sviluppato una strategia di distribuzione negli ospedali affidando la commercializzazione dei prodotti ad una struttura dedicata, Ibisqus, oggi presente in UK, Germania ed Italia. Sul mercato italiano è presente con diversi prodotti, dalle penicilline sterili agli integratori alimentari. Ha una presenza consolidata nell’antibioticoterapia e in gastroenterologia.</p>
                   <p>Ibi raggiunge direttamente 4.000 farmacie e 3.000 specialisti grazie ad una rete di informatori scientifici qualificati e, indirettamente, oltre 6.000 medici di base con attività di direct mailing, detailing e newsletter.</p>
                   <p>Sul mercato italiano è presente con una varietà di prodotti, dalle penicilline sterili agli integratori alimentari con una presenza consolidata nell’antibioticoterapia oltre diverse aree terapeutiche, quali gastroenterologia, anestesiologia e area infiammazione e dolore.</p>
-                  <div class="site-box">
+                  <div class="evidence-box">
                     <h4>Il sito internet</h4>
                     <p>
                        
@@ -168,6 +168,75 @@
                 <div id="quality" role="tabpanel" class="tab-pane">
                   <h2>IBI: Quality Unit Sistem</h2>
                   <h3>La nostra storia, i nostri valori</h3>
+                  <h4>La qualità</h4>
+                  <h5>Il sistema di qualità</h5>
+                  <p>
+                    Assicurare la Qualità dei Nostri Prodotti
+                    Il Sistema di Qualità dell’Istituto Biochimico Italiano G. Lorenzini (IBI) recepisce e integra le norme nazionali (AIFA) ed internazionali (EU GMP e 21 CFR 210-211 per US FDA) allo scopo di tutelare la salute del paziente.
+                    In un’ottica di miglioramento continuo il Sistema di Qualità cura l’intero ciclo di vita dei nostri prodotti garantendone costantemente la Qualità.
+                    L’ Unità di Qualità è il filo conduttore dell’attività produttiva di IBI.
+                    L’Unità di Qualità include le attività di Controllo Qualità e di Assicurazione Qualità le cui funzionalità e responsabilità sono separate tra di loro ma sinergicamente a servizio della salute pubblica.
+                  </p>
+                  <div class="evidence-box">
+                    <p>
+                      Il controllo Qualità è un processo che segue tutta la vita del farmaco, dal suo sviluppo fino al suo utilizzo.
+                      Da sempre l’IBI è Impegnata nel mantenere elevati standard di qualità.
+                      Ogni operazione compiuta dal personale dell’azienda rispetta precise procedure operative standard create per garantire la sicurezza e l’efficacia dei farmaci prodotti.
+                      Assicurazione Qualità e il Controllo Qualità lavorano costantemente al servizio della salute.
+                    </p>
+                  </div>
+                  <h5>I laboratori di Controllo Qualità</h5>
+                  <p>
+                    L’ Istituto Biochimico Italiano si avvale di moderni Laboratori di Controllo Qualità autorizzati dalle Autorità Competenti (AIFA-USFDA) ad eseguire tutte le analisi necessarie per controllare la qualità di medicinali ed APIs ad uso umano e sperimentale (GMP).
+                    Le attività analitiche, eseguite in accordo ai principi e alle Norme di Buona Fabbricazione (GMP), abbracciano numerosi aspetti della vita dei nostri prodotti:
+                    Analisi delle Materie Prime 
+                    Controllo dei Materiali di confezionamento 
+                    Controlli di Processo
+                    Analisi di rilascio dei prodotti finiti
+                    Analisi di Stabilità
+                    Controlli Ambientali delle aree produttive
+                    Controlli di pulizia delle aree e delle attrezzature di produzione
+                    Qui tecnici specializzati preparati e costantemente aggiornati, con alta professionalità seguono le attività produttive e verificano la rispondenza dei prodotti alle specifiche applicando le procedure del nostro Sistema di Gestione Qualità.
+                  </p>
+                  <div class="evidence-box">
+                    <p>I laboratori di Controllo Qualità eseguono su ogni lotto tutte le analisi previste confermando la conformità del prodotto alle specifiche approvate dalle Autorità Nazionali e internazionali, quali FDA, AIFA, MHRA ecc.</p>
+                  </div>
+                  <h5>L’Assicurazione di Qualità</h5>
+                  <p>
+                    <L>’Assicurazione Qualità è costantemente impegnata nel definire e supervisionare il livello di Qualità:	      </L>•	Seleziona con cura e monitora costantemente i propri fornitori di materie prime e di materiali eseguendo audit presso i siti produttivi;
+                    •	Svolge continua e costante formazione del personale che fa parte della catena produttiva e distributiva dei propri prodotti;
+                    •	Assicura che ogni lotto di APIs e medicinali sia stato stati fabbricato e controllato conformemente alle disposizioni della sua autorizzazione all'immissione in commercio, ai principi e alle linee guida delle norme di buona fabbricazione della EU e US e alle norme di buona fabbricazione di un paese terzo riconosciute come equivalenti nel quadro di un accordo di mutuo riconoscimento o ad ogni altra pertinente prescrizione giuridica prima della sua immissione sul mercato;
+                    •	Vigila sulle condizioni generali di igiene dei locali e la rispondenza ai requisiti di legge e alle norme di Buona Fabbricazione eseguendo self-audit;
+                    •	Supervisione e controlla tutte le operazioni di produzione e controllo e la corretta applicazione delle procedure operative standard che ha definito a garanzia della Qualità dei nostri prodotti;
+                    •	Promuove ed è parte attiva del Sistema di Gestione del Rischio su cui si basa il nostro Sistema di Qualità, definendo la migliore strategia possibile per ridurre gli effetti dei rischi a livelli accettabili attraverso una continua analisi dei processi volta a valutare, controllare, notificare e revisionare i rischi stessi.
+                  </p>
+                  <div class="evidence-box">
+                    <p>L’Assicurazione di Qualità garantisce che i principi e le norme di Buona Fabbricazione (GMPs, Good Manufacturing Practices) siano applicati sempre in modo coerente.</p>
+                  </div>
+                  <h5>Il sistema di qualità</h5>
+                  <p>
+                    I nostri impianti e i Laboratori sono regolarmente ispezionati ed approvati dalle Autorità Ministeriali competenti e da numerosi Quality Assurance e Quality Control provenienti da aziende italiane e multinazionali
+                    Autorizzazione dell'AIFA ad effettuare, secondo le norme di buona fabbricazione (GMP), in qualità di officina farmaceutica per le seguenti attività produttive:
+                    Produzione di sostanze attive per sintesi chimica
+                    Produzioni di sostanze attive sterili
+                    Produzioni di sostanze attive mediante processi Biologici
+                    Prodotti sterili (Preparati in asepsi) 
+                    Liofilizzati 
+                    Liquidi di piccolo volume 
+                    Polveri
+                    Prodotti sterili (Sterilizzazione terminale)
+                    Liquidi di piccolo volume 
+                    Prodotti non sterili  
+                    Capsule di gelatina dura 
+                    Liquidi per uso interno 
+                    Semisolidi 
+                    Compresse 									 
+                    Autorizzazione del dell'AIFA ad effettuare, secondo le norme di buona fabbricazione (GMP), in qualità di officina farmaceutica, controlli biologici, microbiologici (sterilità e diversi da sterilità), chimici, chimico-fisici su Specialità Medicinali e Materie Prime farmacologicamente attive ad uso umano. 
+                    Autorizzazione del Ministero della Salute ai sensi del Decreto Legislativo 12 Aprile 2001, n. 206, concernente l'impiego confinato di microrganismi geneticamente modificati. 
+                  </p>
+                  <div class="evidence-box">
+                    <p>Il Sistema di Qualità dell’Istituto Biochimico Italiano G. Lorenzini è costantemente e periodicamente controllato e certificato dalle dagli organismi di vigilanza, nazionali e internazionali, quali FDA, EMA, ISS e AIFA Certiquality.								</p>
+                  </div>
                 </div>
                 <div id="politica" role="tabpanel" class="tab-pane">
                   <h2>IBI: Politica integrata</h2>
@@ -305,7 +374,7 @@
               <h4>Info</h4>
               <ul>
                 <li> <a href="farmaco-vigilanza">Farmacovigilanza</a></li>
-                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="privacy-policy">Privacy Policy</a></li>
                 <li><a href="contatti">Contatti</a></li>
                 <li><a href="#">Area Riservata</a></li>
               </ul>

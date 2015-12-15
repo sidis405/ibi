@@ -118,7 +118,13 @@
                   </select>
                 </div>
                 <div class="btn btn-pirmary">Filtra</div>
-              </div>
+              </div><a href="benessere-del-paziente">
+                <div class="benessere-paziente">
+                  <h5>Fegato grasso o Steatosi epatica ?</h5>
+                </div></a><a href="benessere-del-paziente">
+                <div class="benessere-paziente">
+                  <h5>Meteorismo e Aerofagia ?</h5>
+                </div></a>
             </div>
           </div>
           <div class="col-md-9">
@@ -133,8 +139,8 @@
                 <div class="filtri-img active">				<a href="prodotti-italia">									<img src="/img/ibi-italia-logo.jpg" alt="" class="img-responsive"></a></div>
               </div>
             </div>
-            <div id="Container" class="row">
-              <div class="col-lg-6 col-md-12 mix ibi-export">
+            <div id="prodotti-container" class="row prodotti-italia">
+              <div class="col-lg-6 col-md-12 mix">
                 <div class="product">
                   <h2 class="product-title">Acido zoledronico ibigen liofilizzato</h2>
                   <ul>
@@ -154,21 +160,18 @@
                       <h5>Aic</h5>
                     </li>
                     <li class="more">
-                      <h5>Atc</h5>
-                    </li>
-                    <li class="more">
                       <h5>Fascia</h5>
                     </li>
                     <li class="more">
-                      <h5>Validità mesi</h5>
+                      <h5>Classe									</h5>
                     </li>
                     <li>
-                      <h5>Italia</h5><a href="#" class="read-more">Vedi tutto</a>
+                      <h5>Gastroenterologia</h5><a href="#" class="read-more">Vedi tutto</a>
                     </li>
                   </ul>
                 </div>
               </div>
-              <div class="col-lg-6 col-md-12 mix ibisqus-ospedale">
+              <div class="col-lg-6 col-md-12 mix">
                 <div class="product">
                   <h2 class="product-title">Acido zoledronico ibigen liofilizzato</h2>
                   <ul>
@@ -188,21 +191,18 @@
                       <h5>Aic</h5>
                     </li>
                     <li class="more">
-                      <h5>Atc</h5>
-                    </li>
-                    <li class="more">
                       <h5>Fascia</h5>
                     </li>
                     <li class="more">
-                      <h5>Validità mesi</h5>
+                      <h5>Classe									</h5>
                     </li>
                     <li>
-                      <h5>Italia</h5><a href="#" class="read-more">Vedi tutto</a>
+                      <h5>Gastroenterologia</h5><a href="#" class="read-more">Vedi tutto</a>
                     </li>
                   </ul>
                 </div>
               </div>
-              <div class="col-lg-6 col-md-12 mix ibi-italia">
+              <div class="col-lg-6 col-md-12 mix">
                 <div class="product">
                   <h2 class="product-title">Acido zoledronico ibigen liofilizzato</h2>
                   <ul>
@@ -222,21 +222,18 @@
                       <h5>Aic</h5>
                     </li>
                     <li class="more">
-                      <h5>Atc</h5>
-                    </li>
-                    <li class="more">
                       <h5>Fascia</h5>
                     </li>
                     <li class="more">
-                      <h5>Validità mesi</h5>
+                      <h5>Classe									</h5>
                     </li>
                     <li>
-                      <h5>Italia</h5><a href="#" class="read-more">Vedi tutto</a>
+                      <h5>Gastroenterologia</h5><a href="#" class="read-more">Vedi tutto</a>
                     </li>
                   </ul>
                 </div>
               </div>
-              <div class="col-lg-6 col-md-12 mix ibi-export">
+              <div class="col-lg-6 col-md-12 mix">
                 <div class="product">
                   <h2 class="product-title">Acido zoledronico ibigen liofilizzato</h2>
                   <ul>
@@ -256,21 +253,18 @@
                       <h5>Aic</h5>
                     </li>
                     <li class="more">
-                      <h5>Atc</h5>
-                    </li>
-                    <li class="more">
                       <h5>Fascia</h5>
                     </li>
                     <li class="more">
-                      <h5>Validità mesi</h5>
+                      <h5>Classe									</h5>
                     </li>
                     <li>
-                      <h5>Italia</h5><a href="#" class="read-more">Vedi tutto</a>
+                      <h5>Gastroenterologia</h5><a href="#" class="read-more">Vedi tutto</a>
                     </li>
                   </ul>
                 </div>
               </div>
-              <div class="col-lg-6 col-md-12 mix ibisqus-ospedale">
+              <div class="col-lg-6 col-md-12 mix">
                 <div class="product">
                   <h2 class="product-title">Acido zoledronico ibigen liofilizzato</h2>
                   <ul>
@@ -290,21 +284,18 @@
                       <h5>Aic</h5>
                     </li>
                     <li class="more">
-                      <h5>Atc</h5>
-                    </li>
-                    <li class="more">
                       <h5>Fascia</h5>
                     </li>
                     <li class="more">
-                      <h5>Validità mesi</h5>
+                      <h5>Classe									</h5>
                     </li>
                     <li>
-                      <h5>Italia</h5><a href="#" class="read-more">Vedi tutto</a>
+                      <h5>Gastroenterologia</h5><a href="#" class="read-more">Vedi tutto</a>
                     </li>
                   </ul>
                 </div>
               </div>
-              <div class="col-lg-6 col-md-12 mix ibi-italia">
+              <div class="col-lg-6 col-md-12 mix">
                 <div class="product">
                   <h2 class="product-title">Acido zoledronico ibigen liofilizzato</h2>
                   <ul>
@@ -324,21 +315,18 @@
                       <h5>Aic</h5>
                     </li>
                     <li class="more">
-                      <h5>Atc</h5>
-                    </li>
-                    <li class="more">
                       <h5>Fascia</h5>
                     </li>
                     <li class="more">
-                      <h5>Validità mesi</h5>
+                      <h5>Classe									</h5>
                     </li>
                     <li>
-                      <h5>Italia</h5><a href="#" class="read-more">Vedi tutto</a>
+                      <h5>Gastroenterologia</h5><a href="#" class="read-more">Vedi tutto</a>
                     </li>
                   </ul>
                 </div>
               </div>
-              <div class="col-lg-6 col-md-12 mix ibi-export">
+              <div class="col-lg-6 col-md-12 mix">
                 <div class="product">
                   <h2 class="product-title">Acido zoledronico ibigen liofilizzato</h2>
                   <ul>
@@ -358,21 +346,18 @@
                       <h5>Aic</h5>
                     </li>
                     <li class="more">
-                      <h5>Atc</h5>
-                    </li>
-                    <li class="more">
                       <h5>Fascia</h5>
                     </li>
                     <li class="more">
-                      <h5>Validità mesi</h5>
+                      <h5>Classe									</h5>
                     </li>
                     <li>
-                      <h5>Italia</h5><a href="#" class="read-more">Vedi tutto</a>
+                      <h5>Gastroenterologia</h5><a href="#" class="read-more">Vedi tutto</a>
                     </li>
                   </ul>
                 </div>
               </div>
-              <div class="col-lg-6 col-md-12 mix ibisqus-ospedale">
+              <div class="col-lg-6 col-md-12 mix">
                 <div class="product">
                   <h2 class="product-title">Acido zoledronico ibigen liofilizzato</h2>
                   <ul>
@@ -392,16 +377,13 @@
                       <h5>Aic</h5>
                     </li>
                     <li class="more">
-                      <h5>Atc</h5>
-                    </li>
-                    <li class="more">
                       <h5>Fascia</h5>
                     </li>
                     <li class="more">
-                      <h5>Validità mesi</h5>
+                      <h5>Classe									</h5>
                     </li>
                     <li>
-                      <h5>Italia</h5><a href="#" class="read-more">Vedi tutto	</a>
+                      <h5>Gastroenterologia</h5><a href="#" class="read-more">Vedi tutto</a>
                     </li>
                   </ul>
                 </div>
@@ -476,7 +458,7 @@
               <h4>Info</h4>
               <ul>
                 <li> <a href="farmaco-vigilanza">Farmacovigilanza</a></li>
-                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="privacy-policy">Privacy Policy</a></li>
                 <li><a href="contatti">Contatti</a></li>
                 <li><a href="#">Area Riservata</a></li>
               </ul>

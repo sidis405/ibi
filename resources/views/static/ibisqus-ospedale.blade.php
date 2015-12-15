@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Ibi Lorenzini | Ibicqus Ospedale</title>
+    <title>Ibi Lorenzini | Ibisqus Ospedale</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -74,12 +74,13 @@
         <div class="row">
           <div class="col-sm-8"><img src="/img/ibisqus-ospedale-logo.jpg" alt=""><a href="#" class="pull-right">
               <div class="btn btn-primary btn-products">Elenco prodotti ibi export</div></a>
+            <p>A quasi 100 anni dalla data della sua fondazione l’Istituto Biochimico Italiano ha intrapreso una strategia di crescita e di rinnovamento con l’obiettivo di competere a livello internazionale.</p>
+            <p>La prima azienda del gruppo IBI, la IBIGEN, grazie alla joint venture con un gruppo internazionale, ha dato vita nel 2007 ad una nuova realtà chiamata IBISQUS presente in UK, Germania ed Italia.</p>
             <p>
-              A quasi 90 anni dalla data della sua fondazione l’Istituto Biochimico IItaliano si sta dirigendo verso una strategia di crescita e rinnovamento, con l’obiettivo di competere a livello internazionale.
-              <br><br>
-              La prima azienda del gruppo Ibi, IBIGEN, grazie alla joint venture con un gruppo internazionale, ha dato vita ad una nuova realtà, chiamata IBISQUS, interamente dedicata al canale Ospedale.
-              Ibi ha sviluppato una nuova strategia per la distribuzione di farmaci sterili iniettabili verso gli Ospedali, veicolando la vendita dei propri prodotti attrverso IBISQUS, presente oggi in UK, Germania e Italia.										
+              IBISQUS Italia in modo snello ed efficiente, commercializza 23 principi attivi per un totale di 58 diversi farmaci generici, di titolarità A.I.C. della Ibi, della Ibigen e di altre Aziende esterne al gruppo, in tutte le Strutture Sanitarie Nazionali a carattere sia Pubblico che Privato.
+              La profonda conoscenza del Canale Ospedaliero italiano e dei suoi intrinsechi fabbisogni, tramite la consolidata Forza Vendite Esterna, integrata dalla catena produttiva e dalla gestione back office delle vendite consentono di ottimizzare il servizio di distribuzione capillare su tutto territorio.
             </p>
+            <p>Le competenze professionali, la collaborazione ad ogni livello e l’eticità sono i valori fondamentali dello spirito del Gruppo che permettono di rispondere alle sfide interne ed esterne in modo rapido ed efficiente.								</p>
           </div>
           <div class="col-md-4">
             <div class="sidebar">
@@ -197,7 +198,7 @@
               <h4>Info</h4>
               <ul>
                 <li> <a href="farmaco-vigilanza">Farmacovigilanza</a></li>
-                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="privacy-policy">Privacy Policy</a></li>
                 <li><a href="contatti">Contatti</a></li>
                 <li><a href="#">Area Riservata</a></li>
               </ul>

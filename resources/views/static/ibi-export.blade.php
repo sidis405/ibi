@@ -76,7 +76,7 @@
             <div class="tabs ibi-export-tabs">
               <!-- Nav tabs-->
               <ul role="tablist" class="nav nav-tabs">
-                <li role="presentation" class="active"><a href="#ibi-export" aria-controls="ibi-export" role="tab" data-toggle="tab">Ibi export</a></li>
+                <li role="presentation" class="active"><a href="#ibi-export" aria-controls="ibi-export" role="tab" data-toggle="tab"><img src="/img/ibi-export-logo.jpg" alt=""></a></li>
                 <li role="presentation"><a href="#licensing-out" aria-controls="licensing-out" role="tab" data-toggle="tab">Licensing out						</a></li>
               </ul>
               <!-- Tab panes-->
@@ -215,7 +215,7 @@
               <h4>Info</h4>
               <ul>
                 <li> <a href="farmaco-vigilanza">Farmacovigilanza</a></li>
-                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="privacy-policy">Privacy Policy</a></li>
                 <li><a href="contatti">Contatti</a></li>
                 <li><a href="#">Area Riservata</a></li>
               </ul>
