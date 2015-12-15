@@ -15,6 +15,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('pull', 'HomeController@pull');
+
 
 
 Route::get('{view}', function ($view) {
@@ -24,5 +26,3 @@ Route::get('{view}', function ($view) {
       abort(404);
     }
   })->where('view', '.*');
-
-Route::get('pull', 'HomeController@pull');
