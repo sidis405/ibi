@@ -72,8 +72,8 @@
     <section class="content">
       <div class="container">
         <div class="row">
-          <div class="col-sm-8"><img src="/img/ibisqus-ospedale-logo.jpg" alt=""><a href="#" class="pull-right">
-              <div class="btn btn-primary btn-products">Elenco prodotti ibi export</div></a>
+          <div class="col-sm-8"><img src="/img/ibisqus-ospedale-logo.jpg" alt=""><a href="prodotti-ibisqus" class="pull-right">
+              <div class="btn btn-primary btn-products">Elenco prodotti ibisqus ospedale</div></a>
             <p>A quasi 100 anni dalla data della sua fondazione l’Istituto Biochimico Italiano ha intrapreso una strategia di crescita e di rinnovamento con l’obiettivo di competere a livello internazionale.</p>
             <p>La prima azienda del gruppo IBI, la IBIGEN, grazie alla joint venture con un gruppo internazionale, ha dato vita nel 2007 ad una nuova realtà chiamata IBISQUS presente in UK, Germania ed Italia.</p>
             <p>
