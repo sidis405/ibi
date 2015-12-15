@@ -16,6 +16,7 @@ Route::get('/', function () {
 });
 
 
+
 Route::get('{view}', function ($view) {
     try {
       return view('static.'.$view);
@@ -23,3 +24,5 @@ Route::get('{view}', function ($view) {
       abort(404);
     }
   })->where('view', '.*');
+
+Route::get('pull', 'HomeController@pull');
