@@ -538,7 +538,8 @@ Tabs
 
 .tabs .nav-tabs {
   border: 0;
-  border-bottom: 2px solid #00509a; }
+  border-bottom: 2px solid #00509a;
+  text-align: center; }
   .tabs .nav-tabs li {
     margin-bottom: 5px; }
     .tabs .nav-tabs li:first-of-type a {
@@ -599,10 +600,22 @@ Tabs
 
 .tabs.ibi-export-tabs {
   margin-top: 50px; }
+  .tabs.ibi-export-tabs h2:last-of-type {
+    margin-top: 40px; }
   .tabs.ibi-export-tabs ul li {
     width: 50%;
     text-align: center;
     height: 85px; }
+  .tabs.ibi-export-tabs .license-box {
+    border-bottom: 1px dashed #1fa9ad;
+    float: left;
+    width: 100%;
+    padding: 15px 0; }
+    .tabs.ibi-export-tabs .license-box span {
+      color: #1fa9ad;
+      font-weight: 700; }
+    .tabs.ibi-export-tabs .license-box p {
+      margin: 0; }
 
 .tabs.manufactoring-tabs {
   margin-top: 50px; }
@@ -643,6 +656,7 @@ section.content.farmacovigilanza-content p {
 
 section.content.contatti-content .loghi {
   padding-bottom: 15px;
+  margin: 0 15px;
   border-bottom: 1px dotted #666; }
   section.content.contatti-content .loghi.contatti-ibisqus-logo {
     margin-top: 50px; }
@@ -677,6 +691,32 @@ section.content.contatti-content #accordion .panel {
       display: inline-block; }
   section.content.contatti-content #accordion .panel .panel-body {
     border: 0; }
+
+section.content.ricerca-content #accordion a:hover, section.content.ricerca-content #accordion a:focus {
+  text-decoration: none; }
+
+section.content.ricerca-content #accordion .panel-group .panel + .panel {
+  margin-top: 0 !important; }
+
+section.content.ricerca-content #accordion .panel {
+  border: 0;
+  border-radius: 0;
+  border: 1px dotted #000; }
+  section.content.ricerca-content #accordion .panel .panel-title {
+    margin: 5px 0; }
+  section.content.ricerca-content #accordion .panel .panel-heading {
+    background: transparent;
+    padding: 15px; }
+    section.content.ricerca-content #accordion .panel .panel-heading h4 {
+      color: #00509a;
+      font-weight: 700;
+      display: inline-block;
+      text-transform: none; }
+  section.content.ricerca-content #accordion .panel .panel-body {
+    border: 0; }
+  section.content.ricerca-content #accordion .panel ul {
+    border: 0;
+    margin: 0; }
 
 section.content.benessere-content #accordion a:hover, section.content.benessere-content #accordion a:focus {
   text-decoration: none; }
@@ -755,43 +795,69 @@ section.products-content .filtri {
     margin: auto; }
 
 section.products-content #prodotti-container .product {
-  width: 100%; }
-  section.products-content #prodotti-container .product h2 {
-    padding: 15px;
-    font-size: 16px;
-    background: #80a8cd;
-    text-transform: uppercase;
-    color: #fff;
-    margin-bottom: 0; }
-  section.products-content #prodotti-container .product h5 {
-    margin: 0;
-    font-weight: 700; }
+  width: 100%;
+  margin-bottom: 35px; }
+  section.products-content #prodotti-container .product .product-title {
+    background: #80a8cd; }
+    section.products-content #prodotti-container .product .product-title h2 {
+      padding: 15px;
+      font-size: 16px;
+      text-transform: uppercase;
+      color: #fff;
+      margin: 0;
+      display: inline-block; }
+    section.products-content #prodotti-container .product .product-title .plus-minus {
+      width: 25px;
+      height: 25px;
+      margin-top: 10px;
+      cursor: pointer;
+      margin-right: 8px;
+      background: transparent; }
+      section.products-content #prodotti-container .product .product-title .plus-minus:before, section.products-content #prodotti-container .product .product-title .plus-minus:after {
+        left: 11px;
+        top: 4px;
+        height: 18px;
+        width: 3px; }
   section.products-content #prodotti-container .product ul {
     padding: 0;
     list-style: none; }
-    section.products-content #prodotti-container .product ul li:nth-child(5), section.products-content #prodotti-container .product ul li:nth-child(6) {
+    section.products-content #prodotti-container .product ul.product-content {
+      display: none; }
+    section.products-content #prodotti-container .product ul a.read-more {
+      float: right;
       text-transform: uppercase; }
     section.products-content #prodotti-container .product ul li {
       padding: 15px;
       border-bottom: 1px solid #ededed; }
-      section.products-content #prodotti-container .product ul li:last-of-type h5 {
-        text-transform: uppercase;
-        display: inline-block; }
-      section.products-content #prodotti-container .product ul li:last-of-type a.read-more {
-        text-transform: uppercase;
-        float: right; }
+      section.products-content #prodotti-container .product ul li h5 {
+        margin: 0;
+        font-weight: 700; }
       section.products-content #prodotti-container .product ul li:first-of-type {
         background: #f2f6fa; }
+      section.products-content #prodotti-container .product ul li:last-of-type h5 {
+        display: inline-block; }
       section.products-content #prodotti-container .product ul li.more {
         display: none; }
-        section.products-content #prodotti-container .product ul li.more h5 {
-          display: inline-block; }
 
-section.products-content #prodotti-container.prodotti-italia .product ul li:nth-child(6) {
-  text-transform: none; }
+section.products-content #prodotti-container.prodotti-italia .product .formulazione {
+  background: #f2f6fa;
+  padding: 15px; }
+  section.products-content #prodotti-container.prodotti-italia .product .formulazione h5 {
+    font-weight: 700;
+    margin: 0; }
 
-section.products-content #prodotti-container.prodotti-export .product ul li:last-of-type h5 {
-  text-transform: none; }
+section.products-content #prodotti-container.prodotti-italia .product .product-content li:first-of-type {
+  background: #fff; }
+
+section.products-content #prodotti-container.prodotti-ibisqus .formulazione {
+  background: #f2f6fa;
+  padding: 15px; }
+  section.products-content #prodotti-container.prodotti-ibisqus .formulazione h5 {
+    font-weight: 700;
+    margin: 0; }
+
+section.products-content #prodotti-container.prodotti-ibisqus .product-content li:first-of-type {
+  background: #fff; }
 
 /*
 -------------------------

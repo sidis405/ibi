@@ -118,6 +118,14 @@ $(document).ready(function() {
     $(this).closest('.product').find('li.more').slideToggle();
   });
 });
+
+$(document).ready(function() {
+  $('.product .plus-minus').on('click',  function(event) {    
+    event.preventDefault()
+    $(this).toggleClass('minus');
+    $(this).closest('.product').find('.product-content').slideToggle();
+  });
+});
 //# sourceMappingURL=main.js.map
 
 //# sourceMappingURL=main.js.map

@@ -92,11 +92,18 @@
                     Duciur moloriat. Natem licias eatum aut omnis essum vel in pro iniminctem. Ab inulpa sandita eptatem porita destion eatet estis ni apitior porruptatium et providis net eum quia dus everiosto endandus voluptat. Evenientia sequam voluptatur sin re voluptibus ipsapitatem nihil idunt apelect atiustrum
                   </p>
                 </div>
-                <div id="development" role="tabpanel" class="tab-pane">
-                  <p>
-                    Ne sitatius excea que vende as explignis exerem renditia estius que aria quae iunt, nat esed quatus invendae nia dis ex expersped ma net, eost que venem que pel ea sam et acerem conet esti volorum quia sime elecus.
+                <div id="development" role="tabpanel" class="tab-pane">								<img src="/img/grafico-development.jpg" class="img-responsive">
+                  <p><b>cGMP production of sterile penicillins (API)<br></b>Ne sitatius excea que vende as explignis exerem renditia estius que aria quae iunt, nat esed quatus invendae nia dis ex expersped ma net, eost que venem que pel ea sam et acerem conet esti volorum quia sime elecus.
                     Ihilit esto dipsam fuga. Itas eum volorae ipsunt eum et dolor audandunt ius enit, il ipsunt lab ium acearci desseque et facea prat.
-                    Se voles eos is sitat dunt lab iunt, idunt hicitatis ma nus nullabo rersperio consedi gendell aborum rerferumet ulpa si doluptat.												
+                    Se voles eos is sitat dunt lab iunt, idunt hicitatis ma nus nullabo rersperio consedi gendell aborum rerferumet ulpa si doluptat.
+                  </p>
+                  <p><b>CDMS for orals, topicals, injectables<br></b>Ne sitatius excea que vende as explignis exerem renditia estius que aria quae iunt, nat esed quatus invendae nia dis ex expersped ma net, eost que venem que pel ea sam et acerem conet esti volorum quia sime elecus.
+                    Ihilit esto dipsam fuga. Itas eum volorae ipsunt eum et dolor audandunt ius enit, il ipsunt lab ium acearci desseque et facea prat.
+                    Se voles eos is sitat dunt lab iunt, idunt hicitatis ma nus nullabo rersperio consedi gendell aborum rerferumet ulpa si doluptat.
+                  </p>
+                  <p><b>GMP production of Rec-proteins (API)<br></b>Ne sitatius excea que vende as explignis exerem renditia estius que aria quae iunt, nat esed quatus invendae nia dis ex expersped ma net, eost que venem que pel ea sam et acerem conet esti volorum quia sime elecus.
+                    Ihilit esto dipsam fuga. Itas eum volorae ipsunt eum et dolor audandunt ius enit, il ipsunt lab ium acearci desseque et facea prat.
+                    Se voles eos is sitat dunt lab iunt, idunt hicitatis ma nus nullabo rersperio consedi gendell aborum rerferumet ulpa si doluptat.								
                   </p>
                 </div>
               </div>

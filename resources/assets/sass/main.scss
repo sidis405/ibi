@@ -169,6 +169,7 @@ Tabs
 	.nav-tabs {
 		border: 0;
 		border-bottom: 2px solid $title-color;
+		text-align: center;
 		li {
 			margin-bottom: 5px;
 			&:first-of-type a {border-left: 1px solid $text-color;}
@@ -230,12 +231,21 @@ Tabs
 	// export tabs
 	&.ibi-export-tabs {
 		margin-top: 50px;
+		h2:last-of-type {margin-top: 40px;}
 		ul {
 			li {
 				width: 50%;
 				text-align: center;
 				height: 85px;
 			}
+		}
+		.license-box {			
+			border-bottom: 1px dashed $green;
+			float: left;
+			width: 100%;
+			padding: 15px 0;
+			span {color: $green; font-weight: 700;}
+			p {margin: 0;}
 		}
 	}
 	// manufactioring tabs
@@ -293,6 +303,7 @@ section.content {
 	&.contatti-content {
 		.loghi {
 			padding-bottom: 15px;
+			margin: 0 15px;
 			border-bottom: 1px dotted $text-color;
 			&.contatti-ibisqus-logo {margin-top: 50px;}
 		}		
@@ -325,6 +336,30 @@ section.content {
 					}
 				}
 				.panel-body {border: 0;}
+			}
+		}
+	}
+	&.ricerca-content {
+		#accordion {
+			a:hover, a:focus {text-decoration: none;}
+			.panel-group .panel+.panel {margin-top: 0 !important;}
+			.panel {
+				border: 0;
+				border-radius: 0;
+				border: 1px dotted #000;				
+				.panel-title {margin: 5px 0;}
+				.panel-heading {
+					background: transparent;
+					padding: 15px;
+					h4 {						
+						color: $title-color;
+						font-weight: 700;
+						display: inline-block;
+						text-transform: none;
+					}
+				}
+				.panel-body {border: 0;}
+				ul {border: 0; margin: 0;}
 			}
 		}
 	}
@@ -416,59 +451,82 @@ section.products-content {
 	#prodotti-container {		
 		.product {
 			width: 100%;
-			h2 {
-				padding: 15px;
-				font-size: 16px;
+			margin-bottom: 35px;	
+			.product-title {
 				background: $light-blue;
-				text-transform: uppercase;
-				color: #fff;
-				margin-bottom: 0;
-			}
-			h5 {
-				margin: 0;
-				font-weight: 700;
-			}
-			ul {
-				padding: 0;
-				list-style: none;
-				li:nth-child(5), li:nth-child(6) {
-					text-transform: uppercase;
-				}
-				li {
+				h2 {
 					padding: 15px;
-					border-bottom: 1px solid $light-gray; 
-					&:last-of-type {
-						h5 {text-transform: uppercase; display: inline-block;}
-						a.read-more {text-transform: uppercase; float: right;}
-					}
-					&:first-of-type {
-						background: $lighter-blue;
-					}
-					&.more {
-						display: none;
-						h5 {display: inline-block;}					
+					font-size: 16px;				
+					text-transform: uppercase;
+					color: #fff;
+					margin: 0;
+					display: inline-block;
+				}				
+				.plus-minus {				
+					width: 25px;
+					height: 25px;
+					margin-top: 10px;
+					cursor: pointer;				
+					margin-right: 8px;
+					background: transparent;		
+					&:before, &:after {				  
+					  left: 11px;
+					  top: 4px;				 
+					  height: 18px;
+					  width: 3px;				  
 					}				
 				}
 			}
-		}
-		&.prodotti-italia {
-			.product {
-				ul {
-					li:nth-child(6) {text-transform: none;}
+						
+			ul {
+				padding: 0;
+				list-style: none;
+				&.product-content {display: none;}
+				a.read-more {float: right; text-transform: uppercase;}
+				li {
+					padding: 15px;
+					border-bottom: 1px solid $light-gray;
+					h5 {
+						margin: 0;
+						font-weight: 700;
+					} 					
+					&:first-of-type {
+						background: $lighter-blue;
+					}
+					&:last-of-type {
+						h5 {display: inline-block;}
+					}
+					&.more {display: none;}							
 				}
 			}
 		}
+
+		&.prodotti-italia {
+			.product {
+					.formulazione {
+						background: $lighter-blue;
+						padding: 15px;
+						h5 {font-weight: 700; margin: 0;}
+					}
+					.product-content {
+						li:first-of-type {background: #fff;}
+					}
+			}	
+		}
+
 		&.prodotti-export {
 			.product {
-				ul {
-					li {
-						&:last-of-type {
-							h5 {
-								text-transform: none;
-							}
-						}
-					}
-				}
+				
+			}
+		}
+		&.prodotti-ibisqus {
+			.formulazione {
+				background: $lighter-blue;
+				padding: 15px;
+				h5 {font-weight: 700; margin: 0;}
+			}
+			.product-content {
+				li:first-of-type {background: #fff;}
 			}
 		}
 	}	

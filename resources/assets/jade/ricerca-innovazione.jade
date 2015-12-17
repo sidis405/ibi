@@ -16,7 +16,7 @@ block content
 		.container
 			.main-caption
 				h1 Ricerca e innovazione
-	section.content
+	section.content.ricerca-content
 		.container
 			.row
 				.col-sm-8					
@@ -39,8 +39,104 @@ block content
 									|Ihilit esto dipsam fuga. Itas eum volorae ipsunt eum et dolor audandunt ius enit, il ipsunt lab ium acearci desseque et facea prat.
 									|Se voles eos is sitat dunt lab iunt, idunt hicitatis ma nus nullabo rersperio consedi gendell aborum rerferumet ulpa si doluptat.									
 							#biotecnologie.tab-pane(role='tabpanel')
-								p
-									|Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem placeat nulla, inventore hic voluptatem distinctio asperiores. Numquam maxime id, voluptate rem quisquam voluptates. Consequuntur quo voluptatem asperiores qui. Aperiam, ducimus.		
+								#accordion.panel-group(role='tablist', aria-multiselectable='true')
+									.panel.panel-default
+										a(role='button', data-toggle='collapse', data-parent='#accordion', href='#collapseOne', aria-expanded='true', aria-controls='collapseOne')
+											#headingOne.panel-heading(role='tab')
+												h4.panel-title												
+													| About
+												.plus-minus.minus							
+										#collapseOne.panel-collapse.collapse.in(role='tabpanel', aria-labelledby='headingOne')
+											.panel-body																															
+												|The Biotech Dept. at IBI-Lorenzini is committed to the production of recombinant proteins from CHO cells. 
+												|In 2015 we have received the GMP authorization from the Italian Regulatory Agency (AIFA, authorization number UAO/103050/P) for the production of the recombinant human BMP4 (Bone Morphogenetic Protein). This protein has obtained the Orphan Drug designation from EMA
+												|(http://www.ema.europa.eu/ema/index.jsp?curl=pages/medicines/human/orphans/2014/11/human_orphan_001433.jsp&mid=WC0b01ac058001d12b) for the treatment of glioma.
+												|The Biotech Dept. is also dedicated to bring innovative oncology products into clinic. We are developing a humanized monoclonal antibody anti-HER2 with groundbreaking features over the actual marketed antibodies for the treatment of HER2 expressing tumors.
+												|Finally, we have an established production process for the biosimilar eythropoietin alpha.											
+									.panel.panel-default
+										a.collapsed(role='button', data-toggle='collapse', data-parent='#accordion', href='#collapseTwo', aria-expanded='false', aria-controls='collapseTwo')
+											#headingTwo.panel-heading(role='tab')
+												h4.panel-title												
+													| Equipment
+												.plus-minus
+										#collapseTwo.panel-collapse.collapse(role='tabpanel', aria-labelledby='headingTwo')
+											.panel-body												
+												|All the GMP equipment are under constant and registered control through a validated system of probes and alarms (TESTO).
+												<br><br>
+												b Upstream
+												ul
+													li n. 2 wave Bioreactors 20/50 (GE Healthcare)
+													li n. 1 SIP Bioreactor 30 L (Applikon)
+													li n. 3 CO2 incubators (Thermo Fisher and Eppendorf-Si41 with integrated shaker)
+													li n. 2 Liquid nitrogen Dewars (Thermo Fisher and MV2000)
+													li -80°C, -20°C and +4°C refrigerators
+													li Nucleocounter for cell counting												
+
+												b Downstream
+												ul
+													li Akta Pilot (GE Healthcare)
+													li Akta Explorer (GE Healthcare)
+													li Sartoflow alpha for TFF
+													li Viral Inactivation and Removal
+													li Hollow fibers (GE Healthcare) for the concentration of proteins			
+													
+												b Analysis
+												ul
+													li HPLC (Waters)
+													li UV-Vis spectrophotometer (Perkin Elmer)
+													li Capillary Electrophoresis (Beckman & Coulter)
+													li Chemidoc (Bio-Rad)
+													li ELISA reader (BMG)
+													li ELISA plate washer (Tecan)
+													li BioLayerInterferometry (BLITZ-Fortebio)
+													li Cell-based potency assays
+													li Real-Time PCR (Applied Biosystems 7500)
+													li Flow Cytometer (EasyCube-Sysmex)																							
+									.panel.panel-default
+										a.collapsed(role='button', data-toggle='collapse', data-parent='#accordion', href='#collapseThree', aria-expanded='false', aria-controls='collapseThree')
+											#headingThree.panel-heading(role='tab')
+												h4.panel-title					
+													|	Projects
+												.plus-minus												
+										#collapseThree.panel-collapse.collapse(role='tabpanel', aria-labelledby='headingThree')
+											.panel-body												
+												ul
+													li Production of recombinant antibodies against ErbB2 for cancer therapy	(funded by Italian Scientific Research Fund FILAS 2008)  
+													li 
+														| A breast cancer toolbox: HER2 targeted immuno-conjugate as therapeutic and diagnostic tools (https://www.eurostars-eureka.eu/project//id/5995  funded by Eurostars 2010-2014).
+													li
+														| 3WAYNEPO: Novel Nanoformulations of low sialic recombinant erythropoietin for treatment of Alzheimer’s disease and cerebral ischemia/reperfusion injury. (submitted for the H2020 NMBP-10-2016-2017 Proposal number: 720845-1)													
+									.panel.panel-default
+										a.collapsed(role='button', data-toggle='collapse', data-parent='#accordion', href='#collapseFour', aria-expanded='false', aria-controls='collapseFour')
+											#headingFour.panel-heading(role='tab')
+												h4.panel-title
+													|	Collaborations
+												.plus-minus
+										#collapseFour.panel-collapse.collapse(role='tabpanel', aria-labelledby='headingFour')
+											.panel-body											
+												ul
+													li Stemgen
+													li IBA Gmbh
+													li Sigma-Tau
+													li IFO-IRE
+													li Università di Viterbo
+													li Naxospharma
+													li Mediapharma																	
+									.panel.panel-default
+										a.collapsed(role='button', data-toggle='collapse', data-parent='#accordion', href='#collapseFive', aria-expanded='false', aria-controls='collapseFive')
+											#headingFive.panel-heading(role='tab')
+												h4.panel-title
+													|	Partnership
+												.plus-minus													
+										#collapseFive.panel-collapse.collapse(role='tabpanel', aria-labelledby='headingFive')
+											.panel-body
+												|We are open to evaluate possible collaborations with academic institutions on the basis of promising projects in the fields of monoclonal antibodies and recombinant proteins. We can:
+												ul
+													li develop recombinant CHO cell lines and produce MCB and WCB in GMP ready for the clinical phases;
+													li develop upstream and downstream processes;
+													li develop and validate analytical methods (chemical and biological).													
+												
+												|We are committed to work as CMO (Contract Manufacturing Organization) for upstream and downstream processes for the production of monoclonal antibodies and recombinant proteins from CHO cells. Our Quality Unit, Qualified Person and Regulatory Office can assist the management of complex projects in the biopharmaceutical field.		
 							#pubblicazioni.tab-pane.active(role='tabpanel')
 								h3 Pubblicazioni
 								ul

@@ -94,7 +94,178 @@
                   </p>
                 </div>
                 <div id="licensing-out" role="tabpanel" class="tab-pane">
-                  <h2>Licensing out							</h2>
+                  <h2>Available Dossiers</h2>
+                  <div class="row">
+                    <div class="license-box">
+                      <div class="col-sm-3"><span>Diospine</span></div>
+                      <div class="col-sm-9">
+                        <p>450mg tabs</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="license-box">
+                      <div class="col-sm-3"><span>Levofloxacin</span></div>
+                      <div class="col-sm-9">
+                        <p>5 mg/ml Solution for infusion</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="license-box">
+                      <div class="col-sm-3"><span>Carvedilolo</span></div>
+                      <div class="col-sm-9">
+                        <p>
+                           
+                          6,25 mg tabs
+                          <br>
+                          25 mg tabs
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="license-box">
+                      <div class="col-sm-3"><span>Enalapril</span></div>
+                      <div class="col-sm-9">
+                        <p>
+                          5 mg tabs
+                          <br>
+                          20 mg tabs
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="license-box">
+                      <div class="col-sm-3"><span>Zolendronic Acid</span></div>
+                      <div class="col-sm-9">
+                        <p>
+                           
+                          4 mg Powder and solvent for solution for infusion,
+                          <br> 
+                          1 vial + 1 ampoule (5 ml)
+                          <br>
+                          4 mg/5 ml Concentrate for solution for infusion
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="license-box">
+                      <div class="col-sm-3"><span>Ciprofloxacin</span></div>
+                      <div class="col-sm-9">
+                        <p>
+                           
+                          100mg/50 ml solution for infusion
+                          <br>
+                          200mg/100ml  solution for infusion
+                          <br>
+                          400mg/200ml solution for infusion
+                          <br>
+                          250 mg tabs
+                          <br>
+                          500 mg tabs
+                          <br>
+                          750 mg Tabs
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="license-box">
+                      <div class="col-sm-3"><span>Ketoprofen</span></div>
+                      <div class="col-sm-9">
+                        <p>
+                           
+                          Oral Granulates 50 mg
+                          <br>
+                          100 mg caps
+                          <br>
+                          200 mg tabs
+                          <br>
+                          Solution for Injection IM, Vials 100mg/2,5ml
+                          <br>
+                          Solution for Injection EV, Vials 100mg/5 ml
+                          <br>
+                          Oral Drops 25 mg/ml
+                          <br>
+                          5% Gel
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="license-box">
+                      <div class="col-sm-3"><span>Iloprost</span></div>
+                      <div class="col-sm-9">
+                        <p>
+                           
+                          20 µ /ml vial for infusion
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <h2>Under Development Dossiers</h2>
+                  <div class="row">
+                    <div class="license-box">
+                      <div class="col-sm-3"><span>Voriconazole</span></div>
+                      <div class="col-sm-9">
+                        <p>
+                           
+                          200 mg   Powder for solution for infusion (2018)
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="license-box">
+                      <div class="col-sm-3"><span>Daptomicina</span></div>
+                      <div class="col-sm-9">
+                        <p>
+                           
+                          350mg Powder for solution for infusion
+                          <br>
+                          500mg Powder for solution for infusion
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="license-box">
+                      <div class="col-sm-3"><span>Teicoplanin</span></div>
+                      <div class="col-sm-9">
+                        <p>
+                           
+                          200 mg  Powder for solution
+                          <br>
+                          400 mg  Powder for solution
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="license-box">
+                      <div class="col-sm-3"><span>Tigecycline</span></div>
+                      <div class="col-sm-9">
+                        <p>
+                           
+                          50mg vial
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="license-box">
+                      <div class="col-sm-3"><span>Sodium picosulfate / Magnesium oxide/ citric acid</span></div>
+                      <div class="col-sm-9">
+                        <p>
+                           
+                          Oral granulate
+                        </p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>

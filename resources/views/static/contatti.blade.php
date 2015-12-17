@@ -76,8 +76,8 @@
             <div class="row">
               <div class="col-md-8">
                 <div class="row">
-                  <div class="col-sm-6">
-                    <div class="loghi"><img src="/img/contatti-italia-export.jpg"></div>
+                  <div class="loghi"><img src="/img/ibi-lorenzini-logo.png"></div>
+                  <div class="col-sm-6">									
                     <p>
                       Indirizzo e Sede legale:<br>
                       Istituto Biochimico Italiano <br>
@@ -91,8 +91,7 @@
                       P.IVA 02578030153
                     </p>
                   </div>
-                  <div class="col-sm-6">
-                    <div class="loghi"><img src="/img/contatti-export.jpg"></div>
+                  <div class="col-sm-6">									
                     <p>
                       Export Department<br>
                       Fax +39 06 92150.598<br>
