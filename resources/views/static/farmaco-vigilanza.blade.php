@@ -131,7 +131,7 @@
                     <li>Modulo segnalazione operatore sanitario e paziente  (ITALIANO)</li>
                     <li>Modulo segnalazione operatore sanitario e paziente  (TEDESCO)</li>
                     <li>Modulo segnalazione operatore sanitario e paziente  (CECO)</li>
-                    <li>Modulo segnalazione operatore sanitario e paziente  (AUSTRIA)							</li>
+                    <li>Modulo segnalazione operatore sanitario e paziente  (AUSTRIACO)							</li>
                   </ul>
                 </div>
               </div>
