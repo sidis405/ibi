@@ -148,10 +148,10 @@
                       <h5>Principio attivo</h5><span>Acido Zoledronico - Anidro									</span>
                     </li>
                     <li>
-                      <h5>Foglietto illustrativo										</h5>
+                      <h5>Foglietto illustrativo</h5><i class="fa fa-download">				</i>
                     </li>
                     <li>
-                      <h5>Scheda tecnica</h5>
+                      <h5>Scheda tecnica</h5><i class="fa fa-download"></i>
                     </li>
                     <li>
                       <h5>AIC</h5>
@@ -185,10 +185,10 @@
                       <h5>Principio attivo</h5><span>Acido Zoledronico - Anidro									</span>
                     </li>
                     <li>
-                      <h5>Foglietto illustrativo										</h5>
+                      <h5>Foglietto illustrativo</h5><i class="fa fa-download">				</i>
                     </li>
                     <li>
-                      <h5>Scheda tecnica</h5>
+                      <h5>Scheda tecnica</h5><i class="fa fa-download"></i>
                     </li>
                     <li>
                       <h5>AIC</h5>
@@ -222,10 +222,10 @@
                       <h5>Principio attivo</h5><span>Acido Zoledronico - Anidro									</span>
                     </li>
                     <li>
-                      <h5>Foglietto illustrativo										</h5>
+                      <h5>Foglietto illustrativo</h5><i class="fa fa-download">				</i>
                     </li>
                     <li>
-                      <h5>Scheda tecnica</h5>
+                      <h5>Scheda tecnica</h5><i class="fa fa-download"></i>
                     </li>
                     <li>
                       <h5>AIC</h5>
@@ -259,10 +259,10 @@
                       <h5>Principio attivo</h5><span>Acido Zoledronico - Anidro									</span>
                     </li>
                     <li>
-                      <h5>Foglietto illustrativo										</h5>
+                      <h5>Foglietto illustrativo</h5><i class="fa fa-download">				</i>
                     </li>
                     <li>
-                      <h5>Scheda tecnica</h5>
+                      <h5>Scheda tecnica</h5><i class="fa fa-download"></i>
                     </li>
                     <li>
                       <h5>AIC</h5>

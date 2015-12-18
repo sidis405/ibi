@@ -148,10 +148,10 @@
                       <h5>Formulazione</h5><span>750 mg IM/EV 1 flac. da 20 ml + solv. 1,6 ml</span>
                     </li>
                     <li>
-                      <h5>Foglietto illustrativo										</h5>
+                      <h5>Foglietto illustrativo</h5><i class="fa fa-download">				</i>
                     </li>
                     <li>
-                      <h5>Scheda tecnica</h5>
+                      <h5>Scheda tecnica</h5><i class="fa fa-download"></i>
                     </li>
                     <li>
                       <h5>AIC</h5>
@@ -185,10 +185,10 @@
                       <h5>Formulazione</h5><span>750 mg IM/EV 1 flac. da 20 ml + solv. 1,6 ml</span>
                     </li>
                     <li>
-                      <h5>Foglietto illustrativo										</h5>
+                      <h5>Foglietto illustrativo</h5><i class="fa fa-download">				</i>
                     </li>
                     <li>
-                      <h5>Scheda tecnica</h5>
+                      <h5>Scheda tecnica</h5><i class="fa fa-download"></i>
                     </li>
                     <li>
                       <h5>AIC</h5>
@@ -222,47 +222,10 @@
                       <h5>Formulazione</h5><span>750 mg IM/EV 1 flac. da 20 ml + solv. 1,6 ml</span>
                     </li>
                     <li>
-                      <h5>Foglietto illustrativo										</h5>
+                      <h5>Foglietto illustrativo</h5><i class="fa fa-download">				</i>
                     </li>
                     <li>
-                      <h5>Scheda tecnica</h5>
-                    </li>
-                    <li>
-                      <h5>AIC</h5>
-                    </li>
-                    <li>
-                      <h5>ATC</h5>
-                    </li>
-                    <li>
-                      <h5>Fascia</h5>
-                    </li>
-                    <li>
-                      <h5>Validità mesi</h5>
-                    </li>
-                    <li>
-                      <h5>Unità	</h5>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div class="col-lg-6 col-md-12 mix">
-                <div class="product">
-                  <div class="product-title"> 
-                    <h2>Acido zoledronico ibigen liofilizzato</h2>
-                    <div class="plus-minus"></div>
-                  </div>
-                  <ul class="product-content">
-                    <li>
-                      <h5>Principio attivo</h5><span>Acido Zoledronico - Anidro</span>
-                    </li>
-                    <li>
-                      <h5>Formulazione</h5><span>750 mg IM/EV 1 flac. da 20 ml + solv. 1,6 ml</span>
-                    </li>
-                    <li>
-                      <h5>Foglietto illustrativo										</h5>
-                    </li>
-                    <li>
-                      <h5>Scheda tecnica</h5>
+                      <h5>Scheda tecnica</h5><i class="fa fa-download"></i>
                     </li>
                     <li>
                       <h5>AIC</h5>
@@ -296,10 +259,47 @@
                       <h5>Formulazione</h5><span>750 mg IM/EV 1 flac. da 20 ml + solv. 1,6 ml</span>
                     </li>
                     <li>
-                      <h5>Foglietto illustrativo										</h5>
+                      <h5>Foglietto illustrativo</h5><i class="fa fa-download">				</i>
                     </li>
                     <li>
-                      <h5>Scheda tecnica</h5>
+                      <h5>Scheda tecnica</h5><i class="fa fa-download"></i>
+                    </li>
+                    <li>
+                      <h5>AIC</h5>
+                    </li>
+                    <li>
+                      <h5>ATC</h5>
+                    </li>
+                    <li>
+                      <h5>Fascia</h5>
+                    </li>
+                    <li>
+                      <h5>Validità mesi</h5>
+                    </li>
+                    <li>
+                      <h5>Unità	</h5>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-12 mix">
+                <div class="product">
+                  <div class="product-title"> 
+                    <h2>Acido zoledronico ibigen liofilizzato</h2>
+                    <div class="plus-minus"></div>
+                  </div>
+                  <ul class="product-content">
+                    <li>
+                      <h5>Principio attivo</h5><span>Acido Zoledronico - Anidro</span>
+                    </li>
+                    <li>
+                      <h5>Formulazione</h5><span>750 mg IM/EV 1 flac. da 20 ml + solv. 1,6 ml</span>
+                    </li>
+                    <li>
+                      <h5>Foglietto illustrativo</h5><i class="fa fa-download">				</i>
+                    </li>
+                    <li>
+                      <h5>Scheda tecnica</h5><i class="fa fa-download"></i>
                     </li>
                     <li>
                       <h5>AIC</h5>

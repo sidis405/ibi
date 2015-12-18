@@ -126,6 +126,18 @@ $(document).ready(function() {
     $(this).closest('.product').find('.product-content').slideToggle();
   });
 });
+
+/*
+-------------------------
+TOOLTIP INIT
+-------------------------
+*/
+
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
+
+
 //# sourceMappingURL=main.js.map
 
 //# sourceMappingURL=main.js.map

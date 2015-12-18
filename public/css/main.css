@@ -291,7 +291,7 @@ header {
   .top-bar p {
     margin: 0; }
   .top-bar i {
-    font-size: 16px;
+    font-size: 18px;
     margin-right: 15px; }
   .top-bar .area-riservata {
     text-transform: uppercase;
@@ -831,7 +831,11 @@ section.products-content #prodotti-container .product {
       border-bottom: 1px solid #ededed; }
       section.products-content #prodotti-container .product ul li h5 {
         margin: 0;
-        font-weight: 700; }
+        font-weight: 700;
+        display: inline-block; }
+      section.products-content #prodotti-container .product ul li i {
+        float: right;
+        font-size: 18px; }
       section.products-content #prodotti-container .product ul li:first-of-type {
         background: #f2f6fa; }
       section.products-content #prodotti-container .product ul li:last-of-type h5 {
