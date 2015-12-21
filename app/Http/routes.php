@@ -12,9 +12,10 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('static.index');
 });
 
+Route::get('home', 'HomeController@home');
 Route::get('pull', 'HomeController@pull');
 
 
