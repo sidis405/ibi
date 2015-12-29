@@ -145,6 +145,15 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
+        /*
+         * Ibi providers
+         */
+        
+        App\Providers\BusServiceProvider::class,
+
+        Laracasts\Flash\FlashServiceProvider::class,
+        Illuminate\Html\HtmlServiceProvider::class,
+        Spatie\Permission\PermissionServiceProvider::class,
     ],
 
     /*
@@ -193,6 +202,9 @@ return [
         'URL'       => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View'      => Illuminate\Support\Facades\View::class,
+
+        'Flash' => Laracasts\Flash\Flash::class,
+        'Form'=> Illuminate\Html\FormFacade::class,
 
     ],
 

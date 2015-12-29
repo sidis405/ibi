@@ -41,11 +41,20 @@ class AuthController extends Controller
      */
     protected function validator(array $data)
     {
+
+        $messages = [
+            'first_name.required' => "Il campo 'Nome' è obbligatorio",
+            'last_name.required' => "Il campo 'Cognome' è obbligatorio",
+            'email.required' => "Il campo 'Email' è obbligatorio",
+            'password.required' => "Il campo 'Password' è obbligatorio",
+        ];
+
         return Validator::make($data, [
-            'name' => 'required|max:255',
+            'first_name' => 'required|max:255',
+            'last_name' => 'required|max:255',
             'email' => 'required|email|max:255|unique:users',
             'password' => 'required|confirmed|min:6',
-        ]);
+        ], $messages);
     }
 
     /**
@@ -57,7 +66,8 @@ class AuthController extends Controller
     protected function create(array $data)
     {
         return User::create([
-            'name' => $data['name'],
+            'first_name' => $data['first_name'],
+            'last_name' => $data['last_name'],
             'email' => $data['email'],
             'password' => bcrypt($data['password']),
         ]);
