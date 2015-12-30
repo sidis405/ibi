@@ -23,7 +23,7 @@ $(document).ready(function(){
                     /* Executes after data is loaded and rendered */
                     $("#data-table-command").find(".command-edit").on("click", function(e)
                     {
-                        window.location.href = "/admin/fascie/" + $(this).data("row-id") + "/modifica";
+                        window.location.href = "/admin/paesi-export/" + $(this).data("row-id") + "/modifica";
 
                     }).end().find(".command-delete").on("click", function(e)
                     {
@@ -35,7 +35,7 @@ $(document).ready(function(){
 
                             if(prodotti == 0){
                                 swal({   
-                                    title: "Sei sicuro di voler cancellare questa fascia?",   
+                                    title: "Sei sicuro di voler cancellare questo paese?",   
                                     text: "Non sarà possibile recuperare questo dato!",   
                                     type: "warning",   
                                     showCancelButton: true,   
@@ -44,14 +44,14 @@ $(document).ready(function(){
                                     closeOnConfirm: false ,
                                     showLoaderOnConfirm: true
                                 }, function(){   
-                                    swal("Cancellato!", "La fascia e stata cancellata con successo.", "success"); 
-                                    deleteResource(id, 'fascie');
+                                    swal("Cancellato!", "Il paese è stato cancellato con successo.", "success"); 
+                                    deleteResource(id, 'paesi-export');
                                     $("#data-table-command").bootgrid('remove', rows);
                                 });
                             }else{
                                 swal({   
-                                    title: "Impossibile cancellare fascia.",   
-                                    text: "Non è possibile cancellare questa fascia perchè è associata a " + prodotti + " prodotti.",   
+                                    title: "Impossibile cancellare paese.",   
+                                    text: "Non è possibile cancellare questo paese perchè è associato a " + prodotti + " prodotti.",   
                                     timer: 5000,   
                                     showConfirmButton: false 
                                 });

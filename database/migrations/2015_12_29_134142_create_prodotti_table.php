@@ -17,8 +17,12 @@ class CreateProdottiTable extends Migration
             $table->string('nome');
             $table->string('slug');
             $table->string('formulazione');
+
             $table->integer('principio_attivo_id')->nullable();
             $table->integer('fascia_id')->nullable();
+            $table->integer('categoria_terapeutica_id')->nullable();
+            $table->integer('paese_id')->nullable();
+
             $table->string('foglietto_illustrativo')->nullable();
             $table->string('scheda_tecnica')->nullable();
             $table->string('aic');
@@ -26,9 +30,7 @@ class CreateProdottiTable extends Migration
             $table->string('regime_dispensazione')->nullable();;
             $table->string('unita')->nullable();
             $table->integer('validita_mesi');
-            $table->integer('categoria_terapeutica_id')->nullable();
             $table->integer('active')->default(1);
-            $table->integer('sezione')->nullable();
             $table->timestamps();
         });
     }

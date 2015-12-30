@@ -34,6 +34,7 @@
                                 <li><a href="/admin/principi-attivi">Principi Attivi</a></li>
                                 <li><a href="/admin/categorie-terapeutiche">Categorie Terapeutiche</a></li>
                                 <li><a href="/admin/fascie">Fascie</a></li>
+                                <li><a href="/admin/paesi-export">Paesi Export</a></li>
                             </ul>
                         </li>
                         <li class="sub-menu">
@@ -41,7 +42,7 @@
 
                             <ul>
                                 <li><a href="/admin/utenti">Lista Utenti</a></li>
-                                <li><a class="active" href="/admin/utenti/crea">Aggiungi Utentt</a></li>
+                                <li><a class="active" href="/admin/utenti/crea">Aggiungi Utenti</a></li>
                             </ul>
                         </li>
                         <li><a href="/admin/contenuti"><i class="zmdi zmdi-comment-edit"></i> Contenuti sito</a></li>

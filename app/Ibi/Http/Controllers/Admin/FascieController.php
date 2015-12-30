@@ -83,7 +83,7 @@ class FascieController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $news = $this->dispatchFrom('Ibi\Commands\Fascie\UpdateFasciaCommand', $request);
+        $paese = $this->dispatchFrom('Ibi\Commands\Fascie\UpdateFasciaCommand', $request);
 
         flash()->success('News aggiornata correttamente.');
 
@@ -96,9 +96,9 @@ class FascieController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id, FascieRepo $news)
+    public function destroy($id, FascieRepo $fascie_repo)
     {
-        $delete = $news->remove($id);
+        $delete = $fascie_repo->remove($id);
 
         return 'true';
     }

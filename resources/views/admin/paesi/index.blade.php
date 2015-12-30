@@ -12,11 +12,11 @@
             <section id="content">
                 <div class="container">
                     <div class="block-header">
-                        <h2>Fascie</h2>
+                        <h2>Paesi</h2>
 
                          <ul class="actions">
                             <li>
-                                <a href="/admin/fascie/crea">
+                                <a href="/admin/paesi-export/crea">
                                     <i class="zmdi zmdi-plus-circle-o"></i>
                                 </a>
                             </li>
@@ -41,25 +41,25 @@
                     
                     <div class="card">
                         <div class="card-header">
-                            <h2>Fascie di prodotti <small>Un listato delle fascie associate con numero prodotti.</small></h2>
+                            <h2>Paesi Export <small>Lista di paesi in use nella sezione Ibi Export con numero prodotti.</small></h2>
                         </div>
                         
                         <table id="data-table-command" class="table table-striped table-vmiddle">
                             <thead>
                                 <tr>
                                     <th data-column-id="id" data-identifier="true"  data-type="numeric">ID</th>
-                                    <th data-column-id="fascia">Fascia</th>
+                                    <th data-column-id="paese">Paese</th>
                                     <th data-column-id="prodotti" >Prodotti</th>
                                     <th data-column-id="commands" data-formatter="commands" data-sortable="false">Azioni</th>
                                 </tr>
                             </thead>
                             <tbody>
 
-                            @foreach($fascie as $fascia)
+                            @foreach($paesi as $paese)
                                 <tr>
-                                    <td>{{$fascia->id}}</td>
-                                    <td> {{$fascia->nome}}</td>
-                                    <td>{{count($fascia->prodotti)}}</td>
+                                    <td>{{$paese->id}}</td>
+                                    <td>{{$paese->nome}}</td>
+                                    <td>{{count($paese->prodotti)}}</td>
                                 </tr>
                             @endforeach
                                 
@@ -78,7 +78,7 @@
         <script src="/adm/vendors/bootgrid/jquery.bootgrid.js"></script>
 
         <!-- Data Table -->
-        <script src="/adm/js/bootgrid-fascie.js"></script>
+        <script src="/adm/js/bootgrid-paesi.js"></script>
 
 
 @stop
