@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Ibi\Models;
+namespace Ibi\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
@@ -12,6 +12,11 @@ class CategorieTerapeutiche extends Model
     public function prodotti()
     {
         return $this->hasMany(Prodotti::class, 'categoria_terapeutica_id');
+    }
+
+    public function principi_attivi()
+    {
+        return $this->belongsToMany(PrincipiAttivi::class, 'categorie_principi', 'categoria_id', 'principio_id');
     }
 
     public static function make($nome)

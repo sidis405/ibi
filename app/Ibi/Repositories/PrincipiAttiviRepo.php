@@ -18,9 +18,24 @@ class PrincipiAttiviRepo
 
     public function remove($id)
     {
-        $principioAttivo = PrincipiAttivi::find($id);
+        $principioAttivo = $this->getById($id);
+
+        if( count($principioAttivo->prodotti ) > 0) return false;
+
+        $principioAttivo->categorie_terapeutiche()->sync([]);
+
         $principioAttivo->delete();
 
         return true;
     }
+
+    public function getAll()
+    {
+        return PrincipiAttivi::with('prodotti', 'categorie_terapeutiche')->orderBy('nome')->get();
+    } 
+
+    public function getById($id)
+    {
+        return PrincipiAttivi::where('id', $id)->with('prodotti', 'categorie_terapeutiche')->first();
+    } 
 }

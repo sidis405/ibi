@@ -1,16 +1,5 @@
 <?php
 
-/*
-|--------------------------------------------------------------------------
-| Application Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register all of the routes for an application.
-| It's a breeze. Simply tell Laravel the URIs it should respond to
-| and give it the controller to call when that URI is requested.
-|
-*/
-
 Route::get('/', function () {
     return view('static.index');
 });
@@ -18,92 +7,21 @@ Route::get('/', function () {
 Route::get('home', 'HomeController@home');
 Route::get('pull', 'HomeController@pull');
 
-// Authentication routes...
-Route::get('login', 'Auth\AuthController@getLogin');
-Route::get('auth/login', 'Auth\AuthController@getLogin');
-Route::post('auth/login', 'Auth\AuthController@postLogin');
-Route::get('logout', 'Auth\AuthController@getLogout');
-Route::get('auth/logout', 'Auth\AuthController@getLogout');
-
-
-// // Registration routes...
-Route::get('auth/register', 'Auth\AuthController@getRegister');
-Route::post('auth/register', 'Auth\AuthController@postRegister');
+include(__DIR__.'/../Ibi/Routes/routes_auth.php');
 
 Route::group(array('prefix' => 'admin', 'middleware' => 'auth'), function () {
 
     Route::get('/', '\Ibi\Http\Controllers\Admin\HomeController@index');
 
-    #   Fascie ROUTES
+    include(__DIR__.'/../Ibi/Routes/routes_fascie.php');
 
-    Route::get('fascie', [
-        'as'    => 'admin_fascie',
-        'uses'  => '\Ibi\Http\Controllers\Admin\FascieController@index'
-        ]);
+    include(__DIR__.'/../Ibi/Routes/routes_paesi.php');
 
-    Route::get('fascie/crea', [
-        'as'    => 'admin_create_fascie',
-        'uses'  => '\Ibi\Http\Controllers\Admin\FascieController@create'
-        ]);
-
-    Route::post('fascie', [
-        'as'    => 'admin_store_fascie',
-        'uses'  => '\Ibi\Http\Controllers\Admin\FascieController@store'
-        ]);
-
-    Route::get('fascie/{id}/modifica', [
-        'as'    => 'admin_edit_fascie',
-        'uses'  => '\Ibi\Http\Controllers\Admin\FascieController@edit'
-        ]);
-
-    Route::put('fascie/{id}', [
-        'as'    => 'admin_store_fascie',
-        'uses'  => '\Ibi\Http\Controllers\Admin\FascieController@update'
-        ]);
-
-    Route::delete('fascie/{id}', [
-        'as'    => 'admin_delete_fascie',
-        'uses'  => '\Ibi\Http\Controllers\Admin\FascieController@destroy'
-        ]);
-
-    #   news ROUTES
-
-    Route::get('paesi-export', [
-        'as'    => 'admin_paesi',
-        'uses'  => '\Ibi\Http\Controllers\Admin\PaesiController@index'
-        ]);
-
-    Route::get('paesi-export/crea', [
-        'as'    => 'admin_create_paesi',
-        'uses'  => '\Ibi\Http\Controllers\Admin\PaesiController@create'
-        ]);
-
-    Route::post('paesi-export', [
-        'as'    => 'admin_store_paesi',
-        'uses'  => '\Ibi\Http\Controllers\Admin\PaesiController@store'
-        ]);
-
-    Route::get('paesi-export/{id}/modifica', [
-        'as'    => 'admin_edit_paesi',
-        'uses'  => '\Ibi\Http\Controllers\Admin\PaesiController@edit'
-        ]);
-
-    Route::put('paesi-export/{id}', [
-        'as'    => 'admin_store_paesi',
-        'uses'  => '\Ibi\Http\Controllers\Admin\PaesiController@update'
-        ]);
-
-    Route::delete('paesi-export/{id}', [
-        'as'    => 'admin_delete_paesi',
-        'uses'  => '\Ibi\Http\Controllers\Admin\PaesiController@destroy'
-        ]);
+    include(__DIR__.'/../Ibi/Routes/routes_categorie_terapeutiche.php');
+    
+    include(__DIR__.'/../Ibi/Routes/routes_principi_attivi.php');
 
 });
 
-Route::get('{view}', function ($view) {
-    try {
-      return view('static.'.$view);
-    } catch (\Exception $e) {
-      abort(404);
-    }
-  })->where('view', '.*');
+include(__DIR__.'/../Ibi/Routes/routes_static.php');
+
