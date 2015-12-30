@@ -28,10 +28,11 @@ $(document).ready(function(){
                     {
 
                             var prodotti = $(this).data("row-prodotti");
+                            var id = $(this).data("row-id");
+                            var rows = Array();
+                            rows[0] = id;
 
                             if(prodotti == 0){
-                                var rows = Array();
-                                rows[0] = $(this).data("row-id");
                                 swal({   
                                     title: "Sei sicuro di voler cancellare questa fascia?",   
                                     text: "Non sarà possibile recuperare questo dato!",   
@@ -43,7 +44,7 @@ $(document).ready(function(){
                                     showLoaderOnConfirm: true
                                 }, function(){   
                                     swal("Cancellato!", "La fascia e stata cancellata con successo.", "success"); 
-
+                                    deleteResource(id, 'fascie');
                                     $("#data-table-command").bootgrid('remove', rows);
                                 });
                             }else{

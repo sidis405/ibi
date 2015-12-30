@@ -4,3 +4,27 @@ $('.refresh-page').click(function(event){
     location.reload();
 
 });
+
+function deleteResource(id, route) {
+
+    var token = $('meta[name="_token"]').attr('content');
+
+    $.ajax({
+        url: '/admin/' + route +  '/' + id,
+        type: 'POST',
+        data: {
+            image_id: id,
+            _method: 'DELETE',
+            _token: token
+        },
+        success: function(data) {
+            cosole.log(data);
+        },
+        error: function(XMLHttpRequest, textstatus, error) {
+
+            return false;
+
+        }
+    });
+
+}

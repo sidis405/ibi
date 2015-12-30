@@ -1,5 +1,11 @@
 @extends('admin.layouts.master')
 
+@section('header_scripts')
+
+<meta name="_token" content="{{ csrf_token() }}" />
+
+@stop
+
 @section('content')
 
   

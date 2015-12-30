@@ -34,7 +34,7 @@
                     <div class="card">
                         
                         <form class="form-horizontal" role="form" method="POST" action="/admin/fascie/{{$fascia->id}}">
-                        <form  >
+                        <input type="hidden" name="_method" value="PUT">
 
                                 {!! csrf_field() !!}
 

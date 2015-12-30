@@ -56,12 +56,12 @@ Route::group(array('prefix' => 'admin', 'middleware' => 'auth'), function () {
         'uses'  => '\Ibi\Http\Controllers\Admin\FascieController@edit'
         ]);
 
-    Route::post('fascie/{id}', [
+    Route::put('fascie/{id}', [
         'as'    => 'admin_store_fascie',
         'uses'  => '\Ibi\Http\Controllers\Admin\FascieController@update'
         ]);
 
-    Route::post('fascie/{id}/rimuovi', [
+    Route::delete('fascie/{id}', [
         'as'    => 'admin_delete_fascie',
         'uses'  => '\Ibi\Http\Controllers\Admin\FascieController@destroy'
         ]);

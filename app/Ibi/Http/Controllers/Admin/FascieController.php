@@ -100,17 +100,7 @@ class FascieController extends Controller
     {
         $delete = $news->remove($id);
 
-        flash()->success('News rimossa correttamente.');
-
-        return redirect()->to('/admin/news/');
+        return 'true';
     }
 
-    public function destroyImage(Request $request, FascieRepo $fascie_repo)
-    {
-        $image_id = $request->input('image_id');
-
-        $delete = $fascie_repo->removeImage($image_id);
-
-        return json_encode('true');
-    }
 }

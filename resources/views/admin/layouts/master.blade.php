@@ -17,6 +17,11 @@
         <!-- CSS -->
         <link href="/adm/css/app.min.1.css" rel="stylesheet">
         <link href="/adm/css/app.min.2.css" rel="stylesheet">
+
+
+        @yield('header_scripts')
+    
+
         
     </head>
     <body>
