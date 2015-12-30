@@ -23,4 +23,14 @@ class SezioniRepo
 
         return true;
     }
+
+    public function getAll()
+    {
+        return Sezioni::with('prodotti')->orderBy('nome')->get();
+    } 
+
+    public function getById($id)
+    {
+        return Sezioni::where('id', $id)->with('prodotti')->first();
+    } 
 }

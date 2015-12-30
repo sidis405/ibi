@@ -9,9 +9,10 @@ class Paesi extends Model
         protected $fillable = ['nome', 'slug'];
         protected $table = 'paesi';
 
+
         public function prodotti()
         {
-            return $this->hasMany(Prodotti::class, 'paese_id');
+            return $this->belongsToMany(Prodotti::class, 'prodotti_paesi', 'paese_id', 'prodotto_id');
         }
 
         public static function make($nome)

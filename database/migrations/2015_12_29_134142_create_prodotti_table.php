@@ -21,7 +21,6 @@ class CreateProdottiTable extends Migration
             $table->integer('principio_attivo_id')->nullable();
             $table->integer('fascia_id')->nullable();
             $table->integer('categoria_terapeutica_id')->nullable();
-            $table->integer('paese_id')->nullable();
 
             $table->string('foglietto_illustrativo')->nullable();
             $table->string('scheda_tecnica')->nullable();

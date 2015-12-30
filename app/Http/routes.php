@@ -20,6 +20,8 @@ Route::group(array('prefix' => 'admin', 'middleware' => 'auth'), function () {
     include(__DIR__.'/../Ibi/Routes/routes_categorie_terapeutiche.php');
     
     include(__DIR__.'/../Ibi/Routes/routes_principi_attivi.php');
+    
+    include(__DIR__.'/../Ibi/Routes/routes_prodotti.php');
 
 });
 
