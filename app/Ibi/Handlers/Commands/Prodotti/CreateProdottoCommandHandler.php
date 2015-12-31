@@ -8,20 +8,23 @@ use Illuminate\Queue\InteractsWithQueue;
 use Ibi\Repositories\ProdottiRepo;
 use Ibi\Events\Prodotti\ProdottoWasCreated;
 use Event;
+use Ibi\Utils\FileUtility;
 
 
 class CreateProdottoCommandHandler
 {
     public $repo;
+    public $file_utility;
 
     /**
      * Create the command handler.
      *
      * @return void
      */
-    public function __construct(ProdottiRepo $repo)
+    public function __construct(ProdottiRepo $repo, FileUtility $file_utility)
     {
         $this->repo = $repo;
+        $this->file_utility = $file_utility;
     }
 
     /**
