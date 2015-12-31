@@ -13,13 +13,13 @@
         <link href="/adm/vendors/bower_components/material-design-iconic-font/dist/css/material-design-iconic-font.min.css" rel="stylesheet">
         
         
+        @yield('header_scripts')
             
         <!-- CSS -->
         <link href="/adm/css/app.min.1.css" rel="stylesheet">
         <link href="/adm/css/app.min.2.css" rel="stylesheet">
 
 
-        @yield('header_scripts')
     
 
         

@@ -36,14 +36,22 @@
                 </li>
             </ul>
         </div>
-        <div class="card">
-            <div class="card-header">
-                <h2>Inserisci un Nuovo Prodotto</h2>
-            </div>
-            
-            <div class="card-body card-padding">
-                <form role="form">
+        <form role="form">
+            <div class="card">
+                <div class="card-header">
+                    <h2>Inserisci un Nuovo Prodotto</h2>
+                </div>
+                
+                <div class="card-body card-padding">
                     @include('admin.prodotti.partials.sezioni_partial', array('selected' => []))
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <h2>Denominazione e Formulazione</h2>
+                </div>
+                
+                <div class="card-body card-padding">
                     <div class="form-group fg-line">
                         <label for="nome">Nome</label>
                         <input type="text" class="form-control input-sm" id="nome" placeholder="Il nome del prodotto">
@@ -52,9 +60,61 @@
                         <label for="formulazione">Formulazione</label>
                         <input type="text" class="form-control input-sm" id="formulazione" placeholder="La formulazione completa del prodotto">
                     </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <h2>Categoria e Principio</h2>
+                </div>
+                
+                <div class="card-body card-padding">
                     @include('admin.prodotti.partials.principi_attivi_partial', array('selected' => []))
                     @include('admin.prodotti.partials.categorie_terapeutiche_partial', array('selected' => []))
                     @include('admin.prodotti.partials.fascie_partial', array('selected' => []))
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <h2>Classificazione</h2>
+                </div>
+                
+                <div class="card-body card-padding">
+                    <div class="form-group fg-line">
+                        <label for="aic">AIC</label>
+                        <input type="text" class="form-control input-sm" id="aic" placeholder="AIC">
+                    </div>
+                    <div class="form-group fg-line">
+                        <label for="atc">ATC</label>
+                        <input type="text" class="form-control input-sm" id="atc" placeholder="ATC">
+                    </div>
+                    </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <h2>Inserisci un Nuovo Prodotto</h2>
+                </div>
+                
+                <div class="card-body card-padding">
+                    <div class="form-group fg-line">
+                        <label for="regime_dispensazione">Regime dispensazione</label>
+                        <input type="text" class="form-control input-sm" id="regime_dispensazione" placeholder="Regime dispensazione">
+                    </div>
+                    <div class="form-group fg-line">
+                        <label for="unita">Unità</label>
+                        <input type="text" class="form-control input-sm" id="unita" placeholder="Unità">
+                    </div>
+                    <div class="form-group fg-line">
+                        <label for="validita_mesi">Validità mesi</label>
+                        <input type="text" class="form-control input-sm" id="validita_mesi" placeholder="Validità mesi">
+                    </div>
+                    </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <h2>Completa inserimento</h2>
+                </div>
+                
+                <div class="card-body card-padding">
                     <div class="checkbox">
                         <label>
                             <input type="checkbox" value="active" checked="">
@@ -64,13 +124,12 @@
                     </div>
                     
                     <button type="submit" class="btn btn-primary btn-sm m-t-10">Salva</button>
-                </form>
+                </div>
             </div>
-        </div>
+        </form>
         
     </div>
 </section>
-
 @stop
 @section('footer_scripts')
 <script src="/adm/vendors/bower_components/bootstrap-select/dist/js/bootstrap-select.js"></script>
