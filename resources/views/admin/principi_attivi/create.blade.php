@@ -37,7 +37,6 @@
                     <div class="card">
                         
                         <form class="form-horizontal" role="form" method="POST" action="/admin/principi-attivi">
-                        <form  >
 
                                 {!! csrf_field() !!}
 

@@ -34,7 +34,6 @@
                     <div class="card">
                         
                         <form class="form-horizontal" role="form" method="POST" action="/admin/paesi-export">
-                        <form  >
 
                                 {!! csrf_field() !!}
 

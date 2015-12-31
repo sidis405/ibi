@@ -37,7 +37,6 @@
                     <div class="card">
                         
                         <form class="form-horizontal" role="form" method="POST" action="/admin/categorie-terapeutiche">
-                        <form  >
 
                                 {!! csrf_field() !!}
 

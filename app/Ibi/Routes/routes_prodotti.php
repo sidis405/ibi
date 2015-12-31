@@ -7,6 +7,11 @@
         'uses'  => '\Ibi\Http\Controllers\Admin\ProdottiController@index'
         ]);
 
+    Route::get('prodotti/allegati/{type}/{path}', [
+        'as'    => 'admin_attachments_prodotti',
+        'uses'  => '\Ibi\Http\Controllers\Admin\AllegatiController@show'
+        ]);
+
     Route::get('prodotti/crea', [
         'as'    => 'admin_create_prodotti',
         'uses'  => '\Ibi\Http\Controllers\Admin\ProdottiController@create'

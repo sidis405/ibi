@@ -8,12 +8,17 @@ class Prodotti extends Model
 {
     protected $table = 'prodotti';
 
-    protected $protected = ['id', 'created_at', 'updated_at'];
+    protected $guarded = ['id', 'created_at', 'updated_at'];
 
 
     public function categoria_terapeutica()
     {
         return $this->belongsTo(CategorieTerapeutiche::class, 'categoria_terapeutica_id');
+    }
+
+    public function principio_attivo()
+    {
+        return $this->belongsTo(PrincipiAttivi::class, 'principio_attivo_id');
     }
 
     public function fascia()
@@ -42,6 +47,7 @@ class Prodotti extends Model
                                 $validita_mesi, 
                                 $categoria_terapeutica_id, 
                                 $active){
+
 
         $nome = rtrim($nome);
         $slug = str_slug($nome);

@@ -27,7 +27,10 @@ $(document).ready(function(){
 
                     }).end().find(".command-delete").on("click", function(e)
                     {
-
+                            
+                            var id = $(this).data("row-id");
+                            var rows = Array();
+                            rows[0] = id;
                             
                                 swal({   
                                     title: "Sei sicuro di voler cancellare questo prodoto?",   

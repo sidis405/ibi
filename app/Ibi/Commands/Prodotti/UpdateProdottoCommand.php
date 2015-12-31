@@ -41,13 +41,11 @@ class UpdateProdottoCommand extends Command
                                 $validita_mesi, 
                                 $categoria_terapeutica_id,
                                 $sezioni,
-                                $active,
+                                $active = 0,
                                 $paesi = []
                                 )
     {
         $this->prodotto_id  = $prodotto_id;
-        $this->nome  = $nome;
-        $this->categorie_terapeutiche  = $categorie_terapeutiche;
         $this->nome = $nome;
         $this->formulazione = $formulazione; 
         $this->principio_attivo_id = $principio_attivo_id; 

@@ -36,14 +36,18 @@
                 </li>
             </ul>
         </div>
-        <form role="form">
+        <form role="form" method="POST" action="/admin/prodotti" enctype="multipart/form-data">
+            {!! csrf_field() !!}
             <div class="card">
                 <div class="card-header">
                     <h2>Inserisci un Nuovo Prodotto</h2>
                 </div>
                 
                 <div class="card-body card-padding">
-                    @include('admin.prodotti.partials.sezioni_partial', array('selected' => []))
+                    <div class="row">
+                        @include('admin.prodotti.partials.sezioni_partial', array('selected' => []))
+                        @include('admin.prodotti.partials.paesi_partial', array('selected' => []))
+                    </div>
                 </div>
             </div>
             <div class="card">
@@ -54,11 +58,11 @@
                 <div class="card-body card-padding">
                     <div class="form-group fg-line">
                         <label for="nome">Nome</label>
-                        <input type="text" class="form-control input-sm" id="nome" placeholder="Il nome del prodotto">
+                        <input type="text" class="form-control input-sm" id="nome" placeholder="Il nome del prodotto" name="nome">
                     </div>
                     <div class="form-group fg-line">
                         <label for="formulazione">Formulazione</label>
-                        <input type="text" class="form-control input-sm" id="formulazione" placeholder="La formulazione completa del prodotto">
+                        <input type="text" class="form-control input-sm" id="formulazione"  name="formulazione"  placeholder="La formulazione completa del prodotto">
                     </div>
                 </div>
             </div>
@@ -68,9 +72,47 @@
                 </div>
                 
                 <div class="card-body card-padding">
-                    @include('admin.prodotti.partials.principi_attivi_partial', array('selected' => []))
-                    @include('admin.prodotti.partials.categorie_terapeutiche_partial', array('selected' => []))
-                    @include('admin.prodotti.partials.fascie_partial', array('selected' => []))
+                    <div class="row">
+                        @include('admin.prodotti.partials.principi_attivi_partial', array('selected' => []))
+                        @include('admin.prodotti.partials.categorie_terapeutiche_partial', array('selected' => []))
+                        @include('admin.prodotti.partials.fascie_partial', array('selected' => []))
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <h2>Allegati</h2>
+                </div>
+                
+                <div class="card-body card-padding">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <p class="f-500 c-black m-b-20">Foglietto Illustrativo</p>
+                            
+                            <div class="fileinput fileinput-new" data-provides="fileinput">
+                                <span class="btn btn-primary btn-file m-r-10">
+                                    <span class="fileinput-new">Selezione folglietto</span>
+                                    <span class="fileinput-exists">Cambia Foglietto</span>
+                                    <input type="file" name="foglietto_illustrativo" required>
+                                </span>
+                                <span class="fileinput-filename"></span>
+                                <a href="#" class="close fileinput-exists" data-dismiss="fileinput">&times;</a>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <p class="f-500 c-black m-b-20">Scheda Tecnica</p>
+                            
+                            <div class="fileinput fileinput-new" data-provides="fileinput">
+                                <span class="btn btn-primary btn-file m-r-10">
+                                    <span class="fileinput-new">Seleziona Scheda</span>
+                                    <span class="fileinput-exists">Cambia Scheda</span>
+                                    <input type="file" name="scheda_tecnica" required>
+                                </span>
+                                <span class="fileinput-filename"></span>
+                                <a href="#" class="close fileinput-exists" data-dismiss="fileinput">&times;</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="card">
@@ -79,51 +121,65 @@
                 </div>
                 
                 <div class="card-body card-padding">
-                    <div class="form-group fg-line">
-                        <label for="aic">AIC</label>
-                        <input type="text" class="form-control input-sm" id="aic" placeholder="AIC">
+                    <div class="row">
+                        <div class="form-group fg-line col-sm-6">
+                            <label for="aic">AIC</label>
+                            <input type="text" class="form-control input-sm" id="aic" name="aic" placeholder="AIC" required>
+                        </div>
+                        <div class="form-group fg-line col-sm-6">
+                            <label for="atc">ATC</label>
+                            <input type="text" class="form-control input-sm" id="atc" name="atc" placeholder="ATC" required>
+                        </div>
                     </div>
-                    <div class="form-group fg-line">
-                        <label for="atc">ATC</label>
-                        <input type="text" class="form-control input-sm" id="atc" placeholder="ATC">
-                    </div>
-                    </div>
+                </div>
             </div>
             <div class="card">
                 <div class="card-header">
-                    <h2>Inserisci un Nuovo Prodotto</h2>
+                    <h2>Dettagli Aggiuntivi</h2>
                 </div>
                 
                 <div class="card-body card-padding">
-                    <div class="form-group fg-line">
-                        <label for="regime_dispensazione">Regime dispensazione</label>
-                        <input type="text" class="form-control input-sm" id="regime_dispensazione" placeholder="Regime dispensazione">
+                    <div class="row">
+                        <div class="form-group fg-line col-sm-12">
+                            <label for="regime_dispensazione">Regime dispensazione</label>
+                            <input type="text" required class="form-control input-sm" id="regime_dispensazione" name="regime_dispensazione" placeholder="Regime dispensazione">
+                        </div>
                     </div>
-                    <div class="form-group fg-line">
-                        <label for="unita">Unità</label>
-                        <input type="text" class="form-control input-sm" id="unita" placeholder="Unità">
+                    <div class="row">
+                        <div class="form-group fg-line col-sm-6">
+                            <label for="unita">Unità</label>
+                            <input type="text" required class="form-control input-sm" id="unita" name="unita" placeholder="Unità">
+                        </div>
+                        <div class="form-group fg-line col-sm-6">
+                            <label for="validita_mesi">Validità mesi</label>
+                            <input type="text" required class="form-control input-sm" name="validita_mesi" id="validita_mesi" placeholder="Validità mesi">
+                        </div>
                     </div>
-                    <div class="form-group fg-line">
-                        <label for="validita_mesi">Validità mesi</label>
-                        <input type="text" class="form-control input-sm" id="validita_mesi" placeholder="Validità mesi">
-                    </div>
-                    </div>
+                </div>
             </div>
             <div class="card">
-                <div class="card-header">
-                    <h2>Completa inserimento</h2>
-                </div>
                 
                 <div class="card-body card-padding">
                     <div class="checkbox">
                         <label>
-                            <input type="checkbox" value="active" checked="">
+                            <input type="checkbox" name="active" checked="">
                             <i class="input-helper"></i>
                             Pubblica questo prodotto
                         </label>
                     </div>
-                    
-                    <button type="submit" class="btn btn-primary btn-sm m-t-10">Salva</button>
+                </div>
+            </div>
+            <div class="card">
+                
+                <div class="card-body card-padding">
+                    <div class="row">
+                        <div class="col-sm-6 text-center">
+                            <button type="reset" class="btn btn-warning btn-sm m-t-10">Abbandona</button>
+                        </div>
+                        <div class="col-sm-6 text-center">
+                            <button type="submit" class="btn btn-primary btn-sm m-t-10">Salva</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </form>

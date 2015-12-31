@@ -34,7 +34,6 @@
                     <div class="card">
                         
                         <form class="form-horizontal" role="form" method="POST" action="/admin/fascie">
-                        <form  >
 
                                 {!! csrf_field() !!}
 

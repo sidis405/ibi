@@ -16,7 +16,7 @@ use Illuminate\Http\Request;
 class ProdottiController extends Controller
 {
     /**
-     * Display a listing of the CategorieTerapeutiche.
+     * Display a listing of the Prodotti.
      *
      * @return \Illuminate\Http\Response
      */
@@ -29,7 +29,7 @@ class ProdottiController extends Controller
     }
 
      /**
-     * Show the form for creating a new Fascia.
+     * Show the form for creating a new Prodotti.
      *
      * @return \Illuminate\Http\Response
      */
@@ -54,13 +54,15 @@ class ProdottiController extends Controller
      */
     public function store(Request $request)
     {
-        $prodotto = $this->dispatchFrom('Ibi\Commands\Prodotti\CreateProdottoCommand', $request);
+        $data = $this->manageUploads($request);
+
+        $prodotto = $this->dispatchFrom('Ibi\Commands\Prodotti\CreateProdottoCommand', $request, $data);
         
         return redirect()->to('/admin/prodotti');
     }
 
     /**
-     * Display the specified CategorieTerapeutiche.
+     * Display the specified Prodotti.
      *
      * @param  int  $id
      * @return \Illuminate\Http\Response
@@ -73,25 +75,24 @@ class ProdottiController extends Controller
     }
 
     /**
-     * Show the form for editing the specified CategorieTerapeutiche.
+     * Show the form for editing the specified Prodotti.
      *
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id, ProdottiRepo $prodotti_repo, SezioniRepo $sezioni_repo, CategorieTerapeuticheRepo $categorie_terapeutiche_repo, PaesiRepo $paesi_repo, FascieRepo $fascie_repo)
+    public function edit($id, ProdottiRepo $prodotti_repo, SezioniRepo $sezioni_repo, PrincipiAttiviRepo $principi_attivi_repo, CategorieTerapeuticheRepo $categorie_terapeutiche_repo, PaesiRepo $paesi_repo, FascieRepo $fascie_repo)
     {
         $prodotto = $prodotti_repo->getById($id);
         $sezioni = $sezioni_repo->getAll();
-        $categorie_terapeutiche = $prodotti_repo->getAll();
+        $categorie_terapeutiche = $categorie_terapeutiche_repo->getAll();
         $principi_attivi = $principi_attivi_repo->getAll();
         $paesi = $paesi_repo->getAll();
         $fascie = $fascie_repo->getAll();
-
-        return view('admin.prodotti.edit', compact('prodotto', 'sezioni', 'principio_attivo', 'categorie_terapeutiche', 'paesi', 'fascie'));
+        return view('admin.prodotti.edit', compact('prodotto', 'sezioni', 'principi_attivi', 'categorie_terapeutiche', 'paesi', 'fascie'));
     }
 
     /**
-     * Update the specified CategorieTerapeutiche in storage.
+     * Update the specified Prodotti in storage.
      *
      * @param  \Illuminate\Http\Request  $request
      * @param  int  $id
@@ -99,7 +100,10 @@ class ProdottiController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $paese = $this->dispatchFrom('Ibi\Commands\Prodotti\UpdateProdottoCommand', $request);
+
+        $data = $this->manageUploads($request);
+        
+        $prodotto = $this->dispatchFrom('Ibi\Commands\Prodotti\UpdateProdottoCommand', $request, $data);
 
         flash()->success('News aggiornata correttamente.');
 
@@ -107,7 +111,7 @@ class ProdottiController extends Controller
     }
 
     /**
-     * Remove the specified CategorieTerapeutiche from storage.
+     * Remove the specified Prodotti from storage.
      *
      * @param  int  $id
      * @return \Illuminate\Http\Response
@@ -117,6 +121,27 @@ class ProdottiController extends Controller
         $delete = $prodotti_repo->remove($id);
 
         return 'true';
+    }
+
+    protected function manageUploads($request)
+    {
+        $data = [];
+
+        if($request->hasFile('foglietto_illustrativo'))
+        {
+            $data['foglietto_illustrativo'] = $request->file('foglietto_illustrativo');
+        }else{
+            $data['foglietto_illustrativo'] = false;
+        }
+
+        if($request->hasFile('foglietto_illustrativo'))
+        {
+            $data['scheda_tecnica'] = $request->file('scheda_tecnica');
+        }else{
+            $data['scheda_tecnica'] = false;
+        }
+
+        return $data;
     }
 
 }

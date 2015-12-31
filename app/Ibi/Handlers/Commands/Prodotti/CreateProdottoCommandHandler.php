@@ -32,17 +32,19 @@ class CreateProdottoCommandHandler
      */
     public function handle(CreateProdottoCommand $command)
     {
+        $active = ($command->active === 'on') ? 1 : 0;
+
         $prodotto_object = Prodotti::make(
-            $nome, 
-            $formulazione, 
-            $principio_attivo_id, 
-            $fascia_id, 
-            $aic, 
-            $atc, 
-            $regime_dispensazione, 
-            $unita, 
-            $validita_mesi, 
-            $categoria_terapeutica_id,
+            $command->nome, 
+            $command->formulazione, 
+            $command->principio_attivo_id, 
+            $command->fascia_id, 
+            $command->aic, 
+            $command->atc, 
+            $command->regime_dispensazione, 
+            $command->unita, 
+            $command->validita_mesi, 
+            $command->categoria_terapeutica_id,
             $active
             );
 
@@ -52,8 +54,8 @@ class CreateProdottoCommandHandler
         $prodotto->sezioni()->sync($command->sezioni);
         $prodotto->paesi()->sync($command->paesi);
 
-        $this->caricaFogliettoIllustrativo($prodotto->id, $command->foglietto_illustrativo);
-        $this->caricaSchedaTecnica($prodotto->id, $command->scheda_tecnica);
+        $this->caricaFogliettoIllustrativo($prodotto, $command->foglietto_illustrativo);
+        $this->caricaSchedaTecnica($prodotto, $command->scheda_tecnica);
 
         Event::fire(new ProdottoWasCreated($prodotto));
 
@@ -61,13 +63,28 @@ class CreateProdottoCommandHandler
 
     }
 
-    protected function caricaFogliettoIllustrativo($prodotto_id, $foglietto_illustrativo)
+    protected function caricaFogliettoIllustrativo($prodotto, $foglietto_illustrativo)
     {
-        logger('carico figlietto illustrativo e aggiorno record');
+
+        if($foglietto_illustrativo)
+        {
+            $foglietto_path = $this->file_utility->putFile($prodotto->id, 'foglietto', $foglietto_illustrativo);
+
+            $prodotto->update(['foglietto_illustrativo' => $foglietto_path]);
+            
+        }
+
     }
 
-    protected function caricaSchedaTecnica($prodotto_id, $scheda_tecnica)
+    protected function caricaSchedaTecnica($prodotto, $scheda_tecnica)
     {
-        logger('carico scheda tecnica e aggiorno record');   
+
+        if($scheda_tecnica)
+        {
+            $scheda_path = $this->file_utility->putFile($prodotto->id, 'scheda', $scheda_tecnica);
+
+            $prodotto->update(['scheda_tecnica' => $scheda_path]);
+            
+        }
     }
 }
