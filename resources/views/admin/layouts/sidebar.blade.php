@@ -43,9 +43,12 @@
                             <ul>
                                 <li><a href="/admin/utenti">Lista Utenti</a></li>
                                 <li><a class="active" href="/admin/utenti/crea">Aggiungi Utenti</a></li>
+                                <li><a href="/admin/utenti/ruoli">Ruoli</a></li>
+                                <li><a href="/admin/utenti/permessi">Permessi</a></li>
                             </ul>
                         </li>
                         <li><a href="/admin/contenuti"><i class="zmdi zmdi-comment-edit"></i> Contenuti sito</a></li>
+                        <li><a href="/admin/news"><i class="zmdi zmdi-remote-control-alt"></i> News</a></li>
                         <li><a href="/admin/impostazioni"><i class="zmdi zmdi-settings"></i> Impostazioni</a></li>
                         <li>
                                 <a href="/logout"><i class="zmdi zmdi-time-restore"></i> Esci</a>

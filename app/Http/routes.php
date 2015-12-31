@@ -23,6 +23,12 @@ Route::group(array('prefix' => 'admin', 'middleware' => 'auth'), function () {
     
     include(__DIR__.'/../Ibi/Routes/routes_prodotti.php');
 
+    include(__DIR__.'/../Ibi/Routes/routes_ruoli.php');
+
+    include(__DIR__.'/../Ibi/Routes/routes_permessi.php');
+
+    include(__DIR__.'/../Ibi/Routes/routes_utenti.php');
+
 });
 
 include(__DIR__.'/../Ibi/Routes/routes_static.php');
