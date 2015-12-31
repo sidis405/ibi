@@ -54,7 +54,9 @@ class RuoliController extends Controller
         {
             $ruolo = Role::create(['name' => $name]);
 
-            $ruolo->permissions()->sync($request->input('permessi'));
+            $permessi = ($request->input('permessi')) ? $request->input('permessi') : [];
+
+            $ruolo->permissions()->sync($permessi);
         }
         
         return redirect()->to('/admin/utenti/ruoli');
@@ -94,7 +96,9 @@ class RuoliController extends Controller
         {
             $ruolo->update(['name' => $name]);
 
-            $ruolo->permissions()->sync($request->input('permessi'));
+            $permessi = ($request->input('permessi')) ? $request->input('permessi') : [];
+
+            $ruolo->permissions()->sync($permessi);
         }
 
         return redirect()->to('/admin/utenti/ruoli');
@@ -108,7 +112,11 @@ class RuoliController extends Controller
      */
     public function destroy($id)
     {
-        Role::where('id', $id)->delete();
+        $role = Role::where('id', $id)->get();
+
+        $role->permissions()->sync([]);
+
+        $role->delete();
 
         return 'true';
     }

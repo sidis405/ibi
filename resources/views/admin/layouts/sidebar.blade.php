@@ -49,6 +49,15 @@
                         </li>
                         <li><a href="/admin/contenuti"><i class="zmdi zmdi-comment-edit"></i> Contenuti sito</a></li>
                         <li><a href="/admin/news"><i class="zmdi zmdi-remote-control-alt"></i> News</a></li>
+                        <li class="sub-menu">
+                            <a href=""><i class="zmdi zmdi-accounts-list-alt"></i> Lavora con noi</a>
+
+                            <ul>
+                                <li><a href="/admin/lavora-con-noi">Lista posizioni aperte</a></li>
+                                <li><a class="active" href="/admin/lavora-con-noi/crea">Aggiungi Posizione</a></li>
+                                <li><a href="/admin/lavora-con-noi/candidature">Candidature</a></li>
+                            </ul>
+                        </li>
                         <li><a href="/admin/impostazioni"><i class="zmdi zmdi-settings"></i> Impostazioni</a></li>
                         <li>
                                 <a href="/logout"><i class="zmdi zmdi-time-restore"></i> Esci</a>

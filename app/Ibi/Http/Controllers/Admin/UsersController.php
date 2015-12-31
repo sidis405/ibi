@@ -4,22 +4,25 @@ namespace Ibi\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use App\Http\Requests;
-use Ibi\Repositories\FascieRepo;
+use Ibi\Repositories\InternalUsersRepo;
+use Spatie\Permission\Models\Role;
 use Illuminate\Http\Request;
 
 
 class UsersController extends Controller
 {
     /**
-     * Display a listing of the Fascie.
+     * Display a listing of the User.
      *
      * @return \Illuminate\Http\Response
      */
-    public function index(FascieRepo $fascie_repo)
+    public function index(InternalUsersRepo $internal_users_repo)
     {
-        $fascie = $fascie_repo->getAll();
+        $utenti = $internal_users_repo->getAll();
 
-        return view('admin.fascie.index', compact('fascie'));
+        // return $utenti;
+
+        return view('admin.acl.utenti.index', compact('utenti'));
 
     }
 
@@ -30,52 +33,57 @@ class UsersController extends Controller
      */
     public function create()
     {
-        return view('admin.fascie.create');
+        $ruoli = Role::all();
+
+        return view('admin.acl.utenti.create', compact('ruoli'));
     }
 
 
 
     /**
-     * Store a newly created Fascie in storage.
+     * Store a newly created User in storage.
      *
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request)
     {
-        $fascia = $this->dispatchFrom('Ibi\Commands\Fascie\CreateFasciaCommand', $request);
         
-        return redirect()->to('/admin/fascie');
+        $utente = $this->dispatchFrom('Ibi\Commands\InternalUsers\CreateInternalUserCommand', $request);
+        
+        return redirect()->to('/admin/utenti');
     }
 
     /**
-     * Display the specified Fascie.
+     * Display the specified User.
      *
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id, FascieRepo $fascie_repo)
-    {
-        $fascia = $fascie_repo->getById($id);
+    // public function show($id, InternalUsersRepo $internal_users_repo)
+    // {
+    //     $fascia = $internal_users_repo->getById($id);
 
-        return view('admin.fascie.show', compact('fascia'));
-    }
+    //     return view('admin.acl.utenti.show', compact('fascia'));
+    // }
 
     /**
-     * Show the form for editing the specified Fascie.
+     * Show the form for editing the specified User.
      *
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id, FascieRepo $fascie_repo)
+    public function edit($id, InternalUsersRepo $internal_users_repo)
     {
-        $fascia = $fascie_repo->getById($id);
+        $utente = $internal_users_repo->getById($id);
 
-        return view('admin.fascie.edit', compact('fascia'));
+        $ruoli = Role::all();
+
+        return view('admin.acl.utenti.edit', compact('utente', 'ruoli'));
     }
 
     /**
-     * Update the specified Fascie in storage.
+     * Update the specified User in storage.
      *
      * @param  \Illuminate\Http\Request  $request
      * @param  int  $id
@@ -83,22 +91,25 @@ class UsersController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $paese = $this->dispatchFrom('Ibi\Commands\Fascie\UpdateFasciaCommand', $request);
+
+        // return $request->input();
+
+        $utente = $this->dispatchFrom('Ibi\Commands\InternalUsers\UpdateInternalUserCommand', $request);
 
         flash()->success('News aggiornata correttamente.');
 
-        return redirect()->to('/admin/fascie');
+        return redirect()->to('/admin/utenti');
     }
 
     /**
-     * Remove the specified Fascie from storage.
+     * Remove the specified User from storage.
      *
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id, FascieRepo $fascie_repo)
+    public function destroy($id, InternalUsersRepo $internal_users_repo)
     {
-        $delete = $fascie_repo->remove($id);
+        $delete = $internal_users_repo->remove($id);
 
         return 'true';
     }
