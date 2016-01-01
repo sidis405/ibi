@@ -6,14 +6,30 @@ use Storage;
 
 class FileUtility {
 
-    protected $disk = 'uploads';
-    protected $paths = ['foglietto' => 'foglietti_illustrativi', 'scheda' => 'schede_tecniche'];
+    // protected $paths = ['foglietto' => 'foglietti_illustrativi', 'scheda' => 'schede_tecniche'];
+    
+    protected $paths = ['foglietto' => 
+                            [
+                                'folder' => 'foglietti_illustrativi',
+                                'disk' => 'uploads'
+                            ], 
+                        'scheda' => 
+                            [
+                                'folder' => 'schede_tecniche',
+                                'disk' => 'uploads'
+                            ],
+                        'news_immagine' => 
+                            [
+                                'folder' => 'news',
+                                'disk' => 'public_images'
+                            ]
+                        ];
 
     public function putfile($prodotto_id, $type, $file)
     {
         $filename = $this->makeFilename($prodotto_id, $type, $file);
         
-        if(Storage::disk($this->disk)->put($filename, file_get_contents($file->getRealPath()))){
+        if(Storage::disk($this->paths[$type]['disk'])->put($filename, file_get_contents($file->getRealPath()))){
             return $filename;
         }
 
@@ -23,10 +39,10 @@ class FileUtility {
 
     public function getFile($path)
     {
-        if(Storage::disk($this->disk)->has($path)){
+        if(Storage::disk('uploads')->has($path)){
 
-            $mimetype = Storage::disk($this->disk)->has($path);
-            $contents = Storage::disk($this->disk)->get($path);
+            $mimetype = Storage::disk('uploads')->has($path);
+            $contents = Storage::disk('uploads')->get($path);
 
             return ['mimetype' => $mimetype, 'contents' => $contents];
 
@@ -37,7 +53,7 @@ class FileUtility {
 
     protected function makeFilename($prodotto_id, $type, $file )
     {
-        return $this->paths[$type] . '/' . $this->makeId($prodotto_id) . '-' . $file->getClientOriginalName();
+        return $this->paths[$type]['folder'] . '/' . $this->makeId($prodotto_id) . '-' . $file->getClientOriginalName();
     }
 
     protected function makeId($prodotto_id)

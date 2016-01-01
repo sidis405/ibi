@@ -65,7 +65,7 @@ class User extends Model implements AuthenticatableContract,
         $internal_user->first_name = $first_name;
         $internal_user->last_name = $last_name;
         $internal_user->email = $email;
-        $internal_user->active = $first_name;
+        $internal_user->active = $active;
 
         return $internal_user;
     }

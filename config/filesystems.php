@@ -53,6 +53,11 @@ return [
             'root'   => storage_path('uploads'),
         ],
 
+        'public_images' => [
+            'driver' => 'local',
+            'root'   => public_path('images'),
+        ],
+
         'ftp' => [
             'driver'   => 'ftp',
             'host'     => 'ftp.example.com',
