@@ -5,6 +5,13 @@
 <link href="/adm/vendors/farbtastic/farbtastic.css" rel="stylesheet">
 <link href="/adm/vendors/chosen_v1.4.2/chosen.min.css" rel="stylesheet">
 @stop
+
+@section('breadcrumbs')
+
+@include('admin.layouts.breadcrumbs', array('segments' => ['Prodotti', 'Modifica']))
+
+@stop
+
 @section('content')
 <section id="content">
     <div class="container">

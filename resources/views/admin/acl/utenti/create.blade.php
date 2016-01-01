@@ -1,4 +1,11 @@
 @extends('admin.layouts.master')
+
+@section('breadcrumbs')
+
+@include('admin.layouts.breadcrumbs', array('segments' => ['Utenti', 'Crea']))
+
+@stop
+
 @section('header_scripts')
 <link href="/adm/vendors/bower_components/bootstrap-select/dist/css/bootstrap-select.css" rel="stylesheet">
 <link href="/adm/vendors/bower_components/summernote/dist/summernote.css" rel="stylesheet">

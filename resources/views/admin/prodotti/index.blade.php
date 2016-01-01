@@ -1,5 +1,11 @@
 @extends('admin.layouts.master')
 
+@section('breadcrumbs')
+
+@include('admin.layouts.breadcrumbs', array('segments' => ['Prodotti', 'Lista Prodotti']))
+
+@stop
+
 @section('header_scripts')
 
 <meta name="_token" content="{{ csrf_token() }}" />

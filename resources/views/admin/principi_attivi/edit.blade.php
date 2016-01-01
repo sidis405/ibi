@@ -1,5 +1,11 @@
 @extends('admin.layouts.master')
 
+@section('breadcrumbs')
+
+@include('admin.layouts.breadcrumbs', array('segments' => ['Prodotti', 'Principi Attivi', 'Modifica']))
+
+@stop
+
 @section('content')
 
             <section id="content">
@@ -46,12 +52,12 @@
                                 @include('admin.layouts.errors')
     
                             <div class="card-header">
-                                <h2>Modifica Categoria Terapeutica </h2>
+                                <h2>Modifica Principio Attivo </h2>
                             </div>
                             
                             <div class="card-body card-padding">
                                 <div class="form-group">
-                                    <label for="nome" class="col-sm-2 control-label">Categoria Terapeutica</label>
+                                    <label for="nome" class="col-sm-2 control-label">Principio Attivo</label>
                                     <div class="col-sm-10">
                                         <div class="fg-line">
                                             <input type="text" name="nome" value="{{$principio_attivo->nome}}" class="form-control input-sm" id="nome" placeholder="" required>

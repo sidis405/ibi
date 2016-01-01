@@ -26,7 +26,10 @@
     </head>
     <body>
         @include('admin.layouts.navigation')
-        
+
+        <!-- @yield('breadcrumbs') -->
+
+
         <section id="main">
             @include('admin.layouts.sidebar')
             
