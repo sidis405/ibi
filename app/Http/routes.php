@@ -1,10 +1,10 @@
 <?php
 
 Route::get('/', function () {
-    return view('static.index');
+    return view('pages.index');
 });
 
-Route::get('home', 'HomeController@home');
+// Route::get('home', 'HomeController@home');
 Route::get('pull', 'HomeController@pull');
 
 include(__DIR__.'/../Ibi/Routes/routes_auth.php');
@@ -35,5 +35,6 @@ Route::group(array('prefix' => 'admin', 'middleware' => 'auth'), function () {
 
 });
 
+include(__DIR__.'/../Ibi/Routes/routes_pages.php');
 include(__DIR__.'/../Ibi/Routes/routes_static.php');
 
