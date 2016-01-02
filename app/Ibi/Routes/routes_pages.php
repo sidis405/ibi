@@ -1,5 +1,6 @@
 <?php
 
+Route::get('/', 'HomeController@home');
 Route::get('index', 'HomeController@home');
 Route::get('chi-siamo', 'HomeController@chi_siamo');
 Route::get('prodotti-export', 'HomeController@prodotti_export');

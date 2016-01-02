@@ -3,7 +3,7 @@
     <h3>Posizioni aperte</h3>
   </div>
   <div class="col-xs-12">
-  if(count($posizioni))
+  @if(count($posizioni))
     @foreach($posizioni as $posizione)
       <div class="position">
         <h5>{{$posizione->titolo}}</h5>

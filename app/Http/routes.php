@@ -1,8 +1,8 @@
 <?php
 
-Route::get('/', function () {
-    return view('pages.index');
-});
+// Route::get('/', function () {
+//     return view('pages.index');
+// });
 
 // Route::get('home', 'HomeController@home');
 Route::get('pull', 'HomeController@pull');
