@@ -54,11 +54,9 @@
       </li>
       <li>
         <h5>Foglietto illustrativo</h5>
-        @permessoibi('scarica_allegati')
+        
         <a href="/prodotti/allegati/{{$prodotto->foglietto_illustrativo}}" target="_blank"><i class="fa fa-download"></i></a>
-        @else
-        <i class="fa fa-download login-tooltip" data-toggle="tooltip" data-placement="top" title="Devi essere registrato per visualizzare foglietti illustrativi"></i>
-        @endpermessoibi
+      
       </li>
       <li>
         <h5>Scheda tecnica</h5>
