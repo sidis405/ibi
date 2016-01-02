@@ -60,7 +60,7 @@
                         <label>
                             <input type="checkbox" value="on" name="active" @if($posizione->active == 1) checked @endif>
                             <i class="input-helper"></i>
-                            Pubblica questa News
+                            Pubblica questa Posizione
                         </label>
                     </div>
                 </div>

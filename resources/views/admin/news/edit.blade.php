@@ -62,7 +62,7 @@
                 
                 <div class="card-body card-padding">
                     <div class="row">
-                        <textarea name="testo"  class="html-editor" required>{{$news->titolo}}</textarea>
+                        <textarea name="testo"  class="html-editor" required>{{$news->testo}}</textarea>
                     </div>
                 </div>
             </div>

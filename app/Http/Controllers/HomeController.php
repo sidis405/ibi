@@ -2,22 +2,37 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
-use App\Http\Requests;
 use App\Http\Controllers\Controller;
+use App\Http\Requests;
+use Ibi\Repositories\NewsRepo;
+use Illuminate\Http\Request;
 
 
 class HomeController extends Controller
 {
 
-    public function home()
+    public function home(NewsRepo $news_repo)
     {
-        return view('pages.index');
+        $news = $news_repo->getAllFront();
+        return view('pages.index', compact('news'));
     }
 
-    public function chi_siamo()
+    public function chi_siamo(NewsRepo $news_repo)
     {
-        return view('pages.chi-siamo');
+        $news = $news_repo->getAllFront();
+        return view('pages.chi-siamo', compact('news'));
+    }
+
+    public function ibi_toll_manufacturer(NewsRepo $news_repo)
+    {
+        $news = $news_repo->getAllFront();
+        return view('pages.ibi-toll-manufacturer', compact('news'));
+    }
+
+    public function ricerca_innovazione(NewsRepo $news_repo)
+    {
+        $news = $news_repo->getAllFront();
+        return view('pages.ricerca-innovazione', compact('news'));
     }
 
     public function prodotti_export()
@@ -50,30 +65,11 @@ class HomeController extends Controller
         return view('pages.ibisqus-ospedale');
     }
 
-    public function ibi_toll_manufacturer()
-    {
-        return view('pages.ibi-toll-manufacturer');
-    }
-
-    public function ricerca_innovazione()
-    {
-        return view('pages.ricerca-innovazione');
-    }
-
     public function contatti()
     {
         return view('pages.contatti');
     }
 
-    public function lavora_con_noi()
-    {
-        return view('pages.lavora-con-noi');
-    }
-
-    public function invia_candidatura()
-    {
-        return view('pages.invia-candidatura');
-    }
 
     public function farmaco_vigilanza()
     {

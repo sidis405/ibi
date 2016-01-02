@@ -30,6 +30,11 @@ class PosizioniAperteRepo
         return PosizioniAperte::with('candidature')->orderBy('created_at', 'DESC')->get();
     } 
 
+    public function getAllFront()
+    {
+        return PosizioniAperte::with('candidature')->where('active', 1)->orderBy('created_at', 'DESC')->get();
+    } 
+
     public function getById($id)
     {
         return PosizioniAperte::where('id', $id)->with('candidature')->first();

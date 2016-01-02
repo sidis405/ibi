@@ -57,7 +57,7 @@
                         <label>
                             <input type="checkbox" name="active" checked="">
                             <i class="input-helper"></i>
-                            Pubblica questa News
+                            Pubblica questa Posizione
                         </label>
                     </div>
                 </div>

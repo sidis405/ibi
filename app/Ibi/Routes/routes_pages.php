@@ -15,7 +15,11 @@ Route::get('ibi-toll-manufacturer', 'HomeController@ibi_toll_manufacturer');
 Route::get('ricerca-innovazione', 'HomeController@ricerca_innovazione');
 
 Route::get('contatti', 'HomeController@contatti');
-Route::get('lavora-con-noi', 'HomeController@lavora_con_noi');
+
+Route::get('lavora-con-noi', '\Ibi\Http\Controllers\LavoraConNoiController@index');
+Route::get('lavora-con-noi/{id}/{slug}/invia-candidatura', '\Ibi\Http\Controllers\LavoraConNoiController@invia_candidatura');
+
+
 Route::get('invia-candidatura', 'HomeController@invia_candidatura');
 Route::get('farmaco-vigilanza', 'HomeController@farmaco_vigilanza');
 Route::get('benessere-del-paziente', 'HomeController@benessere_del_paziente');
