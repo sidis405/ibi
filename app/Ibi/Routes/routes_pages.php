@@ -19,6 +19,7 @@ Route::get('contatti', 'HomeController@contatti');
 Route::get('lavora-con-noi', '\Ibi\Http\Controllers\LavoraConNoiController@index');
 Route::get('lavora-con-noi/{id}/{slug}/invia-candidatura', '\Ibi\Http\Controllers\LavoraConNoiController@invia_candidatura');
 
+Route::get('news/{id}/{slug}', '\Ibi\Http\Controllers\NewsController@show');
 
 Route::get('invia-candidatura', 'HomeController@invia_candidatura');
 Route::get('farmaco-vigilanza', 'HomeController@farmaco_vigilanza');
