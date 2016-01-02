@@ -154,6 +154,8 @@ return [
         Laracasts\Flash\FlashServiceProvider::class,
         Illuminate\Html\HtmlServiceProvider::class,
         Spatie\Permission\PermissionServiceProvider::class,
+        Ibi\Providers\IbiPermissionSerciceProvider::class,
+        Barryvdh\Debugbar\ServiceProvider::class,
     ],
 
     /*

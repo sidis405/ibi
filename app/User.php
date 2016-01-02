@@ -14,11 +14,11 @@ use Spatie\Permission\Models\Role;
 
 use Laracasts\Presenter\PresentableTrait;
 
-class User extends Model implements AuthenticatableContract,
-                                    AuthorizableContract,
-                                    CanResetPasswordContract
+use Spatie\Permission\Traits\HasRoles;
+
+class User extends Model implements AuthenticatableContract, AuthorizableContract, CanResetPasswordContract
 {
-    use Authenticatable, Authorizable, CanResetPassword, PresentableTrait;
+    use Authenticatable, Authorizable, CanResetPassword, PresentableTrait, HasRoles;
 
     protected $presenter = 'Ibi\Presenters\UserPresenter';
     protected $dates = ['created_at', 'updated_at', 'last_login'];
