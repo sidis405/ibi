@@ -22,7 +22,20 @@ class FileUtility {
                             [
                                 'folder' => 'news',
                                 'disk' => 'public_images'
+                            ],
+
+                        'comunicati_allegati' => 
+                            [
+                                'folder' => 'comunicati',
+                                'disk' => 'public_allegati'
+                            ],
+
+                        'schede_allegati' => 
+                            [
+                                'folder' => 'schede',
+                                'disk' => 'public_allegati'
                             ]
+
                         ];
 
     public function putfile($prodotto_id, $type, $file)

@@ -58,6 +58,11 @@ return [
             'root'   => public_path('images'),
         ],
 
+        'public_allegati' => [
+            'driver' => 'local',
+            'root'   => public_path('allegati'),
+        ],
+
         'ftp' => [
             'driver'   => 'ftp',
             'host'     => 'ftp.example.com',

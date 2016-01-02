@@ -31,9 +31,9 @@ Route::group(array('prefix' => 'admin', 'middleware' => 'auth'), function () {
 
     include(__DIR__.'/../Ibi/Routes/routes_news.php');
     
-    // include(__DIR__.'/../Ibi/Routes/routes_comunicati_farmacovigilanza.php');
+    include(__DIR__.'/../Ibi/Routes/routes_comunicati_farmacovigilanza.php');
 
-    // include(__DIR__.'/../Ibi/Routes/routes_schede_farmacovigilanza.php');
+    include(__DIR__.'/../Ibi/Routes/routes_schede_farmacovigilanza.php');
 
     include(__DIR__.'/../Ibi/Routes/routes_lavora_con_noi.php');
 

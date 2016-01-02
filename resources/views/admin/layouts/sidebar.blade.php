@@ -58,6 +58,14 @@
                                 <li><a href="/admin/lavora-con-noi/candidature">Candidature</a></li>
                             </ul>
                         </li>
+                        <li class="sub-menu">
+                            <a href=""><i class="zmdi zmdi-hospital"></i> Farmacovigilanza</a>
+
+                            <ul>
+                                <li><a href="/admin/farmaco-vigilanza/comunicati">Comunicati</a></li>
+                                <li><a href="/admin/farmaco-vigilanza/schede-segnalazione">Schede di Segnalazione</a></li>
+                            </ul>
+                        </li>
                         <li><a href="/admin/impostazioni"><i class="zmdi zmdi-settings"></i> Impostazioni</a></li>
                         <li>
                                 <a href="/logout"><i class="zmdi zmdi-time-restore"></i> Esci</a>
