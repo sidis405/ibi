@@ -19,7 +19,6 @@ class CreateComunicatoCommand extends Command
      */
     public function __construct($titolo, $allegato, $descrizione, $testo, $active)
     {
-        
         $this->titolo = $titolo;
         $this->allegato = $allegato;
         $this->descrizione = $descrizione;

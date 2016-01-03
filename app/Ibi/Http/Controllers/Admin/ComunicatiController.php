@@ -74,9 +74,9 @@ class ComunicatiController extends Controller
      */
     public function edit($id, ComunicatiRepo $comunicati_repo)
     {
-        $news = $comunicati_repo->getById($id);
+        $comunicato = $comunicati_repo->getById($id);
 
-        return view('admin.comunicati.edit', compact('news'));
+        return view('admin.comunicati.edit', compact('comunicato'));
     }
 
     /**
@@ -119,6 +119,13 @@ class ComunicatiController extends Controller
             $data['allegato'] = $request->file('allegato');
         }else{
             $data['allegato'] = false;
+        }
+
+        if($request->has('active'))
+        {
+            $data['active'] = $request->input('active');
+        }else{
+            $data['active'] = 0;
         }
 
         return $data;

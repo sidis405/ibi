@@ -14,7 +14,7 @@
             
             <ul class="actions">
                 <li>
-                    <a href="/admin/news">
+                    <a href="/admin/farmaco-vigilanza/comunicati">
                         <i class="zmdi zmdi-format-list-bulleted"></i>
                     </a>
                 </li>
@@ -36,38 +36,38 @@
                 </li>
             </ul>
         </div>
-        <form role="form" method="POST" action="/admin/news/{{$news->id}}" enctype="multipart/form-data">
+        <form role="form" method="POST" action="/admin/farmaco-vigilanza/comunicati/{{$comunicato->id}}" enctype="multipart/form-data">
+        <input type="hidden" name="comunicato_id" value="{{$comunicato->id}}">
         <input type="hidden" name="_method" value="PUT">
-        <input type="hidden" name="news_id" value="{{$news->id}}">
             {!! csrf_field() !!}
             <div class="card">
                 <div class="card-header">
-                    <h2>Modifica news : '{{$news->titolo}}'</h2>
+                    <h2>Inserisci un nuovo Comunicato</h2>
                 </div>
                 
                 <div class="card-body card-padding">
                     <div class="form-group fg-line">
                         <label for="titolo">Titolo</label>
-                        <input type="text" class="form-control input-sm" id="titolo" placeholder="Il titolo della news" name="titolo" value="{{$news->titolo}}" required>
+                        <input type="text" class="form-control input-sm" value="{{$comunicato->titolo}}" id="titolo" placeholder="Il titolo del comunicato" name="titolo" required>
                     </div>
                     <div class="form-group fg-line">
                         <label for="formulazione">Breve descrizione</label>
-                        <textarea class="form-control"  rows="5" id="descrizione"  name="descrizione"  placeholder="La descrizione della news" required>{{$news->descrizione}}</textarea>
+                        <textarea class="form-control"  rows="5" id="descrizione"   name="descrizione"  placeholder="La descrizione del comunicato" required>{{$comunicato->descrizione}}</textarea>
                     </div>
                     <div class="form-group fg-line">
-                        @include('admin.news.immagine_partial')
+                        @include('admin.comunicati.allegato_partial')
                     </div>
                 </div>
             </div>
             
             <div class="card">
                 <div class="card-header">
-                    <h2>Testo news</h2>
+                    <h2>Testo Comunicato</h2>
                 </div>
                 
                 <div class="card-body card-padding">
                     <div class="row">
-                        <textarea name="testo"  class="html-editor" required>{{$news->testo}}</textarea>
+                        <textarea name="testo"  class="html-editor" required>{{$comunicato->testo}}</textarea>
                     </div>
                 </div>
             </div>
@@ -76,9 +76,9 @@
                 <div class="card-body card-padding">
                     <div class="checkbox">
                         <label>
-                            <input type="checkbox" value="on" name="active" @if($news->active == 1) checked @endif>
+                            <input type="checkbox" name="active" @if($comunicato->active == 1) checked @endif>
                             <i class="input-helper"></i>
-                            Pubblica questa News
+                            Pubblica questo comunicato
                         </label>
                     </div>
                 </div>

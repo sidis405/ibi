@@ -41,7 +41,7 @@ class CreateComunicatoCommandHandler
 
         $comunicato = $this->repo->save($comunicato_object);
 
-        $this->caricaAllegato($comunicato, $command->alegato);
+        $this->caricaAllegato($comunicato, $command->allegato);
 
         Event::fire(new ComunicatoWasCreated($comunicato));
 
@@ -56,7 +56,7 @@ class CreateComunicatoCommandHandler
         {
             $alleagato_path = $this->file_utility->putFile($comunicato->id, 'comunicati_allegati', $allegato);
 
-            $comunicato->update(['alleagto' => $alleagato_path]);
+            $comunicato->update(['allegato' => $alleagato_path]);
             
         }
 

@@ -9,7 +9,7 @@ class UpdateComunicatoCommand extends Command
 
     public $comunicato_id;
     public $titolo;
-    public $alegato;
+    public $allegato;
     public $descrizione;
     public $testo;
     public $active;
@@ -19,12 +19,12 @@ class UpdateComunicatoCommand extends Command
      *
      * @return void
      */
-    public function __construct($comunicato_id, $titolo, $alegato, $descrizione, $testo, $active)
+    public function __construct($comunicato_id, $titolo, $allegato, $descrizione, $testo, $active)
     {
         
         $this->comunicato_id = $comunicato_id;
         $this->titolo = $titolo;
-        $this->alegato = $alegato;
+        $this->allegato = $allegato;
         $this->descrizione = $descrizione;
         $this->testo = $testo;
         $this->active = $active;

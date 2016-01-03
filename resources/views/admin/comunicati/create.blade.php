@@ -40,7 +40,7 @@
             {!! csrf_field() !!}
             <div class="card">
                 <div class="card-header">
-                    <h2>Inserisci una Nuova Comunicato</h2>
+                    <h2>Inserisci un nuovo Comunicato</h2>
                 </div>
                 
                 <div class="card-body card-padding">
@@ -54,15 +54,13 @@
                     </div>
                     <div class="form-group fg-line">
                         <div class="fileinput fileinput-new" data-provides="fileinput">
-                            <div class="fileinput-preview thumbnail" data-trigger="fileinput"></div>
-                            <div>
-                                <span class="btn btn-info btn-file">
-                                    <span class="fileinput-new">Seleziona immagine</span>
-                                    <span class="fileinput-exists">Cambia</span>
-                                    <input type="file" name="allegato" required>
-                                </span>
-                                <a href="#" class="btn btn-danger fileinput-exists" data-dismiss="fileinput">Remove</a>
-                            </div>
+                            <span class="btn btn-primary btn-file m-r-10">
+                                <span class="fileinput-new">Seleziona Allegato</span>
+                                <span class="fileinput-exists">Cambia Allegato</span>
+                                <input type="file" name="allegato" >
+                            </span>
+                            <span class="fileinput-filename"></span>
+                            <a href="#" class="close fileinput-exists" data-dismiss="fileinput">&times;</a>
                         </div>
                     </div>
                 </div>
