@@ -22,12 +22,13 @@
         <div class="row">
           <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
             <div class="hero-box"><img src="/img/ibi-export-logo.jpg" alt="" class="img-responsive">
-              <p>Ibi è oggi presente in più di 30 Paesi con un’esportazione di tutta la gamma dei suoi prodotti pari ai 2/3 della produzione. Il mercato estero riveste un ruolo molto importante: le esportazioni infatti sono intorno all’80% del fatturato.</p>
-              @permessoibi('modifica_export')
+              {!!$contenuti['home_ibi_export_box']['testo']!!}
               <a href="ibi-export">
+                  @permessoibi('modifica_export')
+                    <a href="/admin/contenuti/{{$contenuti['home_ibi_export_box']['id']}}/modifica" target="_blank" class="pull-right">modifica</a>
+                  @endpermessoibi
                 <div class="btn btn-primary">Leggi tutto</div>
               </a>
-              @endpermessoibi
             </div>
           </div>
           <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">

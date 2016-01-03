@@ -4,7 +4,8 @@
 //     return view('pages.index');
 // });
 
-// Route::get('home', 'HomeController@home');
+Route::get('{locale}', '\Ibi\Http\Controllers\LocaleController@setLocale');
+
 Route::get('pull', 'HomeController@pull');
 
 include(__DIR__.'/../Ibi/Routes/routes_auth.php');

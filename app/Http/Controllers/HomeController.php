@@ -5,16 +5,20 @@ namespace App\Http\Controllers;
 use App\Http\Controllers\Controller;
 use App\Http\Requests;
 use Ibi\Repositories\NewsRepo;
+use Ibi\Repositories\PagineRepo;
 use Illuminate\Http\Request;
 
 
 class HomeController extends Controller
 {
 
-    public function home(NewsRepo $news_repo)
+    public function home(NewsRepo $news_repo, PagineRepo $pagine_repo)
     {
         $news = $news_repo->getAllFront();
-        return view('pages.index', compact('news'));
+
+        $contenuti = $pagine_repo->getContentForPage('index');
+
+        return view('pages.index', compact('news', 'contenuti'));
     }
 
     public function chi_siamo(NewsRepo $news_repo)

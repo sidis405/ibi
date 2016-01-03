@@ -24,12 +24,12 @@ class CreateContenutiTable extends Migration
         Schema::create('contenuti_translations', function(Blueprint $table)
         {
             $table->increments('id');
-            $table->integer('contenuto_id')->unsigned();
+            $table->integer('contenuti_id')->unsigned();
             $table->longText('testo');
             $table->string('locale')->index();
 
-            $table->unique(['contenuto_id','locale']);
-            $table->foreign('contenuto_id')->references('id')->on('contenuti')->onDelete('cascade');
+            $table->unique(['contenuti_id','locale']);
+            $table->foreign('contenuti_id')->references('id')->on('contenuti')->onDelete('cascade');
         });
     }
 

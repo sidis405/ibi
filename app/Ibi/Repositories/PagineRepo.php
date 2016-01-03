@@ -39,4 +39,14 @@ class PagineRepo
     {
         return Pages::where('id', $id)->first();
     } 
+
+    public function getBySlug($slug)
+    {
+        return Pages::with('contenuti')->where('slug', $slug)->first();
+    } 
+
+    public function getContentForPage($slug)
+    {
+        return $this->getBySlug('index')->contenuti->keyBy('slug');
+    }
 }
