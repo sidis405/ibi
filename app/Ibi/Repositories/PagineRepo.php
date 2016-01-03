@@ -19,7 +19,7 @@ class PagineRepo
     public function remove($id)
     {
         $page = $this->getById($id);
-        //PLACE CONTENT PIECES CHECK
+
         $page->delete();
 
         return true;
@@ -27,12 +27,12 @@ class PagineRepo
 
     public function getAll()
     {
-        return Pages::orderBy('name', 'ASC')->get();
+        return Pages::with('contenuti')->orderBy('name', 'ASC')->get();
     } 
 
     public function getAllFront()
     {
-        return Pages::where('active', 1)->orderBy('name', 'ASC')->get();
+        return Pages::orderBy('name', 'ASC')->get();
     } 
 
     public function getById($id)

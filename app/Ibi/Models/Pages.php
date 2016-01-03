@@ -8,6 +8,11 @@ class Pages extends Model
 {
     protected $fillable = ['name', 'slug'];
 
+    public function contenuti()
+    {
+        return $this->hasMany(Contenuti::class, 'pagina_id');
+    }
+
     public static function make($name, $slug)
     {
         

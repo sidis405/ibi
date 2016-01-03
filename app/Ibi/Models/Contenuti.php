@@ -9,9 +9,14 @@ class Contenuti extends Model
 {
     use Translatable;
 
-    public $translatedAttributes = ['name'];
+    public $translatedAttributes = ['testo'];
 
-    protected $table = 'testo';
+    protected $table = 'contenuti';
 
     protected $guarded = ['id', 'created_at', 'updated_at'];
+
+    public function pagina()
+    {
+        return $this->belongsTo(Pages::class, 'pagina_id');
+    }
 }

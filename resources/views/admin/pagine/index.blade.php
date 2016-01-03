@@ -50,6 +50,7 @@
                                     <th data-column-id="id" data-identifier="true"  data-type="numeric">ID</th>
                                     <th data-column-id="pagina">Pagina</th>
                                     <th data-column-id="slug">Slug</th>
+                                    <th data-column-id="contenuti">Blocchi contenuto</th>
                                     <th data-column-id="commands" data-formatter="commands" data-sortable="false">Azioni</th>
                                 </tr>
                             </thead>
@@ -60,6 +61,7 @@
                                     <td>{{$pagina->id}}</td>
                                     <td>{{$pagina->name}}</td>
                                     <td>{{$pagina->slug}}</td>
+                                    <td>{{count($pagina->contenuti)}}</td>
                                 </tr>
                             @endforeach
                                 

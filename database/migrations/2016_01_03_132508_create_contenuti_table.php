@@ -17,6 +17,7 @@ class CreateContenutiTable extends Migration
             $table->increments('id');
             $table->string('descrizione');
             $table->string('slug');
+            $table->integer('pagina_id');
             $table->timestamps();
         });
 
