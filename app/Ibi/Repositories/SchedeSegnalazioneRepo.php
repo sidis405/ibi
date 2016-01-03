@@ -2,14 +2,14 @@
 
 namespace Ibi\Repositories;
 
-use Ibi\Models\SchedeSeglazioneRepo;
+use Ibi\Models\SchedeSegnalazione;
 
 /**
 * News Repo
 */
-class SchedeSeglazioneRepo 
+class SchedeSegnalazioneRepo 
 {
-    public function save(SchedeSeglazione $scheda)
+    public function save(SchedeSegnalazione $scheda)
     {
         $scheda->save();
 
@@ -27,16 +27,16 @@ class SchedeSeglazioneRepo
 
     public function getAll()
     {
-        return SchedeSeglazione::orderBy('created_at', 'DESC')->get();
+        return SchedeSegnalazione::orderBy('created_at', 'DESC')->get();
     } 
 
     public function getAllFront()
     {
-        return SchedeSeglazione::where('active', 1)->orderBy('created_at', 'DESC')->get();
+        return SchedeSegnalazione::where('active', 1)->orderBy('created_at', 'DESC')->get();
     } 
 
     public function getById($id)
     {
-        return SchedeSeglazione::where('id', $id)->first();
+        return SchedeSegnalazione::where('id', $id)->first();
     } 
 }

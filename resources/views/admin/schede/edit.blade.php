@@ -30,61 +30,43 @@
                     </ul>
                     <ul class="dropdown-menu dropdown-menu-right">
                         <li>
-                            <a href="/admin/farmaco-vigilanza/schede" >Vai a schede di segnalazione</a>
+                            <a href="/admin/farmaco-vigilanza/comunicati" >Vai a comunicati</a>
                         </li>
                     </ul>
                 </li>
             </ul>
         </div>
-        <form role="form" method="POST" action="/admin/farmaco-vigilanza/comunicati" enctype="multipart/form-data">
+        <form role="form" method="POST" action="/admin/farmaco-vigilanza/schede/{{$scheda->id}}" enctype="multipart/form-data">
+        <input type="hidden" name="scheda_id" value="{{$scheda->id}}">
+        <input type="hidden" name="_method" value="PUT">
             {!! csrf_field() !!}
             <div class="card">
                 <div class="card-header">
-                    <h2>Inserisci un nuovo Comunicato</h2>
+                    <h2>Modifica scheda</h2>
                 </div>
                 
                 <div class="card-body card-padding">
                     <div class="form-group fg-line">
                         <label for="titolo">Titolo</label>
-                        <input type="text" class="form-control input-sm" id="titolo" placeholder="Il titolo del comunicato" name="titolo" required>
+                        <input type="text" class="form-control input-sm" value="{{$scheda->titolo}}" id="titolo" placeholder="Il titolo del scheda" name="titolo" required>
                     </div>
+                  
+
                     <div class="form-group fg-line">
-                        <label for="formulazione">Breve descrizione</label>
-                        <textarea class="form-control"  rows="5" id="descrizione"  name="descrizione"  placeholder="La descrizione del comunicato" required></textarea>
-                    </div>
-                    <div class="form-group fg-line">
-                        <div class="fileinput fileinput-new" data-provides="fileinput">
-                            <span class="btn btn-primary btn-file m-r-10">
-                                <span class="fileinput-new">Seleziona Allegato</span>
-                                <span class="fileinput-exists">Cambia Allegato</span>
-                                <input type="file" name="allegato" >
-                            </span>
-                            <span class="fileinput-filename"></span>
-                            <a href="#" class="close fileinput-exists" data-dismiss="fileinput">&times;</a>
-                        </div>
+                        @include('admin.schede.allegato_partial')
                     </div>
                 </div>
             </div>
             
-            <div class="card">
-                <div class="card-header">
-                    <h2>Testo Comunicato</h2>
-                </div>
-                
-                <div class="card-body card-padding">
-                    <div class="row">
-                        <textarea name="testo"  class="html-editor" required></textarea>
-                    </div>
-                </div>
-            </div>
+
             <div class="card">
                 
                 <div class="card-body card-padding">
                     <div class="checkbox">
                         <label>
-                            <input type="checkbox" name="active" checked="">
+                            <input type="checkbox" name="active" @if($scheda->active == 1) checked @endif>
                             <i class="input-helper"></i>
-                            Pubblica questo comunicato
+                            Pubblica questa scheda
                         </label>
                     </div>
                 </div>

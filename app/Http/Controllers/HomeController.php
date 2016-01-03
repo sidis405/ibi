@@ -70,12 +70,6 @@ class HomeController extends Controller
         return view('pages.contatti');
     }
 
-
-    public function farmaco_vigilanza()
-    {
-        return view('pages.farmaco-vigilanza');
-    }
-
     public function benessere_del_paziente()
     {
         return view('pages.benessere-del-paziente');

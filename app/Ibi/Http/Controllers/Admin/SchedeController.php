@@ -4,7 +4,7 @@ namespace Ibi\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use App\Http\Requests;
-use Ibi\Repositories\NewsRepo;
+use Ibi\Repositories\SchedeSegnalazioneRepo;
 use Illuminate\Http\Request;
 
 
@@ -15,11 +15,11 @@ class SchedeController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index(NewsRepo $news_repo)
+    public function index(SchedeSegnalazioneRepo $schede_repo)
     {
-        $news = $news_repo->getAll();
+        $schede = $schede_repo->getAll();
 
-        return view('admin.news.index', compact('news'));
+        return view('admin.schede.index', compact('schede'));
 
     }
 
@@ -30,7 +30,7 @@ class SchedeController extends Controller
      */
     public function create()
     {
-        return view('admin.news.create');
+        return view('admin.schede.create');
     }
 
 
@@ -43,26 +43,13 @@ class SchedeController extends Controller
      */
     public function store(Request $request)
     {
-        // return $request->input();
         $data = $this->manageUploads($request);
 
-        $news = $this->dispatchFrom('Ibi\Commands\News\CreateNewsCommand', $request, $data);
+        $scheda = $this->dispatchFrom('Ibi\Commands\Schede\CreateSchedaCommand', $request, $data);
         
-        return redirect()->to('/admin/news');
+        return redirect()->to('/admin/farmaco-vigilanza/schede');
     }
 
-    /**
-     * Display the specified News.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function show($id, NewsRepo $news_repo)
-    {
-        $news = $news_repo->getById($id);
-
-        return view('admin.news.show', compact('news'));
-    }
 
     /**
      * Show the form for editing the specified News.
@@ -70,11 +57,11 @@ class SchedeController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id, NewsRepo $news_repo)
+    public function edit($id, SchedeSegnalazioneRepo $schede_repo)
     {
-        $news = $news_repo->getById($id);
+        $scheda = $schede_repo->getById($id);
 
-        return view('admin.news.edit', compact('news'));
+        return view('admin.schede.edit', compact('scheda'));
     }
 
     /**
@@ -88,11 +75,11 @@ class SchedeController extends Controller
     {
         $data = $this->manageUploads($request);
 
-        $news = $this->dispatchFrom('Ibi\Commands\News\UpdateNewsCommand', $request, $data);
+        $scheda = $this->dispatchFrom('Ibi\Commands\Schede\UpdateSchedaCommand', $request, $data);
 
         flash()->success('News aggiornata correttamente.');
 
-        return redirect()->to('/admin/news');
+        return redirect()->to('/admin/farmaco-vigilanza/schede');
     }
 
     /**
@@ -101,9 +88,9 @@ class SchedeController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id, NewsRepo $news_repo)
+    public function destroy($id, SchedeSegnalazioneRepo $schede_repo)
     {
-        $delete = $news_repo->remove($id);
+        $delete = $schede_repo->remove($id);
 
         return 'true';
     }
@@ -112,11 +99,11 @@ class SchedeController extends Controller
     {
         $data = [];
 
-        if($request->hasFile('immagine_path'))
+        if($request->hasFile('allegato'))
         {
-            $data['immagine_path'] = $request->file('immagine_path');
+            $data['allegato'] = $request->file('allegato');
         }else{
-            $data['immagine_path'] = false;
+            $data['allegato'] = false;
         }
 
         if($request->has('active'))

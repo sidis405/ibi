@@ -12,11 +12,11 @@
             <section id="content">
                 <div class="container">
                     <div class="block-header">
-                        <h2>Comunicati</h2>
+                        <h2>Schede di segnalazione</h2>
 
                          <ul class="actions">
                             <li>
-                                <a href="/admin/farmaco-vigilanza/comunicati/crea">
+                                <a href="/admin/farmaco-vigilanza/schede/crea">
                                     <i class="zmdi zmdi-plus-circle-o"></i>
                                 </a>
                             </li>
@@ -32,7 +32,7 @@
                                 </ul>
                                 <ul class="dropdown-menu dropdown-menu-right">
                                     <li>
-                                        <a href="/admin/farmaco-vigilanza/schede">Vai a schede di segnalazione</a>
+                                        <a href="/admin/farmaco-vigilanza/comunicati" >Vai a comunicati</a>
                                     </li>
                                 </ul>
                             </li>
@@ -43,7 +43,7 @@
                     
                     <div class="card">
                         <div class="card-header">
-                            <h2>Comunicati <small>Lista comunicati presenti nella sezione Farmacovigilanza.</small></h2>
+                            <h2>Schede di segnalazione <small>Lista schede di segnalazione presenti nella sezione Farmacovigilanza.</small></h2>
                         </div>
                         
                         <table id="data-table-command" class="table table-striped table-vmiddle">
@@ -57,11 +57,11 @@
                             </thead>
                             <tbody>
 
-                            @foreach($comunicati as $comunicato)
+                            @foreach($schede as $scheda)
                                 <tr>
-                                    <td>{{$comunicato->id}}</td>
-                                    <td>{{$comunicato->titolo}}</td>
-                                    <td>{{$comunicato->created_at->format('d-m-y H:i')}}</td>
+                                    <td>{{$scheda->id}}</td>
+                                    <td>{{$scheda->titolo}}</td>
+                                    <td>{{$scheda->created_at->format('d-m-y H:i')}}</td>
                                 </tr>
                             @endforeach
                                 
@@ -80,7 +80,7 @@
         <script src="/adm/vendors/bootgrid/jquery.bootgrid.js"></script>
 
         <!-- Data Table -->
-        <script src="/adm/js/bootgrid-comunicati.js"></script>
+        <script src="/adm/js/bootgrid-schede.js"></script>
 
 
 @stop

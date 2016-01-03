@@ -30,7 +30,7 @@
                     </ul>
                     <ul class="dropdown-menu dropdown-menu-right">
                         <li>
-                            <a href="/admin/farmaco-vigilanza/schede" class="refresh-page">Vai a schede di segnalazioen</a>
+                            <a href="/admin/farmaco-vigilanza/schede" >Vai a schede di segnalazione</a>
                         </li>
                     </ul>
                 </li>
@@ -42,7 +42,7 @@
             {!! csrf_field() !!}
             <div class="card">
                 <div class="card-header">
-                    <h2>Inserisci un nuovo Comunicato</h2>
+                    <h2>Modifica Comunicato</h2>
                 </div>
                 
                 <div class="card-body card-padding">
