@@ -47,7 +47,6 @@
                                 <li><a href="/admin/utenti/permessi">Permessi</a></li>
                             </ul>
                         </li>
-                        <li><a href="/admin/contenuti"><i class="zmdi zmdi-comment-edit"></i> Contenuti sito</a></li>
                         <li><a href="/admin/news"><i class="zmdi zmdi-remote-control-alt"></i> News</a></li>
                         <li class="sub-menu">
                             <a href=""><i class="zmdi zmdi-accounts-list-alt"></i> Lavora con noi</a>
@@ -64,6 +63,15 @@
                             <ul>
                                 <li><a href="/admin/farmaco-vigilanza/comunicati">Comunicati</a></li>
                                 <li><a href="/admin/farmaco-vigilanza/schede-segnalazione">Schede di Segnalazione</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="/admin/modifiche-contenuti-sito"><i class="zmdi zmdi-comment-edit"></i>Modifiche Contenuti Sito</a></li>
+                        <li class="sub-menu">
+                            <a href=""><i class="zmdi zmdi-border-left"></i> Struttura Sito</a>
+
+                            <ul>
+                                <li><a href="/admin/contenuti">Contenuti</a></li>
+                                <li><a href="/admin/pagine">Pagine</a></li>
                             </ul>
                         </li>
                         <li><a href="/admin/impostazioni"><i class="zmdi zmdi-settings"></i> Impostazioni</a></li>
