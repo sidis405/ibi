@@ -68,6 +68,7 @@ class ContenutiController extends Controller
 
         $traduzioni = $contenuto->translations->keyBy('locale');
 
+        // return $contenuto;
 
         return view('admin.contenuti.edit', compact('contenuto', 'pagine', 'lingue', 'traduzioni'));
     }

@@ -37,6 +37,7 @@ class ContenutiRepo
 
     public function getById($id)
     {
+        // return Contenuti::with('translations.versions')->where('id', $id)->first();
         return Contenuti::with('translations')->where('id', $id)->first();
     } 
 }
