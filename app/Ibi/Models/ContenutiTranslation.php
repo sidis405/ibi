@@ -3,7 +3,7 @@
 namespace Ibi\Models;
 
 use Illuminate\Database\Eloquent\Model;
-use Mpociot\Versionable\VersionableTrait;
+use Ibi\Models\VersionableTrait;
 
 class ContenutiTranslation extends Model {
 
