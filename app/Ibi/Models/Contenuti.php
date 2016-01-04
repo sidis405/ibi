@@ -44,8 +44,6 @@ class Contenuti extends Model
         $contenuto->slug = $slug;
         $contenuto->descrizione = $descrizione;
 
-        
-
         return $contenuto;
     }
 }
