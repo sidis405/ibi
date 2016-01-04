@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "726ee633990bb190cca7c80ec3e64f80",
-    "content-hash": "09633eabefb20b36cca7d008e94edfcb",
+    "hash": "aa9c1a75ee536006138d02dd501cb107",
+    "content-hash": "0b40109873f41a70f8d9eb8bdb3b05b9",
     "packages": [
         {
             "name": "barryvdh/laravel-debugbar",
@@ -952,6 +952,62 @@
                 "psr-3"
             ],
             "time": "2015-10-14 12:51:02"
+        },
+        {
+            "name": "mpociot/versionable",
+            "version": "2.1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mpociot/versionable.git",
+                "reference": "9d81f030b1c808a6f32f86d64ff3309101ba68ef"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mpociot/versionable/zipball/9d81f030b1c808a6f32f86d64ff3309101ba68ef",
+                "reference": "9d81f030b1c808a6f32f86d64ff3309101ba68ef",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "~4.0|~5.0",
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "illuminate/database": "~5.0",
+                "illuminate/events": "~5.0",
+                "mockery/mockery": "dev-master",
+                "phpunit/phpunit": "4.7.*"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "src/migrations",
+                    "tests/VersionableTestCase.php"
+                ],
+                "psr-0": {
+                    "Mpociot\\Versionable": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Marcel Pociot",
+                    "email": "m.pociot@gmail.com"
+                }
+            ],
+            "description": "Allows to create Laravel 4 / 5 Model versioning and restoring",
+            "homepage": "http://github.com/mpociot/versionable",
+            "keywords": [
+                "ardent",
+                "history",
+                "laravel",
+                "model",
+                "restore",
+                "version"
+            ],
+            "time": "2015-11-26 22:41:15"
         },
         {
             "name": "mtdowling/cron-expression",
