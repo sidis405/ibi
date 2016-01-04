@@ -62,7 +62,7 @@
 
                             <ul>
                                 <li><a href="/admin/farmaco-vigilanza/comunicati">Comunicati</a></li>
-                                <li><a href="/admin/farmaco-vigilanza/schede-segnalazione">Schede di Segnalazione</a></li>
+                                <li><a href="/admin/farmaco-vigilanza/schede">Schede di Segnalazione</a></li>
                             </ul>
                         </li>
                         <li><a href="/admin/modifiche-contenuti-sito"><i class="zmdi zmdi-comment-edit"></i>Modifiche Contenuti Sito</a></li>

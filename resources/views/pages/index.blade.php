@@ -33,7 +33,11 @@
           </div>
           <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
             <div class="hero-box"><img src="/img/ibisqus-ospedale-logo.jpg" alt="" class="img-responsive">
-              <p>A quasi 100 anni dalla data della sua fondazione l’Istituto Biochimico Italiano ha intrapreso una strategia di crescita e di rinnovamento con l’obiettivo di competere a livello internazionale.</p><a href="ibisqus-ospedale">
+              {!!$contenuti['home_ibisqus_ospedale_box']['testo']!!}
+              <a href="ibisqus-ospedale">
+              @permessoibi('modifica_ibisqus')
+                <a href="/admin/contenuti/{{$contenuti['home_ibisqus_ospedale_box']['id']}}/modifica" target="_blank" class="pull-right">modifica</a>
+              @endpermessoibi
                 <div class="btn btn-primary">Leggi tutto</div></a>
             </div>
           </div>
