@@ -5,7 +5,7 @@
             <div class="col-sm-6"><i class="fa fa-facebook-square"></i><i class="fa fa-google-plus-square"></i><i class="fa fa-twitter-square"></i><i class="fa fa-envelope"></i></div>
             <div class="col-sm-6">
               <div class="pull-right"><a href="#" class="area-riservata">Area riservata</a>
-                <p class="lang"><a href="/it">Ita |</a><a href="/en"> Eng</a></p>
+                <p class="lang"><a href="/lang/it">Ita |</a><a href="/lang/en"> Eng</a></p>
               </div>
             </div>
           </div>
