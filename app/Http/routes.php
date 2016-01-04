@@ -4,7 +4,7 @@
 //     return view('pages.index');
 // });
 
-Route::get('/lang/{locale}', '\Ibi\Http\Controllers\LocaleController@setLocale');
+Route::get('/langs/{locale}', '\Ibi\Http\Controllers\LocaleController@setLocale');
 
 Route::get('pull', 'HomeController@pull');
 
