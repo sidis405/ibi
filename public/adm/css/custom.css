@@ -3,5 +3,15 @@
 }
 
 .profile-menu > a {
-    /*background: url(/img/ibi-lorenzini-logo.png) no-repeat left top;*/
+    background: url(/img/ibi-lorenzini-logo.png) no-repeat center center;
+}
+#header {
+	background: #00509a;
+}
+
+.profile-menu > .profile-info {
+	background: rgba(0,0,0,0.37);
+  padding: 7px 14px;
+  color: #fff;  
+  position: relative;
 }

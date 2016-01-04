@@ -3,15 +3,14 @@
                     <div class="profile-menu">
                         <a href="">
                             <div class="profile-pic">
-                                <img src="/adm/img/profile-pics/1.jpg" alt="">
-                            </div>
-
-                            <div class="profile-info">
+                                <!-- <img src="/adm/img/profile-pics/1.jpg" alt=""> -->
+                            </div>                           
+                        </a>
+                        <div class="profile-info">
                                 <span id="user_nicename">{{$user->present()->niceName()}}</span>
 
                                 <i class="zmdi zmdi-arrow-drop-down"></i>
                             </div>
-                        </a>
 
                         <ul class="main-menu">
                             <li>
