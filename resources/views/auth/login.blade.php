@@ -39,7 +39,7 @@
     <button type="submit" class="btn btn-login btn-danger btn-float"><i class="zmdi zmdi-arrow-forward"></i></button>
     
     <ul class="login-navigation">
-        <li  class="bgm-red"><a href="/auth/register">Register</a></li>
+        <!-- <li  class="bgm-red"><a href="/auth/register">Register</a></li> -->
         <li class="bgm-orange"><a href="/auth/password">Password Smarrita?</a></li>
     </ul>
 </form>

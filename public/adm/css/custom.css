@@ -5,6 +5,15 @@
 .profile-menu > a {
     background: url(/img/ibi-lorenzini-logo.png) no-repeat center center;
 }
+
+/*AUTH LOGIN STYLES*/
+
+body.login-content:before {
+	background: #00509a;
+}
+
+/*SIDEBAR ADMIN STYLES*/
+
 #header {
 	background: #00509a;
 }
@@ -15,3 +24,4 @@
   color: #fff;  
   position: relative;
 }
+
