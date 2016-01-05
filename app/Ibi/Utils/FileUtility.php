@@ -34,6 +34,12 @@ class FileUtility {
                             [
                                 'folder' => 'schede',
                                 'disk' => 'public_allegati'
+                            ],
+
+                        'slider_immagine' => 
+                            [
+                                'folder' => 'slider',
+                                'disk' => 'public_images'
                             ]
 
                         ];

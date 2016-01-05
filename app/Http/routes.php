@@ -42,6 +42,8 @@ Route::group(array('prefix' => 'admin', 'middleware' => 'auth'), function () {
     
     include(__DIR__.'/../Ibi/Routes/routes_contenuti.php');
 
+    include(__DIR__.'/../Ibi/Routes/routes_slider.php');
+
 });
 
 include(__DIR__.'/../Ibi/Routes/routes_pages.php');

@@ -2,3 +2,7 @@
     width: 100px;
     height: 100px;
 }
+
+.slide {
+     background-size: cover!important;
+}

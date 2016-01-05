@@ -1,5 +1,15 @@
 <?php
 
+function getText($contenuti, $blocco)
+{
+    return $contenuti[$blocco]['testo'];
+}
+
+function getKey($contenuti, $blocco, $key)
+{
+    return $contenuti[$blocco][$key];
+}
+
 function presentBreadcrumbs($pieces){
 
 

@@ -6,19 +6,22 @@ use App\Http\Controllers\Controller;
 use App\Http\Requests;
 use Ibi\Repositories\NewsRepo;
 use Ibi\Repositories\PagineRepo;
+use Ibi\Repositories\SliderRepo;
 use Illuminate\Http\Request;
 
 
 class HomeController extends Controller
 {
 
-    public function home(NewsRepo $news_repo, PagineRepo $pagine_repo)
+    public function home(NewsRepo $news_repo, PagineRepo $pagine_repo, SliderRepo $slider_repo)
     {
         $news = $news_repo->getAllFront();
 
+        $sliders = $slider_repo->getAllFront();
+
         $contenuti = $pagine_repo->getContentForPage('index');
 
-        return view('pages.index', compact('news', 'contenuti'));
+        return view('home.index', compact('news', 'contenuti', 'sliders'));
     }
 
     public function chi_siamo(NewsRepo $news_repo)
