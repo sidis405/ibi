@@ -1,6 +1,6 @@
 @extends('layouts.master')
 @section('content')
-<div class="main-header">
+<div class="main-header header-registrazione">
     <div class="container">
         <div class="main-caption">
             <h1>Registrazione</h1>
