@@ -7,7 +7,7 @@
         <div class="row">
           <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
             <div class="hero-box"><img src="/img/ibi-export-logo.jpg" alt="" class="img-responsive">
-              {!!getText($contenuti, 'home_ibi_export_box')!!}
+              {!!getTheText($contenuti, 'home_ibi_export_box')!!}
               <a href="ibi-export">
                   @permessoibi('modifica_export')
                     <a href="/admin/contenuti/{{getKey($contenuti, 'home_ibi_export_box', 'id')}}/modifica" target="_blank" class="pull-right">modifica</a>
@@ -18,7 +18,7 @@
           </div>
           <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
             <div class="hero-box"><img src="/img/ibisqus-ospedale-logo.jpg" alt="" class="img-responsive">
-              {!!getText($contenuti, 'home_ibisqus_ospedale_box')!!}
+              {!!getTheText($contenuti, 'home_ibisqus_ospedale_box')!!}
               <a href="ibisqus-ospedale">
               @permessoibi('modifica_ibisqus')
                 <a href="/admin/contenuti/{{getKey($contenuti, 'home_ibisqus_ospedale_box', 'id')}}/modifica" target="_blank" class="pull-right">modifica</a>
@@ -45,7 +45,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-8">
-            {!!getText($contenuti, 'home_articolo_principale')!!}
+            {!!getTheText($contenuti, 'home_articolo_principale')!!}
             @permessoibi('modifica_home')
                 <a href="/admin/contenuti/{{getKey($contenuti, 'home_articolo_principale', 'id')}}/modifica" target="_blank" class="pull-right">modifica</a>
               @endpermessoibi

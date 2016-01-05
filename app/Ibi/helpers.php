@@ -1,6 +1,6 @@
 <?php
 
-function getText($contenuti, $blocco)
+function getTheText($contenuti, $blocco)
 {
     return $contenuti[$blocco]['testo'];
 }
