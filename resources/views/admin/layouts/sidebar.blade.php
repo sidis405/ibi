@@ -20,7 +20,7 @@
             </ul>
         </div>
         <ul class="main-menu">
-            <li class="active"><a href="index.html"><i class="zmdi zmdi-home"></i> Home</a></li>
+            <li class="active"><a href="/admin"><i class="zmdi zmdi-home"></i> Home</a></li>
             <li class="sub-menu">
                 <a href=""><i class="zmdi zmdi-widgets"></i> Prodotti</a>
                 <ul>
