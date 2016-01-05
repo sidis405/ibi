@@ -24,6 +24,11 @@ class HomeController extends Controller
         return view('home.index', compact('news', 'contenuti', 'sliders'));
     }
 
+    public function area_riservata()
+    {
+        return view('area-riservata.index');
+    }
+
     public function chi_siamo(NewsRepo $news_repo)
     {
         $news = $news_repo->getAllFront();

@@ -8,6 +8,8 @@ Route::get('/langs/{locale}', '\Ibi\Http\Controllers\LocaleController@setLocale'
 
 Route::get('pull', 'HomeController@pull');
 
+Route::get('area-riservata', 'HomeController@area_riservata');
+
 include(__DIR__.'/../Ibi/Routes/routes_auth.php');
 
 Route::group(array('prefix' => 'admin', 'middleware' => 'auth'), function () {

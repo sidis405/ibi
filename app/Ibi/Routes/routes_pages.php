@@ -2,6 +2,7 @@
 
 Route::get('/', 'HomeController@home');
 Route::get('index', 'HomeController@home');
+Route::get('home', 'HomeController@home');
 Route::get('chi-siamo', 'HomeController@chi_siamo');
 Route::get('prodotti-export', 'HomeController@prodotti_export');
 Route::get('prodotti-ibisqus', 'HomeController@prodotti_ibisqus');
@@ -11,6 +12,7 @@ Route::get('ibi-export', 'HomeController@ibi_export');
 Route::get('ibi-italia', 'HomeController@ibi_italia');
 Route::get('ibisqus-ospedale', 'HomeController@ibisqus_ospedale');
 
+Route::get('area-riservata', 'HomeController@area_riservata');
 
 Route::get('ibi-toll-manufacturer', 'HomeController@ibi_toll_manufacturer');
 Route::get('ricerca-innovazione', 'HomeController@ricerca_innovazione');
