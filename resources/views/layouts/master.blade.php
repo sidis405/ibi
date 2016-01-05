@@ -8,6 +8,7 @@
     <meta name="description" content="Prodotti">
     <!-- Google Fonts    --><link href='https://fonts.googleapis.com/css?family=Lato:400,700,700italic,300,300italic,400italic' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="/css/vendor.css">
+    @yield('header_scripts')
     <link rel="stylesheet" href="/css/main.css">
     <link rel="stylesheet" href="/css/custom.css">
   </head>
@@ -24,5 +25,6 @@
   </body>
   <script src="/js/vendor.js"></script>
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAx9KUDj1tNjrnOjWivzS4GAJ9Cke8RIvM"></script>
+  @yield('footer_scripts')
   <script src="/js/main.js"></script>
 </html>

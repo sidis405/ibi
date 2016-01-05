@@ -157,6 +157,7 @@ return [
         Ibi\Providers\IbiPermissionSerciceProvider::class,
         Barryvdh\Debugbar\ServiceProvider::class,
         Dimsav\Translatable\TranslatableServiceProvider::class,
+        Anhskohbo\NoCaptcha\NoCaptchaServiceProvider::class,
     ],
 
     /*

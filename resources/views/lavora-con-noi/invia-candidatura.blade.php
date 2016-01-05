@@ -1,4 +1,11 @@
 @extends('layouts.master')
+
+@section('header_scripts')
+
+<script src='https://www.google.com/recaptcha/api.js'></script>
+
+@stop
+
 @section('content')
     <!-- Page content -->
     <div class="main-header lavora-con-noi">
@@ -12,6 +19,7 @@
       <div class="container">
         <div class="row">
           <div class="col-sm-8">
+              @include('layouts.errors')
               @include('flash::message')
             <h2>Invia la tua candidatura</h2>
             <p>
@@ -23,7 +31,7 @@
               <div class="form-group">
                 <label for="posizione_id">Scegli la posizione <span class="form-input-danger">*</span></label>
                 <select name="posizione_id" class="form-control">
-                  <option>Scegli...</option>
+                  <option disabled="">Scegli...</option>
                   @foreach($posizioni as $posizione)
                     <option value="{{$posizione->id}}" @if($posizione->id == $id) selected @endif required>{{$posizione->titolo}} : {{$posizione->sede}}</option>
                   @endforeach
@@ -60,6 +68,10 @@
                 <p style="font-size: 12px">
                   Cliccando su invia dichiaro di aver letto ed accettato la <a href="/privacy-policy" target="_blank">Privacy Policy</a>
                 </p>
+              </div>
+
+              <div class="form-group">
+                {!! app('captcha')->display(); !!}
               </div>
               <div class="form-group">
                 <button class="btn btn-primary btn-block">Invia</button>

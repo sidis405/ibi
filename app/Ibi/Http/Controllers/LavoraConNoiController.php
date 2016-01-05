@@ -5,8 +5,8 @@ namespace Ibi\Http\Controllers;
 use App\Http\Controllers\Controller;
 use App\Http\Requests;
 use Ibi\Repositories\PosizioniAperteRepo;
+use Ibi\Requests\SendCandidaturaRequest;
 use Illuminate\Http\Request;
-
 
 class LavoraConNoiController extends Controller
 {
@@ -40,7 +40,7 @@ class LavoraConNoiController extends Controller
         return view('lavora-con-noi.invia-candidatura', compact('posizioni', 'id'));
     }
 
-    public function store(Request $request)
+    public function store(SendCandidaturaRequest $request)
     {
         // return $request->input();
         $data = $this->manageUploads($request);
