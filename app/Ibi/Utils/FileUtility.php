@@ -18,6 +18,11 @@ class FileUtility {
                                 'folder' => 'schede_tecniche',
                                 'disk' => 'uploads'
                             ],
+                        'cv' => 
+                            [
+                                'folder' => 'cv',
+                                'disk' => 'uploads'
+                            ],
                         'news_immagine' => 
                             [
                                 'folder' => 'news',

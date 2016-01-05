@@ -23,7 +23,7 @@ $(document).ready(function(){
                     /* Executes after data is loaded and rendered */
                     $("#data-table-command").find(".command-edit").on("click", function(e)
                     {
-                        window.location.href = "/admin/lavora-con-noi/candidature/" + $(this).data("row-id");
+                        window.location.href = "/admin/lavora-con-noi/" + $(this).data("row-id") + "/modifica";
 
                     }).end().find(".command-delete").on("click", function(e)
                     {
@@ -33,7 +33,7 @@ $(document).ready(function(){
                             rows[0] = id;
                             
                                 swal({   
-                                    title: "Sei sicuro di voler cancellare questa candidatura?",   
+                                    title: "Sei sicuro di voler cancellare questa posizione?",   
                                     text: "Non sarà possibile recuperare questo dato!",   
                                     type: "warning",   
                                     showCancelButton: true,   
@@ -42,8 +42,8 @@ $(document).ready(function(){
                                     closeOnConfirm: false ,
                                     showLoaderOnConfirm: true
                                 }, function(){   
-                                    swal("Cancellato!", "La candidatura è stata cancellata con successo.", "success"); 
-                                    deleteResource(id, 'lavora-con-noi/candidature');
+                                    swal("Cancellato!", "La posizione è stata cancellata con successo.", "success"); 
+                                    deleteResource(id, 'lavora-con-noi');
                                     $("#data-table-command").bootgrid('remove', rows);
                                 });
                     });

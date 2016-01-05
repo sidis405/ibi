@@ -18,7 +18,9 @@ Route::get('ricerca-innovazione', 'HomeController@ricerca_innovazione');
 Route::get('contatti', 'HomeController@contatti');
 
 Route::get('lavora-con-noi', '\Ibi\Http\Controllers\LavoraConNoiController@index');
-Route::get('lavora-con-noi/{id}/{slug}/invia-candidatura', '\Ibi\Http\Controllers\LavoraConNoiController@invia_candidatura');
+Route::get('lavora-con-noi/invia-candidatura', '\Ibi\Http\Controllers\LavoraConNoiController@invia_candidatura');
+Route::post('lavora-con-noi/invia-candidatura', '\Ibi\Http\Controllers\LavoraConNoiController@store');
+Route::get('lavora-con-noi/{id}/{slug}/invia-candidatura', '\Ibi\Http\Controllers\LavoraConNoiController@invia_candidatura_selected');
 
 Route::get('news/{id}/{slug}', '\Ibi\Http\Controllers\NewsController@show');
 Route::get('farmaco-vigilanza', '\Ibi\Http\Controllers\FarmacoVigilanzaController@index');

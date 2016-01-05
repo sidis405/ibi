@@ -12,7 +12,7 @@ class Candidature extends Model
 
     public static function make($posizione_id, $nome, $cognome, $email, $messaggio){
 
-        $candidatura = new static(compact('candidatura_id', 'nome', 'cognome', 'email', 'messaggio'));
+        $candidatura = new static(compact('posizione_id', 'nome', 'cognome', 'email', 'messaggio'));
 
         return $candidatura;
     }

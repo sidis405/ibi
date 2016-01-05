@@ -18,7 +18,7 @@ class CreateCandidatureTable extends Migration
             $table->string('nome');
             $table->string('cognome');
             $table->string('email');
-            $table->string('messagio');
+            $table->string('messaggio');
             $table->string('cv_path');
             $table->timestamps();
         });

@@ -6,3 +6,7 @@
 .slide {
      background-size: cover!important;
 }
+
+.form-input-danger {
+    color: red!important;
+}

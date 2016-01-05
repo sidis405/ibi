@@ -27,7 +27,7 @@
               <br><br>
               La Direzione Risorse Umane, in collaborazione con i Responsabili di funzione, cura lo screening dei curricula pervenuti ed effettua diversi colloqui individuali al fine di selezionare la candidatura più idonea alle esigenze aziendali.
               La condivisione dei valori aziendali - attenzione alle persone, trasparenza, integrità e correttezza nei rapporti, apertura al cambiamento nel rispetto del passato - è requisito indispensabile per entrare a far parte della squadra IBI ed è ciò che la rende riconoscibile all’esterno come azienda affidabile ed eticamente responsabile.
-            </p><a href="invia-candidatura">
+            </p><a href="/lavora-con-noi/invia-candidatura">
               <div class="btn btn-primary">Invia la tua candidatura</div></a>
           </div>
           <div class="col-md-4">
