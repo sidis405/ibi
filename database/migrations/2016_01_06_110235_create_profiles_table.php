@@ -33,6 +33,7 @@ class CreateProfilesTable extends Migration
             $table->string('citta_residenza');
             $table->integer('provincia_residenza');
             $table->string('cap_residenza');
+            $table->integer('notifica_spedita')->default(0);
             $table->timestamps();
         });
     }

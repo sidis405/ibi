@@ -29,7 +29,10 @@ class InternalUsersRepo
 
     public function getAll()
     {
-        return User::with('roles')->orderBy('first_name')->get();
+        // return User::with('roles')->orderBy('first_name')->get();
+        return User::with('roles')->whereHas('roles' , function($q){
+                    $q->where('name', '!=', 'Medico')->where('name', '!=', 'Farmacista');
+                })->orderBy('first_name')->get();
     } 
 
     public function getById($id)

@@ -37,6 +37,7 @@
                 <ul>
                     <li><a href="/admin/utenti" id="utenti_menu_lista_utenti">Lista Utenti</a></li>
                     <li><a href="/admin/utenti/crea" id="utenti_menu_aggiungi_utenti">Aggiungi Utenti</a></li>
+                    <li><a href="/admin/medici-farmacisti" id="utenti_menu_medici_farmacisti">Medici / Farmacisti</a></li>
                     <li><a href="/admin/utenti/ruoli" id="utenti_menu_ruoli">Ruoli</a></li>
                     <li><a href="/admin/utenti/permessi" id="utenti_menu_permessi">Permessi</a></li>
                 </ul>

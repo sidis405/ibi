@@ -33,7 +33,7 @@ class User extends Model implements AuthenticatableContract, AuthorizableContrac
      *
      * @var array
      */
-    protected $fillable = ['first_name', 'last_name', 'email', 'password'];
+    protected $fillable = ['first_name', 'last_name', 'email', 'password', 'active'];
 
     /**
      * The attributes excluded from the model's JSON form.
@@ -71,5 +71,14 @@ class User extends Model implements AuthenticatableContract, AuthorizableContrac
         $internal_user->active = $active;
 
         return $internal_user;
+    }
+
+    public static function edit_external($user_id, $active){
+
+        $external_user = static::find($user_id);
+
+        $external_user->active = $active;
+
+        return $external_user;
     }
 }
