@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\Auth;
+namespace Ibi\Traits;
 
 use App\Http\Controllers\Controller;
 use App\User;
@@ -9,48 +9,13 @@ use Illuminate\Foundation\Auth\ThrottlesLogins;
 use Illuminate\Http\Request;
 use Spatie\Permission\Models\Role;
 use Validator;
-use Ibi\Events\ExternalUsers\ExternalUserWasCreated;
-use Event;
-use Ibi\Traits\IbiRegistrationTrait;
-use Ibi\Traits\IbiAuthenticationTrait;
 use Illuminate\Support\Facades\Auth;
 
-class AuthController extends Controller
+trait IbiAuthenticationTrait
 {
-    /*
-    |--------------------------------------------------------------------------
-    | Registration & Login Controller
-    |--------------------------------------------------------------------------
-    |
-    | This controller handles the registration of new users, as well as the
-    | authentication of existing users. By default, this controller uses
-    | a simple trait to add these behaviors. Why don't you explore it?
-    |
-    */
+    protected $login_user_allowed_roles = ['Medico', 'Farmacista'];
 
-    use AuthenticatesAndRegistersUsers, ThrottlesLogins, IbiRegistrationTrait, IbiAuthenticationTrait;
-
-    
-    protected $login_admin_denied_roles = ['Medico', 'Farmacista'];
-
-    /**
-     * Create a new authentication controller instance.
-     *
-     * @return void
-     */
-    public function __construct()
-    {
-        parent::__construct();
-        $this->middleware('guest', ['except' => 'getLogout']);
-    }
-
-    public function postRegister(Request $request)
-    {
-
-        return $this->ibiPostRegister($request);
-    }
-
-    public function postLogin(Request $request)
+    public function areaRiservataLogin(Request $request)
     {
         $this->validate($request, [
             $this->loginUsername() => 'required', 'password' => 'required',
@@ -65,9 +30,11 @@ class AuthController extends Controller
             return $this->sendLockoutResponse($request);
         }
 
-        $credentials = $this->getCredentials($request);
+        $credentials = $this->getCredentialsIbi($request);
 
-        if ($this->ibiAdminAuthAttempt($credentials, $request, $throttles)) {
+        // dd($credentials);
+
+        if ($this->ibiUserAuthAttempt($credentials, $request, $throttles)) {
             return $this->handleUserWasAuthenticatedIbi($request, $throttles);
         }
 
@@ -78,19 +45,19 @@ class AuthController extends Controller
             $this->incrementLoginAttempts($request);
         }
 
-        return redirect($this->loginPath())
+        return redirect('/area-riservata')
             ->withInput($request->only($this->loginUsername(), 'remember'))
             ->withErrors([
                 $this->loginUsername() => $this->getFailedLoginMessage(),
             ]);
     }
 
-    public function ibiAdminAuthAttempt($credentials, $request)
+    public function ibiUserAuthAttempt($credentials, $request)
     {
         $attempt = Auth::attempt($credentials, $request->has('remember'));
         if ($attempt) {
             $user = Auth::user();
-            if(in_array($user->roles[0]->name, $this->login_admin_denied_roles) )
+            if(! in_array($user->roles[0]->name, $this->login_user_allowed_roles) )
             {
                 \Auth::logout();
                 return false;
@@ -101,5 +68,29 @@ class AuthController extends Controller
         return false;
     }
 
-    
+    /**
+     * Send the response after the user was authenticated.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @param  bool  $throttles
+     * @return \Illuminate\Http\Response
+     */
+    protected function handleUserWasAuthenticatedIbi(Request $request, $throttles)
+    {
+        if ($throttles) {
+            $this->clearLoginAttempts($request);
+        }
+
+        if (method_exists($this, 'authenticated')) {
+            return $this->authenticated($request, Auth::user());
+        }
+
+        return redirect()->intended('/');
+    }
+
+    protected function getCredentialsIbi(Request $request)
+    {
+        return array_add($request->only($this->loginUsername(), 'password'), 'active', 1);
+    }
+
 }
