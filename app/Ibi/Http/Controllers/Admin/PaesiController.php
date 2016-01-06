@@ -8,7 +8,7 @@ use Ibi\Repositories\PaesiRepo;
 use Illuminate\Http\Request;
 
 
-class PaesiController extends Controller
+class PaesiController extends AdminController
 {
     /**
      * Display a listing of the Paesi.

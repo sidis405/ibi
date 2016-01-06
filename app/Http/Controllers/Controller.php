@@ -13,8 +13,6 @@ abstract class Controller extends BaseController
 {
     use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
 
-    public $menu_repo;
-
      function __construct() {
 
 

@@ -8,7 +8,7 @@ use Illuminate\Http\Request;
 
 use Spatie\Permission\Models\Permission;
 
-class PermessiController extends Controller
+class PermessiController extends AdminController
 {
     /**
      * Display a listing of the Permission.

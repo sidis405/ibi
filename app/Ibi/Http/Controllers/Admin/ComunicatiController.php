@@ -8,7 +8,7 @@ use Ibi\Repositories\ComunicatiRepo;
 use Illuminate\Http\Request;
 
 
-class ComunicatiController extends Controller
+class ComunicatiController extends AdminController
 {
     /**
      * Display a listing of the News.

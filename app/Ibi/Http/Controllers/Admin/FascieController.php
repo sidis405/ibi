@@ -8,7 +8,7 @@ use Ibi\Repositories\FascieRepo;
 use Illuminate\Http\Request;
 
 
-class FascieController extends Controller
+class FascieController extends AdminController
 {
     /**
      * Display a listing of the Fascie.

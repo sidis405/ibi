@@ -9,7 +9,7 @@ use Spatie\Permission\Models\Role;
 use Illuminate\Http\Request;
 
 
-class InternalUsersController extends Controller
+class InternalUsersController extends AdminController
 {
     /**
      * Display a listing of the User.

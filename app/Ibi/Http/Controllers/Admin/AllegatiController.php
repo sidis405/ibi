@@ -8,7 +8,7 @@ use Ibi\Utils\FileUtility;
 use Illuminate\Http\Request;
 use Response;
 
-class AllegatiController extends Controller
+class AllegatiController extends AdminController
 {
     /**
      * Display the attachment for the specified Prodotti.

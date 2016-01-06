@@ -8,7 +8,7 @@ use Ibi\Repositories\CandidatureRepo;
 use Illuminate\Http\Request;
 
 
-class CandidatureController extends Controller
+class CandidatureController extends AdminController
 {
     /**
      * Display a listing of the PosizioniAperte.

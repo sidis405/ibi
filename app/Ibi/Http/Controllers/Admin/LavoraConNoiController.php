@@ -8,7 +8,7 @@ use Ibi\Repositories\PosizioniAperteRepo;
 use Illuminate\Http\Request;
 
 
-class LavoraConNoiController extends Controller
+class LavoraConNoiController extends AdminController
 {
     /**
      * Display a listing of the PosizioniAperte.

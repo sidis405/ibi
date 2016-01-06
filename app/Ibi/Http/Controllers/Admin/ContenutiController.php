@@ -10,7 +10,7 @@ use Ibi\Repositories\PagineRepo;
 use Illuminate\Http\Request;
 
 
-class ContenutiController extends Controller
+class ContenutiController extends AdminController
 {
     /**
      * Display a listing of the Contenuti.

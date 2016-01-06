@@ -1,0 +1,1 @@
+Un nuovo utente si è registrato;

@@ -13,7 +13,7 @@ use Ibi\Repositories\SezioniRepo;
 use Illuminate\Http\Request;
 
 
-class ProdottiController extends Controller
+class ProdottiController extends AdminController
 {
     /**
      * Display a listing of the Prodotti.

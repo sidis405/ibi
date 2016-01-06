@@ -8,7 +8,7 @@ use Ibi\Repositories\PagineRepo;
 use Illuminate\Http\Request;
 
 
-class PagineController extends Controller
+class PagineController extends AdminController
 {
     /**
      * Display a listing of the Pages.

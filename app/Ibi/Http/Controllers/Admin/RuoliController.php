@@ -9,7 +9,7 @@ use Illuminate\Http\Request;
 use Spatie\Permission\Models\Role;
 use Spatie\Permission\Models\Permission;
 
-class RuoliController extends Controller
+class RuoliController extends AdminController
 {
     /**
      * Display a listing of the Fascie.

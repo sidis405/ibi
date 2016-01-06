@@ -9,7 +9,7 @@ use Ibi\Models\Languages;
 use Illuminate\Http\Request;
 
 
-class MenuItemsController extends Controller
+class MenuItemsController extends AdminController
 {
     /**
      * Display a listing of the Slider.

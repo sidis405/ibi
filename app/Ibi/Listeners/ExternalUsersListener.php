@@ -2,33 +2,43 @@
 
 namespace Ibi\Listeners;
 
-use Illuminate\Events\Dispatcher;
-use Illuminate\Foundation\Bus\DispatchesJobs;
 use Ibi\Events\ExternalUsers\ExternalUserWasCreated;
 use Ibi\Events\ExternalUsers\ExternalUserWasUpdated;
+use Ibi\Utils\Mailer;
+use Illuminate\Events\Dispatcher;
+use Illuminate\Foundation\Bus\DispatchesJobs;
 
 class ExternalUsersListener
 {
+
+    public $mailer;
+
+    function __construct(Mailer $mailer) {
+        $this->mailer = $mailer;
+    }
     /**
      * Handle external user creation
      */
     public function onExternalUserCreation(ExternalUserWasCreated $event) {
+
         logger('user created');
-        logger($event->user);
-        logger($event->user->profile);
-        // SPEDISCI MAIL
+
+        $this->mailer->sendMailForExternalUserCreation($event->user);
+
     }
 
     /**
      * Handle external user updating
      */
     public function onExternalUserUpdate(ExternalUserWasUpdated $event) {
+
         logger('user updated');
-        logger($event->user);
-        logger($event->user->profile);
-        // CONTROLLA SE HA RICEVUTO MAIL PER ATTIVAZIONE
-        // SPEDISCI MAIL
-        // MARCHIA PROFILE COME INVIATO MAIL
+  
+        if($event->user->profile[0]->notifica_spedita == 0 && $event->user->active == 1 ){
+            $this->mailer->sendMailForAccountActivation($event->user);
+            $event->user->profile[0]->update(['notifica_spedita' => 1]);
+        }
+
     }
 
 

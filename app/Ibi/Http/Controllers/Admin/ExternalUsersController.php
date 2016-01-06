@@ -8,7 +8,7 @@ use Ibi\Repositories\ExternalUsersRepo;
 use Illuminate\Http\Request;
 
 
-class ExternalUsersController extends Controller
+class ExternalUsersController extends AdminController
 {
     /**
      * Display a listing of the User.

@@ -8,7 +8,7 @@ use Ibi\Repositories\NewsRepo;
 use Illuminate\Http\Request;
 
 
-class NewsController extends Controller
+class NewsController extends AdminController
 {
     /**
      * Display a listing of the News.

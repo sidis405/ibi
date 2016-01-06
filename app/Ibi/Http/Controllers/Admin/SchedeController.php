@@ -8,7 +8,7 @@ use Ibi\Repositories\SchedeSegnalazioneRepo;
 use Illuminate\Http\Request;
 
 
-class SchedeController extends Controller
+class SchedeController extends AdminController
 {
     /**
      * Display a listing of the News.

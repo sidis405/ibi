@@ -9,7 +9,7 @@ use Ibi\Repositories\PrincipiAttiviRepo;
 use Illuminate\Http\Request;
 
 
-class CategorieTerapeuticheController extends Controller
+class CategorieTerapeuticheController extends AdminController
 {
     /**
      * Display a listing of the CategorieTerapeutiche.
