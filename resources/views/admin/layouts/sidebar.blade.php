@@ -71,6 +71,7 @@
                 <ul>
                     <li><a href="/admin/contenuti">Contenuti</a></li>
                     <li><a href="/admin/pagine">Pagine</a></li>
+                    <li><a href="/admin/voci-menu">Voci Menu</a></li>
                 </ul>
             </li>
             <li><a href="/admin/impostazioni"><i class="zmdi zmdi-settings"></i> Impostazioni</a></li>

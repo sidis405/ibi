@@ -21,8 +21,8 @@
           <!-- Collect the nav links, forms, and other content for toggling-->
           <div id="bs-example-navbar-collapse-1" class="collapse navbar-collapse">          
             <ul class="nav navbar-nav navbar-right">
-              <li><a href="/chi-siamo">Chi siamo</a></li>
-              <li class="dropdown"><a href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle">Prodotti <span class="caret"></span></a>
+              <li><a href="/chi-siamo">{{$menu['chi-siamo']['label']}}</a></li>
+              <li class="dropdown"><a href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle">{{$menu['prodotti']['label']}} <span class="caret"></span></a>
                 <ul class="dropdown-menu">
                   <li><a href="/prodotti-export"><span>Ibi </span>Export</a></li>
                   <li><a href="/prodotti-ibisqus"><span>Ibis<i>q</i>us </span>Ospedale</a></li>
@@ -31,10 +31,10 @@
               </li>
               <li><a href="/ibi-toll-manufacturer">Toll development<br> manufacturer</a></li>
               <li><a href="/ricerca-innovazione">Ricerca e<br> innovazione</a></li>
-              <li class="dropdown"><a href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle">Contatti <span class="caret"></span></a>
+              <li class="dropdown"><a href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle">{{$menu['contatti']['label']}} <span class="caret"></span></a>
                 <ul class="dropdown-menu">
-                  <li><a href="/contatti">Informazioni</a></li>
-                  <li><a href="/lavora-con-noi">Lavora con noi                       </a></li>
+                  <li><a href="/contatti">{{$menu['informazioni']['label']}}</a></li>
+                  <li><a href="/lavora-con-noi">{{$menu['lavora-con-noi']['label']}}</a></li>
                 </ul>
               </li>
             </ul>

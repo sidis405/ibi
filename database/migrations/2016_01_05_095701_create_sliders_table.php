@@ -29,7 +29,7 @@ class CreateSlidersTable extends Migration
             $table->string('locale')->index();
 
             $table->unique(['slider_id','locale']);
-            $table->foreign('slider_id')->references('id')->on('contenuti')->onDelete('cascade');
+            $table->foreign('slider_id')->references('id')->on('sliders')->onDelete('cascade');
         });
     }
 
