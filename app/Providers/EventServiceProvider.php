@@ -16,6 +16,18 @@ class EventServiceProvider extends ServiceProvider
         'Illuminate\Auth\Events\Login' => [
             'Ibi\Listeners\LogSuccessfulLogin',
         ],
+        // 'Ibi\Events\ExternaUsers\ExternaUserWasCreated' => [
+        //     'Ibi\Listeners\ExternalUserRegistration',
+        // ],
+    ];
+
+    /**
+     * The subscriber classes to register.
+     *
+     * @var array
+     */
+    protected $subscribe = [
+        'Ibi\Listeners\ExternalUsersListener',
     ];
 
     /**

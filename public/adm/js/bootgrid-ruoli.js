@@ -45,7 +45,7 @@ $(document).ready(function(){
                                     showLoaderOnConfirm: true
                                 }, function(){   
                                     swal("Cancellato!", "Il permesso è stata cancellata con successo.", "success"); 
-                                    deleteResource(id, 'utenti/utenti');
+                                    deleteResource(id, 'utenti/ruoli');
                                     $("#data-table-command").bootgrid('remove', rows);
                                 });
                             }else{

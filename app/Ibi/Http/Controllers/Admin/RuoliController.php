@@ -112,7 +112,7 @@ class RuoliController extends Controller
      */
     public function destroy($id)
     {
-        $role = Role::where('id', $id)->get();
+        $role = Role::where('id', $id)->first();
 
         $role->permissions()->sync([]);
 

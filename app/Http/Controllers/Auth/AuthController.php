@@ -2,11 +2,16 @@
 
 namespace App\Http\Controllers\Auth;
 
-use App\User;
-use Validator;
 use App\Http\Controllers\Controller;
-use Illuminate\Foundation\Auth\ThrottlesLogins;
+use App\User;
 use Illuminate\Foundation\Auth\AuthenticatesAndRegistersUsers;
+use Illuminate\Foundation\Auth\ThrottlesLogins;
+use Illuminate\Http\Request;
+use Spatie\Permission\Models\Role;
+use Validator;
+use Ibi\Events\ExternalUsers\ExternalUserWasCreated;
+use Event;
+use Ibi\Traits\IbiRegistrationTrait;
 
 class AuthController extends Controller
 {
@@ -21,7 +26,9 @@ class AuthController extends Controller
     |
     */
 
-    use AuthenticatesAndRegistersUsers, ThrottlesLogins;
+    use AuthenticatesAndRegistersUsers, ThrottlesLogins, IbiRegistrationTrait;
+
+    
 
     /**
      * Create a new authentication controller instance.
@@ -30,46 +37,15 @@ class AuthController extends Controller
      */
     public function __construct()
     {
+        parent::__construct();
         $this->middleware('guest', ['except' => 'getLogout']);
     }
 
-    /**
-     * Get a validator for an incoming registration request.
-     *
-     * @param  array  $data
-     * @return \Illuminate\Contracts\Validation\Validator
-     */
-    protected function validator(array $data)
+    public function postRegister(Request $request)
     {
 
-        $messages = [
-            'first_name.required' => "Il campo 'Nome' è obbligatorio",
-            'last_name.required' => "Il campo 'Cognome' è obbligatorio",
-            'email.required' => "Il campo 'Email' è obbligatorio",
-            'password.required' => "Il campo 'Password' è obbligatorio",
-        ];
-
-        return Validator::make($data, [
-            'first_name' => 'required|max:255',
-            'last_name' => 'required|max:255',
-            'email' => 'required|email|max:255|unique:users',
-            'password' => 'required|confirmed|min:6',
-        ], $messages);
+        return $this->ibiPostRegister($request);
     }
 
-    /**
-     * Create a new user instance after a valid registration.
-     *
-     * @param  array  $data
-     * @return User
-     */
-    protected function create(array $data)
-    {
-        return User::create([
-            'first_name' => $data['first_name'],
-            'last_name' => $data['last_name'],
-            'email' => $data['email'],
-            'password' => bcrypt($data['password']),
-        ]);
-    }
+    
 }

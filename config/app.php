@@ -155,6 +155,7 @@ return [
         Illuminate\Html\HtmlServiceProvider::class,
         Spatie\Permission\PermissionServiceProvider::class,
         Ibi\Providers\IbiPermissionSerciceProvider::class,
+        // Ibi\Providers\IbiEventServiceProvider::class,
         Barryvdh\Debugbar\ServiceProvider::class,
         Dimsav\Translatable\TranslatableServiceProvider::class,
         Anhskohbo\NoCaptcha\NoCaptchaServiceProvider::class,
