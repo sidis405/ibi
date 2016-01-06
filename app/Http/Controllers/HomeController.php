@@ -13,6 +13,12 @@ use Illuminate\Http\Request;
 class HomeController extends Controller
 {
 
+    public function __construct()
+    {
+        parent::__construct();
+        $this->middleware('guest', ['only' => 'area_riservata']);
+    }
+
     public function home(NewsRepo $news_repo, PagineRepo $pagine_repo, SliderRepo $slider_repo)
     {
         $news = $news_repo->getAllFront();
