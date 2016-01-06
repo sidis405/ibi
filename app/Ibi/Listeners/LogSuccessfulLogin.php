@@ -25,7 +25,7 @@ class LogSuccessfulLogin
      * @return void
      */
     public function handle(Login $event)
-    {
+    {   
         $event->user->last_login = date('Y-m-d H:i:s');
         $event->user->save();
     }

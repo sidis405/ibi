@@ -4,15 +4,16 @@ namespace Ibi\Listeners;
 
 use Illuminate\Events\Dispatcher;
 use Illuminate\Foundation\Bus\DispatchesJobs;
-use Ibi\Events\ExternaUsers\ExternaUserWasCreated;
+use Ibi\Events\ExternalUsers\ExternalUserWasCreated;
 
 class ExternalUsersListener
 {
     /**
      * Handle extrnal user ceration
      */
-    public function onLinkCreation(ExternaUserWasCreated $event) {
-        $this->dispatch(new PostProcessLink($event));
+    public function onExternalUserCreation(ExternalUserWasCreated $event) {
+        logger($event->user);
+        logger($event->user->profile);
     }
 
 
@@ -25,7 +26,7 @@ class ExternalUsersListener
     public function subscribe(Dispatcher $events)
     {
         $events->listen(
-            'Ibi\Events\ExternaUsers\ExternaUserWasCreated',
+            'Ibi\Events\ExternalUsers\ExternalUserWasCreated',
             'Ibi\Listeners\ExternalUsersListener@onExternalUserCreation'
         );
     }

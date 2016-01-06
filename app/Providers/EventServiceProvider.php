@@ -4,6 +4,7 @@ namespace App\Providers;
 
 use Illuminate\Contracts\Events\Dispatcher as DispatcherContract;
 use Illuminate\Foundation\Support\Providers\EventServiceProvider as ServiceProvider;
+use Ibi\Listeners\ExternalUsersListener;
 
 class EventServiceProvider extends ServiceProvider
 {
@@ -16,9 +17,6 @@ class EventServiceProvider extends ServiceProvider
         'Illuminate\Auth\Events\Login' => [
             'Ibi\Listeners\LogSuccessfulLogin',
         ],
-        // 'Ibi\Events\ExternaUsers\ExternaUserWasCreated' => [
-        //     'Ibi\Listeners\ExternalUserRegistration',
-        // ],
     ];
 
     /**
@@ -27,7 +25,7 @@ class EventServiceProvider extends ServiceProvider
      * @var array
      */
     protected $subscribe = [
-        'Ibi\Listeners\ExternalUsersListener',
+        ExternalUsersListener::class,
     ];
 
     /**
@@ -40,6 +38,12 @@ class EventServiceProvider extends ServiceProvider
     {
         parent::boot($events);
 
-        //
+        // \Event::listen('*', function()
+        // {
+        //     $event = \Event::firing();
+        //     if(starts_with($event, "Ibi\Events")) {
+        //         \Log::info("Event fired: " . $event . "\n");
+        //     }
+        // });
     }
 }
