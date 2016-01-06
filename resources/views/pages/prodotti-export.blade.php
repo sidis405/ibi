@@ -87,7 +87,10 @@
         <h5>Formulazione</h5><span>750 mg IM/EV 1 flac. da 20 ml + solv. 1,6 ml</span>
       </li>
       <li>
-        <h5>Foglietto illustrativo</h5><i class="fa fa-download">       </i>
+        <h5>Foglietto illustrativo</h5>
+        @permessoibi('scarica_allegati')
+        <i class="fa fa-download">       </i>
+        @endpermessoibi
       </li>
       <li>
         <h5>Scheda tecnica</h5><i class="fa fa-download"></i>
