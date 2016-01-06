@@ -84,3 +84,14 @@
 </section>
 @stop
 
+
+@section('sidebar_scripts')
+        
+    <script>
+    
+    activateSidebar('lavora_con_noi_menu', 'aggiungi_posizione');
+
+    </script>    
+
+
+@stop

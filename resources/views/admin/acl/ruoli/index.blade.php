@@ -93,3 +93,18 @@
 
 
 @stop
+
+
+
+
+
+@section('sidebar_scripts')
+        
+    <script>
+    
+    activateSidebar('utenti_menu', 'ruoli');
+
+    </script>    
+
+
+@stop

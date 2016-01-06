@@ -97,3 +97,15 @@
 
 
 @stop
+
+
+@section('sidebar_scripts')
+        
+    <script>
+    
+    activateSidebar('utenti_menu', 'lista_utenti');
+
+    </script>    
+
+
+@stop

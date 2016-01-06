@@ -83,3 +83,15 @@
 
 
 @stop
+
+
+@section('sidebar_scripts')
+        
+    <script>
+    
+    activateSidebar('lavora_con_noi_menu', 'lista_posizioni');
+
+    </script>    
+
+
+@stop

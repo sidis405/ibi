@@ -82,3 +82,17 @@
 </section>
 @stop
 
+
+
+
+
+@section('sidebar_scripts')
+        
+    <script>
+    
+    activateSidebar('struttura_menu', 'voci_menu');
+
+    </script>    
+
+
+@stop

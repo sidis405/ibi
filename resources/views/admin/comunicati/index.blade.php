@@ -84,3 +84,15 @@
 
 
 @stop
+
+
+@section('sidebar_scripts')
+        
+    <script>
+    
+    activateSidebar('farmaco_vigilanza_menu', 'comunicati');
+
+    </script>    
+
+
+@stop

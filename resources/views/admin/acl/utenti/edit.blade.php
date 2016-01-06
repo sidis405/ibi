@@ -106,3 +106,14 @@
 <script src="/adm/vendors/farbtastic/farbtastic.min.js"></script>
 <script src="/adm/vendors/bower_components/autosize/dist/autosize.min.js"></script>
 @stop
+
+@section('sidebar_scripts')
+        
+    <script>
+    
+    activateSidebar('utenti_menu', 'aggiungi_utenti');
+
+    </script>    
+
+
+@stop

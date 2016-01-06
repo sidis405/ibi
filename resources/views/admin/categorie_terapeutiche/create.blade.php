@@ -73,3 +73,14 @@
 
 @stop
 
+
+@section('sidebar_scripts')
+        
+    <script>
+    
+    activateSidebar('prodotti_menu', 'categorie_terapeutiche');
+
+    </script>    
+
+
+@stop

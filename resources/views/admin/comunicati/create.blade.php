@@ -113,3 +113,15 @@
 <script src="/adm/vendors/input-mask/input-mask.min.js"></script>
 <script src="/adm/vendors/farbtastic/farbtastic.min.js"></script>
 @stop
+
+
+@section('sidebar_scripts')
+        
+    <script>
+    
+    activateSidebar('farmaco_vigilanza_menu', 'comunicati');
+
+    </script>    
+
+
+@stop

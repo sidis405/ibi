@@ -79,3 +79,15 @@
 
 
 @stop
+
+
+@section('sidebar_scripts')
+        
+    <script>
+    
+    activateSidebar('contenuti_sito_menu', 'slider');
+
+    </script>    
+
+
+@stop

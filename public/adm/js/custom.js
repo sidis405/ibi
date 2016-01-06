@@ -28,3 +28,21 @@ function deleteResource(id, route) {
     });
 
 }
+
+function activateSidebar(menu, item)
+{
+    toggleSubmenu(menu);
+    activateMenuItem(menu + '_' + item);
+}
+
+function toggleSubmenu(submenu)
+{
+    $('#' + submenu).addClass("toggled");
+    // $('#' + submenu + ' li:first-of-type').addClass("active");
+    $('#' + submenu + ' ul').css("display", 'block');
+}
+
+function activateMenuItem(menuitem)
+{
+    $('#' + menuitem).addClass("active");
+}

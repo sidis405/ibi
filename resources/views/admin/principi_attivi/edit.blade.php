@@ -79,4 +79,13 @@
 
 
 @stop
+@section('sidebar_scripts')
+        
+    <script>
+    
+    activateSidebar('prodotti_menu', 'principi_attivi');
 
+    </script>    
+
+
+@stop

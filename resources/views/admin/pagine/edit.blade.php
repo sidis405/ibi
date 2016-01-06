@@ -85,3 +85,16 @@
     });
 </script>
 @stop
+
+
+
+@section('sidebar_scripts')
+        
+    <script>
+    
+    activateSidebar('struttura_menu', 'pagine');
+
+    </script>    
+
+
+@stop

@@ -79,3 +79,15 @@
 
 
 @stop
+
+
+@section('sidebar_scripts')
+        
+    <script>
+    
+    activateMenuItem('lista_news');
+
+    </script>    
+
+
+@stop

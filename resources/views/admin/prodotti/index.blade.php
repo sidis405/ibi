@@ -95,3 +95,14 @@
 
 
 @stop
+
+@section('sidebar_scripts')
+        
+    <script>
+    
+    activateSidebar('prodotti_menu', 'lista_prodotti');
+
+    </script>    
+
+
+@stop

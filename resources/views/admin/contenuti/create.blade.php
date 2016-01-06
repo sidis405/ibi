@@ -105,3 +105,15 @@
 
 
 @stop
+
+
+@section('sidebar_scripts')
+        
+    <script>
+    
+    activateSidebar('struttura_menu', 'contenuti');
+
+    </script>    
+
+
+@stop

@@ -69,3 +69,14 @@
 
 @stop
 
+
+@section('sidebar_scripts')
+        
+    <script>
+    
+    activateSidebar('prodotti_menu', 'paesi_export');
+
+    </script>    
+
+
+@stop

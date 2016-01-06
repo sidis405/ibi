@@ -119,6 +119,8 @@
 
         @yield('footer_scripts')
         <script src="/adm/js/custom.js"></script>
+
+        @yield('sidebar_scripts')
         
     </body>
   </html>

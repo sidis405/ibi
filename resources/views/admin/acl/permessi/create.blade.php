@@ -66,3 +66,14 @@
 
 @stop
 
+
+@section('sidebar_scripts')
+        
+    <script>
+    
+    activateSidebar('utenti_menu', 'permessi');
+
+    </script>    
+
+
+@stop
