@@ -4,13 +4,15 @@ namespace Ibi\Traits;
 
 use App\Http\Controllers\Controller;
 use App\User;
+use Event;
+use Ibi\Events\ExternalUsers\ExternalUserWasCreated;
+use Ibi\Models\Provincie;
+use Ibi\Models\Specializzazioni;
 use Illuminate\Foundation\Auth\AuthenticatesAndRegistersUsers;
 use Illuminate\Foundation\Auth\ThrottlesLogins;
 use Illuminate\Http\Request;
 use Spatie\Permission\Models\Role;
 use Validator;
-use Ibi\Events\ExternalUsers\ExternalUserWasCreated;
-use Event;
 
 trait IbiRegistrationTrait
 {
