@@ -16,6 +16,13 @@ trait IbiRegistrationTrait
 {
     protected $allowed_roles = ['medico', 'farmacista'];
 
+    public function getRegisterIbi()
+    {
+        $provincie = Provincie::all();
+        $specializzazioni = Specializzazioni::all();
+        return view('auth.register', compact('provincie', 'specializzazioni'));
+    }
+
     /**
      * Get a validator for an incoming registration request.
      *
