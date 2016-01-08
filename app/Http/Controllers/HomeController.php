@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
 use App\Http\Requests;
+use Ibi\Repositories\ListiniRepo;
 use Ibi\Repositories\NewsRepo;
 use Ibi\Repositories\PagineRepo;
 use Ibi\Repositories\SliderRepo;
@@ -53,19 +54,22 @@ class HomeController extends Controller
         return view('pages.ricerca-innovazione', compact('news'));
     }
 
-    public function prodotti_export()
+    public function prodotti_export(ListiniRepo $listini_repo)
     {
-        return view('pages.prodotti-export');
+        $listini = $listini_repo->getAllFront();
+        return view('pages.prodotti-export', compact('listini'));
     }
 
-    public function prodotti_ibisqus()
+    public function prodotti_ibisqus(ListiniRepo $listini_repo)
     {
-        return view('pages.prodotti-ibisqus');
+        $listini = $listini_repo->getAllFront();
+        return view('pages.prodotti-ibisqus', compact('listini'));
     }
 
-    public function prodotti_italia()
+    public function prodotti_italia(ListiniRepo $listini_repo)
     {
-        return view('pages.prodotti-italia');
+        $listini = $listini_repo->getAllFront();
+        return view('pages.prodotti-italia', compact('listini'));
     }
 
     public function ibi_export()

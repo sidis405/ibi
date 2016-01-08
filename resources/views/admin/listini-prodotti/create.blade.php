@@ -92,7 +92,7 @@
         
     <script>
     
-    activateSidebar('farmaco_vigilanza_menu', 'schede');
+    activateSidebar('prodotti_menu', 'listini');
 
     </script>    
 

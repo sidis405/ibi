@@ -19,7 +19,7 @@ class ListiniController extends AdminController
     {
         $listini = $listini_repo->getAll();
 
-        return view('admin.listini.index', compact('listini'));
+        return view('admin.listini-prodotti.index', compact('listini'));
 
     }
 
@@ -30,7 +30,7 @@ class ListiniController extends AdminController
      */
     public function create()
     {
-        return view('admin.listini.create');
+        return view('admin.listini-prodotti.create');
     }
 
 
@@ -47,7 +47,7 @@ class ListiniController extends AdminController
 
         $listino = $this->dispatchFrom('Ibi\Commands\Listini\CreateListinoCommand', $request, $data);
         
-        return redirect()->to('/admin/prodotti/listini-prodoti');
+        return redirect()->to('/admin/prodotti/listini-prodotti');
     }
 
 
@@ -61,7 +61,7 @@ class ListiniController extends AdminController
     {
         $listino = $listini_repo->getById($id);
 
-        return view('admin.listini.edit', compact('listino'));
+        return view('admin.listini-prodotti.edit', compact('listino'));
     }
 
     /**
@@ -79,7 +79,7 @@ class ListiniController extends AdminController
 
         flash()->success('News aggiornata correttamente.');
 
-        return redirect()->to('/admin/prodotti/listini-prodoti');
+        return redirect()->to('/admin/prodotti/listini-prodotti');
     }
 
     /**

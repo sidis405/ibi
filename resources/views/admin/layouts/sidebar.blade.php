@@ -26,7 +26,7 @@
                 <ul>
                     <li><a id="prodotti_menu_lista_prodotti" href="/admin/prodotti">Lista Prodotti</a></li>
                     <li><a id="prodotti_menu_aggiungi_prodotto"  href="/admin/prodotti/crea">Aggiungi Prodotto</a></li>
-                    <li><a id="prodotti_menu_listini"  href="/admin/prodotti/listini-prodoti">Listini Prodotti</a></li>
+                    <li><a id="prodotti_menu_listini"  href="/admin/prodotti/listini-prodotti">Listini Prodotti</a></li>
                     <li><a id="prodotti_menu_principi_attivi"  href="/admin/principi-attivi">Principi Attivi</a></li>
                     <li><a id="prodotti_menu_categorie_terapeutiche"  href="/admin/categorie-terapeutiche">Categorie Terapeutiche</a></li>
                     <li><a id="prodotti_menu_fascie"  href="/admin/fascie">Fascie</a></li>

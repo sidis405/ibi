@@ -32,7 +32,7 @@ class ListiniRepo
 
     public function getAllFront()
     {
-        return Listini::orderBy('titolo', 'ASC')->get();
+        return Listini::orderBy('titolo', 'ASC')->get()->keyBy('slug');
     } 
 
     public function getById($id)

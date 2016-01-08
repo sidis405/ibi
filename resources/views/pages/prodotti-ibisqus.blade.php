@@ -13,7 +13,7 @@
         <div class="row">
           <div class="col-md-3">
             <div class="sidebar products-sidebar">
-              <div class="btn btn-primary">Scarica il listino in pdf</div>
+              <a class="btn btn-primary" href="/allegati/{{$listini['listino-ibisqus-ospedale']['allegato']}}" target="_blank">Scarica il listino in pdf</a>
               <div class="filter-content">
                 <h3>Filtri</h3>
                 <div class="filter-block"><span>Nazione</span>
