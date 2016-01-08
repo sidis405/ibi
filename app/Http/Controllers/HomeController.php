@@ -36,22 +36,32 @@ class HomeController extends Controller
         return view('area-riservata.index');
     }
 
-    public function chi_siamo(NewsRepo $news_repo)
+    public function chi_siamo(NewsRepo $news_repo, PagineRepo $pagine_repo)
     {
         $news = $news_repo->getAllFront();
-        return view('pages.chi-siamo', compact('news'));
+
+        $contenuti = $pagine_repo->getContentForPage('chi-siamo');
+
+
+        return view('pages.chi-siamo', compact('news', 'contenuti'));
     }
 
-    public function ibi_toll_manufacturer(NewsRepo $news_repo)
+    public function ibi_toll_manufacturer(NewsRepo $news_repo, PagineRepo $pagine_repo)
     {
         $news = $news_repo->getAllFront();
-        return view('pages.ibi-toll-manufacturer', compact('news'));
+
+        $contenuti = $pagine_repo->getContentForPage('ibi-toll-manufacturer');
+
+        return view('pages.ibi-toll-manufacturer', compact('news', 'contenuti'));
     }
 
-    public function ricerca_innovazione(NewsRepo $news_repo)
+    public function ricerca_innovazione(NewsRepo $news_repo, PagineRepo $pagine_repo)
     {
         $news = $news_repo->getAllFront();
-        return view('pages.ricerca-innovazione', compact('news'));
+
+        $contenuti = $pagine_repo->getContentForPage('ricerca-innovazione');
+
+        return view('pages.ricerca-innovazione', compact('news', 'contenuti'));
     }
 
     public function prodotti_export(ListiniRepo $listini_repo)
@@ -72,19 +82,26 @@ class HomeController extends Controller
         return view('pages.prodotti-italia', compact('listini'));
     }
 
-    public function ibi_export()
+    public function ibi_export(PagineRepo $pagine_repo)
     {
-        return view('pages.ibi-export');
+
+        $contenuti = $pagine_repo->getContentForPage('ibi-export');
+        return view('pages.ibi-export', compact('contenuti'));
     }
 
-    public function ibi_italia()
+    public function ibi_italia(PagineRepo $pagine_repo)
     {
-        return view('pages.ibi-italia');
+
+        $contenuti = $pagine_repo->getContentForPage('ibi-italia');
+        return view('pages.ibi-italia', compact('contenuti'));
     }
 
-    public function ibisqus_ospedale()
+    public function ibisqus_ospedale(PagineRepo $pagine_repo)
     {
-        return view('pages.ibisqus-ospedale');
+
+        $contenuti = $pagine_repo->getContentForPage('ibisqus-ospedale');
+
+        return view('pages.ibisqus-ospedale', compact('contenuti'));
     }
 
     public function contatti()

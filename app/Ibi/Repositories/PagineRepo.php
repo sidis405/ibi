@@ -47,6 +47,6 @@ class PagineRepo
 
     public function getContentForPage($slug)
     {
-        return $this->getBySlug('index')->contenuti->keyBy('slug');
+        return $this->getBySlug($slug)->contenuti->keyBy('slug');
     }
 }

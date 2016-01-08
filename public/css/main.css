@@ -42,6 +42,7 @@ section.content {
   section.content p {
     text-align: justify;
     font-size: 16px;
+    line-height: 22px;
     margin: 30px auto; }
   section.content .btn {
     padding: 10px 25px;
