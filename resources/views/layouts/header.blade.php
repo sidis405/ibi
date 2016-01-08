@@ -35,8 +35,8 @@
                   <li><a href="/prodotti-italia"><span>Ibi </span>Italia</a></li>
                 </ul>
               </li>
-              <li><a href="/ibi-toll-manufacturer">Toll development<br> manufacturer</a></li>
-              <li><a href="/ricerca-innovazione">Ricerca e<br> innovazione</a></li>
+              <li><a href="/ibi-toll-manufacturer">{!!$menu['toll-development-manufacturer']['label']!!}</a></li>
+              <li><a href="/ricerca-innovazione">{!!$menu['ricerca-innovazione']['label']!!}</a></li>
               <li class="dropdown"><a href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle">{{$menu['contatti']['label']}} <span class="caret"></span></a>
                 <ul class="dropdown-menu">
                   <li><a href="/contatti">{{$menu['informazioni']['label']}}</a></li>

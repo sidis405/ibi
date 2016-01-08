@@ -34,6 +34,11 @@ class FileUtility {
                                 'folder' => 'comunicati',
                                 'disk' => 'public_allegati'
                             ],
+                        'listini_allegati' => 
+                            [
+                                'folder' => 'listini',
+                                'disk' => 'public_allegati'
+                            ],
 
                         'schede_allegati' => 
                             [
