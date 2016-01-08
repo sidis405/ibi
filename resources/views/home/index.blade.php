@@ -28,14 +28,20 @@
           </div>
           <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
             <div class="hero-box"><img src="/img/ibi-italia-logo.jpg" alt="" class="img-responsive">
-              <p>L’Istituto Biochimico Italiano, Ibi, fondato dal Prof. Giovanni Lorenzini, è un’azienda farmaceutica di grande tradizione scientifica presente sul mercato italiano da più di 90 anni, con obiettivi di ricerca, innovazione e produzione.</p><a href="ibi-italia">
+              {!!getTheText($contenuti, 'home_ibi_italia_box')!!}
+              @permessoibi('modifica_ibi_italia')
+                <a href="/admin/contenuti/{{getKey($contenuti, 'home_ibi_italia_box', 'id')}}/modifica" target="_blank" class="pull-right">modifica</a>
+              @endpermessoibi
                 <div class="btn btn-primary">Leggi tutto</div></a>
             </div>
           </div>
           <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
             <div class="hero-box"><img src="/img/ibi-toll-manufacturer-logo.jpg" alt="" class="img-responsive">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor eveniet exercitationem possimus illo provident commodi corporis cumque odit ducimus veniam at quaerat, consectetur voluptate, sequi illum blanditiis ipsum, hic atque!</p><a href="ibi-toll-manufacturer">
+              {!!getTheText($contenuti, 'home_toll_manufacturer_box')!!}
                 <div class="btn btn-primary">Leggi tutto</div></a>
+                @permessoibi('modifica_toll_development')
+                  <a href="/admin/contenuti/{{getKey($contenuti, 'home_toll_manufacturer_box', 'id')}}/modifica" target="_blank" class="pull-right">modifica</a>
+                @endpermessoibi
             </div>
           </div>
         </div>
