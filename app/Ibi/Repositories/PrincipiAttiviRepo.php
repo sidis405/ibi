@@ -34,6 +34,11 @@ class PrincipiAttiviRepo
         return PrincipiAttivi::with('prodotti', 'categorie_terapeutiche')->orderBy('nome')->get();
     } 
 
+    public function getAllFront()
+    {
+        return PrincipiAttivi::orderBy('nome')->get();
+    } 
+
     public function getById($id)
     {
         return PrincipiAttivi::where('id', $id)->with('prodotti', 'categorie_terapeutiche')->first();

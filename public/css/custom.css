@@ -14,3 +14,7 @@
 .main-header.header-registrazione {
 	background: #000;
 }
+
+.product-content span {
+	float: right;
+}

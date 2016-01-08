@@ -1,247 +1,98 @@
 @extends('layouts.master')
 @section('content')
-    <!-- Page content -->
-    <div class="main-header prodotti">
-      <div class="container">
-        <div class="main-caption">
-          <h1>Prodotti</h1>
-        </div>
-      </div>
+<!-- Page content -->
+<div class="main-header prodotti">
+  <div class="container">
+    <div class="main-caption">
+      <h1>Prodotti</h1>
     </div>
-    <section class="content products-content">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-3">
-            <div class="sidebar products-sidebar">
-              <a class="btn btn-primary" href="/allegati/{{$listini['listino-ibi-italia']['allegato']}}" target="_blank">Scarica il listino in pdf</a>
-              <div class="filter-content">
-                <h3>Filtri</h3>
-                <div class="filter-block"><span>Nazione</span>
-                  <select name="cars">
-                    <option value="volvo">Volvo</option>
-                    <option value="saab">Saab</option>
-                    <option value="fiat">Fiat</option>
-                    <option value="audi">Audi</option>
-                  </select>
-                </div>
-                <div class="filter-block"><span>Nazione</span>
-                  <select name="cars">
-                    <option value="volvo">Volvo</option>
-                    <option value="saab">Saab</option>
-                    <option value="fiat">Fiat</option>
-                    <option value="audi">Audi</option>
-                  </select>
-                </div>
-                <div class="filter-block"><span>Nazione</span>
-                  <select name="cars">
-                    <option value="volvo">Volvo</option>
-                    <option value="saab">Saab</option>
-                    <option value="fiat">Fiat</option>
-                    <option value="audi">Audi</option>
-                  </select>
-                </div>
-                <div class="filter-block"><span>Nazione</span>
-                  <select name="cars">
-                    <option value="volvo">Volvo</option>
-                    <option value="saab">Saab</option>
-                    <option value="fiat">Fiat</option>
-                    <option value="audi">Audi</option>
-                  </select>
-                </div>
-                <div class="filter-block"><span>Nazione</span>
-                  <select name="cars">
-                    <option value="volvo">Volvo</option>
-                    <option value="saab">Saab</option>
-                    <option value="fiat">Fiat</option>
-                    <option value="audi">Audi</option>
-                  </select>
-                </div>
-                <div class="btn btn-pirmary">Filtra</div>
-              </div><a href="benessere-del-paziente">
-                <div class="benessere-paziente">
-                  <h5>Fegato grasso o Steatosi epatica ?</h5>
-                </div></a><a href="benessere-del-paziente">
-                <div class="benessere-paziente">
-                  <h5>Meteorismo e Aerofagia ?</h5>
-                </div></a>
-            </div>
-          </div>
-          <div class="col-md-9">
-            <div class="row filtri">
-              <div class="col-sm-4 no-pad">
-                <div class="filtri-img"><a href="prodotti-export">							<img src="/img/ibi-export-logo.jpg" alt="" class="img-responsive"></a></div>
-              </div>
-              <div class="col-sm-4 no-pad">
-                <div class="filtri-img">						<a href="prodotti-ibisqus">								<img src="/img/ibisqus-ospedale-logo.jpg" alt="" class="img-responsive"></a></div>
-              </div>
-              <div class="col-sm-4 no-pad">
-                <div class="filtri-img active">				<a href="prodotti-italia">									<img src="/img/ibi-italia-logo.jpg" alt="" class="img-responsive"></a></div>
-              </div>
-            </div>
-            <div id="prodotti-container" class="row prodotti-italia">
-              <div class="col-lg-6 col-md-12 mix">
-                <div class="product">
-                  <div class="product-title">
-                    <h2>Acido zoledronico ibigen liofilizzato</h2>
-                    <div class="plus-minus"></div>
-                  </div>
-                  <div class="formulazione">
-                    <h5>Formulazione</h5><span>750 mg IM/EV 1 flac. da 20 ml + solv. 1,6 ml</span>
-                  </div>
-                  <ul class="product-content">									
-                    <li>
-                      <h5>Principio attivo</h5><span>Acido Zoledronico - Anidro									</span>
-                    </li>
-                    <li>
-                      <h5>Foglietto illustrativo</h5><i class="fa fa-download">				</i>
-                    </li>
-                    <li>
-                      <h5>Scheda tecnica</h5><i class="fa fa-download"></i>
-                    </li>
-                    <li>
-                      <h5>AIC</h5>
-                    </li>
-                    <li>
-                      <h5>ATC</h5>
-                    </li>
-                    <li>
-                      <h5>Fascia</h5>
-                    </li>
-                    <li>
-                      <h5>Regime di dispensazione		</h5>
-                    </li>
-                    <li>
-                      <h5>Validità mesi									</h5>
-                    </li>
-                    <li>
-                      <h5>GASTROENTEROLOGIA				</h5>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div class="col-lg-6 col-md-12 mix">
-                <div class="product">
-                  <div class="product-title">
-                    <h2>Acido zoledronico ibigen liofilizzato</h2>
-                    <div class="plus-minus"></div>
-                  </div>
-                  <div class="formulazione">
-                    <h5>Formulazione</h5><span>750 mg IM/EV 1 flac. da 20 ml + solv. 1,6 ml</span>
-                  </div>
-                  <ul class="product-content">									
-                    <li>
-                      <h5>Principio attivo</h5><span>Acido Zoledronico - Anidro									</span>
-                    </li>
-                    <li>
-                      <h5>Foglietto illustrativo</h5><i class="fa fa-download">				</i>
-                    </li>
-                    <li>
-                      <h5>Scheda tecnica</h5><i class="fa fa-download"></i>
-                    </li>
-                    <li>
-                      <h5>AIC</h5>
-                    </li>
-                    <li>
-                      <h5>ATC</h5>
-                    </li>
-                    <li>
-                      <h5>Fascia</h5>
-                    </li>
-                    <li>
-                      <h5>Regime di dispensazione		</h5>
-                    </li>
-                    <li>
-                      <h5>Validità mesi									</h5>
-                    </li>
-                    <li>
-                      <h5>GASTROENTEROLOGIA				</h5>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div class="col-lg-6 col-md-12 mix">
-                <div class="product">
-                  <div class="product-title">
-                    <h2>Acido zoledronico ibigen liofilizzato</h2>
-                    <div class="plus-minus"></div>
-                  </div>
-                  <div class="formulazione">
-                    <h5>Formulazione</h5><span>750 mg IM/EV 1 flac. da 20 ml + solv. 1,6 ml</span>
-                  </div>
-                  <ul class="product-content">									
-                    <li>
-                      <h5>Principio attivo</h5><span>Acido Zoledronico - Anidro									</span>
-                    </li>
-                    <li>
-                      <h5>Foglietto illustrativo</h5><i class="fa fa-download">				</i>
-                    </li>
-                    <li>
-                      <h5>Scheda tecnica</h5><i class="fa fa-download"></i>
-                    </li>
-                    <li>
-                      <h5>AIC</h5>
-                    </li>
-                    <li>
-                      <h5>ATC</h5>
-                    </li>
-                    <li>
-                      <h5>Fascia</h5>
-                    </li>
-                    <li>
-                      <h5>Regime di dispensazione		</h5>
-                    </li>
-                    <li>
-                      <h5>Validità mesi									</h5>
-                    </li>
-                    <li>
-                      <h5>GASTROENTEROLOGIA								</h5>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div class="col-lg-6 col-md-12 mix">
-                <div class="product">
-                  <div class="product-title">
-                    <h2>Acido zoledronico ibigen liofilizzato</h2>
-                    <div class="plus-minus"></div>
-                  </div>
-                  <div class="formulazione">
-                    <h5>Formulazione</h5><span>750 mg IM/EV 1 flac. da 20 ml + solv. 1,6 ml</span>
-                  </div>
-                  <ul class="product-content">									
-                    <li>
-                      <h5>Principio attivo</h5><span>Acido Zoledronico - Anidro									</span>
-                    </li>
-                    <li>
-                      <h5>Foglietto illustrativo</h5><i data-toggle="tooltip" data-placement="top" title="Tooltip on top" class="fa fa-download">				</i>
-                    </li>
-                    <li>
-                      <h5>Scheda tecnica</h5><i data-toggle="tooltip" data-placement="top" title="Tooltip on top" class="fa fa-download"></i>
-                    </li>
-                    <li>
-                      <h5>AIC</h5>
-                    </li>
-                    <li>
-                      <h5>ATC</h5>
-                    </li>
-                    <li>
-                      <h5>Fascia</h5>
-                    </li>
-                    <li>
-                      <h5>Regime di dispensazione		</h5>
-                    </li>
-                    <li>
-                      <h5>Validità mesi									</h5>
-                    </li>
-                    <li>
-                      <h5>GASTROENTEROLOGIA				</h5>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+  </div>
+</div>
+<section class="content products-content">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3">
+        <div class="sidebar products-sidebar">
+          <a class="btn btn-primary" href="/allegati/{{$listini['listino-ibi-italia']['allegato']}}" target="_blank">Scarica il listino in pdf</a>
+@include('prodotti.filtro')
+
+<a href="benessere-del-paziente">
+<div class="benessere-paziente">
+  <h5>Fegato grasso o Steatosi epatica ?</h5>
+</div></a><a href="benessere-del-paziente">
+<div class="benessere-paziente">
+  <h5>Meteorismo e Aerofagia ?</h5>
+</div></a>
+</div>
+</div>
+<div class="col-md-9">
+<div class="row filtri">
+<div class="col-sm-4 no-pad">
+  <div class="filtri-img"><a href="prodotti-export">              <img src="/img/ibi-export-logo.jpg" alt="" class="img-responsive"></a></div>
+</div>
+<div class="col-sm-4 no-pad">
+  <div class="filtri-img">            <a href="prodotti-ibisqus">               <img src="/img/ibisqus-ospedale-logo.jpg" alt="" class="img-responsive"></a></div>
+</div>
+<div class="col-sm-4 no-pad">
+  <div class="filtri-img active">       <a href="prodotti-italia">                  <img src="/img/ibi-italia-logo.jpg" alt="" class="img-responsive"></a></div>
+</div>
+</div>
+<div id="prodotti-container" class="row prodotti-italia">
+@foreach($prodotti as $prodotto)
+<div class="col-lg-6 col-md-12 mix ct-{{$prodotto->categoria_terapeutica->slug}} pa-{{$prodotto->principio_attivo->slug}}">
+  <div class="product">
+    <div class="product-title">
+      <h2>{{$prodotto->nome}}</h2>
+      <div class="plus-minus"></div>
+    </div>
+    <div class="formulazione">
+      <h5>Formulazione</h5><span>{{$prodotto->formulazione}}</span>
+    </div>
+    <ul class="product-content">
+      <li>
+        <h5>{{$prodotto->principio_attivo->nome}}</h5>
+      </li>
+      <li>
+        <h5>Foglietto illustrativo</h5>
+        @permessoibi('scarica_allegati')
+        <a href="/prodotti/allegati/{{$prodotto->foglietto_illustrativo}}" target="_blank"><i class="fa fa-download"></i></a>
+        @else
+        <i class="fa fa-download login-tooltip" data-toggle="tooltip" data-placement="top" title="Devi essere registrato per visualizzare foglietti illustrativi"></i>
+        @endpermessoibi
+      </li>
+      <li>
+        <h5>Scheda tecnica</h5>
+        @permessoibi('scarica_allegati')
+        <a href="/prodotti/allegati/{{$prodotto->scheda_tecnica}}" target="_blank"><i class="fa fa-download"></i></a>
+        @else
+        <i class="fa fa-download login-tooltip" data-toggle="tooltip" data-placement="top" title="Devi essere registrato per visualizzare schede tecniche"></i>
+        @endpermessoibi
+      </li>
+      <li>
+        <h5>AIC</h5><span>{{$prodotto->aic}}</span>
+      </li>
+      <li>
+        <h5>ATC</h5><span>{{$prodotto->atc}}</span>
+      </li>
+      <li>
+        <h5>Fascia</h5><span>{{$prodotto->fascia->nome}}</span>
+      </li>
+      <li>
+        <h5>Regime di dispensazione   </h5><span>{{$prodotto->regime_dispensazione}}</span>
+      </li>
+      <li>
+        <h5>Validità mesi                 </h5><span>{{$prodotto->validita_mesi}}</span>
+      </li>
+      <li>
+        <h5>{{$prodotto->categoria_terapeutica->nome}}</h5>
+      </li>
+    </ul>
+  </div>
+</div>
+@endforeach
+</div>
+</div>
+</div>
+</div>
+</section>
 @stop

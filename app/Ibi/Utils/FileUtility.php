@@ -70,7 +70,7 @@ class FileUtility {
     {
         if(Storage::disk('uploads')->has($path)){
 
-            $mimetype = Storage::disk('uploads')->has($path);
+            $mimetype = Storage::disk('uploads')->mimeType($path);
             $contents = Storage::disk('uploads')->get($path);
 
             return ['mimetype' => $mimetype, 'contents' => $contents];

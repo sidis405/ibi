@@ -12,6 +12,11 @@ Route::get('ibi-export', 'HomeController@ibi_export');
 Route::get('ibi-italia', 'HomeController@ibi_italia');
 Route::get('ibisqus-ospedale', 'HomeController@ibisqus_ospedale');
 
+Route::get('/prodotti/allegati/{type}/{path}', [
+        'as'    => 'admin_attachments_prodotti',
+        'uses'  => '\Ibi\Http\Controllers\Admin\AllegatiController@show'
+        ]);
+
 Route::get('area-riservata', 'HomeController@area_riservata');
 
 Route::get('ibi-toll-manufacturer', 'HomeController@ibi_toll_manufacturer');

@@ -27,4 +27,5 @@
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAx9KUDj1tNjrnOjWivzS4GAJ9Cke8RIvM"></script>
   @yield('footer_scripts')
   <script src="/js/main.js"></script>
+  <script src="/js/custom.js"></script>
 </html>

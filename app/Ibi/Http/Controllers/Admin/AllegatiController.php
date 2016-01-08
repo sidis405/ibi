@@ -22,6 +22,8 @@ class AllegatiController extends AdminController
 
         $file = $file_utility->getFile($path);
 
+        // return $file['mimetype'];
+
         if( ! $file) abort(406);
 
         return Response::make($file['contents'], 200, [

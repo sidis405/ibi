@@ -10,6 +10,6 @@ class Sezioni extends Model
 
     public function prodotti()
     {
-        return $this->belongsToMany(Prodotti::class, 'prodotti_sezioni', 'sezione_id', 'prodotto_id');
+        return $this->belongsToMany(Prodotti::class, 'prodotti_sezioni', 'sezione_id', 'prodotto_id')->orderBy('nome');
     }
 }

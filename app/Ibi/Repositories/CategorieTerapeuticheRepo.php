@@ -34,6 +34,11 @@ class CategorieTerapeuticheRepo
         return CategorieTerapeutiche::with('prodotti', 'principi_attivi')->orderBy('nome')->get();
     } 
 
+    public function getAllFront()
+    {
+        return CategorieTerapeutiche::with('principi_attivi')->orderBy('nome')->get();
+    }
+
     public function getById($id)
     {
         return CategorieTerapeutiche::where('id', $id)->with('prodotti', 'principi_attivi')->first();

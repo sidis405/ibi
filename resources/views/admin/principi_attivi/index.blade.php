@@ -53,7 +53,8 @@
                                     <th data-column-id="id" data-identifier="true"  data-type="numeric">ID</th>
                                     <th data-column-id="principio-attivo">Principio</th>
                                     <th data-column-id="prodotti" >Prodotti</th>
-                                    <th data-column-id="categorie-terapeutiche" >Categorie terapeutiche</th>
+                                    <th data-column-id="categorie-terapeutiche" >N° Categorie</th>
+                                    <th data-column-id="lista-categorie" >Categorie</th>
                                     <th data-column-id="commands" data-formatter="commands" data-sortable="false">Azioni</th>
                                 </tr>
                             </thead>
@@ -65,6 +66,7 @@
                                     <td>{{$principio->nome}}</td>
                                     <td>{{count($principio->prodotti)}}</td>
                                     <td>{{count($principio->categorie_terapeutiche)}}</td>
+                                    <td>{{join(', ', array_pluck($principio->categorie_terapeutiche, 'nome'))}}</td>
                                 </tr>
                             @endforeach
                                 

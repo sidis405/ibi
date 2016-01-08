@@ -7,7 +7,10 @@ use App\Http\Requests;
 use Ibi\Repositories\ListiniRepo;
 use Ibi\Repositories\NewsRepo;
 use Ibi\Repositories\PagineRepo;
+use Ibi\Repositories\SezioniRepo;
 use Ibi\Repositories\SliderRepo;
+use Ibi\Repositories\CategorieTerapeuticheRepo;
+use Ibi\Repositories\PrincipiAttiviRepo;
 use Illuminate\Http\Request;
 
 
@@ -76,10 +79,16 @@ class HomeController extends Controller
         return view('pages.prodotti-ibisqus', compact('listini'));
     }
 
-    public function prodotti_italia(ListiniRepo $listini_repo)
+    public function prodotti_italia(ListiniRepo $listini_repo, SezioniRepo $sezioni_repo, CategorieTerapeuticheRepo $categorie_repo, PrincipiAttiviRepo $principi_repo)
     {
         $listini = $listini_repo->getAllFront();
-        return view('pages.prodotti-italia', compact('listini'));
+        $prodotti = $sezioni_repo->getBySlug('ibi-italia')->prodotti;
+
+        $categorie = $categorie_repo->getAllFront();
+        $principi = $principi_repo->getAllFront();
+
+        // return $prodotti;
+        return view('pages.prodotti-italia', compact('listini', 'prodotti', 'categorie', 'principi'));
     }
 
     public function ibi_export(PagineRepo $pagine_repo)
