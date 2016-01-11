@@ -68,7 +68,7 @@ function mixIt()
 
                 var $input = $(this);
                 // console.log($input.val());            
-                $input.attr('data-filter', '[class*="'+$input.val().replace(/ /, '-')+'"]');
+                $input.attr('data-filter', '[class*="'+$input.val().toLowerCase().replace(/ /, '-')+'"]');
                 if ($input.val() == '')
                   $input.attr('data-filter', '');
                 // console.log($input.attr('data-filter'));
