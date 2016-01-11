@@ -39,7 +39,7 @@
 </div>
 <div id="prodotti-container" class="row prodotti-italia">
 @foreach($prodotti as $prodotto)
-<div class="col-lg-6 col-md-12 mix ct-{{$prodotto->categoria_terapeutica->slug}} pa-{{$prodotto->principio_attivo->slug}}">
+<div class="col-lg-6 col-md-12 mix ct-{{$prodotto->categoria_terapeutica->slug}} pa-{{$prodotto->principio_attivo->slug}} {{str_slug($prodotto->nome)}}">
   <div class="product">
     <div class="product-title">
       <h2>{{$prodotto->nome}}</h2>
@@ -50,7 +50,7 @@
     </div>
     <ul class="product-content">
       <li>
-        <h5>{{$prodotto->principio_attivo->nome}}</h5>
+        <h5>{{ucfirst(strtolower($prodotto->principio_attivo->nome))}}</h5>
       </li>
       <li>
         <h5>Foglietto illustrativo</h5>
@@ -96,3 +96,31 @@
 </div>
 </section>
 @stop
+
+@section('footer_scripts')
+
+  <script src="/js/prodotti_filter.js"></script>
+
+  <script>
+
+  var registri = [];
+
+  registri['principi-ct-all'] = "<option value=''>Tutti</option> @foreach(array_pluck($categorie, 'principi_attivi')[0] as $pa) <option id='pa-{{$pa['slug']}}' value='.pa-{{$pa->slug}}'>{{ucfirst(strtolower($pa->nome))}}</option> @endforeach";
+  
+    @foreach($categorie as $categoria)
+      
+      registri["principi-ct-{{$categoria->slug}}"] = "<option value=''>Tutti</option> @foreach($categoria->principi_attivi as $pa) <option id='pa-{{$pa->slug}}' value='.pa-{{$pa->slug}}'>{{ucfirst(strtolower($pa->nome))}}</option> @endforeach";
+
+    @endforeach
+
+    $('#filter--categorie').on('change', function() {
+      var chiave = 'principi-' + $(this).find('option:selected').attr('id');
+      $('#filter--principi').html(registri[chiave]);
+      mixIt();
+      console.log(registri[chiave]);
+  // alert( $(this).find('option:selected').attr('id') ); // or $(this).val()
+    });
+
+  </script>
+
+  @stop

@@ -36,6 +36,6 @@ class SezioniRepo
 
     public function getBySlug($slug)
     {
-        return Sezioni::where('slug', $slug)->with('prodotti.categoria_terapeutica', 'prodotti.principio_attivo', 'prodotti.fascia')->first();
+        return Sezioni::where('slug', $slug)->with('prodotti.categoria_terapeutica.principi_attivi', 'prodotti.principio_attivo', 'prodotti.fascia')->first();
     } 
 }

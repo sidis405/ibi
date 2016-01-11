@@ -84,10 +84,19 @@ class HomeController extends Controller
         $listini = $listini_repo->getAllFront();
         $prodotti = $sezioni_repo->getBySlug('ibi-italia')->prodotti;
 
-        $categorie = $categorie_repo->getAllFront();
+        $categorie = collect(array_pluck($prodotti, 'categoria_terapeutica'))->unique();
+        // $categorie = $categorie_repo->getAllFront();
+        // $principi = collect(array_pluck($categorie, 'principi_attivi')[0])->unique();
         $principi = $principi_repo->getAllFront();
 
-        // return $prodotti;
+        // return collect(array_collapse(array_pluck($categorie, 'principi_attivi')))->unique();
+
+        $principi = collect(array_values(array_sort(array_collapse(array_pluck($categorie, 'principi_attivi')), function ($value) {
+            return $value['nome'];
+        })))->unique();
+
+        // return $principi;
+
         return view('pages.prodotti-italia', compact('listini', 'prodotti', 'categorie', 'principi'));
     }
 
