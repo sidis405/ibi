@@ -39,7 +39,7 @@
 </div>
 <div id="prodotti-container" class="row prodotti-italia">
 @foreach($prodotti as $prodotto)
-<div class="col-lg-6 col-md-12 mix ct-{{$prodotto->categoria_terapeutica->slug}} pa-{{$prodotto->principio_attivo->slug}} {{str_slug($prodotto->nome)}}">
+<div class="col-lg-6 col-md-12 mix ct-{{$prodotto->categoria_terapeutica->slug}} pa-{{$prodotto->principio_attivo->slug}} {{str_slug($prodotto->nome)}} {{$prodotto->aic}} {{$prodotto->aic}}">
   <div class="product">
     <div class="product-title">
       <h2>{{$prodotto->nome}}</h2>
