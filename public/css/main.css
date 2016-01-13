@@ -646,6 +646,14 @@ Tabs
   padding: 0 0 30px 40px;
   border-bottom: 1px dotted #666; }
 
+.tabs.ricerca-tabs #innovativi ul {
+  border: 0;
+  margin-bottom: 0px;
+  padding-bottom: 10px; }
+
+.tabs.ricerca-tabs #innovativi .divider {
+  margin-bottom: 25px; }
+
 .tabs.benessere-paziente-tabs {
   margin-top: 50px; }
   .tabs.benessere-paziente-tabs ul li {

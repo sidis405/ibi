@@ -100,18 +100,13 @@
                   </p>
                 </div>
                 <div id="development" role="tabpanel" class="tab-pane">								<img src="/img/grafico-development.jpg" class="img-responsive">
-                  <p><b>cGMP production of sterile penicillins (API)<br></b>Ne sitatius excea que vende as explignis exerem renditia estius que aria quae iunt, nat esed quatus invendae nia dis ex expersped ma net, eost que venem que pel ea sam et acerem conet esti volorum quia sime elecus.
-                    Ihilit esto dipsam fuga. Itas eum volorae ipsunt eum et dolor audandunt ius enit, il ipsunt lab ium acearci desseque et facea prat.
-                    Se voles eos is sitat dunt lab iunt, idunt hicitatis ma nus nullabo rersperio consedi gendell aborum rerferumet ulpa si doluptat.
-                  </p>
-                  <p><b>CDMS for orals, topicals, injectables<br></b>Ne sitatius excea que vende as explignis exerem renditia estius que aria quae iunt, nat esed quatus invendae nia dis ex expersped ma net, eost que venem que pel ea sam et acerem conet esti volorum quia sime elecus.
-                    Ihilit esto dipsam fuga. Itas eum volorae ipsunt eum et dolor audandunt ius enit, il ipsunt lab ium acearci desseque et facea prat.
-                    Se voles eos is sitat dunt lab iunt, idunt hicitatis ma nus nullabo rersperio consedi gendell aborum rerferumet ulpa si doluptat.
-                  </p>
-                  <p><b>GMP production of Rec-proteins (API)<br></b>Ne sitatius excea que vende as explignis exerem renditia estius que aria quae iunt, nat esed quatus invendae nia dis ex expersped ma net, eost que venem que pel ea sam et acerem conet esti volorum quia sime elecus.
-                    Ihilit esto dipsam fuga. Itas eum volorae ipsunt eum et dolor audandunt ius enit, il ipsunt lab ium acearci desseque et facea prat.
-                    Se voles eos is sitat dunt lab iunt, idunt hicitatis ma nus nullabo rersperio consedi gendell aborum rerferumet ulpa si doluptat.								
-                  </p>
+                  <p>La IBI opera da diversi anni come Contract Development and Manufacturing Organization (CDMO) grazie ad una struttura organizzativa in grado di seguire, con competenza e professionalità, tutto l’iter di sviluppo per la produzione di un farmaco.</p>
+                  <p>Per quanto riguarda la produzione degli APIs, nel reparto di biotecnologia possono essere prodotte proteine ricombinanti da cellule di mammifero. E’ disponibile un impianto GMP, autorizzato da AIFA  nel 2015, alla produzione di principi attivi biotecnologici per studi sperimentali. Le attività coprono tutte le fasi della produzione: dalla clonazione del gene, per ottenere la proteina ricombinante, alla fermentazione, purificazione e caratterizzazione del principio attivo.</p>
+                  <p>Grazie all’elevato utilizzo di sistemi disposible, è possibile seguire più progetti contemporaneamente, senza rischi di cross contamination e con  attività di cleaning validation ridotte al minimo.</p>
+                  <p>Nella struttura è presente anche un Laboratorio di Sviluppo Tecnologico in grado di sviluppare formulazioni innovative, per tutte le vie di somministrazione, sia per small molecules che per API biotecnologici. Sono disponibili apparecchiature all’avanguardia per lo studio di processi di liofilizzazione, con la possibilità di monitorare nel dettaglio il processo, attraverso software dedicati, garantendo elevate percentuali di successo nelle fasi di scale-up industriale dei processi.</p>
+                  <p>Tutte le attività sono costantemente monitorate dal Laboratorio di Sviluppo Analitico, in grado di individuare e validare metodi utilizzabili per il rilascio GMP che  per gli studi di stabilità, non solo delle small molecules ma anche di proteine ed anticorpi. Accanto ai tradizionali HPLC e GC, sono presenti UPLC, DSC, Light Scattering (particle size counter), SDS-PAGE, WESTERN BLOTTING, Capillary electrophoresis, ELISA, Potency biological assay, BioLayer Interferometry.</p>
+                  <p>I reparti produttivi sono autorizzati alla produzione anche di farmaci sperimentali, sia orali che iniettabili (soluzioni e liofilizzati). Accanto ad una linea di dosaggio, in grado di produrre sia flaconcini che siringhe pre-riempite (5000 vials/ora), è stata inserita una nuova linea, semiautomatica, dedicata alla produzione di lotti sperimentali di Fase I. </p>
+                  <p>La nostra struttura, grazie ad un Ufficio Regolatorio esperto sia nelle procedure EU, che FDA e PMDA, è in grado di garantire al Cliente un servizio completo, anche per quanto riguarda gli aspetti regolatori, durante tutte le fasi dello sviluppo di un prodotto (dagli studi clinici alla commercializzazione).							</p>
                 </div>
               </div>
             </div>

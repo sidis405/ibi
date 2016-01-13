@@ -83,12 +83,71 @@
               </ul>
               <!-- Tab panes-->
               <div class="tab-content">
-                <div id="innovativi" role="tabpanel" class="tab-pane">
+                <div id="innovativi" role="tabpanel" class="tab-pane active">
+                  <h3>Sviluppo formulativo</h3>
+                  <p>IBI possiede un consolidato know how nello sviluppo formulativo e nella produzione GMP su scala Pilota e industriale di diverse forme farmaceutiche:</p><b>Forme solide orali:</b>
+                  <ul>
+                    <li>Bustine</li>
+                    <li>Compresse</li>
+                    <li>Capsule</li>
+                    <li>Soluzioni e sospensioni orali</li>
+                  </ul><i>Equipment:</i>
+                  <ul class="divider">
+                    <li>Granulazione a Letto fluido fino a 100 kg /lotto</li>
+                    <li>Granulazione a umido	fino a 500 kg/lotto</li>
+                    <li>Comprimitrice fino a 80.000 cpr/h</li>
+                    <li>Opercolatrice per capsule	fino a 45.000 cps/h</li>
+                    <li>Bassina per rivestimento compresse</li>
+                    <li>Macchina di riempimento liquidi</li>
+                  </ul><b>Formulazioni Topiche</b>
+                  <ul class="divider">
+                    <li>Gel, Pomate fino a 3500 tubi/h</li>
+                  </ul><b>Formulazioni iniettabili:</b>
+                  <p>La produzione di formulazioni per uso iniettabile rappresenta un business ormai consolidato e strategico per l’azienda, con un reparto multipourpose specificamente dedicato a questa categoria formulativa, operante con aree e strumentazioni classificate nella piena compliance delle c-GMP.</p>
+                  <p>Il reparto è autorizzato per la produzione di lotti commerciali e per Investigational Medicinal Products, sia per produzioni interne che per attività di custom manufacturing.</p>
+                  <p>Forme terapeutiche</p>
+                  <ul>
+                    <li>Polveri liofilizzate in vial per preparazioni iniettabili</li>
+                    <li>Liquidi per uso iniettabile in vial</li>
+                    <li>Liquidi per uso iniettabile in fiala siringa</li>
+                  </ul><i>Equipment:</i>
+                  <ul>
+                    <li>
+                       
+                      Macchina di dosaggio in Classe A con sistema di contenimento c-RABS per il riempimento di Vials e fiale siringa e per la produzione in asepsi mediante filtrazione sterilizzante su filtri da 0.22 micron, fino a 7000 pezzi/ora.<br><br>
+                      La macchina è alimentata da reattori di dissoluzione in acciaio, termostatabili e inertizzabili, da 20 a 400 L posizionati in area classificata (C) per il compounding delle formulazioni. Possono essere gestiti anche sistemi di preparazione disposable per ridurre possibilità di cross-contamination e minimizzare attività di cleaning.<br><br>
+                      Sono macchinabili formati di vials da 2 a 100 ml e Fiale Siringhe da 0.5 a 10 ml. E’ possibile comunque ”customizzare” il dosaggio con formati diversi in funzione di eventuali richieste specifiche.
+                    </li>
+                    <li>
+                       
+                      Liostato con superficie da 4 mq e sistema di raffredamento a doppio stadio, per la produzione di polveri per soluzioni iniettabili in vials con formato da 2 ml (fino a 10000 vial/lotto) a 25 ml (fino a 2500 vials/lotto)
+                    </li>
+                    <li>
+                       
+                      Il reparto è dotato inoltre di una Macchina di dosaggio appositamente dedicata e autorizzata per filling di vials destinati allla sperimentazione clinica (Fase I e II). Tale macchina può gestire in GMP lotti anche estremamente ridotti (da 100-1000 pezzi), ove il valore aggiunto e la disponibilità degli API costituiscono un limite critico per le attività di convalida.
+                    </li>
+                    <li>
+                       
+                      Autoclave per sterilizzazione terminale di formulazioni termostabili.
+                    </li>
+                  </ul>
                   <p>
-                    Ne sitatius excea que vende as explignis exerem renditia estius que aria quae iunt, nat esed quatus invendae nia dis ex expersped ma net, eost que venem que pel ea sam et acerem conet esti volorum quia sime elecus.
-                    Ihilit esto dipsam fuga. Itas eum volorae ipsunt eum et dolor audandunt ius enit, il ipsunt lab ium acearci desseque et facea prat.
-                    Se voles eos is sitat dunt lab iunt, idunt hicitatis ma nus nullabo rersperio consedi gendell aborum rerferumet ulpa si doluptat.									
+                    Forte di un Reparto di Sviluppo estremamente flessibile e tecnologicamente all’avanguardia, IBI è particolarmente concentrata sullo sviluppo di formulazioni ad elevato valore aggiunto ed altamente innovative, quali ad esempio i prodotti biotecnologici (proteine, peptidi, anticorpi) e formulazioni che si basano sull’uso di sistemi nano e microparticellare per l’inglobamento e il delivery di farmaci di diversa natura.<br><br>
+                    IBI ha altresì una consolidata esperienza nello sviluppo e ottimizzazione di processi di liofilizzazione, tecnologia di elezione per questa classe di prodotti finiti. Inoltre un’area del Reparto di produzione sterile è specificatamente dedicata alla preparazione di formulazioni nano e microparticellari, principalmente a base di polimeri biocompatibili o lipidici, con Equipment capaci di gestire sistemi eterogenei Acqua/Solvente fino ad un volume di 100 L.<br><br>
+                    In accordo con le più recenti linee guida e con le più moderne metodologie di sviluppo, i Laboratori R&D di IBI adottano il “Quality by Design” per l’ottimizzazione dei processi produttivi, per la caratterizzazione dei parametri critici e per supportare la documentazione prodotta ai fini della presentazione di dossier alle Autorità Regolatorie. Tale approccio si concretizza con l’applicazione delle tecniche di D.O.E., con la trattazione statistica dei dati raccolti con Software specifici, e con l’attuazione di un Risk Management nella fase di scale up e industrializzazione dei processi sviluppati in laboratorio.<br><br>
+                    L’iter di sviluppo formulativo è supportato da una dotazione di strumentazione analitica moderna ed efficiente quale:
                   </p>
+                  <ul>
+                    <li>HPLC/UPLC</li>
+                    <li>GC</li>
+                    <li>UV-VIS</li>
+                    <li>Titolazione potenziometrica/Coulometrica</li>
+                    <li>Osmometria</li>
+                    <li>DSC</li>
+                    <li>Particle Size e Zeta potential analyzer mediante Light Scattering</li>
+                    <li>Elettroforesi Capillare</li>
+                    <li>Western Blotting								</li>
+                  </ul>
                 </div>
                 <div id="biotecnologie" role="tabpanel" class="tab-pane">
                   <div id="accordion" role="tablist" aria-multiselectable="true" class="panel-group">
@@ -211,7 +270,7 @@
                     </div>
                   </div>
                 </div>
-                <div id="pubblicazioni" role="tabpanel" class="tab-pane active">
+                <div id="pubblicazioni" role="tabpanel" class="tab-pane">
                   <h3>Pubblicazioni</h3>
                   <ul>
                     <li>Pubblicazioni</li>

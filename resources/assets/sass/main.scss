@@ -277,7 +277,15 @@ Tabs
 				padding: 0 0 30px 40px;
 				border-bottom: 1px dotted $text-color;
 			}
-		}		
+		}
+		#innovativi {
+			ul {
+				border: 0;
+				margin-bottom: 0px;
+				padding-bottom: 10px;
+			}
+			.divider {margin-bottom: 25px;}
+		}
 	}
 	// Benessere tabs
 	&.benessere-paziente-tabs {		
