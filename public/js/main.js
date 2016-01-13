@@ -53,13 +53,13 @@ MIXITUP
 -------------------------
 */
 
-$(function(){
+// $(function(){
 
-  // Instantiate MixItUp:
+//   // Instantiate MixItUp:
 
-  $('#prodotti-container').mixItUp();
+//   $('#prodotti-container').mixItUp();
 
-});
+// });
 
 
 /*
