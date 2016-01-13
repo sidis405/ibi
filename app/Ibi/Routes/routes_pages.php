@@ -20,6 +20,7 @@ Route::get('/prodotti/allegati/{type}/{path}', [
 Route::get('area-riservata', 'HomeController@area_riservata');
 
 Route::get('ibi-toll-manufacturer', 'HomeController@ibi_toll_manufacturer');
+Route::get('reparti-toll-manufacturer', 'HomeController@reparti_toll_manufacturer');
 Route::get('ricerca-innovazione', 'HomeController@ricerca_innovazione');
 
 Route::get('contatti', 'HomeController@contatti');

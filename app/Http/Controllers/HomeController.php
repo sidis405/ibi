@@ -58,6 +58,15 @@ class HomeController extends Controller
         return view('pages.ibi-toll-manufacturer', compact('news', 'contenuti'));
     }
 
+    public function reparti_toll_manufacturer(NewsRepo $news_repo, PagineRepo $pagine_repo)
+    {
+        $news = $news_repo->getAllFront();
+
+        $contenuti = $pagine_repo->getContentForPage('ibi-toll-manufacturer');
+
+        return view('pages.reparti-toll-manufacturer', compact('news', 'contenuti'));
+    }
+
     public function ricerca_innovazione(NewsRepo $news_repo, PagineRepo $pagine_repo)
     {
         $news = $news_repo->getAllFront();

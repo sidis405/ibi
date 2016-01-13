@@ -31,7 +31,7 @@
             </div>
           </div>
           <div class="col-md-4">
-            @include('layouts.news_sidebar')
+            @include('layouts.news_sidebar_toll')
           </div>
         </div>
       </div>

@@ -1,5 +1,9 @@
 <div class="sidebar">
               <div class="row sidebar-hero">
+              <div class="col-xs-12"><a href="/reparti-toll-manufacturer">
+                    <div class="reparti-sidebar">
+                      <h3>Reparti</h3>
+                    </div></a></div>
                 <div class="col-xs-12"><a href="/ricerca-innovazione#biotecnologie">
                     <div class="biotecnologia-sidebar">
                       <h3>Biotecnologie</h3>
