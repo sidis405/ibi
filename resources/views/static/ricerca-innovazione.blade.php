@@ -76,9 +76,9 @@
             <div class="tabs ricerca-tabs">
               <!-- Nav tabs-->
               <ul role="tablist" class="nav nav-tabs">
-                <li role="presentation"><a href="#innovativi" aria-controls="innovativi" role="tab" data-toggle="tab">Delivery innovativi</a></li>
+                <li role="presentation" class="active"><a href="#innovativi" aria-controls="innovativi" role="tab" data-toggle="tab">Delivery innovativi</a></li>
                 <li role="presentation"><a href="#biotecnologie" aria-controls="biotecnologie" role="tab" data-toggle="tab">Biotecnologie	</a></li>
-                <li role="presentation" class="active"><a href="#pubblicazioni" aria-controls="pubblicazioni" role="tab" data-toggle="tab">Pubblicazioni	</a></li>
+                <li role="presentation"><a href="#pubblicazioni" aria-controls="pubblicazioni" role="tab" data-toggle="tab">Pubblicazioni	</a></li>
                 <li role="presentation"><a href="#progetti" aria-controls="progetti" role="tab" data-toggle="tab">Progetti			</a></li>
               </ul>
               <!-- Tab panes-->
