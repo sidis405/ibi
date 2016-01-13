@@ -15,14 +15,14 @@
             <div class="tabs ricerca-tabs">
               <!-- Nav tabs-->
               <ul role="tablist" class="nav nav-tabs">
-                <li role="presentation"><a href="#innovativi" aria-controls="innovativi" role="tab" data-toggle="tab">Delivery innovativi</a></li>
+                <li role="presentation" class="active"><a href="#innovativi" aria-controls="innovativi" role="tab" data-toggle="tab">Delivery innovativi</a></li>
                 <li role="presentation"><a href="#biotecnologie" aria-controls="biotecnologie" role="tab" data-toggle="tab">Biotecnologie	</a></li>
-                <li role="presentation" class="active"><a href="#pubblicazioni" aria-controls="pubblicazioni" role="tab" data-toggle="tab">Pubblicazioni	</a></li>
+                <li role="presentation"><a href="#pubblicazioni" aria-controls="pubblicazioni" role="tab" data-toggle="tab">Pubblicazioni	</a></li>
                 <li role="presentation"><a href="#progetti" aria-controls="progetti" role="tab" data-toggle="tab">Progetti			</a></li>
               </ul>
               <!-- Tab panes-->
               <div class="tab-content">
-                <div id="innovativi" role="tabpanel" class="tab-pane">
+                <div id="innovativi" role="tabpanel" class="tab-pane active">
                   <p>
                     @include('layouts.content', array('key' => 'ricerca_innovazione_delivery_tab', 'permesso'=> 'modifica_ricerca_innovazione'))  								
                   </p>
@@ -97,7 +97,7 @@
                     </div>
                   </div>
                 </div>
-                <div id="pubblicazioni" role="tabpanel" class="tab-pane active">
+                <div id="pubblicazioni" role="tabpanel" class="tab-pane">
                   @include('layouts.content', array('key' => 'ricerca_innovazione_pubblicazioni_tab', 'permesso'=> 'modifica_ricerca_innovazione'))  
                 </div>
                 <div id="progetti" role="tabpanel" class="tab-pane">
