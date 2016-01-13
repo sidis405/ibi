@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Ibi Lorenzini | Ibi Toll Development Manufacturer</title>
+    <title>Ibi Lorenzini | Farmaco Vigilanza</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -62,67 +62,87 @@
       </nav>
     </header>
     <!-- Page content -->
-    <div class="main-header ibi-manufacturer">
+    <div class="main-header reparti">
       <div class="container">
         <div class="main-caption">
-          <h1>Toll Development</h1>
+          <h1>Reparti</h1>
         </div>
       </div>
     </div>
-    <section class="content">
+    <section class="content reparti-content">
       <div class="container">
         <div class="row">
-          <div class="col-sm-8"><img src="/img/ibi-toll-manufacturer-logo.jpg" alt="">
-            <div class="tabs manufactoring-tabs">
-              <!-- Nav tabs-->
-              <ul role="tablist" class="nav nav-tabs">
-                <li role="presentation" class="active"><a href="#manufactoring" aria-controls="manufactoring" role="tab" data-toggle="tab">Manufactoring</a></li>
-                <li role="presentation"><a href="#development" aria-controls="development" role="tab" data-toggle="tab">Development			</a></li>
-              </ul>
-              <!-- Tab panes-->
-              <div class="tab-content">
-                <div id="manufacturing" role="tabpanel" class="tab-pane active">
-                  <p>
-                    Il sito produttivo di IBI ha una superficie totale di 40.000 mq ed è composto da tre edifici dove vengono eseguite le attività di produzione e di stoccaggio. <br>
-                    Il sito produce sia prodotti β-lattamici che prodotti non β-lattamici e la produzione è certificata sia AIFA che FDA.
-                  </p>
-                  <p>
-                    I nostri principali prodotti sono:<br>
-                    Prodotti Sterili non β-lattamici (preparati in asepsi e sterilizzati terminalmente);<br>
-                    Prodotti non sterili in differenti forme farmaceutiche (solidi, semisolidi e liquidi), con particolare approvazione per la produzione di compresse di ormoni o sostanze ad azione ormonica tranne gli ormoni corticosteroidi e sessuali;<br>
-                    Prodotti Sterili β-Lattamici (Penicilline) sia in Bulk che in forma di prodotto semilavorato e finito.
-                  </p>
-                  <p>Data la natura complessa e diversificata delle sue produzioni IBI fin da sempre ha soddisfatto tutti i requisiti normativi vigenti in base alla prevenzione del rischio di cross-contaminazione β -non β.</p>
-                  <p>
-                    Altrettanto significativo è l’approccio responsabile con cui gestiamo i nostri impianti e l’attenzione che poniamo all’impatto ambientale e alla ricerca di standard elevati per la sicurezza dei nostri lavoratori. <br>
-                    Il riconoscimento di tale attenzione è rappresentato dalle certificazioni ISO 14001 e OHSAS 18001 raggiunte dal nostro sito.<br>
-                    La nostra missione è quella di offrire valore aggiunto ai nostri clienti, puntando su fattori critici di successo come la dedizione al cliente, compliance, competitività dei costi, sviluppo delle persone e dell’organizzazione, tecnologia e innovazione.
-                  </p>
-                </div>
-                <div id="development" role="tabpanel" class="tab-pane">								<img src="/img/grafico-development.jpg" class="img-responsive">
-                  <p><b>cGMP production of sterile penicillins (API)<br></b>Ne sitatius excea que vende as explignis exerem renditia estius que aria quae iunt, nat esed quatus invendae nia dis ex expersped ma net, eost que venem que pel ea sam et acerem conet esti volorum quia sime elecus.
-                    Ihilit esto dipsam fuga. Itas eum volorae ipsunt eum et dolor audandunt ius enit, il ipsunt lab ium acearci desseque et facea prat.
-                    Se voles eos is sitat dunt lab iunt, idunt hicitatis ma nus nullabo rersperio consedi gendell aborum rerferumet ulpa si doluptat.
-                  </p>
-                  <p><b>CDMS for orals, topicals, injectables<br></b>Ne sitatius excea que vende as explignis exerem renditia estius que aria quae iunt, nat esed quatus invendae nia dis ex expersped ma net, eost que venem que pel ea sam et acerem conet esti volorum quia sime elecus.
-                    Ihilit esto dipsam fuga. Itas eum volorae ipsunt eum et dolor audandunt ius enit, il ipsunt lab ium acearci desseque et facea prat.
-                    Se voles eos is sitat dunt lab iunt, idunt hicitatis ma nus nullabo rersperio consedi gendell aborum rerferumet ulpa si doluptat.
-                  </p>
-                  <p><b>GMP production of Rec-proteins (API)<br></b>Ne sitatius excea que vende as explignis exerem renditia estius que aria quae iunt, nat esed quatus invendae nia dis ex expersped ma net, eost que venem que pel ea sam et acerem conet esti volorum quia sime elecus.
-                    Ihilit esto dipsam fuga. Itas eum volorae ipsunt eum et dolor audandunt ius enit, il ipsunt lab ium acearci desseque et facea prat.
-                    Se voles eos is sitat dunt lab iunt, idunt hicitatis ma nus nullabo rersperio consedi gendell aborum rerferumet ulpa si doluptat.								
-                  </p>
-                </div>
-              </div>
-            </div>
+          <div class="col-sm-8">
+            <h2>Reparti</h2>
+            <h3>Sottotitolo reparti</h3>
+            <h4>Reparto Sintesi Sterile β-lattamico (API)</h4><img src="/img/sintesi-lattamico.jpg" alt="" style="margin-bottom: 20px;" class="img-responsive">
+            <ul style="margin-bottom: 35px;">
+              <li>Oltre 60 anni di Know-how nei processi di fermentazione e di sintesi di β-lattami</li>
+              <li>Processi di Cristallizzazione brevettati</li>
+              <li>Impianti e macchinari dedicati e segregate per Penicilline</li>
+              <li>Personale altamente specializzato nella produzione in sterile e nei processi di Sintesi</li>
+              <li>Alto livello di automazione						</li>
+              <li>Capacità produttiva annua:
+                <ul>
+                  <li>150.000 Kg/Anno per Bulk e Miscele</li>
+                  <li>1.500.000 Litri/Anno per recupero solventi tramite impianto di distillazione a servizio del reparto</li>
+                </ul>
+              </li>
+            </ul>
+            <h4>
+               
+              Ripartizione in asepsi di polveri sterili e liofilizzati β-lattamici
+            </h4><img src="/img/ripartizione-asepsi.jpg" alt="" style="margin-bottom: 20px;" class="img-responsive">
+            <ul style="margin-bottom: 35px;">
+              <li>Dedicato alle produzioni di polveri sterili β-lattamici (Penicilline)</li>
+              <li>Personale altamente specializzato nella produzione in sterile</li>
+              <li>Macchine altamente automatizzate </li>
+              <li>Reparto dotato di macchine di sperlatura completamente elettronico											</li>
+              <li>Capacità produttiva annua:
+                <ul>
+                  <li>45 Milioni di Flaconcini/anno</li>
+                  <li>8.100 Kg Liofilizzato/Anno</li>
+                </ul>
+              </li>
+            </ul>
+            <h4>Ripartizione di Liquidi Sterili, Orali e Semisolidi non β-lattamici</h4><img src="/img/ripartizione-sterili.jpg" alt="" style="margin-bottom: 20px;" class="img-responsive">
+            <ul style="margin-bottom: 35px;">																
+              <li>Produzione di Forme farmaceutiche solide:
+                <ul>
+                  <li>Granulati</li>
+                  <li>Compresse rivestite e a rilascio controllato</li>
+                </ul>
+              </li>
+              <li>Produzione di Forme farmaceutiche semi-solide:
+                <ul>
+                  <li>Gel</li>
+                  <li>Pomate</li>
+                </ul>
+              </li>
+              <li>Produzione di Forme farmaceutiche liquide:
+                <ul>
+                  <li>Gocce								</li>
+                </ul>
+              </li>
+              <li>Produzione di soluzioni sterili iniettabili e/o polveri liofilizzate:
+                <ul>
+                  <li>Flaconcini</li>
+                  <li>Fiale Siringhe</li>
+                </ul>
+              </li>
+              <li>Impianti Multi Scopo e flessibili</li>
+              <li>Personale dedicato e qualificato</li>
+              <li>Capacità annua:
+                <ul>
+                  <li>29 Milioni di Confezioni/Anno</li>
+                  <li>20 Milioni di Flaconcini e/o Fiale Siringa/Anno</li>
+                </ul>
+              </li>
+            </ul>
           </div>
           <div class="col-md-4">
             <div class="sidebar">
               <div class="row sidebar-hero">
-                <div class="col-xs-12"><a href="reparti-toll-manufacturer">
-                    <div class="reparti-sidebar">
-                      <h3>Reparti</h3>
-                    </div></a></div>
                 <div class="col-xs-12"><a href="ricerca-innovazione#biotecnologie">
                     <div class="biotecnologia-sidebar">
                       <h3>Biotecnologie</h3>

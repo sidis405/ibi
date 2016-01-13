@@ -1,0 +1,79 @@
+extend blocks/template
+
+// Page title
+block title
+	| Ibi Lorenzini | Farmaco Vigilanza
+
+// Page meta-description
+block append metatags 
+	meta(name='description', content='Ibi Lorenzini')
+
+block content	
+	// Including header
+	include blocks/header
+	// Page content 
+	.main-header.reparti
+		.container
+			.main-caption
+				h1 Reparti
+	section.content.reparti-content
+		.container
+			.row
+				.col-sm-8
+					h2
+						| Reparti
+					h3
+						| Sottotitolo reparti
+					h4
+						|Reparto Sintesi Sterile β-lattamico (API)
+					img.img-responsive(src="/img/sintesi-lattamico.jpg", alt="", style="margin-bottom: 20px;")
+					ul(style="margin-bottom: 35px;")
+						li Oltre 60 anni di Know-how nei processi di fermentazione e di sintesi di β-lattami
+						li Processi di Cristallizzazione brevettati
+						li Impianti e macchinari dedicati e segregate per Penicilline
+						li Personale altamente specializzato nella produzione in sterile e nei processi di Sintesi
+						li Alto livello di automazione						
+						li Capacità produttiva annua:
+							ul
+								li 150.000 Kg/Anno per Bulk e Miscele
+								li 1.500.000 Litri/Anno per recupero solventi tramite impianto di distillazione a servizio del reparto
+					h4 
+						| Ripartizione in asepsi di polveri sterili e liofilizzati β-lattamici
+					img.img-responsive(src="/img/ripartizione-asepsi.jpg", alt="", style="margin-bottom: 20px;")
+					ul(style="margin-bottom: 35px;")
+						li Dedicato alle produzioni di polveri sterili β-lattamici (Penicilline)
+						li Personale altamente specializzato nella produzione in sterile
+						li Macchine altamente automatizzate 
+						li Reparto dotato di macchine di sperlatura completamente elettronico											
+						li Capacità produttiva annua:
+							ul
+								li 45 Milioni di Flaconcini/anno
+								li 8.100 Kg Liofilizzato/Anno
+					h4
+						| Ripartizione di Liquidi Sterili, Orali e Semisolidi non β-lattamici
+					img.img-responsive(src="/img/ripartizione-sterili.jpg", alt="", style="margin-bottom: 20px;")
+					ul(style="margin-bottom: 35px;")																
+						li Produzione di Forme farmaceutiche solide:
+							ul
+								li Granulati
+								li Compresse rivestite e a rilascio controllato
+						li Produzione di Forme farmaceutiche semi-solide:
+							ul
+								li Gel
+								li Pomate
+						li Produzione di Forme farmaceutiche liquide:
+							ul
+								li Gocce								
+						li Produzione di soluzioni sterili iniettabili e/o polveri liofilizzate:
+							ul
+								li Flaconcini
+								li Fiale Siringhe
+						li Impianti Multi Scopo e flessibili
+						li Personale dedicato e qualificato
+						li Capacità annua:
+							ul
+								li 29 Milioni di Confezioni/Anno
+								li 20 Milioni di Flaconcini e/o Fiale Siringa/Anno
+				include blocks/sidebar
+	// Including footer
+	include blocks/footer

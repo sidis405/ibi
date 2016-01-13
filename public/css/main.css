@@ -14,7 +14,7 @@ body {
 MIXITUP
 -------------------------
 */
-#prodotti-container .mix {
+#Container .mix {
   display: none; }
 
 /*
@@ -42,8 +42,8 @@ section.content {
   section.content p {
     text-align: justify;
     font-size: 16px;
-    line-height: 22px;
-    margin: 30px auto; }
+    margin: 30px auto;
+    line-height: 22px; }
   section.content .btn {
     padding: 10px 25px;
     display: inline-block;
@@ -131,6 +131,12 @@ Sidebar styles
       width: 100%;
       height: 130px;
       background-size: cover; }
+    .sidebar .sidebar-hero .reparti-sidebar {
+      background: url(../img/reparti-sidebar.jpg) no-repeat center center;
+      width: 100%;
+      height: 130px;
+      background-size: cover;
+      margin-bottom: 10px; }
     .sidebar .sidebar-hero h3 {
       position: absolute;
       top: 50%;
@@ -168,6 +174,7 @@ Sidebar styles
       font-size: 10px;
       text-align: justify;
       padding-right: 5px;
+      line-height: inherit;
       margin: 0 0 5px 0 !important; }
   .sidebar.farmacovigilanza-sidebar {
     background: transparent; }
@@ -524,6 +531,9 @@ Page Headers
     background: url(../img/chi-siamo-header.jpg) no-repeat center center;
     background-size: cover; }
   .main-header.benessere-paziente {
+    background: url(../img/chi-siamo-header.jpg) no-repeat center center;
+    background-size: cover; }
+  .main-header.reparti {
     background: url(../img/chi-siamo-header.jpg) no-repeat center center;
     background-size: cover; }
 
