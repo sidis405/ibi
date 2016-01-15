@@ -1,6 +1,6 @@
 <fieldset>
     <!-- Form Name -->
-    <legend>Informativa sulla legge</legend>
+    <!-- <legend>Informativa sulla legge</legend>
     <p style="font-size:12px">
         Informativa D.Lgs 196/2003<br>
         Codice in materia di protezione dei dati personali <br><br>
@@ -13,5 +13,5 @@
         6. Il Titolare del trattamento dei dati di cui trattasi è l'Istituto Biochimico Italiano Giovanni Lorenzini s.p.a. con sede legale in Milano, Via Tucidide 53 (20134), in persona del suo legale rappresentante pro tempore. <br>
         7. Il Responsabile del trattamento della banca dati "Anagrafico Medici", presso il quale potrà esercitare, in base a quanto disposto dall'art.7 della legge citata, specifici diritti relativi ai suoi dati personali (accesso, rettifica,cancellazione,trasformazione,opposizione in tutto o in parte all'utilizzo) è domiciliato per la carica presso l'Istituto Biochimico Italiano Giovanni Lorenzini s.p.a. <br>
         Per visualizzare l'art.7 del D.Lgs. 30-6-2003 n. 196 clicca qui.<br>
-    </p>
+    </p> -->
 </fieldset>

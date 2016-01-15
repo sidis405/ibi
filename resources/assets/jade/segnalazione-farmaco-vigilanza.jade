@@ -1,0 +1,53 @@
+extend blocks/template
+
+// Page title
+block title
+	| Ibi Lorenzini | Farmaco Vigilanza
+
+// Page meta-description
+block append metatags 
+	meta(name='description', content='Ibi Lorenzini')
+
+block content	
+	// Including header
+	include blocks/header
+	// Page content 
+	.main-header.farmacovigilanza
+		.container
+			.main-caption
+				h1 Segnalazione farmaco vigilanza
+	section.content.segnalazione-farmacovigilanza-content
+		.container
+			.row
+				.col-sm-8
+					h2
+						| Segnalazione farmacovigilanza
+					h3
+						| La sicurezza prima di tutto
+					.row
+						form.form-horizontal
+							.col-sm-6
+									label.control-label(for='inputEmail3') Nome								
+									input#inputEmail3.form-control(type='email', placeholder='Nome')
+							.col-sm-6
+									label.control-label(for='inputPassword3') Cognome								
+									input#inputPassword3.form-control(type='password', placeholder='Cognome')
+							.col-sm-6
+									label.control-label(for='inputPassword3') Data di nascita								
+									input#inputPassword3.form-control(type='password', placeholder='Data di nascita')
+							.col-sm-6
+									label.control-label(for='inputPassword3') Email								
+									input#inputPassword3.form-control(type='password', placeholder='Email')
+							.col-xs-12
+									label.control-label(for='inputPassword3') Segnalazione								
+									textarea#inputPassword3.form-control(type='password', placeholder='Segnalazione', rows='10')
+							.col-xs-12
+								p.policy-reminder
+									| Cliccando su "invia" dichiari di aver letto e accettato la nostra 
+									a(target="_blank", href="/privacy-policy") Privacy policy
+							.col-xs-12								
+									.btn.btn-primary(type='submit') Invia segnalazione
+
+				include blocks/sidebar-farmacovigilanza
+	// Including footer
+	include blocks/footer

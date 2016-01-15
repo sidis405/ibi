@@ -9,6 +9,10 @@ body {
   font-smoothing: antialiased;
   -webkit-font-smoothing: antialiased; }
 
+p.policy-reminder {
+  font-size: 12px !important;
+  margin: 15px 0 !important; }
+
 /*
 -------------------------
 MIXITUP
@@ -105,6 +109,102 @@ a:focus {
 
 .no-pad {
   padding: 0; }
+
+/*
+-------------------------
+Back to Top
+-------------------------
+*/
+#back-to-top {
+  position: fixed;
+  bottom: 55px;
+  right: 55px;
+  z-index: 9999;
+  width: 32px;
+  height: 32px;
+  text-align: center;
+  line-height: 30px;
+  background: #1fa9ad;
+  color: #fff;
+  cursor: pointer;
+  border: 0;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: 0.2s ease-out;
+  opacity: 0; }
+
+#back-to-top:hover {
+  background: #23bec3; }
+
+#back-to-top.show {
+  opacity: 1; }
+
+/*
+-------------------------
+Magnific-popup
+-------------------------
+*/
+.white-popup {
+  position: relative;
+  background: #FFF;
+  padding: 20px;
+  width: auto;
+  max-width: 400px;
+  margin: 20px auto; }
+
+/* overlay at start */
+.mfp-fade.mfp-bg {
+  opacity: 0;
+  transition: all 0.15s ease-out; }
+
+/* overlay animate in */
+.mfp-fade.mfp-bg.mfp-ready {
+  opacity: 0.8; }
+
+/* overlay animate out */
+.mfp-fade.mfp-bg.mfp-removing {
+  opacity: 0; }
+
+/* content at start */
+.mfp-fade.mfp-wrap .mfp-content {
+  opacity: 0;
+  transition: all 0.15s ease-out; }
+
+/* content animate it */
+.mfp-fade.mfp-wrap.mfp-ready .mfp-content {
+  opacity: 1; }
+
+/* content animate out */
+.mfp-fade.mfp-wrap.mfp-removing .mfp-content {
+  opacity: 0; }
+
+/*
+-------------------------
+Area riservata modal
+-------------------------
+*/
+#area-riservata-modal {
+  text-align: center;
+  padding: 15px 50px;
+  background: #e6f8f8; }
+  #area-riservata-modal h3 {
+    color: #00509a;
+    text-transform: uppercase;
+    font-size: 16px;
+    margin-top: 30px; }
+  #area-riservata-modal form {
+    padding: 20px; }
+    #area-riservata-modal form .fields {
+      border-radius: 0; }
+  #area-riservata-modal .btn {
+    padding: 10px 25px;
+    display: inline-block;
+    background: #1fa9ad;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 0;
+    border: 0;
+    font-size: 12px; }
 
 /*
 -------------------------
@@ -279,6 +379,9 @@ Sidebar styles
       .sidebar.products-sidebar .benessere-paziente h5 {
         color: #fff;
         margin: 0; }
+  .sidebar a.archivio-news-link {
+    float: right;
+    padding: 6px 0 0 0; }
 
 /*
 -------------------------
@@ -388,14 +491,18 @@ footer {
   background: #f2f2f2; }
   footer .footer-box {
     border-left: 1px solid #00509a;
-    padding: 50px 20px 20px 20px;
+    padding: 50px 0px 20px 20px;
     min-height: 323px;
     margin: 0 0 40px 0; }
+    footer .footer-box i {
+      margin-right: 4px; }
     footer .footer-box h4 {
       margin: 0 0 20px 0;
       color: #00509a; }
     footer .footer-box p {
       font-size: 12px; }
+    footer .footer-box a {
+      color: #666; }
     footer .footer-box ul {
       padding: 0;
       list-style: none; }
@@ -536,6 +643,12 @@ Page Headers
   .main-header.reparti {
     background: url(../img/chi-siamo-header.jpg) no-repeat center center;
     background-size: cover; }
+  .main-header.registrazione-area-riservata {
+    background: url(../img/chi-siamo-header.jpg) no-repeat center center;
+    background-size: cover; }
+  .main-header.archivio-news-header {
+    background: url(../img/chi-siamo-header.jpg) no-repeat center center;
+    background-size: cover; }
 
 /*
 -------------------------
@@ -589,6 +702,10 @@ Tabs
         border-top: 0;
         border-bottom: 0;
         border-right-color: #666; }
+
+.tabs.chi-siamo-tabs .nav-tabs li a {
+  font-size: 14px;
+  padding: 10px 11px; }
 
 .tabs.chi-siamo-tabs h4 {
   font-size: 22px; }
@@ -680,8 +797,10 @@ section.content.contatti-content .loghi {
   section.content.contatti-content .loghi.contatti-ibisqus-logo {
     margin-top: 50px; }
 
-section.content.contatti-content #accordion a:hover, section.content.contatti-content #accordion a:focus {
-  text-decoration: none; }
+section.content.contatti-content a {
+  color: #00509a; }
+  section.content.contatti-content a:hover {
+    text-decoration: underline; }
 
 section.content.contatti-content #accordion .panel {
   border: 0;
@@ -711,31 +830,15 @@ section.content.contatti-content #accordion .panel {
   section.content.contatti-content #accordion .panel .panel-body {
     border: 0; }
 
-section.content.ricerca-content #accordion a:hover, section.content.ricerca-content #accordion a:focus {
-  text-decoration: none; }
+section.content.ricerca-content ul {
+  font-size: 16px; }
 
-section.content.ricerca-content #accordion .panel-group .panel + .panel {
-  margin-top: 0 !important; }
+section.content.ricerca-content #biotecnologie h4 {
+  margin: 25px auto 10px auto; }
 
-section.content.ricerca-content #accordion .panel {
+section.content.ricerca-content .no-border {
   border: 0;
-  border-radius: 0;
-  border: 1px dotted #000; }
-  section.content.ricerca-content #accordion .panel .panel-title {
-    margin: 5px 0; }
-  section.content.ricerca-content #accordion .panel .panel-heading {
-    background: transparent;
-    padding: 15px; }
-    section.content.ricerca-content #accordion .panel .panel-heading h4 {
-      color: #00509a;
-      font-weight: 700;
-      display: inline-block;
-      text-transform: none; }
-  section.content.ricerca-content #accordion .panel .panel-body {
-    border: 0; }
-  section.content.ricerca-content #accordion .panel ul {
-    border: 0;
-    margin: 0; }
+  padding-bottom: 10px; }
 
 section.content.benessere-content #accordion a:hover, section.content.benessere-content #accordion a:focus {
   text-decoration: none; }
@@ -746,7 +849,7 @@ section.content.benessere-content #accordion .panel-group .panel + .panel {
 section.content.benessere-content #accordion .panel {
   border: 0;
   border-radius: 0;
-  border: 1px dotted #000; }
+  border: 1px dotted #1fa9ad; }
   section.content.benessere-content #accordion .panel .panel-title {
     margin: 5px 0; }
   section.content.benessere-content #accordion .panel .panel-heading {
@@ -770,6 +873,15 @@ section.content.lavora-con-noi-content .lavori-box {
       color: #fff;
       font-size: 18px; }
 
+section.content.lavora-con-noi-content label {
+  margin-top: 10px; }
+
+section.content.lavora-con-noi-content h3.form-title {
+  background: #80a8cd;
+  color: #fff;
+  padding: 5px 5px 8px 5px;
+  margin: 25px 0 10px 0; }
+
 section.content.lavora-con-noi-content p.borded, section.content.lavora-con-noi-content img.borded {
   padding-bottom: 25px; }
 
@@ -781,6 +893,43 @@ section.content.lavora-con-noi-content h4 {
 section.content.lavora-con-noi-content .btn.btn-primary {
   width: 100%; }
 
+section.content.lavora-con-noi-content .fields {
+  border-radius: 0; }
+
+section.content.registrazione-area-riservata-content legend {
+  color: #fff;
+  background: #80a8cd;
+  border: 0;
+  padding: 3px 10px;
+  text-transform: uppercase;
+  font-size: 18px; }
+
+section.content.registrazione-area-riservata-content fieldset {
+  margin: 15px 0 5px 0; }
+
+section.content.archivio-news-content h2 {
+  margin: 20px 0 40px 0; }
+
+section.content.archivio-news-content .archivio-news {
+  margin: 15px 0; }
+  section.content.archivio-news-content .archivio-news h4 {
+    margin: 10px 0 0 0; }
+  section.content.archivio-news-content .archivio-news p {
+    margin: 0; }
+  section.content.archivio-news-content .archivio-news a {
+    float: right;
+    text-align: right; }
+  section.content.archivio-news-content .archivio-news span.date {
+    font-size: 12px;
+    color: #000;
+    font-weight: 700; }
+
+section.content.segnalazione-farmacovigilanza-content label {
+  margin: 10px 0 5px 0; }
+
+section.content.segnalazione-farmacovigilanza-content input, section.content.segnalazione-farmacovigilanza-content textarea {
+  border-radius: 0; }
+
 /*
 -------------------------
 Products
@@ -790,7 +939,7 @@ section.products-content .filtri {
   display: inline-block;
   margin: auto;
   width: 100%;
-  margin: 0	0 30px 0;
+  margin: 0;
   border-bottom: 2px solid #00509a; }
   section.products-content .filtri .filtri-img {
     border-right: 1px solid #666;
@@ -812,6 +961,11 @@ section.products-content .filtri {
         border-color: transparent transparent #00509a transparent; }
   section.products-content .filtri img {
     margin: auto; }
+
+section.products-content .intro p {
+  margin: 15px 0 0 0;
+  border-bottom: 2px solid #00509a;
+  padding-bottom: 20px; }
 
 section.products-content #prodotti-container .product {
   width: 100%;

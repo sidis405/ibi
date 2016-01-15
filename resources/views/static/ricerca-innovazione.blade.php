@@ -21,7 +21,7 @@
           <div class="row">
             <div class="col-sm-6"><i class="fa fa-facebook-square"></i><i class="fa fa-google-plus-square"></i><i class="fa fa-twitter-square"></i><i class="fa fa-envelope"></i></div>
             <div class="col-sm-6">
-              <div class="pull-right"><a href="#" class="area-riservata">Area riservata</a>
+              <div class="pull-right"><a href="#area-riservata-modal" class="open-area-riservata-modal area-riservata">Area riservata</a>
                 <p class="lang"><a href="#">Ita |</a><a href="#"> Eng</a></p>
               </div>
             </div>
@@ -36,7 +36,7 @@
               <h1 class="logo">Ibi Lorenzini</h1></a>
           </div>
           <!-- Collect the nav links, forms, and other content for toggling-->
-          <div id="bs-example-navbar-collapse-1" class="collapse navbar-collapse">			
+          <div id="bs-example-navbar-collapse-1" class="collapse navbar-collapse">
             <ul class="nav navbar-nav navbar-right">
               <li><a href="chi-siamo">Chi siamo</a></li>
               <li class="dropdown"><a href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle">Prodotti <span class="caret"></span></a>
@@ -50,7 +50,7 @@
               <li><a href="ricerca-innovazione">Ricerca e<br> innovazione</a></li>
               <li class="dropdown"><a href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle">Contatti <span class="caret"></span></a>
                 <ul class="dropdown-menu">
-                  <li><a href="contatti">Informazioni</a></li>
+                  <li><a href="contatti">Dove siamo</a></li>
                   <li><a href="lavora-con-noi">Lavora con noi						</a></li>
                 </ul>
               </li>
@@ -72,7 +72,7 @@
     <section class="content ricerca-content">
       <div class="container">
         <div class="row">
-          <div class="col-sm-8">					
+          <div class="col-sm-8">
             <div class="tabs ricerca-tabs">
               <!-- Nav tabs-->
               <ul role="tablist" class="nav nav-tabs">
@@ -150,125 +150,71 @@
                   </ul>
                 </div>
                 <div id="biotecnologie" role="tabpanel" class="tab-pane">
-                  <div id="accordion" role="tablist" aria-multiselectable="true" class="panel-group">
-                    <div class="panel panel-default"><a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                        <div id="headingOne" role="tab" class="panel-heading">
-                          <h4 class="panel-title">
-                            												
-                            About
-                          </h4>
-                          <div class="plus-minus minus">							</div>
-                        </div></a>
-                      <div id="collapseOne" role="tabpanel" aria-labelledby="headingOne" class="panel-collapse collapse in">
-                        <div class="panel-body">
-                          																															
-                          The Biotech Dept. at IBI-Lorenzini is committed to the production of recombinant proteins from CHO cells. 
-                          In 2015 we have received the GMP authorization from the Italian Regulatory Agency (AIFA, authorization number UAO/103050/P) for the production of the recombinant human BMP4 (Bone Morphogenetic Protein). This protein has obtained the Orphan Drug designation from EMA
-                          (http://www.ema.europa.eu/ema/index.jsp?curl=pages/medicines/human/orphans/2014/11/human_orphan_001433.jsp&mid=WC0b01ac058001d12b) for the treatment of glioma.
-                          The Biotech Dept. is also dedicated to bring innovative oncology products into clinic. We are developing a humanized monoclonal antibody anti-HER2 with groundbreaking features over the actual marketed antibodies for the treatment of HER2 expressing tumors.
-                          Finally, we have an established production process for the biosimilar eythropoietin alpha.											
-                        </div>
-                      </div>
-                    </div>
-                    <div class="panel panel-default"><a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" class="collapsed">
-                        <div id="headingTwo" role="tab" class="panel-heading">
-                          <h4 class="panel-title">
-                            												
-                            Equipment
-                          </h4>
-                          <div class="plus-minus"></div>
-                        </div></a>
-                      <div id="collapseTwo" role="tabpanel" aria-labelledby="headingTwo" class="panel-collapse collapse">
-                        <div class="panel-body">
-                          												
-                          All the GMP equipment are under constant and registered control through a validated system of probes and alarms (TESTO).
-                          <br><br><b>Upstream</b>
-                          <ul>
-                            <li>n. 2 wave Bioreactors 20/50 (GE Healthcare)</li>
-                            <li>n. 1 SIP Bioreactor 30 L (Applikon)</li>
-                            <li>n. 3 CO2 incubators (Thermo Fisher and Eppendorf-Si41 with integrated shaker)</li>
-                            <li>n. 2 Liquid nitrogen Dewars (Thermo Fisher and MV2000)</li>
-                            <li>-80°C, -20°C and +4°C refrigerators</li>
-                            <li>Nucleocounter for cell counting												</li>
-                          </ul><b>Downstream</b>
-                          <ul>
-                            <li>Akta Pilot (GE Healthcare)</li>
-                            <li>Akta Explorer (GE Healthcare)</li>
-                            <li>Sartoflow alpha for TFF</li>
-                            <li>Viral Inactivation and Removal</li>
-                            <li>Hollow fibers (GE Healthcare) for the concentration of proteins			</li>
-                          </ul><b>Analysis</b>
-                          <ul>
-                            <li>HPLC (Waters)</li>
-                            <li>UV-Vis spectrophotometer (Perkin Elmer)</li>
-                            <li>Capillary Electrophoresis (Beckman & Coulter)</li>
-                            <li>Chemidoc (Bio-Rad)</li>
-                            <li>ELISA reader (BMG)</li>
-                            <li>ELISA plate washer (Tecan)</li>
-                            <li>BioLayerInterferometry (BLITZ-Fortebio)</li>
-                            <li>Cell-based potency assays</li>
-                            <li>Real-Time PCR (Applied Biosystems 7500)</li>
-                            <li>Flow Cytometer (EasyCube-Sysmex)																							</li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="panel panel-default"><a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree" class="collapsed">
-                        <div id="headingThree" role="tab" class="panel-heading">
-                          <h4 class="panel-title">
-                            					
-                            	Projects
-                          </h4>
-                          <div class="plus-minus">												</div>
-                        </div></a>
-                      <div id="collapseThree" role="tabpanel" aria-labelledby="headingThree" class="panel-collapse collapse">
-                        <div class="panel-body">												
-                          <ul>
-                            <li>Production of recombinant antibodies against ErbB2 for cancer therapy	(funded by Italian Scientific Research Fund FILAS 2008)  </li>
-                            <li>
-                               
-                              A breast cancer toolbox: HER2 targeted immuno-conjugate as therapeutic and diagnostic tools (https://www.eurostars-eureka.eu/project//id/5995  funded by Eurostars 2010-2014).
-                            </li>
-                            <li>3WAYNEPO: Novel Nanoformulations of low sialic recombinant erythropoietin for treatment of Alzheimer’s disease and cerebral ischemia/reperfusion injury. (submitted for the H2020 NMBP-10-2016-2017 Proposal number: 720845-1)													</li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="panel panel-default"><a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour" class="collapsed">
-                        <div id="headingFour" role="tab" class="panel-heading">
-                          <h4 class="panel-title">	Collaborations</h4>
-                          <div class="plus-minus"></div>
-                        </div></a>
-                      <div id="collapseFour" role="tabpanel" aria-labelledby="headingFour" class="panel-collapse collapse">
-                        <div class="panel-body">											
-                          <ul>
-                            <li>Stemgen</li>
-                            <li>IBA Gmbh</li>
-                            <li>Sigma-Tau</li>
-                            <li>IFO-IRE</li>
-                            <li>Università di Viterbo</li>
-                            <li>Naxospharma</li>
-                            <li>Mediapharma																	</li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="panel panel-default"><a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive" class="collapsed">
-                        <div id="headingFive" role="tab" class="panel-heading">
-                          <h4 class="panel-title">	Partnership</h4>
-                          <div class="plus-minus">													</div>
-                        </div></a>
-                      <div id="collapseFive" role="tabpanel" aria-labelledby="headingFive" class="panel-collapse collapse">
-                        <div class="panel-body">We are open to evaluate possible collaborations with academic institutions on the basis of promising projects in the fields of monoclonal antibodies and recombinant proteins. We can:
-                          <ul>
-                            <li>develop recombinant CHO cell lines and produce MCB and WCB in GMP ready for the clinical phases;</li>
-                            <li>develop upstream and downstream processes;</li>
-                            <li>develop and validate analytical methods (chemical and biological).													</li>
-                          </ul>We are committed to work as CMO (Contract Manufacturing Organization) for upstream and downstream processes for the production of monoclonal antibodies and recombinant proteins from CHO cells. Our Quality Unit, Qualified Person and Regulatory Office can assist the management of complex projects in the biopharmaceutical field.		
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                  <h4>About																		</h4>
+                  <p>
+                    The Biotech Dept. at IBI-Lorenzini is committed to the production of recombinant proteins from CHO cells. 
+                    In 2015 we have received the GMP authorization from the Italian Regulatory Agency (AIFA, authorization number UAO/103050/P) for the production of the recombinant human BMP4 (Bone Morphogenetic Protein). This protein has obtained the Orphan Drug designation from EMA
+                    (http://www.ema.europa.eu/ema/index.jsp?curl=pages/medicines/human/orphans/2014/11/human_orphan_001433.jsp&mid=WC0b01ac058001d12b) for the treatment of glioma.
+                    The Biotech Dept. is also dedicated to bring innovative oncology products into clinic. We are developing a humanized monoclonal antibody anti-HER2 with groundbreaking features over the actual marketed antibodies for the treatment of HER2 expressing tumors.
+                    Finally, we have an established production process for the biosimilar eythropoietin alpha.											
+                  </p>
+                  <h4>Equipment</h4>
+                  <p>
+                    All the GMP equipment are under constant and registered control through a validated system of probes and alarms (TESTO).
+                    <br><br><b>Upstream</b>
+                    <ul class="no-border">
+                      <li>n. 2 wave Bioreactors 20/50 (GE Healthcare)</li>
+                      <li>n. 1 SIP Bioreactor 30 L (Applikon)</li>
+                      <li>n. 3 CO2 incubators (Thermo Fisher and Eppendorf-Si41 with integrated shaker)</li>
+                      <li>n. 2 Liquid nitrogen Dewars (Thermo Fisher and MV2000)</li>
+                      <li>-80°C, -20°C and +4°C refrigerators</li>
+                      <li>Nucleocounter for cell counting										</li>
+                    </ul><b>Downstream</b>
+                    <ul class="no-border">
+                      <li>Akta Pilot (GE Healthcare)</li>
+                      <li>Akta Explorer (GE Healthcare)</li>
+                      <li>Sartoflow alpha for TFF</li>
+                      <li>Viral Inactivation and Removal</li>
+                      <li>Hollow fibers (GE Healthcare) for the concentration of proteins			</li>
+                    </ul><b>Analysis</b>
+                    <ul class="no-border">
+                      <li>HPLC (Waters)</li>
+                      <li>UV-Vis spectrophotometer (Perkin Elmer)</li>
+                      <li>Capillary Electrophoresis (Beckman & Coulter)</li>
+                      <li>Chemidoc (Bio-Rad)</li>
+                      <li>ELISA reader (BMG)</li>
+                      <li>ELISA plate washer (Tecan)</li>
+                      <li>BioLayerInterferometry (BLITZ-Fortebio)</li>
+                      <li>Cell-based potency assays</li>
+                      <li>Real-Time PCR (Applied Biosystems 7500)</li>
+                      <li>Flow Cytometer (EasyCube-Sysmex)																							</li>
+                    </ul>
+                  </p>
+                  <h4>Projects												</h4>
+                  <ul class="no-border">
+                    <li>Production of recombinant antibodies against ErbB2 for cancer therapy	(funded by Italian Scientific Research Fund FILAS 2008)  </li>
+                    <li>
+                       
+                      A breast cancer toolbox: HER2 targeted immuno-conjugate as therapeutic and diagnostic tools (https://www.eurostars-eureka.eu/project//id/5995  funded by Eurostars 2010-2014).
+                    </li>
+                    <li>3WAYNEPO: Novel Nanoformulations of low sialic recombinant erythropoietin for treatment of Alzheimer’s disease and cerebral ischemia/reperfusion injury. (submitted for the H2020 NMBP-10-2016-2017 Proposal number: 720845-1)													</li>
+                  </ul>
+                  <h4>Collaborations																				</h4>
+                  <ul class="no-border">
+                    <li>Stemgen</li>
+                    <li>IBA Gmbh</li>
+                    <li>Sigma-Tau</li>
+                    <li>IFO-IRE</li>
+                    <li>Università di Viterbo</li>
+                    <li>Naxospharma</li>
+                    <li>Mediapharma																	</li>
+                  </ul>
+                  <h4>Partnership</h4>We are open to evaluate possible collaborations with academic institutions on the basis of promising projects in the fields of monoclonal antibodies and recombinant proteins. We can:
+                  <ul class="no-border">
+                    <li>develop recombinant CHO cell lines and produce MCB and WCB in GMP ready for the clinical phases;</li>
+                    <li>develop upstream and downstream processes;</li>
+                    <li>develop and validate analytical methods (chemical and biological).													</li>
+                  </ul>We are committed to work as CMO (Contract Manufacturing Organization) for upstream and downstream processes for the production of monoclonal antibodies and recombinant proteins from CHO cells. Our Quality Unit, Qualified Person and Regulatory Office can assist the management of complex projects in the biopharmaceutical field.		
                 </div>
                 <div id="pubblicazioni" role="tabpanel" class="tab-pane">
                   <h3>Pubblicazioni</h3>
@@ -347,13 +293,14 @@
                     </div>
                   </div>
                 </div>
+                <div class="col-xs-12"><a href="/archivio-news" class="archivio-news-link">Archivio news</a></div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <!-- Including footer-->
+    <!-- Including footer--><a href="#" id="back-to-top" title="Back to top"><i class="fa fa-arrow-up"></i></a>
     <footer>
       <div class="container">
         <div class="row">
@@ -363,53 +310,32 @@
                  
                 About <i>Ibi</i>
               </h4>
-              <p>
-                Istituto Biochimico Italiano<br>
-                Giovanni Lorenzini S.p.A. <br>
-                Via Fossignano, 2 <br>
+              <p><b>
+                   
+                  Istituto Biochimico Italiano<br>
+                  Giovanni Lorenzini S.p.A. <br></b>Via Fossignano, 2 <br>
                 04011 Aprilia (LT)<br>
                 Italia
                 <br><br>
                 Centralino: +39.06.92150.1<br>
-                Fax: +39.06.92150.500<br>
-                e-mail: info@ibi-lorenzini.com<br>
-                P.IVA 02578030153
+                Fax: +39.06.92150.500<br>						<a href="mailto:info@ibi-lorenzini.com">info@ibi-lorenzini.com<br></a>P.IVA 02578030153
               </p>
             </div>
           </div>
           <div class="col-sm-3">
             <div class="footer-box">
               <h4>Worldwide</h4>
-              <p>
-                Export Department<br>
-                export@ibi-lorenzini.com<br>
-                Fax: +39.06.92150.598
-                <br><br>
-                Ricezione ordini<br>
-                purchase@ibi-lorenzini.com<br>
-                Fax: +39.06.92150.401
-                <br><br>
-                Informazioni medico scientifiche<br>
-                servizioscientifico@ibi-lorenzini.com<br>
-                Fax: +39.06.92150.573
+              <p><b>Export Department<br></b><a href="mailto:export@ibi-lorenzini.com"><i class="fa fa-envelope"></i>export@ibi-lorenzini.com<br></a>Fax: +39.06.92150.598
+                <br><br><b>Ricezione ordini<br></b><a href="mailto:purchase@ibi-lorenzini.com"><i class="fa fa-envelope"></i>purchase@ibi-lorenzini.com<br>						</a>Fax: +39.06.92150.401
+                <br><br><b>Informazioni medico scientifiche<br></b><a href="mailto:servizioscientifico@ibi-lorenzini.com"><i class="fa fa-envelope"></i>servizioscientifico@ibi-lorenzini.com<br>						</a>Fax: +39.06.92150.573
               </p>
             </div>
           </div>
           <div class="col-sm-3">
             <div class="footer-box">
               <h4>Stay connected</h4>
-              <p>
-                Contract Manufacturing Services<br>
-                cms@ibi-lorenzini.com
-                <br><br>
-                Pharmaceutical Development Services<br>
-                pds@ibi-lorenzini.com
-                <br><br>
-                Dipartimento di Farmacovigilanza IBIGEN e IBI<br>
-                Tel: +39.06.92150.395<br>
-                Fax: +39.06.92150.573<br>
-                pharmacovigilance@ibi-lorenzini.com<br>
-                pharmacovigilance@ibigen.it
+              <p><b>Contract Manufacturing Services<br></b><a href="mailto:cms@ibi-lorenzini.com"><i class="fa fa-envelope"></i>cms@ibi-lorenzini.com<br>							</a><br><b>Pharmaceutical Development Services<br></b><a href="mailto:pds@ibi-lorenzini.com"><i class="fa fa-envelope"></i>pds@ibi-lorenzini.com<br>							</a><br><b>Dipartimento di Farmacovigilanza IBIGEN e IBI<br></b>Tel: +39.06.92150.395<br>
+                Fax: +39.06.92150.573<br><a href="mailto:pharmacovigilance@ibi-lorenzini.com"><i class="fa fa-envelope"></i>pharmacovigilance@ibi-lorenzini.com<br>							</a><a href="mailto:pharmacovigilance@ibigen.it"><i class="fa fa-envelope"></i>pharmacovigilance@ibigen.it						</a>
               </p>
             </div>
           </div>
@@ -430,6 +356,41 @@
         <div class="container"></div>
       </div>
     </footer>
+    <div id="area-riservata-modal" class="white-popup mfp-fade"><img src="/img/ibi-lorenzini-logo.png" alt="">
+      <h3>Area Riservata</h3>
+      <form role="form" method="POST" action="" class="form-horizontal">
+        <input type="hidden" name="_token" value="{{ csrf_token() }}">
+        <div class="form-group">
+          <label class="control-label">Email</label>
+          <div>
+            <input type="email" name="email" value="{{ old('email') }}" class="form-control fields">
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="control-label">Password</label>
+          <div>
+            <input type="password" name="password" class="form-control fields">
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="col-md-12">
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" name="remember"> Ricorda la mia password
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="col-md-12">
+            <button type="submit" class="btn btn-primary">Login</button>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="col-md-12"><a href="{{ url('/auth/register') }}">Registrati</a><br><a href="{{ url('/password/email') }}">Hai smarrito la password					</a></div>
+        </div>
+      </form>
+    </div>
   </body>
   <script src="/js/vendor.js"></script>
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAx9KUDj1tNjrnOjWivzS4GAJ9Cke8RIvM"></script>

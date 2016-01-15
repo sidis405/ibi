@@ -161,6 +161,14 @@ Page Headers
 	&.reparti {
 		background: url(../img/chi-siamo-header.jpg) no-repeat center center;		
 		background-size: cover;		
+	}	
+	&.registrazione-area-riservata {
+		background: url(../img/chi-siamo-header.jpg) no-repeat center center;		
+		background-size: cover;		
+	}
+	&.archivio-news-header {
+		background: url(../img/chi-siamo-header.jpg) no-repeat center center;		
+		background-size: cover;		
 	}
 }
 /*
@@ -212,6 +220,14 @@ Tabs
 		}
 	}
 	&.chi-siamo-tabs {
+		.nav-tabs {
+			li {
+				a {
+					font-size: 14px;
+					padding: 10px 11px;
+				}
+			}
+		}
 		h4 {
 			font-size: 22px;			
 		}
@@ -318,9 +334,12 @@ section.content {
 			margin: 0 15px;
 			border-bottom: 1px dotted $text-color;
 			&.contatti-ibisqus-logo {margin-top: 50px;}
+		}
+		a {
+			color: $title-color;
+			&:hover {text-decoration: underline;}
 		}		
-		#accordion {
-			a:hover, a:focus {text-decoration: none;}			
+		#accordion {						
 			.panel {
 				border: 0;
 				border-radius: 0;
@@ -352,28 +371,13 @@ section.content {
 		}
 	}
 	&.ricerca-content {
-		#accordion {
-			a:hover, a:focus {text-decoration: none;}
-			.panel-group .panel+.panel {margin-top: 0 !important;}
-			.panel {
-				border: 0;
-				border-radius: 0;
-				border: 1px dotted #000;				
-				.panel-title {margin: 5px 0;}
-				.panel-heading {
-					background: transparent;
-					padding: 15px;
-					h4 {						
-						color: $title-color;
-						font-weight: 700;
-						display: inline-block;
-						text-transform: none;
-					}
-				}
-				.panel-body {border: 0;}
-				ul {border: 0; margin: 0;}
+		ul {font-size: 16px;}
+		#biotecnologie {
+			h4 {
+				margin: 25px auto 10px auto;
 			}
 		}
+		.no-border {border: 0; padding-bottom: 10px;}
 	}
 	&.benessere-content {
 		#accordion {
@@ -382,7 +386,7 @@ section.content {
 			.panel {
 				border: 0;
 				border-radius: 0;
-				border: 1px dotted #000;				
+				border: 1px dotted $green;				
 				.panel-title {margin: 5px 0;}
 				.panel-heading {
 					background: transparent;
@@ -411,6 +415,15 @@ section.content {
 				}
 			}			
 		}
+		label {
+			margin-top: 10px;
+		}
+		h3.form-title {
+			background: $light-blue;
+			color: #fff;
+			padding: 5px 5px 8px 5px;
+			margin: 25px 0 10px 0;
+		}
 		p.borded, img.borded {padding-bottom: 25px;}
 		h4 {
 			font-weight: 300;
@@ -420,8 +433,57 @@ section.content {
 		.btn.btn-primary {
 			width: 100%;
 		}
+		.fields {
+			border-radius: 0;
+		}
+	}	
+	&.registrazione-area-riservata-content {
+		legend {
+			color: #fff;
+			background: $light-blue;
+			border: 0;
+			padding: 3px 10px;
+			text-transform: uppercase;
+			font-size: 18px;			
+		}
+		fieldset {
+			margin: 15px 0 5px 0;
+		}
+	}
+	&.archivio-news-content {
+			h2 {
+				margin: 20px 0 40px 0;
+			}
+		.archivio-news {
+			margin: 15px 0;
+			h4 {
+				margin: 10px 0 0 0;
+			}
+			p {
+				margin: 0;
+			}
+			a {
+				float: right;
+				text-align: right;
+			}
+			span.date {
+				font-size: 12px;
+    		color: #000;
+    		font-weight: 700;
+			}
+		}
+	}
+	&.segnalazione-farmacovigilanza-content {
+		label {
+			margin: 10px 0 5px 0;
+		}
+		input, textarea {
+			border-radius: 0;
+		}		
 	}
 }
+
+
 
 /*
 -------------------------
@@ -433,7 +495,7 @@ section.products-content {
 		display: inline-block;		
 		margin: auto;
 		width: 100%;		
-		margin: 0	0 30px 0;
+		margin: 0;
 		border-bottom: 2px solid $title-color;
 		.filtri-img {
 			border-right: 1px solid $text-color;
@@ -459,7 +521,13 @@ section.products-content {
 			margin: auto;
 		}		
 	}
-
+	.intro {
+		p {
+			margin: 15px 0 0 0;
+			border-bottom: 2px solid $title-color;
+			padding-bottom: 20px;
+		}
+	}
 	#prodotti-container {		
 		.product {
 			width: 100%;

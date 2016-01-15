@@ -21,7 +21,7 @@
           <div class="row">
             <div class="col-sm-6"><i class="fa fa-facebook-square"></i><i class="fa fa-google-plus-square"></i><i class="fa fa-twitter-square"></i><i class="fa fa-envelope"></i></div>
             <div class="col-sm-6">
-              <div class="pull-right"><a href="#" class="area-riservata">Area riservata</a>
+              <div class="pull-right"><a href="#area-riservata-modal" class="open-area-riservata-modal area-riservata">Area riservata</a>
                 <p class="lang"><a href="#">Ita |</a><a href="#"> Eng</a></p>
               </div>
             </div>
@@ -36,7 +36,7 @@
               <h1 class="logo">Ibi Lorenzini</h1></a>
           </div>
           <!-- Collect the nav links, forms, and other content for toggling-->
-          <div id="bs-example-navbar-collapse-1" class="collapse navbar-collapse">			
+          <div id="bs-example-navbar-collapse-1" class="collapse navbar-collapse">
             <ul class="nav navbar-nav navbar-right">
               <li><a href="chi-siamo">Chi siamo</a></li>
               <li class="dropdown"><a href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle">Prodotti <span class="caret"></span></a>
@@ -50,7 +50,7 @@
               <li><a href="ricerca-innovazione">Ricerca e<br> innovazione</a></li>
               <li class="dropdown"><a href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle">Contatti <span class="caret"></span></a>
                 <ul class="dropdown-menu">
-                  <li><a href="contatti">Informazioni</a></li>
+                  <li><a href="contatti">Dove siamo</a></li>
                   <li><a href="lavora-con-noi">Lavora con noi						</a></li>
                 </ul>
               </li>
@@ -130,17 +130,17 @@
                     IBI si impegna ad operare in modo responsabile, a valorizzare le Risorse Umane di cui si avvale e a tutelare l’ambiente in cui opera.
                     IBI vuole assicurare che, attraverso idonei strumenti organizzativi, si possa prevenire la violazione dei principi di legalità, trasparenza, correttezza e lealtà da parte dei propri dipendenti e collaboratori e vigilerà sulla loro osservanza e implementazione.
                   </p>
-                  <p><b>	Applicazione</b>Il Codice Etico si applica a tutte le attività aziendali e costituisce punto di riferimento per la regolamentazione adottata dalle diverse Direzioni della società.
+                  <p><b>Applicazione</b>Il Codice Etico si applica a tutte le attività aziendali e costituisce punto di riferimento per la regolamentazione adottata dalle diverse Direzioni della società.
                     E’ a cura di IBI la diffusione di quanto contenuto nel presente Codice affinché tutti coloro che intrattengono rapporti con l’azienda, siano a conoscenza di questi standard aziendali e ne comprendano completamente contenuti e finalità.
                   </p>
-                  <p><b>	Norme e Standard di comportamento</b><b>Regolamento Aziendale.</b>Criteri guida nelle politiche verso i collaboratori
+                  <p><b>Norme e Standard di comportamento</b><b>Regolamento Aziendale.</b>Criteri guida nelle politiche verso i collaboratori
                     In primo luogo vanno messe la tutela della dignità e della salute di tutti coloro che intrattengono rapporti di lavoro con l’azienda. Di altrettanta importanza è la sicurezza individuale e collettiva sul lavoro.
                     IBI è impegnata altresì ad offrire pari opportunità di lavoro senza distinzioni basate su etnia, religione, opinioni, nazionalità, sesso, condizioni fisiche, età, condizioni sociali. IBI cura la formazione tecnica, professionale ed umana dei propri collaboratori.
                   </p>
                   <p><b>Criteri guida tra e per i collaboratori</b>La conformità dei comportamenti alla legge vigente è un requisito essenziale e tassativo per IBI e per tutti i suoi collaboratori. Ogni collaboratore deve essere a conoscenza delle implicazioni di legge relative alla propria attività.
                     Il comportamento dei collaboratori di IBI, oltre che ad essere in sintonia con le politiche aziendali, deve fondarsi su principi di collaborazione, responsabilità, professionalità e diligenza. La politica aziendale relativa ai rapporti con e tra i dipendenti si impronta a criteri di lealtà e persegue il constante obiettivo del rispetto della dignità personale. A tal fine, IBI non tollera nel proprio ambiente lavorativo discriminazioni e molestie di alcun tipo, ne comportamenti lesivi della sicurezza e salute sul posto di lavoro dovuti ad abuso di alcol o droghe, ne comportamenti integranti gli estremi di minacce, abusi e/o violenze da parte o contro i propri dipendenti durante lo svolgimento delle mansioni lavorative.
                   </p>
-                  <p><b>	Doveri e responsabilità</b>- Conflitto d’interessi.<br>
+                  <p><b>Doveri e responsabilità</b>- Conflitto d’interessi.<br>
                     •	I collaboratori di IBI devono rispettare le regole del presente Codice anche nei rapporti verso l’esterno, in particolare:<br>
                     •	i collaboratori devono informare in modo adeguato i soggetti terzi del contenuto delle disposizioni del presente Codice al fine di esigere il rispetto e comprensione del proprio comportamento e operato.<br>
                     •	I collaboratori di IBI devono adoperarsi per evitare situazioni in grado di generare conflitti di interesse sia reale, sia potenziale tra attività strettamente personali e aziendali; pertanto trasparenza, onestà e fiducia sono valori che devono essere rispettati sempre e comunque.<br>
@@ -155,8 +155,8 @@
                     Tutti i rapporti che coinvolgono le funzioni aziendali con la Pubblica Amministrazione devono rispettare i principi di diligenza, trasparenza ed onestà.
                     <I>collaboratori di IBI devono tenere un comportamento ispirato alla massima correttezza ed integrità nei rapporti con dipendenti e rappresentanti di enti pubblici, forze politiche e sindacali.</I>Nel caso in cui IBI utilizzi un consulente o un soggetto terzo per essere rappresentato nei rapporti verso la Pubblica Amministrazione, nei confronti di tale soggetto si applicano le stesse direttive impartite ai dipendenti di IBI.
                   </p>
-                  <p><b>	Rapporti con gli operatori sanitari/clienti</b>I collaboratori di IBI conformano il loro comportamento al Codice deontologico di Farmindustria e alle eventuali altre norme specifiche che la Società dovesse adottare al riguardo.</p>
-                  <p><b>	Controlli</b>Il sistema di controllo interno deve essere orientato all’adozione di strumenti e metodologie volti a contrastare i potenziali rischi aziendali, al fine di determinare una ragionevole garanzia circa il rispetto non solo delle leggi, ma anche delle disposizioni e procedure interne.
+                  <p><b>Rapporti con gli operatori sanitari/clienti</b>I collaboratori di IBI conformano il loro comportamento al Codice deontologico di Farmindustria e alle eventuali altre norme specifiche che la Società dovesse adottare al riguardo.</p>
+                  <p><b>Controlli</b>Il sistema di controllo interno deve essere orientato all’adozione di strumenti e metodologie volti a contrastare i potenziali rischi aziendali, al fine di determinare una ragionevole garanzia circa il rispetto non solo delle leggi, ma anche delle disposizioni e procedure interne.
                     Il management aziendale deve curare costantemente la conformità dei comportamenti a quanto indicato nel Codice e, se necessario, realizzare speciali programmi di verifica.
                     Organi preposti alla verifica dell’efficacia del sistema di controllo interno sono: il Consiglio di Amministrazione; il Presidente, l’Amministratore Delegato.
                   </p>
@@ -164,7 +164,7 @@
                     IBI si impegna a diffondere il contenuto di questo Codice a tutti coloro che entreranno in relazione con l’azienda.
                     L’osservanza del Codice Etico è affidata indistintamente a tutti i collaboratori della società.
                   </p>
-                  <p><b>	Sanzioni</b>L’osservanza delle disposizione del presente codice costituisce parte degli obblighi di diligenza e fedeltà dei dipendenti IBI ai sensi e per gli effetti degli artt. 2104 e 2105 del cod. civ.. In relazione al collegato disposto dell’art. 2106 del cod. civ., il presente codice richiama espressamente le disposizioni contenute nel CCNL dell’industria chimica – sia nella versione attualmente in vigore che in qualsiasi futuro rinnovo dello stesso – in materia di provvedimenti disciplinari.</p>
+                  <p><b>Sanzioni</b>L’osservanza delle disposizione del presente codice costituisce parte degli obblighi di diligenza e fedeltà dei dipendenti IBI ai sensi e per gli effetti degli artt. 2104 e 2105 del cod. civ.. In relazione al collegato disposto dell’art. 2106 del cod. civ., il presente codice richiama espressamente le disposizioni contenute nel CCNL dell’industria chimica – sia nella versione attualmente in vigore che in qualsiasi futuro rinnovo dello stesso – in materia di provvedimenti disciplinari.</p>
                 </div>
                 <div id="quality" role="tabpanel" class="tab-pane">
                   <h2>IBI: Quality Unit Sistem</h2>
@@ -204,7 +204,8 @@
                   </div>
                   <h5>L’Assicurazione di Qualità</h5>
                   <p>
-                    <L>’Assicurazione Qualità è costantemente impegnata nel definire e supervisionare il livello di Qualità:	      </L>•	Seleziona con cura e monitora costantemente i propri fornitori di materie prime e di materiali eseguendo audit presso i siti produttivi;
+                    L’Assicurazione Qualità è costantemente impegnata nel definire e supervisionare il livello di Qualità:	      
+                    •	Seleziona con cura e monitora costantemente i propri fornitori di materie prime e di materiali eseguendo audit presso i siti produttivi;
                     •	Svolge continua e costante formazione del personale che fa parte della catena produttiva e distributiva dei propri prodotti;
                     •	Assicura che ogni lotto di APIs e medicinali sia stato stati fabbricato e controllato conformemente alle disposizioni della sua autorizzazione all'immissione in commercio, ai principi e alle linee guida delle norme di buona fabbricazione della EU e US e alle norme di buona fabbricazione di un paese terzo riconosciute come equivalenti nel quadro di un accordo di mutuo riconoscimento o ad ogni altra pertinente prescrizione giuridica prima della sua immissione sul mercato;
                     •	Vigila sulle condizioni generali di igiene dei locali e la rispondenza ai requisiti di legge e alle norme di Buona Fabbricazione eseguendo self-audit;
@@ -243,7 +244,6 @@
                   <h2>IBI: Politica integrata</h2>
                   <h3>La nostra storia, i nostri valori</h3>
                   <p>
-                    									
                     La IBI agisce affinché l’operatività delle diverse realtà aziendali si svolgano salvaguardando la salute delle persone, la sicurezza delle operazioni e l’ambiente.<br>
                     La Politica Salute, Sicurezza e Ambiente esprime l’impegno della IBI su questi temi.
                   </p>
@@ -350,13 +350,14 @@
                     </div>
                   </div>
                 </div>
+                <div class="col-xs-12"><a href="/archivio-news" class="archivio-news-link">Archivio news</a></div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <!-- Including footer-->
+    <!-- Including footer--><a href="#" id="back-to-top" title="Back to top"><i class="fa fa-arrow-up"></i></a>
     <footer>
       <div class="container">
         <div class="row">
@@ -366,53 +367,32 @@
                  
                 About <i>Ibi</i>
               </h4>
-              <p>
-                Istituto Biochimico Italiano<br>
-                Giovanni Lorenzini S.p.A. <br>
-                Via Fossignano, 2 <br>
+              <p><b>
+                   
+                  Istituto Biochimico Italiano<br>
+                  Giovanni Lorenzini S.p.A. <br></b>Via Fossignano, 2 <br>
                 04011 Aprilia (LT)<br>
                 Italia
                 <br><br>
                 Centralino: +39.06.92150.1<br>
-                Fax: +39.06.92150.500<br>
-                e-mail: info@ibi-lorenzini.com<br>
-                P.IVA 02578030153
+                Fax: +39.06.92150.500<br>						<a href="mailto:info@ibi-lorenzini.com">info@ibi-lorenzini.com<br></a>P.IVA 02578030153
               </p>
             </div>
           </div>
           <div class="col-sm-3">
             <div class="footer-box">
               <h4>Worldwide</h4>
-              <p>
-                Export Department<br>
-                export@ibi-lorenzini.com<br>
-                Fax: +39.06.92150.598
-                <br><br>
-                Ricezione ordini<br>
-                purchase@ibi-lorenzini.com<br>
-                Fax: +39.06.92150.401
-                <br><br>
-                Informazioni medico scientifiche<br>
-                servizioscientifico@ibi-lorenzini.com<br>
-                Fax: +39.06.92150.573
+              <p><b>Export Department<br></b><a href="mailto:export@ibi-lorenzini.com"><i class="fa fa-envelope"></i>export@ibi-lorenzini.com<br></a>Fax: +39.06.92150.598
+                <br><br><b>Ricezione ordini<br></b><a href="mailto:purchase@ibi-lorenzini.com"><i class="fa fa-envelope"></i>purchase@ibi-lorenzini.com<br>						</a>Fax: +39.06.92150.401
+                <br><br><b>Informazioni medico scientifiche<br></b><a href="mailto:servizioscientifico@ibi-lorenzini.com"><i class="fa fa-envelope"></i>servizioscientifico@ibi-lorenzini.com<br>						</a>Fax: +39.06.92150.573
               </p>
             </div>
           </div>
           <div class="col-sm-3">
             <div class="footer-box">
               <h4>Stay connected</h4>
-              <p>
-                Contract Manufacturing Services<br>
-                cms@ibi-lorenzini.com
-                <br><br>
-                Pharmaceutical Development Services<br>
-                pds@ibi-lorenzini.com
-                <br><br>
-                Dipartimento di Farmacovigilanza IBIGEN e IBI<br>
-                Tel: +39.06.92150.395<br>
-                Fax: +39.06.92150.573<br>
-                pharmacovigilance@ibi-lorenzini.com<br>
-                pharmacovigilance@ibigen.it
+              <p><b>Contract Manufacturing Services<br></b><a href="mailto:cms@ibi-lorenzini.com"><i class="fa fa-envelope"></i>cms@ibi-lorenzini.com<br>							</a><br><b>Pharmaceutical Development Services<br></b><a href="mailto:pds@ibi-lorenzini.com"><i class="fa fa-envelope"></i>pds@ibi-lorenzini.com<br>							</a><br><b>Dipartimento di Farmacovigilanza IBIGEN e IBI<br></b>Tel: +39.06.92150.395<br>
+                Fax: +39.06.92150.573<br><a href="mailto:pharmacovigilance@ibi-lorenzini.com"><i class="fa fa-envelope"></i>pharmacovigilance@ibi-lorenzini.com<br>							</a><a href="mailto:pharmacovigilance@ibigen.it"><i class="fa fa-envelope"></i>pharmacovigilance@ibigen.it						</a>
               </p>
             </div>
           </div>
@@ -433,6 +413,41 @@
         <div class="container"></div>
       </div>
     </footer>
+    <div id="area-riservata-modal" class="white-popup mfp-fade"><img src="/img/ibi-lorenzini-logo.png" alt="">
+      <h3>Area Riservata</h3>
+      <form role="form" method="POST" action="" class="form-horizontal">
+        <input type="hidden" name="_token" value="{{ csrf_token() }}">
+        <div class="form-group">
+          <label class="control-label">Email</label>
+          <div>
+            <input type="email" name="email" value="{{ old('email') }}" class="form-control fields">
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="control-label">Password</label>
+          <div>
+            <input type="password" name="password" class="form-control fields">
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="col-md-12">
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" name="remember"> Ricorda la mia password
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="col-md-12">
+            <button type="submit" class="btn btn-primary">Login</button>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="col-md-12"><a href="{{ url('/auth/register') }}">Registrati</a><br><a href="{{ url('/password/email') }}">Hai smarrito la password					</a></div>
+        </div>
+      </form>
+    </div>
   </body>
   <script src="/js/vendor.js"></script>
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAx9KUDj1tNjrnOjWivzS4GAJ9Cke8RIvM"></script>

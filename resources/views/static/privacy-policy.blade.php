@@ -21,7 +21,7 @@
           <div class="row">
             <div class="col-sm-6"><i class="fa fa-facebook-square"></i><i class="fa fa-google-plus-square"></i><i class="fa fa-twitter-square"></i><i class="fa fa-envelope"></i></div>
             <div class="col-sm-6">
-              <div class="pull-right"><a href="#" class="area-riservata">Area riservata</a>
+              <div class="pull-right"><a href="#area-riservata-modal" class="open-area-riservata-modal area-riservata">Area riservata</a>
                 <p class="lang"><a href="#">Ita |</a><a href="#"> Eng</a></p>
               </div>
             </div>
@@ -36,7 +36,7 @@
               <h1 class="logo">Ibi Lorenzini</h1></a>
           </div>
           <!-- Collect the nav links, forms, and other content for toggling-->
-          <div id="bs-example-navbar-collapse-1" class="collapse navbar-collapse">			
+          <div id="bs-example-navbar-collapse-1" class="collapse navbar-collapse">
             <ul class="nav navbar-nav navbar-right">
               <li><a href="chi-siamo">Chi siamo</a></li>
               <li class="dropdown"><a href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle">Prodotti <span class="caret"></span></a>
@@ -50,7 +50,7 @@
               <li><a href="ricerca-innovazione">Ricerca e<br> innovazione</a></li>
               <li class="dropdown"><a href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle">Contatti <span class="caret"></span></a>
                 <ul class="dropdown-menu">
-                  <li><a href="contatti">Informazioni</a></li>
+                  <li><a href="contatti">Dove siamo</a></li>
                   <li><a href="lavora-con-noi">Lavora con noi						</a></li>
                 </ul>
               </li>
@@ -91,15 +91,16 @@
               L’invio facoltativo, esplicito e volontario di posta elettronica agli indirizzi indicati su questo sito comporta la successiva acquisizione dell’indirizzo del mittente, necessario per rispondere alle richieste, nonché degli eventuali altri dati personali inseriti nella missiva.
               Sintetiche informative di sintesi verranno progressivamente riportate o visualizzate nelle pagine del sito predisposte per particolari servizi.
             </p>
-            <p><b>	Cookies<br></b>Per cookies si intende un elemento testuale che viene inserito nel disco fisso di un computer solo in seguito ad autorizzazione. I cookies hanno la funzione di snellire l’analisi del traffico su web o di segnalare quando un sito specifico viene visitato e consentono alle applicazioni web di inviare informazioni a singoli utenti.
+            <p><b>Cookies</b><br>
+              Per cookies si intende un elemento testuale che viene inserito nel disco fisso di un computer solo in seguito ad autorizzazione. I cookies hanno la funzione di snellire l’analisi del traffico su web o di segnalare quando un sito specifico viene visitato e consentono alle applicazioni web di inviare informazioni a singoli utenti.
               Nessun dato degli utenti viene in proposito acquisito dal sito.
               Non viene fatto uso di cookies per la trasmissione di informazioni di carattere personale, né vengono utilizzati c.d. cookies persistenti di alcun tipo, ovvero sistemi per il tracciamento degli utenti.
             </p>
-            <p><b>	Facoltatività del conferimento dei dati<br></b>A parte quanto specificato per i dati di navigazione, l’utente è libero di fornire i dati personali per richiedere i servizi offerti dalla società. Il loro mancato conferimento può comportare l’impossibilità di ottenere il servizio richiesto.</p>
+            <p><b>Facoltatività del conferimento dei dati<br></b>A parte quanto specificato per i dati di navigazione, l’utente è libero di fornire i dati personali per richiedere i servizi offerti dalla società. Il loro mancato conferimento può comportare l’impossibilità di ottenere il servizio richiesto.</p>
             <p><b>Modalità di trattamento dei dati<br></b>I dati personali sono trattati con strumenti manuali e automatizzati, per il tempo necessario a conseguire lo scopo per il quale sono stati raccolti.
               I dati personali oggetto di trattamento saranno custoditi in modo da ridurre al minimo, mediante l'adozione di idonee e preventive misure di sicurezza, i rischi di distruzione o perdita, anche accidentale, dei dati stessi, di accesso non autorizzato o di trattamento non consentito o non conforme alle finalità della raccolta
             </p>
-            <p><b>	Diritti degli interessati<br></b>I soggetti cui si riferiscono i dati hanno i diritti previsti dall’art. 7 del Codice privacy che riportiamo di seguito:<br>
+            <p><b>Diritti degli interessati<br></b>I soggetti cui si riferiscono i dati hanno i diritti previsti dall’art. 7 del Codice privacy che riportiamo di seguito:<br>
               1. L'interessato ha diritto di ottenere la conferma dell'esistenza o meno di dati personali che lo riguardano, anche se non ancora registrati, e la loro comunicazione in forma intelligibile.<br>
               2. L'interessato ha diritto di ottenere:<br>
               a) dell'origine dei dati personali;<br>
@@ -161,13 +162,14 @@
                     </div>
                   </div>
                 </div>
+                <div class="col-xs-12"><a href="/archivio-news" class="archivio-news-link">Archivio news</a></div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <!-- Including footer-->
+    <!-- Including footer--><a href="#" id="back-to-top" title="Back to top"><i class="fa fa-arrow-up"></i></a>
     <footer>
       <div class="container">
         <div class="row">
@@ -177,53 +179,32 @@
                  
                 About <i>Ibi</i>
               </h4>
-              <p>
-                Istituto Biochimico Italiano<br>
-                Giovanni Lorenzini S.p.A. <br>
-                Via Fossignano, 2 <br>
+              <p><b>
+                   
+                  Istituto Biochimico Italiano<br>
+                  Giovanni Lorenzini S.p.A. <br></b>Via Fossignano, 2 <br>
                 04011 Aprilia (LT)<br>
                 Italia
                 <br><br>
                 Centralino: +39.06.92150.1<br>
-                Fax: +39.06.92150.500<br>
-                e-mail: info@ibi-lorenzini.com<br>
-                P.IVA 02578030153
+                Fax: +39.06.92150.500<br>						<a href="mailto:info@ibi-lorenzini.com">info@ibi-lorenzini.com<br></a>P.IVA 02578030153
               </p>
             </div>
           </div>
           <div class="col-sm-3">
             <div class="footer-box">
               <h4>Worldwide</h4>
-              <p>
-                Export Department<br>
-                export@ibi-lorenzini.com<br>
-                Fax: +39.06.92150.598
-                <br><br>
-                Ricezione ordini<br>
-                purchase@ibi-lorenzini.com<br>
-                Fax: +39.06.92150.401
-                <br><br>
-                Informazioni medico scientifiche<br>
-                servizioscientifico@ibi-lorenzini.com<br>
-                Fax: +39.06.92150.573
+              <p><b>Export Department<br></b><a href="mailto:export@ibi-lorenzini.com"><i class="fa fa-envelope"></i>export@ibi-lorenzini.com<br></a>Fax: +39.06.92150.598
+                <br><br><b>Ricezione ordini<br></b><a href="mailto:purchase@ibi-lorenzini.com"><i class="fa fa-envelope"></i>purchase@ibi-lorenzini.com<br>						</a>Fax: +39.06.92150.401
+                <br><br><b>Informazioni medico scientifiche<br></b><a href="mailto:servizioscientifico@ibi-lorenzini.com"><i class="fa fa-envelope"></i>servizioscientifico@ibi-lorenzini.com<br>						</a>Fax: +39.06.92150.573
               </p>
             </div>
           </div>
           <div class="col-sm-3">
             <div class="footer-box">
               <h4>Stay connected</h4>
-              <p>
-                Contract Manufacturing Services<br>
-                cms@ibi-lorenzini.com
-                <br><br>
-                Pharmaceutical Development Services<br>
-                pds@ibi-lorenzini.com
-                <br><br>
-                Dipartimento di Farmacovigilanza IBIGEN e IBI<br>
-                Tel: +39.06.92150.395<br>
-                Fax: +39.06.92150.573<br>
-                pharmacovigilance@ibi-lorenzini.com<br>
-                pharmacovigilance@ibigen.it
+              <p><b>Contract Manufacturing Services<br></b><a href="mailto:cms@ibi-lorenzini.com"><i class="fa fa-envelope"></i>cms@ibi-lorenzini.com<br>							</a><br><b>Pharmaceutical Development Services<br></b><a href="mailto:pds@ibi-lorenzini.com"><i class="fa fa-envelope"></i>pds@ibi-lorenzini.com<br>							</a><br><b>Dipartimento di Farmacovigilanza IBIGEN e IBI<br></b>Tel: +39.06.92150.395<br>
+                Fax: +39.06.92150.573<br><a href="mailto:pharmacovigilance@ibi-lorenzini.com"><i class="fa fa-envelope"></i>pharmacovigilance@ibi-lorenzini.com<br>							</a><a href="mailto:pharmacovigilance@ibigen.it"><i class="fa fa-envelope"></i>pharmacovigilance@ibigen.it						</a>
               </p>
             </div>
           </div>
@@ -244,6 +225,41 @@
         <div class="container"></div>
       </div>
     </footer>
+    <div id="area-riservata-modal" class="white-popup mfp-fade"><img src="/img/ibi-lorenzini-logo.png" alt="">
+      <h3>Area Riservata</h3>
+      <form role="form" method="POST" action="" class="form-horizontal">
+        <input type="hidden" name="_token" value="{{ csrf_token() }}">
+        <div class="form-group">
+          <label class="control-label">Email</label>
+          <div>
+            <input type="email" name="email" value="{{ old('email') }}" class="form-control fields">
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="control-label">Password</label>
+          <div>
+            <input type="password" name="password" class="form-control fields">
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="col-md-12">
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" name="remember"> Ricorda la mia password
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="col-md-12">
+            <button type="submit" class="btn btn-primary">Login</button>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="col-md-12"><a href="{{ url('/auth/register') }}">Registrati</a><br><a href="{{ url('/password/email') }}">Hai smarrito la password					</a></div>
+        </div>
+      </form>
+    </div>
   </body>
   <script src="/js/vendor.js"></script>
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAx9KUDj1tNjrnOjWivzS4GAJ9Cke8RIvM"></script>

@@ -1,3 +1,5 @@
+a(href="#" id="back-to-top" title="Back to top")
+	i.fa.fa-arrow-up
 footer
 	.container
 		.row
@@ -7,46 +9,61 @@ footer
 						|About 
 						i Ibi
 					p
-						|Istituto Biochimico Italiano<br>
-						|Giovanni Lorenzini S.p.A. <br>
+						b 
+							|Istituto Biochimico Italiano<br>
+							|Giovanni Lorenzini S.p.A. <br>
 						|Via Fossignano, 2 <br>
 						|04011 Aprilia (LT)<br>
 						|Italia
 						<br><br>
 						|Centralino: +39.06.92150.1<br>
-						|Fax: +39.06.92150.500<br>
-						|e-mail: info@ibi-lorenzini.com<br>
+						|Fax: +39.06.92150.500<br>						
+						a(href="mailto:info@ibi-lorenzini.com") info@ibi-lorenzini.com<br>
 						|P.IVA 02578030153
 			.col-sm-3
 				.footer-box
 					h4 Worldwide
 					p
-						|Export Department<br>
-						|export@ibi-lorenzini.com<br>
+						b Export Department<br>
+						a(href="mailto:export@ibi-lorenzini.com")
+							i.fa.fa-envelope
+							|export@ibi-lorenzini.com<br>
 						|Fax: +39.06.92150.598
 						<br><br>
-						|Ricezione ordini<br>
-						|purchase@ibi-lorenzini.com<br>
+						b Ricezione ordini<br>
+						a(href="mailto:purchase@ibi-lorenzini.com")
+							i.fa.fa-envelope
+							|purchase@ibi-lorenzini.com<br>						
 						|Fax: +39.06.92150.401
 						<br><br>
-						|Informazioni medico scientifiche<br>
-						|servizioscientifico@ibi-lorenzini.com<br>
+						b Informazioni medico scientifiche<br>
+						a(href="mailto:servizioscientifico@ibi-lorenzini.com")
+							i.fa.fa-envelope
+							|servizioscientifico@ibi-lorenzini.com<br>						
 						|Fax: +39.06.92150.573
 			.col-sm-3
 				.footer-box
 					h4 Stay connected
 					p
-						|Contract Manufacturing Services<br>
-						|cms@ibi-lorenzini.com
-						<br><br>
-						|Pharmaceutical Development Services<br>
-						|pds@ibi-lorenzini.com
-						<br><br>
-						|Dipartimento di Farmacovigilanza IBIGEN e IBI<br>
+						b Contract Manufacturing Services<br>
+						a(href="mailto:cms@ibi-lorenzini.com")
+							i.fa.fa-envelope
+							|cms@ibi-lorenzini.com<br>							
+						<br>
+						b Pharmaceutical Development Services<br>
+						a(href="mailto:pds@ibi-lorenzini.com")
+							i.fa.fa-envelope
+							|pds@ibi-lorenzini.com<br>							
+						<br>
+						b Dipartimento di Farmacovigilanza IBIGEN e IBI<br>
 						|Tel: +39.06.92150.395<br>
 						|Fax: +39.06.92150.573<br>
-						|pharmacovigilance@ibi-lorenzini.com<br>
-						|pharmacovigilance@ibigen.it
+						a(href="mailto:pharmacovigilance@ibi-lorenzini.com")
+							i.fa.fa-envelope
+							|pharmacovigilance@ibi-lorenzini.com<br>							
+						a(href="mailto:pharmacovigilance@ibigen.it")
+							i.fa.fa-envelope
+							|pharmacovigilance@ibigen.it						
 			.col-sm-3
 				.footer-box
 					h4 Info
@@ -61,7 +78,35 @@ footer
 							a(href="#") Area Riservata
 	.copyright
 		.container
-						
+
+			
+#area-riservata-modal.white-popup.mfp-fade
+	img(src="/img/ibi-lorenzini-logo.png", alt="")
+	h3 Area Riservata
+	form.form-horizontal(role='form', method='POST', action='')
+		input(type='hidden', name='_token', value='{{ csrf_token() }}')
+		.form-group
+			label.control-label Email
+			div
+				input.form-control.fields(type='email', name='email', value="{{ old('email') }}")
+		.form-group
+			label.control-label Password
+			div
+				input.form-control.fields(type='password', name='password')
+		.form-group
+			.col-md-12
+				.checkbox
+					label
+						input(type='checkbox', name='remember')
+						|  Ricorda la mia password
+		.form-group
+			.col-md-12
+				button.btn.btn-primary(type='submit') Login
+		.form-group
+			.col-md-12
+				a(href="{{ url('/auth/register') }}") Registrati
+				br
+				a(href="{{ url('/password/email') }}") Hai smarrito la password					
 
 					
 

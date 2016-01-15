@@ -2,6 +2,10 @@
 
 @section('auth_content')
 
+<div class="admin-logo">
+    <img src="/img/ibi-lorenzini-logo.png" alt="">
+</div>
+
 <!-- Login -->
 <div class="lc-block toggled" id="l-login">
 <form  method="POST" action="/auth/login">
@@ -15,14 +19,14 @@
      <div class="input-group m-b-20">
         <span class="input-group-addon"><i class="zmdi zmdi-email"></i></span>
         <div class="fg-line">
-            <input type="text"  name="email"  value="{{ old('email') }}"  class="form-control" placeholder="Email">
+            <input style="padding: 5px;"  type="text"  name="email"  value="{{ old('email') }}"  class="form-control" placeholder="Email">
         </div>
     </div>
     
     <div class="input-group m-b-20">
         <span class="input-group-addon"><i class="zmdi zmdi-male"></i></span>
         <div class="fg-line">
-            <input type="password"  name="password"  class="form-control" placeholder="Password">
+            <input style="padding: 5px;" type="password"  name="password"  class="form-control" placeholder="Password">
         </div>
     </div>
     

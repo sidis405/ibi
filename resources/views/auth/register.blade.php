@@ -3,26 +3,23 @@
 <script src='https://www.google.com/recaptcha/api.js'></script>
 @stop
 @section('content')
-<div class="main-header header-registrazione">
+<div class="main-header registrazione-area-riservata">
     <div class="container">
         <div class="main-caption">
             <h1>Registrazione</h1>
         </div>
     </div>
 </div>
-<section class="content">
+<section class="content registrazione-area-riservata-content">
     <div class="container">
         <div class="row">
-            <div class="col-sm-12">
+
+            <div class="col-xs-12">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit, eaque quas repudiandae incidunt ratione corrupti dolorem sapiente unde ad nesciunt tempora, quod ullam. Fugiat praesentium repellat, quo, doloremque laborum nesciunt!</p>
+            </div>
+
+            <div class="col-md-12">
                 
-                <div class="col-sm-12">
-                    <div class="col-md-6 col-md-offset-4">
-                        
-                        <h3>Registrazione</h3>
-                    </div>
-                </div>
-                
-                <div class="col-sm-8 col-sm-offset-2">
                     @if (count($errors) > 0)
                     <div class="alert alert-danger">
                         Ci sono stati dei problemi durante la sua registrazione<br><br>
@@ -37,36 +34,48 @@
 
                     <form class="form-horizontal" action="/auth/register" method="POST">
                         {!!csrf_field()!!}
-                        @include('auth.partials.01_ruolo')
-                        @include('auth.partials.02_area_per_farmacisti')
-                        @include('auth.partials.03_informazioni')
-                        @include('auth.partials.04_informativa')
-                        @include('auth.partials.05_dati_personali')
-                        @include('auth.partials.06_luogo_di_esercizio')
-                        @include('auth.partials.07_profilo_utente')
-                        @include('auth.partials.08_privacy')
-                        @include('auth.partials.09_residenza')
-
+                        <div class="row">
+                            @include('auth.partials.01_ruolo')
+                            @include('auth.partials.02_area_per_farmacisti')
+                        </div>
+                        <div class="row">
+                            @include('auth.partials.03_informazioni')                            
+                            @include('auth.partials.05_dati_personali')
+                        </div>
+                        <div class="row">
+                            @include('auth.partials.06_luogo_di_esercizio')
+                            @include('auth.partials.07_profilo_utente')
+                        </div>
+                        <div class="row">                            
+                            @include('auth.partials.09_residenza')
+                        </div>
                         
-                        <fieldset>
-                            <legend>Verifica</legend>
-                            <div class="form-group">
-                                <div class="col-md-4 col-md-offset-3">
-                                    {!! app('captcha')->display(); !!}
-                                </div>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <fieldset>
+                                    <legend>Verifica</legend>
+                                    <div class="form-group">
+                                        <div>
+                                            {!! app('captcha')->display(); !!}
+                                        </div>
+                                    </div>                                
+                                </fieldset>
                             </div>
-
-                            <div class="form-group">
-                                <div class="col-md-12">
-                                    <button type="submit" class="btn btn-primary btn-block">Invia</button>
-                                </div>
+                        </div>
+                        <div class="col-xs-12">
+                          <p class="policy-reminder">Cliccando su "invia" dichiari di aver letto e accettato la nostra <a target="_blank" href="/privacy-policy">Privacy policy</a></p>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-12">
+                             <button type="submit" class="btn btn-primary btn-block">Invia</button>
                             </div>
-                        </fieldset>
+                         </div>
                     </form>
+                   
                 </div>
             </div>
             
         </div>
-    </div>
+    
 </section>
 @stop

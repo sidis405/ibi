@@ -16,6 +16,22 @@ $(document).ready(function() {
 
 /*
 -------------------------------------
+MAGNIFIC-POPUP
+-------------------------------------
+*/
+
+$('#area-riservata-modal').addClass('mfp-hide');
+$(document).ready(function() {
+  $('.open-area-riservata-modal').magnificPopup({
+    type:'inline',
+    midClick: true, // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
+    mainClass: 'mfp-fade'
+  });
+});
+
+
+/*
+-------------------------------------
 ACCORDION ANIMATION
 -------------------------------------
 */
@@ -60,6 +76,34 @@ MIXITUP
 //   $('#prodotti-container').mixItUp();
 
 // });
+
+/*
+-------------------------
+BACK TO TOP
+-------------------------
+*/
+
+if ($('#back-to-top').length) {
+    var scrollTrigger = 200, // px
+        backToTop = function () {
+            var scrollTop = $(window).scrollTop();
+            if (scrollTop > scrollTrigger) {
+                $('#back-to-top').addClass('show');
+            } else {
+                $('#back-to-top').removeClass('show');
+            }
+        };
+    backToTop();
+    $(window).on('scroll', function () {
+        backToTop();
+    });
+    $('#back-to-top').on('click', function (e) {
+        e.preventDefault();
+        $('html,body').animate({
+            scrollTop: 0
+        }, 700);
+    });
+}
 
 
 /*

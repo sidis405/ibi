@@ -21,7 +21,7 @@
           <div class="row">
             <div class="col-sm-6"><i class="fa fa-facebook-square"></i><i class="fa fa-google-plus-square"></i><i class="fa fa-twitter-square"></i><i class="fa fa-envelope"></i></div>
             <div class="col-sm-6">
-              <div class="pull-right"><a href="#" class="area-riservata">Area riservata</a>
+              <div class="pull-right"><a href="#area-riservata-modal" class="open-area-riservata-modal area-riservata">Area riservata</a>
                 <p class="lang"><a href="#">Ita |</a><a href="#"> Eng</a></p>
               </div>
             </div>
@@ -36,7 +36,7 @@
               <h1 class="logo">Ibi Lorenzini</h1></a>
           </div>
           <!-- Collect the nav links, forms, and other content for toggling-->
-          <div id="bs-example-navbar-collapse-1" class="collapse navbar-collapse">			
+          <div id="bs-example-navbar-collapse-1" class="collapse navbar-collapse">
             <ul class="nav navbar-nav navbar-right">
               <li><a href="chi-siamo">Chi siamo</a></li>
               <li class="dropdown"><a href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle">Prodotti <span class="caret"></span></a>
@@ -50,7 +50,7 @@
               <li><a href="ricerca-innovazione">Ricerca e<br> innovazione</a></li>
               <li class="dropdown"><a href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle">Contatti <span class="caret"></span></a>
                 <ul class="dropdown-menu">
-                  <li><a href="contatti">Informazioni</a></li>
+                  <li><a href="contatti">Dove siamo</a></li>
                   <li><a href="lavora-con-noi">Lavora con noi						</a></li>
                 </ul>
               </li>
@@ -87,11 +87,8 @@
             <p>
               A partire dal 21 luglio 2012, gli operatori sanitari e/o i cittadini possono  effettuare  segnalazione spontanea di sospetta reazione avversa direttamente ad AIFA, mediante la compilazione della scheda cartacea o della scheda elettronica.
               <br><br>
-              Le modalità di segnalazione sono descritte nel sito internet AIFA (Agenzia Italiana del Farmaco), al seguente link:
-              http://www.agenziafarmaco.gov.it/it/content/modalit%C3%A0-di-segnalazione-delle-sospette-reazioni-avverse-ai-medicinali
-              <br><br>
-              In caso di reazioni avverse a prodotti a base di piante officinali e integratori alimentari,  è possibile effettuare una segnalazione di sospetta reazione avversa al seguente link: 
-              http://www.epicentro.iss.it/focus/erbe/fitosorveglianza.asp
+              Le modalità di segnalazione sono descritte nel sito internet AIFA (Agenzia Italiana del Farmaco), al seguente <a target="_blank" href="http://www.agenziafarmaco.gov.it/it/content/modalit%C3%A0-di-segnalazione-delle-sospette-reazioni-avverse-ai-medicinali">link						</a><br><br>
+              In caso di reazioni avverse a prodotti a base di piante officinali e integratori alimentari, è possibile effettuare una segnalazione di sospetta reazione avversa al seguente <a target="_blank" href="http://www.epicentro.iss.it/focus/erbe/fitosorveglianza.asp">link						</a>
             </p>
             <h4>Quando segnalare?</h4>
             <p>
@@ -99,6 +96,7 @@
               <br><br>
               Il Servizio di Farmacovigilanza per i prodotti medicinali distribuiti dalla società Ibisqus (concessionario di vendita), viene svolto dai rispettivi Titolari delle AIC (Autorizzazione all’Immissione in Commercio).
             </p>
+            <p>Per eventuali segnalazioni di effetti indesiderati riscontrati nel paziente in seguito ad impiego dei prodotti IBI o IBIGEN o per richiedere informazioni relative alla sicurezza dei farmaci di cui IBI o IBIGEN è titolare di AIC, è possibile contattare l’Azienda compilando il seguente form:</p><a href="/segnalazione-farmaco-vigilanza" class="btn btn-primary">Invia segnalazione</a>
           </div>
           <div class="col-md-4">
             <div class="sidebar farmacovigilanza-sidebar">
@@ -118,29 +116,12 @@
                   </div>
                 </div>
               </div>
-              <div class="row schede-segnalazione">
-                <div class="col-xs-12">
-                  <h3> Schede di segnalazione</h3>
-                </div>
-                <div class="col-xs-12 schede">
-                  <ul>
-                    <li>
-                      Schede per la segnalazione 
-                      di sospetta reazione avversa:
-                    </li>
-                    <li>Modulo segnalazione operatore sanitario e paziente  (ITALIANO)</li>
-                    <li>Modulo segnalazione operatore sanitario e paziente  (TEDESCO)</li>
-                    <li>Modulo segnalazione operatore sanitario e paziente  (CECO)</li>
-                    <li>Modulo segnalazione operatore sanitario e paziente  (AUSTRIACO)							</li>
-                  </ul>
-                </div>
-              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <!-- Including footer-->
+    <!-- Including footer--><a href="#" id="back-to-top" title="Back to top"><i class="fa fa-arrow-up"></i></a>
     <footer>
       <div class="container">
         <div class="row">
@@ -150,53 +131,32 @@
                  
                 About <i>Ibi</i>
               </h4>
-              <p>
-                Istituto Biochimico Italiano<br>
-                Giovanni Lorenzini S.p.A. <br>
-                Via Fossignano, 2 <br>
+              <p><b>
+                   
+                  Istituto Biochimico Italiano<br>
+                  Giovanni Lorenzini S.p.A. <br></b>Via Fossignano, 2 <br>
                 04011 Aprilia (LT)<br>
                 Italia
                 <br><br>
                 Centralino: +39.06.92150.1<br>
-                Fax: +39.06.92150.500<br>
-                e-mail: info@ibi-lorenzini.com<br>
-                P.IVA 02578030153
+                Fax: +39.06.92150.500<br>						<a href="mailto:info@ibi-lorenzini.com">info@ibi-lorenzini.com<br></a>P.IVA 02578030153
               </p>
             </div>
           </div>
           <div class="col-sm-3">
             <div class="footer-box">
               <h4>Worldwide</h4>
-              <p>
-                Export Department<br>
-                export@ibi-lorenzini.com<br>
-                Fax: +39.06.92150.598
-                <br><br>
-                Ricezione ordini<br>
-                purchase@ibi-lorenzini.com<br>
-                Fax: +39.06.92150.401
-                <br><br>
-                Informazioni medico scientifiche<br>
-                servizioscientifico@ibi-lorenzini.com<br>
-                Fax: +39.06.92150.573
+              <p><b>Export Department<br></b><a href="mailto:export@ibi-lorenzini.com"><i class="fa fa-envelope"></i>export@ibi-lorenzini.com<br></a>Fax: +39.06.92150.598
+                <br><br><b>Ricezione ordini<br></b><a href="mailto:purchase@ibi-lorenzini.com"><i class="fa fa-envelope"></i>purchase@ibi-lorenzini.com<br>						</a>Fax: +39.06.92150.401
+                <br><br><b>Informazioni medico scientifiche<br></b><a href="mailto:servizioscientifico@ibi-lorenzini.com"><i class="fa fa-envelope"></i>servizioscientifico@ibi-lorenzini.com<br>						</a>Fax: +39.06.92150.573
               </p>
             </div>
           </div>
           <div class="col-sm-3">
             <div class="footer-box">
               <h4>Stay connected</h4>
-              <p>
-                Contract Manufacturing Services<br>
-                cms@ibi-lorenzini.com
-                <br><br>
-                Pharmaceutical Development Services<br>
-                pds@ibi-lorenzini.com
-                <br><br>
-                Dipartimento di Farmacovigilanza IBIGEN e IBI<br>
-                Tel: +39.06.92150.395<br>
-                Fax: +39.06.92150.573<br>
-                pharmacovigilance@ibi-lorenzini.com<br>
-                pharmacovigilance@ibigen.it
+              <p><b>Contract Manufacturing Services<br></b><a href="mailto:cms@ibi-lorenzini.com"><i class="fa fa-envelope"></i>cms@ibi-lorenzini.com<br>							</a><br><b>Pharmaceutical Development Services<br></b><a href="mailto:pds@ibi-lorenzini.com"><i class="fa fa-envelope"></i>pds@ibi-lorenzini.com<br>							</a><br><b>Dipartimento di Farmacovigilanza IBIGEN e IBI<br></b>Tel: +39.06.92150.395<br>
+                Fax: +39.06.92150.573<br><a href="mailto:pharmacovigilance@ibi-lorenzini.com"><i class="fa fa-envelope"></i>pharmacovigilance@ibi-lorenzini.com<br>							</a><a href="mailto:pharmacovigilance@ibigen.it"><i class="fa fa-envelope"></i>pharmacovigilance@ibigen.it						</a>
               </p>
             </div>
           </div>
@@ -217,6 +177,41 @@
         <div class="container"></div>
       </div>
     </footer>
+    <div id="area-riservata-modal" class="white-popup mfp-fade"><img src="/img/ibi-lorenzini-logo.png" alt="">
+      <h3>Area Riservata</h3>
+      <form role="form" method="POST" action="" class="form-horizontal">
+        <input type="hidden" name="_token" value="{{ csrf_token() }}">
+        <div class="form-group">
+          <label class="control-label">Email</label>
+          <div>
+            <input type="email" name="email" value="{{ old('email') }}" class="form-control fields">
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="control-label">Password</label>
+          <div>
+            <input type="password" name="password" class="form-control fields">
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="col-md-12">
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" name="remember"> Ricorda la mia password
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="col-md-12">
+            <button type="submit" class="btn btn-primary">Login</button>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="col-md-12"><a href="{{ url('/auth/register') }}">Registrati</a><br><a href="{{ url('/password/email') }}">Hai smarrito la password					</a></div>
+        </div>
+      </form>
+    </div>
   </body>
   <script src="/js/vendor.js"></script>
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAx9KUDj1tNjrnOjWivzS4GAJ9Cke8RIvM"></script>

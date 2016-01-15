@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Ibi Lorenzini | Farmaco Vigilanza</title>
+    <title>Ibi Lorenzini | Chi Siamo</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Ibi Lorenzini">
+    <meta name="description" content="L’Istituto Biochimico italiano, Ibi, fondato nel 1918 dal Prof. Giovanni Lorenzini, vanta una lunga tradizione scientifica che, unita alle nuove tecnologie applicate e ad un’attenta cura nella produzione, fanno della Ibi sinonimo di affidabilità e garanzia di alta qualità.">
     <!-- Google Fonts    --><link href='https://fonts.googleapis.com/css?family=Lato:400,700,700italic,300,300italic,400italic' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="/css/vendor.css">
     <link rel="stylesheet" href="/css/main.css">
@@ -62,83 +62,67 @@
       </nav>
     </header>
     <!-- Page content -->
-    <div class="main-header reparti">
+    <div class="main-header archivio-news-header">
       <div class="container">
         <div class="main-caption">
-          <h1>Reparti</h1>
+          <h1>Archivio news</h1>
         </div>
       </div>
     </div>
-    <section class="content reparti-content">
+    <section class="content archivio-news-content">
       <div class="container">
         <div class="row">
-          <div class="col-sm-8">
-            <h2>Reparti</h2>
-            <h3>Sottotitolo reparti</h3>
-            <h4>Reparto Sintesi Sterile β-lattamico (API)</h4><img src="/img/sintesi-lattamico.jpg" alt="" style="margin-bottom: 20px;" class="img-responsive">
-            <ul style="margin-bottom: 35px;">
-              <li>Oltre 60 anni di Know-how nei processi di fermentazione e di sintesi di β-lattami</li>
-              <li>Processi di Cristallizzazione brevettati</li>
-              <li>Impianti e macchinari dedicati e segregate per Penicilline</li>
-              <li>Personale altamente specializzato nella produzione in sterile e nei processi di Sintesi</li>
-              <li>Alto livello di automazione						</li>
-              <li>Capacità produttiva annua:
-                <ul>
-                  <li>150.000 Kg/Anno per Bulk e Miscele</li>
-                  <li>1.500.000 Litri/Anno per recupero solventi tramite impianto di distillazione a servizio del reparto</li>
-                </ul>
-              </li>
-            </ul>
-            <h4>
-               
-              Ripartizione in asepsi di polveri sterili e liofilizzati β-lattamici
-            </h4><img src="/img/ripartizione-asepsi.jpg" alt="" style="margin-bottom: 20px;" class="img-responsive">
-            <ul style="margin-bottom: 35px;">
-              <li>Dedicato alle produzioni di polveri sterili β-lattamici (Penicilline)</li>
-              <li>Personale altamente specializzato nella produzione in sterile</li>
-              <li>Macchine altamente automatizzate </li>
-              <li>Reparto dotato di macchine di sperlatura completamente elettronico											</li>
-              <li>Capacità produttiva annua:
-                <ul>
-                  <li>45 Milioni di Flaconcini/anno</li>
-                  <li>8.100 Kg Liofilizzato/Anno</li>
-                </ul>
-              </li>
-            </ul>
-            <h4>Ripartizione di Liquidi Sterili, Orali e Semisolidi non β-lattamici</h4><img src="/img/ripartizione-sterili.jpg" alt="" style="margin-bottom: 20px;" class="img-responsive">
-            <ul style="margin-bottom: 35px;">
-              <li>Produzione di Forme farmaceutiche solide:
-                <ul>
-                  <li>Granulati</li>
-                  <li>Compresse rivestite e a rilascio controllato</li>
-                </ul>
-              </li>
-              <li>Produzione di Forme farmaceutiche semi-solide:
-                <ul>
-                  <li>Gel</li>
-                  <li>Pomate</li>
-                </ul>
-              </li>
-              <li>Produzione di Forme farmaceutiche liquide:
-                <ul>
-                  <li>Gocce								</li>
-                </ul>
-              </li>
-              <li>Produzione di soluzioni sterili iniettabili e/o polveri liofilizzate:
-                <ul>
-                  <li>Flaconcini</li>
-                  <li>Fiale Siringhe</li>
-                </ul>
-              </li>
-              <li>Impianti Multi Scopo e flessibili</li>
-              <li>Personale dedicato e qualificato</li>
-              <li>Capacità annua:
-                <ul>
-                  <li>29 Milioni di Confezioni/Anno</li>
-                  <li>20 Milioni di Flaconcini e/o Fiale Siringa/Anno</li>
-                </ul>
-              </li>
-            </ul>
+          <div class="col-md-8">
+            <h2>Archivio news</h2>
+            <div class="archivio-news media">
+              <div class="media-left"><a href="#"><img src="http://placehold.it/150x150" alt="..." class="media-object"></a></div>
+              <div class="media-body">
+                <h4 class="media-heading">Titolo news</h4><span class="date">12/07/2015</span>
+                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed, adipisci consequatur vero accusantium facilis numquam dolorem, consequuntur repellendus laboriosam corporis nemo velit doloremque animi quisquam, consectetur nisi voluptatem totam ab?							</p><a href="">Leggi tutto</a>
+              </div>
+            </div>
+            <div class="archivio-news media">
+              <div class="media-left"><a href="#"><img src="http://placehold.it/150x150" alt="..." class="media-object"></a></div>
+              <div class="media-body">
+                <h4 class="media-heading">Titolo news</h4><span class="date">12/07/2015</span>
+                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed, adipisci consequatur vero accusantium facilis numquam dolorem, consequuntur repellendus laboriosam corporis nemo velit doloremque animi quisquam, consectetur nisi voluptatem totam ab?</p><a href="">Leggi tutto</a>
+              </div>
+            </div>
+            <div class="archivio-news media">
+              <div class="media-left"><a href="#"><img src="http://placehold.it/150x150" alt="..." class="media-object"></a></div>
+              <div class="media-body">
+                <h4 class="media-heading">Titolo news</h4><span class="date">12/07/2015</span>
+                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed, adipisci consequatur vero accusantium facilis numquam dolorem, consequuntur repellendus laboriosam corporis nemo velit doloremque animi quisquam, consectetur nisi voluptatem totam ab?</p><a href="">Leggi tutto</a>
+              </div>
+            </div>
+            <div class="archivio-news media">
+              <div class="media-left"><a href="#"><img src="http://placehold.it/150x150" alt="..." class="media-object"></a></div>
+              <div class="media-body">
+                <h4 class="media-heading">Titolo news</h4><span class="date">12/07/2015</span>
+                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed, adipisci consequatur vero accusantium facilis numquam dolorem, consequuntur repellendus laboriosam corporis nemo velit doloremque animi quisquam, consectetur nisi voluptatem totam ab?</p><a href="">Leggi tutto</a>
+              </div>
+            </div>
+            <div class="archivio-news media">
+              <div class="media-left"><a href="#"><img src="http://placehold.it/150x150" alt="..." class="media-object"></a></div>
+              <div class="media-body">
+                <h4 class="media-heading">Titolo news</h4><span class="date">12/07/2015</span>
+                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed, adipisci consequatur vero accusantium facilis numquam dolorem, consequuntur repellendus laboriosam corporis nemo velit doloremque animi quisquam, consectetur nisi voluptatem totam ab?</p><a href="">Leggi tutto</a>
+              </div>
+            </div>
+            <div class="archivio-news media">
+              <div class="media-left"><a href="#"><img src="http://placehold.it/150x150" alt="..." class="media-object"></a></div>
+              <div class="media-body">
+                <h4 class="media-heading">Titolo news</h4><span class="date">12/07/2015</span>
+                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed, adipisci consequatur vero accusantium facilis numquam dolorem, consequuntur repellendus laboriosam corporis nemo velit doloremque animi quisquam, consectetur nisi voluptatem totam ab?</p><a href="">Leggi tutto</a>
+              </div>
+            </div>
+            <div class="archivio-news media">
+              <div class="media-left"><a href="#"><img src="http://placehold.it/150x150" alt="..." class="media-object"></a></div>
+              <div class="media-body">
+                <h4 class="media-heading">Titolo news</h4><span class="date">12/07/2015</span>
+                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed, adipisci consequatur vero accusantium facilis numquam dolorem, consequuntur repellendus laboriosam corporis nemo velit doloremque animi quisquam, consectetur nisi voluptatem totam ab?</p><a href="">Leggi tutto</a>
+              </div>
+            </div>
           </div>
           <div class="col-md-4">
             <div class="sidebar">
