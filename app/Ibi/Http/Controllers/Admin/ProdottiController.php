@@ -141,6 +141,14 @@ class ProdottiController extends AdminController
             $data['scheda_tecnica'] = false;
         }
 
+        if($request->has('unita'))
+        {
+            $data['unita'] = $request->input('unita');
+        }else{
+            $data['unita'] = null;
+        }
+
+
         return $data;
     }
 

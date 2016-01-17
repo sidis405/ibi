@@ -7,6 +7,7 @@ use App\Http\Requests;
 use Ibi\Utils\FileUtility;
 use Illuminate\Http\Request;
 use Response;
+use Storage;
 
 class AllegatiController extends AdminController
 {
@@ -30,6 +31,19 @@ class AllegatiController extends AdminController
             'Content-Type' => $file['mimetype'],
             'Content-Disposition' => 'inline; '.$path,
         ]);
+    }
+
+    public function showExt($type, $filename, FileUtility $file_utility)
+    {
+        $path = $type . '/' . rawurldecode($filename);
+
+        $file = $file_utility->getFile($path);
+
+        // return $file['mimetype'];
+
+        if( ! $file) abort(406);
+
+        return response()->download(storage_path() . "/uploads/" . $path, $filename);
     }
 
 }

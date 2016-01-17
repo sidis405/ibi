@@ -91,22 +91,34 @@ class HomeController extends Controller
     public function prodotti_italia(ListiniRepo $listini_repo, SezioniRepo $sezioni_repo, CategorieTerapeuticheRepo $categorie_repo, PrincipiAttiviRepo $principi_repo)
     {
         $listini = $listini_repo->getAllFront();
-        $prodotti = $sezioni_repo->getBySlug('ibi-italia')->prodotti;
+        $prodotti_raw = $sezioni_repo->getBySlug('ibi-italia')->prodotti;
 
-        $categorie = collect(array_pluck($prodotti, 'categoria_terapeutica'))->unique();
+        $prodotti = [];
+
+        foreach ($prodotti_raw as $prodotto) {
+            $prodotti[strtoupper($prodotto['nome'])][] = $prodotto;
+        }
+
+        // return $prodotti;
+
+        $categorie = collect(array_pluck(array_collapse($prodotti), 'categoria_terapeutica'))->unique();
         // $categorie = $categorie_repo->getAllFront();
         // $principi = collect(array_pluck($categorie, 'principi_attivi')[0])->unique();
-        $principi = $principi_repo->getAllFront();
+        // $principi = $principi_repo->getAllFront();
 
-        // return collect(array_collapse(array_pluck($categorie, 'principi_attivi')))->unique();
+        $principi_validi = array_pluck(collect(array_pluck(array_collapse($prodotti), 'principio_attivo'))->unique(), 'slug');
 
-        $principi = collect(array_values(array_sort(array_collapse(array_pluck($categorie, 'principi_attivi')), function ($value) {
+        $principi = collect(array_sort(array_pluck(array_collapse($prodotti), 'principio_attivo'), function ($value) {
             return $value['nome'];
-        })))->unique();
+        }))->unique();
 
-        // return $principi;
+        // $principi = collect(array_values(array_sort(array_collapse(array_pluck($categorie, 'principi_attivi')), function ($value) {
+        //     return $value['nome'];
+        // })))->unique();
 
-        return view('pages.prodotti-italia', compact('listini', 'prodotti', 'categorie', 'principi'));
+        // return $principi_validi;
+
+        return view('pages.prodotti-italia', compact('listini', 'prodotti', 'categorie', 'principi', 'principi_validi'));
     }
 
     public function ibi_export(PagineRepo $pagine_repo)

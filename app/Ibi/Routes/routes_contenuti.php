@@ -31,3 +31,19 @@
         'as'    => 'admin_delete_contenuti',
         'uses'  => '\Ibi\Http\Controllers\Admin\ContenutiController@destroy'
         ]);
+
+
+    #   singolo-contenuto ROUTES
+
+
+
+    Route::get('singolo-contenuto/{id}/modifica', [
+        'as'    => 'admin_edit_singolo-contenuto',
+        'uses'  => '\Ibi\Http\Controllers\Admin\ContenutiController@edit_single'
+        ]);
+
+    Route::put('singolo-contenuto/{id}', [
+        'as'    => 'admin_store_singolo-contenuto',
+        'uses'  => '\Ibi\Http\Controllers\Admin\ContenutiController@update_single'
+        ]);
+

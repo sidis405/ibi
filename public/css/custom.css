@@ -38,3 +38,8 @@
     color: #fff;
     cursor: pointer;
 }
+
+.slide a:hover {
+    text-decoration: none;
+}
+

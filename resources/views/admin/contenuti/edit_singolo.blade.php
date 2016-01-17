@@ -15,11 +15,7 @@
             <h2>Contenuti</h2>
             
             <ul class="actions">
-                <li>
-                    <a href="/admin/contenuti">
-                        <i class="zmdi zmdi-format-list-bulleted"></i>
-                    </a>
-                </li>
+                
                 <li class="dropdown">
                     <a href="" data-toggle="dropdown">
                         <i class="zmdi zmdi-more-vert"></i>
@@ -29,41 +25,23 @@
                         <li>
                             <a href="" class="refresh-page">Aggiorna pagina</a>
                         </li>
-                        <li>
-                            <a href="/admin/pagine" >Vai a Pagine</a>
-                        </li>
                     </ul>
                 </li>
             </ul>
         </div>
-        <form role="form" method="POST" action="/admin/contenuti/{{$contenuto->id}}" enctype="multipart/form-data">
+        <form role="form" method="POST" action="/admin/singolo-contenuto/{{$contenuto->id}}" enctype="multipart/form-data">
             <input type="hidden" name="contenuto_id" value="{{$contenuto->id}}">
             <input type="hidden" name="_method" value="PUT">
+            <input type="hidden" value="{{$contenuto->descrizione}}" name="descrizione">
+            <input type="hidden" value="{{$contenuto->slug}}" name="slug">
+            <input type="hidden" value="{{$contenuto->pagina_id}}" name="pagina_id">
             {!! csrf_field() !!}
             <div class="card">
                 <div class="card-header">
                     <h2>Modifica contenuto : "{{$contenuto->descrizione}}"</h2>
                 </div>
                 
-                <div class="card-body card-padding">
-                    <div class="form-group fg-line">
-                        <label for="descrizione">Breve descrizione</label>
-                        <input type="text" class="form-control input-sm" id="descrizione" value="{{$contenuto->descrizione}}" placeholder="La descrizione identificativo del contenuto" name="descrizione" required>
-                    </div>
-                    <div class="form-group fg-line">
-                        <label for="slug">Slug</label>
-                        <input type="text" class="form-control input-sm" id="slug" value="{{$contenuto->slug}}" placeholder="Lo slug identificativo del contenuto" name="slug" required>
-                    </div>
-                    <div class="form-group">
-                            <label for="pagina_id">Pagina</label>
-                            <select class="selectpicker" data-placeholder="Scegli..." name="pagina_id" required>
-                            <option disabled selected>Scegli</option>
-                                 @foreach($pagine as $pagina)
-                                    <option value="{{$pagina->id}}" @if($pagina->id == $contenuto->pagina_id) selected @endif>{{$pagina->name}}</option>
-                                    @endforeach
-                            </select>
-                    </div>
-                </div>
+                
             </div>
             
             @foreach($lingue as $lingua)
@@ -75,7 +53,7 @@
                 
                 <div class="card-body card-padding">
                     <div class="row">
-                        <textarea name="testi[{{$lingua->locale}}]"  class="html-editor" required>{{$traduzioni[$lingua->locale]['testo']}}</textarea>
+                        <textarea name="testi[{{$lingua->locale}}]"  class="html-editor-limited" required>{{$traduzioni[$lingua->locale]['testo']}}</textarea>
                     </div>
                 </div>
             </div>
@@ -134,6 +112,8 @@
 </script>
 
 @stop
+
+
 
 
 @section('sidebar_scripts')

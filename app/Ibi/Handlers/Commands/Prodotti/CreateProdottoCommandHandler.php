@@ -42,8 +42,8 @@ class CreateProdottoCommandHandler
             $command->formulazione, 
             $command->principio_attivo_id, 
             $command->fascia_id, 
-            $command->aic, 
-            $command->atc, 
+            // $command->aic, 
+            // $command->atc, 
             $command->regime_dispensazione, 
             $command->unita, 
             $command->validita_mesi, 
@@ -71,7 +71,7 @@ class CreateProdottoCommandHandler
 
         if($foglietto_illustrativo)
         {
-            $foglietto_path = $this->file_utility->putFile($prodotto->id, 'foglietto', $foglietto_illustrativo);
+            $foglietto_path = $this->file_utility->putFile($prodotto->id, 'foglietto', $foglietto_illustrativo, ['nome' => $prodotto->nome, 'formulazione' => $prodotto->formulazione]);
 
             $prodotto->update(['foglietto_illustrativo' => $foglietto_path]);
             
@@ -84,7 +84,7 @@ class CreateProdottoCommandHandler
 
         if($scheda_tecnica)
         {
-            $scheda_path = $this->file_utility->putFile($prodotto->id, 'scheda', $scheda_tecnica);
+            $scheda_path = $this->file_utility->putFile($prodotto->id, 'scheda', $scheda_tecnica, ['nome' => $prodotto->nome, 'formulazione' => $prodotto->formulazione]);
 
             $prodotto->update(['scheda_tecnica' => $scheda_path]);
             

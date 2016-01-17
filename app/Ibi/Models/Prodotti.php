@@ -40,8 +40,8 @@ class Prodotti extends Model
                                 $formulazione, 
                                 $principio_attivo_id, 
                                 $fascia_id, 
-                                $aic, 
-                                $atc, 
+                                // $aic, 
+                                // $atc, 
                                 $regime_dispensazione, 
                                 $unita, 
                                 $validita_mesi, 
@@ -52,7 +52,9 @@ class Prodotti extends Model
         $nome = rtrim($nome);
         $slug = str_slug($nome);
         
-        $prodotto = new static(compact('nome', 'slug', 'formulazione', 'principio_attivo_id', 'fascia_id', 'foglietto_illustrativo', 'scheda_tecnica', 'aic', 'atc', 'regime_dispensazione', 'unita', 'validita_mesi', 'categoria_terapeutica_id', 'active'));
+        $prodotto = new static(compact('nome', 'slug', 'formulazione', 'principio_attivo_id', 'fascia_id', 'foglietto_illustrativo', 'scheda_tecnica', 
+            // 'aic', 'atc', 
+            'regime_dispensazione', 'unita', 'validita_mesi', 'categoria_terapeutica_id', 'active'));
 
         return $prodotto;
     }
@@ -62,8 +64,8 @@ class Prodotti extends Model
                                 $formulazione, 
                                 $principio_attivo_id, 
                                 $fascia_id, 
-                                $aic, 
-                                $atc, 
+                                // $aic, 
+                                // $atc, 
                                 $regime_dispensazione, 
                                 $unita, 
                                 $validita_mesi, 
@@ -79,8 +81,8 @@ class Prodotti extends Model
         $prodotto->formulazione = $formulazione; 
         $prodotto->principio_attivo_id = $principio_attivo_id; 
         $prodotto->fascia_id = $fascia_id; 
-        $prodotto->aic = $aic; 
-        $prodotto->atc = $atc; 
+        // $prodotto->aic = $aic; 
+        // $prodotto->atc = $atc; 
         $prodotto->regime_dispensazione = $regime_dispensazione; 
         $prodotto->unita = $unita; 
         $prodotto->validita_mesi = $validita_mesi; 

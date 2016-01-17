@@ -49,14 +49,7 @@
                  @include('farmaco-vigilanza.comunicati_partial')
                 </div>
               </div>
-              <div class="row schede-segnalazione">
-                <div class="col-xs-12">
-                  <h3> Schede di segnalazione</h3>
-                </div>
-                <div class="col-xs-12 schede">
-                  @include('farmaco-vigilanza.schede_partial')
-                </div>
-              </div>
+          
             </div>
           </div>
         </div>

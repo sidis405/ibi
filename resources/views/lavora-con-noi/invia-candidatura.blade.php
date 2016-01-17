@@ -32,7 +32,7 @@
                 <h3 class="form-title">Posizione</h3>
                 <label for="posizione_id">Scegli la posizione <span class="form-input-danger">*</span></label>
                 <select name="posizione_id" class="form-control">
-                  <option disabled="">Scegli...</option>
+                  <option>Scegli...</option>
                   @foreach($posizioni as $posizione)
                     <option value="{{$posizione->id}}" @if($posizione->id == $id) selected @endif required>{{$posizione->titolo}} : {{$posizione->sede}}</option>
                   @endforeach

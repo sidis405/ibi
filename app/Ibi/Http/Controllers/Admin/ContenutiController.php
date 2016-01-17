@@ -103,4 +103,36 @@ class ContenutiController extends AdminController
         return 'true';
     }
 
+    // SEZIONE SINGOLO CONTENUTO
+    
+        public function edit_single($id, ContenutiRepo $contenuti_repo, PagineRepo $pagine_repo)
+    {
+        $contenuto = $contenuti_repo->getById($id);
+        $pagine = $pagine_repo->getAll();
+        $lingue = Languages::all();
+
+        $traduzioni = $contenuto->translations->keyBy('locale');
+
+        // return $contenuto;
+
+        return view('admin.contenuti.edit_singolo', compact('contenuto', 'pagine', 'lingue', 'traduzioni'));
+    }
+
+    /**
+     * Update the specified Contenuti in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function update_single(Request $request, $id)
+    {
+
+        $contenuto = $this->dispatchFrom('Ibi\Commands\Contenuti\UpdateContenutoCommand', $request);
+
+        flash()->success('Contenuti aggiornata correttamente.');
+
+        return redirect()->back();
+    }
+
 }

@@ -48,10 +48,10 @@
                         <label for="titolo">Titolo</label>
                         <input type="text" class="form-control input-sm" id="titolo" placeholder="Il titolo del comunicato" name="titolo" required>
                     </div>
-                    <div class="form-group fg-line">
+                 <!--    <div class="form-group fg-line">
                         <label for="formulazione">Breve descrizione</label>
                         <textarea class="form-control"  rows="5" id="descrizione"  name="descrizione"  placeholder="La descrizione del comunicato" required></textarea>
-                    </div>
+                    </div> -->
                     <div class="form-group fg-line">
                         <div class="fileinput fileinput-new" data-provides="fileinput">
                             <span class="btn btn-primary btn-file m-r-10">
@@ -66,7 +66,7 @@
                 </div>
             </div>
             
-            <div class="card">
+            <!-- <div class="card">
                 <div class="card-header">
                     <h2>Testo Comunicato</h2>
                 </div>
@@ -76,7 +76,7 @@
                         <textarea name="testo"  class="html-editor" required></textarea>
                     </div>
                 </div>
-            </div>
+            </div> -->
             <div class="card">
                 
                 <div class="card-body card-padding">

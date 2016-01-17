@@ -97,7 +97,7 @@
                     @include('admin.prodotti.partials.allegati_partial')
                 </div>
             </div>
-            <div class="card">
+           <!--  <div class="card">
                 <div class="card-header">
                     <h2>Classificazione</h2>
                 </div>
@@ -114,7 +114,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
             <div class="card">
                 <div class="card-header">
                     <h2>Dettagli Aggiuntivi</h2>
@@ -130,7 +130,7 @@
                     <div class="row">
                         <div class="form-group fg-line col-sm-6">
                             <label for="unita">Unità</label>
-                            <input type="text" required class="form-control input-sm" id="unita" name="unita"  value="{{$prodotto->unita}}" placeholder="Unità">
+                            <input type="text"  class="form-control input-sm" id="unita" name="unita"  value="{{$prodotto->unita}}" placeholder="Unità">
                         </div>
                         <div class="form-group fg-line col-sm-6">
                             <label for="validita_mesi">Validità mesi</label>

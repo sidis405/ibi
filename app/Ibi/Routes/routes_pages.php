@@ -14,8 +14,14 @@ Route::get('ibisqus-ospedale', 'HomeController@ibisqus_ospedale');
 
 Route::get('/prodotti/allegati/{type}/{path}', [
         'as'    => 'admin_attachments_prodotti',
-        'uses'  => '\Ibi\Http\Controllers\Admin\AllegatiController@show'
-        ]);
+        'uses'  => '\Ibi\Http\Controllers\Admin\AllegatiController@showExt'
+        ])->middleware('schede_middleware');
+
+// Route::get('/prodotti/allegati/{type}/{path}', [
+//         'as'    => 'admin_attachments_prodotti',
+//         'uses'  => '\Ibi\Http\Controllers\Admin\AllegatiController@showExt'
+//         ]);
+
 
 Route::get('area-riservata', 'HomeController@area_riservata');
 

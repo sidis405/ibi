@@ -50,17 +50,17 @@
                         <label for="titolo">Titolo</label>
                         <input type="text" class="form-control input-sm" value="{{$comunicato->titolo}}" id="titolo" placeholder="Il titolo del comunicato" name="titolo" required>
                     </div>
-                    <div class="form-group fg-line">
+                   <!--  <div class="form-group fg-line">
                         <label for="formulazione">Breve descrizione</label>
                         <textarea class="form-control"  rows="5" id="descrizione"   name="descrizione"  placeholder="La descrizione del comunicato" required>{{$comunicato->descrizione}}</textarea>
-                    </div>
+                    </div> -->
                     <div class="form-group fg-line">
                         @include('admin.comunicati.allegato_partial')
                     </div>
                 </div>
             </div>
             
-            <div class="card">
+            <!-- <div class="card">
                 <div class="card-header">
                     <h2>Testo Comunicato</h2>
                 </div>
@@ -70,7 +70,7 @@
                         <textarea name="testo"  class="html-editor" required>{{$comunicato->testo}}</textarea>
                     </div>
                 </div>
-            </div>
+            </div> -->
             <div class="card">
                 
                 <div class="card-body card-padding">

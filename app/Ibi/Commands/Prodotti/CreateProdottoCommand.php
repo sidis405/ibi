@@ -13,8 +13,8 @@ class CreateProdottoCommand extends Command
     public $fascia_id;
     public $foglietto_illustrativo;
     public $scheda_tecnica;
-    public $aic;
-    public $atc;
+    // public $aic;
+    // public $atc;
     public $regime_dispensazione;
     public $unita;
     public $validita_mesi;
@@ -34,8 +34,8 @@ class CreateProdottoCommand extends Command
                                 $fascia_id, 
                                 $foglietto_illustrativo, 
                                 $scheda_tecnica, 
-                                $aic, 
-                                $atc, 
+                                // $aic, 
+                                // $atc, 
                                 $regime_dispensazione, 
                                 $unita, 
                                 $validita_mesi, 
@@ -51,8 +51,8 @@ class CreateProdottoCommand extends Command
         $this->fascia_id = $fascia_id; 
         $this->foglietto_illustrativo = $foglietto_illustrativo; 
         $this->scheda_tecnica = $scheda_tecnica; 
-        $this->aic = $aic; 
-        $this->atc = $atc; 
+        // $this->aic = $aic; 
+        // $this->atc = $atc; 
         $this->regime_dispensazione = $regime_dispensazione; 
         $this->unita = $unita; 
         $this->validita_mesi = $validita_mesi; 

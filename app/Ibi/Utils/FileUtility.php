@@ -54,9 +54,9 @@ class FileUtility {
 
                         ];
 
-    public function putfile($prodotto_id, $type, $file)
+    public function putfile($prodotto_id, $type, $file, $data = [])
     {
-        $filename = $this->makeFilename($prodotto_id, $type, $file);
+        $filename = $this->makeFilename($prodotto_id, $type, $file, $data);
         
         if(Storage::disk($this->paths[$type]['disk'])->put($filename, file_get_contents($file->getRealPath()))){
             return $filename;
@@ -80,9 +80,16 @@ class FileUtility {
         return false;
     }
 
-    protected function makeFilename($prodotto_id, $type, $file )
+    protected function makeFilename($prodotto_id, $type, $file , $data)
     {
-        return $this->paths[$type]['folder'] . '/' . $this->makeId($prodotto_id) . '-' . $file->getClientOriginalName();
+        if(count($data) > 0 && ($type === 'scheda' || $type==="foglietto"))
+        {
+            $product_scheda_slug = str_slug($data['nome']) . '-' . str_slug($data['formulazione']);
+
+            return $this->paths[$type]['folder'] . '/' . $type. '-' . $product_scheda_slug  . '-' . $this->makeId($prodotto_id) . '-' . $file->getClientOriginalName();
+        }
+
+        return $this->paths[$type]['folder'] . '/' . $type. '-' . $this->makeId($prodotto_id) . '-' . $file->getClientOriginalName();
     }
 
     protected function makeId($prodotto_id)

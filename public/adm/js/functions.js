@@ -511,6 +511,42 @@ $(document).ready(function(){
     }
     
     /*
+     * LIMITED HTML EDITOR
+     * 
+     */
+    
+     if ($('.html-editor-limited')[0]) {
+       $('.html-editor-limited').summernote({
+            height: 350,
+            toolbar: [
+            ['style', ['style']],
+            ['font', ['bold', 'italic']],
+            ['para', ['ul', 'ol', 'paragraph']],
+            ['table', ['table']],
+            ['insert', ['link', 'hr']],
+          ]
+        });
+    }
+    
+    if($('.html-editor-limited-click')[0]) {
+    //Edit
+    $('body').on('click', '.hec-button', function(){
+        $('.html-editor-limited-click').summernote({
+            focus: true
+        });
+        $('.hec-save').show();
+    })
+    
+    //Save
+    $('body').on('click', '.hec-save', function(){
+        $('.html-editor-limited-click').code();
+            $('.html-editor-click').destroy();
+            $('.hec-save').hide();
+            notify('Content Saved Successfully!', 'success');
+        });
+    }
+
+    /*
      * HTML Editor
      */
     if ($('.html-editor')[0]) {

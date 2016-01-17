@@ -128,6 +128,11 @@ class ComunicatiController extends AdminController
             $data['active'] = 0;
         }
 
+        
+        $data['descrizione'] = null;
+    
+        $data['testo'] = null;
+
         return $data;
     }
 
