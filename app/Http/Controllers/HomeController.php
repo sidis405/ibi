@@ -88,8 +88,15 @@ class HomeController extends Controller
         return view('pages.prodotti-ibisqus', compact('listini'));
     }
 
-    public function prodotti_italia(ListiniRepo $listini_repo, SezioniRepo $sezioni_repo, CategorieTerapeuticheRepo $categorie_repo, PrincipiAttiviRepo $principi_repo)
+    public function prodotti_italia(ListiniRepo $listini_repo, 
+                                    SezioniRepo $sezioni_repo, 
+                                    CategorieTerapeuticheRepo $categorie_repo, 
+                                    PrincipiAttiviRepo $principi_repo, 
+                                    PagineRepo $pagine_repo)
     {
+        $contenuti = $pagine_repo->getContentForPage('prodotti-italia');
+
+        // return $contenuti;
         $listini = $listini_repo->getAllFront();
         $prodotti_raw = $sezioni_repo->getBySlug('ibi-italia')->prodotti;
 
@@ -118,7 +125,7 @@ class HomeController extends Controller
 
         // return $principi_validi;
 
-        return view('pages.prodotti-italia', compact('listini', 'prodotti', 'categorie', 'principi', 'principi_validi'));
+        return view('pages.prodotti-italia', compact('listini', 'prodotti', 'categorie', 'principi', 'principi_validi', 'contenuti'));
     }
 
     public function ibi_export(PagineRepo $pagine_repo)

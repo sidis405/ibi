@@ -2,12 +2,6 @@ $(document).ready(function(){
                 
                 //Command Buttons
                 $("#data-table-command").bootgrid({
-                    statusMappings: {
-                            0: "success",
-                            1: "info",
-                            2: "warning",
-                            3: "danger"
-                        },
                     caseSensitive: false,
                     css: {
                         icon: 'zmdi icon',
@@ -29,7 +23,7 @@ $(document).ready(function(){
                     /* Executes after data is loaded and rendered */
                     $("#data-table-command").find(".command-edit").on("click", function(e)
                     {
-                        window.location.href = "/admin/news/" + $(this).data("row-id") + "/modifica";
+                        window.location.href = "/admin/farmaco-vigilanza/segnalazioni/" + $(this).data("row-id");
 
                     }).end().find(".command-delete").on("click", function(e)
                     {
@@ -39,7 +33,7 @@ $(document).ready(function(){
                             rows[0] = id;
                             
                                 swal({   
-                                    title: "Sei sicuro di voler cancellare questa news?",   
+                                    title: "Sei sicuro di voler cancellare questa segnalazione?",   
                                     text: "Non sarà possibile recuperare questo dato!",   
                                     type: "warning",   
                                     showCancelButton: true,   
@@ -48,8 +42,8 @@ $(document).ready(function(){
                                     closeOnConfirm: false ,
                                     showLoaderOnConfirm: true
                                 }, function(){   
-                                    swal("Cancellato!", "La news è stato cancellata con successo.", "success"); 
-                                    deleteResource(id, 'news');
+                                    swal("Cancellato!", "La segnalazione è stata cancellata con successo.", "success"); 
+                                    deleteResource(id, 'farmaco-vigilanza/segnalazioni');
                                     $("#data-table-command").bootgrid('remove', rows);
                                 });
                     });

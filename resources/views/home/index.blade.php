@@ -27,7 +27,7 @@
           <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
             <div class="hero-box"><img src="/img/ibi-toll-manufacturer-logo.jpg" alt="" class="img-responsive">
                 @include('layouts.content', array('key' => 'home_toll_manufacturer_box', 'permesso'=> 'modifica_toll_development'))
-                <a href="/toll-manufacturer"><div class="btn btn-primary">Leggi tutto</div></a>
+                <a href="/ibi-toll-manufacturer"><div class="btn btn-primary">Leggi tutto</div></a>
             </div>
           </div>
         </div>

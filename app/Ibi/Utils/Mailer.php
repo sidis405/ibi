@@ -29,6 +29,7 @@ class Mailer {
 
     }
 
+
     public function sendMailForAccountActivation($utente)
     {
 
@@ -40,6 +41,46 @@ class Mailer {
 
         // $this->sendTo('forge405@gmail.com', $subject, $view, $data);
         $this->sendTo($utente->email, $subject, $view, $data);
+    }
+
+    public function sendMailForProdottoCreation($prodotto)
+    {
+
+        $subject = "Un nuovo prodotto è stato creato su ibi-lorenzini.com";
+        $view = "emails.nuovo_prodotto";
+        $data = compact('prodotto');
+
+
+        // $this->sendTo('forge405@gmail.com', $subject, $view, $data);
+        $this->sendTo('forge405@gmail.com', $subject, $view, $data);
+
+    }
+
+
+    public function sendMailForProdottoUpdate($prodotto)
+    {
+
+        $subject = "Un prodotto è stato modificato su ibi-lorenzini.com";
+        $view = "emails.prodotto_modificato";
+        $data = compact('prodotto');
+
+
+        // $this->sendTo('forge405@gmail.com', $subject, $view, $data);
+        $this->sendTo('forge405@gmail.com', $subject, $view, $data);
+    }
+
+    public function sendMailForSegnalazioneCreation($segnalazione)
+    {
+
+        $subject = "Una nuova segnalazione Farmaco Vigilanza ibi-lorenzini.com";
+        $view = "emails.nuova_segnalazione";
+        $data = compact('segnalazione');
+
+        \Log::info('sending admin segnalazione');
+
+        // $this->sendTo('forge405@gmail.com', $subject, $view, $data);
+        $this->sendTo('forge405@gmail.com', $subject, $view, $data);
+
     }
 
     public function sendTo($recipient, $subject, $view, $data = [])

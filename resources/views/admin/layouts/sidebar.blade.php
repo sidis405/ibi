@@ -56,6 +56,7 @@
                 <a href=""><i class="zmdi zmdi-hospital"></i> Farmacovigilanza</a>
                 <ul>
                     <li><a href="/admin/farmaco-vigilanza/comunicati" id="farmaco_vigilanza_menu_comunicati">Comunicati</a></li>
+                    <li><a href="/admin/farmaco-vigilanza/segnalazioni" id="farmaco_vigilanza_menu_segnalazioni">Segnalazioni</a></li>
                     <!-- <li><a href="/admin/farmaco-vigilanza/schede" id="farmaco_vigilanza_menu_schede">Schede di Segnalazione</a></li> -->
                 </ul>
             </li>

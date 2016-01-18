@@ -11,6 +11,13 @@ use Illuminate\Http\Request;
 class NewsController extends Controller
 {
     
+    public function index(NewsRepo $news_repo)
+    {
+        $news = $news_repo->getAllFront();
+        $listing = $news_repo->getAllListing();
+
+        return view('archivio_news.index', compact('news', 'listing'));
+    }
 
     /**
      * Display the specified News.
@@ -20,8 +27,10 @@ class NewsController extends Controller
      */
     public function show($id, NewsRepo $news_repo)
     {
-        $news = $news_repo->getById($id);
+        $single_news = $news_repo->getById($id);
 
-        return $news;
+        $news = $news_repo->getAllFront();
+
+        return view('archivio_news.show', compact('news', 'single_news'));
     }
 }

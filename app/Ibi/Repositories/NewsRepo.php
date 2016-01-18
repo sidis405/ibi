@@ -30,10 +30,15 @@ class NewsRepo
         return News::orderBy('created_at', 'DESC')->get();
     } 
 
-    public function getAllFront()
+    public function getAllFront($howMany = 3)
+    {
+        return News::where('active', 1)->orderBy('created_at', 'DESC')->take($howMany)->get();
+    } 
+
+    public function getAllListing()
     {
         return News::where('active', 1)->orderBy('created_at', 'DESC')->get();
-    } 
+    }
 
     public function getById($id)
     {

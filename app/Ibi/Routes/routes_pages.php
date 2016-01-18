@@ -36,8 +36,15 @@ Route::get('lavora-con-noi/invia-candidatura', '\Ibi\Http\Controllers\LavoraConN
 Route::post('lavora-con-noi/invia-candidatura', '\Ibi\Http\Controllers\LavoraConNoiController@store');
 Route::get('lavora-con-noi/{id}/{slug}/invia-candidatura', '\Ibi\Http\Controllers\LavoraConNoiController@invia_candidatura_selected');
 
-Route::get('news/{id}/{slug}', '\Ibi\Http\Controllers\NewsController@show');
+Route::get('archivio-news', '\Ibi\Http\Controllers\NewsController@index');
+Route::get('archivio-news/{id}/{slug}', '\Ibi\Http\Controllers\NewsController@show');
+
+
 Route::get('farmaco-vigilanza', '\Ibi\Http\Controllers\FarmacoVigilanzaController@index');
+
+Route::get('farmaco-vigilanza/segnalazione', '\Ibi\Http\Controllers\FarmacoVigilanzaController@create');
+Route::post('farmaco-vigilanza/segnalazione', '\Ibi\Http\Controllers\FarmacoVigilanzaController@store');
+
 Route::get('farmaco-vigilanza/comunicati/{id}/{slug}', '\Ibi\Http\Controllers\FarmacoVigilanzaController@comunicato');
 
 Route::get('invia-candidatura', 'HomeController@invia_candidatura');

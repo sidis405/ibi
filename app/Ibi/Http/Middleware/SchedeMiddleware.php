@@ -17,7 +17,7 @@ class SchedeMiddleware
     {
 
         if ($request->route('type') == "schede_tecniche" && (!$request->user() || ! $request->user()->can("scarica_allegati"))) {
-            return redirect()->to('/area-riservata');
+            return redirect()->to('/?login=true');
         }
         return $next($request);
     }

@@ -21,7 +21,9 @@
     <!-- Page content -->
     @yield('content')
     <!-- Including footer-->
+    <a href="#" id="back-to-top" title="Back to top"><i class="fa fa-arrow-up"></i></a>
     @include('layouts.footer')
+    @include('layouts.area_riservata_modal')
   </body>
   <script src="/js/vendor.js"></script>
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAx9KUDj1tNjrnOjWivzS4GAJ9Cke8RIvM"></script>

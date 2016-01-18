@@ -1,10 +1,6 @@
 @extends('layouts.master')
 
-@section('header_scripts')
 
-<script src='https://www.google.com/recaptcha/api.js'></script>
-
-@stop
 
 @section('content')
     <!-- Page content -->
@@ -80,9 +76,8 @@
                   </p>
                 </div>
               </div>
-
               <div class="form-group">
-                {!! app('captcha')->display(); !!}
+                @include('layouts.captcha')
               </div>
               <div class="form-group">
                 <button class="btn btn-primary btn-block">Invia</button>

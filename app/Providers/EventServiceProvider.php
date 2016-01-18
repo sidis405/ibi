@@ -2,9 +2,12 @@
 
 namespace App\Providers;
 
+use Ibi\Listeners\ExternalUsersListener;
+use Ibi\Listeners\SegnalazioniFarmacoVigilanzaListener;
+use Ibi\Listeners\ProdottiListener;
 use Illuminate\Contracts\Events\Dispatcher as DispatcherContract;
 use Illuminate\Foundation\Support\Providers\EventServiceProvider as ServiceProvider;
-use Ibi\Listeners\ExternalUsersListener;
+
 
 class EventServiceProvider extends ServiceProvider
 {
@@ -26,6 +29,8 @@ class EventServiceProvider extends ServiceProvider
      */
     protected $subscribe = [
         ExternalUsersListener::class,
+        SegnalazioniFarmacoVigilanzaListener::class,
+        ProdottiListener::class,
     ];
 
     /**

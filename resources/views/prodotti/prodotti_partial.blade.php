@@ -25,7 +25,7 @@
           @permessoibi('scarica_allegati')
           <a href="/prodotti/allegati/{{$prodotto->scheda_tecnica}}" target="_blank"><i class="fa fa-download"></i></a>
           @else
-          <a href="/area-riservata"><i class="fa fa-download login-tooltip" data-toggle="tooltip" data-placement="top" title="Devi essere registrato per visualizzare schede tecniche"></i></a>
+          <a href="#area-riservata-modal" class=" open-area-riservata-modal" ><i class="fa fa-download login-tooltip" data-toggle="tooltip" data-placement="top" title="Devi essere registrato per visualizzare schede tecniche"></i></a>
           @endpermessoibi
         </li>
         <li>

@@ -19,6 +19,8 @@ class NewsController extends AdminController
     {
         $news = $news_repo->getAll();
 
+        // return $news;
+
         return view('admin.news.index', compact('news'));
 
     }

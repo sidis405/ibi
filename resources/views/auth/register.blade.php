@@ -1,7 +1,4 @@
 @extends('layouts.master')
-@section('header_scripts')
-<script src='https://www.google.com/recaptcha/api.js'></script>
-@stop
 @section('content')
 <div class="main-header registrazione-area-riservata">
     <div class="container">
@@ -56,7 +53,7 @@
                                     <legend>Verifica</legend>
                                     <div class="form-group">
                                         <div>
-                                            {!! app('captcha')->display(); !!}
+                                            @include('layouts.captcha')
                                         </div>
                                     </div>                                
                                 </fieldset>

@@ -45,7 +45,7 @@ trait IbiAuthenticationTrait
             $this->incrementLoginAttempts($request);
         }
 
-        return redirect('/area-riservata')
+        return redirect()->back()
             ->withInput($request->only($this->loginUsername(), 'remember'))
             ->withErrors([
                 $this->loginUsername() => $this->getFailedLoginMessage(),
