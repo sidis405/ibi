@@ -18,9 +18,6 @@ p.policy-reminder {
 MIXITUP
 -------------------------
 */
-#prodotti-container .mix {
-  display: none; }
-
 /*
 -------------------------
 Main essentials
@@ -970,6 +967,16 @@ section.products-content .intro p {
 section.products-content #prodotti-container .product {
   width: 100%;
   margin-bottom: 35px; }
+  section.products-content #prodotti-container .product .formulazione .plus-minus {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    background: #b3cbe1; }
+    section.products-content #prodotti-container .product .formulazione .plus-minus:before, section.products-content #prodotti-container .product .formulazione .plus-minus:after {
+      left: 11px;
+      top: 4px;
+      height: 18px;
+      width: 3px; }
   section.products-content #prodotti-container .product .product-title {
     background: #80a8cd; }
     section.products-content #prodotti-container .product .product-title h2 {
@@ -996,9 +1003,6 @@ section.products-content #prodotti-container .product {
     list-style: none; }
     section.products-content #prodotti-container .product ul.product-content {
       display: none; }
-    section.products-content #prodotti-container .product ul a.read-more {
-      float: right;
-      text-transform: uppercase; }
     section.products-content #prodotti-container .product ul li {
       padding: 15px;
       border-bottom: 1px solid #ededed; }
@@ -1009,22 +1013,21 @@ section.products-content #prodotti-container .product {
       section.products-content #prodotti-container .product ul li i {
         float: right;
         font-size: 18px; }
-      section.products-content #prodotti-container .product ul li:first-of-type {
-        background: #f2f6fa; }
-      section.products-content #prodotti-container .product ul li:last-of-type h5 {
-        display: inline-block; }
-      section.products-content #prodotti-container .product ul li.more {
-        display: none; }
 
-section.products-content #prodotti-container.prodotti-italia .product .formulazione {
+section.products-content #prodotti-container.prodotti-italia .product .formulazione .formulazione-title {
+  display: none;
   background: #f2f6fa;
   padding: 15px; }
-  section.products-content #prodotti-container.prodotti-italia .product .formulazione h5 {
+  section.products-content #prodotti-container.prodotti-italia .product .formulazione .formulazione-title h5 {
     font-weight: 700;
     margin: 0; }
 
-section.products-content #prodotti-container.prodotti-italia .product .product-content li:first-of-type {
-  background: #fff; }
+section.products-content #prodotti-container.prodotti-italia .product .formulazione .formulazione-content {
+  display: none;
+  background: #fff;
+  padding: 0 15px; }
+  section.products-content #prodotti-container.prodotti-italia .product .formulazione .formulazione-content li {
+    padding: 15px 0; }
 
 section.products-content #prodotti-container.prodotti-ibisqus .formulazione {
   background: #f2f6fa;

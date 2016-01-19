@@ -154,20 +154,36 @@ PRODUCT READ MORE
 -------------------------
 */
 
+// $(document).ready(function() {
+//   $('.product .read-more').on('click',  function(event) {    
+//     event.preventDefault()
+//     var text = $(this).text()
+//     $(this).text(text == "Chiudi" ? "Vedi tutto" : "Chiudi");
+//     $(this).closest('.product').find('li.more').slideToggle();
+//   });
+// });
+
 $(document).ready(function() {
-  $('.product .read-more').on('click',  function(event) {    
+  $('.product-title .plus-minus').on('click',  function(event) {    
     event.preventDefault()
-    var text = $(this).text()
-    $(this).text(text == "Chiudi" ? "Vedi tutto" : "Chiudi");
-    $(this).closest('.product').find('li.more').slideToggle();
+    $(this).toggleClass('minus');
+    $(this).closest('.product').find('.formulazione-title').slideToggle();
   });
 });
 
 $(document).ready(function() {
-  $('.product .plus-minus').on('click',  function(event) {    
+  $('.formulazione .pull-right').on('click',  function(event) {    
     event.preventDefault()
-    $(this).toggleClass('minus');
-    $(this).closest('.product').find('.product-content').slideToggle();
+
+    $('.formulazione-content').not(this).slideUp();
+
+    if($(this).closest('.formulazione').find('.formulazione-content').css('display') == 'none')
+    {
+
+        $(this).closest('.formulazione').find('.formulazione-content').slideToggle();
+      
+    }
+    
   });
 });
 
