@@ -63,13 +63,28 @@
 <div class="col-md-9">
 <div class="row filtri">
 <div class="col-sm-4 no-pad">
-  <div class="filtri-img active"><a href="prodotti-export">             <img src="/img/ibi-export-logo.jpg" alt="" class="img-responsive"></a></div>
+  <div class="filtri-img active">
+    <a href="prodotti-export">
+      <!-- <img src="/img/ibi-export-logo.jpg" alt="" class="img-responsive"> -->
+      Esportazioni
+    </a>
+  </div>
 </div>
 <div class="col-sm-4 no-pad">
-  <div class="filtri-img">            <a href="prodotti-ibisqus">               <img src="/img/ibisqus-ospedale-logo.jpg" alt="" class="img-responsive"></a></div>
+  <div class="filtri-img">
+    <a href="prodotti-ibisqus">
+      <!-- <img src="/img/ibisqus-ospedale-logo.jpg" alt="" class="img-responsive"> -->
+      Ospedale
+    </a>
+  </div>
 </div>
 <div class="col-sm-4 no-pad">
-  <div class="filtri-img">            <a href="prodotti-italia">                  <img src="/img/ibi-italia-logo.jpg" alt="" class="img-responsive"></a></div>
+  <div class="filtri-img">
+    <a href="prodotti-italia">
+      <!-- <img src="/img/ibi-italia-logo.jpg" alt="" class="img-responsive"> -->
+      Farmacia
+    </a>
+  </div>
 </div>
 </div>
 <div id="prodotti-container" class="row prodotti-export">

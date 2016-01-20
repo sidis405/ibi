@@ -18,6 +18,11 @@ p.policy-reminder {
 MIXITUP
 -------------------------
 */
+
+#prodotti-container .mix {
+  display: none;
+}
+
 /*
 -------------------------
 Main essentials
@@ -54,6 +59,18 @@ section.content {
     border-radius: 0;
     border: 0;
     font-size: 12px; }
+
+
+section.content.ibisqus-ospedale-content h2 {
+  font-size: 28px;
+  text-transform: uppercase;
+  display: inline-block;
+}
+section.content.ibi-italia-content h2 {
+  font-size: 28px;
+  text-transform: uppercase;
+  display: inline-block;
+}
 
 .plus-minus {
   background: #b3cbe1;
@@ -114,8 +131,8 @@ Back to Top
 */
 #back-to-top {
   position: fixed;
-  bottom: 55px;
-  right: 55px;
+  bottom: 25px;
+  right: 25px;
   z-index: 9999;
   width: 32px;
   height: 32px;
@@ -208,9 +225,11 @@ Area riservata modal
 Sidebar styles
 -------------------------
 */
-.sidebar {
+.sidebar {  
   background: #d9e5fa;
-  padding: 10px; }
+  max-width: 360px;
+  padding: 10px !important;
+   }
   .sidebar a:hover {
     text-decoration: none; }
   .sidebar a:focus {
@@ -327,6 +346,7 @@ Sidebar styles
     .sidebar.lavora-con-noi-sidebar .position p {
       font-size: 12px;
       text-align: justify;
+      line-height: inherit;
       margin: 0 0 5px 0 !important; }
   .sidebar.products-sidebar {
     background: transparent; }
@@ -557,6 +577,20 @@ Home page
     padding: 0 25px;
     min-height: 381px;
     position: relative; }
+    .hero-box .hero-box-title {
+      display: table;
+      width: 100%;
+    }
+  .hero-box h2 {
+    font-size: 22px;    
+    height: 112px;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;    
+    margin: 0 auto;
+    color: #00509a;
+    text-transform: uppercase;
+  }
     .hero .hero-box img {
       margin: auto;
       display: block;
@@ -723,14 +757,12 @@ Tabs
   .tabs.chi-siamo-tabs .evidence-box p {
     margin: 0; }
 
-.tabs.ibi-export-tabs {
-  margin-top: 50px; }
   .tabs.ibi-export-tabs h2:last-of-type {
     margin-top: 40px; }
   .tabs.ibi-export-tabs ul li {
     width: 50%;
     text-align: center;
-    height: 85px; }
+    height: 55px; }
   .tabs.ibi-export-tabs .license-box {
     border-bottom: 1px dashed #1fa9ad;
     float: left;
@@ -742,8 +774,6 @@ Tabs
     .tabs.ibi-export-tabs .license-box p {
       margin: 0; }
 
-.tabs.manufactoring-tabs {
-  margin-top: 50px; }
   .tabs.manufactoring-tabs ul li {
     width: 50%;
     text-align: center; }
@@ -793,6 +823,10 @@ section.content.contatti-content .loghi {
   border-bottom: 1px dotted #666; }
   section.content.contatti-content .loghi.contatti-ibisqus-logo {
     margin-top: 50px; }
+
+section.content.contatti-content iframe {
+  margin-top: 85px;
+}
 
 section.content.contatti-content a {
   color: #00509a; }
@@ -937,11 +971,23 @@ section.products-content .filtri {
   margin: auto;
   width: 100%;
   margin: 0;
-  border-bottom: 2px solid #00509a; }
+  border-bottom: 2px solid #00509a;
+}
   section.products-content .filtri .filtri-img {
     border-right: 1px solid #666;
-    height: 80px;
-    margin-bottom: 20px; }
+    padding: 30px;    
+    margin-bottom: 20px;
+  }
+  section.products-content .filtri .filtri-img a {
+    font-size: 22px;
+    color: #00509a;
+    text-transform: uppercase;
+    text-align: center;
+    display: block;
+  }
+  section.products-content .filtri .filtri-img a:hover {
+    text-decoration: none;
+  }
     section.products-content .filtri .filtri-img.active {
       position: relative; }
       section.products-content .filtri .filtri-img.active:after {
@@ -956,6 +1002,8 @@ section.products-content .filtri {
         border-style: solid;
         border-width: 0 45px 15px 45px;
         border-color: transparent transparent #00509a transparent; }
+  }
+  }
   section.products-content .filtri img {
     margin: auto; }
 
@@ -978,7 +1026,9 @@ section.products-content #prodotti-container .product {
       height: 18px;
       width: 3px; }
   section.products-content #prodotti-container .product .product-title {
-    background: #80a8cd; }
+    background: #80a8cd;
+    cursor: pointer;
+     }
     section.products-content #prodotti-container .product .product-title h2 {
       padding: 15px;
       font-size: 16px;
@@ -1016,8 +1066,29 @@ section.products-content #prodotti-container .product {
 
 section.products-content #prodotti-container.prodotti-italia .product .formulazione .formulazione-title {
   display: none;
+  position: relative;
+  cursor: pointer;
   background: #f2f6fa;
+  border-bottom: 1px solid #fff;
   padding: 15px; }
+
+section.products-content #prodotti-container.prodotti-italia .product .formulazione .formulazione-title i {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  font-size: 18px;
+  transform: translate(0,-50%);
+  -webkit-transform: translate(0,-50%);
+  -ms-transform: translate(0,-50%);
+  -moz-transform: translate(0,-50%);
+}
+section.products-content #prodotti-container.prodotti-italia .product .formulazione .formulazione-title i.rotate-caret {
+  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+} 
+
   section.products-content #prodotti-container.prodotti-italia .product .formulazione .formulazione-title h5 {
     font-weight: 700;
     margin: 0; }

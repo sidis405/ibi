@@ -111,76 +111,39 @@ if ($('#back-to-top').length) {
 SIDEBAR
 -------------------------
 */
-
-if ($(window).width() > 767) {
-  $(window).load(function() {
-    animateSidebar();
-  });
-
-  $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
-    animateSidebar();
-  })
-
-};
-
-
-
-function animateSidebar(){
-    $(function() {
-        var offset = $(".sidebar").offset();
-        var footerOffset = $("footer").offset();
-        var mbPos = footerOffset.top-30; /*30px extra space*/
-        var topPadding = 15;
-        $(window).scroll(function() {
-            if ($(window).scrollTop() > offset.top-20 ) {
-                if($(window).scrollTop() < mbPos - $(".sidebar").height()) {
-                    $(".sidebar").stop().animate({
-                       marginTop: $(window).scrollTop() - offset.top + topPadding
-                    });
-                }
-            }
-            else {
-                $(".sidebar").stop().animate({
-                    marginTop: 0
-                });
-            };
-        });
+jQuery(document).ready(function() {
+   jQuery('.col-md-4').theiaStickySidebar({
+      // Settings
+      additionalMarginTop: 20
     });
-}
-
+  });
 /*
 -------------------------
-PRODUCT READ MORE
+PRODUCT
 -------------------------
 */
 
-// $(document).ready(function() {
-//   $('.product .read-more').on('click',  function(event) {    
-//     event.preventDefault()
-//     var text = $(this).text()
-//     $(this).text(text == "Chiudi" ? "Vedi tutto" : "Chiudi");
-//     $(this).closest('.product').find('li.more').slideToggle();
-//   });
-// });
 
 $(document).ready(function() {
-  $('.product-title .plus-minus').on('click',  function(event) {    
+  $('.product-title').on('click',  function(event) {    
     event.preventDefault()
-    $(this).toggleClass('minus');
-    $(this).closest('.product').find('.formulazione-title').slideToggle();
+    $(this).closest('.product').find('.product-title .plus-minus').toggleClass('minus');
+
+    $(this).closest('.product').find('.formulazione-title').slideToggle();    
+    
   });
 });
 
 $(document).ready(function() {
-  $('.formulazione .pull-right').on('click',  function(event) {    
-    event.preventDefault()
-
+  $('.formulazione-title').on('click',  function(event) {    
+    event.preventDefault()    
     $('.formulazione-content').not(this).slideUp();
 
     if($(this).closest('.formulazione').find('.formulazione-content').css('display') == 'none')
     {
 
-        $(this).closest('.formulazione').find('.formulazione-content').slideToggle();
+        $(this).closest('.formulazione').find('.formulazione-content').slideToggle();          
+       
       
     }
     

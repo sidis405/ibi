@@ -1,5 +1,8 @@
 function mixIt()
 {
+
+    // console.log("mixed");
+
     var mixedFilter = {
 
 
