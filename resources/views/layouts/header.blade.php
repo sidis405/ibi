@@ -30,9 +30,9 @@
               <li><a href="/chi-siamo">{{$menu['chi-siamo']['label']}}</a></li>
               <li class="dropdown"><a href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle">{{$menu['prodotti']['label']}} <span class="caret"></span></a>
                 <ul class="dropdown-menu">
-                  <li><a href="/prodotti-export"><!-- <span>Ibi </span>Export -->Esportazioni</a></li>
-                  <li><a href="/prodotti-ibisqus"><!-- <span>Ibis<i>q</i>us </span>Ospedale -->Ospedale</a></li>
-                  <li><a href="/prodotti-italia"><!-- <span>Ibi </span>Italia -->Farmacia</a></li>
+                  <li><a href="/prodotti-export">{{$menu['export']['label']}}</a></li>
+                  <li><a href="/prodotti-ibisqus">{{$menu['hospital']['label']}}</a></li>
+                  <li><a href="/prodotti-italia">{{$menu['retail']['label']}}</a></li>
                 </ul>
               </li>
               <li><a href="/ibi-toll-manufacturer">{!!$menu['toll-development-manufacturer']['label']!!}</a></li>

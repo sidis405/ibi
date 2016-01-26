@@ -7,7 +7,7 @@
     @foreach($posizioni as $posizione)
       <div class="position">
         <h5>{{$posizione->titolo}}</h5>
-        <span>{{$posizione->sede}}</span>
+        <!-- <span>{{$posizione->sede}}</span> -->
         <p>{{$posizione->descrizione}}</p>
         <a href="/lavora-con-noi/{{$posizione->id}}/{{$posizione->slug}}/invia-candidatura" class="read-more">Invia candidatura</a>
       </div>

@@ -1,4 +1,5 @@
-{!!getTheText($contenuti, $key)!!}
+<div class="contenuto-dinamico">{!!getTheText($contenuti, $key)!!}
 @permessoibi($permesso)
-<a href="/admin/singolo-contenuto/{{getKey($contenuti, $key, 'id')}}/modifica" target="_blank" class="pull-right ">Modifica contenuto</a>
+<a href="/admin/singolo-contenuto/{{getKey($contenuti, $key, 'id')}}/modifica" target="_blank" class="modifica-contenuto"><i class="fa fa-edit"></i></a>
 @endpermessoibi
+</div>

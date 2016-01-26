@@ -160,6 +160,24 @@ $(function () {
   $('[data-toggle="tooltip"]').tooltip()
 })
 
+/*
+-------------------------
+CONTACTS MAP CHANGE ON CLICK
+-------------------------
+*/
+
+$(function() {
+  $('#headingOne').on('click', function(event) {
+    $('#maps').attr('src', 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2983.621283220953!2d12.616033927143896!3d41.59907506768937!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1325976707d09bbb%3A0x62e00c106979d665!2sIstituto+Biochimico+Italiano+Giovanni+Lorenzini+Spa!5e0!3m2!1sit!2sit!4v1453302971988');
+  });
+  $('#headingTwo').on('click', function(event) {
+    $('#maps').attr('src', 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2584.108973609997!2d8.618553613840579!3d49.63340070974752!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4797d75c2d384b15%3A0xff55920313ca8ffb!2sDonnersbergstra%C3%9Fe+6%2C+64646+Heppenheim+(Bergstra%C3%9Fe)%2C+Germania!5e0!3m2!1sit!2sit!4v1453730423059');
+  });
+  $('#headingThree').on('click', function(event) {
+    $('#maps').attr('src', 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2404.7475933605892!2d-3.0381851418928334!3d52.93497001213872!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487ab9e580147bf7%3A0x7fe9d57e4c8d5168!2sBowmed+Ibisqus+Ltd!5e0!3m2!1sit!2sit!4v1453730861667');
+  });
+});
+
 
 //# sourceMappingURL=main.js.map
 

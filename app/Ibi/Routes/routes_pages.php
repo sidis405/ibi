@@ -4,9 +4,9 @@ Route::get('/', 'HomeController@home');
 Route::get('index', 'HomeController@home');
 Route::get('home', 'HomeController@home');
 Route::get('chi-siamo', 'HomeController@chi_siamo');
-Route::get('prodotti-export', 'HomeController@prodotti_export');
-Route::get('prodotti-ibisqus', 'HomeController@prodotti_ibisqus');
-Route::get('prodotti-italia', 'HomeController@prodotti_italia');
+Route::get('prodotti-export', '\Ibi\Http\Controllers\ProdottiController@prodotti_export');
+Route::get('prodotti-ibisqus', '\Ibi\Http\Controllers\ProdottiController@prodotti_ibisqus');
+Route::get('prodotti-italia', '\Ibi\Http\Controllers\ProdottiController@prodotti_italia');
 
 Route::get('ibi-export', 'HomeController@ibi_export');
 Route::get('ibi-italia', 'HomeController@ibi_italia');

@@ -22,6 +22,8 @@ class Mailer {
         $view = "emails.nuovo_utente";
         $data = compact('utente');
 
+        // dd($data['utente']->profile[0]->ruolo);
+
         \Log::info('sending admin new user email');
 
         // $this->sendTo('forge405@gmail.com', $subject, $view, $data);

@@ -19,8 +19,75 @@ MIXITUP
 -------------------------
 */
 
+
 #prodotti-container .mix {
   display: none;
+}
+
+/*NORMAL CONTENT*/
+.contenuto-dinamico {
+  position: relative;
+}
+
+.modifica-contenuto{
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  opacity: 0.8;
+  width: 35px;
+  height: 35px;
+  background: green;
+  padding: 6px;
+  border-radius: 50%;
+  color: #fff;
+  z-index: 99;
+}
+
+.modifica-contenuto i {
+  margin: 4px;
+  font-size: 16px;
+
+}
+
+.modifica-contenuto:hover{
+
+  text-decoration: none;
+  color: #fff;
+}
+
+/*BOXED CONTENT */
+
+.contenuto-dinamico-boxed {
+  position: relative;
+  width: 100%;
+  display: table;
+}
+
+.modifica-contenuto-boxed{
+    position: absolute;
+    bottom: 0px;
+    right: -40px;
+    opacity: 0.8;
+    width: 35px;
+    height: 35px;
+    background: green;
+    padding: 6px;
+    border-radius: 50%;
+    color: #fff;
+    z-index: 99;
+    border: 1px solid white;
+}
+
+.modifica-contenuto-boxed i {
+  margin: 4px;
+  font-size: 16px;
+
+}
+
+.modifica-contenuto-boxed:hover{
+
+  text-decoration: none;
+  color: #fff;
 }
 
 /*
@@ -339,7 +406,7 @@ Sidebar styles
     .sidebar.lavora-con-noi-sidebar .position h5 {
       color: #00509a;
       font-size: 14px;
-      margin: 5px 0 0 0; }
+      margin: 5px 0 5px 0; }
     .sidebar.lavora-con-noi-sidebar .position span {
       display: block;
       margin: 0 0 5px 0; }
@@ -688,8 +755,8 @@ Tabs
 */
 .tabs .tab-content {
   margin-top: 50px; }
-  .tabs .tab-content b {
-    display: block; }
+  /*.tabs .tab-content b {
+    display: block; }*/
 
 .tabs .nav-tabs {
   border: 0;
@@ -1007,10 +1074,13 @@ section.products-content .filtri {
   section.products-content .filtri img {
     margin: auto; }
 
-section.products-content .intro p {
-  margin: 15px 0 0 0;
+section.products-content .intro {
+  margin: 15px 0 15px 0;
   border-bottom: 2px solid #00509a;
-  padding-bottom: 20px; }
+  padding-bottom: 20px;
+  
+   }
+
 
 section.products-content #prodotti-container .product {
   width: 100%;
@@ -1161,3 +1231,4 @@ Responsive styles
     padding: 30px 10px 10px 10px; } }
 
 /*# sourceMappingURL=main.css.map */
+

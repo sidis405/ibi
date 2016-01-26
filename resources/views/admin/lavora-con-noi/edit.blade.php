@@ -40,10 +40,10 @@
                         <input type="text" class="form-control input-sm" id="titolo" value="{{$posizione->titolo}}" placeholder="Il titolo della posizione" name="titolo" required>
                     </div>
 
-                    <div class="form-group fg-line">
+                   <!--  <div class="form-group fg-line">
                         <label for="sede">Sede</label>
                         <input type="text" class="form-control input-sm" id="sede" value="{{$posizione->sede}}" placeholder="La sede per la posizine aperta" name="sede" required>
-                    </div>
+                    </div> -->
 
                     <div class="form-group fg-line">
                         <label for="formulazione">Breve descrizione</label>

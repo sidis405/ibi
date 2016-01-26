@@ -119,6 +119,13 @@ class LavoraConNoiController extends AdminController
             $data['active'] = 0;
         }
 
+        if($request->has('sede'))
+        {
+            $data['sede'] = $request->input('sede');
+        }else{
+            $data['sede'] = '';
+        }
+
         return $data;
     }
 
