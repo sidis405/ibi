@@ -14,7 +14,8 @@
         "barryvdh/laravel-debugbar": "^2.1",
         "dimsav/laravel-translatable": "^5.4",
         "mpociot/versionable": "^2.1",
-        "anhskohbo/no-captcha": "^2.1"
+        "anhskohbo/no-captcha": "^2.1",
+        "unisharp/laravel-ckeditor": "^4.5"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",

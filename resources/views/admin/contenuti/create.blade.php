@@ -73,7 +73,7 @@
                 
                 <div class="card-body card-padding">
                     <div class="row">
-                        <textarea name="testi[{{$lingua->locale}}]"  class="html-editor" required></textarea>
+                        <textarea name="testi[{{$lingua->locale}}]" id="body_{{$lingua->locale}}"  class="html-editor" required></textarea>
                     </div>
                 </div>
             </div>
@@ -103,6 +103,17 @@
 <script src="/adm/vendors/bower_components/summernote/dist/summernote.min.js"></script>
 <script src="/adm/vendors/chosen_v1.4.2/chosen.jquery.min.js"></script>
 
+
+<script src="/vendor/unisharp/laravel-ckeditor/ckeditor.js"></script>
+    <script src="/vendor/unisharp/laravel-ckeditor/adapters/jquery.js"></script>
+    <script>
+        $('textarea').ckeditor({
+            language: 'it',
+            uiColor: '#ffffff',
+        });
+        // $('.textarea').ckeditor(); // if class is prefered.
+
+    </script>
 
 @stop
 

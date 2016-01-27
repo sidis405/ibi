@@ -126,6 +126,10 @@ section.content {
     border-radius: 0;
     border: 0;
     font-size: 12px; }
+section.content ul {
+    font-size: 16px !important;
+    margin-bottom: 35px;    
+ }
 
 
 section.content.ibisqus-ospedale-content h2 {
@@ -757,7 +761,9 @@ Tabs
   margin-top: 50px; }
   /*.tabs .tab-content b {
     display: block; }*/
-
+.tabs .tab-content h2 {
+  font-size: 22px;
+}
 .tabs .nav-tabs {
   border: 0;
   border-bottom: 2px solid #00509a;
@@ -804,7 +810,9 @@ Tabs
 .tabs.chi-siamo-tabs .nav-tabs li a {
   font-size: 14px;
   padding: 10px 11px; }
-
+.tabs.chi-siamo-tabs ul {
+  margin-bottom: 25px;
+}
 .tabs.chi-siamo-tabs h4 {
   font-size: 22px; }
 
@@ -854,8 +862,8 @@ Tabs
   width: 25%; }
 
 .tabs.ricerca-tabs .tab-content ul {
-  padding: 0 0 30px 40px;
-  border-bottom: 1px dotted #666; }
+  padding: 0 0 10px 40px;
+}
 
 .tabs.ricerca-tabs #innovativi ul {
   border: 0;

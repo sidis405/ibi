@@ -159,6 +159,7 @@ return [
         Barryvdh\Debugbar\ServiceProvider::class,
         Dimsav\Translatable\TranslatableServiceProvider::class,
         Anhskohbo\NoCaptcha\NoCaptchaServiceProvider::class,
+        Unisharp\Ckeditor\ServiceProvider::class,
     ],
 
     /*

@@ -515,70 +515,104 @@ $(document).ready(function(){
      * 
      */
     
-     if ($('.html-editor-limited')[0]) {
-       $('.html-editor-limited').summernote({
-            height: 350,
-            toolbar: [
-            ['style', ['style']],
-            ['font', ['bold', 'italic']],
-            ['para', ['ul', 'ol', 'paragraph']],
-            ['table', ['table']],
-            ['insert', ['link', 'hr']],
-          ]
-        });
-    }
+ //     if ($('.html-editor-limited')[0]) {
+ //       $('.html-editor-limited').summernote({
+ //            height: 350,
+ //            toolbar: [
+ //            ['style', ['style']],
+ //            ['font', ['bold', 'italic']],
+ //            ['para', ['ul', 'ol', 'paragraph']],
+ //            ['table', ['table']],
+ //            ['insert', ['link', 'hr']],
+ //          ]
+ //        });
+ //    }
     
-    if($('.html-editor-limited-click')[0]) {
-    //Edit
-    $('body').on('click', '.hec-button', function(){
-        $('.html-editor-limited-click').summernote({
-            focus: true
-        });
-        $('.hec-save').show();
-    })
+ //    if($('.html-editor-limited-click')[0]) {
+ //    //Edit
+ //    $('body').on('click', '.hec-button', function(){
+ //        $('.html-editor-limited-click').summernote({
+ //            focus: true
+ //        });
+ //        $('.hec-save').show();
+ //    })
     
-    //Save
-    $('body').on('click', '.hec-save', function(){
-        $('.html-editor-limited-click').code();
-            $('.html-editor-click').destroy();
-            $('.hec-save').hide();
-            notify('Content Saved Successfully!', 'success');
-        });
-    }
+ //    //Save
+ //    $('body').on('click', '.hec-save', function(){
+ //        $('.html-editor-limited-click').code();
+ //            $('.html-editor-click').destroy();
+ //            $('.hec-save').hide();
+ //            notify('Content Saved Successfully!', 'success');
+ //        });
+ //    }
 
-    /*
-     * HTML Editor
-     */
-    if ($('.html-editor')[0]) {
-	   $('.html-editor').summernote({
-            height: 150
-        });
-    }
+ //    /*
+ //     * HTML Editor
+ //     */
+ //    if ($('.html-editor')[0]) {
+	//    $('.html-editor').summernote({
+ //            height: 350
+ //        });
+ //    }
     
-    if($('.html-editor-click')[0]) {
-	//Edit
-	$('body').on('click', '.hec-button', function(){
-	    $('.html-editor-click').summernote({
-            focus: true
-	    });
-	    $('.hec-save').show();
-	})
+ //    if($('.html-editor-click')[0]) {
+	// //Edit
+	// $('body').on('click', '.hec-button', function(){
+	//     $('.html-editor-click').summernote({
+ //            focus: true
+	//     });
+	//     $('.hec-save').show();
+	// })
 	
-	//Save
-	$('body').on('click', '.hec-save', function(){
-	    $('.html-editor-click').code();
-            $('.html-editor-click').destroy();
-            $('.hec-save').hide();
-            notify('Content Saved Successfully!', 'success');
-        });
-    }
+	// //Save
+	// $('body').on('click', '.hec-save', function(){
+	//     $('.html-editor-click').code();
+ //            $('.html-editor-click').destroy();
+ //            $('.hec-save').hide();
+ //            notify('Content Saved Successfully!', 'success');
+ //        });
+ //    }
+
+ //    //Paste reset
+
+ //     jQuery.fn.selectText = function() {
+ //        var range, selection;
+ //        return this.each(function() {
+ //          if (document.body.createTextRange) {
+ //            range = document.body.createTextRange();
+ //            range.moveToElementText(this);
+ //            range.select();
+ //          } else if (window.getSelection) {
+ //            selection = window.getSelection();
+ //            range = document.createRange();
+ //            range.selectNodeContents(this);
+ //            selection.removeAllRanges();
+ //            selection.addRange(range);
+ //          }
+ //        });
+ //      };
+
+
+ //      $('#body_it').on('summernote.paste', function(customEvent, nativeEvent) {
+ //        setTimeout(function() {
+ //           $('#body_it').parent().find('.note-editor').find('.note-editable').selectText();
+ //          $("#body_it").summernote("removeFormat");
+ //        }, 100);
+ //      });
+
+ //      $('#body_en').on('summernote.paste', function(customEvent, nativeEvent) {
+ //        setTimeout(function() {
+ //           $('#body_en').parent().find('.note-editor').find('.note-editable').selectText();
+ //          $("#body_en").summernote("removeFormat");
+ //        }, 100);
+ //      });
     
-    //Air Mode
-    if($('.html-editor-airmod')[0]) {
-        $('.html-editor-airmod').summernote({
-            airMode: true
-        });
-    }
+ //    //Air Mode
+ //    if($('.html-editor-airmod')[0]) {
+ //        $('.html-editor-airmod').summernote({
+ //            airMode: true
+ //        });
+ //    }
     
     /*
      * Date Time Picker

@@ -75,7 +75,7 @@
                 
                 <div class="card-body card-padding">
                     <div class="row">
-                        <textarea name="testi[{{$lingua->locale}}]"  class="html-editor" required>{{$traduzioni[$lingua->locale]['testo']}}</textarea>
+                        <textarea name="testi[{{$lingua->locale}}]"  id="body_{{$lingua->locale}}" class="html-editor" required>{{$traduzioni[$lingua->locale]['testo']}}</textarea>
                     </div>
                 </div>
             </div>
@@ -131,7 +131,20 @@
     });
 
 
+
+
 </script>
+
+<script src="/vendor/unisharp/laravel-ckeditor/ckeditor.js"></script>
+    <script src="/vendor/unisharp/laravel-ckeditor/adapters/jquery.js"></script>
+    <script>
+        $('textarea').ckeditor({
+            language: 'it',
+            uiColor: '#ffffff',
+        });
+        // $('.textarea').ckeditor(); // if class is prefered.
+
+    </script>
 
 @stop
 

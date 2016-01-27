@@ -160,9 +160,11 @@ class HomeController extends Controller
         return view('pages.benessere-del-paziente');
     }
 
-    public function privacy_policy()
+    public function privacy_policy(NewsRepo $news_repo, PagineRepo $pagine_repo)
     {
-        return view('pages.privacy-policy');
+        $contenuti = $pagine_repo->getContentForPage('privacy-policy');
+        $news = $news_repo->getAllFront();
+        return view('pages.privacy-policy', compact('contenuti', 'news'));
     }
 
     public function pull()
