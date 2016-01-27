@@ -26,6 +26,8 @@ CKEDITOR.editorConfig = function( config ) {
 		{ name: 'about' }
 	];
 
+	config.height = 350;
+
 	config.coreStyles_italic = { element : 'i', overrides : 'em' };
 
 	// Remove some buttons provided by the standard plugins, which are
