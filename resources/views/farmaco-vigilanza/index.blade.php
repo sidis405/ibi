@@ -12,8 +12,7 @@
       <div class="container">
         <div class="row">
           <div class="col-sm-8">
-            <h2>Farmacovigilanza</h2>
-            <h3>La sicurezza prima di tutto</h3><img src="/img/home-content-img.jpg" class="img-responsive">
+           
             @include('layouts.content', array('key' => 'farmaco-vigilanza-main', 'permesso'=> 'modifica_farmacovigilanza'))
             <a href="/farmaco-vigilanza/segnalazione" class="btn btn-primary">Invia segnalazione</a>
           </div>

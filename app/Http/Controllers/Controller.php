@@ -7,6 +7,7 @@ use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Foundation\Bus\DispatchesJobs;
 use Illuminate\Foundation\Validation\ValidatesRequests;
 use Illuminate\Routing\Controller as BaseController;
+use Ibi\Repositories\PagineRepo;
 use Session;
 
 abstract class Controller extends BaseController
@@ -15,7 +16,11 @@ abstract class Controller extends BaseController
 
      function __construct() {
 
+        $pagine_repo = new PagineRepo();
 
+        $contenuti_footer = $pagine_repo->getContentForPage('index');
+
+        view()->share('contenuti_footer', $contenuti_footer);
         view()->share('user', \Auth()->user());
         view()->share('menu', MenuItems::all()->keyBy('slug'));
 

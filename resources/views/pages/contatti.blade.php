@@ -16,34 +16,7 @@
               <div class="col-md-8">
                 <div class="row">
                   <div class="loghi"><img src="/img/ibi-lorenzini-logo.png"></div>
-                  <div class="col-sm-6">
-                    <p><b>Indirizzo e Sede legale:<br></b>Istituto Biochimico Italiano <br>
-                      Giovanni Lorenzini S.p.A. <br>
-                      Via Fossignano, 2 <br>
-                      04011 Aprilia (LT) Italy
-                      <br><br>
-                      Centralino +39 06 92150 1<br>
-                      Fax +39 06 92150 500<br><a href="mailto:info@ibi-lorenzini.com">info@ibi-lorenzini.com<br></a>P.IVA 02578030153
-                    </p>
-                  </div>
-                  <div class="col-sm-6">
-                    <p><b>Export Department<br></b>Fax +39 06 92150.598<br><a href="mailto:export@ibi-lorenzini.com">export@ibi-lorenzini.com</a><br><br><b>Contract Manufacturing Services<br></b><a href="mailto:cms@ibi-lorenzini.com">cms@ibi-lorenzini.com</a><br><br><b>Pharmaceutical Development Services<br></b><a href="mailto:pds@ibi-lorenzini.com">pds@ibi-lorenzini.com</a></p>
-                  </div>
-                  <div class="col-xs-12">
-                    <div class="borded"></div>
-                  </div>
-                  <div class="col-xs-12">
-                    <div class="row">
-                      <div class="col-sm-6">
-                        <p><b>Contract Manufacturing Services<br></b><a href="mailto:cms@ibi-lorenzini.com">cms@ibi-lorenzini.com</a><br><br><b>Pharmaceutical Development Services<br></b><a href="mailto:pds@ibi-lorenzini.com">pds@ibi-lorenzini.com</a></p>
-                      </div>
-                      <div class="col-sm-6">
-                        <p><b>Dipartimento di Farmacovigilanza IBIGEN e IBI<br></b>Tel. +39 06 92150 395<br>
-                          Fax +39 06 92150 573<br><a href="mailto:pharmacovigilance@ibi-lorenzini.com">pharmacovigilance@ibi-lorenzini.com<br></a><a href="mailto:pharmacovigilance@ibigen.it">pharmacovigilance@ibigen.it</a>
-                        </p>
-                      </div>
-                    </div>
-                  </div>
+                   @include('layouts.content', array('key' => 'contatti_main', 'permesso'=> 'modifica_contatti'))
                 </div>
               </div>
               <div class="col-md-4">
@@ -63,23 +36,7 @@
                     <div id="collapseOne" role="tabpanel" aria-labelledby="headingOne" class="panel-collapse collapse in">
                       <div class="panel-body">
                         <div class="row">
-                          <div class="col-sm-6">
-                            <p>
-                              Via Fossignano, 2 <br>
-                              04011 Aprilia (LT)<br>
-                              Italia<br><br><b>Informazioni commerciali<br></b>Tel.: +39 06 92 150 1<br>
-                              Fax.: +39 06 921 50 430<br>
-                              Tel.: +39 345 7166761 (customer service)<br><a href="mailto:servizio.clienti@ibisqus.com">servizio.clienti@ibisqus.com<br></a><a href="mailto:gare@ibisqus.com">gare@ibisqus.com<br><br></a><b>Trasmissione ordini d’acquisto<br></b>c/o DHL SUPPLY CHAIN (ITALY) S.p.A.<br>
-                              Tel.: +39 06 71308074/75/80/83<br>
-                              fax: +39 06 71308077/78<br><a href="mailto:ordini.ibisqus@dhl.com">ordini.ibisqus@dhl.com<br></a><a href="mailto:ordini@pec-ibisqus.com">ordini@pec-ibisqus.com                           </a>
-                            </p>
-                          </div>
-                          <div class="col-sm-6">
-                            <p><b>Per informazioni medico-scientifiche<br></b><a href="mailto:servizioscientifico@ibi-lorenzini.com">servizioscientifico@ibi-lorenzini.com<br></a>Fax.: +39 06 92 150 573<br><br><b>Dipartimento di Farmacovigilanza IBIGEN e IBI<br></b>Tel.: +39 06 92 150 395<br>
-                              Fax.: +39 06 92 150 573<br>
-                              E-mail:<br><a href="mailto:pharmacovigilance@ibi-lorenzini.com">pharmacovigilance@ibi-lorenzini.com<br></a><a href="mailto:pharmacovigilance@ibigen.it">pharmacovigilance@ibigen.it</a>
-                            </p>
-                          </div>
+                          @include('layouts.content', array('key' => 'contatti_ibisqus_italia', 'permesso'=> 'modifica_contatti'))
                         </div>
                       </div>
                     </div>
@@ -91,19 +48,7 @@
                     <div id="collapseTwo" role="tabpanel" aria-labelledby="headingTwo" class="panel-collapse collapse">
                       <div class="panel-body">
                         <div class="row">
-                          <div class="col-sm-6">
-                            <p>
-                              Donnersbergstrasse 6<br>
-                              64646 Heppenheim<br>
-                              Tel. +49 (0) 6252 - 9428200<br>
-                              Fax +49 (0) 6252 – 9428211<br><br>
-                              Geschäftsführer<br>
-                              Mobil: +49 (0) 151 - 58837855<br><a href="mailto:fs@ibisqus.com">fs@ibisqus.com                           </a>
-                            </p>
-                          </div>
-                          <div class="col-sm-6">
-                            <p><b>Customer Service <br></b><a href="mailto:j.braun@msk-pharmalogistic.de">j.braun@msk-pharmalogistic.de <br><br></a><b>Sales Representative <br></b>Mobil: +49 (0) 151 - 12442270<br><a href="mailto:vj@ibisqus.com">vj@ibisqus.com <br><br></a><b>Customer Service <br></b><a href="mailto:y.schmitt@msk-pharmalogistic.de">y.schmitt@msk-pharmalogistic.de</a></p>
-                          </div>
+                          @include('layouts.content', array('key' => 'contatti_ibisqus_germania', 'permesso'=> 'modifica_contatti'))
                         </div>
                       </div>
                     </div>
@@ -114,13 +59,7 @@
                       </div></a>
                     <div id="collapseThree" role="tabpanel" aria-labelledby="headingThree" class="panel-collapse collapse">
                       <div class="panel-body">
-                        <p><b>Bowmed Ibisqus Limited<br></b>The Old Dairy,<br>
-                          Brynkinalt Business Centre,<br>
-                          Brynkinalt, Chirk, Wrexham, LL14 5NS<br>
-                          Tel +44 (0) 845 6436 703<br>
-                          Fax +44 (0) 700 6053 513<br>
-                          www.bowmed.com<br><a href="mailto:info@bowmed.com">info@bowmed.com </a>
-                        </p>
+                         @include('layouts.content', array('key' => 'contatti_ibisqus_uk', 'permesso'=> 'modifica_contatti'))
                       </div>
                     </div>
                   </div>

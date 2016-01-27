@@ -39,7 +39,7 @@ MIXITUP
   background: green;
   padding: 6px;
   border-radius: 50%;
-  color: #fff;
+  color: #fff!important;
   z-index: 99;
 }
 

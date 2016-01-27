@@ -150,14 +150,17 @@ class HomeController extends Controller
         return view('pages.ibisqus-ospedale', compact('contenuti'));
     }
 
-    public function contatti()
+    public function contatti(PagineRepo $pagine_repo)
     {
-        return view('pages.contatti');
+
+        $contenuti = $pagine_repo->getContentForPage('contatti');
+        return view('pages.contatti', compact('contenuti'));
     }
 
-    public function benessere_del_paziente()
+    public function benessere_del_paziente(NewsRepo $news_repo)
     {
-        return view('pages.benessere-del-paziente');
+        $news = $news_repo->getAllFront();
+        return view('pages.benessere-del-paziente', compact('news'));
     }
 
     public function privacy_policy(NewsRepo $news_repo, PagineRepo $pagine_repo)
