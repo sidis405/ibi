@@ -23,7 +23,7 @@
           <div class="intro">
             
             @include('layouts.content', array('key' => 'intro_prodotti_ibi_export', 'permesso'=> 'modifica_export'))
-            <!-- <a href="/ibi-export" class="btn btn-primary">Leggi di più</a> -->
+            <a href="/ibi-export" class="btn btn-primary">Leggi di più</a>
             
           </div>
           @include('prodotti.partials.prodotti_export_partial')

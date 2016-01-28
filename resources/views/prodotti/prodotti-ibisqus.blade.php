@@ -23,7 +23,7 @@
           <div class="intro">
          
               @include('layouts.content', array('key' => 'intro_prodotti_ibisqus', 'permesso'=> 'modifica_ibisqus'))
-             <!-- <a href="/ibi-ibisqus" class="btn btn-primary">Leggi di più</a> -->
+             <a href="/ibi-ibisqus" class="btn btn-primary">Leggi di più</a>
             </div>
             @include('prodotti.partials.prodotti_ibisqus_partial')
           </div>

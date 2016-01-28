@@ -1245,6 +1245,10 @@ section.products-content .intro {
 margin: 15px 0 15px 0;
 border-bottom: 2px solid #00509a;
 padding-bottom: 20px;
+float: left;
+}
+section.products-content .intro .btn {
+  float: right;
 }
 section.products-content #prodotti-container .product {
 width: 100%;

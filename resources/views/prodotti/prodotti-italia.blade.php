@@ -29,7 +29,7 @@
           <div class="intro">
   
               @include('layouts.content', array('key' => 'intro_prodotti_ibi_italia', 'permesso'=> 'modifica_ibi_italia'))
-             <!-- <a href="/ibi-italia" class="btn btn-primary">Leggi di più</a> -->
+             <a href="/ibi-italia" class="btn btn-primary">Leggi di più</a>
             </div>
             @include('prodotti.partials.prodotti_italia_partial')
           </div>
