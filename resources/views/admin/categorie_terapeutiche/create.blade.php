@@ -5,7 +5,7 @@
             <section id="content">
                 <div class="container">
                     <div class="block-header">
-                        <h2>Paesi</h2>
+                        <h2>Categorie terapeutiche</h2>
                     
                         <ul class="actions">
                             <li>
@@ -49,14 +49,19 @@
                             </div>
                             
                             <div class="card-body card-padding">
+                              
+
+                                @foreach($lingue as $lingua)
                                 <div class="form-group">
-                                    <label for="nome" class="col-sm-2 control-label">Categoria Terapeutica</label>
+                                    <label for="nome" class="col-sm-2 control-label">Categoria Terapeutica {{$lingua->label}}</label>
                                     <div class="col-sm-10">
                                         <div class="fg-line">
-                                            <input type="text" name="nome" class="form-control input-sm" id="nome" placeholder="" required>
+                                        <input type="text" class="form-control input-sm" placeholder="Il titolo della categoria" name="nomi[{{$lingua->locale}}]" required>
                                         </div>
                                     </div>
                                 </div>
+                                @endforeach
+
                                 @include('admin.categorie_terapeutiche.principi_attivi_form_partial', array('principi_categoria' => []))
                                 <div class="form-group">
                                     <div class="col-sm-offset-2 col-sm-10">

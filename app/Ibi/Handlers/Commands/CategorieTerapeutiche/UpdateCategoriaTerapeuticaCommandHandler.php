@@ -6,7 +6,7 @@ use Event;
 use Illuminate\Queue\InteractsWithQueue;
 use Ibi\Commands\CategorieTerapeutiche\UpdateCategoriaTerapeuticaCommand;
 use Ibi\Events\CategorieTerapeutiche\CategoriaTerapeuticaWasUpdated;
-use Ibi\Models\CategorieTerapeutiche;
+use Ibi\Models\Ct;
 use Ibi\Repositories\CategorieTerapeuticheRepo;
 
 
@@ -33,17 +33,37 @@ class UpdateCategoriaTerapeuticaCommandHandler
     public function handle(UpdateCategoriaTerapeuticaCommand $command)
     {
 
-        $categoria_terapeutica_object = CategorieTerapeutiche::edit(
+        $categoria_terapeutica_object = Ct::edit(
             $command->categoria_terapeutica_id,
-            $command->nome
+            $command->nomi
             );
 
         $categoria_terapeutica = $this->repo->save($categoria_terapeutica_object);
 
         $categoria_terapeutica->principi_attivi()->sync($command->principi_attivi);
 
+        $this->updateTranslations($categoria_terapeutica, $command->nomi);
+
         Event::fire(new CategoriaTerapeuticaWasUpdated($categoria_terapeutica));
 
         return $categoria_terapeutica;
+    }
+
+
+    protected function updateTranslations($categoria, $nomi)
+    {
+        $data = [];
+        
+        foreach($nomi as $locale => $nome)
+        {
+            $data[$locale]['nome'] = $nome;
+        }
+
+        foreach($nomi as $locale => $nome)
+        {
+            $data[$locale]['slug'] = str_slug($nome);
+        }
+
+        $categoria->update($data);
     }
 }

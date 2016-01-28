@@ -2,14 +2,14 @@
 
 namespace Ibi\Repositories;
 
-use Ibi\Models\CategorieTerapeutiche;
+use Ibi\Models\Ct;
 
 /**
 * Categorie Terapeutiche Repo
 */
 class CategorieTerapeuticheRepo
 {
-    public function save(CategorieTerapeutiche $categorieTerapeutica)
+    public function save(Ct $categorieTerapeutica)
     {
         $categorieTerapeutica->save();
 
@@ -31,16 +31,16 @@ class CategorieTerapeuticheRepo
 
     public function getAll()
     {
-        return CategorieTerapeutiche::with('prodotti', 'principi_attivi')->orderBy('nome')->get();
+        return Ct::with('prodotti', 'principi_attivi')->get();
     } 
 
     public function getAllFront()
     {
-        return CategorieTerapeutiche::with('principi_attivi')->orderBy('nome')->get();
+        return Ct::with('principi_attivi')->get();
     }
 
     public function getById($id)
     {
-        return CategorieTerapeutiche::where('id', $id)->with('prodotti', 'principi_attivi')->first();
+        return Ct::where('id', $id)->with('prodotti', 'principi_attivi')->first();
     } 
 }

@@ -50,14 +50,16 @@
                             </div>
                             
                             <div class="card-body card-padding">
+                             @foreach($lingue as $lingua)
                                 <div class="form-group">
-                                    <label for="nome" class="col-sm-2 control-label">Categoria Terapeutica</label>
+                                    <label for="nome" class="col-sm-2 control-label">Categoria Terapeutica {{$lingua->label}}</label>
                                     <div class="col-sm-10">
                                         <div class="fg-line">
-                                            <input type="text" name="nome" value="{{$categoria_terapeutica->nome}}" class="form-control input-sm" id="nome" placeholder="" required>
+                                            <input type="text" class="form-control input-sm" value="{{$traduzioni[$lingua->locale]['nome']}}" placeholder="Il titolo della categoria" name="nomi[{{$lingua->locale}}]" required>
                                         </div>
                                     </div>
                                 </div>
+                            @endforeach
                                 @include('admin.categorie_terapeutiche.principi_attivi_form_partial', array('principi_categoria' => array_pluck($categoria_terapeutica->principi_attivi, 'id')))
                                 <div class="form-group">
                                     <div class="col-sm-offset-2 col-sm-10">

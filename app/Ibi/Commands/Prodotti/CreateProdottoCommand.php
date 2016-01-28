@@ -8,7 +8,7 @@ class CreateProdottoCommand extends Command
 {
 
     public $nome;
-    public $formulazione;
+    public $formulazioni;
     public $principio_attivo_id;
     public $fascia_id;
     public $foglietto_illustrativo;
@@ -29,7 +29,7 @@ class CreateProdottoCommand extends Command
      * @return void
      */
     public function __construct($nome, 
-                                $formulazione, 
+                                $formulazioni, 
                                 $principio_attivo_id, 
                                 $fascia_id, 
                                 $foglietto_illustrativo, 
@@ -46,7 +46,7 @@ class CreateProdottoCommand extends Command
                                 )
     {
         $this->nome = $nome;
-        $this->formulazione = $formulazione; 
+        $this->formulazioni = $formulazioni; 
         $this->principio_attivo_id = $principio_attivo_id; 
         $this->fascia_id = $fascia_id; 
         $this->foglietto_illustrativo = $foglietto_illustrativo; 

@@ -9,7 +9,7 @@ class UpdateProdottoCommand extends Command
 
     public $prodotto_id;
     public $nome;
-    public $formulazione;
+    public $formulazioni;
     public $principio_attivo_id;
     public $fascia_id;
     public $foglietto_illustrativo;
@@ -29,7 +29,7 @@ class UpdateProdottoCommand extends Command
      *
      * @return void
      */
-    public function __construct($prodotto_id, $nome, $formulazione, 
+    public function __construct($prodotto_id, $nome, $formulazioni, 
                                 $principio_attivo_id, 
                                 $fascia_id, 
                                 $foglietto_illustrativo, 
@@ -47,7 +47,7 @@ class UpdateProdottoCommand extends Command
     {
         $this->prodotto_id  = $prodotto_id;
         $this->nome = $nome;
-        $this->formulazione = $formulazione; 
+        $this->formulazioni = $formulazioni; 
         $this->principio_attivo_id = $principio_attivo_id; 
         $this->fascia_id = $fascia_id; 
         $this->foglietto_illustrativo = $foglietto_illustrativo; 

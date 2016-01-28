@@ -2,14 +2,14 @@
 
 namespace Ibi\Repositories;
 
-use Ibi\Models\PrincipiAttivi;
+use Ibi\Models\Pa;
 
 /**
 * Principi Attivi Repo
 */
 class PrincipiAttiviRepo
 {
-    public function save(PrincipiAttivi $principioAttivo)
+    public function save(Pa $principioAttivo)
     {
         $principioAttivo->save();
 
@@ -31,16 +31,16 @@ class PrincipiAttiviRepo
 
     public function getAll()
     {
-        return PrincipiAttivi::with('prodotti', 'categorie_terapeutiche')->orderBy('nome')->get();
+        return Pa::with('prodotti', 'categorie_terapeutiche')->get();
     } 
 
     public function getAllFront()
     {
-        return PrincipiAttivi::orderBy('nome')->get();
+        return Pa::orderBy('nome')->get();
     } 
 
     public function getById($id)
     {
-        return PrincipiAttivi::where('id', $id)->with('prodotti', 'categorie_terapeutiche')->first();
+        return Pa::where('id', $id)->with('prodotti', 'categorie_terapeutiche')->first();
     } 
 }

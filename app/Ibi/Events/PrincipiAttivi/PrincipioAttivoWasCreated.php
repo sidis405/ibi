@@ -3,7 +3,7 @@
 namespace Ibi\Events\PrincipiAttivi;
 
 use Event;
-use Ibi\Models\PrincipiAttivi;
+use Ibi\Models\Pa;
 use Illuminate\Queue\SerializesModels;
 use Illuminate\Contracts\Broadcasting\ShouldBroadcast;
 
@@ -16,7 +16,7 @@ class PrincipioAttivoWasCreated extends Event
      *
      * @return void
      */
-    public function __construct(PrincipiAttivi $principio_attivo)
+    public function __construct(Pa $principio_attivo)
     {
         $this->principio_attivo = $principio_attivo;
     }

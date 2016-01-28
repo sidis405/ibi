@@ -7,7 +7,7 @@ use App\Http\Requests;
 use Ibi\Repositories\PrincipiAttiviRepo;
 use Ibi\Repositories\CategorieTerapeuticheRepo;
 use Illuminate\Http\Request;
-
+use Ibi\Models\Languages;
 
 class PrincipiAttiviController extends AdminController
 {
@@ -31,9 +31,11 @@ class PrincipiAttiviController extends AdminController
      */
     public function create(CategorieTerapeuticheRepo $categorie_terapeutiche_repo)
     {
+        $lingue = Languages::all();
+
         $categorie_terapeutiche = $categorie_terapeutiche_repo->getAll();
 
-        return view('admin.principi_attivi.create', compact('categorie_terapeutiche'));
+        return view('admin.principi_attivi.create', compact('categorie_terapeutiche', 'lingue'));
     }
 
 
@@ -76,7 +78,11 @@ class PrincipiAttiviController extends AdminController
 
         $categorie_terapeutiche = $categorie_terapeutiche_repo->getAll();
 
-        return view('admin.principi_attivi.edit', compact('principio_attivo', 'categorie_terapeutiche'));
+        $lingue = Languages::all();
+
+        $traduzioni = $principio_attivo->translations->keyBy('locale');
+
+        return view('admin.principi_attivi.edit', compact('principio_attivo', 'categorie_terapeutiche', 'lingue', 'traduzioni'));
     }
 
     /**

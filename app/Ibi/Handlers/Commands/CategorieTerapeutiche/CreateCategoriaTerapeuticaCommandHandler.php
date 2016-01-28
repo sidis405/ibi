@@ -3,7 +3,7 @@
 namespace Ibi\Handlers\Commands\CategorieTerapeutiche;
 
 use Ibi\Commands\CategorieTerapeutiche\CreateCategoriaTerapeuticaCommand;
-use Ibi\Models\CategorieTerapeutiche;
+use Ibi\Models\Ct;
 use Illuminate\Queue\InteractsWithQueue;
 use Ibi\Repositories\CategorieTerapeuticheRepo;
 use Ibi\Events\CategorieTerapeutiche\CategoriaTerapeuticaWasCreated;
@@ -32,7 +32,7 @@ class CreateCategoriaTerapeuticaCommandHandler
      */
     public function handle(CreateCategoriaTerapeuticaCommand $command)
     {
-        $categoria_terapeutica_object = CategorieTerapeutiche::make($command->nome);
+        $categoria_terapeutica_object = Ct::make($command->nomi);
 
         $categoria_terapeutica = $this->repo->save($categoria_terapeutica_object);
 

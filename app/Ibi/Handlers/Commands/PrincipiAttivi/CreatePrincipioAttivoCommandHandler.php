@@ -3,7 +3,7 @@
 namespace Ibi\Handlers\Commands\PrincipiAttivi;
 
 use Ibi\Commands\PrincipiAttivi\CreatePrincipioAttivoCommand;
-use Ibi\Models\PrincipiAttivi;
+use Ibi\Models\Pa;
 use Illuminate\Queue\InteractsWithQueue;
 use Ibi\Repositories\PrincipiAttiviRepo;
 use Ibi\Events\PrincipiAttivi\PrincipioAttivoWasCreated;
@@ -32,7 +32,7 @@ class CreatePrincipioAttivoCommandHandler
      */
     public function handle(CreatePrincipioAttivoCommand $command)
     {
-        $principio_attivo_object = PrincipiAttivi::make($command->nome);
+        $principio_attivo_object = Pa::make($command->nomi);
 
         $principio_attivo = $this->repo->save($principio_attivo_object);
 

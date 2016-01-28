@@ -7,7 +7,7 @@ use Ibi\Commands\Command;
 class CreateCategoriaTerapeuticaCommand extends Command
 {
 
-    public $nome;
+    public $nomi;
     public $principi_attivi;
     
     /**
@@ -15,9 +15,9 @@ class CreateCategoriaTerapeuticaCommand extends Command
      *
      * @return void
      */
-    public function __construct($nome, $principi_attivi = [])
+    public function __construct($nomi, $principi_attivi = [])
     {
-        $this->nome  = $nome;
+        $this->nomi  = $nomi;
         $this->principi_attivi  = $principi_attivi;
     }
 }

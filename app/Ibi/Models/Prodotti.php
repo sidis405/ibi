@@ -3,9 +3,15 @@
 namespace Ibi\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use Dimsav\Translatable\Translatable;
+
 
 class Prodotti extends Model
 {
+    use Translatable;
+
+    public $translatedAttributes = ['formulazione'];
+
     protected $table = 'prodotti';
 
     protected $guarded = ['id', 'created_at', 'updated_at'];
@@ -13,12 +19,12 @@ class Prodotti extends Model
 
     public function categoria_terapeutica()
     {
-        return $this->belongsTo(CategorieTerapeutiche::class, 'categoria_terapeutica_id');
+        return $this->belongsTo(Ct::class, 'categoria_terapeutica_id');
     }
 
     public function principio_attivo()
     {
-        return $this->belongsTo(PrincipiAttivi::class, 'principio_attivo_id');
+        return $this->belongsTo(Pa::class, 'principio_attivo_id');
     }
 
     public function fascia()
@@ -37,7 +43,7 @@ class Prodotti extends Model
     }
 
     public static function make($nome, 
-                                $formulazione, 
+                                $formulazioni, 
                                 $principio_attivo_id, 
                                 $fascia_id, 
                                 // $aic, 
@@ -52,16 +58,23 @@ class Prodotti extends Model
         $nome = rtrim($nome);
         $slug = str_slug($nome);
         
-        $prodotto = new static(compact('nome', 'slug', 'formulazione', 'principio_attivo_id', 'fascia_id', 'foglietto_illustrativo', 'scheda_tecnica', 
+        $data = compact('nome', 'slug', 'principio_attivo_id', 'fascia_id', 'foglietto_illustrativo', 'scheda_tecnica', 
             // 'aic', 'atc', 
-            'regime_dispensazione', 'unita', 'validita_mesi', 'categoria_terapeutica_id', 'active'));
+            'regime_dispensazione', 'unita', 'validita_mesi', 'categoria_terapeutica_id', 'active');
+
+        foreach($formulazioni as $locale => $formulazione)
+        {
+            $data[$locale] = ['formulazione' => $formulazione];
+        }
+
+        $prodotto = new static($data);
 
         return $prodotto;
     }
 
     public static function edit($prodotto_id, 
                                 $nome, 
-                                $formulazione, 
+                                $formulazioni, 
                                 $principio_attivo_id, 
                                 $fascia_id, 
                                 // $aic, 
@@ -78,7 +91,6 @@ class Prodotti extends Model
 
         $prodotto->nome = $nome;
         $prodotto->slug = str_slug($nome);
-        $prodotto->formulazione = $formulazione; 
         $prodotto->principio_attivo_id = $principio_attivo_id; 
         $prodotto->fascia_id = $fascia_id; 
         // $prodotto->aic = $aic; 

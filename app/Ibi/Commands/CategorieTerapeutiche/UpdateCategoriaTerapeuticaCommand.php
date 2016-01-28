@@ -8,7 +8,7 @@ class UpdateCategoriaTerapeuticaCommand extends Command
 {
 
     public $categoria_terapeutica_id;
-    public $nome;
+    public $nomi;
     public $principi_attivi;
 
     /**
@@ -16,10 +16,10 @@ class UpdateCategoriaTerapeuticaCommand extends Command
      *
      * @return void
      */
-    public function __construct($categoria_terapeutica_id, $nome, $principi_attivi = [])
+    public function __construct($categoria_terapeutica_id, $nomi, $principi_attivi = [])
     {
         $this->categoria_terapeutica_id = $categoria_terapeutica_id;
-        $this->nome = $nome;
+        $this->nomi = $nomi;
         $this->principi_attivi = $principi_attivi;
     }
 }

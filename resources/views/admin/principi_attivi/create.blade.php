@@ -49,14 +49,16 @@
                             </div>
                             
                             <div class="card-body card-padding">
+                               @foreach($lingue as $lingua)
                                 <div class="form-group">
-                                    <label for="nome" class="col-sm-2 control-label">Principio Attivo</label>
+                                    <label for="nome" class="col-sm-2 control-label">Principio Attivo {{$lingua->label}}</label>
                                     <div class="col-sm-10">
                                         <div class="fg-line">
-                                            <input type="text" name="nome" class="form-control input-sm" id="nome" placeholder="" required>
+                                        <input type="text" class="form-control input-sm" placeholder="Il titolo del principio" name="nomi[{{$lingua->locale}}]" required>
                                         </div>
                                     </div>
                                 </div>
+                                @endforeach
                                 @include('admin.principi_attivi.categorie_terapeutiche_form_partial', array('principi_categoria' => []))
                                 <div class="form-group">
                                     <div class="col-sm-offset-2 col-sm-10">

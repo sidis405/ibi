@@ -39,7 +39,7 @@ class CreateProdottoCommandHandler
 
         $prodotto_object = Prodotti::make(
             $command->nome, 
-            $command->formulazione, 
+            $command->formulazioni, 
             $command->principio_attivo_id, 
             $command->fascia_id, 
             // $command->aic, 
@@ -71,7 +71,7 @@ class CreateProdottoCommandHandler
 
         if($foglietto_illustrativo)
         {
-            $foglietto_path = $this->file_utility->putFile($prodotto->id, 'foglietto', $foglietto_illustrativo, ['nome' => $prodotto->nome, 'formulazione' => $prodotto->formulazione]);
+            $foglietto_path = $this->file_utility->putFile($prodotto->id, 'foglietto', $foglietto_illustrativo, ['nome' => $prodotto->nome, 'formulazione' => 'formulazione']);
 
             $prodotto->update(['foglietto_illustrativo' => $foglietto_path]);
             
@@ -84,7 +84,7 @@ class CreateProdottoCommandHandler
 
         if($scheda_tecnica)
         {
-            $scheda_path = $this->file_utility->putFile($prodotto->id, 'scheda', $scheda_tecnica, ['nome' => $prodotto->nome, 'formulazione' => $prodotto->formulazione]);
+            $scheda_path = $this->file_utility->putFile($prodotto->id, 'scheda', $scheda_tecnica, ['nome' => $prodotto->nome, 'formulazione' => 'formulazione']);
 
             $prodotto->update(['scheda_tecnica' => $scheda_path]);
             

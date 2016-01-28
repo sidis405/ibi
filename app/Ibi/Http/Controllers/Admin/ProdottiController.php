@@ -11,7 +11,7 @@ use Ibi\Repositories\PrincipiAttiviRepo;
 use Ibi\Repositories\ProdottiRepo;
 use Ibi\Repositories\SezioniRepo;
 use Illuminate\Http\Request;
-
+use Ibi\Models\Languages;
 
 class ProdottiController extends AdminController
 {
@@ -40,8 +40,9 @@ class ProdottiController extends AdminController
         $principi_attivi = $principi_attivi_repo->getAll();
         $paesi = $paesi_repo->getAll();
         $fascie = $fascie_repo->getAll();
+        $lingue = Languages::all();
 
-        return view('admin.prodotti.create', compact('sezioni', 'categorie_terapeutiche', 'principi_attivi', 'paesi', 'fascie'));
+        return view('admin.prodotti.create', compact('sezioni', 'categorie_terapeutiche', 'principi_attivi', 'paesi', 'fascie', 'lingue'));
     }
 
 
@@ -88,7 +89,8 @@ class ProdottiController extends AdminController
         $principi_attivi = $principi_attivi_repo->getAll();
         $paesi = $paesi_repo->getAll();
         $fascie = $fascie_repo->getAll();
-        return view('admin.prodotti.edit', compact('prodotto', 'sezioni', 'principi_attivi', 'categorie_terapeutiche', 'paesi', 'fascie'));
+        $lingue = Languages::all();
+        return view('admin.prodotti.edit', compact('prodotto', 'sezioni', 'principi_attivi', 'categorie_terapeutiche', 'paesi', 'fascie', 'lingue'));
     }
 
     /**

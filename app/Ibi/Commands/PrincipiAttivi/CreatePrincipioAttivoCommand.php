@@ -7,7 +7,7 @@ use Ibi\Commands\Command;
 class CreatePrincipioAttivoCommand extends Command
 {
 
-    public $nome;
+    public $nomi;
     public $categorie_terapeutiche;
     
     /**
@@ -15,9 +15,9 @@ class CreatePrincipioAttivoCommand extends Command
      *
      * @return void
      */
-    public function __construct($nome, $categorie_terapeutiche = [])
+    public function __construct($nomi, $categorie_terapeutiche = [])
     {
-        $this->nome  = $nome;
+        $this->nomi  = $nomi;
         $this->categorie_terapeutiche  = $categorie_terapeutiche;
     }
 }

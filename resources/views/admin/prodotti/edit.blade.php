@@ -69,10 +69,12 @@
                         <label for="nome">Nome</label>
                         <input type="text" class="form-control input-sm" id="nome" placeholder="Il nome del prodotto" name="nome" value="{{$prodotto->nome}}">
                     </div>
+                     @foreach($lingue as $lingua)
                     <div class="form-group fg-line">
-                        <label for="formulazione">Formulazione</label>
-                        <input type="text" class="form-control input-sm" id="formulazione"  value="{{$prodotto->formulazione}}" name="formulazione"  placeholder="La formulazione completa del prodotto">
+                        <label for="formulazione">Formulazione {{$lingua->label}}</label>
+                        <input type="text" class="form-control input-sm" id="formulazione"  value="" name="formulazioni[{{$lingua->locale}}]"  placeholder="La formulazione completa del prodotto">
                     </div>
+                    @endforeach
                 </div>
             </div>
             <div class="card">

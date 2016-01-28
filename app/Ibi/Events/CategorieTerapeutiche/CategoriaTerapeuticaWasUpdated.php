@@ -3,7 +3,7 @@
 namespace Ibi\Events\CategorieTerapeutiche;
 
 use Event;
-use Ibi\Models\CategorieTerapeutiche;
+use Ibi\Models\Ct;
 use Illuminate\Queue\SerializesModels;
 use Illuminate\Contracts\Broadcasting\ShouldBroadcast;
 
@@ -16,7 +16,7 @@ class CategoriaTerapeuticaWasUpdated extends Event
      *
      * @return void
      */
-    public function __construct(CategorieTerapeutiche $categoria_terapeutica)
+    public function __construct(Ct $categoria_terapeutica)
     {
         $this->categoria_terapeutica = $categoria_terapeutica;
     }

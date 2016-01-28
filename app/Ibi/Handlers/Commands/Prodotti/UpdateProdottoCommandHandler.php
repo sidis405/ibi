@@ -40,7 +40,7 @@ class UpdateProdottoCommandHandler
          $prodotto_object = Prodotti::edit(
             $command->prodotto_id,
             $command->nome, 
-            $command->formulazione, 
+            $command->formulazioni, 
             $command->principio_attivo_id, 
             $command->fascia_id, 
             // $command->aic, 
@@ -54,6 +54,9 @@ class UpdateProdottoCommandHandler
 
 
         $prodotto = $this->repo->save($prodotto_object);
+
+
+        $this->updateTranslations($prodotto, $command->formulazioni);
 
         $prodotto->sezioni()->sync($command->sezioni);
         $prodotto->paesi()->sync($command->paesi);
@@ -71,7 +74,7 @@ class UpdateProdottoCommandHandler
 
         if($foglietto_illustrativo)
         {
-            $foglietto_path = $this->file_utility->putFile($prodotto->id, 'foglietto', $foglietto_illustrativo, ['nome' => $prodotto->nome, 'formulazione' => $prodotto->formulazione]);
+            $foglietto_path = $this->file_utility->putFile($prodotto->id, 'foglietto', $foglietto_illustrativo, ['nome' => $prodotto->nome, 'formulazione' => 'formulazione']);
 
             $prodotto->update(['foglietto_illustrativo' => $foglietto_path]);
             
@@ -84,11 +87,23 @@ class UpdateProdottoCommandHandler
 
         if($scheda_tecnica)
         {
-            $scheda_path = $this->file_utility->putFile($prodotto->id, 'scheda', $scheda_tecnica, ['nome' => $prodotto->nome, 'formulazione' => $prodotto->formulazione]);
+            $scheda_path = $this->file_utility->putFile($prodotto->id, 'scheda', $scheda_tecnica, ['nome' => $prodotto->nome, 'formulazione' => 'formulazione']);
             
 
             $prodotto->update(['scheda_tecnica' => $scheda_path]);
             
         }
+    }
+
+     protected function updateTranslations($prodotto, $formulazioni)
+    {
+        $data = [];
+        
+        foreach($formulazioni as $locale => $formulazione)
+        {
+            $data[$locale]['formulazione'] = $formulazione;
+        }
+
+        $prodotto->update($data);
     }
 }

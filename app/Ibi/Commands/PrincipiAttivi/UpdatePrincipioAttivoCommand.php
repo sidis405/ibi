@@ -8,7 +8,7 @@ class UpdatePrincipioAttivoCommand extends Command
 {
 
     public $principio_attivo_id;
-    public $nome;
+    public $nomi;
     public $categorie_terapeutiche;
 
     /**
@@ -16,10 +16,10 @@ class UpdatePrincipioAttivoCommand extends Command
      *
      * @return void
      */
-    public function __construct($principio_attivo_id, $nome, $categorie_terapeutiche)
+    public function __construct($principio_attivo_id, $nomi, $categorie_terapeutiche)
     {
         $this->principio_attivo_id = $principio_attivo_id;
-        $this->nome = $nome;
+        $this->nomi = $nomi;
         $this->categorie_terapeutiche = $categorie_terapeutiche;
     }
 }
