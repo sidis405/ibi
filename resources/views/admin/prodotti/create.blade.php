@@ -54,7 +54,7 @@
                 <div class="card-body card-padding">
                     <div class="row">
                         @include('admin.prodotti.partials.sezioni_partial', array('selected' => []))
-                        @include('admin.prodotti.partials.paesi_partial', array('selected' => []))
+                        <!-- @include('admin.prodotti.partials.paesi_partial', array('selected' => [])) -->
                     </div>
                 </div>
             </div>

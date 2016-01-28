@@ -1,4 +1,4 @@
-<div class="form-group fg-line col-sm-6">
+<div class="form-group fg-line col-sm-12">
     <p class="f-500 c-black m-b-15">Sezioni</p>
     <select class="tag-select" name="sezioni[]" multiple data-placeholder="Sezioni nelle quali apparirà il prodotto" required>
         @foreach($sezioni as $sezione)

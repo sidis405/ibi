@@ -15,13 +15,13 @@
         <div class="tabs chi-siamo-tabs">
           <!-- Nav tabs-->
           <ul role="tablist" class="nav nav-tabs">
-            <li role="presentation" class="active"><a href="#chisiamo" aria-controls="chisiamo" role="tab" data-toggle="tab">Chi Siamo</a></li>
-            <li role="presentation"><a href="#gruppo" aria-controls="gruppo" role="tab" data-toggle="tab">Il Gruppo</a></li>
-            <li role="presentation"><a href="#storia" aria-controls="messages" role="tab" data-toggle="tab">La Storia</a></li>
-            <li role="presentation"><a href="#codice-etico" aria-controls="codice-etico" role="tab" data-toggle="tab">Codice Etico</a></li>
-            <li role="presentation"><a href="#quality" aria-controls="quality" role="tab" data-toggle="tab">Quality Unit Sistem</a></li>
-            <li role="presentation"><a href="#politica" aria-controls="politica" role="tab" data-toggle="tab">Politica Integrata</a></li>
-            <li role="presentation"><a href="#valore" aria-controls="valore" role="tab" data-toggle="tab">Trasferimenti di valore</a></li>
+            <li role="presentation" class="active"><a href="#chisiamo" aria-controls="chisiamo" role="tab" data-toggle="tab">{{$text['chi-siamo']['chi_siamo']}}</a></li>
+            <li role="presentation"><a href="#gruppo" aria-controls="gruppo" role="tab" data-toggle="tab">{{$text['chi-siamo']['il_gruppo']}}</a></li>
+            <li role="presentation"><a href="#storia" aria-controls="messages" role="tab" data-toggle="tab">{{$text['chi-siamo']['la_storia']}}</a></li>
+            <li role="presentation"><a href="#codice-etico" aria-controls="codice-etico" role="tab" data-toggle="tab">{{$text['chi-siamo']['codice_etico']}}</a></li>
+            <li role="presentation"><a href="#quality" aria-controls="quality" role="tab" data-toggle="tab">{{$text['chi-siamo']['qus']}}</a></li>
+            <li role="presentation"><a href="#politica" aria-controls="politica" role="tab" data-toggle="tab">{{$text['chi-siamo']['politica_integrata']}}</a></li>
+            <li role="presentation"><a href="#valore" aria-controls="valore" role="tab" data-toggle="tab">{{$text['chi-siamo']['tdv']}}</a></li>
           </ul>
           <!-- Tab panes-->
           <div class="tab-content">

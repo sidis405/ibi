@@ -34,7 +34,7 @@ class ProdottiController extends Controller
 
     public function prodotti_ibisqus(ListiniRepo $listini_repo, SezioniRepo $sezioni_repo, CategorieTerapeuticheRepo $categorie_repo, PrincipiAttiviRepo $principi_repo, PagineRepo $pagine_repo)
     {
-        $prodotti_raw = $sezioni_repo->getBySlug('ibisqus-ospedale')->prodotti;
+        $prodotti_raw = $sezioni_repo->getBySlug('ibisqus')->prodotti;
 
         list($prodotti, $categorie, $principi, $principi_validi, $contenuti, $listini) = $this->sliceData('prodotti-ibisqus', $prodotti_raw, $pagine_repo, $listini_repo);
 

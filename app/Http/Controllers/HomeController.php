@@ -76,78 +76,28 @@ class HomeController extends Controller
         return view('pages.ricerca-innovazione', compact('news', 'contenuti'));
     }
 
-    public function prodotti_export(ListiniRepo $listini_repo)
+    
+
+    public function ibi_export(PagineRepo $pagine_repo, NewsRepo $news_repo)
     {
-        $listini = $listini_repo->getAllFront();
-        return view('pages.prodotti-export', compact('listini'));
-    }
-
-    public function prodotti_ibisqus(ListiniRepo $listini_repo)
-    {
-        $listini = $listini_repo->getAllFront();
-        return view('pages.prodotti-ibisqus', compact('listini'));
-    }
-
-    public function prodotti_italia(ListiniRepo $listini_repo, 
-                                    SezioniRepo $sezioni_repo, 
-                                    CategorieTerapeuticheRepo $categorie_repo, 
-                                    PrincipiAttiviRepo $principi_repo, 
-                                    PagineRepo $pagine_repo)
-    {
-        $contenuti = $pagine_repo->getContentForPage('prodotti-italia');
-
-        // return $contenuti;
-        $listini = $listini_repo->getAllFront();
-        $prodotti_raw = $sezioni_repo->getBySlug('ibi-italia')->prodotti;
-
-        $prodotti = [];
-
-        foreach ($prodotti_raw as $prodotto) {
-            $prodotti[strtoupper($prodotto['nome'])][] = $prodotto;
-        }
-
-        // return $prodotti;
-
-        $categorie = collect(array_pluck(array_collapse($prodotti), 'categoria_terapeutica'))->unique();
-        // $categorie = $categorie_repo->getAllFront();
-        // $principi = collect(array_pluck($categorie, 'principi_attivi')[0])->unique();
-        // $principi = $principi_repo->getAllFront();
-
-        $principi_validi = array_pluck(collect(array_pluck(array_collapse($prodotti), 'principio_attivo'))->unique(), 'slug');
-
-        $principi = collect(array_sort(array_pluck(array_collapse($prodotti), 'principio_attivo'), function ($value) {
-            return $value['nome'];
-        }))->unique();
-
-        // $principi = collect(array_values(array_sort(array_collapse(array_pluck($categorie, 'principi_attivi')), function ($value) {
-        //     return $value['nome'];
-        // })))->unique();
-
-        // return $principi_validi;
-
-        return view('pages.prodotti-italia', compact('listini', 'prodotti', 'categorie', 'principi', 'principi_validi', 'contenuti'));
-    }
-
-    public function ibi_export(PagineRepo $pagine_repo)
-    {
-
+        $news = $news_repo->getAllFront();
         $contenuti = $pagine_repo->getContentForPage('ibi-export');
-        return view('pages.ibi-export', compact('contenuti'));
+        return view('pages.ibi-export', compact('contenuti', 'news'));
     }
 
-    public function ibi_italia(PagineRepo $pagine_repo)
+    public function ibi_italia(PagineRepo $pagine_repo, NewsRepo $news_repo)
     {
-
+        $news = $news_repo->getAllFront();
         $contenuti = $pagine_repo->getContentForPage('ibi-italia');
-        return view('pages.ibi-italia', compact('contenuti'));
+        return view('pages.ibi-italia', compact('contenuti', 'news'));
     }
 
-    public function ibisqus_ospedale(PagineRepo $pagine_repo)
+    public function ibisqus_ospedale(PagineRepo $pagine_repo, NewsRepo $news_repo)
     {
-
+        $news = $news_repo->getAllFront();
         $contenuti = $pagine_repo->getContentForPage('ibisqus-ospedale');
 
-        return view('pages.ibisqus-ospedale', compact('contenuti'));
+        return view('pages.ibisqus-ospedale', compact('contenuti', 'news'));
     }
 
     public function contatti(PagineRepo $pagine_repo)
@@ -157,10 +107,11 @@ class HomeController extends Controller
         return view('pages.contatti', compact('contenuti'));
     }
 
-    public function benessere_del_paziente(NewsRepo $news_repo)
+    public function benessere_del_paziente(NewsRepo $news_repo, PagineRepo $pagine_repo)
     {
         $news = $news_repo->getAllFront();
-        return view('pages.benessere-del-paziente', compact('news'));
+        $contenuti = $pagine_repo->getContentForPage('benessere-del-paziente');
+        return view('pages.benessere-del-paziente', compact('news', 'contenuti'));
     }
 
     public function privacy_policy(NewsRepo $news_repo, PagineRepo $pagine_repo)

@@ -7,19 +7,18 @@ body {
   font-family: 'Lato';
   color: #666;
   font-smoothing: antialiased;
-  -webkit-font-smoothing: antialiased; }
-
+  -webkit-font-smoothing: antialiased;
+}
 p.policy-reminder {
   font-size: 12px !important;
-  margin: 15px 0 !important; }
+  margin: 15px 0 !important;
+}
 
 /*
 -------------------------
 MIXITUP
 -------------------------
 */
-
-
 #prodotti-container .mix {
   display: none;
 }
@@ -28,8 +27,7 @@ MIXITUP
 .contenuto-dinamico {
   position: relative;
 }
-
-.modifica-contenuto{
+.modifica-contenuto {
   position: absolute;
   top: 0px;
   right: 0px;
@@ -39,53 +37,43 @@ MIXITUP
   background: green;
   padding: 6px;
   border-radius: 50%;
-  color: #fff!important;
+  color: #fff !important;
   z-index: 99;
 }
-
 .modifica-contenuto i {
   margin: 4px;
   font-size: 16px;
-
 }
-
-.modifica-contenuto:hover{
-
+.modifica-contenuto:hover {
   text-decoration: none;
   color: #fff;
 }
 
 /*BOXED CONTENT */
-
 .contenuto-dinamico-boxed {
   position: relative;
   width: 100%;
   display: table;
 }
-
-.modifica-contenuto-boxed{
-    position: absolute;
-    bottom: 0px;
-    right: -40px;
-    opacity: 0.8;
-    width: 35px;
-    height: 35px;
-    background: green;
-    padding: 6px;
-    border-radius: 50%;
-    color: #fff;
-    z-index: 99;
-    border: 1px solid white;
+.modifica-contenuto-boxed {
+  position: absolute;
+  bottom: 0px;
+  right: -40px;
+  opacity: 0.8;
+  width: 35px;
+  height: 35px;
+  background: green;
+  padding: 6px;
+  border-radius: 50%;
+  color: #fff;
+  z-index: 99;
+  border: 1px solid white;
 }
-
 .modifica-contenuto-boxed i {
   margin: 4px;
   font-size: 16px;
-
 }
-
-.modifica-contenuto-boxed:hover{
-
+.modifica-contenuto-boxed:hover {
   text-decoration: none;
   color: #fff;
 }
@@ -96,42 +84,46 @@ Main essentials
 -------------------------
 */
 section.content {
-  margin: 40px auto; }
-  section.content h2 {
-    color: #00509a;
-    font-size: 32px;
-    font-weight: 700;
-    margin: 20px 0 5px 0; }
-  section.content h3 {
-    text-transform: uppercase;
-    margin: 5px 0 30px 0;
-    font-size: 16px; }
-  section.content h4 {
-    text-transform: uppercase;
-    margin: 5px 0 30px 0;
-    font-size: 16px;
-    font-weight: 700;
-    color: #00509a; }
-  section.content p {
-    text-align: justify;
-    font-size: 16px;
-    margin: 30px auto;
-    line-height: 22px; }
-  section.content .btn {
-    padding: 10px 25px;
-    display: inline-block;
-    background: #1fa9ad;
-    font-weight: 700;
-    text-transform: uppercase;
-    border-radius: 0;
-    border: 0;
-    font-size: 12px; }
+  margin: 40px auto;
+}
+section.content h2 {
+  color: #00509a;
+  font-size: 32px;
+  font-weight: 700;
+  margin: 20px 0 5px 0;
+}
+section.content h3 {
+  text-transform: uppercase;
+  margin: 5px 0 30px 0;
+  font-size: 16px;
+}
+section.content h4 {
+  text-transform: uppercase;
+  margin: 5px 0 30px 0;
+  font-size: 16px;
+  font-weight: 700;
+  color: #00509a;
+}
+section.content p {
+  text-align: justify;
+  font-size: 16px;
+  margin: 30px auto;
+  line-height: 22px;
+}
+section.content .btn {
+  padding: 10px 25px;
+  display: inline-block;
+  background: #1fa9ad;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-radius: 0;
+  border: 0;
+  font-size: 12px;
+}
 section.content ul {
-    font-size: 16px !important;
-    margin-bottom: 35px;    
- }
-
-
+  font-size: 16px !important;
+  margin-bottom: 35px;
+}
 section.content.ibisqus-ospedale-content h2 {
   font-size: 28px;
   text-transform: uppercase;
@@ -142,7 +134,6 @@ section.content.ibi-italia-content h2 {
   text-transform: uppercase;
   display: inline-block;
 }
-
 .plus-minus {
   background: #b3cbe1;
   float: right;
@@ -151,28 +142,34 @@ section.content.ibi-italia-content h2 {
   border-radius: 50%;
   position: relative;
   margin-top: -4px;
-  transition: 0.35s; }
-  .plus-minus:before, .plus-minus:after {
-    position: absolute;
-    left: 15px;
-    top: 6px;
-    content: ' ';
-    height: 22px;
-    width: 4px;
-    background: #fff;
-    border-radius: 3px;
-    transition: 0.35s; }
-  .plus-minus:before {
-    -webkit-transform: rotate(90deg);
-    transform: rotate(90deg); }
-  .plus-minus:after {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg); }
-  .plus-minus.minus:before {
-    opacity: 0; }
-  .plus-minus.minus:after {
-    -webkit-transform: rotate(90deg);
-    transform: rotate(90deg); }
+  transition: 0.35s;
+}
+.plus-minus:before, .plus-minus:after {
+  position: absolute;
+  left: 15px;
+  top: 6px;
+  content: ' ';
+  height: 22px;
+  width: 4px;
+  background: #fff;
+  border-radius: 3px;
+  transition: 0.35s;
+}
+.plus-minus:before {
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+.plus-minus:after {
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+.plus-minus.minus:before {
+  opacity: 0;
+}
+.plus-minus.minus:after {
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
 
 /*
 -------------------------
@@ -180,20 +177,21 @@ Helpers
 -------------------------
 */
 a:focus {
-  outline: none; }
-
+  outline: none;
+}
 .titles, .sidebar .news h3, .sidebar.lavora-con-noi-sidebar .position h5, footer .footer-box h4 {
   text-transform: uppercase;
-  font-weight: 700; }
-
+  font-weight: 700;
+}
 .btn.btn-products {
-  margin: 20px 0 -10px 0; }
-
+  margin: 20px 0 -10px 0;
+}
 .borded {
-  border-bottom: 1px dotted #666; }
-
+  border-bottom: 1px dotted #666;
+}
 .no-pad {
-  padding: 0; }
+  padding: 0;
+}
 
 /*
 -------------------------
@@ -216,13 +214,14 @@ Back to Top
   border-radius: 4px;
   text-decoration: none;
   transition: 0.2s ease-out;
-  opacity: 0; }
-
+  opacity: 0;
+}
 #back-to-top:hover {
-  background: #23bec3; }
-
+  background: #23bec3;
+}
 #back-to-top.show {
-  opacity: 1; }
+  opacity: 1;
+}
 
 /*
 -------------------------
@@ -235,33 +234,40 @@ Magnific-popup
   padding: 20px;
   width: auto;
   max-width: 400px;
-  margin: 20px auto; }
+  margin: 20px auto;
+}
 
 /* overlay at start */
 .mfp-fade.mfp-bg {
   opacity: 0;
-  transition: all 0.15s ease-out; }
+  transition: all 0.15s ease-out;
+}
 
 /* overlay animate in */
 .mfp-fade.mfp-bg.mfp-ready {
-  opacity: 0.8; }
+  opacity: 0.8;
+}
 
 /* overlay animate out */
 .mfp-fade.mfp-bg.mfp-removing {
-  opacity: 0; }
+  opacity: 0;
+}
 
 /* content at start */
 .mfp-fade.mfp-wrap .mfp-content {
   opacity: 0;
-  transition: all 0.15s ease-out; }
+  transition: all 0.15s ease-out;
+}
 
 /* content animate it */
 .mfp-fade.mfp-wrap.mfp-ready .mfp-content {
-  opacity: 1; }
+  opacity: 1;
+}
 
 /* content animate out */
 .mfp-fade.mfp-wrap.mfp-removing .mfp-content {
-  opacity: 0; }
+  opacity: 0;
+}
 
 /*
 -------------------------
@@ -271,205 +277,252 @@ Area riservata modal
 #area-riservata-modal {
   text-align: center;
   padding: 15px 50px;
-  background: #e6f8f8; }
-  #area-riservata-modal h3 {
-    color: #00509a;
-    text-transform: uppercase;
-    font-size: 16px;
-    margin-top: 30px; }
-  #area-riservata-modal form {
-    padding: 20px; }
-    #area-riservata-modal form .fields {
-      border-radius: 0; }
-  #area-riservata-modal .btn {
-    padding: 10px 25px;
-    display: inline-block;
-    background: #1fa9ad;
-    font-weight: 700;
-    text-transform: uppercase;
-    border-radius: 0;
-    border: 0;
-    font-size: 12px; }
+  background: #e6f8f8;
+}
+#area-riservata-modal h3 {
+  color: #00509a;
+  text-transform: uppercase;
+  font-size: 16px;
+  margin-top: 30px;
+}
+#area-riservata-modal form {
+  padding: 20px;
+}
+#area-riservata-modal form .fields {
+  border-radius: 0;
+}
+#area-riservata-modal .btn {
+  padding: 10px 25px;
+  display: inline-block;
+  background: #1fa9ad;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-radius: 0;
+  border: 0;
+  font-size: 12px;
+}
 
 /*
 -------------------------
 Sidebar styles
 -------------------------
 */
-.sidebar {  
+.sidebar {
   background: #d9e5fa;
   max-width: 360px;
   padding: 10px !important;
-   }
-  .sidebar a:hover {
-    text-decoration: none; }
-  .sidebar a:focus {
-    text-decoration: none; }
-  .sidebar .sidebar-hero {
-    position: relative; }
-    .sidebar .sidebar-hero .biotecnologia-sidebar {
-      background: url(../img/biotecnologia-sidebar.jpg) no-repeat center center;
-      width: 100%;
-      height: 130px;
-      margin-bottom: 10px;
-      background-size: cover; }
-    .sidebar .sidebar-hero .farmacovigilanza-sidebar {
-      background: url(../img/farmacovigilanza-sidebar.jpg) no-repeat center center;
-      width: 100%;
-      height: 130px;
-      background-size: cover; }
-    .sidebar .sidebar-hero .reparti-sidebar {
-      background: url(../img/reparti-sidebar.jpg) no-repeat center center;
-      width: 100%;
-      height: 130px;
-      background-size: cover;
-      margin-bottom: 10px; }
-    .sidebar .sidebar-hero h3 {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      -webkit-transform: translate(-50%, -50%);
-      transform: translate(-50%, -50%);
-      color: #fff;
-      font-size: 26px;
-      margin: 0; }
-  .sidebar .read-more {
-    text-transform: uppercase;
-    font-size: 10px;
-    font-weight: 700;
-    color: #00509a;
-    padding-right: 5px; }
-  .sidebar .news h3 {
-    color: #1fa9ad;
-    font-size: 26px !important;
-    margin: 40px 0 10px 0; }
-  .sidebar .news .single-news {
-    margin: 15px 0;
-    background: #f2f2f2; }
-    .sidebar .news .single-news:last-of-type {
-      margin-bottom: 0; }
-    .sidebar .news .single-news h4 {
-      color: #00509a;
-      font-size: 16px;
-      font-weight: 700;
-      margin: 10px 0 0 0; }
-    .sidebar .news .single-news span.date {
-      font-size: 12px;
-      color: #000;
-      font-weight: 700; }
-    .sidebar .news .single-news p {
-      font-size: 10px;
-      text-align: justify;
-      padding-right: 5px;
-      line-height: inherit;
-      margin: 0 0 5px 0 !important; }
-  .sidebar.farmacovigilanza-sidebar {
-    background: transparent; }
-    .sidebar.farmacovigilanza-sidebar h3 {
-      border-bottom: 1px dotted #666;
-      padding-bottom: 10px;
-      margin: 10px 0; }
-    .sidebar.farmacovigilanza-sidebar .row.comunicati {
-      background: #d9e5fa; }
-      .sidebar.farmacovigilanza-sidebar .row.comunicati .comunicato {
-        margin: 15px 0;
-        padding: 10px;
-        background: #f2f2f2; }
-        .sidebar.farmacovigilanza-sidebar .row.comunicati .comunicato p {
-          font-size: 12px;
-          text-align: justify;
-          padding-right: 5px;
-          color: #00509a;
-          font-weight: 700;
-          margin: 0 0 5px 0 !important; }
-        .sidebar.farmacovigilanza-sidebar .row.comunicati .comunicato a.read-more {
-          color: #1fa9ad;
-          text-transform: uppercase;
-          font-weight: 700;
-          font-size: 12px; }
-    .sidebar.farmacovigilanza-sidebar .row.schede-segnalazione {
-      background: #e6f8f8;
-      margin-top: 15px; }
-      .sidebar.farmacovigilanza-sidebar .row.schede-segnalazione .schede ul {
-        padding: 0;
-        list-style: none; }
-        .sidebar.farmacovigilanza-sidebar .row.schede-segnalazione .schede ul li {
-          margin: 10px 0; }
-          .sidebar.farmacovigilanza-sidebar .row.schede-segnalazione .schede ul li:first-of-type {
-            font-weight: 700; }
-  .sidebar.lavora-con-noi-sidebar h3 {
-    border-bottom: 1px dotted #666;
-    padding-bottom: 10px;
-    margin: 10px 0; }
-  .sidebar.lavora-con-noi-sidebar .position {
-    background: #f2f2f2;
-    padding: 5px;
-    margin-bottom: 10px; }
-    .sidebar.lavora-con-noi-sidebar .position:last-of-type {
-      margin-bottom: 0; }
-    .sidebar.lavora-con-noi-sidebar .position h5 {
-      color: #00509a;
-      font-size: 14px;
-      margin: 5px 0 5px 0; }
-    .sidebar.lavora-con-noi-sidebar .position span {
-      display: block;
-      margin: 0 0 5px 0; }
-    .sidebar.lavora-con-noi-sidebar .position p {
-      font-size: 12px;
-      text-align: justify;
-      line-height: inherit;
-      margin: 0 0 5px 0 !important; }
-  .sidebar.products-sidebar {
-    background: transparent; }
-    .sidebar.products-sidebar .btn {
-      width: 100%;
-      margin-bottom: 40px; }
-    .sidebar.products-sidebar h3 {
-      margin: 0;
-      background: #1fa9ad;
-      color: #fff;
-      padding: 5px 10px; }
-    .sidebar.products-sidebar .filter-content {
-      background: #ededed;
-      padding-bottom: 5px; }
-      .sidebar.products-sidebar .filter-content .filter-block {
-        padding: 10px; }
-        .sidebar.products-sidebar .filter-content .filter-block span {
-          text-transform: uppercase;
-          font-size: 16px;
-          display: block; }
-        .sidebar.products-sidebar .filter-content .filter-block select {
-          width: 100%;
-          position: relative;
-          padding: 5px 8px;
-          border: none;
-          box-shadow: none;
-          border-radius: 0;
-          margin-top: 10px;
-          background-color: #fff;
-          background-image: none;
-          -webkit-appearance: none;
-          -moz-appearance: none;
-          appearance: none; }
-          .sidebar.products-sidebar .filter-content .filter-block select:focus {
-            outline: none; }
-      .sidebar.products-sidebar .filter-content .btn {
-        margin: 10px;
-        width: auto;
-        display: block;
-        color: #fff; }
-    .sidebar.products-sidebar .benessere-paziente {
-      padding: 15px;
-      border: 4px solid #ffb800;
-      margin: 20px auto;
-      background: rgba(0, 0, 0, 0.6);
-      text-transform: uppercase; }
-      .sidebar.products-sidebar .benessere-paziente h5 {
-        color: #fff;
-        margin: 0; }
-  .sidebar a.archivio-news-link {
-    float: right;
-    padding: 6px 0 0 0; }
+}
+.sidebar a:hover {
+  text-decoration: none;
+}
+.sidebar a:focus {
+  text-decoration: none;
+}
+.sidebar .sidebar-hero {
+  position: relative;
+}
+.sidebar .sidebar-hero .biotecnologia-sidebar {
+  background: url(../img/biotecnologia-sidebar.jpg) no-repeat center center;
+  width: 100%;
+  height: 130px;
+  margin-bottom: 10px;
+  background-size: cover;
+}
+.sidebar .sidebar-hero .farmacovigilanza-sidebar {
+  background: url(../img/farmacovigilanza-sidebar.jpg) no-repeat center center;
+  width: 100%;
+  height: 130px;
+  background-size: cover;
+}
+.sidebar .sidebar-hero .reparti-sidebar {
+  background: url(../img/reparti-sidebar.jpg) no-repeat center center;
+  width: 100%;
+  height: 130px;
+  background-size: cover;
+  margin-bottom: 10px;
+}
+.sidebar .sidebar-hero h3 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 26px;
+  margin: 0;
+}
+.sidebar .read-more {
+  text-transform: uppercase;
+  font-size: 10px;
+  font-weight: 700;
+  color: #00509a;
+  padding-right: 5px;
+}
+.sidebar .news h3 {
+  color: #1fa9ad;
+  font-size: 26px !important;
+  margin: 40px 0 10px 0;
+}
+.sidebar .news .single-news {
+  margin: 15px 0;
+  background: #f2f2f2;
+}
+.sidebar .news .single-news:last-of-type {
+  margin-bottom: 0;
+}
+.sidebar .news .single-news h4 {
+  color: #00509a;
+  font-size: 16px;
+  font-weight: 700;
+  margin: 10px 0 0 0;
+}
+.sidebar .news .single-news span.date {
+  font-size: 12px;
+  color: #000;
+  font-weight: 700;
+}
+.sidebar .news .single-news p {
+  font-size: 10px;
+  text-align: justify;
+  padding-right: 5px;
+  line-height: inherit;
+  margin: 0 0 5px 0 !important;
+}
+.sidebar.farmacovigilanza-sidebar {
+  background: transparent;
+}
+.sidebar.farmacovigilanza-sidebar h3 {
+  border-bottom: 1px dotted #666;
+  padding-bottom: 10px;
+  margin: 10px 0;
+}
+.sidebar.farmacovigilanza-sidebar .row.comunicati {
+  background: #d9e5fa;
+}
+.sidebar.farmacovigilanza-sidebar .row.comunicati .comunicato {
+  margin: 15px 0;
+  padding: 10px;
+  background: #f2f2f2;
+}
+.sidebar.farmacovigilanza-sidebar .row.comunicati .comunicato p {
+  font-size: 12px;
+  text-align: justify;
+  padding-right: 5px;
+  color: #00509a;
+  font-weight: 700;
+  margin: 0 0 5px 0 !important;
+}
+.sidebar.farmacovigilanza-sidebar .row.comunicati .comunicato a.read-more {
+  color: #1fa9ad;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 12px;
+}
+.sidebar.farmacovigilanza-sidebar .row.schede-segnalazione {
+  background: #e6f8f8;
+  margin-top: 15px;
+}
+.sidebar.farmacovigilanza-sidebar .row.schede-segnalazione .schede ul {
+  padding: 0;
+  list-style: none;
+}
+.sidebar.farmacovigilanza-sidebar .row.schede-segnalazione .schede ul li {
+  margin: 10px 0;
+}
+.sidebar.farmacovigilanza-sidebar .row.schede-segnalazione .schede ul li:first-of-type {
+  font-weight: 700;
+}
+.sidebar.lavora-con-noi-sidebar h3 {
+  border-bottom: 1px dotted #666;
+  padding-bottom: 10px;
+  margin: 10px 0;
+}
+.sidebar.lavora-con-noi-sidebar .position {
+  background: #f2f2f2;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+.sidebar.lavora-con-noi-sidebar .position:last-of-type {
+  margin-bottom: 0;
+}
+.sidebar.lavora-con-noi-sidebar .position h5 {
+  color: #00509a;
+  font-size: 14px;
+  margin: 5px 0 5px 0;
+}
+.sidebar.lavora-con-noi-sidebar .position span {
+  display: block;
+  margin: 0 0 5px 0;
+}
+.sidebar.lavora-con-noi-sidebar .position p {
+  font-size: 12px;
+  text-align: justify;
+  line-height: inherit;
+  margin: 0 0 5px 0 !important;
+}
+.sidebar.products-sidebar {
+  background: transparent;
+}
+.sidebar.products-sidebar .btn {
+  width: 100%;
+  margin-bottom: 40px;
+}
+.sidebar.products-sidebar h3 {
+  margin: 0;
+  background: #1fa9ad;
+  color: #fff;
+  padding: 5px 10px;
+}
+.sidebar.products-sidebar .filter-content {
+  background: #ededed;
+  padding-bottom: 5px;
+}
+.sidebar.products-sidebar .filter-content .filter-block {
+  padding: 10px;
+}
+.sidebar.products-sidebar .filter-content .filter-block span {
+  text-transform: uppercase;
+  font-size: 16px;
+  display: block;
+}
+.sidebar.products-sidebar .filter-content .filter-block select {
+  width: 100%;
+  position: relative;
+  padding: 5px 8px;
+  border: none;
+  box-shadow: none;
+  border-radius: 0;
+  margin-top: 10px;
+  background-color: #fff;
+  background-image: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.sidebar.products-sidebar .filter-content .filter-block select:focus {
+  outline: none;
+}
+.sidebar.products-sidebar .filter-content .btn {
+  margin: 10px;
+  width: auto;
+  display: block;
+  color: #fff;
+}
+.sidebar.products-sidebar .benessere-paziente {
+  padding: 15px;
+  border: 4px solid #ffb800;
+  margin: 20px auto;
+  background: rgba(0, 0, 0, 0.6);
+  text-transform: uppercase;
+}
+.sidebar.products-sidebar .benessere-paziente h5 {
+  color: #fff;
+  margin: 0;
+}
+.sidebar a.archivio-news-link {
+  float: right;
+  padding: 6px 0 0 0;
+}
 
 /*
 -------------------------
@@ -481,86 +534,107 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 99; }
-
+  z-index: 99;
+}
 .top-bar {
   padding: 5px 0;
   background: rgba(0, 0, 0, 0.5);
-  color: #fff; }
-  .top-bar p {
-    margin: 0; }
-  .top-bar i {
-    font-size: 18px;
-    margin-right: 15px; }
-  .top-bar .area-riservata {
-    text-transform: uppercase;
-    color: #fff;
-    margin-right: 25px; }
-  .top-bar .lang {
-    display: inline-block;
-    text-transform: uppercase; }
-    .top-bar .lang a {
-      color: #fff; }
-      .top-bar .lang a:hover {
-        text-decoration: none; }
-
+  color: #fff;
+}
+.top-bar p {
+  margin: 0;
+}
+.top-bar i {
+  font-size: 18px;
+  margin-right: 15px;
+}
+.top-bar .area-riservata {
+  text-transform: uppercase;
+  color: #fff;
+  margin-right: 25px;
+}
+.top-bar .lang {
+  display: inline-block;
+  text-transform: uppercase;
+}
+.top-bar .lang a {
+  color: #fff;
+}
+.top-bar .lang a:hover {
+  text-decoration: none;
+}
 nav.navbar {
   padding: 20px 0;
   background: rgba(255, 255, 255, 0.8);
   border-radius: 0;
-  border: 0; }
-  nav.navbar span.caret {
-    display: block;
-    margin: 5px auto;
-    border-top: 8px dashed;
-    border-top: 8px solid\9;
-    border-right: 8px solid transparent;
-    border-left: 8px solid transparent; }
-  nav.navbar h1.logo {
-    text-indent: -9999px;
-    margin: 0;
-    background: url(../img/ibi-lorenzini-logo.png) no-repeat center center;
-    width: 155px;
-    height: 91px; }
-  nav.navbar .navbar-right {
-    margin-top: 25px; }
-    nav.navbar .navbar-right li {
-      height: 40px;
-      border-left: 1px solid #00509a; }
-      nav.navbar .navbar-right li:last-of-type a {
-        padding-right: 0; }
-      nav.navbar .navbar-right li a {
-        padding: 0 30px 0 10px;
-        color: #00509a;
-        text-transform: uppercase;
-        font-weight: 700;
-        font-size: 18px; }
-    nav.navbar .navbar-right .dropdown-menu {
-      padding: 15px;
-      border: 0;
-      border-radius: 0;
-      top: 150%; }
-      nav.navbar .navbar-right .dropdown-menu li {
-        border: 0;
-        border-bottom: 1px solid #00509a;
-        height: auto;
-        margin: 10px 0; }
-        nav.navbar .navbar-right .dropdown-menu li:last-of-type {
-          border: 0; }
-          nav.navbar .navbar-right .dropdown-menu li:last-of-type a {
-            padding-bottom: 0; }
-        nav.navbar .navbar-right .dropdown-menu li a {
-          padding: 0 30px;
-          text-transform: none;
-          padding-bottom: 8px; }
-          nav.navbar .navbar-right .dropdown-menu li a span {
-            text-transform: uppercase; }
-          nav.navbar .navbar-right .dropdown-menu li a i {
-            color: red;
-            text-transform: uppercase;
-            font-style: normal; }
-          nav.navbar .navbar-right .dropdown-menu li a:hover {
-            background: transparent; }
+  border: 0;
+}
+nav.navbar span.caret {
+  display: block;
+  margin: 5px auto;
+  border-top: 8px dashed;
+  border-top: 8px solid\9;
+  border-right: 8px solid transparent;
+  border-left: 8px solid transparent;
+}
+nav.navbar h1.logo {
+  text-indent: -9999px;
+  margin: 0;
+  background: url(../img/ibi-lorenzini-logo.png) no-repeat center center;
+  width: 155px;
+  height: 91px;
+}
+nav.navbar .navbar-right {
+  margin-top: 25px;
+}
+nav.navbar .navbar-right li {
+  height: 40px;
+  border-left: 1px solid #00509a;
+}
+nav.navbar .navbar-right li:last-of-type a {
+  padding-right: 0;
+}
+nav.navbar .navbar-right li a {
+  padding: 0 30px 0 10px;
+  color: #00509a;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 18px;
+}
+nav.navbar .navbar-right .dropdown-menu {
+  padding: 15px;
+  border: 0;
+  border-radius: 0;
+  top: 150%;
+}
+nav.navbar .navbar-right .dropdown-menu li {
+  border: 0;
+  border-bottom: 1px solid #00509a;
+  height: auto;
+  margin: 10px 0;
+}
+nav.navbar .navbar-right .dropdown-menu li:last-of-type {
+  border: 0;
+}
+nav.navbar .navbar-right .dropdown-menu li:last-of-type a {
+  padding-bottom: 0;
+}
+nav.navbar .navbar-right .dropdown-menu li a {
+  padding: 0 30px;
+  text-transform: none;
+  padding-bottom: 8px;
+}
+nav.navbar .navbar-right .dropdown-menu li a span {
+  text-transform: uppercase;
+}
+nav.navbar .navbar-right .dropdown-menu li a i {
+  color: red;
+  text-transform: uppercase;
+  font-style: normal;
+}
+nav.navbar .navbar-right .dropdown-menu li a:hover {
+  background: transparent;
+}
 
 /*
 -------------------------
@@ -568,7 +642,8 @@ Bootstrap fixes
 -------------------------
 */
 .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:focus, .navbar-default .navbar-nav > .open > a:hover {
-  background: transparent; }
+  background: transparent;
+}
 
 /*
 -------------------------
@@ -576,31 +651,41 @@ Footer styles
 -------------------------
 */
 footer {
-  background: #f2f2f2; }
-  footer .footer-box {
-    border-left: 1px solid #00509a;
-    padding: 50px 0px 20px 20px;
-    min-height: 323px;
-    margin: 0 0 40px 0; }
-    footer .footer-box i {
-      margin-right: 4px; }
-    footer .footer-box h4 {
-      margin: 0 0 20px 0;
-      color: #00509a; }
-    footer .footer-box p {
-      font-size: 12px; }
-    footer .footer-box a {
-      color: #666; }
-    footer .footer-box ul {
-      padding: 0;
-      list-style: none; }
-      footer .footer-box ul li {
-        margin: 15px 0; }
-        footer .footer-box ul li a {
-          color: #666; }
-  footer .copyright {
-    background: #1fa9ad;
-    padding: 20px 0; }
+  background: #f2f2f2;
+}
+footer .footer-box {
+  border-left: 1px solid #00509a;
+  padding: 50px 0px 20px 20px;
+  min-height: 323px;
+  margin: 0 0 40px 0;
+}
+footer .footer-box i {
+  margin-right: 4px;
+}
+footer .footer-box h4 {
+  margin: 0 0 20px 0;
+  color: #00509a;
+}
+footer .footer-box p {
+  font-size: 12px;
+}
+footer .footer-box a {
+  color: #666;
+}
+footer .footer-box ul {
+  padding: 0;
+  list-style: none;
+}
+footer .footer-box ul li {
+  margin: 15px 0;
+}
+footer .footer-box ul li a {
+  color: #666;
+}
+footer .copyright {
+  background: #1fa9ad;
+  padding: 20px 0;
+}
 
 /*
 -------------------------
@@ -608,82 +693,95 @@ Home page
 -------------------------
 */
 .main-carousel {
-  margin: 0; }
-  .main-carousel .slide {
-    width: 100%;
-    height: 500px; }
-    .main-carousel .slide.slide1 {
-      background: url(../img/header-home.jpg) no-repeat center center;
-      background-size: cover; }
-    .main-carousel .slide.slide2 {
-      background: url(../img/slide02.jpg) no-repeat center center;
-      background-size: cover; }
-    .main-carousel .slide .caption-container {
-      height: 100%;
-      position: relative; }
-      .main-carousel .slide .caption-container .caption {
-        display: inline-block;
-        padding: 20px;
-        background: #1fa9ad;
-        position: absolute;
-        bottom: 30px; }
-        .main-carousel .slide .caption-container .caption h3 {
-          color: #fff;
-          font-size: 30px;
-          font-weight: 700;
-          margin-top: 0; }
-        .main-carousel .slide .caption-container .caption span {
-          color: #fff;
-          font-size: 20px; }
+  margin: 0;
+}
+.main-carousel .slide {
+  width: 100%;
+  height: 500px;
+}
+.main-carousel .slide.slide1 {
+  background: url(../img/header-home.jpg) no-repeat center center;
+  background-size: cover;
+}
+.main-carousel .slide.slide2 {
+  background: url(../img/slide02.jpg) no-repeat center center;
+  background-size: cover;
+}
+.main-carousel .slide .caption-container {
+  height: 100%;
+  position: relative;
+}
+.main-carousel .slide .caption-container .caption {
+  display: inline-block;
+  padding: 20px;
+  background: #1fa9ad;
+  position: absolute;
+  bottom: 30px;
+}
+.main-carousel .slide .caption-container .caption h3 {
+  color: #fff;
+  font-size: 30px;
+  font-weight: 700;
+  margin-top: 0;
+}
+.main-carousel .slide .caption-container .caption span {
+  color: #fff;
+  font-size: 20px;
+}
 
 /* Hero */
 .hero {
   background: url(../img/hero-background.jpg) no-repeat center center;
   width: 100%;
   padding: 60px 0;
-  background-size: cover; }
-  .hero .hero-box {
-    width: 100%;
-    background: #fff;
-    padding: 0 25px;
-    min-height: 381px;
-    position: relative; }
-    .hero-box .hero-box-title {
-      display: table;
-      width: 100%;
-    }
-  .hero-box h2 {
-    font-size: 22px;    
-    height: 112px;
-    display: table-cell;
-    vertical-align: middle;
-    text-align: center;    
-    margin: 0 auto;
-    color: #00509a;
-    text-transform: uppercase;
-  }
-    .hero .hero-box img {
-      margin: auto;
-      display: block;
-      padding: 25px 0; }
-    .hero .hero-box p {
-      font-size: 14px;
-      padding: 25px 0 0 0;
-      text-align: justify;
-      border-top: 1px solid #666; }
-    .hero .hero-box .btn {
-      position: absolute;
-      bottom: 0px;
-      width: 85%;
-      left: 0;
-      border-radius: 0;
-      border: 0;
-      font-weight: 700;
-      margin: 20px;
-      padding: 10px 0;
-      font-size: 12px;
-      text-transform: uppercase;
-      background: #1fa9ad; }
+  background-size: cover;
+}
+.hero .hero-box {
+  width: 100%;
+  background: #fff;
+  padding: 0 25px;
+  min-height: 381px;
+  position: relative;
+}
+.hero-box .hero-box-title {
+  display: table;
+  width: 100%;
+}
+.hero-box h2 {
+  font-size: 22px;
+  height: 112px;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  margin: 0 auto;
+  color: #00509a;
+  text-transform: uppercase;
+}
+.hero .hero-box img {
+  margin: auto;
+  display: block;
+  padding: 25px 0;
+}
+.hero .hero-box p {
+  font-size: 14px;
+  padding: 25px 0 0 0;
+  text-align: justify;
+  border-top: 1px solid #666;
+}
+.hero .hero-box .btn {
+  position: absolute;
+  bottom: 0px;
+  width: 85%;
+  left: 0;
+  border-radius: 0;
+  border: 0;
+  font-weight: 700;
+  margin: 20px;
+  padding: 10px 0;
+  font-size: 12px;
+  text-transform: uppercase;
+  background: #1fa9ad;
+}
 
 /*
 -------------------------
@@ -693,64 +791,83 @@ Page Headers
 .main-header {
   width: 100%;
   height: 270px;
-  position: relative; }
-  .main-header .main-caption {
-    position: absolute;
-    bottom: -8px; }
-    .main-header .main-caption span {
-      font-style: italic;
-      text-transform: none; }
-    .main-header .main-caption h1 {
-      color: #fff;
-      font-weight: 300;
-      font-size: 60px;
-      text-transform: uppercase;
-      margin: 0; }
-  .main-header.chi-siamo {
-    background: url(../img/chi-siamo-header.jpg) no-repeat center center;
-    background-size: cover; }
-  .main-header.ibi-export {
-    background: url(../img/chi-siamo-header.jpg) no-repeat center center;
-    background-size: cover; }
-  .main-header.ibi-italia {
-    background: url(../img/chi-siamo-header.jpg) no-repeat center center;
-    background-size: cover; }
-  .main-header.ibi-manufacturer {
-    background: url(../img/toll-development-header.jpg) no-repeat center center;
-    background-size: cover; }
-  .main-header.ibisqus-ospedale {
-    background: url(../img/chi-siamo-header.jpg) no-repeat center center;
-    background-size: cover; }
-  .main-header.ricerca-innovazione {
-    background: url(../img/toll-development-header.jpg) no-repeat center center;
-    background-size: cover; }
-  .main-header.farmacovigilanza {
-    background: url(../img/farmacovigilanza-header.jpg) no-repeat center center;
-    background-size: cover; }
-  .main-header.contatti {
-    background: url(../img/contatti-header.jpg) no-repeat center center;
-    background-size: cover; }
-  .main-header.lavora-con-noi {
-    background: url(../img/contatti-header.jpg) no-repeat center center;
-    background-size: cover; }
-  .main-header.prodotti {
-    background: url(../img/prodotti-header.jpg) no-repeat center center;
-    background-size: cover; }
-  .main-header.privacy-policy {
-    background: url(../img/chi-siamo-header.jpg) no-repeat center center;
-    background-size: cover; }
-  .main-header.benessere-paziente {
-    background: url(../img/chi-siamo-header.jpg) no-repeat center center;
-    background-size: cover; }
-  .main-header.reparti {
-    background: url(../img/chi-siamo-header.jpg) no-repeat center center;
-    background-size: cover; }
-  .main-header.registrazione-area-riservata {
-    background: url(../img/chi-siamo-header.jpg) no-repeat center center;
-    background-size: cover; }
-  .main-header.archivio-news-header {
-    background: url(../img/chi-siamo-header.jpg) no-repeat center center;
-    background-size: cover; }
+  position: relative;
+}
+.main-header .main-caption {
+  position: absolute;
+  bottom: -8px;
+}
+.main-header .main-caption span {
+  font-style: italic;
+  text-transform: none;
+}
+.main-header .main-caption h1 {
+  color: #fff;
+  font-weight: 300;
+  font-size: 60px;
+  text-transform: uppercase;
+  margin: 0;
+}
+.main-header.chi-siamo {
+  background: url(../img/chi-siamo-header.jpg) no-repeat center center;
+  background-size: cover;
+}
+.main-header.ibi-export {
+  background: url(../img/chi-siamo-header.jpg) no-repeat center center;
+  background-size: cover;
+}
+.main-header.ibi-italia {
+  background: url(../img/chi-siamo-header.jpg) no-repeat center center;
+  background-size: cover;
+}
+.main-header.ibi-manufacturer {
+  background: url(../img/toll-development-header.jpg) no-repeat center center;
+  background-size: cover;
+}
+.main-header.ibisqus-ospedale {
+  background: url(../img/chi-siamo-header.jpg) no-repeat center center;
+  background-size: cover;
+}
+.main-header.ricerca-innovazione {
+  background: url(../img/toll-development-header.jpg) no-repeat center center;
+  background-size: cover;
+}
+.main-header.farmacovigilanza {
+  background: url(../img/farmacovigilanza-header.jpg) no-repeat center center;
+  background-size: cover;
+}
+.main-header.contatti {
+  background: url(../img/contatti-header.jpg) no-repeat center center;
+  background-size: cover;
+}
+.main-header.lavora-con-noi {
+  background: url(../img/contatti-header.jpg) no-repeat center center;
+  background-size: cover;
+}
+.main-header.prodotti {
+  background: url(../img/prodotti-header.jpg) no-repeat center center;
+  background-size: cover;
+}
+.main-header.privacy-policy {
+  background: url(../img/chi-siamo-header.jpg) no-repeat center center;
+  background-size: cover;
+}
+.main-header.benessere-paziente {
+  background: url(../img/chi-siamo-header.jpg) no-repeat center center;
+  background-size: cover;
+}
+.main-header.reparti {
+  background: url(../img/chi-siamo-header.jpg) no-repeat center center;
+  background-size: cover;
+}
+.main-header.registrazione-area-riservata {
+  background: url(../img/chi-siamo-header.jpg) no-repeat center center;
+  background-size: cover;
+}
+.main-header.archivio-news-header {
+  background: url(../img/chi-siamo-header.jpg) no-repeat center center;
+  background-size: cover;
+}
 
 /*
 -------------------------
@@ -758,126 +875,145 @@ Tabs
 -------------------------
 */
 .tabs .tab-content {
-  margin-top: 50px; }
-  /*.tabs .tab-content b {
-    display: block; }*/
+  margin-top: 50px;
+}
+
+/*.tabs .tab-content b {
+  display: block; }*/
 .tabs .tab-content h2 {
   font-size: 22px;
 }
 .tabs .nav-tabs {
   border: 0;
   border-bottom: 2px solid #00509a;
-  text-align: center; }
-  .tabs .nav-tabs li {
-    margin-bottom: 5px; }
-    .tabs .nav-tabs li:first-of-type a {
-      border-left: 1px solid #666; }
-    .tabs .nav-tabs li.active:first-of-type a {
-      border-left: 1px solid #666; }
-    .tabs .nav-tabs li a {
-      border: 0;
-      border-right: 1px solid #666;
-      border-radius: 0;
-      font-style: italic;
-      font-size: 17px; }
-      .tabs .nav-tabs li a:hover {
-        background: transparent; }
-    .tabs .nav-tabs li.active:after {
-      position: absolute;
-      content: '';
-      bottom: -5px;
-      left: 50%;
-      -webkit-transform: translate(-50%, 0%);
-      transform: translate(-50%, 0%);
-      width: 0;
-      height: 0;
-      border-style: solid;
-      border-width: 0 25px 10px 25px;
-      border-color: transparent transparent #00509a transparent; }
-    .tabs .nav-tabs li.active a {
-      color: #00509a;
-      font-weight: 700;
-      border-left: 0; }
-      .tabs .nav-tabs li.active a:hover {
-        border-top: 0;
-        border-bottom: 0;
-        border-right-color: #666; }
-      .tabs .nav-tabs li.active a:focus {
-        border-top: 0;
-        border-bottom: 0;
-        border-right-color: #666; }
-
+  text-align: center;
+}
+.tabs .nav-tabs li {
+  margin-bottom: 5px;
+}
+.tabs .nav-tabs li:first-of-type a {
+  border-left: 1px solid #666;
+}
+.tabs .nav-tabs li.active:first-of-type a {
+  border-left: 1px solid #666;
+}
+.tabs .nav-tabs li a {
+  border: 0;
+  border-right: 1px solid #666;
+  border-radius: 0;
+  font-style: italic;
+  font-size: 17px;
+}
+.tabs .nav-tabs li a:hover {
+  background: transparent;
+}
+.tabs .nav-tabs li.active:after {
+  position: absolute;
+  content: '';
+  bottom: -5px;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0%);
+  transform: translate(-50%, 0%);
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 25px 10px 25px;
+  border-color: transparent transparent #00509a transparent;
+}
+.tabs .nav-tabs li.active a {
+  color: #00509a;
+  font-weight: 700;
+  border-left: 0;
+}
+.tabs .nav-tabs li.active a:hover {
+  border-top: 0;
+  border-bottom: 0;
+  border-right-color: #666;
+}
+.tabs .nav-tabs li.active a:focus {
+  border-top: 0;
+  border-bottom: 0;
+  border-right-color: #666;
+}
 .tabs.chi-siamo-tabs .nav-tabs li a {
   font-size: 14px;
-  padding: 10px 11px; }
+  padding: 10px 11px;
+}
 .tabs.chi-siamo-tabs ul {
   margin-bottom: 25px;
 }
 .tabs.chi-siamo-tabs h4 {
-  font-size: 22px; }
-
+  font-size: 22px;
+}
 .tabs.chi-siamo-tabs h5 {
   font-size: 20px;
   font-weight: 700;
-  font-style: italic; }
-
+  font-style: italic;
+}
 .tabs.chi-siamo-tabs .evidence-box {
   padding: 20px;
   margin-bottom: 40px;
-  background: #e6f8f8; }
-  .tabs.chi-siamo-tabs .evidence-box h4 {
-    text-transform: none;
-    font-size: 30px;
-    margin: 0px auto 10px auto; }
-  .tabs.chi-siamo-tabs .evidence-box p {
-    margin: 0; }
-
-  .tabs.ibi-export-tabs h2:last-of-type {
-    margin-top: 40px; }
-  .tabs.ibi-export-tabs ul li {
-    width: 50%;
-    text-align: center;
-    height: 55px; }
-  .tabs.ibi-export-tabs .license-box {
-    border-bottom: 1px dashed #1fa9ad;
-    float: left;
-    width: 100%;
-    padding: 15px 0; }
-    .tabs.ibi-export-tabs .license-box span {
-      color: #1fa9ad;
-      font-weight: 700; }
-    .tabs.ibi-export-tabs .license-box p {
-      margin: 0; }
-
-  .tabs.manufactoring-tabs ul li {
-    width: 50%;
-    text-align: center; }
-
+  background: #e6f8f8;
+}
+.tabs.chi-siamo-tabs .evidence-box h4 {
+  text-transform: none;
+  font-size: 30px;
+  margin: 0px auto 10px auto;
+}
+.tabs.chi-siamo-tabs .evidence-box p {
+  margin: 0;
+}
+.tabs.ibi-export-tabs h2:last-of-type {
+  margin-top: 40px;
+}
+.tabs.ibi-export-tabs ul li {
+  width: 50%;
+  text-align: center;
+  height: 55px;
+}
+.tabs.ibi-export-tabs .license-box {
+  border-bottom: 1px dashed #1fa9ad;
+  float: left;
+  width: 100%;
+  padding: 15px 0;
+}
+.tabs.ibi-export-tabs .license-box span {
+  color: #1fa9ad;
+  font-weight: 700;
+}
+.tabs.ibi-export-tabs .license-box p {
+  margin: 0;
+}
+.tabs.manufactoring-tabs ul li {
+  width: 50%;
+  text-align: center;
+}
 .tabs.ricerca-tabs h3 {
   color: #00509a;
   font-weight: 700;
-  margin: 40px 0 20px 0; }
-
+  margin: 40px 0 20px 0;
+}
 .tabs.ricerca-tabs .nav-tabs li {
-  width: 25%; }
-
+  width: 25%;
+}
 .tabs.ricerca-tabs .tab-content ul {
   padding: 0 0 10px 40px;
 }
-
 .tabs.ricerca-tabs #innovativi ul {
   border: 0;
   margin-bottom: 0px;
-  padding-bottom: 10px; }
-
+  padding-bottom: 10px;
+}
 .tabs.ricerca-tabs #innovativi .divider {
-  margin-bottom: 25px; }
-
+  margin-bottom: 25px;
+}
 .tabs.benessere-paziente-tabs {
-  margin-top: 50px; }
-  .tabs.benessere-paziente-tabs ul li {
-    width: 50%;
-    text-align: center; }
+  margin-top: 50px;
+}
+.tabs.benessere-paziente-tabs ul li {
+  width: 50%;
+  text-align: center;
+}
 
 /*
 -------------------------
@@ -885,156 +1021,177 @@ Content
 -------------------------
 */
 section.content.farmacovigilanza-content h4 {
-  margin-bottom: 10px; }
-
+  margin-bottom: 10px;
+}
 section.content.farmacovigilanza-content p {
-  margin-top: 0; }
-  section.content.farmacovigilanza-content p:first-of-type {
-    margin-top: 30px; }
-
+  margin-top: 0;
+}
+section.content.farmacovigilanza-content p:first-of-type {
+  margin-top: 30px;
+}
 section.content.contatti-content .loghi {
   padding-bottom: 15px;
   margin: 0 15px;
-  border-bottom: 1px dotted #666; }
-  section.content.contatti-content .loghi.contatti-ibisqus-logo {
-    margin-top: 50px; }
-
+  border-bottom: 1px dotted #666;
+}
+section.content.contatti-content .loghi.contatti-ibisqus-logo {
+  margin-top: 50px;
+}
 section.content.contatti-content iframe {
   margin-top: 85px;
 }
-
 section.content.contatti-content a {
-  color: #00509a; }
-  section.content.contatti-content a:hover {
-    text-decoration: underline; }
-
+  color: #00509a;
+}
+section.content.contatti-content a:hover {
+  text-decoration: underline;
+}
 section.content.contatti-content #accordion .panel {
   border: 0;
   border-radius: 0;
   border-bottom: 1px dotted #000;
-  margin-top: 0; }
-  section.content.contatti-content #accordion .panel .caret {
-    float: right;
-    margin-top: 10px;
-    border-top: 10px dashed #666;
-    border-top: 10px solid\9;
-    border-right: 10px solid transparent;
-    border-left: 10px solid transparent;
-    -webkit-transform: rotate(-90deg);
-    transform: rotate(-90deg); }
-    section.content.contatti-content #accordion .panel .caret.caret-rotate {
-      -webkit-transform: rotate(0deg);
-      transform: rotate(0deg); }
-  section.content.contatti-content #accordion .panel .panel-title {
-    margin: 5px 0; }
-  section.content.contatti-content #accordion .panel .panel-heading {
-    background: transparent; }
-    section.content.contatti-content #accordion .panel .panel-heading h4 {
-      color: #00509a;
-      font-weight: 700;
-      display: inline-block; }
-  section.content.contatti-content #accordion .panel .panel-body {
-    border: 0; }
-
+  margin-top: 0;
+}
+section.content.contatti-content #accordion .panel .caret {
+  float: right;
+  margin-top: 10px;
+  border-top: 10px dashed #666;
+  border-top: 10px solid\9;
+  border-right: 10px solid transparent;
+  border-left: 10px solid transparent;
+  -webkit-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+}
+section.content.contatti-content #accordion .panel .caret.caret-rotate {
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+section.content.contatti-content #accordion .panel .panel-title {
+  margin: 5px 0;
+}
+section.content.contatti-content #accordion .panel .panel-heading {
+  background: transparent;
+}
+section.content.contatti-content #accordion .panel .panel-heading h4 {
+  color: #00509a;
+  font-weight: 700;
+  display: inline-block;
+}
+section.content.contatti-content #accordion .panel .panel-body {
+  border: 0;
+}
 section.content.ricerca-content ul {
-  font-size: 16px; }
-
+  font-size: 16px;
+}
 section.content.ricerca-content #biotecnologie h4 {
-  margin: 25px auto 10px auto; }
-
+  margin: 25px auto 10px auto;
+}
 section.content.ricerca-content .no-border {
   border: 0;
-  padding-bottom: 10px; }
-
+  padding-bottom: 10px;
+}
 section.content.benessere-content #accordion a:hover, section.content.benessere-content #accordion a:focus {
-  text-decoration: none; }
-
+  text-decoration: none;
+}
 section.content.benessere-content #accordion .panel-group .panel + .panel {
-  margin-top: 0 !important; }
-
+  margin-top: 0 !important;
+}
 section.content.benessere-content #accordion .panel {
   border: 0;
   border-radius: 0;
-  border: 1px dotted #1fa9ad; }
-  section.content.benessere-content #accordion .panel .panel-title {
-    margin: 5px 0; }
-  section.content.benessere-content #accordion .panel .panel-heading {
-    background: transparent;
-    padding: 15px; }
-    section.content.benessere-content #accordion .panel .panel-heading h4 {
-      color: #666;
-      font-weight: 300;
-      display: inline-block; }
-  section.content.benessere-content #accordion .panel .panel-body {
-    border: 0; }
-
+  border: 1px dotted #1fa9ad;
+}
+section.content.benessere-content #accordion .panel .panel-title {
+  margin: 5px 0;
+}
+section.content.benessere-content #accordion .panel .panel-heading {
+  background: transparent;
+  padding: 15px;
+}
+section.content.benessere-content #accordion .panel .panel-heading h4 {
+  color: #666;
+  font-weight: 300;
+  display: inline-block;
+}
+section.content.benessere-content #accordion .panel .panel-body {
+  border: 0;
+}
 section.content.lavora-con-noi-content .lavori-box {
   background: #00509a;
-  padding: 25px; }
-  section.content.lavora-con-noi-content .lavori-box ul {
-    list-style: none;
-    padding: 0;
-    margin: 0; }
-    section.content.lavora-con-noi-content .lavori-box ul li {
-      color: #fff;
-      font-size: 18px; }
-
+  padding: 25px;
+}
+section.content.lavora-con-noi-content .lavori-box ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+section.content.lavora-con-noi-content .lavori-box ul li {
+  color: #fff;
+  font-size: 18px;
+}
 section.content.lavora-con-noi-content label {
-  margin-top: 10px; }
-
+  margin-top: 10px;
+}
 section.content.lavora-con-noi-content h3.form-title {
   background: #80a8cd;
   color: #fff;
   padding: 5px 5px 8px 5px;
-  margin: 25px 0 10px 0; }
-
+  margin: 25px 0 10px 0;
+}
 section.content.lavora-con-noi-content p.borded, section.content.lavora-con-noi-content img.borded {
-  padding-bottom: 25px; }
-
+  padding-bottom: 25px;
+}
 section.content.lavora-con-noi-content h4 {
   font-weight: 300;
   text-transform: none;
-  font-size: 26px; }
-
+  font-size: 26px;
+}
 section.content.lavora-con-noi-content .btn.btn-primary {
-  width: 100%; }
-
+  width: 100%;
+}
 section.content.lavora-con-noi-content .fields {
-  border-radius: 0; }
-
+  border-radius: 0;
+}
 section.content.registrazione-area-riservata-content legend {
   color: #fff;
   background: #80a8cd;
   border: 0;
   padding: 3px 10px;
   text-transform: uppercase;
-  font-size: 18px; }
-
+  font-size: 18px;
+}
 section.content.registrazione-area-riservata-content fieldset {
-  margin: 15px 0 5px 0; }
-
+  margin: 15px 0 5px 0;
+}
 section.content.archivio-news-content h2 {
-  margin: 20px 0 40px 0; }
-
+  margin: 20px 0 40px 0;
+}
 section.content.archivio-news-content .archivio-news {
-  margin: 15px 0; }
-  section.content.archivio-news-content .archivio-news h4 {
-    margin: 10px 0 0 0; }
-  section.content.archivio-news-content .archivio-news p {
-    margin: 0; }
-  section.content.archivio-news-content .archivio-news a {
-    float: right;
-    text-align: right; }
-  section.content.archivio-news-content .archivio-news span.date {
-    font-size: 12px;
-    color: #000;
-    font-weight: 700; }
-
+      margin: 0;
+    border-bottom: 1px dashed #1fa9ad;
+    padding: 25px 0;
+}
+section.content.archivio-news-content .archivio-news h4 {
+  margin: 10px 0 0 0;
+}
+section.content.archivio-news-content .archivio-news p {
+  margin: 0;
+}
+section.content.archivio-news-content .archivio-news a {
+  float: right;
+  text-align: right;
+}
+section.content.archivio-news-content .archivio-news span.date {
+  font-size: 12px;
+  color: #000;
+  font-weight: 700;
+}
 section.content.segnalazione-farmacovigilanza-content label {
-  margin: 10px 0 5px 0; }
-
+  margin: 10px 0 5px 0;
+}
 section.content.segnalazione-farmacovigilanza-content input, section.content.segnalazione-farmacovigilanza-content textarea {
-  border-radius: 0; }
+  border-radius: 0;
+}
 
 /*
 -------------------------
@@ -1048,195 +1205,225 @@ section.products-content .filtri {
   margin: 0;
   border-bottom: 2px solid #00509a;
 }
-  section.products-content .filtri .filtri-img {
-    border-right: 1px solid #666;
-    padding: 30px;    
-    margin-bottom: 20px;
-  }
-  section.products-content .filtri .filtri-img a {
-    font-size: 22px;
-    color: #00509a;
-    text-transform: uppercase;
-    text-align: center;
-    display: block;
-  }
-  section.products-content .filtri .filtri-img a:hover {
-    text-decoration: none;
-  }
-    section.products-content .filtri .filtri-img.active {
-      position: relative; }
-      section.products-content .filtri .filtri-img.active:after {
-        position: absolute;
-        bottom: -28px;
-        left: 50%;
-        -webkit-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
-        content: '';
-        width: 0;
-        height: 0;
-        border-style: solid;
-        border-width: 0 45px 15px 45px;
-        border-color: transparent transparent #00509a transparent; }
-  }
-  }
-  section.products-content .filtri img {
-    margin: auto; }
-
-section.products-content .intro {
-  margin: 15px 0 15px 0;
-  border-bottom: 2px solid #00509a;
-  padding-bottom: 20px;
-  
-   }
-
-
-section.products-content #prodotti-container .product {
-  width: 100%;
-  margin-bottom: 35px; }
-  section.products-content #prodotti-container .product .formulazione .plus-minus {
-    width: 25px;
-    height: 25px;
-    cursor: pointer;
-    background: #b3cbe1; }
-    section.products-content #prodotti-container .product .formulazione .plus-minus:before, section.products-content #prodotti-container .product .formulazione .plus-minus:after {
-      left: 11px;
-      top: 4px;
-      height: 18px;
-      width: 3px; }
-  section.products-content #prodotti-container .product .product-title {
-    background: #80a8cd;
-    cursor: pointer;
-     }
-    section.products-content #prodotti-container .product .product-title h2 {
-      padding: 15px;
-      font-size: 16px;
-      text-transform: uppercase;
-      color: #fff;
-      margin: 0;
-      display: inline-block; }
-    section.products-content #prodotti-container .product .product-title .plus-minus {
-      width: 25px;
-      height: 25px;
-      margin-top: 10px;
-      cursor: pointer;
-      margin-right: 8px;
-      background: transparent; }
-      section.products-content #prodotti-container .product .product-title .plus-minus:before, section.products-content #prodotti-container .product .product-title .plus-minus:after {
-        left: 11px;
-        top: 4px;
-        height: 18px;
-        width: 3px; }
-  section.products-content #prodotti-container .product ul {
-    padding: 0;
-    list-style: none; }
-    section.products-content #prodotti-container .product ul.product-content {
-      display: none; }
-    section.products-content #prodotti-container .product ul li {
-      padding: 15px;
-      border-bottom: 1px solid #ededed; }
-      section.products-content #prodotti-container .product ul li h5 {
-        margin: 0;
-        font-weight: 700;
-        display: inline-block; }
-      section.products-content #prodotti-container .product ul li i {
-        float: right;
-        font-size: 18px; }
-
-section.products-content #prodotti-container.prodotti-italia .product .formulazione .formulazione-title {
-  display: none;
+section.products-content .filtri .filtri-img {
+  border-right: 1px solid #666;
+  padding: 30px;
+  margin-bottom: 20px;
+}
+section.products-content .filtri .filtri-img a {
+  font-size: 22px;
+  color: #00509a;
+  text-transform: uppercase;
+  text-align: center;
+  display: block;
+}
+section.products-content .filtri .filtri-img a:hover {
+  text-decoration: none;
+}
+section.products-content .filtri .filtri-img.active {
   position: relative;
-  cursor: pointer;
-  background: #f2f6fa;
-  border-bottom: 1px solid #fff;
-  padding: 15px; }
-
-section.products-content #prodotti-container.prodotti-italia .product .formulazione .formulazione-title i {
+}
+section.products-content .filtri .filtri-img.active:after {
   position: absolute;
-  right: 15px;
-  top: 50%;
-  font-size: 18px;
-  transform: translate(0,-50%);
-  -webkit-transform: translate(0,-50%);
-  -ms-transform: translate(0,-50%);
-  -moz-transform: translate(0,-50%);
+  bottom: -28px;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  content: '';
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 45px 15px 45px;
+  border-color: transparent transparent #00509a transparent;
+}
+}
+}
+section.products-content .filtri img {
+margin: auto;
+}
+section.products-content .intro {
+margin: 15px 0 15px 0;
+border-bottom: 2px solid #00509a;
+padding-bottom: 20px;
+}
+section.products-content #prodotti-container .product {
+width: 100%;
+margin-bottom: 35px;
+}
+section.products-content #prodotti-container .product .formulazione .plus-minus {
+width: 25px;
+height: 25px;
+cursor: pointer;
+background: #b3cbe1;
+}
+section.products-content #prodotti-container .product .formulazione .plus-minus:before, section.products-content #prodotti-container .product .formulazione .plus-minus:after {
+left: 11px;
+top: 4px;
+height: 18px;
+width: 3px;
+}
+section.products-content #prodotti-container .product .product-title {
+background: #80a8cd;
+cursor: pointer;
+}
+section.products-content #prodotti-container .product .product-title h2 {
+padding: 15px;
+font-size: 16px;
+text-transform: uppercase;
+color: #fff;
+margin: 0;
+display: inline-block;
+}
+section.products-content #prodotti-container .product .product-title .plus-minus {
+width: 25px;
+height: 25px;
+margin-top: 10px;
+cursor: pointer;
+margin-right: 8px;
+background: transparent;
+}
+section.products-content #prodotti-container .product .product-title .plus-minus:before, section.products-content #prodotti-container .product .product-title .plus-minus:after {
+left: 11px;
+top: 4px;
+height: 18px;
+width: 3px;
+}
+section.products-content #prodotti-container .product ul {
+padding: 0;
+list-style: none;
+}
+section.products-content #prodotti-container .product ul.product-content {
+display: none;
+}
+section.products-content #prodotti-container .product ul li {
+padding: 15px;
+border-bottom: 1px solid #ededed;
+}
+section.products-content #prodotti-container .product ul li h5 {
+margin: 0;
+font-weight: 700;
+display: inline-block;
+}
+section.products-content #prodotti-container .product ul li i {
+float: right;
+font-size: 18px;
+}
+section.products-content #prodotti-container.prodotti-italia .product .formulazione .formulazione-title {
+display: none;
+position: relative;
+cursor: pointer;
+background: #f2f6fa;
+border-bottom: 1px solid #fff;
+padding: 15px;
+}
+section.products-content #prodotti-container.prodotti-italia .product .formulazione .formulazione-title i {
+position: absolute;
+right: 15px;
+top: 50%;
+font-size: 18px;
+transform: translate(0, -50%);
+-webkit-transform: translate(0, -50%);
+-ms-transform: translate(0, -50%);
+-moz-transform: translate(0, -50%);
 }
 section.products-content #prodotti-container.prodotti-italia .product .formulazione .formulazione-title i.rotate-caret {
-  transform: rotate(90deg);
-  -webkit-transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
-  -moz-transform: rotate(90deg);
-} 
-
-  section.products-content #prodotti-container.prodotti-italia .product .formulazione .formulazione-title h5 {
-    font-weight: 700;
-    margin: 0; }
-
+transform: rotate(90deg);
+-webkit-transform: rotate(90deg);
+-ms-transform: rotate(90deg);
+-moz-transform: rotate(90deg);
+}
+section.products-content #prodotti-container.prodotti-italia .product .formulazione .formulazione-title h5 {
+font-weight: 700;
+margin: 0;
+}
 section.products-content #prodotti-container.prodotti-italia .product .formulazione .formulazione-content {
-  display: none;
-  background: #fff;
-  padding: 0 15px; }
-  section.products-content #prodotti-container.prodotti-italia .product .formulazione .formulazione-content li {
-    padding: 15px 0; }
-
+display: none;
+background: #fff;
+padding: 0 15px;
+}
+section.products-content #prodotti-container.prodotti-italia .product .formulazione .formulazione-content li {
+padding: 15px 0;
+}
+section.products-content #prodotti-container.prodotti-italia .product .formulazione .formulazione-content span {
+float: right;
+}
 section.products-content #prodotti-container.prodotti-ibisqus .formulazione {
-  background: #f2f6fa;
-  padding: 15px; }
-  section.products-content #prodotti-container.prodotti-ibisqus .formulazione h5 {
-    font-weight: 700;
-    margin: 0; }
-
+background: #f2f6fa;
+padding: 15px;
+}
+section.products-content #prodotti-container.prodotti-ibisqus .formulazione h5 {
+font-weight: 700;
+margin: 0;
+}
 section.products-content #prodotti-container.prodotti-ibisqus .product-content li:first-of-type {
-  background: #fff; }
+background: #fff;
+}
 
 /*
 -------------------------
 Responsive styles
 -------------------------
 */
-@media screen and (min-width: 992px) and (max-width: 1199px) {
-  nav.navbar .navbar-right li a {
-    font-size: 16px; }
-  .hero .hero-box {
-    min-height: auto;
-    margin-bottom: 25px;
-    height: 310px; }
-  .tabs.ricerca-tabs .nav-tabs li a {
-    height: 68px; } }
-
-@media screen and (min-width: 768px) and (max-width: 991px) {
-  .navbar-header {
-    float: none; }
-  .navbar-left, .navbar-right {
-    float: none !important; }
-  .navbar-toggle {
-    display: block; }
-  .navbar-collapse {
-    border-top: 1px solid transparent;
-    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1); }
-  .navbar-fixed-top {
-    top: 0;
-    border-width: 0 0 1px; }
-  .navbar-collapse.collapse {
-    display: none !important; }
-  .navbar-nav {
-    float: none !important;
-    margin-top: 7.5px; }
-  .navbar-nav > li {
-    float: none; }
-  .navbar-nav > li > a {
-    padding-top: 10px;
-    padding-bottom: 10px; }
-  .collapse.in {
-    display: block !important; }
-  .hero .hero-box {
-    min-height: auto;
-    margin-bottom: 25px;
-    height: 350px; }
-  .sidebar {
-    margin-top: 50px;
-    background: transparent; }
-  footer .footer-box {
-    padding: 30px 10px 10px 10px; } }
+@media screen and (min-width:992px) and (max-width:1199px) {
+nav.navbar .navbar-right li a {
+font-size: 16px;
+}
+.hero .hero-box {
+min-height: auto;
+margin-bottom: 25px;
+height: 310px;
+}
+.tabs.ricerca-tabs .nav-tabs li a {
+height: 68px;
+}
+}
+@media screen and (min-width:768px) and (max-width:991px) {
+.navbar-header {
+float: none;
+}
+.navbar-left, .navbar-right {
+float: none !important;
+}
+.navbar-toggle {
+display: block;
+}
+.navbar-collapse {
+border-top: 1px solid transparent;
+box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+}
+.navbar-fixed-top {
+top: 0;
+border-width: 0 0 1px;
+}
+.navbar-collapse.collapse {
+display: none !important;
+}
+.navbar-nav {
+float: none !important;
+margin-top: 7.5px;
+}
+.navbar-nav > li {
+float: none;
+}
+.navbar-nav > li > a {
+padding-top: 10px;
+padding-bottom: 10px;
+}
+.collapse.in {
+display: block !important;
+}
+.hero .hero-box {
+min-height: auto;
+margin-bottom: 25px;
+height: 350px;
+}
+.sidebar {
+margin-top: 50px;
+background: transparent;
+}
+footer .footer-box {
+padding: 30px 10px 10px 10px;
+}
+}
 
 /*# sourceMappingURL=main.css.map */
-

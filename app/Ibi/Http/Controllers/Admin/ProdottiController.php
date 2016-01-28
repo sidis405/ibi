@@ -90,7 +90,9 @@ class ProdottiController extends AdminController
         $paesi = $paesi_repo->getAll();
         $fascie = $fascie_repo->getAll();
         $lingue = Languages::all();
-        return view('admin.prodotti.edit', compact('prodotto', 'sezioni', 'principi_attivi', 'categorie_terapeutiche', 'paesi', 'fascie', 'lingue'));
+
+         $traduzioni = $prodotto->translations->keyBy('locale');
+        return view('admin.prodotti.edit', compact('prodotto', 'sezioni', 'principi_attivi', 'categorie_terapeutiche', 'paesi', 'fascie', 'lingue', 'traduzioni'));
     }
 
     /**
@@ -148,6 +150,13 @@ class ProdottiController extends AdminController
             $data['unita'] = $request->input('unita');
         }else{
             $data['unita'] = null;
+        }
+
+        if($request->has('paesi'))
+        {
+            $data['paesi'] = $request->input('paesi');
+        }else{
+            $data['paesi'] = null;
         }
 
 

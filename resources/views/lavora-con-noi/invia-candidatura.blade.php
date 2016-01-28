@@ -30,7 +30,7 @@
                 <select name="posizione_id" class="form-control">
                   <option>Scegli...</option>
                   @foreach($posizioni as $posizione)
-                    <option value="{{$posizione->id}}" @if($posizione->id == $id) selected @endif required>{{$posizione->titolo}} : {{$posizione->sede}}</option>
+                    <option value="{{$posizione->id}}" @if($posizione->id == $id) selected @endif required>{{$posizione->titolo}}</option>
                   @endforeach
                 </select>
               </div>

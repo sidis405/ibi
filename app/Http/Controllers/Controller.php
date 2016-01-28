@@ -9,6 +9,7 @@ use Illuminate\Foundation\Validation\ValidatesRequests;
 use Illuminate\Routing\Controller as BaseController;
 use Ibi\Repositories\PagineRepo;
 use Session;
+use Config;
 
 abstract class Controller extends BaseController
 {
@@ -31,6 +32,8 @@ abstract class Controller extends BaseController
         }
         
         \App::setLocale($locale);
+
+        view()->share('text', Config::get('traduzioni.'.$locale));
 
     }
 }

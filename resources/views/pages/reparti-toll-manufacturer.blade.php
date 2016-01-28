@@ -11,8 +11,6 @@
       <div class="container">
         <div class="row">
           <div class="col-sm-8">
-            <h2>Reparti</h2>
-            <h3>Sottotitolo reparti</h3>
             @include('layouts.content', array('key' => 'toll_reparti_main', 'permesso'=> 'modifica_toll_development'))
           </div>
           <div class="col-md-4">

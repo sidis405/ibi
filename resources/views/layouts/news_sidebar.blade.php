@@ -12,7 +12,7 @@
       </div>
       <div class="row news">
         <div class="col-xs-12">
-          <h3> Ultime News</h3>
+          <h3> {{$text['azioni']['ultime_news']}}</h3>
         </div>
         <div class="col-xs-12">
           @if(count($news))
@@ -22,7 +22,7 @@
               <div class="media-left"><a href="/archivio-news/{{$item->id}}/{{$item->slug}}"><img src="/images/{{$item->immagine_path}}" alt="{{$item->titolo}}" class="media-object news-image"></a></div>
               <div class="media-body">
                 <h4>{{$item->titolo}}</h4><span class="date">{{$item->created_at->format('d/m/y')}}</span>
-                <p> {{$item->descrizione}}</p><a href="/archivio-news/{{$item->id}}/{{$item->slug}}" class="read-more read-more-news">Leggi tutto ></a>
+                <p> {{$item->descrizione}}</p><a href="/archivio-news/{{$item->id}}/{{$item->slug}}" class="read-more read-more-news">{{$text['azioni']['leggi_tutto']}} ></a>
               </div>
             </div>
           </div>
@@ -31,7 +31,7 @@
           <p>Non ci sono news</p>
           @endif
         </div>
-        <div class="col-xs-12"><a href="/archivio-news" class="archivio-news-link">Archivio news</a></div>
+        <div class="col-xs-12"><a href="/archivio-news" class="archivio-news-link">{{$text['azioni']['archivio_news']}}</a></div>
       </div>
       
     </div>

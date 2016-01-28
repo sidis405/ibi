@@ -15,13 +15,7 @@
         <div class="sidebar products-sidebar">
           <a class="btn btn-primary" href="/allegati/{{$listini['listino-ibisqus-ospedale']['allegato']}}" target="_blank">Scarica il listino in pdf</a>
           @include('prodotti.filtri.filtro_ibisqus')
-          <a href="benessere-del-paziente">
-            <div class="benessere-paziente">
-              <h5>Fegato grasso o Steatosi epatica ?</h5>
-            </div></a><a href="benessere-del-paziente">
-            <div class="benessere-paziente">
-              <h5>Meteorismo e Aerofagia ?</h5>
-            </div></a>
+  
           </div>
         </div>
         <div class="col-md-9">

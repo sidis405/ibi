@@ -55,7 +55,7 @@
                 <div class="card-body card-padding">
                     <div class="row">
                         @include('admin.prodotti.partials.sezioni_partial', array('selected' => array_pluck($prodotto->sezioni, 'id')))
-                        @include('admin.prodotti.partials.paesi_partial', array('selected' => array_pluck($prodotto->paesi, 'id')))
+                        <!-- @include('admin.prodotti.partials.paesi_partial', array('selected' => array_pluck($prodotto->paesi, 'id'))) -->
                     </div>
                 </div>
             </div>
@@ -72,7 +72,7 @@
                      @foreach($lingue as $lingua)
                     <div class="form-group fg-line">
                         <label for="formulazione">Formulazione {{$lingua->label}}</label>
-                        <input type="text" class="form-control input-sm" id="formulazione"  value="" name="formulazioni[{{$lingua->locale}}]"  placeholder="La formulazione completa del prodotto">
+                        <input type="text" class="form-control input-sm" id="formulazione"  value="{{$traduzioni[$lingua->locale]['formulazione']}}" name="formulazioni[{{$lingua->locale}}]"  placeholder="La formulazione completa del prodotto">
                     </div>
                     @endforeach
                 </div>
