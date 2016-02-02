@@ -15,10 +15,9 @@
             <div class="tabs ricerca-tabs">
               <!-- Nav tabs-->
               <ul role="tablist" class="nav nav-tabs">
-                <li role="presentation" class="active"><a href="#innovativi" aria-controls="innovativi" role="tab" data-toggle="tab">Delivery innovativi</a></li>
+                <li role="presentation" class="active"><a href="#innovativi" aria-controls="innovativi" role="tab" data-toggle="tab">Sviluppo formulativo</a></li>
                 <li role="presentation"><a href="#biotecnologie" aria-controls="biotecnologie" role="tab" data-toggle="tab">Biotecnologie	</a></li>
-                <li role="presentation"><a href="#pubblicazioni" aria-controls="pubblicazioni" role="tab" data-toggle="tab">Pubblicazioni	</a></li>
-                <li role="presentation"><a href="#progetti" aria-controls="progetti" role="tab" data-toggle="tab">Progetti			</a></li>
+                <li role="presentation"><a href="#collaborazioni" aria-controls="collaborazioni" role="tab" data-toggle="tab">Collaborazioni	</a></li>                
               </ul>
               <!-- Tab panes-->
               <div class="tab-content">
@@ -30,17 +29,17 @@
                 <div id="biotecnologie" role="tabpanel" class="tab-pane">
                   @include('layouts.content', array('key' => 'ricerca_innovazione_biotecnologie_tab', 'permesso'=> 'modifica_ricerca_innovazione'))                  
                 </div>
-                <div id="pubblicazioni" role="tabpanel" class="tab-pane">
+                <div id="collaborazioni" role="tabpanel" class="tab-pane">
                   @include('layouts.content', array('key' => 'ricerca_innovazione_pubblicazioni_tab', 'permesso'=> 'modifica_ricerca_innovazione'))  
                 </div>
-                <div id="progetti" role="tabpanel" class="tab-pane">
+                <!-- <div id="progetti" role="tabpanel" class="tab-pane">
                   @include('layouts.content', array('key' => 'ricerca_innovazione_progetti_tab', 'permesso'=> 'modifica_ricerca_innovazione'))  
-                </div>
+                </div> -->
               </div>
             </div>
           </div>
           <div class="col-md-4">
-            @include('layouts.news_sidebar')
+            @include('layouts.news_sidebar_ricerca_innovazione')
           </div>
         </div>
       </div>

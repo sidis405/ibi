@@ -22,6 +22,17 @@
                 <div id="ibi-export" role="tabpanel" class="tab-pane active"><a href="prodotti-export" href="/ibi-export">
                     <div class="btn btn-primary btn-products">Elenco prodotti per esportazioni</div></a>
                    @include('layouts.content', array('key' => 'ibi_export_main_tab', 'permesso'=> 'modifica_export'))
+                  
+                    <div class="mappa">
+                        
+                        <a href="#" class="marker marker-italia"><i class="fa fa-map-marker"></i></a>
+                        <a href="#" class="marker marker-germania"><i class="fa fa-map-marker"></i></a>
+                        <a href="#" class="marker marker-uk"><i class="fa fa-map-marker"></i></a>
+
+
+                    </div>
+
+                   @include('layouts.content', array('key' => 'ibi_export_main_tab2', 'permesso'=> 'modifica_export'))
                 </div>
                 <div id="licensing-out" role="tabpanel" class="tab-pane">
                   @include('layouts.content', array('key' => 'ibi_export_licensing_tab', 'permesso'=> 'modifica_export'))
@@ -30,7 +41,7 @@
             </div>
           </div>
           <div class="col-md-4">
-            @include('layouts.news_sidebar')
+            @include('layouts.news_sidebar_esportazioni')
           </div>
         </div>
       </div>

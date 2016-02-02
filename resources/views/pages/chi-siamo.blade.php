@@ -50,7 +50,7 @@
         </div>
       </div>
       <div class="col-md-4">
-        @include('layouts.news_sidebar')
+        @include('layouts.news_sidebar_chi_siamo')
       </div>
     </section>
     @stop

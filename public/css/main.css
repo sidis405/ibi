@@ -124,6 +124,9 @@ section.content ul {
   font-size: 16px !important;
   margin-bottom: 35px;
 }
+section.content ol {
+  font-size: 16px !important;
+}
 section.content.ibisqus-ospedale-content h2 {
   font-size: 28px;
   text-transform: uppercase;
@@ -508,16 +511,38 @@ Sidebar styles
   display: block;
   color: #fff;
 }
-.sidebar.products-sidebar .benessere-paziente {
-  padding: 15px;
+.sidebar.products-sidebar .benessere-paziente {  
   border: 4px solid #ffb800;
   margin: 20px auto;
   background: rgba(0, 0, 0, 0.6);
   text-transform: uppercase;
 }
+.sidebar.products-sidebar .benessere-paziente.fegato-grasso {  
+  background: url(../img/fegato-grasso.jpg) no-repeat center center;
+  width: 100%;
+  height: 150px;
+  display: flex;  
+  justify-content: center;
+  text-align: center;
+  background-position: -10px -30px;
+}
+.sidebar.products-sidebar .benessere-paziente.meteorismo {  
+  background: url(../img/meteorismo.jpg) no-repeat center center;
+  width: 100%;
+  height: 150px;
+  display: flex;   
+  justify-content: center;
+  text-align: center;
+  background-position: -10px -30px;
+}
+
 .sidebar.products-sidebar .benessere-paziente h5 {
   color: #fff;
   margin: 0;
+  font-size: 18px;
+  align-self: flex-end;
+  background: black;
+  padding: 5px;
 }
 .sidebar a.archivio-news-link {
   float: right;
@@ -963,6 +988,37 @@ Tabs
 .tabs.chi-siamo-tabs .evidence-box p {
   margin: 0;
 }
+
+.tabs.ibi-export-tabs .mappa {
+  background: url('/img/mappa.jpg') no-repeat center center;
+  width: 100%;
+  height: 368px;
+  background-size: cover;
+  position: relative;
+}
+
+.tabs.ibi-export-tabs .mappa .marker{
+    position: absolute;
+    font-size: 22px;
+}
+.tabs.ibi-export-tabs .mappa .marker.marker-italia{
+  top: 122px;
+  left:374px;
+  color: #00509a;
+}
+
+.tabs.ibi-export-tabs .mappa .marker.marker-germania{
+  top: 102px;
+  left: 364px;
+  color: #00509a;
+}
+
+.tabs.ibi-export-tabs .mappa .marker.marker-uk{
+  top: 91px;
+  left: 338px;
+  color: #00509a;
+}
+
 .tabs.ibi-export-tabs h2:last-of-type {
   margin-top: 40px;
 }
@@ -994,7 +1050,7 @@ Tabs
   margin: 40px 0 20px 0;
 }
 .tabs.ricerca-tabs .nav-tabs li {
-  width: 25%;
+  width: 33.3%;
 }
 .tabs.ricerca-tabs .tab-content ul {
   padding: 0 0 10px 40px;

@@ -8,6 +8,11 @@ class News extends Model
 {
     protected $guarded = ['id', 'created_at', 'updated_at'];
 
+    public function allegati()
+    {
+        return $this->hasMany(Allegati::class, 'news_id');
+    }
+
     public static function make($titolo, $descrizione, $testo, $active){
 
         $slug = str_slug(rtrim($titolo));

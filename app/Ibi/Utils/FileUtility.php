@@ -29,6 +29,12 @@ class FileUtility {
                                 'disk' => 'public_images'
                             ],
 
+                        'news_allegati' => 
+                            [
+                                'folder' => 'news',
+                                'disk' => 'public_allegati'
+                            ],
+
                         'comunicati_allegati' => 
                             [
                                 'folder' => 'comunicati',

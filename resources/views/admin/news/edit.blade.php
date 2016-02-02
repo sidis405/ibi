@@ -66,6 +66,19 @@
                     </div>
                 </div>
             </div>
+
+             <div class="card">
+                <div class="card-header">
+                    <h2>Allegati</h2>
+                </div>
+                
+                <div class="card-body card-padding">
+                    <div class="form-group fg-line">
+                        @include('admin.news.allegati_partial')
+                    </div>
+                </div>
+            </div>
+
             <div class="card">
                 
                 <div class="card-body card-padding">
@@ -101,4 +114,15 @@
 <script src="/adm/vendors/fileinput/fileinput.min.js"></script>
 <script src="/adm/vendors/input-mask/input-mask.min.js"></script>
 <script src="/adm/vendors/farbtastic/farbtastic.min.js"></script>
+
+<script src="/vendor/unisharp/laravel-ckeditor/ckeditor.js"></script>
+    <script src="/vendor/unisharp/laravel-ckeditor/adapters/jquery.js"></script>
+    <script>
+        $('.html-editor').ckeditor({
+            language: 'it',
+            uiColor: '#ffffff',
+        });
+        // $('.textarea').ckeditor(); // if class is prefered.
+
+    </script>
 @stop

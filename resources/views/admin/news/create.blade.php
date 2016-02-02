@@ -111,4 +111,15 @@
 <script src="/adm/vendors/fileinput/fileinput.min.js"></script>
 <script src="/adm/vendors/input-mask/input-mask.min.js"></script>
 <script src="/adm/vendors/farbtastic/farbtastic.min.js"></script>
+
+<script src="/vendor/unisharp/laravel-ckeditor/ckeditor.js"></script>
+    <script src="/vendor/unisharp/laravel-ckeditor/adapters/jquery.js"></script>
+    <script>
+        $('.html-editor').ckeditor({
+            language: 'it',
+            uiColor: '#ffffff',
+        });
+        // $('.textarea').ckeditor(); // if class is prefered.
+
+    </script>
 @stop

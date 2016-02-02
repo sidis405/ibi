@@ -27,12 +27,12 @@ class NewsRepo
 
     public function getAll()
     {
-        return News::orderBy('created_at', 'DESC')->get();
+        return News::with('allegati')->orderBy('created_at', 'DESC')->get();
     } 
 
     public function getAllFront($howMany = 3)
     {
-        return News::where('active', 1)->orderBy('created_at', 'DESC')->take($howMany)->get();
+        return News::with('allegati')->where('active', 1)->orderBy('created_at', 'DESC')->take($howMany)->get();
     } 
 
     public function getAllListing()

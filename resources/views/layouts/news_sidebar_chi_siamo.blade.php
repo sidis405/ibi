@@ -1,17 +1,13 @@
 <div class="sidebar theiaStickySidebar">
 
   <div class="row sidebar-hero">
-    <div class="col-xs-12"><a href="/reparti-toll-manufacturer">
-      <div class="reparti-sidebar">
-        <h3>Reparti</h3>
+    <div class="col-xs-12"><a href="/ricerca-innovazione">
+      <div class="biotecnologia-sidebar">
+        <h3>Ricerca e innovazione</h3>
       </div></a></div>
-      <div class="col-xs-12"><a href="/chi-siamo#quality">
-        <div class="biotecnologia-sidebar">
-          <h3>Quality unit system</h3>
-        </div></a></div>
-      <div class="col-xs-12"><a href="/ricerca-innovazione">
-        <div class="biotecnologia-sidebar">
-          <h3>Ricerca e innovazione</h3>
+      <div class="col-xs-12"><a href="/farmaco-vigilanza">
+        <div class="farmacovigilanza-sidebar">
+          <h3>Farmacovigilanza</h3>
         </div></a></div>
       </div>
       <div class="row news">
