@@ -80,6 +80,7 @@ class PrincipiAttiviController extends AdminController
 
         $lingue = Languages::all();
 
+
         $traduzioni = $principio_attivo->translations->keyBy('locale');
 
         return view('admin.principi_attivi.edit', compact('principio_attivo', 'categorie_terapeutiche', 'lingue', 'traduzioni'));
