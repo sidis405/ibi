@@ -33,6 +33,7 @@ class CreateCategoriaTerapeuticaCommandHandler
     public function handle(CreateCategoriaTerapeuticaCommand $command)
     {
         $categoria_terapeutica_object = Ct::make($command->nomi);
+        // dd($categoria_terapeutica_object);
 
         $categoria_terapeutica = $this->repo->save($categoria_terapeutica_object);
 

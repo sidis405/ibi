@@ -108,11 +108,11 @@
                     <div class="row">
                         <div class="form-group fg-line col-sm-6">
                             <label for="aic">AIC</label>
-                            <input type="text" class="form-control input-sm" id="aic" value="{{$prodotto->aic}}" name="aic" placeholder="AIC" required>
+                            <input type="text" class="form-control input-sm" id="aic" value="{{$prodotto->aic}}" name="aic" placeholder="AIC" >
                         </div>
                         <div class="form-group fg-line col-sm-6">
                             <label for="atc">ATC</label>
-                            <input type="text" class="form-control input-sm" id="atc" value="{{$prodotto->atc}}" name="atc" placeholder="ATC" required>
+                            <input type="text" class="form-control input-sm" id="atc" value="{{$prodotto->atc}}" name="atc" placeholder="ATC" >
                         </div>
                     </div>
                 </div>
@@ -126,7 +126,7 @@
                     <div class="row">
                         <div class="form-group fg-line col-sm-12">
                             <label for="regime_dispensazione">Regime dispensazione</label>
-                            <input type="text" required class="form-control input-sm" id="regime_dispensazione"  value="{{$prodotto->regime_dispensazione}}" name="regime_dispensazione" placeholder="Regime dispensazione">
+                            <input type="text"  class="form-control input-sm" id="regime_dispensazione"  value="{{$prodotto->regime_dispensazione}}" name="regime_dispensazione" placeholder="Regime dispensazione">
                         </div>
                     </div>
                     <div class="row">
@@ -136,7 +136,7 @@
                         </div>
                         <div class="form-group fg-line col-sm-6">
                             <label for="validita_mesi">Validità mesi</label>
-                            <input type="text" required class="form-control input-sm" name="validita_mesi"  value="{{$prodotto->validita_mesi}}" id="validita_mesi" placeholder="Validità mesi">
+                            <input type="text"  class="form-control input-sm" name="validita_mesi"  value="{{$prodotto->validita_mesi}}" id="validita_mesi" placeholder="Validità mesi">
                         </div>
                     </div>
                 </div>

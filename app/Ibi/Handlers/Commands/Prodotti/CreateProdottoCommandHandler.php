@@ -55,7 +55,7 @@ class CreateProdottoCommandHandler
         $prodotto = $this->repo->save($prodotto_object);
 
         $prodotto->sezioni()->sync($command->sezioni);
-        $prodotto->paesi()->sync($command->paesi);
+        // $prodotto->paesi()->sync($command->paesi);
 
         $this->caricaFogliettoIllustrativo($prodotto, $command->foglietto_illustrativo);
         $this->caricaSchedaTecnica($prodotto, $command->scheda_tecnica);

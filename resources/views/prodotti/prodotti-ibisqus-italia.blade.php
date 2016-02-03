@@ -15,6 +15,12 @@
         <div class="sidebar products-sidebar">
           <a class="btn btn-primary" href="/allegati/{{$listini['listino-ibisqus-ospedale']['allegato']}}" target="_blank">Scarica il listino in pdf</a>
           @include('prodotti.filtri.filtro_ibisqus')
+
+          <div class="sezioni-ibisqus-side">
+              <a href="/prodotti-ibisqus-italia" class="btn btn-primary active">Italia</a>
+              <a href="/prodotti-ibisqus-germania" class="btn btn-primary">Germania</a>
+              <a href="/prodotti-ibisqus-regno-unito" class="btn btn-primary">Regno Unito</a>
+          </div>
   
           </div>
         </div>
@@ -25,11 +31,7 @@
               @include('layouts.content', array('key' => 'intro_prodotti_ibisqus', 'permesso'=> 'modifica_ibisqus'))
              <a href="/ibi-ibisqus" class="btn btn-primary">Leggi di più</a>
             </div>
-            <div class="row sezioni-ibisqus">
-              <div class="col-md-4"><a href="/prodotti-ibisqus-italia" class="btn btn-primary">Italia</a></div>
-              <div class="col-md-4"><a href="/prodotti-ibisqus-germania" class="btn btn-primary">Germania</a></div>
-              <div class="col-md-4"><a href="/prodotti-ibisqus-regno-unito" class="btn btn-primary">Regno Unito</a></div>
-            </div>
+            @include('prodotti.partials.prodotti_ibisqus_partial')
           </div>
         </div>
       </div>

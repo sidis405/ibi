@@ -16,10 +16,10 @@
           <a class="btn btn-primary" href="/allegati/{{$listini['listino-ibi-italia']['allegato']}}" target="_blank">Scarica il listino in pdf</a>
           @include('prodotti.filtri.filtro_italia')
           <a href="benessere-del-paziente">
-            <div class="benessere-paziente fegato-grasso">
+            <div class="benessere-del-paziente fegato-grasso">
               <h5>Fegato grasso o Steatosi epatica ?</h5>
             </div></a><a href="benessere-del-paziente">
-            <div class="benessere-paziente meteorismo">
+            <div class="benessere-del-paziente meteorismo">
               <h5>Meteorismo e Aerofagia ?</h5>
             </div></a>
             <a target="_blank" href="http://realsil.it" class="btn btn-primary">Visita il sito Realsil</a>

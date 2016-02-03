@@ -159,6 +159,27 @@ class ProdottiController extends AdminController
             $data['paesi'] = null;
         }
 
+        if($request->has('fascia_id'))
+        {
+            $data['fascia_id'] = $request->input('fascia_id');
+        }else{
+            $data['fascia_id'] = null;
+        }
+
+        if($request->has('validita_mesi'))
+        {
+            $data['validita_mesi'] = $request->input('validita_mesi');
+        }else{
+            $data['validita_mesi'] = null;
+        }
+
+        if($request->has('principio_attivo_id'))
+        {
+            $data['principio_attivo_id'] = $request->input('principio_attivo_id');
+        }else{
+            $data['principio_attivo_id'] = null;
+        }
+
 
         return $data;
     }

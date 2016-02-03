@@ -6,7 +6,7 @@
             <span class="btn btn-primary btn-file m-r-10">
                 <span class="fileinput-new">Selezione Foglietto</span>
                 <span class="fileinput-exists">Cambia Foglietto</span>
-                <input type="file" name="foglietto_illustrativo" @if(strlen($prodotto->foglietto_illustrativo) < 2) required @endif>
+                <input type="file" name="foglietto_illustrativo" @if(strlen($prodotto->foglietto_illustrativo) < 2)  @endif>
             </span>
             <span class="fileinput-filename"></span>
             <a href="#" class="close fileinput-exists" data-dismiss="fileinput">&times;</a>
@@ -19,7 +19,7 @@
             <span class="btn btn-primary btn-file m-r-10">
                 <span class="fileinput-new">Seleziona Scheda</span>
                 <span class="fileinput-exists">Cambia Scheda</span>
-                <input type="file" name="scheda_tecnica" @if(strlen($prodotto->scheda_tecnica) < 2) required @endif>
+                <input type="file" name="scheda_tecnica" @if(strlen($prodotto->scheda_tecnica) < 2)  @endif>
             </span>
             <span class="fileinput-filename"></span>
             <a href="#" class="close fileinput-exists" data-dismiss="fileinput">&times;</a>

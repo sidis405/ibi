@@ -26,17 +26,20 @@ class Pa extends Model
 
     public static function make($nomi)
     {
-        $principio = new static();
+
+        $data = [];
 
         foreach($nomi as $locale => $nome)
         {
-            $data[$locale] = ['nome' => $nome];
+            $data[$locale]['nome'] = $nome;
         }
 
         foreach($nomi as $locale => $nome)
         {
-            $data[$locale] = ['slug' => str_slug($nome)];
+            $data[$locale]['slug'] = str_slug($nome);
         }
+
+        $principio = new static($data);
 
         return $principio;
     }

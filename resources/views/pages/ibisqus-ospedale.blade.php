@@ -14,7 +14,7 @@
               <a href="prodotti-ibisqus" class="">
                 <div class="btn btn-primary btn-products">Elenco prodotti per ospedale</div>
               </a>
-              @include('layouts.content', array('key' => 'ibisqus_ospedale_main', 'permesso'=> 'modifica_ibisques'))
+              @include('layouts.content', array('key' => 'ibisqus_ospedale_main', 'permesso'=> 'modifica_ibisqus'))
             
           </div>
           <div class="col-md-4">

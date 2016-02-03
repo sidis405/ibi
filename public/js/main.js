@@ -111,12 +111,12 @@ if ($('#back-to-top').length) {
 SIDEBAR
 -------------------------
 */
-jQuery(document).ready(function() {
-   jQuery('.col-md-4').theiaStickySidebar({
-      // Settings
-      additionalMarginTop: 20
-    });
-  });
+// jQuery(document).ready(function() {
+//    jQuery('.col-md-4').theiaStickySidebar({
+//       // Settings
+//       additionalMarginTop: 20
+//     });
+//   });
 /*
 -------------------------
 PRODUCT

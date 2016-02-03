@@ -11,10 +11,8 @@
     <section class="content lavora-con-noi-content">
       <div class="container">
         <div class="row">
-          <div class="col-sm-8">
-            <h2>Lavora con noi</h2>
-            <h3>Una grande opportunità per il tuo futuro					</h3>
-            <p class="borded">
+          <div class="col-sm-8">            
+            <p style="margin-top: 0;" class="borded">
               Lavorare in IBI significa inserirsi in una realtà imprenditoriale solida e dinamica che associa ad una lunga tradizione storica un forte orientamento al futuro.
               <br><br>
               Per vincere le molteplici sfide prefissate, IBI valorizza le risorse umane, investe nella loro formazione ed offre un ambiente di lavoro stimolante e con buone prospettive di crescita. Particolare attenzione è rivolta ai giovani,  studenti, neolaureati, disoccupati/inoccupati,  che hanno l’opportunità di sviluppare il proprio potenziale attraverso l’inserimento in stage.

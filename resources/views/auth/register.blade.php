@@ -52,7 +52,7 @@
                                 <fieldset>
                                     <legend>Verifica</legend>
                                     <div class="form-group">
-                                        <div>
+                                        <div style="margin-left: 15px;">
                                             @include('layouts.captcha')
                                         </div>
                                     </div>                                

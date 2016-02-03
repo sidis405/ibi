@@ -103,7 +103,7 @@
                                 <span class="btn btn-primary btn-file m-r-10">
                                     <span class="fileinput-new">Selezione folglietto</span>
                                     <span class="fileinput-exists">Cambia Foglietto</span>
-                                    <input type="file" name="foglietto_illustrativo" required>
+                                    <input type="file" name="foglietto_illustrativo" >
                                 </span>
                                 <span class="fileinput-filename"></span>
                                 <a href="#" class="close fileinput-exists" data-dismiss="fileinput">&times;</a>
@@ -116,7 +116,7 @@
                                 <span class="btn btn-primary btn-file m-r-10">
                                     <span class="fileinput-new">Seleziona Scheda</span>
                                     <span class="fileinput-exists">Cambia Scheda</span>
-                                    <input type="file" name="scheda_tecnica" required>
+                                    <input type="file" name="scheda_tecnica" >
                                 </span>
                                 <span class="fileinput-filename"></span>
                                 <a href="#" class="close fileinput-exists" data-dismiss="fileinput">&times;</a>
@@ -134,11 +134,11 @@
                     <div class="row">
                         <div class="form-group fg-line col-sm-6">
                             <label for="aic">AIC</label>
-                            <input type="text" class="form-control input-sm" id="aic" name="aic" placeholder="AIC" required>
+                            <input type="text" class="form-control input-sm" id="aic" name="aic" placeholder="AIC" >
                         </div>
                         <div class="form-group fg-line col-sm-6">
                             <label for="atc">ATC</label>
-                            <input type="text" class="form-control input-sm" id="atc" name="atc" placeholder="ATC" required>
+                            <input type="text" class="form-control input-sm" id="atc" name="atc" placeholder="ATC" >
                         </div>
                     </div>
                 </div>
@@ -152,7 +152,7 @@
                     <div class="row">
                         <div class="form-group fg-line col-sm-12">
                             <label for="regime_dispensazione">Regime dispensazione</label>
-                            <input type="text" required class="form-control input-sm" id="regime_dispensazione" name="regime_dispensazione" placeholder="Regime dispensazione">
+                            <input type="text"  class="form-control input-sm" id="regime_dispensazione" name="regime_dispensazione" placeholder="Regime dispensazione">
                         </div>
                     </div>
                     <div class="row">
@@ -162,7 +162,7 @@
                         </div>
                         <div class="form-group fg-line col-sm-6">
                             <label for="validita_mesi">Validità mesi</label>
-                            <input type="text" required class="form-control input-sm" name="validita_mesi" id="validita_mesi" placeholder="Validità mesi">
+                            <input type="text"  class="form-control input-sm" name="validita_mesi" id="validita_mesi" placeholder="Validità mesi">
                         </div>
                     </div>
                 </div>

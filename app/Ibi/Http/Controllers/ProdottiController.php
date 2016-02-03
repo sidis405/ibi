@@ -32,14 +32,6 @@ class ProdottiController extends Controller
         return view('prodotti.prodotti-export', compact('listini', 'prodotti', 'categorie', 'principi', 'principi_validi', 'contenuti'));
     }
 
-    public function prodotti_ibisqus(ListiniRepo $listini_repo, SezioniRepo $sezioni_repo, CategorieTerapeuticheRepo $categorie_repo, PrincipiAttiviRepo $principi_repo, PagineRepo $pagine_repo)
-    {
-        $prodotti_raw = $sezioni_repo->getBySlug('ibisqus')->prodotti;
-
-        list($prodotti, $categorie, $principi, $principi_validi, $contenuti, $listini) = $this->sliceData('prodotti-ibisqus', $prodotti_raw, $pagine_repo, $listini_repo);
-
-        return view('prodotti.prodotti-ibisqus', compact('listini', 'prodotti', 'categorie', 'principi', 'principi_validi', 'contenuti'));
-    }
 
     public function prodotti_italia(ListiniRepo $listini_repo, SezioniRepo $sezioni_repo, CategorieTerapeuticheRepo $categorie_repo, PrincipiAttiviRepo $principi_repo, PagineRepo $pagine_repo)
     {
@@ -49,6 +41,46 @@ class ProdottiController extends Controller
         list($prodotti, $categorie, $principi, $principi_validi, $contenuti, $listini) = $this->sliceData('prodotti-italia', $prodotti_raw, $pagine_repo, $listini_repo);
 
         return view('prodotti.prodotti-italia', compact('listini', 'prodotti', 'categorie', 'principi', 'principi_validi', 'contenuti'));
+    }
+
+
+    public function prodotti_ibisqus(ListiniRepo $listini_repo, SezioniRepo $sezioni_repo, CategorieTerapeuticheRepo $categorie_repo, PrincipiAttiviRepo $principi_repo, PagineRepo $pagine_repo)
+    {
+        $prodotti_raw = $sezioni_repo->getBySlug('ibisqus-regno-unito')->prodotti;
+
+        list($prodotti, $categorie, $principi, $principi_validi, $contenuti, $listini) = $this->sliceData('prodotti-ibisqus', $prodotti_raw, $pagine_repo, $listini_repo);
+
+        return view('prodotti.prodotti-ibisqus', compact('listini', 'prodotti', 'categorie', 'principi', 'principi_validi', 'contenuti'));
+    }
+
+
+    public function prodotti_ibisqus_italia(ListiniRepo $listini_repo, SezioniRepo $sezioni_repo, CategorieTerapeuticheRepo $categorie_repo, PrincipiAttiviRepo $principi_repo, PagineRepo $pagine_repo)
+    {
+        $prodotti_raw = $sezioni_repo->getBySlug('ibisqus-italia')->prodotti;
+
+        list($prodotti, $categorie, $principi, $principi_validi, $contenuti, $listini) = $this->sliceData('prodotti-ibisqus', $prodotti_raw, $pagine_repo, $listini_repo);
+
+        return view('prodotti.prodotti-ibisqus-italia', compact('listini', 'prodotti', 'categorie', 'principi', 'principi_validi', 'contenuti'));
+    }
+
+
+    public function prodotti_ibisqus_germania(ListiniRepo $listini_repo, SezioniRepo $sezioni_repo, CategorieTerapeuticheRepo $categorie_repo, PrincipiAttiviRepo $principi_repo, PagineRepo $pagine_repo)
+    {
+        $prodotti_raw = $sezioni_repo->getBySlug('ibisqus-germania')->prodotti;
+
+        list($prodotti, $categorie, $principi, $principi_validi, $contenuti, $listini) = $this->sliceData('prodotti-ibisqus', $prodotti_raw, $pagine_repo, $listini_repo);
+
+        return view('prodotti.prodotti-ibisqus-germania', compact('listini', 'prodotti', 'categorie', 'principi', 'principi_validi', 'contenuti'));
+    }
+
+
+    public function prodotti_ibisqus_uk(ListiniRepo $listini_repo, SezioniRepo $sezioni_repo, CategorieTerapeuticheRepo $categorie_repo, PrincipiAttiviRepo $principi_repo, PagineRepo $pagine_repo)
+    {
+        $prodotti_raw = $sezioni_repo->getBySlug('ibisqus-regno-unito')->prodotti;
+
+        list($prodotti, $categorie, $principi, $principi_validi, $contenuti, $listini) = $this->sliceData('prodotti-ibisqus', $prodotti_raw, $pagine_repo, $listini_repo);
+
+        return view('prodotti.prodotti-ibisqus-uk', compact('listini', 'prodotti', 'categorie', 'principi', 'principi_validi', 'contenuti'));
     }
 
     private function sliceData($sezione, $prodotti_raw, $pagine_repo, $listini_repo)

@@ -10,8 +10,8 @@ class Ct extends Model
     use Translatable;
 
     public $translatedAttributes = ['nome', 'slug'];
-    protected $fillable = ['nome', 'slug'];
-    protected $table = 'ct';
+    public $table = 'ct';
+    public $guarded = ['id', 'created_at', 'updated_at'];
 
     public function prodotti()
     {
@@ -25,18 +25,22 @@ class Ct extends Model
 
     public static function make($nomi)
     {
-        $categoria = new static();
+
+        $data = [];
 
         foreach($nomi as $locale => $nome)
         {
-            $data[$locale] = ['nome' => $nome];
+            $data[$locale]['nome'] = $nome;
         }
 
         foreach($nomi as $locale => $nome)
         {
-            $data[$locale] = ['slug' => str_slug($nome)];
+            $data[$locale]['slug'] = str_slug($nome);
         }
-        // $categoria = new static(compact('nome', 'slug'));
+
+        // dd($data);
+
+        $categoria = new static($data);
 
         return $categoria;
     }

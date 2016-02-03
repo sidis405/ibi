@@ -27,7 +27,7 @@
           <div class="col-md-12">
             <div class="row">
               <div class="col-md-8">
-                <div class="loghi contatti-ibisqus-logo"><img src="/img/ibisqus-ospedale-logo.jpg" alt=""></div>
+                <div class="loghi contatti-ibisqus-logo"><img src="/img/ibisqus-ospedale-logo-2.jpg" alt=""></div>
                 <div id="accordion" role="tablist" aria-multiselectable="true" class="panel-group">
                   <div class="panel panel-default"><a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                       <div id="headingOne" role="tab" class="panel-heading">

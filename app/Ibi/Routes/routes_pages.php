@@ -5,8 +5,12 @@ Route::get('index', 'HomeController@home');
 Route::get('home', 'HomeController@home');
 Route::get('chi-siamo', 'HomeController@chi_siamo');
 Route::get('prodotti-export', '\Ibi\Http\Controllers\ProdottiController@prodotti_export');
-Route::get('prodotti-ibisqus', '\Ibi\Http\Controllers\ProdottiController@prodotti_ibisqus');
 Route::get('prodotti-italia', '\Ibi\Http\Controllers\ProdottiController@prodotti_italia');
+
+Route::get('prodotti-ibisqus', '\Ibi\Http\Controllers\ProdottiController@prodotti_ibisqus');
+Route::get('prodotti-ibisqus-italia', '\Ibi\Http\Controllers\ProdottiController@prodotti_ibisqus_italia');
+Route::get('prodotti-ibisqus-germania', '\Ibi\Http\Controllers\ProdottiController@prodotti_ibisqus_germania');
+Route::get('prodotti-ibisqus-regno-unito', '\Ibi\Http\Controllers\ProdottiController@prodotti_ibisqus_uk');
 
 Route::get('ibi-export', 'HomeController@ibi_export');
 Route::get('ibi-italia', 'HomeController@ibi_italia');

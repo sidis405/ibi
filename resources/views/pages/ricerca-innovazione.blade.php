@@ -90,7 +90,7 @@
                           <div class="plus-minus">                          </div>
                         </div></a>
                       <div id="collapseThree" role="tabpanel" aria-labelledby="headingThree" class="panel-collapse collapse">
-                        <div class="panel-body">We are open to evaluate possible collaborations with academic institutions on the basis of promising projects in the fields of monoclonal antibodies and recombinant proteins. We can:
+                        <div class="panel-body">
                           @include('layouts.content', array('key' => 'ricerca_innovazione_biotecnologie_partnership', 'permesso'=> 'modifica_ricerca_innovazione'))             
                         </div>
                       </div>
