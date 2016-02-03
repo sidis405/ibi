@@ -12,7 +12,6 @@
       <div class="container">
         <div class="row">
           <div class="col-md-8">
-            <h2>Archivio news</h2>
             
             @if(count($listing))
               @foreach($listing as $item)

@@ -67,17 +67,6 @@
                 </div>
             </div>
 
-             <div class="card">
-                <div class="card-header">
-                    <h2>Allegati</h2>
-                </div>
-                
-                <div class="card-body card-padding">
-                    <div class="form-group fg-line">
-                        @include('admin.news.allegati_partial')
-                    </div>
-                </div>
-            </div>
 
             <div class="card">
                 
@@ -121,6 +110,10 @@
         $('.html-editor').ckeditor({
             language: 'it',
             uiColor: '#ffffff',
+            filebrowserImageBrowseUrl: '/laravel-filemanager?type=Images',
+            filebrowserImageUploadUrl: '/laravel-filemanager/upload?type=Images&_token={{csrf_token()}}',
+            filebrowserBrowseUrl: '/laravel-filemanager?type=Files',
+            filebrowserUploadUrl: '/laravel-filemanager/upload?type=Files&_token={{csrf_token()}}'
         });
         // $('.textarea').ckeditor(); // if class is prefered.
 

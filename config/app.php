@@ -160,6 +160,9 @@ return [
         Dimsav\Translatable\TranslatableServiceProvider::class,
         Anhskohbo\NoCaptcha\NoCaptchaServiceProvider::class,
         Unisharp\Ckeditor\ServiceProvider::class,
+
+        Unisharp\Laravelfilemanager\LaravelFilemanagerServiceProvider::class,
+        Intervention\Image\ImageServiceProvider::class,
     ],
 
     /*
@@ -211,6 +214,8 @@ return [
 
         'Flash' => Laracasts\Flash\Flash::class,
         'Form'=> Illuminate\Html\FormFacade::class,
+
+         'Image' => Intervention\Image\Facades\Image::class,
 
     ],
 

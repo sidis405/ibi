@@ -27,6 +27,11 @@ MIXITUP
 .contenuto-dinamico {
   position: relative;
 }
+
+.contenuto-dinamico img {
+  max-width: 100%;
+}
+
 .modifica-contenuto {
   position: absolute;
   top: 0px;
@@ -1233,7 +1238,7 @@ section.content.archivio-news-content .archivio-news h4 {
 section.content.archivio-news-content .archivio-news p {
   margin: 0;
 }
-section.content.archivio-news-content .archivio-news a {
+section.content.archivio-news-content .archivio-news .read-more-news {
   float: right;
   text-align: right;
 }
