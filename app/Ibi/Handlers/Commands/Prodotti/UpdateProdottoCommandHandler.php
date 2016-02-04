@@ -59,7 +59,7 @@ class UpdateProdottoCommandHandler
         $this->updateTranslations($prodotto, $command->formulazioni);
 
         $prodotto->sezioni()->sync($command->sezioni);
-        $prodotto->paesi()->sync($command->paesi);
+        //$prodotto->paesi()->sync($command->paesi);
 
         $this->caricaFogliettoIllustrativo($prodotto, $command->foglietto_illustrativo);
         $this->caricaSchedaTecnica($prodotto, $command->scheda_tecnica);
