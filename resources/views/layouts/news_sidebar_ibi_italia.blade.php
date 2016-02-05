@@ -1,9 +1,9 @@
-<div class="sidebar theiaStickySidebar">
+<div class="sidebar">
 
   <div class="row sidebar-hero">
-    <div class="col-xs-12"><a href="/ricerca-innovazione">
+    <div class="col-xs-12"><a href="/chi-siamo#quality">
       <div class="biotecnologia-sidebar">
-        <h3>Ricerca e innovazione</h3>
+        <h3>Quality unit system</h3>
       </div></a></div>
       <div class="col-xs-12"><a href="/farmaco-vigilanza">
         <div class="farmacovigilanza-sidebar">

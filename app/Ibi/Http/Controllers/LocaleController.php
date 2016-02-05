@@ -20,7 +20,8 @@ class LocaleController extends Controller
             
         }
 
-        return redirect()->back();
+        return 'true';
+        // return redirect()->back();
     }
 
 }

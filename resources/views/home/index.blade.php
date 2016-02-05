@@ -45,7 +45,7 @@
         </div>
       </div>
     </div>
-    <section class="content">
+    <section class="content" style="margin-top: 15px;">
       <div class="container">
         <div class="row">
           <div class="col-md-8">

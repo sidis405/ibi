@@ -14,7 +14,7 @@
             @include('layouts.content', array('key' => 'toll_reparti_main', 'permesso'=> 'modifica_toll_development'))
           </div>
           <div class="col-md-4">
-            @include('layouts.news_sidebar')
+            @include('layouts.news_sidebar_reparti')
           </div>
         </div>
       </div>

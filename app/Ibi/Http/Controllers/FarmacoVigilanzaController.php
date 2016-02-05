@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Http\Requests;
 use Ibi\Repositories\ComunicatiRepo;
 use Ibi\Repositories\PagineRepo;
+use Ibi\Repositories\NewsRepo;
 use Ibi\Requests\SendSegnalazioneRequest;
 use Illuminate\Http\Request;
 
@@ -16,15 +17,16 @@ class FarmacoVigilanzaController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index(ComunicatiRepo $comunicati_repo, PagineRepo $pagine_repo
+    public function index(NewsRepo $news_repo, ComunicatiRepo $comunicati_repo, PagineRepo $pagine_repo
         // ,  SchedeSegnalazioneRepo $schede_repo
         )
     {
         $comunicati = $comunicati_repo->getAllFront();
+        $news = $news_repo->getAllFront();
         // $schede = $schede_repo->getAllFront();
         $contenuti = $pagine_repo->getContentForPage('farmaco-vigilanza');
 
-        return view('farmaco-vigilanza.index', compact('comunicati', 'contenuti'));
+        return view('farmaco-vigilanza.index', compact('comunicati', 'contenuti', 'news'));
 
     }
 

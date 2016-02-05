@@ -13,9 +13,10 @@
     <div class="row">
       <div class="col-md-3">
         <div class="sidebar products-sidebar">
-          <a class="btn btn-primary" href="/allegati/{{$listini['listino-ibi-export']['allegato']}}" target="_blank">Scarica il listino in pdf</a>
           @include('prodotti.filtri.filtro_export')
-          
+          <div class="sezioni-ibisqus-side">
+            <a href="/ibi-export#licensing-out" class="btn btn-primary">Licensing out</a>
+          </div>
           </div>
         </div>
         <div class="col-md-9">
@@ -23,10 +24,12 @@
           <div class="intro">
             
             @include('layouts.content', array('key' => 'intro_prodotti_ibi_export', 'permesso'=> 'modifica_export'))
-            <a href="/ibi-export" class="btn btn-primary">Leggi di più</a>
+            <a href="/ibi-export">Leggi di più</a>
             
           </div>
           @include('prodotti.partials.prodotti_export_partial')
+
+
         </div>
       </div>
     </div>

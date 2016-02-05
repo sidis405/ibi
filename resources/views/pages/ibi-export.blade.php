@@ -18,9 +18,9 @@
                 <li role="presentation"><a href="#licensing-out" aria-controls="licensing-out" role="tab" data-toggle="tab">Licensing out						</a></li>
               </ul>
               <!-- Tab panes-->
-              <div class="tab-content">
+              <div class="tab-content" style="margin-top: 0;">
                 <div id="ibi-export" role="tabpanel" class="tab-pane active"><a href="prodotti-export" href="/ibi-export">
-                    <div class="btn btn-primary btn-products">Elenco prodotti per esportazioni</div></a>
+                    <div class="btn btn-primary btn-products" style="margin-top: 0;">Elenco prodotti per esportazioni</div></a>
                    @include('layouts.content', array('key' => 'ibi_export_main_tab', 'permesso'=> 'modifica_export'))
                   
                     <div class="mappa">

@@ -24,12 +24,13 @@
   </div>
   <div class="col-sm-3">
     <div class="footer-box">
-      <h4>Info</h4>
+      <h4>Link utili</h4>
       <ul>
-        <li> <a href="farmaco-vigilanza">Farmacovigilanza</a></li>
-        <li><a href="privacy-policy">Privacy Policy</a></li>
-        <li><a href="contatti">Contatti</a></li>
+        <li> <a href="/farmaco-vigilanza">Farmacovigilanza</a></li>
+        <li><a href="/privacy-policy">Privacy Policy</a></li>
+        <li><a href="/contatti">Contatti</a></li>
         <li><a href="#area-riservata-modal" class="area-riservata open-area-riservata-modal">Area Riservata</a></li>
+        <li><a href="/trasferimenti-di-valore">Trasferimenti di valore</a></li>
       </ul>
     </div>
   </div>

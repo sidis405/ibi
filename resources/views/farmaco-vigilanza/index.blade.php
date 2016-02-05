@@ -24,12 +24,22 @@
                 </div>
                 <div class="col-xs-12">
                  @include('farmaco-vigilanza.comunicati_partial')
-                </div>
+                </div> 
               </div>
+              <div class="row news">
+                <div class="col-xs-12">
+                  <h3> Ultime News</h3>
+                </div>
+                <div class="col-xs-12">
+                  @include('layouts.news_partial')
+                </div>
+                <div class="col-xs-12"><a href="/archivio-news" class="archivio-news-link">Archivio news</a></div>
+              </div>
+            </div>
           
             </div>
           </div>
         </div>
-      </div>
+     
     </section>
     @stop

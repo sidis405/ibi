@@ -21,7 +21,7 @@
             <li role="presentation"><a href="#codice-etico" aria-controls="codice-etico" role="tab" data-toggle="tab">{{$text['chi-siamo']['codice_etico']}}</a></li>
             <li role="presentation"><a href="#quality" aria-controls="quality" role="tab" data-toggle="tab">{{$text['chi-siamo']['qus']}}</a></li>
             <li role="presentation"><a href="#politica" aria-controls="politica" role="tab" data-toggle="tab">{{$text['chi-siamo']['politica_integrata']}}</a></li>
-            <li role="presentation"><a href="#valore" aria-controls="valore" role="tab" data-toggle="tab">{{$text['chi-siamo']['tdv']}}</a></li>
+            
           </ul>
           <!-- Tab panes-->
           <div class="tab-content">
@@ -43,9 +43,7 @@
             <div id="politica" role="tabpanel" class="tab-pane">
               @include('layouts.content', array('key' => 'chi_siamo_politica_integrata_tab', 'permesso'=> 'modifica_home'))
             </div>
-            <div id="valore" role="tabpanel" class="tab-pane">
-              @include('layouts.content', array('key' => 'chi_siamo_trasferimenti_di_valore_tab', 'permesso'=> 'modifica_home'))
-            </div>
+           
           </div>
         </div>
       </div>

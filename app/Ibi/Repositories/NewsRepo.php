@@ -30,7 +30,7 @@ class NewsRepo
         return News::with('allegati')->orderBy('created_at', 'DESC')->get();
     } 
 
-    public function getAllFront($howMany = 3)
+    public function getAllFront($howMany = 10)
     {
         return News::with('allegati')->where('active', 1)->orderBy('created_at', 'DESC')->take($howMany)->get();
     } 

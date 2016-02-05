@@ -4,7 +4,7 @@
 <div class="main-header archivio-news-header">
       <div class="container">
         <div class="main-caption">
-          <h1>Archivio news</h1>
+          <h1>News</h1>
         </div>
       </div>
     </div>
@@ -16,7 +16,7 @@
             <span class="date">{{$single_news->created_at->format('d/m/Y')}}</span>
             
                 <div class="archivio-news media">
-                  <div class="media-left"><a href="/archivio-news/{{$single_news->id}}/{{$single_news->slug}}"><img width="150" src="/images/{{$single_news->immagine_path}}" alt="{{$single_news->titolo}}" class="media-object"></a></div>
+                  <div class="media-left"><a href="/archivio-news/{{$single_news->id}}/{{$single_news->slug}}"><img width="150" @if($single_news->immagine_path != null) src="/images/{{$single_news->immagine_path}}" @else src="/img/news_placeholder.jpg" @endif  alt="{{$single_news->titolo}}" class="media-object"></a></div>
                   <div class="media-body">
                     <p>{!!$single_news->testo!!}</p>
 

@@ -56,7 +56,7 @@
                                 <span class="btn btn-info btn-file">
                                     <span class="fileinput-new">Seleziona immagine</span>
                                     <span class="fileinput-exists">Cambia</span>
-                                    <input type="file" name="immagine_path" required>
+                                    <input type="file" name="immagine_path" >
                                 </span>
                                 <a href="#" class="btn btn-danger fileinput-exists" data-dismiss="fileinput">Remove</a>
                             </div>

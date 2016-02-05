@@ -11,7 +11,7 @@
               @else
               <a href="#area-riservata-modal" class="area-riservata open-area-riservata-modal">{{$text['header']['login']}}</a>
               @endif
-                <p class="lang"><a href="/langs/it">Ita |</a><a href="/langs/en"> Eng</a></p>
+                <p class="lang"><a href="#" class="lingua-btn" data-url="/langs/it">Ita |</a><a href="#"  class="lingua-btn" data-url="/langs/en"> Eng</a></p>
               </div>
             </div>
           </div>

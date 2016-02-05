@@ -366,6 +366,14 @@ Sidebar styles
   color: #00509a;
   padding-right: 5px;
 }
+
+.news-container {
+  margin: 0 !important;
+}
+.news-container .media {
+  height: 135px;
+}
+
 .sidebar .news h3 {
   color: #1fa9ad;
   font-size: 26px !important;
@@ -375,17 +383,20 @@ Sidebar styles
   margin: 15px 0;
   background: #f2f2f2;
 }
+.sidebar .news .single-news:focus {
+  outline: none;
+}
 .sidebar .news .single-news:last-of-type {
   margin-bottom: 0;
 }
 .sidebar .news .single-news h4 {
   color: #00509a;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 700;
   margin: 10px 0 0 0;
 }
 .sidebar .news .single-news span.date {
-  font-size: 12px;
+  font-size: 10px;
   color: #000;
   font-weight: 700;
 }
@@ -396,17 +407,13 @@ Sidebar styles
   line-height: inherit;
   margin: 0 0 5px 0 !important;
 }
-.sidebar.farmacovigilanza-sidebar {
-  background: transparent;
-}
+
 .sidebar.farmacovigilanza-sidebar h3 {
   border-bottom: 1px dotted #666;
   padding-bottom: 10px;
   margin: 10px 0;
 }
-.sidebar.farmacovigilanza-sidebar .row.comunicati {
-  background: #d9e5fa;
-}
+
 .sidebar.farmacovigilanza-sidebar .row.comunicati .comunicato {
   margin: 15px 0;
   padding: 10px;
@@ -518,8 +525,7 @@ Sidebar styles
 }
 .benessere-del-paziente {  
   border: 4px solid #ffb800;
-  margin: 20px auto;
-  background: rgba(0, 0, 0, 0.6);
+  margin: 20px auto;  
   text-transform: uppercase;
 }
 .benessere-del-paziente.fegato-grasso {  
@@ -529,7 +535,16 @@ Sidebar styles
   display: flex;  
   justify-content: center;
   text-align: center;
-  
+  background-position: 0 -30px;
+  background-size: cover;
+}
+.benessere-del-paziente.fegato-grasso-big {
+  background: url(../img/fegato-grasso-big.jpg) no-repeat center center;
+  width: 100%;
+  height: 150px;
+  display: flex;  
+  justify-content: center;
+  text-align: center;  
   background-size: cover;
 }
 .ibi-italia-content a:hover, .ibi-italia-content a:focus {
@@ -542,7 +557,7 @@ Sidebar styles
   display: flex;   
   justify-content: center;
   text-align: center;
-  
+  border: 4px solid #9f2d6b;
   background-size: cover;
 }
 
@@ -552,9 +567,13 @@ Sidebar styles
   width: 100%;
   font-size: 18px;
   align-self: flex-end;
-  background: black;
+  background: #ffb800;
   padding: 5px;
 }
+.benessere-del-paziente.meteorismo h5 {
+  background: #9f2d6b;
+}
+
 .sidebar a.archivio-news-link {
   float: right;
   padding: 6px 0 0 0;
@@ -733,7 +752,7 @@ Home page
 }
 .main-carousel .slide {
   width: 100%;
-  height: 500px;
+  height: 400px;
 }
 .main-carousel .slide.slide1 {
   background: url(../img/header-home.jpg) no-repeat center center;
@@ -769,14 +788,14 @@ Home page
 .hero {
   background: url(../img/hero-background.jpg) no-repeat center center;
   width: 100%;
-  padding: 60px 0;
+  padding: 25px 0;
   background-size: cover;
 }
 .hero .hero-box {
   width: 100%;
   background: #fff;
   padding: 0 25px;
-  min-height: 381px;
+  min-height: 330px;
   position: relative;
 }
 .hero-box .hero-box-title {
@@ -785,7 +804,7 @@ Home page
 }
 .hero-box h2 {
   font-size: 22px;
-  height: 112px;
+  height: 90px;
   display: table-cell;
   vertical-align: middle;
   text-align: center;
@@ -972,8 +991,8 @@ Tabs
   border-right-color: #666;
 }
 .tabs.chi-siamo-tabs .nav-tabs li a {
-  font-size: 13px;
-  padding: 10px 13.5px;
+  font-size: 17px;
+  padding: 10px 15.5px;
 }
 .tabs.chi-siamo-tabs ul {
   margin-bottom: 25px;
@@ -986,11 +1005,15 @@ Tabs
   font-weight: 700;
   font-style: italic;
 }
-.tabs.chi-siamo-tabs .evidence-box {
+.evidence-box {
   padding: 20px;
   margin-bottom: 40px;
   background: #e6f8f8;
 }
+.evidence-box ul {
+  margin: 0 !important;
+}
+
 .tabs.chi-siamo-tabs .evidence-box h4 {
   text-transform: none;
   font-size: 30px;
@@ -1054,6 +1077,9 @@ Tabs
 .tabs.manufactoring-tabs ul li {
   width: 50%;
   text-align: center;
+}
+.tabs.ricerca-tabs .evidence-box {
+  margin-bottom: 20px;
 }
 .tabs.ricerca-tabs h3 {
   color: #00509a;
@@ -1175,10 +1201,10 @@ section.content.benessere-content #accordion .panel .panel-heading {
   background: transparent;
   padding: 15px;
 }
-section.content.benessere-content #accordion .panel .panel-heading h4 {
-  color: #666;
-  font-weight: 300;
+section.content.benessere-content #accordion .panel .panel-heading h4 {  
+  font-weight: 700;
   display: inline-block;
+  color: #00509a;
 }
 section.content.benessere-content #accordion .panel .panel-body {
   border: 0;
@@ -1339,6 +1365,7 @@ width: 3px;
 section.products-content #prodotti-container .product .product-title {
 background: #80a8cd;
 cursor: pointer;
+position: relative;
 }
 section.products-content #prodotti-container .product .product-title h2 {
 padding: 15px;
@@ -1351,10 +1378,15 @@ display: inline-block;
 section.products-content #prodotti-container .product .product-title .plus-minus {
 width: 25px;
 height: 25px;
-margin-top: 10px;
 cursor: pointer;
-margin-right: 8px;
 background: transparent;
+position: absolute;
+right: 10px;
+top: 55%;
+transform: translate(0, -50%);
+-moz-transform: translate(0, -50%);
+-webkit-transform: translate(0, -50%);
+-ms-transform: translate(0, -50%);
 }
 section.products-content #prodotti-container .product .product-title .plus-minus:before, section.products-content #prodotti-container .product .product-title .plus-minus:after {
 left: 11px;
@@ -1389,6 +1421,10 @@ cursor: pointer;
 background: #f2f6fa;
 border-bottom: 1px solid #fff;
 padding: 15px;
+}
+section.products-content #prodotti-container.prodotti-italia .product .formulazione .formulazione-title span {
+  display: block;
+  width: 95%;
 }
 section.products-content #prodotti-container.prodotti-italia .product .formulazione .formulazione-title i {
 position: absolute;
@@ -1512,5 +1548,6 @@ padding: 30px 10px 10px 10px;
   color: #fff;
   background: #00509a;
 }
+
 
 /*# sourceMappingURL=main.css.map */

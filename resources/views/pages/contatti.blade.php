@@ -16,7 +16,17 @@
               <div class="col-md-8">
                 <div class="row">
                   <div class="loghi"><img src="/img/ibi-lorenzini-logo.png"></div>
-                   @include('layouts.content', array('key' => 'contatti_main', 'permesso'=> 'modifica_contatti'))
+                  <div class="col-xs-6">@include('layouts.content', array('key' => 'contatti_main', 'permesso'=> 'modifica_contatti'))</div>
+                  <div class="col-xs-6">@include('layouts.content', array('key' => 'contatti_main_2', 'permesso'=> 'modifica_contatti'))</div>
+
+                  <div class="col-xs-12">
+                      <div class="borded">&nbsp;</div>
+                  </div>
+                  
+                  <div class="col-xs-6">@include('layouts.content', array('key' => 'contatti_main_3', 'permesso'=> 'modifica_contatti'))</div>
+                  <div class="col-xs-6">@include('layouts.content', array('key' => 'contatti_main_4', 'permesso'=> 'modifica_contatti'))</div>
+
+                   
                 </div>
               </div>
               <div class="col-md-4">
@@ -36,7 +46,9 @@
                     <div id="collapseOne" role="tabpanel" aria-labelledby="headingOne" class="panel-collapse collapse in">
                       <div class="panel-body">
                         <div class="row">
-                          @include('layouts.content', array('key' => 'contatti_ibisqus_italia', 'permesso'=> 'modifica_contatti'))
+                        <div class="col-xs-6">@include('layouts.content', array('key' => 'contatti_ibisqus_italia', 'permesso'=> 'modifica_contatti'))</div>
+                        <div class="col-xs-6">@include('layouts.content', array('key' => 'contatti_ibisqus_italia_2', 'permesso'=> 'modifica_contatti'))</div>
+                          
                         </div>
                       </div>
                     </div>
@@ -48,7 +60,8 @@
                     <div id="collapseTwo" role="tabpanel" aria-labelledby="headingTwo" class="panel-collapse collapse">
                       <div class="panel-body">
                         <div class="row">
-                          @include('layouts.content', array('key' => 'contatti_ibisqus_germania', 'permesso'=> 'modifica_contatti'))
+                          <div class="col-xs-6">@include('layouts.content', array('key' => 'contatti_ibisqus_germania', 'permesso'=> 'modifica_contatti'))</div>
+                          <div class="col-xs-6">@include('layouts.content', array('key' => 'contatti_ibisqus_germania_2', 'permesso'=> 'modifica_contatti'))</div>
                         </div>
                       </div>
                     </div>

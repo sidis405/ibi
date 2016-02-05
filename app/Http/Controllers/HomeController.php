@@ -49,6 +49,17 @@ class HomeController extends Controller
         return view('pages.chi-siamo', compact('news', 'contenuti'));
     }
 
+    public function tdv(NewsRepo $news_repo, PagineRepo $pagine_repo)
+    {
+        $news = $news_repo->getAllFront();
+
+        $contenuti = $pagine_repo->getContentForPage('trasferimenti-di-valore');
+
+        // return $contenuti;
+
+        return view('pages.trasferimenti-di-valore', compact('news', 'contenuti'));
+    }
+
     public function ibi_toll_manufacturer(NewsRepo $news_repo, PagineRepo $pagine_repo)
     {
         $news = $news_repo->getAllFront();

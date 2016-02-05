@@ -1,6 +1,6 @@
 <?php
 
-namespace Ibi\Events\Schede;
+namespace Ibi\Events\Listini;
 
 use Event;
 use Ibi\Models\Listini;

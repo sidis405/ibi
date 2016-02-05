@@ -15,6 +15,25 @@ $(document).ready(function() {
 });
 
 /*
+-------------------------
+NEWS CAROUSEL
+-------------------------
+*/
+$(document).ready(function() {
+    
+    $('.news-container').slick({      
+      slidesToShow: 2,        
+      arrows: false,
+      infinite: true,
+      autoplay: true,
+      vertical: true,
+      verticalSwiping: true,
+      slidesToScroll: 1
+    });
+    
+});
+
+/*
 -------------------------------------
 MAGNIFIC-POPUP
 -------------------------------------
@@ -61,7 +80,16 @@ if (url.match('#')) {
 $('.nav-tabs a').on('shown.bs.tab', function (e) {
     window.location.hash = e.target.hash;
     window.scrollTo(0, 0);
-})
+});
+
+if (location.hash) {
+  setTimeout(function() {
+
+    window.scrollTo(0, 0);
+  }, 1);
+}
+
+
 
 /*
 -------------------------
@@ -111,12 +139,12 @@ if ($('#back-to-top').length) {
 SIDEBAR
 -------------------------
 */
-// jQuery(document).ready(function() {
-//    jQuery('.col-md-4').theiaStickySidebar({
-//       // Settings
-//       additionalMarginTop: 20
-//     });
-//   });
+jQuery(document).ready(function() {
+   jQuery('.col-md-4, .col-md-3').theiaStickySidebar({
+      // Settings
+      additionalMarginTop: 20
+    });
+  });
 /*
 -------------------------
 PRODUCT
@@ -178,7 +206,35 @@ $(function() {
   });
 });
 
+$('.lingua-btn').click(function(e){
 
-//# sourceMappingURL=main.js.map
+  e.preventDefault();
 
-//# sourceMappingURL=main.js.map
+  var url = $(this).data('url');
+
+  cambiaLingua(url);
+
+});
+
+
+function cambiaLingua (url) {
+
+    $.ajax({
+        url: url,
+        type: 'GET',
+        success: function(data) {
+
+            location.reload();
+
+            return false;
+        },
+        error: function(XMLHttpRequest, textstatus, error) {
+
+            return false;
+
+        }
+    });
+
+    return false;
+
+}

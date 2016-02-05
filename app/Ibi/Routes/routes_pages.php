@@ -4,6 +4,7 @@ Route::get('/', 'HomeController@home');
 Route::get('index', 'HomeController@home');
 Route::get('home', 'HomeController@home');
 Route::get('chi-siamo', 'HomeController@chi_siamo');
+Route::get('trasferimenti-di-valore', 'HomeController@tdv');
 Route::get('prodotti-export', '\Ibi\Http\Controllers\ProdottiController@prodotti_export');
 Route::get('prodotti-italia', '\Ibi\Http\Controllers\ProdottiController@prodotti_italia');
 

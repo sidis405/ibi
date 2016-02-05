@@ -1,6 +1,6 @@
 <?php
 
-namespace Ibi\Commands\Schede;
+namespace Ibi\Commands\Listini;
 
 use Ibi\Commands\Command;
 
