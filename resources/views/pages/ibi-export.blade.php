@@ -10,7 +10,7 @@
     <section class="content">
       <div class="container">
         <div class="row">
-          <div class="col-sm-8">
+          <div class="col-md-8">
             <div class="tabs ibi-export-tabs">
               <!-- Nav tabs-->
               <ul role="tablist" class="nav nav-tabs">
@@ -24,10 +24,26 @@
                    @include('layouts.content', array('key' => 'ibi_export_main_tab', 'permesso'=> 'modifica_export'))
                   
                     <div class="mappa">
-                        
-                        <a href="#" class="marker marker-italia"><i class="fa fa-map-marker"></i></a>
-                        <a href="#" class="marker marker-germania"><i class="fa fa-map-marker"></i></a>
-                        <a href="#" class="marker marker-uk"><i class="fa fa-map-marker"></i></a>
+                        <div id="dots-1">
+                          <div class="dot"></div>
+                          <div class="pulse"></div>
+                        </div>
+                        <div id="dots-2">
+                          <div class="dot"></div>
+                          <div class="pulse"></div>
+                        </div>
+                        <div id="dots-3">
+                          <div class="dot"></div>
+                          <div class="pulse"></div>
+                        </div>
+                        <div id="dots-4">
+                          <div class="dot"></div>
+                          <div class="pulse"></div>
+                        </div>
+                        <div id="dots-5">
+                          <div class="dot"></div>
+                          <div class="pulse"></div>
+                        </div>                        
 
 
                     </div>
@@ -40,7 +56,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4 sidebar-wrapper">
             @include('layouts.news_sidebar_esportazioni')
           </div>
         </div>

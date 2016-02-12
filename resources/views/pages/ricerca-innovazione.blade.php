@@ -11,7 +11,7 @@
     <section class="content benessere-content">
       <div class="container">
         <div class="row">
-          <div class="col-sm-8">					
+          <div class="col-md-8">					
             <div class="tabs ricerca-tabs">
               <!-- Nav tabs-->
               <ul role="tablist" class="nav nav-tabs">
@@ -112,7 +112,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4 sidebar-wrapper">
             @include('layouts.news_sidebar_ricerca_innovazione')
           </div>
         </div>

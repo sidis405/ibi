@@ -14,7 +14,7 @@
     <section class="content lavora-con-noi-content">
       <div class="container">
         <div class="row">
-          <div class="col-sm-8">
+          <div class="col-md-8">
               @include('layouts.errors')
               @include('flash::message')
             <h2>Invia la tua candidatura</h2>

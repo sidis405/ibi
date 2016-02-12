@@ -14,7 +14,7 @@
           <div class="col-sm-8">            
              @include('layouts.content', array('key' => 'trasferimenti_di_valore', 'permesso'=> 'modifica_tutti_prodotti'))
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4 sidebar-wrapper">
             
               @include('layouts.news_sidebar_chi_siamo')
            

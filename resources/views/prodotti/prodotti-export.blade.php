@@ -11,21 +11,31 @@
 <section class="content products-content">
   <div class="container">
     <div class="row">
-      <div class="col-md-3">
-        <div class="sidebar products-sidebar">
+      <div class="col-md-3 sidebar-wrapper">
+        <div class="sidebar products-sidebar hidden-sm hidden-xs">
           @include('prodotti.filtri.filtro_export')
           <div class="sezioni-ibisqus-side">
             <a href="/ibi-export#licensing-out" class="btn btn-primary">Licensing out</a>
           </div>
           </div>
+        
+       
+
         </div>
+
         <div class="col-md-9">
           @include("prodotti.tabs", array('active' => 'prodotti-export'))
-          <div class="intro">
+          <div class="intro hidden-xs">
             
             @include('layouts.content', array('key' => 'intro_prodotti_ibi_export', 'permesso'=> 'modifica_export'))
             <a href="/ibi-export">Leggi di più</a>
             
+          </div>
+          <div class="filtri-mobile-btn visible-xs visible-sm btn">
+            Filtri
+          </div>
+          <div class="filtri-mobile sidebar products-sidebar">
+            @include('prodotti.filtri.filtro_italia')
           </div>
           @include('prodotti.partials.prodotti_export_partial')
 

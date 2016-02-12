@@ -13,7 +13,7 @@
     <section class="content segnalazione-farmacovigilanza-content">
       <div class="container">
         <div class="row">
-          <div class="col-sm-8">
+          <div class="col-md-8">
               @include('layouts.errors')
               @include('flash::message')
             <h2>Segnalazione farmacovigilanza</h2>

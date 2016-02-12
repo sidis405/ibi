@@ -1,6 +1,6 @@
 <div id="prodotti-container" class="row prodotti-italia">
 @foreach($prodotti as $key => $gruppi_prodotti)
-  <div class="col-lg-6 col-md-12 mix ct-{{$gruppi_prodotti[0]->categoria_terapeutica->slug}} pa-{{$gruppi_prodotti[0]->principio_attivo->slug}} {{str_slug($gruppi_prodotti[0]->nome)}} ">
+  <div class="col-lg-6 col-md-12 col-xs-12 mix ct-{{$gruppi_prodotti[0]->categoria_terapeutica->slug}} pa-{{$gruppi_prodotti[0]->principio_attivo->slug}} {{str_slug($gruppi_prodotti[0]->nome)}} ">
     <div class="product">
       <div class="product-title">
         <h2>{{$key}}</h2>

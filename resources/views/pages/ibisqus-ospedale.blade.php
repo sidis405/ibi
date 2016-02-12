@@ -10,14 +10,14 @@
     <section class="content ibisqus-ospedale-content">
       <div class="container">
         <div class="row">
-          <div class="col-sm-8"><!-- <img src="/img/ibisqus-ospedale-logo.jpg" alt=""> -->              
+          <div class="col-md-8"><!-- <img src="/img/ibisqus-ospedale-logo.jpg" alt=""> -->              
               <a href="prodotti-ibisqus" class="">
                 <div class="btn btn-primary btn-products">Elenco prodotti per ospedale</div>
               </a>
               @include('layouts.content', array('key' => 'ibisqus_ospedale_main', 'permesso'=> 'modifica_ibisqus'))
             
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4 sidebar-wrapper">
             @include('layouts.news_sidebar_ricerca_innovazione')
           </div>
         </div>

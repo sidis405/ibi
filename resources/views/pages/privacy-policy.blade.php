@@ -14,7 +14,7 @@
           <div class="col-md-8">
             @include('layouts.content', array('key' => 'privacy_policy_main', 'permesso'=> 'modifica_privacy_policy'))
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4 sidebar-wrapper">
             @include("layouts.news_sidebar")
           </div>
         </div>

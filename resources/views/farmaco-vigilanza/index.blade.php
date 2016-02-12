@@ -11,7 +11,7 @@
     <section class="content farmacovigilanza-content">
       <div class="container">
         <div class="row">
-          <div class="col-sm-8">
+          <div class="col-md-8">
            
             @include('layouts.content', array('key' => 'farmaco-vigilanza-main', 'permesso'=> 'modifica_farmacovigilanza'))
             <a href="/farmaco-vigilanza/segnalazione" class="btn btn-primary">Invia segnalazione</a>

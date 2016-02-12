@@ -2,7 +2,7 @@
       <div class="top-bar">
         <div class="container">
           <div class="row">
-            <div class="col-sm-6"><i class="fa fa-facebook-square"></i><i class="fa fa-google-plus-square"></i><i class="fa fa-twitter-square"></i><i class="fa fa-envelope"></i></div>
+            <div class="col-sm-6 hidden-xs"><!-- <i class="fa fa-facebook-square"></i><i class="fa fa-google-plus-square"></i><i class="fa fa-twitter-square"></i><i class="fa fa-envelope"></i> --></div>
             <div class="col-sm-6">
               <div class="pull-right">
               @if($user)

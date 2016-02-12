@@ -28,6 +28,26 @@ $(document).ready(function() {
       autoplay: true,
       vertical: true,
       verticalSwiping: true,
+      slidesToScroll: 1,
+      responsive: [      
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 1            
+          }
+        }       
+      ]
+    });
+    
+});
+
+
+$(document).ready(function() {
+    
+    $('.hero-box-mobile').slick({      
+      slidesToShow: 1,        
+      arrows: false,
+      infinite: true,                
       slidesToScroll: 1
     });
     
@@ -140,24 +160,36 @@ SIDEBAR
 -------------------------
 */
 jQuery(document).ready(function() {
-   jQuery('.col-md-4, .col-md-3').theiaStickySidebar({
-      // Settings
-      additionalMarginTop: 20
-    });
+ jQuery('.sidebar-wrapper').theiaStickySidebar({
+    // Settings
+    additionalMarginTop: 20
   });
+});
 /*
 -------------------------
 PRODUCT
 -------------------------
 */
 
+$(document).ready(function() {
+  $('.filtri-mobile-btn').on('click', function(event) {
+    $('.filtri-mobile').slideToggle()    
+  });
+});
 
 $(document).ready(function() {
   $('.product-title').on('click',  function(event) {    
     event.preventDefault()
     $(this).closest('.product').find('.product-title .plus-minus').toggleClass('minus');
 
-    $(this).closest('.product').find('.formulazione-title').slideToggle();    
+    if($(this).closest('.product').find('.formulazione-title').css('display') == 'none')
+    {
+      $(this).closest('.product').find('.formulazione-title').slideDown();  
+    }else{
+      
+      $(this).closest('.product').find('.formulazione-title').slideUp();  
+      $(this).closest('.product').find('.formulazione-content').slideUp();
+    }
     
   });
 });
@@ -165,7 +197,7 @@ $(document).ready(function() {
 $(document).ready(function() {
   $('.formulazione-title').on('click',  function(event) {    
     event.preventDefault()    
-    $('.formulazione-content').not(this).slideUp();
+    $('.formulazione-content').not(this).slideUp();    
 
     if($(this).closest('.formulazione').find('.formulazione-content').css('display') == 'none')
     {
@@ -177,6 +209,12 @@ $(document).ready(function() {
     
   });
 });
+
+// $(document).ready(function() {
+//   $('.formulazione-title').on('click', function(event) {    
+//     $(this).find('i').toggleClass('caret-rotation');
+//   });
+// });
 
 /*
 -------------------------

@@ -1,7 +1,7 @@
 <footer>
   <div class="container">
     <div class="row">
-      <div class="col-sm-3">
+      <div class="col-sm-3 col-sm-6">
         <div class="footer-box">
           <h4>
           
@@ -10,19 +10,19 @@
           @include('layouts.content_footer', array('key' => 'footer_prima_colonna', 'permesso'=> 'modifica_contatti'))
         </div>
       </div>
-      <div class="col-sm-3">
+      <div class="col-sm-3 col-sm-6">
         <div class="footer-box">
           <h4>Worldwide</h4>
           @include('layouts.content_footer', array('key' => 'footer_seconda_colonna', 'permesso'=> 'modifica_contatti'))
       </div>
     </div>
-    <div class="col-sm-3">
+    <div class="col-sm-3 col-sm-6">
       <div class="footer-box">
         <h4>Stay connected</h4>
         @include('layouts.content_footer', array('key' => 'footer_terza_colonna', 'permesso'=> 'modifica_contatti'))
     </div>
   </div>
-  <div class="col-sm-3">
+  <div class="col-sm-3 col-sm-6">
     <div class="footer-box">
       <h4>Link utili</h4>
       <ul>

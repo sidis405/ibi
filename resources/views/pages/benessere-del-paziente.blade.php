@@ -12,9 +12,9 @@
       <div class="container">
         <div class="row">
           <div class="col-sm-8">
-            <h2>Per il benessere del paziente</h2>
-            <h3>Benvenuti nell’area dedicata ai pazienti e a chi ricerca informazioni utili relative a:</h3>
-            <div class="tabs benessere-paziente-tabs">
+            <!-- <h2>Per il benessere del paziente</h2>
+            <h3>Benvenuti nell’area dedicata ai pazienti e a chi ricerca informazioni utili relative a:</h3> -->
+            <div class="tabs benessere-paziente-tabs" style="margin-top: 0;">
               <!-- Nav tabs-->
               <ul role="tablist" class="nav nav-tabs">
                 <li role="presentation" class="active"><a href="#fegato-grasso" aria-controls="fegato-grasso" role="tab" data-toggle="tab">Fegato grasso o Steatosi epatica</a></li>
@@ -112,7 +112,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4 sidebar-wrapper">
            @include('layouts.news_sidebar')
           </div>
         </div>

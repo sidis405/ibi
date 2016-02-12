@@ -11,7 +11,7 @@
     <section class="content lavora-con-noi-content">
       <div class="container">
         <div class="row">
-          <div class="col-sm-8">            
+          <div class="col-md-8">            
             <p style="margin-top: 0;" class="borded">
               Lavorare in IBI significa inserirsi in una realtà imprenditoriale solida e dinamica che associa ad una lunga tradizione storica un forte orientamento al futuro.
               <br><br>

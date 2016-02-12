@@ -11,12 +11,12 @@
     <section class="content ibi-italia-content">
       <div class="container">
         <div class="row">
-          <div class="col-sm-8">          
+          <div class="col-md-8">          
           <a href="prodotti-italia" class="" href="/prodotti-italia">
               <div class="btn btn-primary btn-products">Elenco prodotti per farmacia</div></a>
             @include('layouts.content', array('key' => 'ibi_italia_main', 'permesso'=> 'modifica_ibi_italia'))
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4 sidebar-wrapper">
             @include('layouts.news_sidebar_ibi_italia')
             <a href="benessere-del-paziente">
             <div class="benessere-del-paziente meteorismo">

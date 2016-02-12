@@ -11,7 +11,7 @@
     <section class="content">
       <div class="container">
         <div class="row">
-          <div class="col-sm-8"><!-- <img src="/img/ibi-toll-manufacturer-logo.jpg" alt=""> -->
+          <div class="col-md-8"><!-- <img src="/img/ibi-toll-manufacturer-logo.jpg" alt=""> -->
             <div class="tabs manufactoring-tabs">
               <!-- Nav tabs-->
               <ul role="tablist" class="nav nav-tabs">                
@@ -29,7 +29,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4  sidebar-wrapper">
             @include('layouts.news_sidebar_toll')
           </div>
         </div>

@@ -47,7 +47,7 @@
           </div>
         </div>
       </div>
-      <div class="col-md-4">
+      <div class="col-md-4 sidebar-wrapper">
         @include('layouts.news_sidebar_chi_siamo')
       </div>
     </section>

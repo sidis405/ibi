@@ -11,23 +11,24 @@
 <section class="content products-content">
   <div class="container">
     <div class="row">
-      <div class="col-md-3">
-        <div class="sidebar products-sidebar">
+      <div class="col-md-3 sidebar-wrapper">
+        <div class="sidebar products-sidebar hidden-sm hidden-xs">
           @include('prodotti.filtri.filtro_ibisqus')
   
-          </div>
+          </div>        
         </div>
+       
         <div class="col-md-9">
           @include("prodotti.tabs", array('active' => 'prodotti-ibisqus'))
-          <div class="intro">
+          <div class="intro hidden-xs hidden-sm">
          
               @include('layouts.content', array('key' => 'intro_prodotti_ibisqus', 'permesso'=> 'modifica_ibisqus'))
              <a href="/ibisqus-ospedale">Leggi di più</a>
             </div>
             <div class="row sezioni-ibisqus">
-              <div class="col-md-4"><a href="/prodotti-ibisqus-italia" class="btn btn-primary">Italia</a></div>
-              <div class="col-md-4"><a href="/prodotti-ibisqus-germania" class="btn btn-primary">Germania</a></div>
-              <div class="col-md-4"><a href="/prodotti-ibisqus-regno-unito" class="btn btn-primary">Regno Unito</a></div>
+              <div class="col-md-4 col-sm-4 col-xs-12"><a href="/prodotti-ibisqus-italia" class="btn btn-primary">Italia</a></div>
+              <div class="col-md-4 col-sm-4 col-xs-12"><a href="/prodotti-ibisqus-germania" class="btn btn-primary">Germania</a></div>
+              <div class="col-md-4 col-sm-4 col-xs-12"><a href="/prodotti-ibisqus-regno-unito" class="btn btn-primary">Regno Unito</a></div>
             </div>
           </div>
         </div>

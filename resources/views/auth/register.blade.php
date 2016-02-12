@@ -11,7 +11,7 @@
     <div class="container">
         <div class="row">
 
-            <div class="col-xs-12">
+            <div class="col-md-12">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit, eaque quas repudiandae incidunt ratione corrupti dolorem sapiente unde ad nesciunt tempora, quod ullam. Fugiat praesentium repellat, quo, doloremque laborum nesciunt!</p>
             </div>
 

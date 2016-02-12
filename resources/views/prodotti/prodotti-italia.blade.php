@@ -11,8 +11,8 @@
 <section class="content products-content">
   <div class="container">
     <div class="row">
-      <div class="col-md-3">
-        <div class="sidebar products-sidebar">
+      <div class="col-md-3 sidebar-wrapper">
+        <div class="sidebar products-sidebar hidden-sm hidden-xs">
           <a class="btn btn-primary" href="/allegati/{{$listini['listino-ibi-italia']['allegato']}}" target="_blank">Scarica il listino in pdf</a>
           @include('prodotti.filtri.filtro_italia')
           <a href="benessere-del-paziente">
@@ -24,17 +24,36 @@
               <h5>Fegato grasso o Steatosi epatica ?</h5>
             </div></a>
             <a target="_blank" href="http://realsil.it" class="btn btn-primary">Visita il sito Realsil</a>
-          </div>
+          </div>          
         </div>
         <div class="col-md-9">
           @include("prodotti.tabs", array('active' => 'prodotti-italia'))
-          <div class="intro">
+          <div class="intro hidden-xs">
   
               @include('layouts.content', array('key' => 'intro_prodotti_ibi_italia', 'permesso'=> 'modifica_ibi_italia'))
              <a href="/ibi-italia">Leggi di più</a>
-            </div>
-            @include('prodotti.partials.prodotti_italia_partial')
           </div>
+          <div class="filtri-mobile-btn visible-xs visible-sm btn">
+            Filtri
+          </div>
+          <div class="filtri-mobile sidebar products-sidebar">
+            @include('prodotti.filtri.filtro_italia')
+          </div>
+            @include('prodotti.partials.prodotti_italia_partial')
+
+          <div class="benessere-mobile visible-xs">
+            <a href="benessere-del-paziente">
+            <div class="benessere-del-paziente meteorismo">
+              <h5>Meteorismo e Aerofagia ?</h5>
+            </div></a>
+          <a href="benessere-del-paziente">
+            <div class="benessere-del-paziente fegato-grasso">
+              <h5>Fegato grasso o Steatosi epatica ?</h5>
+            </div></a>
+          <a style="width: 100%" target="_blank" href="http://realsil.it" class="btn btn-primary">Visita il sito Realsil</a>
+          </div>
+
+         </div>
         </div>
       </div>
     </section>

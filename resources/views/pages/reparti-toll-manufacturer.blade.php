@@ -13,7 +13,7 @@
           <div class="col-sm-8">
             @include('layouts.content', array('key' => 'toll_reparti_main', 'permesso'=> 'modifica_toll_development'))
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4 sidebar-wrapper">
             @include('layouts.news_sidebar_reparti')
           </div>
         </div>
