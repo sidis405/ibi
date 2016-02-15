@@ -44,7 +44,7 @@ See https://github.com/adobe-type-tools/cmap-resources
 
     <script src="/pdfjs/debugger.js"></script>
 
-    <script> var DEFAULT_URL = '/files/{{$tdv->allegato}}'; </script>
+    <script> var DEFAULT_URL = '/file/{{$tdv->allegato}}'; </script>
 
     <script src="/pdfjs/viewer.js"></script>
 
