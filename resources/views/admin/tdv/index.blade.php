@@ -15,11 +15,11 @@
                         <h2>Trasferimenti di valore</h2>
 
                          <ul class="actions">
-                            <li>
+                           <!--  <li>
                                 <a href="/admin/trasferimenti-di-valore/crea">
                                     <i class="zmdi zmdi-plus-circle-o"></i>
                                 </a>
-                            </li>
+                            </li> -->
                             <li class="dropdown">
                                 <a href="" data-toggle="dropdown">
                                     <i class="zmdi zmdi-more-vert"></i>
