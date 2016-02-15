@@ -17,10 +17,17 @@ Route::get('ibi-export', 'HomeController@ibi_export');
 Route::get('ibi-italia', 'HomeController@ibi_italia');
 Route::get('ibisqus-ospedale', 'HomeController@ibisqus_ospedale');
 
+Route::get('trasferimenti-di-valore/documento', '\Ibi\Http\Controllers\TdvController@show');
+
 Route::get('/prodotti/allegati/{type}/{path}', [
         'as'    => 'admin_attachments_prodotti',
         'uses'  => '\Ibi\Http\Controllers\Admin\AllegatiController@showExt'
         ])->middleware('schede_middleware');
+
+Route::get('/allegati/{type}/{path}', [
+        'as'    => 'admin_attachments_prodotti',
+        'uses'  => '\Ibi\Http\Controllers\Admin\AllegatiController@show'
+        ]);
 
 // Route::get('/prodotti/allegati/{type}/{path}', [
 //         'as'    => 'admin_attachments_prodotti',

@@ -44,6 +44,7 @@
                 </ul>
             </li>
             <li><a href="/admin/news"  id="lista_news"><i class="zmdi zmdi-remote-control-alt"></i> News</a></li>
+            <li><a href="/admin/trasferimenti-di-valore"  id="lista_trasferimenti"><i class="zmdi zmdi-key"></i> Trasferimenti di valore</a></li>
             <li class="sub-menu" id="lavora_con_noi_menu">
                 <a href=""><i class="zmdi zmdi-accounts-list-alt"></i> Lavora con noi</a>
                 <ul>

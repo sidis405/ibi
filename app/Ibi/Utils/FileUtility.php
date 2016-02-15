@@ -18,6 +18,12 @@ class FileUtility {
                                 'folder' => 'schede_tecniche',
                                 'disk' => 'uploads'
                             ],
+                        'tdv_allegati' => 
+                            [
+                                'folder' => 'tdv',
+                                'disk' => 'uploads'
+                            ],
+
                         'cv' => 
                             [
                                 'folder' => 'cv',

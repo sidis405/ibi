@@ -1,2 +1,3 @@
 User-agent: *
 Disallow: /trasferimenti-di-valore
+Disallow: /trasferimenti-di-valore/documento
