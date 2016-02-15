@@ -24,7 +24,7 @@ Route::get('/prodotti/allegati/{type}/{path}', [
         'uses'  => '\Ibi\Http\Controllers\Admin\AllegatiController@showExt'
         ])->middleware('schede_middleware');
 
-Route::get('/allegati/{type}/{path}', [
+Route::get('/files/{type}/{path}', [
         'as'    => 'admin_attachments_prodotti',
         'uses'  => '\Ibi\Http\Controllers\Admin\AllegatiController@show'
         ]);
