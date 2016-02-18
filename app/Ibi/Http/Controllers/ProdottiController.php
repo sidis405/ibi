@@ -29,6 +29,8 @@ class ProdottiController extends Controller
 
         list($prodotti, $categorie, $principi, $principi_validi, $contenuti, $listini) = $this->sliceData('prodotti-export', $prodotti_raw, $pagine_repo, $listini_repo);
 
+        // return $principi;
+
         return view('prodotti.prodotti-export', compact('listini', 'prodotti', 'categorie', 'principi', 'principi_validi', 'contenuti'));
     }
 

@@ -15,15 +15,7 @@
     </select>
   </div>
   
-  <div class="filter-block">
-    <label for="filter--principi">Principi Attivi</label>
-    <select name="principi" id="filter--principi">
-      <option value="">Tutti</option>
-      @foreach($principi as $principio)
-        <option id="pa-{{$principio->slug}}" value=".pa-{{$principio->slug}}">{{ucfirst(strtolower($principio->nome))}}</option>
-      @endforeach
-    </select>
-  </div>
+
 
   
 </form>

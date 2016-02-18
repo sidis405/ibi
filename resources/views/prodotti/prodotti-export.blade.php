@@ -34,9 +34,7 @@
           <div class="filtri-mobile-btn visible-xs visible-sm btn">
             Filtri
           </div>
-          <div class="filtri-mobile sidebar products-sidebar">
-            @include('prodotti.filtri.filtro_italia')
-          </div>
+  
           @include('prodotti.partials.prodotti_export_partial')
 
 
@@ -49,7 +47,8 @@
   <script src="/js/prodotti_filter.js"></script>
   <script>
   var registri = [];
-  registri['principi-ct-all'] = "<option value=''>Tutti</option> @foreach($principi  as $pa) @if(in_array($pa->slug, $principi_validi)) <option id='pa-{{$pa['slug']}}' value='.pa-{{$pa->slug}}'>{{ucfirst(strtolower($pa->nome))}}</option> @endif @endforeach";
+  registri['principi-ct-all'] = "<option value=''>Tutti</option>"; 
+
   
   @foreach($categorie as $categoria)
   
