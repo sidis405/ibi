@@ -24,7 +24,13 @@
             <li class="sub-menu" id="prodotti_menu">
                 <a href=""><i class="zmdi zmdi-widgets"></i> Prodotti</a>
                 <ul>
-                    <li><a id="prodotti_menu_lista_prodotti" href="/admin/prodotti">Lista Prodotti</a></li>
+    
+                    <li><a id="prodotti_menu_lista_prodotti" href="/admin/prodotti/ibi-export">Lista Prodotti Export</a></li>
+                    <li><a id="prodotti_menu_lista_prodotti" href="/admin/prodotti/ibisqus-germania">Lista Ospedale Germania </a></li>
+                    <li><a id="prodotti_menu_lista_prodotti" href="/admin/prodotti/ibisqus-italia">Lista Ospedale Italia</a></li>
+                    <li><a id="prodotti_menu_lista_prodotti" href="/admin/prodotti/ibisqus-regno-unito">Lista Ospedale Uk</a></li>
+                    <li><a id="prodotti_menu_lista_prodotti" href="/admin/prodotti/ibi-italia">Lista Prodotti Farmacia</a></li>
+                    <li><a id="prodotti_menu_lista_prodotti" href="/admin/prodotti">Tutti i Prodotti</a></li>
                     <li><a id="prodotti_menu_aggiungi_prodotto"  href="/admin/prodotti/crea">Aggiungi Prodotto</a></li>
                     <li><a id="prodotti_menu_listini"  href="/admin/prodotti/listini-prodotti">Listini Prodotti</a></li>
                     <li><a id="prodotti_menu_principi_attivi"  href="/admin/principi-attivi">Principi Attivi</a></li>

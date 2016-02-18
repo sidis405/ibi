@@ -36,3 +36,8 @@
         'as'    => 'admin_delete_prodotti',
         'uses'  => '\Ibi\Http\Controllers\Admin\ProdottiController@destroy'
         ]);
+
+    Route::get('prodotti/{section}', [
+        'as'    => 'admin_prodotti_sectopm',
+        'uses'  => '\Ibi\Http\Controllers\Admin\ProdottiController@indexSection'
+        ]);

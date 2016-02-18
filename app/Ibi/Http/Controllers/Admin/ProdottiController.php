@@ -20,9 +20,17 @@ class ProdottiController extends AdminController
      *
      * @return \Illuminate\Http\Response
      */
-    public function index(ProdottiRepo $prodotti_repo)
+    public function index(ProdottiRepo $prodotti_repo, SezioniRepo $sezioni_repo)
     {
         $prodotti = $prodotti_repo->getAll();
+
+        return view('admin.prodotti.index', compact('prodotti'));
+
+    }
+
+    public function indexSection($section, SezioniRepo $sezioni_repo)
+    {
+        $prodotti = $sezioni_repo->getBySlug($section)->prodotti;
 
         return view('admin.prodotti.index', compact('prodotti'));
 
