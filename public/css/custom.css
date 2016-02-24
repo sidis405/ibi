@@ -44,3 +44,6 @@
     text-decoration: none;
 }
 
+.lingua-btn.active {
+    color: red!important;
+}

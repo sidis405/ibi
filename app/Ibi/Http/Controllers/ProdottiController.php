@@ -10,7 +10,7 @@ use Ibi\Repositories\SezioniRepo;
 use Ibi\Repositories\CategorieTerapeuticheRepo;
 use Ibi\Repositories\PrincipiAttiviRepo;
 use Illuminate\Http\Request;
-
+use Session;
 
 class ProdottiController extends Controller
 {
@@ -30,6 +30,7 @@ class ProdottiController extends Controller
         list($prodotti, $categorie, $principi, $principi_validi, $contenuti, $listini) = $this->sliceData('prodotti-export', $prodotti_raw, $pagine_repo, $listini_repo);
 
         // return $principi;
+        Session::put('currentPage', 'prodotti');
 
         return view('prodotti.prodotti-export', compact('listini', 'prodotti', 'categorie', 'principi', 'principi_validi', 'contenuti'));
     }
@@ -37,6 +38,7 @@ class ProdottiController extends Controller
 
     public function prodotti_italia(ListiniRepo $listini_repo, SezioniRepo $sezioni_repo, CategorieTerapeuticheRepo $categorie_repo, PrincipiAttiviRepo $principi_repo, PagineRepo $pagine_repo)
     {
+        Session::put('currentPage', 'prodotti');
        
         $prodotti_raw = $sezioni_repo->getBySlug('ibi-italia')->prodotti;
 
@@ -48,6 +50,8 @@ class ProdottiController extends Controller
 
     public function prodotti_ibisqus(ListiniRepo $listini_repo, SezioniRepo $sezioni_repo, CategorieTerapeuticheRepo $categorie_repo, PrincipiAttiviRepo $principi_repo, PagineRepo $pagine_repo)
     {
+        Session::put('currentPage', 'prodotti');
+
         $prodotti_raw = $sezioni_repo->getBySlug('ibisqus-regno-unito')->prodotti;
 
         list($prodotti, $categorie, $principi, $principi_validi, $contenuti, $listini) = $this->sliceData('prodotti-ibisqus', $prodotti_raw, $pagine_repo, $listini_repo);
@@ -58,6 +62,8 @@ class ProdottiController extends Controller
 
     public function prodotti_ibisqus_italia(ListiniRepo $listini_repo, SezioniRepo $sezioni_repo, CategorieTerapeuticheRepo $categorie_repo, PrincipiAttiviRepo $principi_repo, PagineRepo $pagine_repo)
     {
+        Session::put('currentPage', 'prodotti');
+
         $prodotti_raw = $sezioni_repo->getBySlug('ibisqus-italia')->prodotti;
 
         list($prodotti, $categorie, $principi, $principi_validi, $contenuti, $listini) = $this->sliceData('prodotti-ibisqus', $prodotti_raw, $pagine_repo, $listini_repo);
@@ -68,6 +74,8 @@ class ProdottiController extends Controller
 
     public function prodotti_ibisqus_germania(ListiniRepo $listini_repo, SezioniRepo $sezioni_repo, CategorieTerapeuticheRepo $categorie_repo, PrincipiAttiviRepo $principi_repo, PagineRepo $pagine_repo)
     {
+        Session::put('currentPage', 'prodotti');
+
         $prodotti_raw = $sezioni_repo->getBySlug('ibisqus-germania')->prodotti;
 
         list($prodotti, $categorie, $principi, $principi_validi, $contenuti, $listini) = $this->sliceData('prodotti-ibisqus', $prodotti_raw, $pagine_repo, $listini_repo);
@@ -78,6 +86,8 @@ class ProdottiController extends Controller
 
     public function prodotti_ibisqus_uk(ListiniRepo $listini_repo, SezioniRepo $sezioni_repo, CategorieTerapeuticheRepo $categorie_repo, PrincipiAttiviRepo $principi_repo, PagineRepo $pagine_repo)
     {
+        Session::put('currentPage', 'prodotti');
+
         $prodotti_raw = $sezioni_repo->getBySlug('ibisqus-regno-unito')->prodotti;
 
         list($prodotti, $categorie, $principi, $principi_validi, $contenuti, $listini) = $this->sliceData('prodotti-ibisqus', $prodotti_raw, $pagine_repo, $listini_repo);

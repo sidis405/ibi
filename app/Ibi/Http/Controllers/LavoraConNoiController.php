@@ -8,6 +8,7 @@ use Ibi\Repositories\PagineRepo;
 use Ibi\Repositories\PosizioniAperteRepo;
 use Ibi\Requests\SendCandidaturaRequest;
 use Illuminate\Http\Request;
+use Session;
 
 class LavoraConNoiController extends Controller
 {
@@ -30,6 +31,8 @@ class LavoraConNoiController extends Controller
         $posizioni = $posizioni_aperte_repo->getAllFront();
         $id = 0;
 
+        Session::put('currentPage', 'contatti');
+
 
         return view('lavora-con-noi.invia-candidatura', compact('posizioni', 'id'));
     }
@@ -37,6 +40,8 @@ class LavoraConNoiController extends Controller
     public function invia_candidatura_selected($id, $slug, PosizioniAperteRepo $posizioni_aperte_repo)
     {
         $posizioni = $posizioni_aperte_repo->getAllFront();
+
+        Session::put('currentPage', 'contatti');
 
 
         return view('lavora-con-noi.invia-candidatura', compact('posizioni', 'id'));
@@ -48,6 +53,8 @@ class LavoraConNoiController extends Controller
         $data = $this->manageUploads($request);
 
         // return $data;
+        Session::put('currentPage', 'contatti');
+        
 
         $candidatura = $this->dispatchFrom('Ibi\Commands\PosizioniAperte\CreateCandidaturaCommand', $request, $data);
         

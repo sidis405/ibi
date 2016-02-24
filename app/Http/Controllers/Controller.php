@@ -24,7 +24,7 @@ abstract class Controller extends BaseController
         view()->share('contenuti_footer', $contenuti_footer);
         view()->share('user', \Auth()->user());
         view()->share('menu', MenuItems::all()->keyBy('slug'));
-
+        
         if(Session::has('locale')){
             $locale = Session::get('locale');
         }else{
@@ -34,6 +34,9 @@ abstract class Controller extends BaseController
         \App::setLocale($locale);
 
         view()->share('text', Config::get('traduzioni.'.$locale));
+
+        Session::put('currentPage', '');
+
 
     }
 }

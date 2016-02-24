@@ -12,7 +12,7 @@ use Ibi\Repositories\SliderRepo;
 use Ibi\Repositories\CategorieTerapeuticheRepo;
 use Ibi\Repositories\PrincipiAttiviRepo;
 use Illuminate\Http\Request;
-
+use Session;
 
 class HomeController extends Controller
 {
@@ -43,6 +43,10 @@ class HomeController extends Controller
     {
         $news = $news_repo->getAllFront();
 
+        Session::put('currentPage', 'chi-siamo');
+
+        // dd(\Session::get('currentPage'));
+
         $contenuti = $pagine_repo->getContentForPage('chi-siamo');
 
 
@@ -64,6 +68,9 @@ class HomeController extends Controller
     {
         $news = $news_repo->getAllFront();
 
+        Session::put('currentPage', 'ibi-toll-manufacturer');
+
+
         $contenuti = $pagine_repo->getContentForPage('ibi-toll-manufacturer');
 
         return view('pages.ibi-toll-manufacturer', compact('news', 'contenuti'));
@@ -73,6 +80,8 @@ class HomeController extends Controller
     {
         $news = $news_repo->getAllFront();
 
+        Session::put('currentPage', 'ibi-toll-manufacturer');
+
         $contenuti = $pagine_repo->getContentForPage('ibi-toll-manufacturer');
 
         return view('pages.reparti-toll-manufacturer', compact('news', 'contenuti'));
@@ -81,6 +90,8 @@ class HomeController extends Controller
     public function ricerca_innovazione(NewsRepo $news_repo, PagineRepo $pagine_repo)
     {
         $news = $news_repo->getAllFront();
+
+        Session::put('currentPage', 'ricerca-innovazione');
 
         $contenuti = $pagine_repo->getContentForPage('ricerca-innovazione');
 
@@ -93,6 +104,9 @@ class HomeController extends Controller
     {
         $news = $news_repo->getAllFront();
         $contenuti = $pagine_repo->getContentForPage('ibi-export');
+
+        Session::put('currentPage', 'prodotti');
+
         return view('pages.ibi-export', compact('contenuti', 'news'));
     }
 
@@ -100,6 +114,9 @@ class HomeController extends Controller
     {
         $news = $news_repo->getAllFront();
         $contenuti = $pagine_repo->getContentForPage('ibi-italia');
+
+        Session::put('currentPage', 'prodotti');
+
         return view('pages.ibi-italia', compact('contenuti', 'news'));
     }
 
@@ -108,11 +125,16 @@ class HomeController extends Controller
         $news = $news_repo->getAllFront();
         $contenuti = $pagine_repo->getContentForPage('ibisqus-ospedale');
 
+        Session::put('currentPage', 'prodotti');
+        
+
         return view('pages.ibisqus-ospedale', compact('contenuti', 'news'));
     }
 
     public function contatti(PagineRepo $pagine_repo)
     {
+        Session::put('currentPage', 'contatti');
+
 
         $contenuti = $pagine_repo->getContentForPage('contatti');
         return view('pages.contatti', compact('contenuti'));
@@ -120,6 +142,8 @@ class HomeController extends Controller
 
     public function benessere_del_paziente(NewsRepo $news_repo, PagineRepo $pagine_repo)
     {
+        Session::put('currentPage', 'prodotti');
+
         $news = $news_repo->getAllFront();
         $contenuti = $pagine_repo->getContentForPage('benessere-del-paziente');
         return view('pages.benessere-del-paziente', compact('news', 'contenuti'));
