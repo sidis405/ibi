@@ -11,7 +11,7 @@
 			<div class="media-body">
 
 				<h4><a href="/archivio-news/{{$item->id}}/{{$item->slug}}">{{tokenTruncate($item->titolo, 57)}}</a></h4><span class="date">{{$item->created_at->format('d/m/y')}}</span>
-				<a href="/archivio-news/{{$item->id}}/{{$item->slug}}" class="read-more read-more-news">Leggi tutto ></a>
+				<a href="/archivio-news/{{$item->id}}/{{$item->slug}}" class="read-more read-more-news">{{$text['azioni']['leggi_tutto']}} ></a>
 			</div>
 		</div>
 	</div>

@@ -4,7 +4,7 @@
 <div class="main-header chi-siamo">
   <div class="container">
     <div class="main-caption">
-      <h1>Chi siamo</h1>
+      <h1>{{$text['chi-siamo']['chi_siamo']}}</h1>
     </div>
   </div>
 </div>

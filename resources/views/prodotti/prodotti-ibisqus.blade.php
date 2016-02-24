@@ -4,7 +4,7 @@
 <div class="main-header prodotti">
   <div class="container">
     <div class="main-caption">
-      <h1>Prodotti</h1>
+      <h1>{{$text['prodotti']['prodotti']}}</h1>
     </div>
   </div>
 </div>
@@ -23,12 +23,12 @@
           <div class="intro hidden-xs hidden-sm">
          
               @include('layouts.content', array('key' => 'intro_prodotti_ibisqus', 'permesso'=> 'modifica_ibisqus'))
-             <a href="/ibisqus-ospedale">Leggi di più</a>
+             <a href="/ibisqus-ospedale">{{$text['azioni']['leggi_tutto']}}</a>
             </div>
             <div class="row sezioni-ibisqus">
-              <div class="col-md-4 col-sm-4 col-xs-12"><a href="/prodotti-ibisqus-italia" class="btn btn-primary">Italia</a></div>
-              <div class="col-md-4 col-sm-4 col-xs-12"><a href="/prodotti-ibisqus-germania" class="btn btn-primary">Germania</a></div>
-              <div class="col-md-4 col-sm-4 col-xs-12"><a href="/prodotti-ibisqus-regno-unito" class="btn btn-primary">Regno Unito</a></div>
+              <div class="col-md-4 col-sm-4 col-xs-12"><a href="/prodotti-ibisqus-italia" class="btn btn-primary">{{$text['prodotti']['italia']}}</a></div>
+              <div class="col-md-4 col-sm-4 col-xs-12"><a href="/prodotti-ibisqus-germania" class="btn btn-primary">{{$text['prodotti']['germania']}}</a></div>
+              <div class="col-md-4 col-sm-4 col-xs-12"><a href="/prodotti-ibisqus-regno-unito" class="btn btn-primary">{{$text['prodotti']['uk']}}</a></div>
             </div>
           </div>
         </div>

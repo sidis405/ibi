@@ -4,7 +4,7 @@
 <div class="main-header prodotti">
   <div class="container">
     <div class="main-caption">
-      <h1>Prodotti</h1>
+      <h1>{{$text['prodotti']['prodotti']}}</h1>
     </div>
   </div>
 </div>
@@ -17,11 +17,11 @@
           @include('prodotti.filtri.filtro_italia')
           <a href="benessere-del-paziente">
             <div class="benessere-del-paziente meteorismo">
-              <h5>Meteorismo e Aerofagia ?</h5>
+              <h5>{{$text['prodotti']['meteorismo_aerofagia']}} ?</h5>
             </div></a>
           <a href="benessere-del-paziente">
             <div class="benessere-del-paziente fegato-grasso">
-              <h5>Fegato grasso o Steatosi epatica ?</h5>
+              <h5>{{$text['prodotti']['steatosi_epatica']}} ?</h5>
             </div></a>
             <a target="_blank" href="http://realsil.it" class="btn btn-primary">Visita il sito Realsil</a>
           </div>          
@@ -31,7 +31,7 @@
           <div class="intro hidden-xs">
   
               @include('layouts.content', array('key' => 'intro_prodotti_ibi_italia', 'permesso'=> 'modifica_ibi_italia'))
-             <a href="/ibi-italia">Leggi di più</a>
+             <a href="/ibi-italia">{{$text['azioni']['leggi_tutto']}}</a>
           </div>
           <div class="filtri-mobile-btn visible-xs visible-sm btn">
             Filtri

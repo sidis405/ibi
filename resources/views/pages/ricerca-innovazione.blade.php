@@ -4,7 +4,7 @@
     <div class="main-header ricerca-innovazione">
       <div class="container">
         <div class="main-caption">
-          <h1>Ricerca e innovazione</h1>
+          <h1>{{$text['rnd']['tabs']['ricerca_innovazione']}}</h1>
         </div>
       </div>
     </div>
@@ -15,9 +15,9 @@
             <div class="tabs ricerca-tabs">
               <!-- Nav tabs-->
               <ul role="tablist" class="nav nav-tabs">
-                <li role="presentation" class="active"><a href="#innovativi" aria-controls="innovativi" role="tab" data-toggle="tab">Sviluppo formulativo</a></li>
-                <li role="presentation"><a href="#biotecnologie" aria-controls="biotecnologie" role="tab" data-toggle="tab">Biotecnologie	</a></li>
-                <li role="presentation"><a href="#collaborazioni" aria-controls="collaborazioni" role="tab" data-toggle="tab">Collaborazioni	</a></li>                
+                <li role="presentation" class="active"><a href="#innovativi" aria-controls="innovativi" role="tab" data-toggle="tab">{{$text['rnd']['tabs']['delivery']}}</a></li>
+                <li role="presentation"><a href="#biotecnologie" aria-controls="biotecnologie" role="tab" data-toggle="tab">{{$text['rnd']['tabs']['biotecnologie']}}	</a></li>
+                <li role="presentation"><a href="#collaborazioni" aria-controls="collaborazioni" role="tab" data-toggle="tab">{{$text['rnd']['tabs']['collaborazioni']}}	</a></li>                
               </ul>
               <!-- Tab panes-->
              <div class="tab-content">
@@ -35,7 +35,7 @@
                         <div id="headingFour" role="tab" class="panel-heading">
                           <h4 class="panel-title">
                                                     
-                            Attrezzature
+                            {{$text['rnd']['tabs']['attrezzature']}}
                           </h4>
                           <div class="plus-minus"></div>
                         </div></a>
@@ -58,7 +58,7 @@
                         <div id="headingOne" role="tab" class="panel-heading">
                           <h4 class="panel-title">
                                                     
-                            Attrezzature
+                            {{$text['rnd']['tabs']['attrezzature']}}
                           </h4>
                           <div class="plus-minus"></div>
                         </div></a>
@@ -73,7 +73,7 @@
                         <div id="headingTwo" role="tab" class="panel-heading">
                           <h4 class="panel-title">
                                       
-                              Progetti
+                              {{$text['rnd']['tabs']['progetti']}}
                           </h4>
                           <div class="plus-minus">                        </div>
                         </div></a>
@@ -86,7 +86,7 @@
                    
                     <div class="panel panel-default"><a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree" class="collapsed">
                         <div id="headingThree" role="tab" class="panel-heading">
-                          <h4 class="panel-title">  Pubblicazioni</h4>
+                          <h4 class="panel-title">  {{$text['rnd']['tabs']['pubblicazioni']}}</h4>
                           <div class="plus-minus">                          </div>
                         </div></a>
                       <div id="collapseThree" role="tabpanel" aria-labelledby="headingThree" class="panel-collapse collapse">

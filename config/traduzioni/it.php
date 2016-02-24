@@ -24,18 +24,29 @@ return [
 			'filtri' => 'Filtri',
 			'tutti' => 'Tutti',
 			'cerca' => 'Cerca',
+			'cerca_prodotti' => 'Cerca Prodotti',
 			'categorie_terapeutiche' => 'Categorie Terapeutiche',
 			'principi_attivi' => 'Principi Attivi'
 	],
 	'prodotti' => 
 	[
+		'prodotti' => 'Prodotti',
 		'formulazione' => 'Formulazione',
 		'principio_attivo' => 'Principio attivo',
+		'categorie_terapeutiche' => 'Categorie Terapeutiche',
 		'foglietto_illustrativo' => 'Principio attivo',
 		'scheda_tecnica' => 'Scheda tecnica',
+		'scheda_tecnica_warning' => 'Devi essere registrato per visualizzare schede tecniche',
 		'fascia' =>'Fascia',
+		'unita' =>'Unità',
 		'regime_di_dispensazione' => 'Regime di dispensazione',
-		'validita_mesi' => 'Validità mesi'
+		'validita_mesi' => 'Validità mesi',
+		'scarica_listino' => 'Scarica listino in pdf',
+		'steatosi_epatica' => 'Steatosi Epatica',
+		'meteorismo_aerofagia' => 'Meteorismo e Aerofagia',
+		'italia' => 'Italia',
+		'germania' => 'Italia',
+		'uk' => 'Regno Unito',
 	],
 
 	'chi-siamo' =>
@@ -50,6 +61,8 @@ return [
 	],
 
 	'toll' => [
+				'toll' => 'Sviluppo Produzione Conto Terzi',
+				'reparti' => 'Reparti',	
 		'tabs' => [
 				'sviluppo' => 'Sviluppo',
 				'produzione' => 'Produzioni',
@@ -58,14 +71,41 @@ return [
 
 	'rnd' => [
 		'tabs' => [
-				'delivery' => 'Delivery Innovativi',
+				'delivery' => 'Sviluppo Formulativo',
 				'biotecnologie' => 'Biotecnologie',
 				'pubblicazioni' => 'Pubblicazioni',
+				'collaborazioni' => 'Collaborazioni',
 				'progetti' => 'Progetti',
+				'farmacovigilanza' => 'Farmacovigilanza',
+				'ricerca_innovazione' => 'Ricerca e Innovazione',
+				'attrezzature' => 'Attrezzature',
+
 		]
 	],
 
 	'contatti' => [
+		'contatti'=>'Contatti',
+
+		'lavora_con_noi'=>'Lavora Con Noi',
+
+		'invia_candidatura' => 'Send Your Application',
+		'invia_candidatura_label1' => 'Compila il form.',
+		'invia_candidatura_label2' => 'Attenzione, i campi contrassegnati con * sono obbligatori per processare la tua candidatura.',
+		'posizione' => 'Posizione',
+		'posizione_label' => 'Scegli la posizione',
+		'scegli' => 'Scegli',
+		'dati_personali' => 'Dati Personali',
+		'nome' => 'Nome',
+		'cognome' => 'Cognome',
+		'email' => 'Email',
+		'messaggio' => 'Messaggio',
+		'carica_cv' => 'Carica il tuo cv',
+		'your_cv' => 'Il tuo cv',
+		'disclaimer' => 'Cliccando su invia dichiaro di aver letto ed accettato la ',
+		'invia' => 'Invia',
+		'posizioni_aperte' => 'Posizioni Aperte',
+
+
 		'tabs' => [
 				'italia' => 'SEDE IN ITALIA',
 				'germania' => 'SEDE IN GERMANIA',

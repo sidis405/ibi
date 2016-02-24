@@ -4,7 +4,7 @@
 <div class="main-header prodotti">
   <div class="container">
     <div class="main-caption">
-      <h1>Prodotti</h1>
+      <h1>{{$text['prodotti']['prodotti']}}</h1>
     </div>
   </div>
 </div>
@@ -17,9 +17,9 @@
           @include('prodotti.filtri.filtro_ibisqus')
 
           <div class="sezioni-ibisqus-side">
-              <a href="/prodotti-ibisqus-italia" class="btn btn-primary active">Italia</a>
-              <a href="/prodotti-ibisqus-germania" class="btn btn-primary">Germania</a>
-              <a href="/prodotti-ibisqus-regno-unito" class="btn btn-primary">Regno Unito</a>
+              <a href="/prodotti-ibisqus-italia" class="btn btn-primary active">{{$text['prodotti']['italia']}}</a>
+              <a href="/prodotti-ibisqus-germania" class="btn btn-primary">{{$text['prodotti']['germania']}}</a>
+              <a href="/prodotti-ibisqus-regno-unito" class="btn btn-primary">{{$text['prodotti']['uk']}}</a>
           </div>
   
           </div>
@@ -31,10 +31,10 @@
           <div class="intro hidden-xs">
          
               @include('layouts.content', array('key' => 'intro_prodotti_ibisqus', 'permesso'=> 'modifica_ibisqus'))
-             <a href="/ibisqus-ospedale">Leggi di più</a>
+             <a href="/ibisqus-ospedale">{{$text['azioni']['leggi_tutto']}}</a>
             </div>
             <div class="filtri-mobile-btn visible-xs visible-sm btn">
-            Filtri
+            {{$text['filtri_prodotti']['filtri']}}
           </div>
           <div class="filtri-mobile sidebar products-sidebar">
             @include('prodotti.filtri.filtro_italia')

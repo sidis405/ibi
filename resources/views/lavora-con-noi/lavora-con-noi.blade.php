@@ -4,7 +4,7 @@
     <div class="main-header lavora-con-noi">
       <div class="container">
         <div class="main-caption">
-          <h1>Lavora con noi</h1>
+          <h1>{{$text['contatti']['lavora_con_noi']}}</h1>
         </div>
       </div>
     </div>
@@ -15,7 +15,7 @@
             @include('layouts.content', array('key' => 'lavora_con_noi_main', 'permesso'=> 'modifica_lavora_con_noi'))
 
             <a href="/lavora-con-noi/invia-candidatura">
-              <div class="btn btn-primary">Invia la tua candidatura</div></a>
+              <div class="btn btn-primary">{{$text['contatti']['invia_candidatura']}}</div></a>
           </div>
           <div class="col-md-4">
             <div class="sidebar lavora-con-noi-sidebar">

@@ -9,12 +9,12 @@
       @foreach($gruppi_prodotti as $prodotto)
       <div class="formulazione">
         <div class="formulazione-title">
-          <h5>Formulazione</h5>
+          <h5>{{$text['prodotti']['formulazione']}}</h5>
           <span>{{$prodotto->formulazione}}</span><i class="fa fa-caret-right"></i>
         </div>
         <ul class="formulazione-content">
           <li>
-            <h5>Principio attivo</h5><span>{{ucfirst(strtolower($prodotto->principio_attivo->nome))}}</span>
+            <h5>{{$text['prodotti']['principio_attivo']}}</h5><span>{{ucfirst(strtolower($prodotto->principio_attivo->nome))}}</span>
           </li>
           
           <li>

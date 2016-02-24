@@ -5,26 +5,26 @@
         <div class="footer-box">
           <h4>
           
-          About <i>Ibi</i>
+          {{$text['footer']['about']}} <i>Ibi</i>
           </h4>
           @include('layouts.content_footer', array('key' => 'footer_prima_colonna', 'permesso'=> 'modifica_contatti'))
         </div>
       </div>
       <div class="col-sm-3 col-sm-6">
         <div class="footer-box">
-          <h4>Worldwide</h4>
+          <h4>{{$text['footer']['worldwide']}}</h4>
           @include('layouts.content_footer', array('key' => 'footer_seconda_colonna', 'permesso'=> 'modifica_contatti'))
       </div>
     </div>
     <div class="col-sm-3 col-sm-6">
       <div class="footer-box">
-        <h4>Stay connected</h4>
+        <h4>{{$text['footer']['stay_connected']}}</h4>
         @include('layouts.content_footer', array('key' => 'footer_terza_colonna', 'permesso'=> 'modifica_contatti'))
     </div>
   </div>
   <div class="col-sm-3 col-sm-6">
     <div class="footer-box">
-      <h4>Link utili</h4>
+      <h4>{{$text['footer']['info']}}</h4>
       <ul>
         <li> <a href="/farmaco-vigilanza">Farmacovigilanza</a></li>
         <li><a href="/privacy-policy">Privacy Policy</a></li>

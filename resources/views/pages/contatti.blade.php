@@ -4,7 +4,7 @@
 <div class="main-header contatti">
       <div class="container">
         <div class="main-caption">
-          <h1>Contatti</h1>
+          <h1>{{$text['contatti']['contatti']}}</h1>
         </div>
       </div>
     </div>
@@ -41,7 +41,7 @@
                 <div id="accordion" role="tablist" aria-multiselectable="true" class="panel-group">
                   <div class="panel panel-default"><a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                       <div id="headingOne" role="tab" class="panel-heading">
-                        <h4 class="panel-title">Sede in Italia</h4><span class="caret caret-rotate"></span>
+                        <h4 class="panel-title">{{$text['contatti']['tabs']['italia']}}</h4><span class="caret caret-rotate"></span>
                       </div></a>
                     <div id="collapseOne" role="tabpanel" aria-labelledby="headingOne" class="panel-collapse collapse in">
                       <div class="panel-body">
@@ -55,7 +55,7 @@
                   </div>
                   <div class="panel panel-default"><a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" class="collapsed">
                       <div id="headingTwo" role="tab" class="panel-heading">
-                        <h4 class="panel-title">Sede in Germania</h4><span class="caret"></span>
+                        <h4 class="panel-title">{{$text['contatti']['tabs']['germania']}}</h4><span class="caret"></span>
                       </div></a>
                     <div id="collapseTwo" role="tabpanel" aria-labelledby="headingTwo" class="panel-collapse collapse">
                       <div class="panel-body">
@@ -68,7 +68,7 @@
                   </div>
                   <div class="panel panel-default"><a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree" class="collapsed">
                       <div id="headingThree" role="tab" class="panel-heading">
-                        <h4 class="panel-title">Sede in Inghiterra</h4><span class="caret"></span>
+                        <h4 class="panel-title">{{$text['contatti']['tabs']['uk']}}</h4><span class="caret"></span>
                       </div></a>
                     <div id="collapseThree" role="tabpanel" aria-labelledby="headingThree" class="panel-collapse collapse">
                       <div class="panel-body">

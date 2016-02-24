@@ -4,7 +4,7 @@
     <div class="main-header ibi-manufacturer">
       <div class="container">
         <div class="main-caption">
-          <h1>Sviluppo e produzione conto terzi</h1>
+          <h1>{{$text['toll']['toll']}}</h1>
         </div>
       </div>
     </div>
@@ -15,8 +15,8 @@
             <div class="tabs manufactoring-tabs">
               <!-- Nav tabs-->
               <ul role="tablist" class="nav nav-tabs">                
-                <li role="presentation"  class="active"><a href="#development" aria-controls="development" role="tab" data-toggle="tab">Sviluppo			</a></li>
-                <li role="presentation"><a href="#manufactoring" aria-controls="manufactoring" role="tab" data-toggle="tab">Produzione</a></li>
+                <li role="presentation"  class="active"><a href="#development" aria-controls="development" role="tab" data-toggle="tab">{{$text['toll']['tabs']['sviluppo']}}			</a></li>
+                <li role="presentation"><a href="#manufactoring" aria-controls="manufactoring" role="tab" data-toggle="tab">{{$text['toll']['tabs']['produzione']}} </a></li>
               </ul>
               <!-- Tab panes-->
               <div class="tab-content">

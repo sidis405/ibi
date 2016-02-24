@@ -4,7 +4,7 @@
 <div class="main-header prodotti">
   <div class="container">
     <div class="main-caption">
-      <h1>Prodotti</h1>
+      <h1>{{$text['prodotti']['prodotti']}}</h1>
     </div>
   </div>
 </div>
@@ -28,11 +28,11 @@
           <div class="intro hidden-xs">
             
             @include('layouts.content', array('key' => 'intro_prodotti_ibi_export', 'permesso'=> 'modifica_export'))
-            <a href="/ibi-export">Leggi di più</a>
+            <a href="/ibi-export">{{$text['azioni']['leggi_tutto']}}</a>
             
           </div>
           <div class="filtri-mobile-btn visible-xs visible-sm btn">
-            Filtri
+            {{$text['filtri_prodotti']['filtri']}}
           </div>
   
           @include('prodotti.partials.prodotti_export_partial')

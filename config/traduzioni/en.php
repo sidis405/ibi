@@ -2,7 +2,7 @@
 return [
 'header' =>
 							[
-								"login" => "Area Riservata",
+								"login" => "Reserved Area",
 								"logout" => "Logout",
 							],
 	'footer' =>
@@ -20,63 +20,101 @@ return [
 	],
 	'filtri_prodotti' =>
 	[
-			'scarica_listino' => 'Scarica il listino in pdf',
-			'filtri' => 'Filtri',
-			'tutti' => 'Tutti',
-			'cerca' => 'Cerca',
-			'categorie_terapeutiche' => 'Categorie Terapeutiche',
-			'principi_attivi' => 'Principi Attivi'
+			'scarica_listino' => 'Download products list',
+			'filtri' => 'Filter',
+			'tutti' => 'All  ',
+			'cerca' => 'Search',
+			'cerca_prodotti' => 'Search for products',
+			'categorie_terapeutiche' => 'Therapeutic Category',
+			'principi_attivi' => 'Active Principles'
 	],
 	'prodotti' => 
 	[
-		'formulazione' => 'Formulazione',
-		'principio_attivo' => 'Principio attivo',
-		'foglietto_illustrativo' => 'Principio attivo',
-		'scheda_tecnica' => 'Scheda tecnica',
+		'prodotti' => 'Products',
+		'formulazione' => 'Formulation',
+		'principio_attivo' => 'Active Principle',
+		'categorie_terapeutiche' => 'Therapeutic Category',
+		'foglietto_illustrativo' => 'Leaflet',
+		'scheda_tecnica' => 'Data sheet',
+		'scheda_tecnica_warning' => 'You must be logged in to download data sheets',
 		'fascia' =>'Fascia',
-		'regime_di_dispensazione' => 'Regime di dispensazione',
-		'validita_mesi' => 'Validità mesi'
+		'unita' =>'Units',
+		'regime_di_dispensazione' => 'Dispensing system',
+		'validita_mesi' => 'Validity in months',
+		'scarica_listino' => 'Download products list',
+		'steatosi_epatica' => 'Hepatic Steatosis',
+		'meteorismo_aerofagia' => 'Bloating and Flatulence',
+		'italia' => 'Italy',
+		'germania' => 'Germany',
+		'uk' => 'united Kingdom',
 	],
 
 	'chi-siamo' =>
 	[
-		'chi_siamo' => 'Chi Siamo',
-		'il_gruppo' => 'Il Gruppo',
-		'la_storia' => 'La Storia',
-		'codice_etico' => 'Codice Etico',
+		'chi_siamo' => 'About Us',
+		'il_gruppo' => 'Corporate Information',
+		'la_storia' => 'Our History',
+		'codice_etico' => 'Ethical Code',
 		'qus' => 'Quality Unit System',
-		'politica_integrata' => 'Politica Integrata',
-		'tdv' => 'Trasferimenti di Valore',
+		'politica_integrata' => 'Integrated Policy',
+		'tdv' => 'Trasfer Of Value',
 	],
 
 	'toll' => [
+				'toll' => 'Contact Development And Manufacturing',
+				'reparti' => 'Production Departments',
 		'tabs' => [
-				'sviluppo' => 'Sviluppo',
-				'produzione' => 'Produzioni',
+				'sviluppo' => 'Development',
+				'produzione' => 'Manufacturing',
 		]
 	],
 
 	'rnd' => [
 		'tabs' => [
-				'delivery' => 'Delivery Innovativi',
-				'biotecnologie' => 'Biotecnologie',
-				'pubblicazioni' => 'Pubblicazioni',
-				'progetti' => 'Progetti',
+				'delivery' => 'Innovative Delivery',
+				'biotecnologie' => 'Biotecnology',
+				'pubblicazioni' => 'Publications',
+				'collaborazioni' => 'Collaborations',
+				'progetti' => 'Projects',
+				'farmacovigilanza' => 'Pharmacovigilanze',
+				'ricerca_innovazione' => 'Research and Innovation',
+				'attrezzature' => 'Equipment',
+
 		]
 	],
 
 	'contatti' => [
+		'contatti'=>'Contacts',
+		'lavora_con_noi'=>'Work With Us',
+
+		'invia_candidatura' => 'Submit Your Application',
+		'invia_candidatura_label1' => 'Fill the following form.',
+		'invia_candidatura_label2' => 'The fields marked with * are mandatory.',
+		'posizione' => 'Position',
+		'posizione_label' => 'Choose the position',
+		'scegli' => 'Choose',
+		'dati_personali' => 'Personal data',
+		'nome' => 'Name',
+		'cognome' => 'Surname',
+		'email' => 'Email',
+		'messaggio' => 'Message',
+		'carica_cv' => 'Upload your CV',
+		'your_cv' => 'Your cv',
+		'disclaimer' => 'Submitting this form you declare to have read and agreed to the ',
+		'invia' => 'Submit',
+		'posizioni_aperte' => 'Open Positions',
+
 		'tabs' => [
-				'italia' => 'SEDE IN ITALIA',
-				'germania' => 'SEDE IN GERMANIA',
-				'uk' => 'SEDE IN INGHILTERRA'
+				'italia' => 'ITALY HEADQUARTERS',
+				'germania' => 'GERMANY HEADQUARTERS',
+				'uk' => 'UNITED KINGDOM  HEADQUARTERS'
 		]
 	],
 
 	'benessere' => [
 		'tabs' => [
-				'fegato' => 'Fegato grasso o Steatosi epatica',
-				'meteorismo' => 'Meteorismo e Aerofagia',
+				'fegato' => 'Hepatic Steatosis',
+				'meteorismo' => 'Bloating and Flatulence',
 		],
 		'fegato_sections' => 
 		[

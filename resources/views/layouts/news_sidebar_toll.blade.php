@@ -3,25 +3,25 @@
   <div class="row sidebar-hero">
     <div class="col-md-12 col-sm-6"><a href="/reparti-toll-manufacturer">
       <div class="reparti-sidebar">
-        <h3>Reparti</h3>
+        <h3>{{$text['toll']['reparti']}}</h3>
       </div></a></div>
       <div class="col-md-12 col-sm-6"><a href="/chi-siamo#quality">
         <div class="biotecnologia-sidebar">
-          <h3>Quality unit system</h3>
+          <h3>{{$text['chi-siamo']['qus']}}</h3>
         </div></a></div>
       <div class="col-md-12 col-sm-6"><a href="/ricerca-innovazione">
         <div class="biotecnologia-sidebar">
-          <h3>Ricerca e innovazione</h3>
+          <h3>{{$text['rnd']['tabs']['ricerca_innovazione']}}</h3>
         </div></a></div>
       </div>
       <div class="row news">
         <div class="col-xs-12">
-          <h3> Ultime News</h3>
+          <h3> {{$text['azioni']['ultime_news']}}</h3>
         </div>
         <div class="col-xs-12">
           @include('layouts.news_partial')
         </div>
-        <div class="col-xs-12"><a href="/archivio-news" class="archivio-news-link">Archivio news</a></div>
+        <div class="col-xs-12"><a href="/archivio-news" class="archivio-news-link">{{$text['azioni']['archivio_news']}}</a></div>
       </div>
       
     </div>

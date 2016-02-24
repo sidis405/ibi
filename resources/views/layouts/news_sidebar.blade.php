@@ -3,11 +3,12 @@
   <div class="row sidebar-hero">
     <div class="col-md-12 col-sm-6"><a href="/ricerca-innovazione#biotecnologie">
       <div class="biotecnologia-sidebar">
-        <h3>Biotecnologie</h3>
+          <h3>{{$text['rnd']['tabs']['biotecnologie']}}</h3>
+        
       </div></a></div>
       <div class="col-md-12 col-sm-6"><a href="/farmaco-vigilanza">
         <div class="farmacovigilanza-sidebar">
-          <h3>Farmacovigilanza</h3>
+          <h3>{{$text['rnd']['tabs']['farmacovigilanza']}}</h3>
         </div></a></div>
       </div>
       <div class="row news">

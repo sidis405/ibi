@@ -1,6 +1,6 @@
 <div class="row positions">
   <div class="col-xs-12">
-    <h3>Posizioni aperte</h3>
+    <h3>{{$text['contatti']['posizioni_aperte']}}</h3>
   </div>
   <div class="col-xs-12">
   @if(count($posizioni))
@@ -9,7 +9,7 @@
         <h5>{{$posizione->titolo}}</h5>
         <!-- <span>{{$posizione->sede}}</span> -->
         <p>{{$posizione->descrizione}}</p>
-        <a href="/lavora-con-noi/{{$posizione->id}}/{{$posizione->slug}}/invia-candidatura" class="read-more">Invia candidatura</a>
+        <a href="/lavora-con-noi/{{$posizione->id}}/{{$posizione->slug}}/invia-candidatura" class="read-more">{{$text['contatti']['invia_candidatura']}}</a>
       </div>
     @endforeach
   @else

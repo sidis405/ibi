@@ -3,7 +3,7 @@
     <div class="main-header reparti">
       <div class="container">
         <div class="main-caption">
-          <h1>Reparti</h1>
+          <h1>{{$text['toll']['reparti']}}</h1>
         </div>
       </div>
     </div>
