@@ -81,8 +81,8 @@
         <div class="row">
           <div class="col-md-8">
             @include('layouts.content', array('key' => 'home_articolo_principale', 'permesso'=> 'modifica_home'))
-            <a href="chi-siamo">
-              <div class="btn btn-primary">{{$text['azioni']['leggi_tutto']}}</div></a>
+            <!-- <a href="chi-siamo">
+              <div class="btn btn-primary">{{$text['azioni']['leggi_tutto']}}</div></a> -->
           </div>
           <div class="col-md-4">
             @include('layouts.news_sidebar')

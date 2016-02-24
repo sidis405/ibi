@@ -154,6 +154,12 @@ section.content.ibi-italia-content h2 {
   text-transform: uppercase;
   display: inline-block;
 }
+section.content.ibi-italia-content h4 {
+  margin-bottom: 0px;
+}
+section.content.ibi-italia-content p {
+  margin-top: 0px;
+}
 .plus-minus {
   background: #b3cbe1;
   float: right;

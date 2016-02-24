@@ -35,7 +35,7 @@
                         <div id="headingFour" role="tab" class="panel-heading">
                           <h4 class="panel-title">
                                                     
-                            Equipment
+                            Attrezzature
                           </h4>
                           <div class="plus-minus"></div>
                         </div></a>
@@ -58,7 +58,7 @@
                         <div id="headingOne" role="tab" class="panel-heading">
                           <h4 class="panel-title">
                                                     
-                            Equipment
+                            Attrezzature
                           </h4>
                           <div class="plus-minus"></div>
                         </div></a>
