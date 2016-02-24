@@ -76,7 +76,7 @@ return [
 				'pubblicazioni' => 'Publications',
 				'collaborazioni' => 'Collaborations',
 				'progetti' => 'Projects',
-				'farmacovigilanza' => 'Pharmacovigilanze',
+				'farmacovigilanza' => 'Pharmacovigilance',
 				'ricerca_innovazione' => 'Research and Innovation',
 				'attrezzature' => 'Equipment',
 

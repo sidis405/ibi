@@ -11,7 +11,9 @@
               @else
               <a href="#area-riservata-modal" class="area-riservata open-area-riservata-modal">{{$text['header']['login']}}</a>
               @endif
-                <p class="lang"><a href="#" class="lingua-btn @if(\Session::get('locale') == 'it' || \Session::get('locale') == '') active @endif" data-url="/langs/it">Ita |</a><a href="#"  class="lingua-btn @if(\Session::get('locale') == 'en') active @endif" data-url="/langs/en"> Eng</a></p>
+                <p class="lang"><a href="#" class="lingua-btn @if(\Session::get('locale') == 'it' || \Session::get('locale') == '') active @endif" data-url="/langs/it">Ita</a>
+                <span style="margin: 0 3px;">|</span>
+                <a href="#"  class="lingua-btn @if(\Session::get('locale') == 'en') active @endif" data-url="/langs/en"> Eng</a></p>
               </div>
             </div>
           </div>

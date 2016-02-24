@@ -45,5 +45,76 @@
 }
 
 .lingua-btn.active {
-    color: red!important;
+    color: #1fa9ad !important;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+    color: #1fa9ad;
+    background: transparent;    
+}
+nav.navbar .navbar-right li.active {
+    border-left: 2px solid #1fa9ad;
+
+}
+
+.workers-percent {
+    position: relative;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.workers-percent .number {
+    font-size: 60px;
+    color: #bebebe;
+}
+
+.workers-percent .average-age {
+    // position: absolute;
+    // left: 50%;
+    // top: 50%;
+    padding: 20px;
+    position: relative;
+    // transform: translate(-50%, -50%);
+    // -webkit-transform: translate(-50%, -50%);
+    // -moz-transform: translate(-50%, -50%);
+    width: 150px;
+    height: 150px;
+    background: #1fa9ad;
+    border-radius: 50%;
+    margin: 20px auto 0 auto;
+}
+.workers-percent .average-age:before {
+    position: absolute;
+    content: '';
+    width: 1px;
+    height: 30px;
+    background: #1fa9ad;
+    top: -40px;
+    left: 50%;  
+}
+.workers-percent .average-age:after {
+    position: absolute;
+    content: '';
+    width: 1px;
+    height: 30px;
+    background: #1fa9ad;
+    bottom: -40px;
+    left: 50%;  
+}
+
+.workers-percent .average-age:before {
+      
+}
+
+.workers-percent .average-age i {
+    display: block;
+    font-size: 50px;
+    font-style: normal;
+    color: #fff;
+}
+.workers-percent .average-age b {    
+    font-size: 14px;
+    font-style: normal;
+    text-transform: uppercase;
+    color: #fff;
 }
