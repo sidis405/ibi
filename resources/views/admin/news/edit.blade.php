@@ -50,6 +50,10 @@
                         <textarea class="form-control"  rows="5" id="descrizione"  name="descrizione"  placeholder="La descrizione della news" required>{{$news->descrizione}}</textarea>
                     </div>
                     <div class="form-group fg-line">
+                        <label for="formulazione">Data news</label>
+                        <input type="date" name="created_at" class="form-control" value="{{$news['created_at']->format('Y-m-d')}}">
+                    </div>
+                    <div class="form-group fg-line">
                         @include('admin.news.immagine_partial')
                     </div>
                 </div>

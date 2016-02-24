@@ -397,6 +397,12 @@ Sidebar styles
   height: 100px;
 }
 
+.media-news-archive {
+  height: 150px;
+  width: 150px;
+  background-size: cover!important; 
+}
+
 .sidebar .news h3 {
   color: #1fa9ad;
   font-size: 26px !important;

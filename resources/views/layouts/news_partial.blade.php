@@ -3,12 +3,15 @@
 	@foreach($news as $item)
 	<div class="single-news">
 		<div class="media">
-			<div class="media-left"><a href="/archivio-news/{{$item->id}}/{{$item->slug}}"><img @if($item->immagine_path != null) src="/images/{{$item->immagine_path}}" @else src="/img/news_placeholder.jpg" @endif  alt="{{$item->titolo}}" class="media-object news-image"></a></div>
+			<div class="media-left">
+                    <a href="/archivio-news/{{$item->id}}/{{$item->slug}}" alt="{{$item->titolo}}" >
+                      <span class="media-object news-image" alt="{{$item->titolo}}" style="background: url(@if($item->immagine_path != null) '/images/{{$item->immagine_path}}' @else '/img/news_placeholder.jpg' @endif) no-repeat center center;"></span>
+                    </a>
+                  </div>
 			<div class="media-body">
 
-				<!-- <h4>{{$item->titolo}}</h4><span class="date">{{$item->created_at->format('d/m/y')}}</span> -->
-				<h4>{{tokenTruncate($item->titolo, 57)}}</h4><span class="date">{{$item->created_at->format('d/m/y')}}</span>
-				<!-- <p> {{tokenTruncate($item->descrizione, 105)}}</p> --><a href="/archivio-news/{{$item->id}}/{{$item->slug}}" class="read-more read-more-news">Leggi tutto ></a>
+				<h4><a href="/archivio-news/{{$item->id}}/{{$item->slug}}">{{tokenTruncate($item->titolo, 57)}}</a></h4><span class="date">{{$item->created_at->format('d/m/y')}}</span>
+				<a href="/archivio-news/{{$item->id}}/{{$item->slug}}" class="read-more read-more-news">Leggi tutto ></a>
 			</div>
 		</div>
 	</div>

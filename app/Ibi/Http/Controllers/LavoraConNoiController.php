@@ -4,6 +4,7 @@ namespace Ibi\Http\Controllers;
 
 use App\Http\Controllers\Controller;
 use App\Http\Requests;
+use Ibi\Repositories\PagineRepo;
 use Ibi\Repositories\PosizioniAperteRepo;
 use Ibi\Requests\SendCandidaturaRequest;
 use Illuminate\Http\Request;
@@ -15,11 +16,12 @@ class LavoraConNoiController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index(PosizioniAperteRepo $posizioni_aperte_repo)
+    public function index(PosizioniAperteRepo $posizioni_aperte_repo, PagineRepo $pagine_repo)
     {
         $posizioni = $posizioni_aperte_repo->getAllFront();
+        $contenuti = $pagine_repo->getContentForPage('lavora-con-noi');
 
-        return view('lavora-con-noi.lavora-con-noi', compact('posizioni'));
+        return view('lavora-con-noi.lavora-con-noi', compact('posizioni', 'contenuti'));
 
     }
 

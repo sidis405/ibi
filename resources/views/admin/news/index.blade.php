@@ -56,7 +56,7 @@
                                 <tr>
                                     <td>{{$item->id}}</td>
                                     <td>{{$item->titolo}}</td>
-                                    <td>{{$item->created_at->format('d-m-y H:i')}}</td>
+                                    <td>{{$item->created_at->format('d-m-y')}}</td>
                                 </tr>
                             @endforeach
                                 

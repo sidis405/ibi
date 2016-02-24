@@ -16,9 +16,13 @@
             @if(count($listing))
               @foreach($listing as $item)
                 <div class="archivio-news media">
-                  <div class="media-left"><a href="/archivio-news/{{$item->id}}/{{$item->slug}}"><img width="150" @if($item->immagine_path != null) src="/images/{{$item->immagine_path}}" @else src="/img/news_placeholder.jpg" @endif alt="{{$item->titolo}}" class="media-object"></a></div>
+                  <div class="media-left">
+                    <a href="/archivio-news/{{$item->id}}/{{$item->slug}}" alt="{{$item->titolo}}" >
+                      <span class="media-object media-news-archive" alt="{{$item->titolo}}" style="background: url(@if($item->immagine_path != null) '/images/{{$item->immagine_path}}' @else '/img/news_placeholder.jpg' @endif) no-repeat center center;"></span>
+                    </a>
+                  </div>
                   <div class="media-body">
-                    <h4 class="media-heading">{{$item->titolo}}</h4><span class="date">{{$item->created_at->format('d/m/Y')}}</span>
+                    <h4 class="media-heading"><a href="/archivio-news/{{$item->id}}/{{$item->slug}}">{{$item->titolo}}</a></h4><span class="date">{{$item->created_at->format('d/m/Y')}}</span>
                     <p>{{$item->descrizione}}</p><a href="/archivio-news/{{$item->id}}/{{$item->slug}}" class="read-more read-more-news">Leggi tutto ></a>
                   </div>
                 </div>

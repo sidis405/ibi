@@ -37,7 +37,7 @@ class CreateNewsCommandHandler
         $active = ($command->active === 'on') ? 1 : 0;
 
 
-        $news_object = News::make($command->titolo , $command->descrizione, $command->testo, $active);
+        $news_object = News::make($command->titolo , $command->descrizione, $command->testo, $active, $command->created_at);
 
         $news = $this->repo->save($news_object);
 

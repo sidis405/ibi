@@ -6,23 +6,23 @@ use Illuminate\Database\Eloquent\Model;
 
 class News extends Model
 {
-    protected $guarded = ['id', 'created_at', 'updated_at'];
+    protected $guarded = ['id', 'updated_at'];
 
     public function allegati()
     {
         return $this->hasMany(Allegati::class, 'news_id');
     }
 
-    public static function make($titolo, $descrizione, $testo, $active){
+    public static function make($titolo, $descrizione, $testo, $active, $created_at){
 
         $slug = str_slug(rtrim($titolo));
 
-        $news = new static(compact('titolo', 'slug', 'descrizione', 'testo', 'active'));
+        $news = new static(compact('titolo', 'slug', 'descrizione', 'testo', 'active', 'created_at'));
 
         return $news;
     }
 
-    public static function edit($news_id, $titolo, $descrizione, $testo, $active){
+    public static function edit($news_id, $titolo, $descrizione, $testo, $active, $created_at){
 
         $slug = str_slug(rtrim($titolo));
 
@@ -33,6 +33,7 @@ class News extends Model
         $news->descrizione = $descrizione;
         $news->testo = $testo;
         $news->active = $active;
+        $news->created_at = $created_at;
 
         return $news;
     }

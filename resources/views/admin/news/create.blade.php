@@ -50,6 +50,10 @@
                         <textarea class="form-control"  rows="5" id="descrizione"  name="descrizione"  placeholder="La descrizione della news" required></textarea>
                     </div>
                     <div class="form-group fg-line">
+                        <label for="formulazione">Data news</label>
+                        <input type="date" name="created_at" class="form-control">
+                    </div>
+                    <div class="form-group fg-line">
                         <div class="fileinput fileinput-new" data-provides="fileinput">
                             <div class="fileinput-preview thumbnail" data-trigger="fileinput"></div>
                             <div>

@@ -36,7 +36,7 @@ class UpdateNewsCommandHandler
     {
         $active = ($command->active === 'on') ? 1 : 0;
 
-        $news_object = News::edit($command->news_id, $command->titolo , $command->descrizione, $command->testo, $active);
+        $news_object = News::edit($command->news_id, $command->titolo , $command->descrizione, $command->testo, $active, $command->created_at);
 
         $news = $this->repo->save($news_object);
 

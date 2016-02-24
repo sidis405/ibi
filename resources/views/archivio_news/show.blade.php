@@ -16,7 +16,11 @@
             <span class="date">{{$single_news->created_at->format('d/m/Y')}}</span>
             
                 <div class="archivio-news media">
-                  <div class="media-left"><a href="/archivio-news/{{$single_news->id}}/{{$single_news->slug}}"><img width="150" @if($single_news->immagine_path != null) src="/images/{{$single_news->immagine_path}}" @else src="/img/news_placeholder.jpg" @endif  alt="{{$single_news->titolo}}" class="media-object"></a></div>
+                  <div class="media-left">
+                    <a href="/archivio-news/{{$single_news->id}}/{{$single_news->slug}}" alt="{{$single_news->titolo}}" >
+                      <span class="media-object media-news-archive" alt="{{$single_news->titolo}}" style="background: url(@if($single_news->immagine_path != null) '/images/{{$single_news->immagine_path}}' @else '/img/news_placeholder.jpg' @endif) no-repeat center center;"></span>
+                    </a>
+                  </div>
                   <div class="media-body">
                     <p>{!!$single_news->testo!!}</p>
 

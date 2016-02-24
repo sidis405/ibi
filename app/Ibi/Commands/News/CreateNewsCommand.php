@@ -11,13 +11,14 @@ class CreateNewsCommand extends Command
     public $descrizione;
     public $testo;
     public $active;
+    public $created_at;
     
     /**
      * Create a new command instance.
      *
      * @return void
      */
-    public function __construct($titolo, $immagine_path, $descrizione, $testo, $active)
+    public function __construct($titolo, $immagine_path, $descrizione, $testo, $active, $created_at)
     {
         
         $this->titolo = $titolo;
@@ -25,5 +26,6 @@ class CreateNewsCommand extends Command
         $this->descrizione = $descrizione;
         $this->testo = $testo;
         $this->active = $active;
+        $this->created_at = $created_at;
     }
 }
