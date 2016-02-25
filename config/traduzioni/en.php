@@ -95,7 +95,7 @@ return [
 		'contatti'=>'Contacts',
 		'lavora_con_noi'=>'Work With Us',
 
-		'anni' => 'Anni',
+		'anni' => 'Years',
 		'eta_media' => 'Average Age',
 
 		'invia_candidatura' => 'Submit Your Application',

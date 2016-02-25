@@ -94,7 +94,7 @@ return [
 		'contatti'=>'Contatti',
 
 		'lavora_con_noi'=>'Lavora Con Noi',
-		'anni' => 'Years',
+		'anni' => 'anni',
 		'eta_media' => 'Età Media',
 
 		'invia_candidatura' => 'Send Your Application',
