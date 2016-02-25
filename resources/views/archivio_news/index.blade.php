@@ -23,7 +23,7 @@
                   </div>
                   <div class="media-body">
                     <h4 class="media-heading"><a href="/archivio-news/{{$item->id}}/{{$item->slug}}">{{$item->titolo}}</a></h4><span class="date">{{$item->created_at->format('d/m/Y')}}</span>
-                    <p>{{$item->descrizione}}</p><a href="/archivio-news/{{$item->id}}/{{$item->slug}}" class="read-more read-more-news">Leggi tutto ></a>
+                    <p>{{$item->descrizione}}</p><a href="/archivio-news/{{$item->id}}/{{$item->slug}}" class="read-more read-more-news">{{$text['azioni']['leggi_tutto']}} ></a>
                   </div>
                 </div>
               @endforeach
