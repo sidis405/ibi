@@ -45,15 +45,15 @@
 }
 
 .lingua-btn.active {
-    color: #1fa9ad !important;
+    text-decoration: underline;
 }
 
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
-    color: #1fa9ad;
+    color: #00509a;
     background: transparent;    
 }
 nav.navbar .navbar-right li.active {
-    border-left: 2px solid #1fa9ad;
+    border-left: 2px solid #00509a;
 
 }
 

@@ -682,10 +682,13 @@ nav.navbar .navbar-right li:last-of-type a {
 }
 nav.navbar .navbar-right li a {
   padding: 0 30px 0 10px;
-  color: #00509a;
+  color: #6696c2;
   text-transform: uppercase;
   font-weight: 700;
   font-size: 18px;
+}
+nav.navbar .navbar-right li a:hover {
+  color: #00509a;
 }
 nav.navbar .navbar-right .dropdown-menu {
   padding: 15px;
