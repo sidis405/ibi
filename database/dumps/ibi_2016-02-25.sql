@@ -1,13 +1,13 @@
 # ************************************************************
 # Sequel Pro SQL dump
-# Version 4135
+# Version 4500
 #
 # http://www.sequelpro.com/
-# http://code.google.com/p/sequel-pro/
+# https://github.com/sequelpro/sequelpro
 #
-# Host: localhost (MySQL 5.5.34)
+# Host: localhost (MySQL 5.5.42)
 # Database: ibi
-# Generation Time: 2016-02-25 11:31:32 +0000
+# Generation Time: 2016-02-25 14:07:22 +0000
 # ************************************************************
 
 
@@ -734,7 +734,8 @@ VALUES
 	('2016_01_28_125120_create_pa_translations_table',19),
 	('2016_01_28_125220_create_prodotti_translations_table',20),
 	('2016_02_02_150726_create_allegati_table',21),
-	('2016_02_15_110504_create_tdv_table',22);
+	('2016_02_15_110504_create_tdv_table',22),
+	('2016_02_25_132841_create_staff_info_table',23);
 
 /*!40000 ALTER TABLE `migrations` ENABLE KEYS */;
 UNLOCK TABLES;
@@ -2356,6 +2357,32 @@ VALUES
 	(56,'Venereologia');
 
 /*!40000 ALTER TABLE `specializzazioni` ENABLE KEYS */;
+UNLOCK TABLES;
+
+
+# Dump of table staff_info
+# ------------------------------------------------------------
+
+DROP TABLE IF EXISTS `staff_info`;
+
+CREATE TABLE `staff_info` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `women` int(11) NOT NULL,
+  `men` int(11) NOT NULL,
+  `age` int(11) NOT NULL,
+  `created_at` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00',
+  `updated_at` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+LOCK TABLES `staff_info` WRITE;
+/*!40000 ALTER TABLE `staff_info` DISABLE KEYS */;
+
+INSERT INTO `staff_info` (`id`, `women`, `men`, `age`, `created_at`, `updated_at`)
+VALUES
+	(1,40,60,41,'2016-02-25 14:38:07','2016-02-25 14:07:06');
+
+/*!40000 ALTER TABLE `staff_info` ENABLE KEYS */;
 UNLOCK TABLES;
 
 

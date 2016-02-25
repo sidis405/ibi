@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Http\Requests;
 use Ibi\Repositories\PagineRepo;
 use Ibi\Repositories\PosizioniAperteRepo;
+use Ibi\Repositories\StaffInfoRepo;
 use Ibi\Requests\SendCandidaturaRequest;
 use Illuminate\Http\Request;
 use Session;
@@ -17,12 +18,13 @@ class LavoraConNoiController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index(PosizioniAperteRepo $posizioni_aperte_repo, PagineRepo $pagine_repo)
+    public function index(PosizioniAperteRepo $posizioni_aperte_repo, PagineRepo $pagine_repo, StaffInfoRepo $staff_info)
     {
         $posizioni = $posizioni_aperte_repo->getAllFront();
         $contenuti = $pagine_repo->getContentForPage('lavora-con-noi');
+        $staff_info = $staff_info->getAllFront();
 
-        return view('lavora-con-noi.lavora-con-noi', compact('posizioni', 'contenuti'));
+        return view('lavora-con-noi.lavora-con-noi', compact('posizioni', 'contenuti', 'staff_info'));
 
     }
 

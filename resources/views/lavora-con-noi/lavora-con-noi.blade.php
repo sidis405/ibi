@@ -15,20 +15,20 @@
 
              <div class="row workers-percent">
               <div class="col-sm-4" style="text-align: left;">
-                <span class="number"><i style="color: #f7bacf; font-style: normal;">40</i>%</span>
+                <span class="number"><i style="color: #f7bacf; font-style: normal;">{{$staff_info['women']}}</i>%</span>
                 <img src="/img/woman.jpg" alt="">
               </div>
               <div class="col-sm-4">
                 <div class="average-age">
-                <b>Età media</b>
-                <i class="age">41</i>
-                <b>Anni</b>
+                <b>{{$text['contatti']['eta_media']}}</b>
+                <i class="age">{{$staff_info['age']}}</i>
+                <b>{{$text['contatti']['anni']}}</b>
               </div>
               </div>
               
               <div class="col-sm-4" style="text-align: right;">                
                 <img src="/img/man.jpg" alt="">
-                <span class="number"><i style="color: #b1eaf1; font-style: normal;">60</i>%</span>
+                <span class="number"><i style="color: #b1eaf1; font-style: normal;">{{$staff_info['men']}}</i>%</span>
               </div>
             </div>
 

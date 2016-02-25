@@ -95,6 +95,9 @@ return [
 		'contatti'=>'Contacts',
 		'lavora_con_noi'=>'Work With Us',
 
+		'anni' => 'Anni',
+		'eta_media' => 'Average Age',
+
 		'invia_candidatura' => 'Submit Your Application',
 		'invia_candidatura_label1' => 'Fill the following form.',
 		'invia_candidatura_label2' => 'The fields marked with * are mandatory.',

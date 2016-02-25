@@ -57,6 +57,7 @@
                     <li><a href="/admin/lavora-con-noi" id="lavora_con_noi_menu_lista_posizioni">Lista posizioni aperte</a></li>
                     <li><a href="/admin/lavora-con-noi/crea" id="lavora_con_noi_menu_aggiungi_posizione">Aggiungi Posizione</a></li>
                     <li><a href="/admin/lavora-con-noi/candidature" id="lavora_con_noi_menu_candidature">Candidature</a></li>
+                    <li><a href="/admin/lavora-con-noi/percentuale-dipendenti" id="lavora_con_noi_percentuale_dipendenti">Percentuale Dipendenti</a></li>
                 </ul>
             </li>
             <li class="sub-menu" id="farmaco_vigilanza_menu">

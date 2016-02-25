@@ -1,13 +1,13 @@
 <?php
 
-namespace Ibi\Events\Tdv;
+namespace Ibi\Events\StaffInfo;
 
 use Event;
-use Ibi\Models\Tdv;
+use Ibi\Models\StaffInfo;
 use Illuminate\Queue\SerializesModels;
 use Illuminate\Contracts\Broadcasting\ShouldBroadcast;
 
-class TdvWasUpdated extends Event
+class StaffInfoWasUpdated extends Event
 {
     use SerializesModels;
 
@@ -16,9 +16,9 @@ class TdvWasUpdated extends Event
      *
      * @return void
      */
-    public function __construct(Tdv $tdv)
+    public function __construct(StaffInfo $staff_info)
     {
-        $this->tdv = $tdv;
+        $this->staff_info = $staff_info;
     }
 
     /**
