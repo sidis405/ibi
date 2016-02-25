@@ -44,13 +44,13 @@
           <div class="benessere-mobile visible-xs">
             <a href="benessere-del-paziente">
             <div class="benessere-del-paziente meteorismo">
-              <h5>Meteorismo e Aerofagia ?</h5>
+              <h5>{{$text['prodotti']['meteorismo_aerofagia']}} ?</h5>
             </div></a>
           <a href="benessere-del-paziente">
             <div class="benessere-del-paziente fegato-grasso">
-              <h5>Fegato grasso o Steatosi epatica ?</h5>
+              <h5>{{$text['prodotti']['steatosi_epatica']}} ?</h5>
             </div></a>
-          <a style="width: 100%" target="_blank" href="http://realsil.it" class="btn btn-primary">Visita il sito Realsil</a>
+          <a style="width: 100%" target="_blank" href="http://realsil.it" class="btn btn-primary">{{$text['prodotti']['sito_realsil']}}</a>
           </div>
 
          </div>

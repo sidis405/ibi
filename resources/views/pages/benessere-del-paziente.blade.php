@@ -17,8 +17,8 @@
             <div class="tabs benessere-paziente-tabs" style="margin-top: 0;">
               <!-- Nav tabs-->
               <ul role="tablist" class="nav nav-tabs">
-                <li role="presentation" class="active"><a href="#fegato-grasso" aria-controls="fegato-grasso" role="tab" data-toggle="tab">Fegato grasso o Steatosi epatica</a></li>
-                <li role="presentation"><a href="#meteorismo" aria-controls="meteorismo" role="tab" data-toggle="tab">Meteorismo e Aerofagia			</a></li>
+                <li role="presentation" class="active"><a href="#fegato-grasso" aria-controls="fegato-grasso" role="tab" data-toggle="tab">{{$text['prodotti']['steatosi_epatica']}}</a></li>
+                <li role="presentation"><a href="#meteorismo" aria-controls="meteorismo" role="tab" data-toggle="tab">{{$text['prodotti']['meteorismo_aerofagia']}}			</a></li>
               </ul>
               <!-- Tab panes-->
               <div class="tab-content">

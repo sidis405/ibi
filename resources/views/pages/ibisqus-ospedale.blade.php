@@ -3,7 +3,7 @@
     <div class="main-header ibisqus-ospedale">
       <div class="container">
         <div class="main-caption">
-          <h1>ospedale</h1>
+          <h1>{{$text['prodotti']['ospedale']}}</h1>
         </div>
       </div>
     </div>
@@ -12,7 +12,7 @@
         <div class="row">
           <div class="col-md-8"><!-- <img src="/img/ibisqus-ospedale-logo.jpg" alt=""> -->              
               <a href="prodotti-ibisqus" class="">
-                <div class="btn btn-primary btn-products">Elenco prodotti per ospedale</div>
+                <div class="btn btn-primary btn-products">{{$text['prodotti']['elenco_prodotti_per']}} {{$text['prodotti']['ospedale']}}</div>
               </a>
               @include('layouts.content', array('key' => 'ibisqus_ospedale_main', 'permesso'=> 'modifica_ibisqus'))
             

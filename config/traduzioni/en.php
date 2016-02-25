@@ -47,6 +47,14 @@ return [
 		'italia' => 'Italy',
 		'germania' => 'Germany',
 		'uk' => 'united Kingdom',
+		'elenco_prodotti_per' => 'Product list for ',
+		'esportazione' => 'Export',
+		'licensing_out' => 'Licensing Out',
+		'export' => 'Export',
+		'ospedale' => 'Hospital',
+		'farmacia' => 'Retail',
+		'sito_realsil' => 'Visita the Realsil website'
+
 	],
 
 	'chi-siamo' =>

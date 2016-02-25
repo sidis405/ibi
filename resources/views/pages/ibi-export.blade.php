@@ -3,7 +3,7 @@
     <div class="main-header ibi-export">
       <div class="container">
         <div class="main-caption">
-          <h1>Esportazioni</h1>
+          <h1>{{$text['prodotti']['esportazione']}}</h1>
         </div>
       </div>
     </div>
@@ -14,13 +14,13 @@
             <div class="tabs ibi-export-tabs">
               <!-- Nav tabs-->
               <ul role="tablist" class="nav nav-tabs">
-                <li role="presentation" class="active"><a href="#ibi-export" aria-controls="ibi-export" role="tab" data-toggle="tab">Esportazioni<!-- <img src="/img/ibi-export-logo.jpg" alt=""> --></a></li>
-                <li role="presentation"><a href="#licensing-out" aria-controls="licensing-out" role="tab" data-toggle="tab">Licensing out						</a></li>
+                <li role="presentation" class="active"><a href="#ibi-export" aria-controls="ibi-export" role="tab" data-toggle="tab">{{$text['prodotti']['esportazione']}}<!-- <img src="/img/ibi-export-logo.jpg" alt=""> --></a></li>
+                <li role="presentation"><a href="#licensing-out" aria-controls="licensing-out" role="tab" data-toggle="tab">{{$text['prodotti']['licensing_out']}}</a></li>
               </ul>
               <!-- Tab panes-->
               <div class="tab-content" style="margin-top: 0;">
                 <div id="ibi-export" role="tabpanel" class="tab-pane active"><a href="prodotti-export" href="/ibi-export">
-                    <div class="btn btn-primary btn-products" style="margin-top: 0;">Elenco prodotti per esportazioni</div></a>
+                    <div class="btn btn-primary btn-products" style="margin-top: 0;">{{$text['prodotti']['elenco_prodotti_per']}} {{$text['prodotti']['esportazione']}}</div></a>
                    @include('layouts.content', array('key' => 'ibi_export_main_tab', 'permesso'=> 'modifica_export'))
                   
                     <div class="mappa">
