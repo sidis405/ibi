@@ -37,7 +37,7 @@ return [
 		'foglietto_illustrativo' => 'Leaflet',
 		'scheda_tecnica' => 'Data sheet',
 		'scheda_tecnica_warning' => 'You must be logged in to download data sheets',
-		'fascia' =>'Fascia',
+		'fascia' =>'Category',
 		'unita' =>'Units',
 		'regime_di_dispensazione' => 'Dispensing system',
 		'validita_mesi' => 'Validity in months',
@@ -129,12 +129,12 @@ return [
 		],
 		'fegato_sections' => 
 		[
-			'one' =>'Steatosi, steatoepatite alcolica e non alcolica',
-			'two' =>'Epidemiologia, cause e storia naturale',
-			'three' =>'Sintomatologia e segni clinici',
-			'four' =>'Esami clinici e strumentali',
-			'five' =>'	Nuovi metodi per monitorare il fegato',
-			'six' =>'	Farmaci e terapie',
+			'one' =>'Steatosis, alcoholic and non-alcoholic steatohepatitis',
+			'two' =>'Epidemiology, causes and history',
+			'three' =>'Symptomatology and clinical signs',
+			'four' =>'Clinical and instrumental exams',
+			'five' =>'New methods for liver monitoring',
+			'six' =>'Medications and therapies',
 		]
 	],
 
