@@ -10,7 +10,7 @@ class Prodotti extends Model
 {
     use Translatable;
 
-    public $translatedAttributes = ['formulazione'];
+    public $translatedAttributes = ['formulazione', 'unita'];
 
     protected $table = 'prodotti';
 

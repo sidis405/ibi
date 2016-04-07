@@ -100,6 +100,8 @@ class ProdottiController extends AdminController
         $lingue = Languages::all();
 
          $traduzioni = $prodotto->translations->keyBy('locale');
+
+         // return $traduzioni;
         return view('admin.prodotti.edit', compact('prodotto', 'sezioni', 'principi_attivi', 'categorie_terapeutiche', 'paesi', 'fascie', 'lingue', 'traduzioni'));
     }
 
