@@ -146,7 +146,7 @@ class ProdottiController extends AdminController
             $data['foglietto_illustrativo'] = false;
         }
 
-        if($request->hasFile('foglietto_illustrativo'))
+        if($request->hasFile('scheda_tecnica'))
         {
             $data['scheda_tecnica'] = $request->file('scheda_tecnica');
         }else{
