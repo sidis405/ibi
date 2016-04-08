@@ -14,9 +14,11 @@
         </div>
         <ul class="formulazione-content">
   
+          @if(strlen($prodotto->unita) > 0)
           <li>
             <h5>{{$text['prodotti']['unita']}}</h5><span>{{$prodotto->unita}}</span>
           </li>
+          @endif
           
           <li>
             <h5>{{$prodotto->categoria_terapeutica->nome}}</h5>

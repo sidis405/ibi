@@ -121,7 +121,8 @@ class ProdottiController extends AdminController
 
         flash()->success('News aggiornata correttamente.');
 
-        return redirect()->to('/admin/prodotti');
+        return redirect()->back();
+        // return redirect()->to('/admin/prodotti');
     }
 
     /**

@@ -56,7 +56,7 @@ class UpdateProdottoCommandHandler
         $prodotto = $this->repo->save($prodotto_object);
 
 
-        $this->updateTranslations($prodotto, $command->formulazioni);
+        $this->updateTranslations($prodotto, $command->formulazioni, $command->unita);
 
         $prodotto->sezioni()->sync($command->sezioni);
         //$prodotto->paesi()->sync($command->paesi);
@@ -95,13 +95,18 @@ class UpdateProdottoCommandHandler
         }
     }
 
-     protected function updateTranslations($prodotto, $formulazioni)
+     protected function updateTranslations($prodotto, $formulazioni, $unita)
     {
         $data = [];
         
         foreach($formulazioni as $locale => $formulazione)
         {
             $data[$locale]['formulazione'] = $formulazione;
+        }
+
+        foreach($unita as $locale => $unit)
+        {
+            $data[$locale]['unita'] = $unit;
         }
 
         $prodotto->update($data);

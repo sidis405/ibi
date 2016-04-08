@@ -130,10 +130,13 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="form-group fg-line col-sm-6">
-                            <label for="unita">Unità</label>
-                            <input type="text"  class="form-control input-sm" id="unita" name="unita"  value="{{$prodotto->unita}}" placeholder="Unità">
-                        </div>
+                        
+                        @foreach($lingue as $lingua)
+                            <div class="form-group fg-line col-sm-3">
+                                <label for="unita">Unità {{$lingua->label}}</label>
+                                <input type="text"  class="form-control input-sm" id="unita" name="unita[{{$lingua->locale}}]"  value="{{$traduzioni[$lingua->locale]['unita']}}" placeholder="Unità">
+                            </div>
+                            @endforeach
                         <div class="form-group fg-line col-sm-6">
                             <label for="validita_mesi">Validità mesi</label>
                             <input type="text"  class="form-control input-sm" name="validita_mesi"  value="{{$prodotto->validita_mesi}}" id="validita_mesi" placeholder="Validità mesi">

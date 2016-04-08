@@ -60,11 +60,17 @@ class Prodotti extends Model
         
         $data = compact('nome', 'slug', 'principio_attivo_id', 'fascia_id', 'foglietto_illustrativo', 'scheda_tecnica', 
             // 'aic', 'atc', 
-            'regime_dispensazione', 'unita', 'validita_mesi', 'categoria_terapeutica_id', 'active');
+            'regime_dispensazione', 'validita_mesi', 'categoria_terapeutica_id', 'active');
+            // 'regime_dispensazione', 'unita', 'validita_mesi', 'categoria_terapeutica_id', 'active');
 
         foreach($formulazioni as $locale => $formulazione)
         {
             $data[$locale] = ['formulazione' => $formulazione];
+        }
+
+        foreach($unita as $locale => $unit)
+        {
+            $data[$locale] = ['unita' => $unit];
         }
 
         $prodotto = new static($data);
@@ -96,7 +102,7 @@ class Prodotti extends Model
         // $prodotto->aic = $aic; 
         // $prodotto->atc = $atc; 
         $prodotto->regime_dispensazione = $regime_dispensazione; 
-        $prodotto->unita = $unita; 
+        // $prodotto->unita = $unita; 
         $prodotto->validita_mesi = $validita_mesi; 
         $prodotto->categoria_terapeutica_id = $categoria_terapeutica_id; 
         $prodotto->active = $active;
