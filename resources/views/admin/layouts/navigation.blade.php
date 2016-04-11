@@ -23,8 +23,8 @@
                     <li class="dropdown">
                         <a data-toggle="dropdown" class="tm-notification" href="">
                         
-                        @if($count_utenti_in_attesa > 0)
-                        <i class="tmn-counts">{{$count_utenti_in_attesa}}</i>
+                        @if($count_utenti_in_attesa > 0 || $count_modifiche_in_attesa > 0 )
+                        <i class="tmn-counts">{{$count_utenti_in_attesa + $count_modifiche_in_attesa}}</i>
                         @endif
 
                         </a>
@@ -53,6 +53,25 @@
                                                 <div class="lv-title">{{$utente_attesa->first_name}} {{$utente_attesa->last_name}}</div>
                                                 <small class="lv-small">
                                                     {{$utente_attesa->roles[0]->name}}, {{$utente_attesa->profile[0]->specializzazione_rel->nome}}, {{$utente_attesa->profile[0]->provincia_attivita_rel->nome}}
+                                                </small>
+                                            </div>
+                                        </div>
+                                    </a>
+                                @endforeach
+
+                                @foreach($lista_modifiche_in_attesa as $modifiche_attesa)
+                                    <a class="lv-item" href="/admin/modifiche-contenuti-sito/{{$modifiche_attesa->version_id}}">
+                                        <div class="media">
+                                            <div class="pull-left">
+                                                <button class="btn btn-info btn-icon waves-effect waves-circle waves-float"><i class="zmdi zmdi-comment-edit"></i></button>
+                                            </div>
+                                            <div class="media-body">
+                                                <?php $this_mod = $modifiche_attesa->getModel();?>
+                                                <div class="lv-title">{{$this_mod->contenuto->pagina->name}} ({{$this_mod->locale}})</div>
+                                                <small class="lv-small">
+                                                
+                                                    {{$modifiche_attesa->user->first_name}} {{$modifiche_attesa->user->last_name}}, {{$modifiche_attesa->created_at->format('d m Y, h:i')}}
+
                                                 </small>
                                             </div>
                                         </div>

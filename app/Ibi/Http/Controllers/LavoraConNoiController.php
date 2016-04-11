@@ -24,6 +24,8 @@ class LavoraConNoiController extends Controller
         $contenuti = $pagine_repo->getContentForPage('lavora-con-noi');
         $staff_info = $staff_info->getAllFront();
 
+        // return $contenuti['lavora_con_noi_main'];
+
         return view('lavora-con-noi.lavora-con-noi', compact('posizioni', 'contenuti', 'staff_info'));
 
     }

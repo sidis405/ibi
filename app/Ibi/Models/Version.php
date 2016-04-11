@@ -32,6 +32,11 @@ class Version extends Eloquent
         return $this->morphTo();
     }
 
+    public function user()
+    {
+        return $this->belongsTo(\App\User::class, 'user_id');
+    }
+
     /**
      * Return the user responsible for this version
      * @return mixed
@@ -54,6 +59,11 @@ class Version extends Eloquent
         $model->exists = true;
         $model->reguard();
         return $model;
+    }
+
+    public function baseContenutoTranslation()
+    {
+        return $this->belongsTo('Ibi\Models\ContenutiTranslation', 'versionable_id');
     }
 
 

@@ -53,11 +53,11 @@
 
                             @foreach($modifiche as $mod)
                                 <tr>
-                                    <td>{{$mod->version_id}}</td>
-                                    <td>{{$mod->base_contenuto_translation->contenuto->pagina->name}}</td>
-                                    <td>{{$mod->base_contenuto_translation->locale}}</td>
-                                    <td>{{$mod->user->first_name}} {{$mod->user->last_name}}</td>
-                                    <td>@if($mod->created_at) {{date('d-m-y H:i', strtotime($mod->created_at))}}@endif</td>
+                                    <td>{{$mod['version_id']}}</td>
+                                    <td>{{$mod['base_contenuto_translation']['contenuto']['pagina']['name']}}</td>
+                                    <td>{{$mod['base_contenuto_translation']['locale']}}</td>
+                                    <td>{{$mod['user']['first_name']}} {{$mod['user']['last_name']}}</td>
+                                    <td>@if($mod['created_at']) {{date('d-m-y H:i', strtotime($mod['created_at']))}}@endif</td>
                                 </tr>
                             @endforeach
                                 

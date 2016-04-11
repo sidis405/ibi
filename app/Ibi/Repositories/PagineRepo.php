@@ -42,6 +42,8 @@ class PagineRepo
 
     public function getBySlug($slug)
     {
+        // return Pages::with('contenuti.translations.versions')->where('slug', $slug)->first();
+        
         return Pages::with('contenuti')->where('slug', $slug)->first();
     } 
 

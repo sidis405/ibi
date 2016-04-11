@@ -1,6 +1,6 @@
 <?php
 
-namespace Ibi\Models;
+namespace SIbi\Models;
 
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Database\Eloquent\Relations\MorphMany;
@@ -9,7 +9,7 @@ use Illuminate\Database\Eloquent\Relations\MorphMany;
  * Class VersionableTrait
  * @package Mpociot\Versionable
  */
-trait VersionableTrait
+trait sVersionableTrait
 {
     // https://github.com/sidis405/versionable
     /**
@@ -43,7 +43,7 @@ trait VersionableTrait
      */
     public function enableVersioning()
     {
-        $this->versioningEnabled = true;
+        $this->versioningEnabled = false;
         return $this;
     }
 

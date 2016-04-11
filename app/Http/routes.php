@@ -51,11 +51,15 @@ Route::group(array('prefix' => 'admin', 'middleware' => 'auth'), function () {
     
     include(__DIR__.'/../Ibi/Routes/routes_contenuti.php');
 
+    include(__DIR__.'/../Ibi/Routes/routes_modifiche_sito.php');
+
+
     include(__DIR__.'/../Ibi/Routes/routes_slider.php');
     
     include(__DIR__.'/../Ibi/Routes/routes_menu_items.php');
     
     include(__DIR__.'/../Ibi/Routes/routes_staff_info.php');
+    
 
 });
 

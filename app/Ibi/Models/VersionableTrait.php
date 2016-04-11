@@ -97,7 +97,8 @@ trait VersionableTrait
      */
     public function currentVersion()
     {
-        return $this->versions()->orderBy(Version::CREATED_AT, 'DESC')->first();
+        return $this->versions()->orderBy('active', 'DESC')->orderBy(Version::CREATED_AT, 'DESC')->first();
+        // return $this->versions()->orderBy(Version::CREATED_AT, 'DESC')->first();
     }
 
     /**
