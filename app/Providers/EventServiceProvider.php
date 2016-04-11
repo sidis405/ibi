@@ -4,6 +4,7 @@ namespace App\Providers;
 
 use Ibi\Listeners\ExternalUsersListener;
 use Ibi\Listeners\SegnalazioniFarmacoVigilanzaListener;
+use Ibi\Listeners\ContenutiListener;
 use Ibi\Listeners\ProdottiListener;
 use Illuminate\Contracts\Events\Dispatcher as DispatcherContract;
 use Illuminate\Foundation\Support\Providers\EventServiceProvider as ServiceProvider;
@@ -31,6 +32,7 @@ class EventServiceProvider extends ServiceProvider
         ExternalUsersListener::class,
         SegnalazioniFarmacoVigilanzaListener::class,
         ProdottiListener::class,
+        ContenutiListener::class,
     ];
 
     /**

@@ -31,6 +31,24 @@ class Mailer {
 
     }
 
+    public function sendMailForContenutoUpdate($contenuto)
+    {
+
+        $subject = "Un nuovo contenuto è stato modificato su ibi-lorenzini.com";
+        $view = "emails.contenuto_modificato";
+        $data = compact('contenuto');
+
+        // logger($contenuto->translations->freshVersion());
+
+        // dd($data['utente']->profile[0]->ruolo);
+
+        \Log::info('sending admin new updata email');
+
+        // $this->sendTo('forge405@gmail.com', $subject, $view, $data);
+        $this->sendTo('forge405@gmail.com', $subject, $view, $data);
+
+    }
+
 
     public function sendMailForAccountActivation($utente)
     {

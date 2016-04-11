@@ -101,6 +101,12 @@ trait VersionableTrait
         // return $this->versions()->orderBy(Version::CREATED_AT, 'DESC')->first();
     }
 
+    public function freshVersion()
+    {
+        return $this->versions()->orderBy(Version::CREATED_AT, 'DESC')->first();
+        // return $this->versions()->orderBy(Version::CREATED_AT, 'DESC')->first();
+    }
+
     /**
      * Returns the previous version
      * @return Version
