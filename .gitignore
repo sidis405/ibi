@@ -6,3 +6,5 @@ Homestead.json
 /falcon
 /resources/bower_components
 tags
+.DS_Store
+database/.DS_Store
