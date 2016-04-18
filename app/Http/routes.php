@@ -63,6 +63,7 @@ Route::group(array('prefix' => 'admin', 'middleware' => 'auth'), function () {
 
 });
 
+// include(__DIR__.'/../Ibi/Routes/modifiche-contenuti-sito.php');
 include(__DIR__.'/../Ibi/Routes/routes_pages.php');
 include(__DIR__.'/../Ibi/Routes/routes_static.php');
 
