@@ -2,16 +2,24 @@
 
 namespace Ibi\Utils;
 
-use Illuminate\Queue\InteractsWithQueue;
+use Ibi\Models\Options;
 use Illuminate\Contracts\Queue\ShouldBeQueued;
+use Illuminate\Queue\InteractsWithQueue;
 use \Illuminate\Mail\Mailer as Mail;
 
+
 class Mailer {
+
+    //External user mail
+    //contenuto update mail
+    //nuova segnalazione mail
+    //nuova candidatura mail
 
 
     public function __construct(Mail $mail)
     {
         $this->mail = $mail;
+        $this->options = Options::first();
     }
 
 
@@ -26,8 +34,7 @@ class Mailer {
 
         \Log::info('sending admin new user email');
 
-        // $this->sendTo('forge405@gmail.com', $subject, $view, $data);
-        $this->sendTo('forge405@gmail.com', $subject, $view, $data);
+        $this->sendTo($this->options->external_user_mail, $subject, $view, $data);
 
     }
 
@@ -45,7 +52,7 @@ class Mailer {
         \Log::info('sending admin new updata email');
 
         // $this->sendTo('forge405@gmail.com', $subject, $view, $data);
-        $this->sendTo('forge405@gmail.com', $subject, $view, $data);
+        $this->sendTo($this->options->contenuto_update_mail, $subject, $view, $data);
 
     }
 
@@ -86,7 +93,7 @@ class Mailer {
 
 
         // $this->sendTo('forge405@gmail.com', $subject, $view, $data);
-        $this->sendTo('forge405@gmail.com', $subject, $view, $data);
+        // $this->sendTo('forge405@gmail.com', $subject, $view, $data);
     }
 
     public function sendMailForSegnalazioneCreation($segnalazione)
@@ -99,7 +106,21 @@ class Mailer {
         \Log::info('sending admin segnalazione');
 
         // $this->sendTo('forge405@gmail.com', $subject, $view, $data);
-        $this->sendTo('forge405@gmail.com', $subject, $view, $data);
+        $this->sendTo($this->options->segnalazione_farmacovigilanza_mail, $subject, $view, $data);
+
+    }
+
+    public function sendMailForCandidatura($candidatura)
+    {
+
+        $subject = "Una nuova candidatura ricevuta per posizione aperta su ibi-lorenzini.com";
+        $view = "emails.nuova_candidatura";
+        $data = compact('candidatura');
+
+        \Log::info('sending admin candidatura');
+
+        // $this->sendTo('forge405@gmail.com', $subject, $view, $data);
+        $this->sendTo($this->options->candidatura_mail, $subject, $view, $data);
 
     }
 

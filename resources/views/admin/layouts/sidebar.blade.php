@@ -85,7 +85,7 @@
                     <li><a href="/admin/voci-menu" id="struttura_menu_voci_menu">Voci Menu</a></li>
                 </ul>
             </li>
-            <li><a href="/admin/impostazioni"><i class="zmdi zmdi-settings"></i> Impostazioni</a></li>
+            <li id="lista_impostazioni"><a href="/admin/impostazioni"><i class="zmdi zmdi-settings"></i> Impostazioni</a></li>
             <li>
                 <a href="/logout"><i class="zmdi zmdi-time-restore"></i> Esci</a>
             </li>

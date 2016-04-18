@@ -19,6 +19,8 @@ class CandidatureController extends AdminController
     {
         $candidature = $candidature_repo->getAll();
 
+        // return $candidature;
+
         return view('admin.lavora-con-noi.index_candidature', compact('candidature'));
 
     }
