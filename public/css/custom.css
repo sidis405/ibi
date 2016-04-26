@@ -118,3 +118,8 @@ nav.navbar .navbar-right li.active {
     text-transform: uppercase;
     color: #fff;
 }
+
+
+.hide {
+    display: none;
+}

@@ -31,9 +31,6 @@ class HomeController extends Controller
 
         $contenuti = $pagine_repo->getContentForPage('index');
 
-        // return $contenuti['home_ibi_export_box'];
-        // return get_class($contenuti['home_ibi_export_box']);
-
         return view('home.index', compact('news', 'contenuti', 'sliders'));
     }
 

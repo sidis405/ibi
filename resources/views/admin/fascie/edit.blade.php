@@ -5,7 +5,7 @@
             <section id="content">
                 <div class="container">
                     <div class="block-header">
-                        <h2>Fascie</h2>
+                        <h2>Fasce</h2>
                     
                         <ul class="actions">
                             <li>

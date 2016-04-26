@@ -16,6 +16,9 @@ class HomeController extends AdminController
      */
     public function index()
     {
+
+        // return redirect()->to('/admin/prodotti');
+        // return array_pluck(\Auth::user()->roles()->get(), 'name')[0];
         return view('admin.index');
     }
 

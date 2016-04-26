@@ -34,7 +34,7 @@ return [
 		'formulazione' => 'Formulazione',
 		'principio_attivo' => 'Principio attivo',
 		'categorie_terapeutiche' => 'Categorie Terapeutiche',
-		'foglietto_illustrativo' => 'Principio attivo',
+		'foglietto_illustrativo' => 'Foglietto_Illustrativo',
 		'scheda_tecnica' => 'Scheda tecnica',
 		'scheda_tecnica_warning' => 'Devi essere registrato per visualizzare schede tecniche',
 		'fascia' =>'Fascia',
@@ -97,7 +97,7 @@ return [
 		'anni' => 'anni',
 		'eta_media' => 'Età Media',
 
-		'invia_candidatura' => 'Send Your Application',
+		'invia_candidatura' => 'Invia La Tua Candidatura',
 		'invia_candidatura_label1' => 'Compila il form.',
 		'invia_candidatura_label2' => 'Attenzione, i campi contrassegnati con * sono obbligatori per processare la tua candidatura.',
 		'posizione' => 'Posizione',

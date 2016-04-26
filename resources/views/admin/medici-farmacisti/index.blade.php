@@ -14,7 +14,7 @@
             <section id="content">
                 <div class="container">
                     <div class="block-header">
-                        <h2>Modifiche Contenuti Sito</h2>
+                        <h2>Medici /Farmacisti</h2>
 
                          <ul class="actions">
                             <li class="dropdown">
@@ -35,29 +35,37 @@
                     
                     <div class="card">
                         <div class="card-header">
-                            <h2>Modifiche contenuti sito <small>Lista delle modifiche in attesa di conferma.</small></h2>
+                            <h2>Medici / Farmacisti <small>Lista di tutti gli utenti presenti sul sito, registrati come Medici of Farmacisti.</small></h2>
                         </div>
                         
                         <table id="data-table-command" class="table table-striped table-vmiddle">
                             <thead>
                                 <tr>
                                     <th data-column-id="id" data-identifier="true"  data-type="numeric">ID</th>
-                                    <th data-column-id="pagina">Pagina</th>
-                                    <th data-column-id="locale">Lingua</th>
-                                    <th data-column-id="utente">Utente</th>
-                                    <th data-column-id="data-modifica">Modificato il</th>
+                                    <th data-column-id="nome">Nome</th>
+                                    <th data-column-id="cognome">Cognome</th>
+                                    <th data-column-id="email">Email</th>
+                                    <th data-column-id="ruolo">Ruolo</th>
+                                    <th data-column-id="provincia-albo">Provincia Albo</th>
+                                    <th data-column-id="numero-albo">N° iscr. Albo</th>
+                                    <th data-column-id="specializzazione">Specializzazione</th>
+                                    <th data-column-id="data-registrazione">Registrato il</th>
                                     <th data-column-id="commands" data-formatter="commands" data-sortable="false">Azioni</th>
                                 </tr>
                             </thead>
                             <tbody>
 
-                            @foreach($modifiche as $mod)
+                            @foreach($utenti as $utente)
                                 <tr>
-                                    <td>{{$mod->version_id}}</td>
-                                    <td>{{$mod->base_contenuto_translation->contenuto->pagina->name}}</td>
-                                    <td>{{$mod->base_contenuto_translation->locale}}</td>
-                                    <td>{{$mod->user->first_name}} {{$mod->user->last_name}}</td>
-                                    <td>@if($mod->created_at) {{date('d-m-y H:i', strtotime($mod->created_at))}}@endif</td>
+                                    <td>{{$utente->id}}</td>
+                                    <td>{{$utente->first_name}}</td>
+                                    <td>{{$utente->last_name}}</td>
+                                    <td>{{$utente->email}}</td>
+                                    <td>@if(count($utente->roles) > 0) {{$utente->roles[0]->name}} @else-- @endif</td>
+                                    <td>{{$utente->profile[0]->provincia_albo_rel->nome}}</td>
+                                    <td>{{$utente->profile[0]->numero_albo}}</td>
+                                    <td>{{$utente->profile[0]->specializzazione_rel->nome}}</td>
+                                    <td>@if($utente->created_at) {{date('d-m-y H:i', strtotime($utente->created_at))}}@endif</td>
                                 </tr>
                             @endforeach
                                 
@@ -76,7 +84,7 @@
         <script src="/adm/vendors/bootgrid/jquery.bootgrid.js"></script>
 
         <!-- Data Table -->
-        <script src="/adm/js/bootgrid-modifiche.js"></script>
+        <script src="/adm/js/bootgrid-medici-farmacisti.js"></script>
 
 
 @stop
@@ -86,7 +94,7 @@
         
     <script>
     
-    activateSidebar('contenuti_sito_menu', 'modifiche');
+    activateSidebar('utenti_menu', 'medici_farmacisti');
 
     </script>    
 

@@ -10,8 +10,3 @@
             <a href="#" class="close fileinput-exists" data-dismiss="fileinput">&times;</a>
         </div>
 </div>
-<div class="row">
-        @if(strlen($tdv->allegato) > 2)
-        <a class="btn btn-success" href="/allegati/{{$tdv->allegato}}" target="_blank">Vedi Allegato caricato</a>
-        @endif
-</div>

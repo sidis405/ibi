@@ -12,7 +12,7 @@
             <section id="content">
                 <div class="container">
                     <div class="block-header">
-                        <h2>Fascie</h2>
+                        <h2>Fasce</h2>
 
                          <ul class="actions">
                             <li>
@@ -41,7 +41,7 @@
                     
                     <div class="card">
                         <div class="card-header">
-                            <h2>Fascie di prodotti <small>Un listato delle fascie associate con numero prodotti.</small></h2>
+                            <h2>Fasce di prodotti <small>Un listato delle fasce associate con numero prodotti.</small></h2>
                         </div>
                         
                         <table id="data-table-command" class="table table-striped table-vmiddle">

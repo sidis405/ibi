@@ -23,6 +23,11 @@ abstract class Controller extends BaseController
 
         view()->share('contenuti_footer', $contenuti_footer);
         view()->share('user', \Auth()->user());
+        if(\Auth::user())
+        {
+            
+        view()->share('user_role', array_pluck(\Auth::user()->roles()->get(), 'name')[0]);
+        }
         view()->share('menu', MenuItems::all()->keyBy('slug'));
         
         if(Session::has('locale')){
