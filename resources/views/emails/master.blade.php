@@ -57,7 +57,7 @@
                         <table border="0" cellpadding="20" cellspacing="0" width="100%" id="emailHeader">
                             <tr>
                                 <td align="left" valign="top">
-                                    <img src="http://demo.ibi-lorenzini.com/img/ibi-lorenzini-logo.png">
+                                    <img src="http://demo.ibi-lorenzini.it/img/ibi-lorenzini-logo.png">
                                 </td>
                             </tr>                           
                         </table>
@@ -86,7 +86,7 @@
                                    <p>
                                         Centralino: +39.06.92150.1<br>
                                         Fax: +39.06.92150.500<br>
-                                        info@ibi-lorenzini.com<br>
+                                        info@ibi-lorenzini.it<br>
                                         P.IVA 02578030153
                                    </p>
                                 </td>

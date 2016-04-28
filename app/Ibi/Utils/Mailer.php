@@ -26,7 +26,7 @@ class Mailer {
     public function sendMailForExternalUserCreation($utente)
     {
 
-        $subject = "Un nuovo " . $utente->roles[0]->name . ' si è registato su ibi-lorenzini.com';
+        $subject = "Un nuovo " . $utente->roles[0]->name . ' si è registato su ibi-lorenzini.it';
         $view = "emails.nuovo_utente";
         $data = compact('utente');
 
@@ -41,7 +41,7 @@ class Mailer {
     public function sendMailForContenutoUpdate($contenuto)
     {
 
-        $subject = "Un nuovo contenuto è stato modificato su ibi-lorenzini.com";
+        $subject = "Un nuovo contenuto è stato modificato su ibi-lorenzini.it";
         $view = "emails.contenuto_modificato";
         $data = compact('contenuto');
 
@@ -60,7 +60,7 @@ class Mailer {
     public function sendMailForAccountActivation($utente)
     {
 
-        $subject = "Il tuo account su ibi-lorenzini.com è attivo";
+        $subject = "Il tuo account su ibi-lorenzini.it è attivo";
         $view = "emails.account_attivato";
         $data = compact('utente');
 
@@ -73,7 +73,7 @@ class Mailer {
     public function sendMailForProdottoCreation($prodotto)
     {
 
-        $subject = "Un nuovo prodotto è stato creato su ibi-lorenzini.com";
+        $subject = "Un nuovo prodotto è stato creato su ibi-lorenzini.it";
         $view = "emails.nuovo_prodotto";
         $data = compact('prodotto');
 
@@ -87,7 +87,7 @@ class Mailer {
     public function sendMailForProdottoUpdate($prodotto)
     {
 
-        $subject = "Un prodotto è stato modificato su ibi-lorenzini.com";
+        $subject = "Un prodotto è stato modificato su ibi-lorenzini.it";
         $view = "emails.prodotto_modificato";
         $data = compact('prodotto');
 
@@ -99,7 +99,7 @@ class Mailer {
     public function sendMailForSegnalazioneCreation($segnalazione)
     {
 
-        $subject = "Una nuova segnalazione Farmaco Vigilanza ibi-lorenzini.com";
+        $subject = "Una nuova segnalazione Farmaco Vigilanza ibi-lorenzini.it";
         $view = "emails.nuova_segnalazione";
         $data = compact('segnalazione');
 
@@ -113,7 +113,7 @@ class Mailer {
     public function sendMailForCandidatura($candidatura)
     {
 
-        $subject = "Una nuova candidatura ricevuta per posizione aperta su ibi-lorenzini.com";
+        $subject = "Una nuova candidatura ricevuta per posizione aperta su ibi-lorenzini.it";
         $view = "emails.nuova_candidatura";
         $data = compact('candidatura');
 

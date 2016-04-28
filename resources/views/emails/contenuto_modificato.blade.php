@@ -16,7 +16,7 @@
     <tr>
         <td style="font-family: 'Droid Sans', Arial, sans-serif; padding-top: 0;" align="left" valign="top">
             <p style="font-size: 14px;">
-                Per visualizzare tutte le informazioni relative a questa modifica <a href="http://demo.ibi-lorenzini.com/admin/modifiche-contenuti-sito">clicca qui</a>
+                Per visualizzare tutte le informazioni relative a questa modifica <a href="http://demo.ibi-lorenzini.it/admin/modifiche-contenuti-sito">clicca qui</a>
             </p>
         </td>
     </tr>

@@ -84,11 +84,11 @@
                       04011 Aprilia (LT) Italy
                       <br><br>
                       Centralino +39 06 92150 1<br>
-                      Fax +39 06 92150 500<br><a href="mailto:info@ibi-lorenzini.com">info@ibi-lorenzini.com<br></a>P.IVA 02578030153
+                      Fax +39 06 92150 500<br><a href="mailto:info@ibi-lorenzini.it">info@ibi-lorenzini.it<br></a>P.IVA 02578030153
                     </p>
                   </div>
                   <div class="col-sm-6">
-                    <p><b>Export Department<br></b>Fax +39 06 92150.598<br><a href="mailto:export@ibi-lorenzini.com">export@ibi-lorenzini.com</a><br><br><b>Contract Manufacturing Services<br></b><a href="mailto:cms@ibi-lorenzini.com">cms@ibi-lorenzini.com</a><br><br><b>Pharmaceutical Development Services<br></b><a href="mailto:pds@ibi-lorenzini.com">pds@ibi-lorenzini.com</a></p>
+                    <p><b>Export Department<br></b>Fax +39 06 92150.598<br><a href="mailto:export@ibi-lorenzini.it">export@ibi-lorenzini.it</a><br><br><b>Contract Manufacturing Services<br></b><a href="mailto:cms@ibi-lorenzini.it">cms@ibi-lorenzini.it</a><br><br><b>Pharmaceutical Development Services<br></b><a href="mailto:pds@ibi-lorenzini.it">pds@ibi-lorenzini.it</a></p>
                   </div>
                   <div class="col-xs-12">
                     <div class="borded"></div>
@@ -96,11 +96,11 @@
                   <div class="col-xs-12">
                     <div class="row">
                       <div class="col-sm-6">
-                        <p><b>Contract Manufacturing Services<br></b><a href="mailto:cms@ibi-lorenzini.com">cms@ibi-lorenzini.com</a><br><br><b>Pharmaceutical Development Services<br></b><a href="mailto:pds@ibi-lorenzini.com">pds@ibi-lorenzini.com</a></p>
+                        <p><b>Contract Manufacturing Services<br></b><a href="mailto:cms@ibi-lorenzini.it">cms@ibi-lorenzini.it</a><br><br><b>Pharmaceutical Development Services<br></b><a href="mailto:pds@ibi-lorenzini.it">pds@ibi-lorenzini.it</a></p>
                       </div>
                       <div class="col-sm-6">
                         <p><b>Dipartimento di Farmacovigilanza IBIGEN e IBI<br></b>Tel. +39 06 92150 395<br>
-                          Fax +39 06 92150 573<br><a href="mailto:pharmacovigilance@ibi-lorenzini.com">pharmacovigilance@ibi-lorenzini.com<br></a><a href="mailto:pharmacovigilance@ibigen.it">pharmacovigilance@ibigen.it</a>
+                          Fax +39 06 92150 573<br><a href="mailto:pharmacovigilance@ibi-lorenzini.it">pharmacovigilance@ibi-lorenzini.it<br></a><a href="mailto:pharmacovigilance@ibigen.it">pharmacovigilance@ibigen.it</a>
                         </p>
                       </div>
                     </div>
@@ -134,9 +134,9 @@
                             </p>
                           </div>
                           <div class="col-sm-6">
-                            <p><b>Per informazioni medico-scientifiche<br></b><a href="mailto:servizioscientifico@ibi-lorenzini.com">servizioscientifico@ibi-lorenzini.com<br></a>Fax.: +39 06 92 150 573<br><br><b>Dipartimento di Farmacovigilanza IBIGEN e IBI<br></b>Tel.: +39 06 92 150 395<br>
+                            <p><b>Per informazioni medico-scientifiche<br></b><a href="mailto:servizioscientifico@ibi-lorenzini.it">servizioscientifico@ibi-lorenzini.it<br></a>Fax.: +39 06 92 150 573<br><br><b>Dipartimento di Farmacovigilanza IBIGEN e IBI<br></b>Tel.: +39 06 92 150 395<br>
                               Fax.: +39 06 92 150 573<br>
-                              E-mail:<br><a href="mailto:pharmacovigilance@ibi-lorenzini.com">pharmacovigilance@ibi-lorenzini.com<br></a><a href="mailto:pharmacovigilance@ibigen.it">pharmacovigilance@ibigen.it</a>
+                              E-mail:<br><a href="mailto:pharmacovigilance@ibi-lorenzini.it">pharmacovigilance@ibi-lorenzini.it<br></a><a href="mailto:pharmacovigilance@ibigen.it">pharmacovigilance@ibigen.it</a>
                             </p>
                           </div>
                         </div>
@@ -209,24 +209,24 @@
                 Italia
                 <br><br>
                 Centralino: +39.06.92150.1<br>
-                Fax: +39.06.92150.500<br>						<a href="mailto:info@ibi-lorenzini.com">info@ibi-lorenzini.com<br></a>P.IVA 02578030153
+                Fax: +39.06.92150.500<br>						<a href="mailto:info@ibi-lorenzini.it">info@ibi-lorenzini.it<br></a>P.IVA 02578030153
               </p>
             </div>
           </div>
           <div class="col-sm-3">
             <div class="footer-box">
               <h4>Worldwide</h4>
-              <p><b>Export Department<br></b><a href="mailto:export@ibi-lorenzini.com"><i class="fa fa-envelope"></i>export@ibi-lorenzini.com<br></a>Fax: +39.06.92150.598
-                <br><br><b>Ricezione ordini<br></b><a href="mailto:purchase@ibi-lorenzini.com"><i class="fa fa-envelope"></i>purchase@ibi-lorenzini.com<br>						</a>Fax: +39.06.92150.401
-                <br><br><b>Informazioni medico scientifiche<br></b><a href="mailto:servizioscientifico@ibi-lorenzini.com"><i class="fa fa-envelope"></i>servizioscientifico@ibi-lorenzini.com<br>						</a>Fax: +39.06.92150.573
+              <p><b>Export Department<br></b><a href="mailto:export@ibi-lorenzini.it"><i class="fa fa-envelope"></i>export@ibi-lorenzini.it<br></a>Fax: +39.06.92150.598
+                <br><br><b>Ricezione ordini<br></b><a href="mailto:purchase@ibi-lorenzini.it"><i class="fa fa-envelope"></i>purchase@ibi-lorenzini.it<br>						</a>Fax: +39.06.92150.401
+                <br><br><b>Informazioni medico scientifiche<br></b><a href="mailto:servizioscientifico@ibi-lorenzini.it"><i class="fa fa-envelope"></i>servizioscientifico@ibi-lorenzini.it<br>						</a>Fax: +39.06.92150.573
               </p>
             </div>
           </div>
           <div class="col-sm-3">
             <div class="footer-box">
               <h4>Stay connected</h4>
-              <p><b>Contract Manufacturing Services<br></b><a href="mailto:cms@ibi-lorenzini.com"><i class="fa fa-envelope"></i>cms@ibi-lorenzini.com<br>							</a><br><b>Pharmaceutical Development Services<br></b><a href="mailto:pds@ibi-lorenzini.com"><i class="fa fa-envelope"></i>pds@ibi-lorenzini.com<br>							</a><br><b>Dipartimento di Farmacovigilanza IBIGEN e IBI<br></b>Tel: +39.06.92150.395<br>
-                Fax: +39.06.92150.573<br><a href="mailto:pharmacovigilance@ibi-lorenzini.com"><i class="fa fa-envelope"></i>pharmacovigilance@ibi-lorenzini.com<br>							</a><a href="mailto:pharmacovigilance@ibigen.it"><i class="fa fa-envelope"></i>pharmacovigilance@ibigen.it						</a>
+              <p><b>Contract Manufacturing Services<br></b><a href="mailto:cms@ibi-lorenzini.it"><i class="fa fa-envelope"></i>cms@ibi-lorenzini.it<br>							</a><br><b>Pharmaceutical Development Services<br></b><a href="mailto:pds@ibi-lorenzini.it"><i class="fa fa-envelope"></i>pds@ibi-lorenzini.it<br>							</a><br><b>Dipartimento di Farmacovigilanza IBIGEN e IBI<br></b>Tel: +39.06.92150.395<br>
+                Fax: +39.06.92150.573<br><a href="mailto:pharmacovigilance@ibi-lorenzini.it"><i class="fa fa-envelope"></i>pharmacovigilance@ibi-lorenzini.it<br>							</a><a href="mailto:pharmacovigilance@ibigen.it"><i class="fa fa-envelope"></i>pharmacovigilance@ibigen.it						</a>
               </p>
             </div>
           </div>

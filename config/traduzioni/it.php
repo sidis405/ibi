@@ -45,7 +45,7 @@ return [
 		'steatosi_epatica' => 'Steatosi Epatica',
 		'meteorismo_aerofagia' => 'Meteorismo e Aerofagia',
 		'italia' => 'Italia',
-		'germania' => 'Italia',
+		'germania' => 'Germania',
 		'uk' => 'Regno Unito',
 		'elenco_prodotti_per' => 'Elenco prodotti per ',
 		'esportazione' => 'Esportanzioni',
