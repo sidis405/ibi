@@ -43,6 +43,7 @@ class UpdateSliderCommandHandler
 
         $this->updateTranslations($slider, $command->titoli, $command->sottotitoli);
 
+        // dd($command->immagine);
         $this->caricaImmagine($slider, $command->immagine);
 
         Event::fire(new SliderWasUpdated($slider));

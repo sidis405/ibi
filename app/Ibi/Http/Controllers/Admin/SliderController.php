@@ -104,9 +104,9 @@ class SliderController extends AdminController
     {
         $data = [];
 
-        if($request->hasFile('immagine'))
+        if($request->hasFile('immagine_path'))
         {
-            $data['immagine'] = $request->file('immagine');
+            $data['immagine'] = $request->file('immagine_path');
         }else{
             $data['immagine'] = false;
         }
