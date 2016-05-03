@@ -27,8 +27,7 @@
               <div class="form-group">
                 <h3 class="form-title">{{$text['contatti']['posizione']}}</h3>
                 <label for="posizione_id">{{$text['contatti']['posizione_label']}} <span class="form-input-danger">*</span></label>
-                <select name="posizione_id" class="form-control">
-                  <option>{{$text['contatti']['scegli']}}...</option>
+                <select name="posizione_id" class="form-control" required>
                   @foreach($posizioni as $posizione)
                     <option value="{{$posizione->id}}" @if($posizione->id == $id) selected @endif required>{{$posizione->titolo}}</option>
                   @endforeach

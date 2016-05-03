@@ -20,6 +20,21 @@
           <li>
             <h5>{{$prodotto->categoria_terapeutica->nome}}</h5>
           </li>
+          @if($prodotto->foglietto_illustrativo)
+          <li>
+            <h5>{{$text['prodotti']['foglietto_illustrativo']}}</h5><a href="/prodotti/allegati/{{$prodotto->foglietto_illustrativo}}" target="_blank"><i class="fa fa-download"></i></a>
+          </li>
+          @endif
+          @if($prodotto->scheda_tecnica)
+          <li>
+            <h5>{{$text['prodotti']['scheda_tecnica']}}</h5>
+            @permessoibi('scarica_allegati')
+            <a href="/prodotti/allegati/{{$prodotto->scheda_tecnica}}" target="_blank"><i class="fa fa-download"></i></a>
+            @else
+            <a href="#area-riservata-modal" class=" open-area-riservata-modal" ><i class="fa fa-download login-tooltip" data-toggle="tooltip" data-placement="top" title="{{$text['prodotti']['scheda_tecnica_warning']}}"></i></a>
+            @endpermessoibi
+          </li>
+          @endif
         </ul>
       </div>
       @endforeach

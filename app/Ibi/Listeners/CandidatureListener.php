@@ -25,7 +25,7 @@ class CandidatureListener
 
         logger('content updated');
   
-        $this->mailer->sendMailForCandidatura($event->camdidatura);
+        $this->mailer->sendMailForCandidatura($event->candidatura);
 
         // if($event->user->profile[0]->notifica_spedita == 0 && $event->user->active == 1 ){
         //     $this->mailer->sendMailForAccountActivation($event->user);

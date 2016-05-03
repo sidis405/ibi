@@ -51,12 +51,12 @@
                                 </tr>
                             </thead>
                             <tbody>
-
+                    
                             @foreach($candidature as $candidatura)
                                 <tr>
                                     <td>{{$candidatura->id}}</td>
                                     <td>{{$candidatura->nome}} {{$candidatura->cognome}}</td>
-                                    <td>{{$candidatura->posizione->titolo}} / {{$candidatura->posizione->sede}}</td>
+                                    <td>{{@$candidatura->posizione->titolo}}</td>
                                     <td>{{$candidatura->created_at->format('d-m-y H:i')}}</td>
                                 </tr>
                             @endforeach
