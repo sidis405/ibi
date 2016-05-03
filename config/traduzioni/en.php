@@ -91,6 +91,19 @@ return [
 		]
 	],
 
+	'farmacovigilanza' => [
+		'segnalazione_farmacovigilanza' => 'Pharmacovigilance Reporting',
+		'slogan' => 'Safety above all',
+		'invia_segnalazione' => 'Send a report',
+		'nome' =>'Name',
+		'cognome' =>'Surname',
+		'dob' => 'Date of Birth',
+		'disclaimer' => 'By submitting this form you agree to our ',
+		'segnalazione' => 'Reporting',
+		'comunicati' => 'PRESS',
+		'scarica' => 'Download'
+	],
+
 	'contatti' => [
 		'contatti'=>'Contacts',
 		'lavora_con_noi'=>'Work With Us',

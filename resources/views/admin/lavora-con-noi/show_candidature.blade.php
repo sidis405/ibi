@@ -39,6 +39,7 @@
                                 </div>
                                 
                                 <div class="card-body card-padding">
+                                @if($candidatura->posizione)
                                     <div class="form-group fg-line">
                                         <label for="">Posizione</label>
                                         <div>{{$candidatura->posizione->titolo}}</div>
@@ -47,7 +48,7 @@
                                         <label for="">Sede</label>
                                         <div>{{$candidatura->posizione->sede}}</div>
                                     </div>
-
+                                @endif
                                     <div class="form-group fg-line">
                                         <label for="">Nome</label>
                                         <div>{{$candidatura->nome}}</div>

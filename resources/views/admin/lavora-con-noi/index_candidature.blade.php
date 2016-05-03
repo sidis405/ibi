@@ -56,7 +56,11 @@
                                 <tr>
                                     <td>{{$candidatura->id}}</td>
                                     <td>{{$candidatura->nome}} {{$candidatura->cognome}}</td>
+                                    @if($candidatura->posizione)
                                     <td>{{@$candidatura->posizione->titolo}}</td>
+                                    @else
+                                    <td>&nbsp;</td>
+                                    @endif
                                     <td>{{$candidatura->created_at->format('d-m-y H:i')}}</td>
                                 </tr>
                             @endforeach

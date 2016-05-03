@@ -31,7 +31,7 @@
             {!! csrf_field() !!}
             <div class="card">
                 <div class="card-header">
-                    <h2>Modifica news : '{{$posizione->titolo}} / {{$posizione->sede}}'</h2>
+                    <h2>Modifica  : '{{$posizione->titolo}} / {{$posizione->sede}}'</h2>
                 </div>
                 
                 <div class="card-body card-padding">

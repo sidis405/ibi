@@ -90,6 +90,19 @@ return [
 		]
 	],
 
+	'farmacovigilanza' => [
+		'segnalazione_farmacovigilanza' => 'Segnalazione farmacovigilanza',
+		'slogan' => 'LA SICUREZZA PRIMA DI TUTTO',
+		'invia_segnalazione' => 'Invia Segnalazione',
+		'nome' =>'Nome',
+		'cognome' =>'Cognome',
+		'dob' => 'Data di nascita',
+		'disclaimer' => 'Cliccando su "invia" dichiari di aver letto e accettato la nostra ',
+		'segnalazione' => 'Segnalazione',
+		'comunicati' => 'COMUNICATI',
+		'scarica' => 'Scarica'
+	],
+
 	'contatti' => [
 		'contatti'=>'Contatti',
 

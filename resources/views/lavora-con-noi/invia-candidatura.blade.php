@@ -29,7 +29,8 @@
                 <label for="posizione_id">{{$text['contatti']['posizione_label']}} <span class="form-input-danger">*</span></label>
                 <select name="posizione_id" class="form-control" required>
                   @foreach($posizioni as $posizione)
-                    <option value="{{$posizione->id}}" @if($posizione->id == $id) selected @endif required>{{$posizione->titolo}}</option>
+                    <option>{{$text['contatti']['scegli']}}...</option>
+                    <option value="{{$posizione->id}}" @if($posizione->id == $id) selected @endif>{{$posizione->titolo}}</option>
                   @endforeach
                 </select>
               </div>

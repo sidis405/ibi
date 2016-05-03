@@ -15,11 +15,11 @@
         <div class="sidebar products-sidebar hidden-sm hidden-xs">
           <a class="btn btn-primary" href="/allegati/{{$listini['listino-ibi-italia']['allegato']}}" target="_blank">Scarica il listino in pdf</a>
           @include('prodotti.filtri.filtro_italia')
-          <a href="benessere-del-paziente">
+          <a href="benessere-del-paziente#meteorismo">
             <div class="benessere-del-paziente meteorismo">
               <h5>{{$text['prodotti']['meteorismo_aerofagia']}} ?</h5>
             </div></a>
-          <a href="benessere-del-paziente">
+          <a href="benessere-del-paziente#fegato-grasso">
             <div class="benessere-del-paziente fegato-grasso">
               <h5>{{$text['prodotti']['steatosi_epatica']}} ?</h5>
             </div></a>
@@ -42,11 +42,11 @@
             @include('prodotti.partials.prodotti_italia_partial')
 
           <div class="benessere-mobile visible-xs">
-            <a href="benessere-del-paziente">
+            <a href="benessere-del-paziente#meteorismo">
             <div class="benessere-del-paziente meteorismo">
               <h5>{{$text['prodotti']['meteorismo_aerofagia']}} ?</h5>
             </div></a>
-          <a href="benessere-del-paziente">
+          <a href="benessere-del-paziente#fegato-grasso">
             <div class="benessere-del-paziente fegato-grasso">
               <h5>{{$text['prodotti']['steatosi_epatica']}} ?</h5>
             </div></a>
