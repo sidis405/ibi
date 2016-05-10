@@ -20,7 +20,7 @@
 					<b>Data di nascita: {{$segnalazione['dob']}}</b>
 				</li>
 				<li>
-					<b>Segnalazione: {{$segnalazione['messaggio']}}</b>
+					<b>Segnalazione: {{$segnalazione['segnalazione']}}</b>
 				</li>
 			</ul>
 		</td>

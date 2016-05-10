@@ -40,7 +40,7 @@
                     <!-- Multiple Radios -->
                     <div class="form-group fg-line">
                         <div class="col-sm-6">
-                            {{$utente->roles[0]->name}} <br><br>
+                            {{@$utente->roles[0]->name}} <br><br>
                             @if($utente->roles[0]->name == 'Medico')
                             <a href="http://application.fnomceo.it/Fnomceo/public/ricercaProfessionisti.public" class="btn btn-primary" target="_blank">Vedi albo Medici</a>
                             @elseif($utente->roles[0]->name == 'Farmacista')
@@ -54,10 +54,10 @@
                     <!-- Text input-->
                     <div class="form-group fg-line">
                         <div class="col-sm-6">
-                            {{$utente->first_name}}  {{$utente->last_name}} <br>
-                            {{$utente->email}} <br><br>
-                            Luogo di nascita: {{$utente->profile[0]->luogo_nascita}} il {{$utente->profile[0]->data_nascita}} <br>
-                            Telefono: {{$utente->profile[0]->telefono}} <br><br>
+                            {{@$utente->first_name}}  {{@$utente->last_name}} <br>
+                            {{@$utente->email}} <br><br>
+                            Luogo di nascita: {{@$utente->profile[0]->luogo_nascita}} il {{@$utente->profile[0]->data_nascita}} <br>
+                            Telefono: {{@$utente->profile[0]->telefono}} <br><br>
                         </div>
                     </div>
                 </fieldset>
@@ -68,14 +68,14 @@
                     <div class="form-group fg-line">
                         <label class="col-sm-6 control-label" >Farmacia/Altro:</label>
                         <div class="col-sm-6">
-                            {{$utente->profile[0]->farmacia}}
+                            {{@$utente->profile[0]->farmacia}}
                         </div>
                     </div>
                     <!-- Select Basic -->
                     <div class="form-group fg-line">
                         <label class="col-sm-6 control-label" >Posizione</label>
                         <div class="col-sm-6">
-                            {{$utente->profile[0]->farmacia_posizione}}
+                            {{@$utente->profile[0]->farmacia_posizione}}
                         </div>
                     </div>
                 </fieldset>
@@ -84,10 +84,10 @@
                     <legend>Informazioni</legend>
                     <div class="form-group fg-line">
                         <div class="col-sm-6">
-                            Anno di Laurea : {{$utente->profile[0]->anno_laurea}} <br>
-                            N° Iscr. Albo: {{$utente->profile[0]->numero_albo}} <br>
-                            Provincia di Iscr. Albo: {{$utente->profile[0]->provincia_albo_rel->nome}} <br>
-                            Specializzazione: {{$utente->profile[0]->specializzazione_rel->nome}} <br><br>
+                            Anno di Laurea : {{@$utente->profile[0]->anno_laurea}} <br>
+                            N° Iscr. Albo: {{@$utente->profile[0]->numero_albo}} <br>
+                            Provincia di Iscr. Albo: {{@$utente->profile[0]->provincia_albo_rel->nome}} <br>
+                            Specializzazione: {{@$utente->profile[0]->specializzazione_rel->nome}} <br><br>
                         </div>
                     </div>
                     
@@ -99,10 +99,10 @@
                     <!-- Text input-->
                     <div class="form-group fg-line">
                         <div class="col-sm-6">
-                            {{$utente->profile[0]->indirizzo_attivita}} <br>
-                            {{$utente->profile[0]->citta_attivita}} <br>
-                            {{$utente->profile[0]->provincia_attivita_rel->nome}} <br>
-                            {{$utente->profile[0]->cap_attivita}} <br><br>
+                            {{@$utente->profile[0]->indirizzo_attivita}} <br>
+                            {{@$utente->profile[0]->citta_attivita}} <br>
+                            {{@$utente->profile[0]->provincia_attivita_rel->nome}} <br>
+                            {{@$utente->profile[0]->cap_attivita}} <br><br>
                         </div>
                     </div>
                 </fieldset>
@@ -111,10 +111,10 @@
                     <!-- Text input-->
                     <div class="form-group fg-line">
                         <div class="col-sm-6">
-                            {{$utente->profile[0]->indirizzo_residenza}} <br>
-                            {{$utente->profile[0]->citta_residenza}} <br>
-                            {{$utente->profile[0]->provincia_residenza_rel->nome}} <br>
-                            {{$utente->profile[0]->cap_attivita}} <br>
+                            {{@$utente->profile[0]->indirizzo_residenza}} <br>
+                            {{@$utente->profile[0]->citta_residenza}} <br>
+                            {{@$utente->profile[0]->provincia_residenza_rel->nome}} <br>
+                            {{@$utente->profile[0]->cap_attivita}} <br>
                         </div>
                     </div>
                 </fieldset>
@@ -125,10 +125,10 @@
             <div class="card-body card-padding">
                 <div class="form-group fg-line">
                     <div class="col-sm-6">
-                        <form action="/admin/medici-farmacisti/{{$utente->id}}" method="POST">
+                        <form action="/admin/medici-farmacisti/{{@$utente->id}}" method="POST">
                             {!!csrf_field()!!}
                             <input type="hidden" name="_method" value="PUT">
-                            <input type="hidden" name="user_id" value="{{$utente->id}}">
+                            <input type="hidden" name="user_id" value="{{@$utente->id}}">
                             @if($utente->active == 1)
                             <input type="hidden" name="active" value="off">
                             <button type="submit" class="btn btn-danger">Disattiva questo utente</button>

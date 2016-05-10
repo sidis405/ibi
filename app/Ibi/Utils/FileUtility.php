@@ -94,14 +94,17 @@ class FileUtility {
 
     protected function makeFilename($prodotto_id, $type, $file , $data)
     {
+
         if(count($data) > 0 && ($type === 'scheda' || $type==="foglietto"))
         {
-            $product_scheda_slug = str_slug($data['nome']) . '-' . str_slug($data['formulazione']);
+            $product_scheda_slug = str_slug($data['nome']) . '-' . str_slug(str_replace('%', '-', $data['formulazione']));
 
-            return $this->paths[$type]['folder'] . '/' . $type. '-' . $product_scheda_slug  . '-' . $this->makeId($prodotto_id) . '-' . $file->getClientOriginalName();
+            return $this->paths[$type]['folder'] . '/' . $type. '-' . $product_scheda_slug  . '-' . $this->makeId($prodotto_id) . '-' . str_replace('%', '-', $file->getClientOriginalName());
         }
 
-        return $this->paths[$type]['folder'] . '/' . $type. '-' . $this->makeId($prodotto_id) . '-' . $file->getClientOriginalName();
+
+
+        return $this->paths[$type]['folder'] . '/' . $type. '-' . $this->makeId($prodotto_id) . '-' . str_replace('%', '-', $file->getClientOriginalName());
     }
 
     protected function makeId($prodotto_id)

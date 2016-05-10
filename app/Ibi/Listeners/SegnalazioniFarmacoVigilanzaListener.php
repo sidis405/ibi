@@ -20,7 +20,7 @@ class SegnalazioniFarmacoVigilanzaListener
      */
     public function onSegnalazioneCreation(SegnalazioneWasCreated $event) {
 
-
+        logger('seg');
         $this->mailer->sendMailForSegnalazioneCreation($event->segnalazione);
 
     }

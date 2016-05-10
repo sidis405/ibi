@@ -72,7 +72,7 @@ return [
 				'reparti' => 'Reparti',	
 		'tabs' => [
 				'sviluppo' => 'Sviluppo',
-				'produzione' => 'Produzioni',
+				'produzione' => 'Produzione',
 		]
 	],
 

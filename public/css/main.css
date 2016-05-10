@@ -402,7 +402,8 @@ Sidebar styles
 .media-news-archive {
   height: 150px;
   width: 150px;
-  background-size: cover!important; 
+  background-size: contain!important; 
+  /*background-size: cover!important; */
 }
 
 .sidebar .news h3 {

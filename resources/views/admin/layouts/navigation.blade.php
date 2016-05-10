@@ -52,7 +52,7 @@
                                             
                                                 <div class="lv-title">{{$utente_attesa->first_name}} {{$utente_attesa->last_name}}</div>
                                                 <small class="lv-small">
-                                                    {{$utente_attesa->roles[0]->name}}, {{$utente_attesa->profile[0]->specializzazione_rel->nome}}, {{$utente_attesa->profile[0]->provincia_attivita_rel->nome}}
+                                                    {{@$utente_attesa->roles[0]->name}}, {{@$utente_attesa->profile[0]->specializzazione_rel->nome}}, {{@$utente_attesa->profile[0]->provincia_attivita_rel->nome}}
                                                 </small>
                                             </div>
                                         </div>

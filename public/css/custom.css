@@ -1,7 +1,8 @@
 .news-image {
     width: 100px;
     height: 100px;
-    background-size: cover!important; 
+    background-size: contain!important; 
+    /*background-size: cover!important; */
 }
 
 .slide {

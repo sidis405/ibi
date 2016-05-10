@@ -8,20 +8,24 @@
 			<h2 style="color: #00509a; font-weight: 100; margin-top: 0;">Richiesta di iscrizione all'area riservata</h2>
 			<ul style="text-align: justify; font-family: 'Droid Sans', Arial, sans-serif;">
 				<li>
-					<b>Nome: {{$utente['first_name']}}</b>
+					<b>Nome: {{@$utente['first_name']}}</b>
 				</li>
 				<li>
-					<b>Cognome: {{$utente['last_name']}}</b>
+					<b>Cognome: {{@$utente['last_name']}}</b>
+				</li>
+				@if($utente->profile)
+				<li>
+					<b>Ruolo:  {{@$utente->profile[0]->ruolo}}</b>
 				</li>
 				<li>
-					<b>Ruolo:  {{$utente->profile[0]->ruolo}}</b>
+					<b>N° Iscr.Albo: {{@$utente->profile[0]->numero_albo}}</b>
 				</li>
+				@endif
+				@if($utente->profile[0]->specializzazione_rel)
 				<li>
-					<b>N° Iscr.Albo: {{$utente->profile[0]->numero_albo}}</b>
+					<b>Specializzazione: {{@$utente->profile[0]->specializzazione_rel->nome}}</b>
 				</li>
-				<li>
-					<b>Specializzazione: {{$utente->profile[0]->specializzazione_rel->nome}}</b>
-				</li>
+				@endif
 			</ul>
 		</td>
 	</tr>

@@ -16,9 +16,9 @@ class SegnalazioneWasCreated extends Event
      *
      * @return void
      */
-    public function __construct(Segnalazioni $segnalazioen)
+    public function __construct(Segnalazioni $segnalazione)
     {
-        $this->segnalazioen = $segnalazioen;
+        $this->segnalazione = $segnalazione;
     }
 
     /**
