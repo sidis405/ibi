@@ -41,7 +41,7 @@
               @include('layouts.content', array('key' => 'chi_siamo_quality_unit_tab', 'permesso'=> 'modifica_home'))
             </div>
             <div id="politica" role="tabpanel" class="tab-pane">
-              @include('layouts.content', array('key' => 'chi_siamo_politica_integrata_tab', 'permesso'=> 'modifica_home'))
+              @include('layouts.content', array('key' => 'chi_siamo_politica_integrata_tab', 'permesso'=> 'modifica_politica_integrata'))
             </div>
            
           </div>

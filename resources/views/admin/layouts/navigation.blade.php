@@ -20,6 +20,7 @@
                             <label for="tw-switch" class="ts-helper"></label>
                         </div>
                     </li>
+                    @if(\Auth::user()->hasRole('Segreteria di Direzione') || \Auth::user()->hasRole('Dev'))
                     <li class="dropdown">
                         <a data-toggle="dropdown" class="tm-notification" href="">
                         
@@ -84,6 +85,7 @@
                     
                         </div>
                     </li>
+                    @endif
                     <!-- <li id="top-search">
                         <a class="tm-search" href=""></a>
                     </li>

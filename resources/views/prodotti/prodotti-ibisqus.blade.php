@@ -11,14 +11,9 @@
 <section class="content products-content">
   <div class="container">
     <div class="row">
-      <div class="col-md-3 sidebar-wrapper">
-        <div class="sidebar products-sidebar hidden-sm hidden-xs">
-          @include('prodotti.filtri.filtro_ibisqus')
-  
-          </div>        
-        </div>
+ 
        
-        <div class="col-md-9">
+        <div class="col-md-12">
           @include("prodotti.tabs", array('active' => 'prodotti-ibisqus'))
           <div class="intro hidden-xs hidden-sm">
          

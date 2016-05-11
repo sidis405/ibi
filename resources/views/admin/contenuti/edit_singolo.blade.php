@@ -46,14 +46,14 @@
             
             @foreach($lingue as $lingua)
 
-            <div class="card">
+            <div class="card content">
                 <div class="card-header">
                     <h2>Testo {{$lingua->label}}</h2>
                 </div>
                 
                 <div class="card-body card-padding">
                     <div class="row">
-                        <textarea name="testi[{{$lingua->locale}}]" id="body_{{$lingua->locale}}"  class="html-editor-limited" required>{{$traduzioni[$lingua->locale]['testo']}}</textarea>
+                        <textarea name="testi[{{$lingua->locale}}]" id="body_{{$lingua->locale}}"  class="html-editor-limited" required><div class="content">{{$traduzioni[$lingua->locale]['testo']}}</div></textarea>
                     </div>
                 </div>
             </div>
@@ -115,6 +115,8 @@
     <script src="/vendor/unisharp/laravel-ckeditor/adapters/jquery.js"></script>
     <script>
         $('textarea').ckeditor({
+            extraPlugins: 'justify',
+            contentsCss: '/css/app.css',
             language: 'it',
             uiColor: '#ffffff',
             filebrowserImageBrowseUrl: '/laravel-filemanager?type=Images',

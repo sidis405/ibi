@@ -51,7 +51,7 @@
                     </div>
                     <div class="form-group fg-line">
                         <label for="formulazione">Data news</label>
-                        <input type="date" name="created_at" class="form-control">
+                        <input type="date" name="created_at" class="form-control" required>
                     </div>
                     <div class="form-group fg-line">
                         <div class="fileinput fileinput-new" data-provides="fileinput">

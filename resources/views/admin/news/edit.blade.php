@@ -51,7 +51,7 @@
                     </div>
                     <div class="form-group fg-line">
                         <label for="formulazione">Data news</label>
-                        <input type="date" name="created_at" class="form-control" value="{{$news['created_at']->format('Y-m-d')}}">
+                        <input type="date" name="created_at" class="form-control" value="{{$news['created_at']->format('Y-m-d')}}" required>
                     </div>
                     <div class="form-group fg-line">
                         @include('admin.news.immagine_partial')
