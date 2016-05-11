@@ -28,13 +28,13 @@
             @endpermessoibi
           </li>
           <li>
-            <h5>{{$text['prodotti']['fascia']}}</h5><span>{{$prodotto->fascia->nome}}</span>
+            <h5>{{$text['prodotti']['fascia']}}</h5><span>{{@$prodotto->fascia->nome}}</span>
           </li>
           <li>
-            <h5>{{$text['prodotti']['regime_di_dispensazione']}}</h5><span>{{$prodotto->regime_dispensazione}}</span>
+            <h5>{{$text['prodotti']['regime_di_dispensazione']}}</h5><span>{{@$prodotto->regime_dispensazione}}</span>
           </li>
           <li>
-            <h5>{{$text['prodotti']['validita_mesi']}}</h5><span>{{$prodotto->validita_mesi}}</span>
+            <h5>{{$text['prodotti']['validita_mesi']}}</h5><span>{{@$prodotto->validita_mesi}}</span>
           </li>
           <li>
             <h5>{{$prodotto->categoria_terapeutica->nome}}</h5>

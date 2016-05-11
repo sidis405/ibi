@@ -65,13 +65,14 @@ class Prodotti extends Model
 
         foreach($formulazioni as $locale => $formulazione)
         {
-            $data[$locale] = ['formulazione' => $formulazione];
+            $data[$locale]['formulazione'] = $formulazione;
         }
 
         foreach($unita as $locale => $unit)
         {
-            $data[$locale] = ['unita' => $unit];
+            $data[$locale]['unita'] = $unit;
         }
+
 
         $prodotto = new static($data);
 
