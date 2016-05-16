@@ -34,7 +34,7 @@ return [
 		'formulazione' => 'Formulazione',
 		'principio_attivo' => 'Principio attivo',
 		'categorie_terapeutiche' => 'Categorie Terapeutiche',
-		'foglietto_illustrativo' => 'Foglietto_Illustrativo',
+		'foglietto_illustrativo' => 'Foglio Illustrativo',
 		'scheda_tecnica' => 'Scheda tecnica',
 		'scheda_tecnica_warning' => 'Devi essere registrato per visualizzare schede tecniche',
 		'fascia' =>'Fascia',

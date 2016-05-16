@@ -43,7 +43,17 @@ class AllegatiController extends AdminController
 
         if( ! $file) abort(406);
 
-        return response()->download(storage_path() . "/uploads/" . $path, $filename);
+        // return response()->file(storage_path() . "/uploads/" . $path, $filename);
+        
+        // return Response::make($file['contents'], 200, [
+        //     'Content-Type' => $file['mimetype'],
+        //     'Content-Disposition' => 'inline; '.$path,
+        // ]);
+        
+        return Response::make(file_get_contents(storage_path() . "/uploads/" . $path, $filename), 200, [
+            'Content-Type' => 'application/pdf',
+            'Content-Disposition' => 'inline; filename="'.$filename.'"'
+        ]);
     }
 
 }

@@ -97,12 +97,12 @@
                 <div class="card-body card-padding">
                     <div class="row">
                         <div class="col-sm-6">
-                            <p class="f-500 c-black m-b-20">Foglietto Illustrativo</p>
+                            <p class="f-500 c-black m-b-20">Foglio Illustrativo</p>
                             
                             <div class="fileinput fileinput-new" data-provides="fileinput">
                                 <span class="btn btn-primary btn-file m-r-10">
-                                    <span class="fileinput-new">Selezione folglietto</span>
-                                    <span class="fileinput-exists">Cambia Foglietto</span>
+                                    <span class="fileinput-new">Selezione Foglio</span>
+                                    <span class="fileinput-exists">Cambia Foglio</span>
                                     <input type="file" name="foglietto_illustrativo" >
                                 </span>
                                 <span class="fileinput-filename"></span>
