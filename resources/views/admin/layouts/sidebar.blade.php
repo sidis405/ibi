@@ -23,7 +23,7 @@
 
             <li class="active"><a href="/admin"><i class="zmdi zmdi-home"></i> Home</a></li>
 
-            <li class="sub-menu @if(!in_array($user_role, ['Dev', 'Segreteria di Direzione', 'Ufficio Estero', 'Uff. Ibisqus', 'Stefania testa', 'Ufficio regolatorio'])) hide @endif" id="prodotti_menu">
+            <li class="sub-menu @if(!in_array($user_role, ['Dev', 'Segreteria di Direzione', 'Ufficio Estero', 'Uff. Ibisqus', 'Stefania testa', 'Ufficio regolatorio', 'Dir Medica & Farmacovigilanza'])) hide @endif" id="prodotti_menu">
                 <a href=""><i class="zmdi zmdi-widgets"></i> Prodotti</a>
                 <ul>
     
