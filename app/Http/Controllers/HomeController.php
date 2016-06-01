@@ -158,6 +158,34 @@ class HomeController extends Controller
         return view('pages.privacy-policy', compact('contenuti', 'news'));
     }
 
+    public function cookie_policy(NewsRepo $news_repo, PagineRepo $pagine_repo)
+    {
+        $contenuti = $pagine_repo->getContentForPage('cookie-policy');
+        $news = $news_repo->getAllFront();
+        return view('pages.cookie-policy', compact('contenuti', 'news'));
+    }
+
+    public function segnalazione_policy(NewsRepo $news_repo, PagineRepo $pagine_repo)
+    {
+        $contenuti = $pagine_repo->getContentForPage('segnalazione-policy');
+        $news = $news_repo->getAllFront();
+        return view('pages.segnalazione-policy', compact('contenuti', 'news'));
+    } 
+
+    public function registrazione_policy(NewsRepo $news_repo, PagineRepo $pagine_repo)
+    {
+        $contenuti = $pagine_repo->getContentForPage('registrazione-policy');
+        $news = $news_repo->getAllFront();
+        return view('pages.registrazione-policy', compact('contenuti', 'news'));
+    }
+
+    public function curriculum_policy(NewsRepo $news_repo, PagineRepo $pagine_repo)
+    {
+        $contenuti = $pagine_repo->getContentForPage('curriculum-policy');
+        $news = $news_repo->getAllFront();
+        return view('pages.curriculum-policy', compact('contenuti', 'news'));
+    }
+
     public function pull()
     {
         $out = '';

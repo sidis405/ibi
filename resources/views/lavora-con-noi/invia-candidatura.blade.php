@@ -72,7 +72,7 @@
 
                 <div class="col-xs-12">
                   <p style="font-size: 12px">
-                    {{$text['contatti']['disclaimer']}} <a href="/privacy-policy" target="_blank">Privacy Policy</a>
+                    {{$text['contatti']['disclaimer']}} <a href="/curriculum-policy" target="_blank">Policy</a>
                   </p>
                 </div>
               </div>

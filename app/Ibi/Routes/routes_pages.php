@@ -62,6 +62,10 @@ Route::get('farmaco-vigilanza/comunicati/{id}/{slug}', '\Ibi\Http\Controllers\Fa
 Route::get('invia-candidatura', 'HomeController@invia_candidatura');
 Route::get('benessere-del-paziente', 'HomeController@benessere_del_paziente');
 Route::get('privacy-policy', 'HomeController@privacy_policy');
+Route::get('cookie-policy', 'HomeController@cookie_policy');
+Route::get('registrazione-policy', 'HomeController@registrazione_policy');
+Route::get('segnalazione-policy', 'HomeController@segnalazione_policy');
+Route::get('curriculum-policy', 'HomeController@curriculum_policy');
 
 // Route::get('{view}', function ($view) {
 //     try {

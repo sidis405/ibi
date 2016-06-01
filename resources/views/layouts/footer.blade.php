@@ -27,7 +27,10 @@
       <h4>{{$text['footer']['info']}}</h4>
       <ul>
         <li> <a href="/farmaco-vigilanza">Farmacovigilanza</a></li>
-        <li><a href="/privacy-policy">Privacy Policy</a></li>
+        <li><a href="/cookie-policy">Cookie Policy</a></li>
+        <li><a href="/registrazione-policy">Registrazione Policy</a></li>
+        <li><a href="/segnalazione-policy">Segnalazione Policy</a></li>
+        <li><a href="/curriculum-policy">Candidature Policy</a></li>
         <li><a href="/contatti">Contatti</a></li>
         <li><a href="#area-riservata-modal" class="area-riservata open-area-riservata-modal">Area Riservata</a></li>
         <li><a href="/trasferimenti-di-valore">Trasferimenti di valore</a></li>

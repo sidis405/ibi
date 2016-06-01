@@ -60,7 +60,7 @@
                             </div>
                         </div>
                         <div class="col-xs-12">
-                          <p class="policy-reminder">Cliccando su "invia" dichiari di aver letto e accettato la nostra <a target="_blank" href="/privacy-policy">Privacy policy</a></p>
+                          <p class="policy-reminder">Cliccando su "invia" dichiari di aver letto e accettato la nostra <a target="_blank" href="/registrazione-policy">Policy</a></p>
                         </div>
                         <div class="form-group">
                             <div class="col-md-12">

@@ -42,7 +42,7 @@
                   <textarea name="messaggio" placeholder="Segnalazione" rows="10" class="form-control">{{old('messaggio')}}</textarea>
                 </div>
                 <div class="col-xs-12">
-                  <p class="policy-reminder">{{$text['farmacovigilanza']['disclaimer']}} <a target="_blank" href="/privacy-policy">Privacy policy</a></p>
+                  <p class="policy-reminder">{{$text['farmacovigilanza']['disclaimer']}} <a target="_blank" href="/segnalazione-policy">Policy</a></p>
                 </div>
                 <div style="margin-bottom: 20px;" class="col-xs-12">
                   @include('layouts.captcha')
