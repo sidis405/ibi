@@ -57,7 +57,7 @@
                         <table border="0" cellpadding="20" cellspacing="0" width="100%" id="emailHeader">
                             <tr>
                                 <td align="left" valign="top">
-                                    <img src="http://demo.ibi-lorenzini.it/img/ibi-lorenzini-logo.png">
+                                    <img src="http://www.ibi-lorenzini.it/img/ibi-lorenzini-logo.png">
                                 </td>
                             </tr>                           
                         </table>

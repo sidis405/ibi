@@ -28,7 +28,7 @@
 	<tr>
 		<td style="font-family: 'Droid Sans', Arial, sans-serif; padding-top: 0;" align="left" valign="top">
 			<p style="font-size: 14px;">
-				Per visualizzare tutte le informazioni relative a questa segnalazione <a href="http://demo.ibi-lorenzini.it/admin/farmaco-vigilanza/segnalazioni/{{$segnalazione['id']}}">clicca qui</a>
+				Per visualizzare tutte le informazioni relative a questa segnalazione <a href="http://www.ibi-lorenzini.it/admin/farmaco-vigilanza/segnalazioni/{{$segnalazione['id']}}">clicca qui</a>
 			</p>
 		</td>
 	</tr>

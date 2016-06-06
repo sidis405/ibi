@@ -13,7 +13,7 @@
 	<tr>
 		<td style="font-family: 'Droid Sans', Arial, sans-serif; padding-top: 0;" align="left" valign="top">
 			<p style="font-size: 14px;">
-				Per effettuare subito l'accesso <a href="http://demo.ibi-lorenzini.it/?login=true">clicca qui</a>
+				Per effettuare subito l'accesso <a href="http://www.ibi-lorenzini.it/?login=true">clicca qui</a>
 			</p>
 		</td>
 	</tr>
