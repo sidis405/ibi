@@ -1,5 +1,6 @@
 <?php
 return [
+'cookiebar' => ["text" => "Ibi Lorenzini uses cookies to enhance the user experience on the website. By continuing to browse the site you are agreeing to our ", "button" => "Accept"],
 'header' =>
 							[
 								"login" => "Reserved Area",
@@ -7,7 +8,7 @@ return [
 							],
 	'footer' =>
 							[
-								"about" => "ABOUT IBI",
+								"about" => "ABOUT",
 								"worldwide" => "WORLDWIDE",
 								"stay_connected" => "STAY CONNECTED",
 								"info" => "INFO",

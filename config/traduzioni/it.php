@@ -1,5 +1,6 @@
 <?php
 return [
+'cookiebar' => ["text" => "Ibi Lorenzini utilizza cookie per migliorare l'esperienza di navigazione. Continuando a navigare il sito, acconsenti alla nostra ", "button" => "Accetto"],
 'header' =>
 							[
 								"login" => "Area Riservata",
@@ -7,7 +8,7 @@ return [
 							],
 	'footer' =>
 							[
-								"about" => "ABOUT IBI",
+								"about" => "ABOUT",
 								"worldwide" => "WORLDWIDE",
 								"stay_connected" => "STAY CONNECTED",
 								"info" => "INFO",

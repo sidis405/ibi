@@ -276,13 +276,3 @@ function cambiaLingua (url) {
     return false;
 
 }
-
-$(document).ready(function(){
-    $.cookieBar({
-      message: "Ibi Lorenzini utilizza cookie per migliorare l'esperienza di navigazione. Continuando a navigare il sito, acconsenti alla nostra <a class='cookie-link' href='cookie-policy'>Cookie Policy</a>",
-      acceptText: 'Accetto',
-      fixed: true,
-      bottom: true,
-      expireDays: 120
-    });
-  });

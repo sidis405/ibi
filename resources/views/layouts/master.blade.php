@@ -53,4 +53,17 @@
   @yield('footer_scripts')
   <script src="/js/main.js"></script>
   <script src="/js/custom.js"></script>
+
+  <script>
+      // 
+      $(document).ready(function(){
+          $.cookieBar({
+            message: "{{$text['cookiebar']['text']}} <a class='cookie-link' href='cookie-policy'>Cookie Policy</a>",
+            acceptText: '{{$text["cookiebar"]["button"]}}',
+            fixed: true,
+            bottom: true,
+            expireDays: 120
+          });
+        });
+  </script>
 </html>
