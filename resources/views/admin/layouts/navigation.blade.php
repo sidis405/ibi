@@ -68,7 +68,7 @@
                                             </div>
                                             <div class="media-body">
                                                 <?php $this_mod = $modifiche_attesa->getModel();?>
-                                                <div class="lv-title">{{$this_mod->contenuto->pagina->name}} ({{$this_mod->locale}})</div>
+                                                <div class="lv-title">{{@$this_mod->contenuto->pagina->name}} ({{@$this_mod->locale}})</div>
                                                 <small class="lv-small">
                                                 
                                                     {{$modifiche_attesa->user->first_name}} {{$modifiche_attesa->user->last_name}}, {{$modifiche_attesa->created_at->format('d m Y, h:i')}}

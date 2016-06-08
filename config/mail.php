@@ -54,7 +54,7 @@ return [
     |
     */
 
-    'from' => ['address' => 'info@ibi-lorenzini.it', 'name' => 'Ibi-Lorenzini'],
+    'from' => ['address' => 'info@ibi-lorenzini.com', 'name' => 'Ibi-Lorenzini'],
 
     /*
     |--------------------------------------------------------------------------

@@ -62,7 +62,7 @@
                     <li><a href="/admin/lavora-con-noi/percentuale-dipendenti" id="lavora_con_noi_percentuale_dipendenti">Percentuale Dipendenti</a></li>
                 </ul>
             </li>
-            <li class="sub-menu @if(!in_array($user_role, ['Dev','Segreteria di Direzione', 'Ufficio del Personale'])) hide @endif" id="farmaco_vigilanza_menu">
+            <li class="sub-menu @if(!in_array($user_role, ['Dev','Segreteria di Direzione', 'Ufficio del Personale', 'Dir Medica & Farmacovigilanza', 'Farmacovigilanza'])) hide @endif" id="farmaco_vigilanza_menu">
                 <a href=""><i class="zmdi zmdi-hospital"></i> Farmacovigilanza</a>
                 <ul>
                     <li><a href="/admin/farmaco-vigilanza/comunicati" id="farmaco_vigilanza_menu_comunicati">Comunicati</a></li>

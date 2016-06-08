@@ -30,6 +30,7 @@
     <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="/css/vendor.css">
     @yield('header_scripts')
+    <link rel="stylesheet" href="/css/jquery.cookiebar.css">
     <link rel="stylesheet" href="/css/main.css">
     <link rel="stylesheet" href="/css/custom.css">
   </head>
@@ -47,6 +48,7 @@
     @include('layouts.area_riservata_modal')
   </body>
   <script src="/js/vendor.js"></script>
+  <script src="/js/jquery.cookiebar.js"></script>
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAx9KUDj1tNjrnOjWivzS4GAJ9Cke8RIvM"></script>
   @yield('footer_scripts')
   <script src="/js/main.js"></script>
