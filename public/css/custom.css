@@ -124,3 +124,29 @@ nav.navbar .navbar-right li.active {
 .hide {
     display: none;
 }
+
+#cookie-bar {
+    padding: 25px 0;
+    background: #1fa9ad;
+    z-index: 999;
+    
+}
+#cookie-bar .cookie-link {
+        // color: $orange;
+        margin: 0;
+        padding: 0;
+        font-weight: 700;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+#cookie-bar .cb-enable {
+        padding: 10px 40px;
+        margin-left: 35px;
+        border-radius: 0;
+        background: #d9e5fa;
+        color: #333;
+    }
+#cookie-bar .cb-enable:hover {
+    background: #d9e5fa;
+}
