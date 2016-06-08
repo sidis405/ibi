@@ -6,7 +6,8 @@
             <div class="col-sm-6">
               <div class="pull-right">
               @if($user)
-              <a href="#" class="area-riservata">{{$user->first_name[0]}}.{{$user->last_name}}</a>
+
+              <a href="@if(!in_array($user_role, ['Medico', 'Farmacista']))/admin @else # @endif" class="area-riservata">{{$user->first_name[0]}}.{{$user->last_name}}</a>
               <a href="/logout" class="area-riservata">[{{$text['header']['logout']}}]</a>
               @else
               <a href="#area-riservata-modal" class="area-riservata open-area-riservata-modal">{{$text['header']['login']}}</a>

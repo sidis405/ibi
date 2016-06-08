@@ -17,6 +17,8 @@ abstract class Controller extends BaseController
 
      function __construct() {
 
+
+
         $pagine_repo = new PagineRepo();
 
         $contenuti_footer = $pagine_repo->getContentForPage('index');

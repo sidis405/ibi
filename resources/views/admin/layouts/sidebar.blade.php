@@ -51,9 +51,9 @@
                     <li><a href="/admin/utenti/permessi" id="utenti_menu_permessi">Permessi</a></li>
                 </ul>
             </li>
-            <li @if(!in_array($user_role, ['Dev','Segreteria di Direzione', 'Ufficio del Personale', 'Direzione Medica', 'Farmacovigilanza', 'Uff. Acquisti', 'Biotecnologie', 'R&S'])) hide @endif><a href="/admin/news"  id="lista_news"><i class="zmdi zmdi-remote-control-alt"></i> News</a></li>
+            <li class="@if(!in_array($user_role, ['Dev','Segreteria di Direzione', 'Ufficio del Personale', 'Direzione Medica', 'Farmacovigilanza', 'Uff. Acquisti', 'Biotecnologie', 'R&S', 'Ufficio del Personale'])) hide @endif"><a href="/admin/news"  id="lista_news"><i class="zmdi zmdi-remote-control-alt"></i> News</a></li>
             <li class="@if(!in_array($user_role, ['Dev','Segreteria di Direzione', 'Stefania testa', 'Direzione Medica'])) hide @endif"><a href="/admin/trasferimenti-di-valore"  id="lista_trasferimenti"><i class="zmdi zmdi-key"></i> Trasferimenti di valore</a></li>
-            <li class="sub-menu @if(!in_array($user_role, ['Dev','Segreteria di Direzione'])) hide @endif" id="lavora_con_noi_menu">
+            <li class="sub-menu @if(!in_array($user_role, ['Dev','Segreteria di Direzione', 'Ufficio del Personale'])) hide @endif" id="lavora_con_noi_menu">
                 <a href=""><i class="zmdi zmdi-accounts-list-alt"></i> Lavora con noi</a>
                 <ul>
                     <li><a href="/admin/lavora-con-noi" id="lavora_con_noi_menu_lista_posizioni">Lista posizioni aperte</a></li>
@@ -62,7 +62,7 @@
                     <li><a href="/admin/lavora-con-noi/percentuale-dipendenti" id="lavora_con_noi_percentuale_dipendenti">Percentuale Dipendenti</a></li>
                 </ul>
             </li>
-            <li class="sub-menu @if(!in_array($user_role, ['Dev','Segreteria di Direzione', 'Ufficio del Personale', 'Dir Medica & Farmacovigilanza', 'Farmacovigilanza'])) hide @endif" id="farmaco_vigilanza_menu">
+            <li class="sub-menu @if(!in_array($user_role, ['Dev','Segreteria di Direzione'  , 'Dir Medica & Farmacovigilanza', 'Farmacovigilanza'])) hide @endif" id="farmaco_vigilanza_menu">
                 <a href=""><i class="zmdi zmdi-hospital"></i> Farmacovigilanza</a>
                 <ul>
                     <li><a href="/admin/farmaco-vigilanza/comunicati" id="farmaco_vigilanza_menu_comunicati">Comunicati</a></li>
