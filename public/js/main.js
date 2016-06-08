@@ -279,7 +279,7 @@ function cambiaLingua (url) {
 
 $(document).ready(function(){
     $.cookieBar({
-      message: "Ibi Lorenzini utilizza cookie per tracciare statistiche relative al sito. Continuando a navigare il sito, acconsenti alla nostra <a class='cookie-link' href='cookie-policy'>Cookie Policy</a>",
+      message: "Ibi Lorenzini utilizza cookie per migliorare l'esperienza di navigazione. Continuando a navigare il sito, acconsenti alla nostra <a class='cookie-link' href='cookie-policy'>Cookie Policy</a>",
       acceptText: 'Accetto',
       fixed: true,
       bottom: true,
