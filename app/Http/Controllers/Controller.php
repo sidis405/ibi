@@ -31,7 +31,6 @@ abstract class Controller extends BaseController
         view()->share('user_role', array_pluck(\Auth::user()->roles()->get(), 'name')[0]);
         }
         view()->share('menu', MenuItems::all()->keyBy('slug'));
-        
         if(Session::has('locale')){
             $locale = Session::get('locale');
         }else{
@@ -39,7 +38,9 @@ abstract class Controller extends BaseController
         }
         
         \App::setLocale($locale);
+        Session::put('locale', $locale);
 
+        // dd(\App::getLocale($locale));
         view()->share('text', Config::get('traduzioni.'.$locale));
 
         Session::put('currentPage', '');
