@@ -61,10 +61,10 @@
                                     <td>{{$utente->first_name}}</td>
                                     <td>{{$utente->last_name}}</td>
                                     <td>{{$utente->email}}</td>
-                                    <td>@if(count($utente->roles) > 0) {{$utente->roles[0]->name}} @else-- @endif</td>
-                                    <td>{{$utente->profile[0]->provincia_albo_rel->nome}}</td>
+                                    <td>@if(count(@$utente->roles) > 0) {{@$utente->roles[0]->name}} @else-- @endif</td>
+                                    <td>{{@$utente->profile[0]->provincia_albo_rel->nome}}</td>
                                     <td>{{$utente->profile[0]->numero_albo}}</td>
-                                    <td>{{$utente->profile[0]->specializzazione_rel->nome}}</td>
+                                    <td>{{@$utente->profile[0]->specializzazione_rel->nome}}</td>
                                     <td>@if($utente->created_at) {{date('d-m-y H:i', strtotime($utente->created_at))}}@endif</td>
                                 </tr>
                             @endforeach

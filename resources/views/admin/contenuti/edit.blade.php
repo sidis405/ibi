@@ -86,7 +86,7 @@
                 <div class="card-body card-padding">
                     <div class="row">
                         <div class="col-sm-6 text-center">
-                            <button type="reset" class="btn btn-warning btn-sm m-t-10">Abbandona</button>
+                            <button type="reset" id="contenuto_for_close" class="btn btn-warning btn-sm m-t-10">Abbandona</button>
                         </div>
                         <div class="col-sm-6 text-center">
                             <button type="submit" class="btn btn-primary btn-sm m-t-10"  id="contenuto_for_submit">Salva</button>
@@ -126,6 +126,28 @@
             showLoaderOnConfirm: true
         }, function(isConfirm){   
             if (isConfirm) form.submit();
+        });
+
+    });
+
+    $('#contenuto_for_close').on("click", function(e){
+    console.log('d');
+    e.preventDefault();
+
+    var form = $(this).parents('form');
+
+        swal({   
+            title: "Sei sicuro di voler abbandonare?",   
+            text: "",   
+            type: "warning",   
+            showCancelButton: true,   
+            confirmButtonColor: "#DD6B55",   
+            confirmButtonText: "Si. Chiudi.",   
+            cancelButtonText: "No. Cancella operazione.",   
+            closeOnConfirm: true ,
+            showLoaderOnConfirm: false
+        }, function(isConfirm){   
+           window.location.href="/admin";
         });
 
     });

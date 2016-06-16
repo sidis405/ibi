@@ -109,9 +109,9 @@ trait IbiRegistrationTrait
     {
         flash()->success('La registrazione è stata effettuata con successo. A breve riceverai una mail di attivazione.');
 
-        $user = User::find(6);
+        // $user = User::find(6);
 
-        Event::fire(new ExternalUserWasCreated($user));
+        // Event::fire(new ExternalUserWasCreated($user));
 
         return view('auth.register_confirm');
     }

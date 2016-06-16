@@ -98,7 +98,7 @@ return [
 		'invia_segnalazione' => 'Send a report',
 		'nome' =>'Name',
 		'cognome' =>'Surname',
-		'dob' => 'Date of Birth',
+		'dob' => 'Date of Birth (Format: dd/mm/yyyy)',
 		'disclaimer' => 'By submitting this form you agree to our ',
 		'segnalazione' => 'Reporting',
 		'comunicati' => 'PRESS',

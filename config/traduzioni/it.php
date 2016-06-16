@@ -97,7 +97,7 @@ return [
 		'invia_segnalazione' => 'Invia Segnalazione',
 		'nome' =>'Nome',
 		'cognome' =>'Cognome',
-		'dob' => 'Data di nascita',
+		'dob' => 'Data di nascita (Formato: gg/mm/yyyy)',
 		'disclaimer' => 'Cliccando su "invia" dichiari di aver letto e accettato la nostra ',
 		'segnalazione' => 'Segnalazione',
 		'comunicati' => 'COMUNICATI',

@@ -26,7 +26,7 @@ class SendSegnalazioneRequest extends Request
         return [
             'nome' => 'required|min:3',
             'cognome' => 'required|min:3',
-            'dob' => 'required|date',
+            // 'dob' => 'required|date',
             'messaggio' => 'required|min:10',
             'email' => 'required|email',
             'g-recaptcha-response' => 'required|captcha'

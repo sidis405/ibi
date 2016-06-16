@@ -13,6 +13,14 @@
 	<tr>
 		<td style="font-family: 'Droid Sans', Arial, sans-serif; padding-top: 0;" align="left" valign="top">
 			<p style="font-size: 14px;">
+				Non rispondere a questo messaggio automatico perché le informazioni andranno perse. 
+				<br><br>Do not replay this automated message because the information will be lost
+			</p>
+		</td>
+	</tr>
+	<tr>
+		<td style="font-family: 'Droid Sans', Arial, sans-serif; padding-top: 0;" align="left" valign="top">
+			<p style="font-size: 14px;">
 				Per effettuare subito l'accesso <a href="http://www.ibi-lorenzini.it/?login=true">clicca qui</a>
 			</p>
 		</td>

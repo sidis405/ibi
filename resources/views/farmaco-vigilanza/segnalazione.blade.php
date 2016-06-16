@@ -31,7 +31,7 @@
                 </div>
                 <div class="col-sm-6">
                   <label for="dob" class="control-label">{{$text['farmacovigilanza']['dob']}}</label>
-                  <input name="dob" type="date" placeholder="Data di nascita" value="{{old('dob')}}" class="form-control" required>
+                  <input name="dob" type="text" placeholder="Data di nascita" value="{{old('dob')}}" class="form-control" >
                 </div>
                 <div class="col-sm-6">
                   <label for="email" class="control-label">Email               </label>
