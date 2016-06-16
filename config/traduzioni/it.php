@@ -117,6 +117,7 @@ return [
 		'posizione' => 'Posizione',
 		'posizione_label' => 'Scegli la posizione',
 		'scegli' => 'Scegli',
+		'scegli2' => 'Altro: Specificare nel messaggio',
 		'dati_personali' => 'Dati Personali',
 		'nome' => 'Nome',
 		'cognome' => 'Cognome',

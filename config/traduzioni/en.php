@@ -118,6 +118,7 @@ return [
 		'posizione' => 'Position',
 		'posizione_label' => 'Choose the position',
 		'scegli' => 'Choose',
+		'scegli2' => 'Other: Specificy in the message box',
 		'dati_personali' => 'Personal data',
 		'nome' => 'Name',
 		'cognome' => 'Surname',

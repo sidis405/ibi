@@ -46,6 +46,7 @@
                                     <th data-column-id="id" data-identifier="true"  data-type="numeric">ID</th>
                                     <th data-column-id="nome-cognome">Nome Cognome</th>
                                     <th data-column-id="posizione-sede">Posizione / Sede</th>
+                                    <th data-column-id="message">Messagio</th>
                                     <th data-column-id="data-invio">Data Creazione</th>
                                     <th data-column-id="commands" data-formatter="commands" data-sortable="false">Azioni</th>
                                 </tr>
@@ -61,6 +62,7 @@
                                     @else
                                     <td>&nbsp;</td>
                                     @endif
+                                    <td>{{$candidatura->messaggio}}</td>
                                     <td>{{$candidatura->created_at->format('d-m-y H:i')}}</td>
                                 </tr>
                             @endforeach
